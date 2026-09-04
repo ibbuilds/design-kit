@@ -1,0 +1,18 @@
+{
+  "name": "design-kit",
+  "version": "0.1.0",
+  "description": "Minimal scaffold for a project-agnostic UI/UX design quality system for Codex and Figma.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Design Kit",
+    "shortDescription": "UI/UX design quality system scaffold.",
+    "longDescription": "Scaffold for evidence-informed UX, exceptional visual references, Figma-native creation, critique, and repeated human feedback. Design workflows and Figma integration are not implemented in this release.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": ["Explain Design Kit's current scaffold status and intended design workflow."]
+  }
+}
