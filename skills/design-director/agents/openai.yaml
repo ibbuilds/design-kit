@@ -1,0 +1,6 @@
+interface:
+  display_name: "Design Director"
+  short_description: "Create and refine high-quality UI/UX in Figma"
+  default_prompt: "Use $design-director to design and refine an editable Figma experience with me."
+policy:
+  allow_implicit_invocation: true

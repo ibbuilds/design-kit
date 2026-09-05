@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "sources": [
+    {"name": "Godly", "url": "https://godly.design/"},
+    {"name": "Siteinspire Selected", "url": "https://www.siteinspire.com/", "when": "Use the curated Selected collection; verify its current navigation."},
+    {"name": "Minimal Gallery", "url": "https://minimal.gallery/"},
+    {"name": "Httpster", "url": "https://httpster.net/"},
+    {"name": "Site of Sites", "url": "https://www.siteofsites.co/"},
+    {"name": "A1 Gallery", "url": "https://www.a1.gallery/"},
+    {"name": "Refs.Gallery", "url": "https://refs.gallery/"}
+  ],
+  "specialist_sources": [
+    {"name": "Rebrand Gallery", "url": "https://www.rebrand.gallery/", "when": "Brand identity or visual-system research is relevant to the current request."}
+  ]
+}

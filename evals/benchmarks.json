@@ -1,0 +1,44 @@
+[
+  {
+    "id": "portfolio-showcase",
+    "representative_request": "Design a complete high-end portfolio experience for an independent multidisciplinary designer, with realistic placeholder content and credible work browsing, project depth, positioning, and contact path.",
+    "adequacy_evidence": "A coherent overview-to-selection-to-case-study-to-next-action experience; not a hero or project grid alone.",
+    "priority_dimensions": ["information architecture", "project presentation", "typography", "composition", "pacing", "art direction", "navigation"],
+    "reference_roles": ["experience/architecture", "content/IA", "composition", "typography", "art direction"]
+  },
+  {
+    "id": "marketing-product",
+    "representative_request": "Design a high-fidelity product marketing experience for a new research tool using realistic placeholder claims clearly marked as placeholders, showing the product mechanism, decision evidence, and a credible next action.",
+    "adequacy_evidence": "The proposition, mechanism, evidence, objections, product demonstration, and action form one persuasive progression without fabricated proof.",
+    "priority_dimensions": ["content progression", "hierarchy", "product evidence", "composition", "art direction", "responsive intent"],
+    "reference_roles": ["experience/architecture", "content/IA", "composition", "art direction", "interaction/motion"]
+  },
+  {
+    "id": "dense-dashboard",
+    "representative_request": "Design a dense analyst dashboard for comparing regional error rates, finding anomalies, understanding denominators and freshness, and drilling into affected records.",
+    "adequacy_evidence": "Overview, comparison, filter scope, uncertainty, anomaly diagnosis, and record-level path support the stated decision at realistic density.",
+    "priority_dimensions": ["information architecture", "data integrity", "density", "comparison", "hierarchy", "states", "accessibility"],
+    "reference_roles": ["content/IA", "density/information", "composition", "typography", "interaction/motion"]
+  },
+  {
+    "id": "productivity-application",
+    "representative_request": "Design a high-fidelity project workspace where a small team can organize work, inspect a task, update status, recover from mistakes, and understand activity without losing context.",
+    "adequacy_evidence": "The object model, navigation, primary workspace, detail/edit behavior, feedback, undo/recovery, and empty/error conditions form a credible operating experience.",
+    "priority_dimensions": ["object model", "navigation", "interaction", "density", "states", "visual coherence", "efficiency"],
+    "reference_roles": ["experience/architecture", "content/IA", "density/information", "interaction/motion", "composition"]
+  },
+  {
+    "id": "mobile-flow",
+    "representative_request": "Design an iPhone reading-list flow for adding a link, browsing saved items, reading, resuming, and recovering from a failed save, with larger text and one-handed use.",
+    "adequacy_evidence": "The connected add, list, read, return/resume, and failure-recovery states work as a mobile experience rather than isolated screens.",
+    "priority_dimensions": ["mobile navigation", "touch ergonomics", "typography", "content", "states", "accessibility", "motion intent"],
+    "reference_roles": ["experience/architecture", "content/IA", "typography", "interaction/motion"]
+  },
+  {
+    "id": "editorial-reading",
+    "representative_request": "Design a high-end editorial experience for a collection of long-form essays, including discovery, an article at realistic length, section finding, resumption, attribution, and a coherent next-read path.",
+    "adequacy_evidence": "Collection-to-article-to-navigation/resume-to-next-read behavior supports comprehension and orientation beyond a styled opening viewport.",
+    "priority_dimensions": ["reading hierarchy", "typography", "measure", "pacing", "navigation", "media treatment", "accessibility"],
+    "reference_roles": ["experience/architecture", "content/IA", "typography", "composition", "art direction"]
+  }
+]

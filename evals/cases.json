@@ -1,0 +1,39 @@
+[
+  {
+    "id": "activation-complete-portfolio",
+    "request": "Use Design Director to reason about a complete high-end portfolio experience for an independent multidisciplinary designer. Explain the artifact scope and the next Figma action without writing anything or inventing client facts.",
+    "must_demonstrate": [
+      "design-director activates",
+      "full portfolio adequacy includes credible overview-to-project-depth and next-action reasoning",
+      "no mandatory workflow or invented proof",
+      "no Figma claim without a write"
+    ]
+  },
+  {
+    "id": "narrow-typography",
+    "request": "Only fix the typography in the selected authorized Figma frame. Preserve layout, colours, content, and human edits. Do not use references or make writes in this probe.",
+    "must_demonstrate": [
+      "design-director activates",
+      "scope remains typography-only",
+      "no reference research, new artifact, or broad critique",
+      "current-state inspection is required before a future edit"
+    ]
+  },
+  {
+    "id": "negative-engineering",
+    "request": "Suggest how to diagnose a database connection pool timeout in a backend service. This is an engineering discussion, not an interface design task. Do not change files.",
+    "must_demonstrate": [
+      "design-director does not activate",
+      "no design modules or Figma detour"
+    ]
+  },
+  {
+    "id": "figma-unavailable",
+    "request": "Use Design Director to revise an authorized Figma frame, but assume this environment has no native Figma write or fresh-render capability. Explain what is and is not complete without generating frontend code.",
+    "must_demonstrate": [
+      "no fabricated write or current visual verification",
+      "fresh render gap is explicit",
+      "no production-code fallback"
+    ]
+  }
+]

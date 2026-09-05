@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-09-04",
+  "maintenance": "Recheck technical capabilities before relying on them; recheck scoped UX sources on consequential changes. No automatic bulk fetching.",
+  "sources": [
+    {
+      "id": "codex-plugins",
+      "url": "https://developers.openai.com/plugins/build/plugins",
+      "title": "Native plugin packaging",
+      "authority": "official-technical",
+      "scope": "Codex plugin manifest, components, marketplaces",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "codex-skills",
+      "url": "https://developers.openai.com/plugins/build/skills",
+      "title": "Codex skills",
+      "authority": "official-technical",
+      "scope": "Progressive disclosure, metadata and tool dependencies",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "codex-agents",
+      "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md",
+      "title": "AGENTS.md discovery",
+      "authority": "official-technical",
+      "scope": "Repository development instructions",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "figma-remote",
+      "url": "https://developers.figma.com/docs/figma-mcp-server/remote-server-installation/",
+      "title": "Figma remote MCP installation",
+      "authority": "official-technical",
+      "scope": "Remote MCP authentication and supported clients",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "figma-local",
+      "url": "https://developers.figma.com/docs/figma-mcp-server/local-server-installation/",
+      "title": "Figma desktop MCP installation",
+      "authority": "official-technical",
+      "scope": "Official desktop MCP setup and supported clients; optional fallback capability",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "figma-console-local",
+      "url": "https://github.com/southleft/figma-console-mcp/tree/e4d5605e6108cd0b21a950f6f57fc189749bd2eb",
+      "title": "Figma Console MCP v1.40.0",
+      "authority": "upstream-implementation",
+      "scope": "Pinned local Desktop Plugin API transport; live-tested with a restricted Codex tool allowlist",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "figma-write",
+      "url": "https://developers.figma.com/docs/figma-mcp-server/write-to-canvas/",
+      "title": "Write to canvas",
+      "authority": "official-technical",
+      "scope": "Editable native creation and plan limitations; image limitation conflicts with tools page",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "figma-tools",
+      "url": "https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/",
+      "title": "Figma tools and prompts",
+      "authority": "official-technical",
+      "scope": "Current tool behavior; verify schemas at runtime",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "figma-skills",
+      "url": "https://github.com/openai/plugins/tree/1e285826e604f66f7208f7ac4dba0fe8341d1f57/plugins/figma",
+      "title": "Official Figma skills source",
+      "authority": "upstream-implementation",
+      "scope": "Source snapshot; installed plugin 2.0.21 also inspected",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "nng-heuristics",
+      "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+      "title": "Ten usability heuristics",
+      "authority": "research-synthesis",
+      "scope": "General usability heuristics, not visual style rules",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "nng-complex",
+      "url": "https://www.nngroup.com/articles/complex-application-design/",
+      "title": "Complex application design",
+      "authority": "research-synthesis",
+      "scope": "Expert and data-intensive application workflows",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "wcag22",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "title": "Web Content Accessibility Guidelines 2.2",
+      "authority": "normative-standard",
+      "scope": "Web accessibility criteria; levels and exceptions matter",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "apg-patterns",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/",
+      "title": "ARIA Authoring Practices patterns",
+      "authority": "informative-standard-guidance",
+      "scope": "Accessible web widget behavior; not normative conformance by itself",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "apg-dialog",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "title": "Dialog modal pattern",
+      "authority": "informative-standard-guidance",
+      "scope": "Focus and modality for web dialogs",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "apg-grid",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/grid/",
+      "title": "Grid pattern",
+      "authority": "informative-standard-guidance",
+      "scope": "Composite keyboard grids, distinct from static tables",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "gov-questions",
+      "url": "https://design-system.service.gov.uk/patterns/question-pages/",
+      "title": "Question pages",
+      "authority": "design-system-guidance",
+      "scope": "Transactional public services; adapt granularity to tasks",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "gov-errors",
+      "url": "https://design-system.service.gov.uk/components/error-summary/",
+      "title": "Error summary",
+      "authority": "design-system-guidance",
+      "scope": "Accessible service form error recovery",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "gov-check",
+      "url": "https://design-system.service.gov.uk/patterns/check-answers/",
+      "title": "Check answers",
+      "authority": "design-system-guidance",
+      "scope": "Review and correction before service submission",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "gov-passwords",
+      "url": "https://design-system.service.gov.uk/patterns/passwords/",
+      "title": "Passwords",
+      "authority": "design-system-guidance",
+      "scope": "Service authentication and recovery",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "home-timeout",
+      "url": "https://design.homeoffice.gov.uk/design-system/patterns/help-users-to/manage-service-timing-out",
+      "title": "Manage a service timing out",
+      "authority": "scoped-research-pattern",
+      "scope": "Home Office operational services; limited assistive-technology study",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "dwp-formats",
+      "url": "https://design-system.dwp.gov.uk/patterns/alternative-formats",
+      "title": "Choose alternative contact formats",
+      "authority": "design-system-guidance",
+      "scope": "Outbound communications in benefits/services; source updated 2026-01-20",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "carbon-table",
+      "url": "https://carbondesignsystem.com/components/data-table/usage/",
+      "title": "Data table usage",
+      "authority": "design-system-guidance",
+      "scope": "Enterprise records, selection and batch action",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "carbon-filter",
+      "url": "https://carbondesignsystem.com/patterns/filtering/",
+      "title": "Filtering",
+      "authority": "design-system-guidance",
+      "scope": "Product filtering, instant versus batch application",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "carbon-loading",
+      "url": "https://carbondesignsystem.com/components/loading/usage/",
+      "title": "Loading usage",
+      "authority": "design-system-guidance",
+      "scope": "Enterprise UI wait states",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "carbon-charts",
+      "url": "https://carbondesignsystem.com/data-visualization/chart-types/",
+      "title": "Chart types",
+      "authority": "design-system-guidance",
+      "scope": "Visualization by analytical purpose; source updated 2026-08-27",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "carbon-typography",
+      "url": "https://carbondesignsystem.com/elements/typography/overview/",
+      "title": "Typography overview",
+      "authority": "design-system-guidance",
+      "scope": "Carbon type roles and productive/expressive type examples; values are not universal rules",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "carbon-spacing",
+      "url": "https://carbondesignsystem.com/elements/spacing/overview/",
+      "title": "Spacing overview",
+      "authority": "design-system-guidance",
+      "scope": "Relational spacing and token examples; values are not universal rules",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "carbon-grid",
+      "url": "https://carbondesignsystem.com/elements/2x-grid/overview/",
+      "title": "2x grid overview",
+      "authority": "design-system-guidance",
+      "scope": "Responsive grid and alignment examples for Carbon products",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "apple-accessibility",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "title": "Accessibility HIG",
+      "authority": "platform-guidance",
+      "scope": "Apple platform-specific sizes, text scaling and input alternatives; official JSON content inspected",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "apple-layout",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/layout",
+      "title": "Layout",
+      "authority": "platform-guidance",
+      "scope": "Apple platform layout, adaptation and readable-content guidance",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "material-adaptive",
+      "url": "https://m3.material.io/foundations/layout/layout-overview/adaptive-design",
+      "title": "Adaptive design",
+      "authority": "platform-guidance",
+      "scope": "Material adaptive panes and input; breakpoint terminology changed May 2026",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "fluent-accessibility",
+      "url": "https://fluent2.microsoft.design/accessibility",
+      "title": "Accessibility",
+      "authority": "platform-guidance",
+      "scope": "Fluent design annotations and hierarchy; published baseline mentions WCAG 2.1",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "fluent-wait",
+      "url": "https://fluent2.microsoft.design/wait-ux",
+      "title": "Wait UX",
+      "authority": "platform-guidance",
+      "scope": "Microsoft productivity/AI waits; exclude brand animations and universal timing claims",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "fluent-motion",
+      "url": "https://fluent2.microsoft.design/motion",
+      "title": "Motion",
+      "authority": "platform-guidance",
+      "scope": "Functional motion, relationships, choreography, easing and accessibility in Fluent 2",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "baymard-checkout",
+      "url": "https://baymard.com/blog/current-state-of-checkout-ux",
+      "title": "Current state of checkout UX",
+      "authority": "domain-research",
+      "scope": "Consumer e-commerce checkout only; public findings, not proprietary paid research",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "checklist-design",
+      "url": "https://github.com/Checklist-Design/skills/tree/06cf19ebade68041f8e532365a094deeeacc4bf6",
+      "title": "Checklist Design skill 3.2.3",
+      "authority": "specialist-coverage",
+      "scope": "Optional matching checklist audit; absence may be appropriate",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "codex-mcp",
+      "url": "https://developers.openai.com/codex/mcp",
+      "authority": "Official product documentation",
+      "scope": "HTTP/OAuth setup, live tools, optional MCP configuration",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "a1-mcp",
+      "url": "https://www.a1.gallery/mcp",
+      "authority": "Official product documentation",
+      "scope": "Documented reference discovery, captures and measured metadata; not a design standard",
+      "verified_on": "2026-09-04"
+    },
+    {
+      "id": "a1-codex",
+      "url": "https://www.a1.gallery/mcp/codex",
+      "authority": "Official product documentation",
+      "scope": "Official opt-in Codex connection endpoint and account setup",
+      "verified_on": "2026-09-04"
+    }
+  ]
+}
