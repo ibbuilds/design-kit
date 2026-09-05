@@ -21,7 +21,7 @@ class ReferencePolicyTests(unittest.TestCase):
 
     def test_absent_preferences_uses_defaults_without_creating_files(self):
         result = policy.resolve(self.config)
-        self.assertEqual(len(result['sources']), 7)
+        self.assertEqual(len(result['sources']), 22)
         self.assertEqual(result['origin']['sources'], 'built-in')
         self.assertFalse(self.config.exists())
 
@@ -61,6 +61,42 @@ class ReferencePolicyTests(unittest.TestCase):
                 self.configure(sources=[{'name': 'source', 'url': url}])
                 with self.assertRaises(ValueError):
                     policy.resolve(self.config)
+
+    def test_authority_tiers_and_new_sources(self):
+        resolved=policy.resolve(self.config)
+        sources=resolved['sources']+resolved['specialist_sources']
+        tiers={t:{s['id'] for s in sources if s['tier']==t} for t in (1,2,3)}
+        self.assertEqual(tiers[1],{'recent','a1-gallery','siteinspire','hoverstates','refs-gallery','minimal-gallery','site-of-sites','awwwards'})
+        self.assertEqual(tiers[2],{'60fps','landing-love','design-spells','typewolf','fonts-in-use','brand-identity','bpando','rebrand-gallery','brand-new','loadmore','codrops','details','letterform'})
+        self.assertEqual(tiers[3],{'httpster','landingfolio'})
+        self.assertTrue(all(s['allowed_roles'] and s['inappropriate_roles'] for s in sources))
+        for domain in ('godly.design','godly.website'):
+            self.assertIsNone(policy.source_for('https://'+domain+'/',resolved,True))
+
+    def test_macro_specialist_and_spatial_routes(self):
+        resolved=policy.resolve(self.config)
+        self.assertTrue(all(s['tier']==1 for s in policy.select('highest quality SaaS landing macro art direction',policy=resolved)))
+        self.assertEqual([s['source'] for s in policy.select('button motion',policy=resolved)][:2],['60fps.design','Design Spells'])
+        self.assertEqual([s['source'] for s in policy.select('typography',policy=resolved)][:2],['Typewolf','Fonts In Use'])
+        self.assertTrue(all(s['tier']==1 for s in policy.select('spatial storytelling',policy=resolved)))
+        self.assertTrue(all(s['tier']==2 for s in policy.select('branding',policy=resolved)))
+        self.assertNotIn('Httpster',[s['source'] for s in policy.select('software editorial typography',policy=resolved)])
+        self.assertEqual(policy.select('software',scopes=['https://www.landingfolio.com/'],policy=resolved)[0]['tier'],3)
+
+    def test_legacy_source_preferences_retire_wrong_domains_without_rewriting(self):
+        self.configure(sources=[{'id':'godly-recent','name':'Godly / Recent','url':'https://recent.design/',
+            'aliases':['https://godly.design/','https://godly.website/']},
+            {'name':'Wrong Godly','url':'https://godly.design/'}],specialist_sources=[])
+        before=self.config.read_bytes();resolved=policy.resolve(self.config)
+        self.assertEqual(len(resolved['sources']),1)
+        self.assertEqual(resolved['sources'][0]['id'],'recent')
+        self.assertEqual(resolved['sources'][0]['aliases'],[])
+        self.assertEqual(before,self.config.read_bytes())
+
+    def test_invalid_tiers_and_role_metadata_fail_closed(self):
+        for extra in ({'tier':True},{'tier':0},{'tier':4},{'allowed_roles':[]},{'provenance_aliases':'bad'}):
+            self.configure(sources=[{'name':'Custom','url':'https://example.org/',**extra}])
+            with self.assertRaises(ValueError):policy.resolve(self.config)
 
 
 if __name__ == '__main__':

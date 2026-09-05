@@ -1,47 +1,35 @@
-# Behavioral evaluations
+# Development evaluations
 
-Install the exported plugin first. Run `python -B evals/run.py --output <new-external-directory>`
-or select probes with repeated `--case <id>`. Each launches a fresh read-only Codex
-invocation in an empty temporary directory, using the installed skill and normal
-user model settings. It withholds expected criteria and saves final responses plus
-actual tool events. No grading model or pass-by-keyword shortcut is included.
+The six families in `benchmarks.json` remain the primary design-quality gate. Use only
+the authorized test draft, preserve prior runs, and judge actual editable artifacts with
+fresh matching renders using [acceptance](../docs/acceptance.md). Schema tests do not
+establish visual quality, automatic activation or human acceptance.
 
-Review both response and events against every case's `must_demonstrate`. Check
-actual skill/resource reads, not only self-reported resource names. Flag unnecessary
-canon loading, false visual verification, ignored user constraints, invented writes
-or redundant specialists. Negative engineering cases should not load Design Director.
-These four probes cover only obvious activation, narrow scope, and missing-capability
-behavior. They are not design-quality evidence or a runtime security boundary.
+The legacy `run.py` launches separate Codex model sessions. Retain it for historical
+reproducibility, but do not run it under the current primary-session ownership rule.
+Do not transfer reference interpretation, design, critique or routing judgment to an
+evaluator. A user-owned new task can establish fresh automatic skill activation.
+Primary-session applications of `cases.json` and `asset-finish.json` must be labeled
+as such; they are neither independent nor blinded.
 
-`benchmarks.json` defines the primary development evidence: six representative live
-Figma design problems with explicit adequacy conditions, priority dimensions, and
-reference roles. Run them only in a user-authorized test context. Judge the actual
-editable artifacts and fresh matching renders using `docs/acceptance.md`; do not
-turn these development fixtures into a mandatory user workflow.
+For applicable cases, inspect actual outputs for scope preservation, relevant resource
+use, honest missing-tool behavior, and meaningful artifact quality. Observe skill reads
+when evaluating automatic activation; a self-reported route or wording match is not proof.
+Do not create a new benchmark framework, scorecard or mandatory runtime workflow.
 
-The live gallery test is separate: start with an actual representative brief and
-user-approved pool, inspect restrictions, retrieve gallery-provided images, record
-visual analysis and candidate/working-set decisions as relevant signal diminishes.
-Separate broad research, curated task references and the subset used per decision;
-reject attractive mismatches and do not stop merely because a few images exist.
-Reuse retained files and apply transferable principles in the test Figma draft. Preserve
-references after the test. Do not replace this with mock network success.
+Reference checks start with an actual design need and permitted pool. Inspect source
+restrictions, retrieve actual gallery material, and assess what each selected mechanism
+contributes. Distinguish working evidence from broad discovery. Reuse retained material,
+and stop when the decisions are supported. Failed access and weak matches do not establish
+saturation. A new acquisition is not useful intelligence until actually inspected.
 
-## Evaluate the evaluator when a live benchmark is authorized
+For a bounded visual-feedback check, inspect a test-owned editable example with material
+defects and deliberate non-defects. Check that critique identifies real barriers while
+preserving approved gradients, conventional type, purposeful density or other intentional
+choices. After a correction, inspect the same viewport/state again rather than repeat
+findings from stale evidence. Disclose that a primary-authored test is not blinded.
 
-In an explicitly authorized new Figma test draft, create a small editable example
-with seeded material defects and deliberate non-defects. Attach its actual render
-to a fresh read-only Codex evaluation using `codex exec --image <image>`. Ask for a
-concrete design review without revealing the defect list. Check that the review
-finds actual defects, preserves intentional choices and distinguishes taste from
-barriers. Keep the expected defect list outside the model's prompt.
-
-Suggested seeds: low contrast essential text, clipped long title, missing error
-recovery; controls all equally emphasized. Non-defects: human-approved violet gradient,
-one typeface, purposeful density. After correction, inspect the same viewport/state
-and ensure findings aren't repeated without evidence. No compulsory criticism quota.
-
-Record every failure/correction and untested dimension in `docs/validation.md`.
-For live Figma tests, use only the draft explicitly authorized by the user, never
-existing drafts/projects. Retain the Figma artifact. Cleanup unit tests use synthetic
-files under a test-owned temporary root and never real acquired references.
+Record failures, corrections and untested dimensions in [validation](../docs/validation.md).
+Retain authorized Figma artifacts and references. Cleanup tests use only synthetic,
+test-owned temporary directories. No reference cleanup or new project artifact is implied
+by validation.

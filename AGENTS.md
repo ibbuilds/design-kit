@@ -23,10 +23,12 @@ govern plugin development; installed workflow guidance belongs in the skills.
 - Preserve existing Figma projects/drafts. Live development tests may write only
   to the newly created `Test Plugin` draft; never delete it. Keep test file keys
   outside the reusable package.
-- Keep completed-work commits local while fewer than 50 are ahead of the upstream
-  branch. At 50 or more, push the pending commits together in one normal batch after
-  refreshing upstream state. Never push each commit individually or manufacture
-  commits to reach the threshold. Uncommitted files do not count as pending commits.
+- Batch Git work by accumulated changed files, not commit count. At roughly 50
+  changed files (including staged, new and deleted files), review the work, create
+  sensible cohesive commits, refresh upstream state and push them together. Do not
+  wait for 50 commits or manufacture commits to reach a threshold. Keep smaller
+  batches local unless the user requests a push; report a real blocker rather than
+  allowing a large completed batch to accumulate silently.
 - Keep customer, brand, product, and project knowledge out of the reusable
   package. Add no frontend production code or bundled reference images.
 - Retain acquired references outside repositories until an explicit user cleanup
