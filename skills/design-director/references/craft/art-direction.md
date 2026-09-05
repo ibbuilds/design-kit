@@ -1,60 +1,67 @@
-# Art direction and visual systems
+# Creative direction
 
-Use when a visual direction must be created, compared, strengthened, or reconciled
-with a brief. Art direction is a coherent response to content and audience, not a
-collection of fashionable effects.
+For a substantial creative direction, a meaningful alternative, or a weak governing
+idea. Keep this reasoning compact inside the primary session; it creates no report,
+persisted task schema or mandatory exploration. Approved human direction leads.
+These are aesthetic heuristics, synthesized 2026-09-05, not empirical quality rules.
 
-## Form a visual thesis
+## Task Design DNA: relationships worth carrying forward
 
-State one concrete relationship between subject, desired response, and visual means:
-for example, archival precision expressed through measured type, indexed imagery,
-and restrained annotation. The thesis must explain choices in composition, type,
-color, image behavior, material, and motion where used.
+Translate inspected references into the few consequential relationships this task
+needs. Separate **observed mechanism → intended adaptation → unresolved inference**.
+DNA is the bridge from evidence to composition, not a list of every visual attribute.
+Use enough precision to reconstruct the relationship, without false measurement:
 
-- Let the strongest content medium lead: product evidence, work imagery, data,
-  writing, people, or interaction. Avoid decoration that competes with the proof.
-- Build a recognizable grammar from a few recurring decisions: cropping, framing,
-  scale contrast, line/stroke behavior, surface treatment, color roles, typographic
-  relationships, and transitions. Repeat with variation rather than stamping a motif.
-- Choose color by hierarchy, semantics, image interaction, accessibility, and desired
-  atmosphere. Monochrome, saturated fields, gradients, texture, or muted palettes
-  are all valid when the brief and content support them.
-- Specify image role and treatment: evidence, subject, atmosphere, diagram, or texture;
-  preserve provenance and avoid pretending placeholder art is final content.
-- Seek originality in the relationship among content, structure, and expression.
-  Novel type or unusual layouts cannot rescue generic content architecture.
+- Visual mass and focal path: an image may own about two-thirds of the entry while
+  opposing display type occupies the quieter field and controls remain subordinate.
+- Depth: three overlapping planes may separate through occlusion and scale, with
+  shadow playing a minor role; another reference may depend entirely on flat contrast.
+- Rhythm: a dense comparison region may follow a quiet proposition, with consistent
+  column anchors across a deliberate change in scale. Uniform gaps would lose that pacing.
+- Identity: a recurring crop, typographic tension or line behavior may link sections;
+  color allocation, deliberate grid breaks and omissions establish where it appears.
 
-## Critique the system
+Include surface hierarchy, negative space, imagery/type relationship, density or a
+movement principle only when consequential and observed. Transfer relationships,
+never another project's identity or proprietary assets. Motion and mobile behavior
+need actual sequence/paired-state evidence; an inferred adaptation stays an inference.
 
-Turn an observation into an intervention, then verify it:
+Once the thesis or governing composition exists, ask which consequential relationship
+is still under-informed; **none** is valid. Task fit is not creative contribution:
+typography + software + composition labels may leave the chosen product framing without
+evidence. Search that relationship through [visual memory](../intelligence.md), including
+cross-domain mechanisms when useful. Several references can repeat one lesson; one can
+teach several. No role checklist or source count establishes creative coverage.
 
-| Observation / diagnosis | Intervention and visual check |
-|---|---|
-| Removing decoration leaves an interchangeable template | Rebuild around the content's strongest visual material; compare the primary silhouette and focal path before expanding. |
-| Imagery is essential but a shape approximation carries the hero | Obtain the real usable/generated asset, compose its crop with type, then inspect at the intended viewport. |
-| Each section uses a different aesthetic device | Return to the art-direction lock; remove or reinterpret devices that do not share its grammar, then inspect transitions. |
-| A reference supplied only an adjective | Return to its pixels; name mass, alignment, crop, type relationship or timing before making another design decision. |
+## Visual thesis: decide what this work will do
 
-Check whether the first viewport, repeated modules, detail surfaces, empty regions,
-and ending/next action feel like one authored world. Distinguish a purposeful exception
-from drift. Name what would become generic if removed and what would remain coherent
-if effects failed. Do not enforce bans on fonts, gradients, cards, neutral palettes,
-rounding, or familiar patterns; reject them only when they weaken this task.
+Convert DNA + product truth into a brief causal statement: what the user should notice
+or feel, which visual material creates it, and how the other elements support it.
+“Premium,” “cinematic” and “editorial” leave those decisions unresolved.
 
-References supply evidence for particular decisions. Transfer principles and
-relationships, not another project's identity, imagery, layout, or proprietary assets.
+Decide the dominant medium, emotional focal point and meaningful scale tension. Explain
+where depth comes from and what stays flat, how type behaves relative to imagery, which
+color/surface roles organize attention, and which devices would dilute this product's
+grammar. A coherent grammar repeats with variation across sections, states and assets.
+Choose what the design needs before what is easiest to construct; native editability
+does not require a rectangle-led visual language.
 
-## Distinguish simplicity from underdesign
+For high ambition, what relationship or behavior makes this work recognizably its own?
+The **signature** can be quiet: a content-led framing rule, typographic tension or
+meaningful reveal. Strengthen an earned relationship, not an arbitrary showstopper.
+A static composition can be the signature. When motion matters,
+use [actual choreography evidence](interaction-motion.md), with touch/reduced-motion equivalents.
 
-Intentional simplicity has a content-specific hierarchy, controlled proportions,
-purposeful type and image behavior, and a recognizable rhythm even after decorative
-effects are removed. Underdesign relies on a familiar centered hero, interchangeable
-cards, uniform spacing, default typography, muted color or empty space without a
-brief-led reason. Decorative complexity is the same failure with more effects.
+## Diagnose weak direction before decorating
 
-When the result feels generic, identify which content relationship should make this
-artifact unlike a template. Change the governing composition, type relationship,
-image role or pacing before adding gradients, pills, texture or novelty. Verify that
-the major hierarchy and progression remain specific and coherent with color and
-effects temporarily ignored; preserve familiar conventions that genuinely help the
-task.
+Compare the rendered governing surface with its thesis. If the asset, hierarchy or
+focal relationship does not deliver, change that cause before expanding or polishing.
+If every section introduces a different device, reconcile it with the same grammar.
+If a reference contributed only an adjective, reopen the relevant pixels.
+
+Intentional simplicity has specific proportions, hierarchy and rhythm; underdesign
+leaves these choices at familiar defaults. Decorative complexity can hide the same
+unresolved decisions. Identify what content relationship should make this work specific,
+then strengthen it. Preserve useful conventions and user choices; no font, palette,
+card, gradient or effect is categorically forbidden. Use [finish](finish.md) when the
+direction works but its expression remains incomplete.

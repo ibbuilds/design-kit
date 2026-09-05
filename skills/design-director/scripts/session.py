@@ -95,9 +95,17 @@ def load(root):
 
 def save(root, data):
     ordinary(root / MARKER)
-    # All operations are local and sequential; never launch concurrent writers.
-    with (root / MARKER).open('w', encoding='utf-8') as handle:
-        json.dump(data, handle, indent=2)
+    # Sequential writers only. An interrupted save must leave the last receipt valid.
+    fd, scratch = tempfile.mkstemp(prefix='.receipt-', dir=root)
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8') as handle:
+            json.dump(data, handle, indent=2)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(scratch, root / MARKER)
+    finally:
+        if os.path.exists(scratch):
+            os.unlink(scratch)
 
 
 def approve(root, scope):
@@ -239,6 +247,8 @@ def list_sessions():
     ordinary(base, directory=True)
     results = []
     for candidate in sorted(base.iterdir()):
+        if not candidate.name.startswith('design-kit-session-'):
+            continue
         try:
             root, data = load(candidate)
             results.append({'session': str(root), 'scopes': data['scopes'],

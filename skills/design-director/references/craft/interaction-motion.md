@@ -13,12 +13,25 @@ part of the request or a concrete issue. A still image cannot establish unseen m
 - Account for keyboard, touch, pointer, focus, disabled, permission, undo, and recovery
   only where the task requires them. Do not annotate a universe of hypothetical states.
 
+## Surface depth
+
+For shadow or dimensionality work, judge contact, elevation and light direction against
+the current material system. A tight contact shadow can anchor a surface while a softer
+cast shadow suggests lift; edge highlights or inset shading imply different material.
+Change only the cues needed for the requested effect, then inspect at actual control
+size against nearby surfaces. Preserve label contrast and visible focus. Pressed,
+hovered and disabled cues must remain distinguishable when those states are in scope.
+These are aesthetic heuristics, not a requirement for raised buttons or multiple shadows.
+
 ## Motion
 
 Use an actual permitted motion reference when choreography matters. Extract trigger,
 spatial anchor, sequence and perceptual purpose; a screenshot or motion adjective
 cannot supply those decisions. Keep different reference mechanisms distinct and
 synthesize them into one coherent behavior rather than unrelated entrance effects.
+For animated GIF/WebP or video, inspect playback or representative start-to-end frames;
+a first frame supports static claims only. Sparse samples do not establish exact easing
+or timing. Preserve the observed sequence and limitations when saving motion intelligence.
 
 - Give motion a job: explain spatial continuity, reveal causality, direct attention,
   confirm change, preserve context, or express identity without impairing the task.

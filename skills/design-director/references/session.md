@@ -9,37 +9,21 @@ Use `scripts/session.py` relative to this skill with Python 3.10+. It performs n
 network requests. Storage uses `%LOCALAPPDATA%/design-kit/references` on Windows and
 `${XDG_DATA_HOME:-~/.local/share}/design-kit/references` elsewhere. This is ordinary
 user-owned reference data, separate from plugin installation and the host repository.
-There is no background process, expiry, automatic pruning or database. Check the
+There is no background process, expiry or automatic pruning. A rebuildable SQLite search cache lives beside receipts. Check the
 resolved location is outside the working repository; do not use a redirected data
 directory inside it. Run the helper sequentially, not with concurrent writers.
 
 ## Search the persistent library
 
-Session directories are storage partitions, not task boundaries. Existing schema-1
-receipts remain valid; no migration or duplicate index file is required.
+Use [reference intelligence](intelligence.md) for source-aware ranked retrieval,
+visual inspection, analysis and acquisition. Existing schema-1 receipts and assets
+remain authoritative and are never rewritten merely to build the SQLite index.
 
-```sh
-python -B <skill>/scripts/session.py search --query "hospitality horizon" --limit 12
-python -B <skill>/scripts/session.py search --scope https://www.a1.gallery --offset 12 --limit 12
-```
-
-Search returns exact local image paths and provenance, using title, tags, description
-and URLs across all retained sessions. All query terms must match; use a shorter
-query or inspect other pages before declaring a coverage gap. Scope is one source
-filter, not an authority resolver; apply all current restrictions before viewing.
-Open returned images through available image tools. Results are metadata matches,
-not proof of visual inspection. Old unannotated captures remain searchable by URL.
-
-After inspecting a capture, enrich its receipt with compact, reusable observations:
-
-```sh
-python -B <skill>/scripts/session.py annotate --session <path> --file <asset-name> --title "Project / page" --tag hospitality --tag architecture --description "Wide image mass; display type occupies low-detail sky; compact secondary copy."
-```
-
-Use neutral visual vocabulary, not today's brief, an active-set decision or project
-memory. The image is unchanged; metadata stays with existing provenance. No database,
-daemon, expiry or capacity-based pruning. The library can grow independently of the
-small visual subset used for a particular decision.
+`session.py search` and `annotate` remain legacy compatibility commands: simple
+metadata matching and unverified annotations, not the normal intelligence path.
+They do not enforce source acquisition modes. The low-level import commands below
+are for already-authorized provider/user material; they never grant source approval
+or permission to bypass `acquire.py` mode checks.
 
 ## Acquire and reuse
 

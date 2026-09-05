@@ -63,3 +63,23 @@ complexity, not because a simple app could contain a metric card.
   and accessible data alternative; tooltip-only values are insufficient.
 - **Source / scope:** `carbon-charts`, `wcag22`; visualization selection and access,
   not endorsement of a particular metric, causal interpretation or business model.
+
+## Live operations and command consequences
+
+- **Principle / problem:** Distinguish observed state, timestamp/freshness, requested command and confirmed execution.
+- **Use:** Live monitoring, alerts and consequential command surfaces.
+- **Do not use:** Stale/missing readings shown as healthy zero, or silently reordering a target under the operator.
+- **Alternatives:** Stable selection, freshness indicators, explicit command scope/eligibility and partial-failure results.
+- **Exceptions:** Acknowledgment is not resolution. Alarm thresholds, escalation and safe operating procedures need actual domain evidence; matching screenshots cannot certify safety.
+- **Accessibility:** Prioritize meaningful status changes without constant announcements; preserve focus and color-independent urgency.
+- **Source / scope:** Original heuristic synthesis from `nng-complex`, `nng-heuristics` and state/recovery guidance; verified 2026-09-05. Preserve visual ambition through task-specific hierarchy/density/type instead of importing enterprise branding.
+
+## Analytical structures and loaded selection
+
+- **Principle / problem:** Choose a structure from whether users compare cells, work on complete records, aggregate measures or traverse a true hierarchy.
+- **Use:** Large operational datasets, analytical comparison and aggregation.
+- **Do not use:** Grouping as a substitute for parent/child data, or editable aggregate totals with no defined way to allocate the result to underlying records.
+- **Alternatives:** Responsive records for line-item tasks, analytical tables for cell/aggregate work, tree structures for hierarchy, chart-to-detail for overview. Smartphone work may need a different presentation, not a scaled desktop grid.
+- **Exceptions:** Fiori's row thresholds and component performance are implementation-specific, not universal limits. Distinguish loaded rows from all matching results when selecting across pages/ranges; state real limits rather than silently excluding unloaded items.
+- **Accessibility:** Compact pointer-oriented density may fail touch use. Provide visible keyboard-operable alternatives to drag/context-menu actions, stable column widths and meaningful units; do not sum incompatible currencies/units into a misleading total.
+- **Source / scope:** `sap-analytical`, Fiori 1.151 design-system pattern, browser verified 2026-09-05 after HTTP client 403. Transfer the behavioral distinctions; its styling, exact density values, component APIs and every local recommendation are not universal rules.

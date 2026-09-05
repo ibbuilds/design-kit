@@ -9,7 +9,7 @@
       "title": "Native plugin packaging",
       "authority": "official-technical",
       "scope": "Codex plugin manifest, components, marketplaces",
-      "verified_on": "2026-09-04"
+      "verified_on": "2026-09-05"
     },
     {
       "id": "codex-skills",
@@ -17,7 +17,7 @@
       "title": "Codex skills",
       "authority": "official-technical",
       "scope": "Progressive disclosure, metadata and tool dependencies",
-      "verified_on": "2026-09-04"
+      "verified_on": "2026-09-05"
     },
     {
       "id": "codex-agents",
@@ -89,7 +89,7 @@
       "title": "Complex application design",
       "authority": "research-synthesis",
       "scope": "Expert and data-intensive application workflows",
-      "verified_on": "2026-09-04"
+      "verified_on": "2026-09-05"
     },
     {
       "id": "wcag22",
@@ -97,7 +97,7 @@
       "title": "Web Content Accessibility Guidelines 2.2",
       "authority": "normative-standard",
       "scope": "Web accessibility criteria; levels and exceptions matter",
-      "verified_on": "2026-09-04"
+      "verified_on": "2026-09-05"
     },
     {
       "id": "apg-patterns",
@@ -105,7 +105,7 @@
       "title": "ARIA Authoring Practices patterns",
       "authority": "informative-standard-guidance",
       "scope": "Accessible web widget behavior; not normative conformance by itself",
-      "verified_on": "2026-09-04"
+      "verified_on": "2026-09-05"
     },
     {
       "id": "apg-dialog",
@@ -177,7 +177,7 @@
       "title": "Data table usage",
       "authority": "design-system-guidance",
       "scope": "Enterprise records, selection and batch action",
-      "verified_on": "2026-09-04"
+      "verified_on": "2026-09-05"
     },
     {
       "id": "carbon-filter",
@@ -249,7 +249,7 @@
       "title": "Adaptive design",
       "authority": "platform-guidance",
       "scope": "Material adaptive panes and input; breakpoint terminology changed May 2026",
-      "verified_on": "2026-09-04"
+      "verified_on": "2026-09-05"
     },
     {
       "id": "fluent-accessibility",
@@ -257,7 +257,7 @@
       "title": "Accessibility",
       "authority": "platform-guidance",
       "scope": "Fluent design annotations and hierarchy; published baseline mentions WCAG 2.1",
-      "verified_on": "2026-09-04"
+      "verified_on": "2026-09-05"
     },
     {
       "id": "fluent-wait",
@@ -281,7 +281,7 @@
       "title": "Current state of checkout UX",
       "authority": "domain-research",
       "scope": "Consumer e-commerce checkout only; public findings, not proprietary paid research",
-      "verified_on": "2026-09-04"
+      "verified_on": "2026-09-05"
     },
     {
       "id": "checklist-design",
@@ -311,6 +311,109 @@
       "authority": "Official product documentation",
       "scope": "Official opt-in Codex connection endpoint and account setup",
       "verified_on": "2026-09-04"
+    },
+    {
+      "id": "wai-aria",
+      "url": "https://www.w3.org/TR/wai-aria-1.2/",
+      "authority": "normative-standard",
+      "scope": "Roles, states and properties; does not replace host-language semantics.",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "uswds-forms",
+      "url": "https://designsystem.digital.gov/patterns/complete-a-complex-form/",
+      "authority": "design-system-guidance",
+      "scope": "Complex service forms: expectations, humane progression, retained submission record.",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "uswds-language",
+      "url": "https://designsystem.digital.gov/patterns/select-a-language/",
+      "authority": "design-system-guidance",
+      "scope": "Language selection for public services; targeted subpatterns depend on supported languages.",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "gov-tasks",
+      "url": "https://design-system.service.gov.uk/patterns/complete-multiple-tasks/",
+      "authority": "design-system-guidance",
+      "scope": "Nonlinear multi-task services, completion status and dependencies.",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "spectrum-actions",
+      "url": "https://spectrum.adobe.com/page/action-group/",
+      "authority": "design-system-guidance",
+      "scope": "Action versus toggle, single/multiple/empty selection and overflow; no mandated Spectrum style.",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "spectrum2",
+      "url": "https://s2.spectrum.adobe.com/",
+      "authority": "design-system-guidance",
+      "scope": "Spectrum 2 preview direction and adaptability, not a completed universal component specification.",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "atlassian-accessibility",
+      "url": "https://atlassian.design/foundations/accessibility",
+      "authority": "design-system-guidance",
+      "scope": "End-to-end accessible collaborative product experiences; private employee resources are separate.",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "sap-analytical",
+      "url": "https://www.sap.com/design-system/fiori-design-web/v1-151/ui-elements/analytical-table-alv",
+      "authority": "design-system-guidance",
+      "scope": "Fiori 1.151 analytical table: cell comparison, aggregation, loaded selection, input density and smartphone adaptation. Browser verified after HTTP client 403.",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "baymard-product-lists",
+      "url": "https://baymard.com/research/ecommerce-product-lists",
+      "authority": "domain-research",
+      "scope": "Public product-list, filtering and sorting research overview; normal browser access works after HTTP client 403. Paid reports not read.",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "w3c-bidi-structure",
+      "url": "https://www.w3.org/International/questions/qa-html-dir",
+      "title": "Structural markup and right-to-left text",
+      "authority": "informative-guidance",
+      "scope": "Base direction, logical layout and mixed-direction input; not all browser compatibility claims reverified",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "w3c-bidi-inline",
+      "url": "https://www.w3.org/International/articles/inline-bidi-markup/",
+      "title": "Inline markup and bidirectional text",
+      "authority": "informative-guidance",
+      "scope": "Isolation of names, URLs, numbers and punctuation; language differs from direction",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "w3c-timezone",
+      "url": "https://www.w3.org/TR/timezone/",
+      "title": "Working with Time and Timezones",
+      "authority": "informative-draft",
+      "scope": "Group Draft Note 2025-07-26, work in progress, not a W3C Recommendation; wall time, zone versus offset, recurrence and floating dates",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "apple-undo",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/undo-and-redo",
+      "title": "Undo and redo",
+      "authority": "platform-guidance",
+      "scope": "Predictable named operations, visible results and meaningful grouped undo; platform-specific shortcuts are not universal",
+      "verified_on": "2026-09-05"
+    },
+    {
+      "id": "apple-rtl",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/right-to-left",
+      "title": "Right to left",
+      "authority": "platform-guidance",
+      "scope": "Directional navigation/progress versus physical direction; preserve numerals, logos and photographic meaning",
+      "verified_on": "2026-09-05"
     }
   ]
 }

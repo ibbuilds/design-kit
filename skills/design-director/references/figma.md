@@ -1,60 +1,46 @@
 # Figma execution
 
-Keep the existing healthy local Desktop Plugin API bridge as primary transport.
-Official Figma MCP is optional fallback. Design Kit supplies intelligence; the bridge
-supplies transport. Discover actual available tools/schemas, never invent capabilities,
-hard-code hosted quotas, silently install/change connections or substitute a model.
-If tools are missing, restore/explain access in the primary session.
+Use the healthy existing local Desktop Plugin API bridge; official MCP is optional
+fallback. Discover current schemas and follow applicable integration prerequisites.
+Do not install/change transport, launch duplicate listeners or close shared processes.
 
-## Target and bounded writes
+## Target and construction
 
-Confirm the authorized file, page and target subtree before writes; pin the file when
-the available bridge supports it. Inspect relevant current pixels, structure, variables
-and components. Preserve human edits and unrelated nodes. A new file requires explicit
-authorization; never delete files. Reuse known unchanged context and inspect changed
-regions before continuing.
+Establish the authorized file/page/subtree; pin the file when supported. Inspect relevant
+current pixels, structure, variables and components. Reconcile human edits with remembered
+decisions on resumption; reuse unchanged context. Distinguish local instance edits from
+shared component/variable changes and inspect affected reuse before changing a shared source.
 
-Create native editable Figma content. Load fonts before text mutation; append children
-before assigning dependent layout sizing. Use Auto Layout inside content-driven regions,
-repeated rows, controls and navigation; root-only stacking is not a substitute for
-responsive internals. Use components where repetition/states justify them, not a
-mandatory library. Absolute positioning is appropriate for intentional spatial
-composition, imagery and data marks. Name meaningful layers.
+New substantial work without a specified destination uses a dedicated page in the clearly
+authorized active file: read [placement](figma-create.md) for naming and iteration conventions.
+Explicit edits stay in their target. Resolve file ambiguity from context/tools first,
+asking only if it remains. New files require explicit authorization; never delete files.
 
-Group related changes into bounded writes; resolve the primary surface before broad
-expansion as described in [creative runtime](process.md). An execution error may follow
-partial mutations: inspect live state before retrying, avoid duplicate artifacts and
-repair only known in-scope changes. Respect dynamic-page API requirements when exposed;
-use current schemas and official skill prerequisites for the chosen integration.
+Keep UI/text native and editable. Load fonts before text mutation; append children before
+setting dependent layout sizing. Use Auto Layout within content-driven regions, rows and
+controls; root stacking alone is insufficient. For substantial new work, use the
+[foundation system](design-foundations.md#figma-system-objects) and semantic components,
+including entities used once. Screens consume instances and bound system values;
+intentional spatial composition can use absolute positioning.
+
+Bound writes and inspect partial mutations before retrying. Respect dynamic-page APIs.
+For substantial content-driven work, inspect representative long content/resizing for
+collisions, clipping and hierarchy. [Creation](process.md) covers expansion and responsive
+recomposition; scaling desktop alone is insufficient.
 
 ## Fresh visual evidence
 
-A meaningful write invalidates earlier renders for the changed target. Obtain a fresh
-current-runtime render of the same file/node/state and inspect it before claiming the
-change worked. Current node data alone cannot certify pixels. Use region-level images
-at readable scale: a downscaled full-page export cannot prove small text or mobile fixes.
+Meaningful changes invalidate earlier renders of the affected region. Actually inspect a
+fresh same-file/node/state render at readable scale; successful writes or geometry are
+not pixel verification. If export caps shrink a tall page, capture relevant child sections
+or details; requesting greater scale may still be capped. Check neighboring regressions
+and relevant states, then keep or revise changes from evidence.
 
-Inspect → diagnose → bounded write → fresh render → compare. Check material defects,
-nearby regressions, relevant states and construction. For substantial content-driven
-work, verify a representative long-content or resize condition within authorized nodes;
-do not alter unrelated human artifacts as a test. Keep/revert changes from evidence,
-not from successful tool responses.
+If writing/rendering is unavailable, do useful scoped reasoning and report the exact gap
+without claiming edits or verification. Deliver the editable Figma target and limitations.
+Ordinary renders use managed temporary storage; preserve exports and retained references.
+No QA board or process artifact is implied.
 
-If no available transport can write or render, do useful scoped reasoning and report
-the exact limitation. Do not claim visual verification or switch to frontend delivery.
-Reuse a healthy bridge process; don't launch duplicate listeners. Close only processes
-started solely for a bounded task, never a shared healthy transport. No process manager.
-
-## Output
-
-The editable Figma page/frame is the deliverable. Keep ordinary renders in tool memory
-when possible; if a file is necessary, use managed temporary storage outside the repo
-and remove only Design Kit-created transient copies when no longer needed. User exports,
-explicit retained benchmark evidence and reference-library assets have different
-lifecycles; never treat them as temporary screenshots. No QA boards or PNG finals by default.
-
-Transport baseline verified 2026-09-04; official Plugin API documentation rechecked
-2026-09-05: https://developers.figma.com/docs/plugins/api/figma/.
-Source records: `figma-console-local`, `figma-remote`, `figma-tools`, `figma-write`
-and `codex-mcp` in [sources.json](sources.json). These are provenance, not a guarantee
-that a tool is present in the current session.
+Official API rechecked 2026-09-05: https://developers.figma.com/docs/plugins/api/figma/.
+Transport provenance: `figma-console-local`, `figma-remote`, `figma-tools`, `figma-write`
+and `codex-mcp` in [sources.json](sources.json); availability must be observed.

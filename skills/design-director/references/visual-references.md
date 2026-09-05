@@ -1,68 +1,73 @@
-# Reference library and visual intelligence
+# Visual reference judgment and scope
 
-Use references when requested or materially useful. No-reference instructions prohibit
-acquisition and use, including A1/aggregate research. Research is not a mandatory stage.
-
-## Authority and retrieval order
-
-Current explicit direction wins. Retrieve in this order: current user references →
+Use references when requested or materially useful. Current user references →
 project/user references → configured preferences → permitted persistent library →
-new discovery for genuine coverage gaps. Current source restrictions apply to retained
-material too; storage is not permission to reuse against an exclusion.
+discovery for genuine gaps. Current restrictions apply to retained material too.
+No-reference instructions prohibit use and acquisition, including aggregate/A1 research.
 
-- User references are primary. If sufficient, do not supplement from lower tiers.
-- If materially insufficient, ask once: "I can work only from your references, or
-  supplement them with Design Kit's default curated sources. Which do you prefer?"
-  Honor that answer throughout the task; while unanswered stay within their material.
-- If the user supplied none, use the configured pool automatically when helpful,
-  reusing permitted library material first. Do not ask the supplementation question.
-- “Only these,” “no external references,” and “no defaults” override fallback paths.
-  Do not query unapproved sources through A1 and filter results afterward.
+Sufficient user material needs no supplement. If materially insufficient and supplementation
+is not already authorized, ask once whether to remain within it or supplement from approved
+sources; stay within it until answered. If none was supplied, use the configured pool automatically when helpful.
+“Only these,” “no external references,” and “no defaults” override fallback paths.
+Never query unapproved sources and filter afterward.
 
-Read `python -B <skill>/scripts/reference_policy.py` when policy matters. Built-in
-URLs are in [reference-sources.json](reference-sources.json): Godly, Siteinspire Selected,
-Minimal Gallery, Httpster, Site of Sites, A1 Gallery and Refs.Gallery. Rebrand Gallery
-is conditional on identity/visual-system needs. No source is immutable aesthetic doctrine.
+Use [compact retrieval](intelligence.md) directly; do not read source registries to
+manually filter them. `reference_policy.py --query "specific visual decision"` resolves
+at most four approved source entries and their acquisition/access modes when needed.
+All 23 source identities, tiers and editorial distinctions live in
+[reference-sources.json](reference-sources.json). Approval is separate from retention
+permission; easier downloads do not make better references. New sources need user approval.
 
-User preferences: Windows `%LOCALAPPDATA%/design-kit/preferences.json`; elsewhere
-`${XDG_CONFIG_HOME:-~/.config}/design-kit/preferences.json`. This is a plugin data
-convention, not a Codex configuration key. Edit only when the user requests configuration.
-Version 1 accepts `sources` and `specialist_sources` arrays of `{name, url, when?}`.
-Present arrays replace that pool; omitted arrays inherit; `[]` disables a pool.
-Malformed/unreadable preferences never silently broaden to defaults. Task overrides
-and supplementation choices stay in the conversation, not project files.
+For discovery/retention read [acquisition](acquisition.md). Use the gallery's own
+material; an observed CDN URL permits only that item, not CDN discovery or outbound
+browsing. Ads are not curated references. Successful HTTP/robots access does not grant
+a copying license. Browser inspection is no loophole for restricted image retention.
 
-## Library ingestion is broader than task curation
+Preferences live at `%LOCALAPPDATA%/design-kit/preferences.json` (Windows), otherwise
+`${XDG_CONFIG_HOME:-~/.config}/design-kit/preferences.json`. Change only when requested.
+Version-1 `sources` and `specialist_sources` arrays replace their respective pools;
+omitted pools inherit, `[]` disables. Malformed/unreadable preferences fail closed.
+Task restrictions remain in the conversation, not project configuration.
 
-Approved sources → broad discovery → persist valid references → lightweight index →
-reuse across tasks. Keep every newly discovered accessible, valid design capture from
-permitted sources unless truly duplicate, broken/inaccessible or non-design content.
-Today's relevance is NOT an ingestion filter. A library can grow to hundreds or
-thousands over time without a quota, expiry, whole-gallery scrape or vector database.
-Search results without obtainable visual material are not acquired visual references.
+## Authority serves the decision
 
-Use [session.py storage and index](session.md). Preserve existing sessions and A1
-captures; no migration or re-download is required. Receipts are the lightweight index.
-Search title, tags, reusable visual observations and provenance; open the returned
-files. Metadata only retrieves candidates—it never substitutes for visual inspection.
-Add compact neutral descriptions after viewing; don't store task briefs or project memory.
+User policy revised 2026-09-05; these are taste priorities, not empirical quality scores
+or visible workflow phases. The registry is a candidate filter, never automatic admission.
 
-Prefer gallery-supplied images/captures. Browser screenshots are a fallback when no
-usable capture exists and access permits. Obtain exact asset URLs from observed pages
-or authorized provider results. Record page and asset provenance; CDN access authorizes
-that asset, not discovery across its host. Respect access restrictions and terms,
-recheck redirects, never bypass access controls or silently follow unapproved sites.
-[A1](a1.md) is optional acceleration, not source authority or a taste engine.
-Use available tools; do not scrape entire galleries.
+- **Tier 1 — core elite:** Recent (canonical `recent.design`, former Godly), A1 Gallery,
+  Siteinspire **Selected only**, HOVERSTAT.ES, Refs.Gallery, Minimal Gallery, Site of Sites,
+  Awwwards. Start substantial expressive macro direction here without user references.
+- **Tier 2 — elite specialists:** maximum authority **within their specialty**, including
+  over Tier 1. 60fps for product motion; Landing Love for page motion/storytelling;
+  Design Spells for microcraft; Typewolf and Fonts In Use **Staff Picks** for typography;
+  The Brand Identity, BP&O, Rebrand Gallery and Brand New **Reviewed** for identity;
+  loadmo.re for experimental mobile; Codrops for creative web/3D/interaction; Details.so
+  for sections, product framing and finish; Letterform Archive for graphic/type foundations.
+  Consult only for consequential unresolved dimensions; no mandatory source checklist.
+- **Tier 3 — variable support:** Landingfolio and Httpster. Use for a missing surface or
+  specific mechanism, not default art direction while suitable higher-tier evidence exists.
+  A selected item must visibly meet the strongest Tier 1 standard **for its assigned role**.
+  Httpster's typographic/minimal/brutalist-editorial, often flat bias needs particular care:
+  a software/SaaS/editorial match cannot justify governing the visual direction.
+
+Both old Godly domains are inactive for discovery. Only `godly.website` remains a
+provenance-only mapping for historical retained records; `godly.design` is not approved.
+Access limitations never lower a source's user-assigned tier or waive the item gate.
 
 ## Task curation and mechanism extraction
 
 Open actual screenshots/pages/sections at readable resolution in the primary session.
-For each task candidate evaluate surface/task similarity, information/content similarity,
-interaction/structural relevance, visual-direction fit and exact transferable decisions.
-Gallery prestige and broad tags such as minimal/light/showcase are insufficient.
-Ask: **What specific problem in this design does this reference help solve?**
-Reject weak answers from the active task set, while retaining the library image.
+Before any consequential influence, judge **quality for the task's ambition, exact decision
+role, evidence adequacy, scope, and new contribution to the set**. A cleaner settings panel
+needs a proportionate threshold; a maximum-quality landing needs exceptional governing
+evidence. A Tier 1 item still can fail. Keep this internal, without scores or ceremonies.
+Retained/useful is distinct from elite-eligible: reject from this task, never delete data.
+
+Inspect every selected sibling shot independently. An excellent hero does not qualify its
+footer. Distinguish full-site/page, hero, section, component, detail, motion sequence,
+typography, brand and mobile evidence. A1 `/section/…` and Details clips govern only what
+they visibly demonstrate: feature pairing does not establish hero direction, full-page
+pacing, materiality, depth or microcraft. Broader authority requires broader actual evidence.
 
 Reason: reference → what exactly works → why → relevant mechanism → original synthesis.
 For a selected reference, identify the visible region, mechanism, task benefit,
@@ -76,26 +81,38 @@ adaptation, what must not transfer, and unobserved behavior. Useful observations
 - stable row alignment preserves dense comparison; disclosure isolates secondary detail.
 
 Approximate measurements are observations, not universal rules. A still cannot establish
-hover, keyboard behavior, motion or full experience architecture. Inspect actual adjacent
+hover, keyboard behavior, motion or full experience architecture. For GIF, animated WebP,
+video or animated capture, prefer actual playback; otherwise inspect representative frames
+across start, progression, transition and end, and repetition/trigger where available.
+One frame is **static evidence only**, even when the file or source is labeled animated.
+Do not claim easing/physical feel from sparse samples or invent exact timings. Inspect actual adjacent
 pages/states before making those claims. Cross-domain mechanisms may transfer narrowly;
 they do not make a stylistic neighbor a whole-surface benchmark. Never clone identity,
 copy or proprietary imagery; reference access does not license production reuse.
 
-## Broad exploration, focused context
+## Retrieve until decisions are supported
 
-Research as many candidates as materially useful, curate a rich relevant task set,
-then inspect the subset for the current decision. Substantial work may warrant roughly
-20–80+ candidates, 10–25 task references and 3–8 for one decision. These are neither
-quotas nor caps; don't supplement sufficient user references to hit counts, and don't
-stop at three simply because context is limited. Reuse library coverage before discovery.
+Curate complementary roles and projects rather than repeated stylistic neighbors.
+Seek the strongest mechanism across domains: architecture can teach spatial layering,
+fashion subject framing, editorial typography/pacing, cultural sites navigation, software
+credible product UI. Adapt it to this product. Same-industry similarity is secondary.
+Coverage concerns consequential visual dimensions, not categories or reference count:
+three competent SaaS examples can still leave imagery, spatial storytelling, product
+presentation, motion, materiality, identity or mobile expression unsupported. Detect this
+before letting the set govern high-ambition work; retrieve the missing mechanism only.
+Different projects can teach the same mechanism. For high ambition, identify the
+actual unanswered composition, semantic-asset or finish question before supplementing;
+lighting evidence alone cannot establish subject recognition or interaction quality.
+Begin with a small relevant set; expand only for unresolved design decisions. Neither
+a fixed quota nor an arbitrary cap defines sufficient visual intelligence. Stop when
+important decisions have credible evidence and more candidates mostly repeat it.
+Poor matches/access failures are not saturation. A later gap warrants a targeted
+query, not restarting research. Rejected task candidates stay retained.
 
-Stop at relevance saturation: important decisions have credible visual evidence and
-additional candidates mostly repeat useful signal. Repeated poor matches or access
-failures are not saturation. When a later gap appears, search specifically for it;
-do not restart the research. A rejected task reference stays retained. Revisit decisions
-based on it without invalidating unrelated work.
-
-Feed selected mechanisms into the [art-direction lock](process.md). Compare current
-Figma regions with relevant reference regions at comparable scale/density during
-[refinement](quality.md). Keep reasoning internal unless asked. Only explicit user
-cleanup removes library data; completion, approval, session end or uninstall never do.
+For substantial creative work, synthesize only consequential relationships into internal
+[Task Design DNA and a visual thesis](craft/art-direction.md). Persistent analyses remain
+transferable observations; task-specific adaptations stay in the session.
+Compare relevant Figma and
+reference regions at equivalent scale/density during [refinement](quality.md).
+Keep reasoning internal unless requested. Optional [specialist guidance](specialists.md)
+serves a distinct unresolved question; no silent installation or extra agent.

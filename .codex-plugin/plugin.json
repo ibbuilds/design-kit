@@ -1,7 +1,7 @@
 {
   "name": "design-kit",
-  "version": "0.3.4",
-  "description": "Project-agnostic UI/UX design intelligence for adequate, high-quality editable Figma experiences.",
+  "version": "0.6.1",
+  "description": "Project-agnostic UI/UX, visual and creative intelligence for exceptional editable Figma design.",
   "author": {
     "name": "Local developer"
   },
@@ -9,10 +9,12 @@
   "interface": {
     "displayName": "Design Kit",
     "shortDescription": "Design and refine exceptional UI/UX in Figma.",
-    "longDescription": "A model-agnostic design director with a reusable visual-reference library, concrete mechanism extraction, art direction, asset preparation, staged native Figma creation and close visual refinement. The primary Codex session owns the design; UX and craft knowledge support the current request.",
+    "longDescription": "A model-agnostic design director combining project truth, scoped UX knowledge, persistent visual references, creative and asset direction, and precise craft. The primary Codex session designs in Figma and improves the actual output through visual feedback; intelligence loads only when useful.",
     "developerName": "Local developer",
     "category": "Productivity",
     "capabilities": [],
-    "defaultPrompt": ["Use $design-director to design and refine an editable Figma experience with me."]
+    "defaultPrompt": [
+      "Use $design-director to design and refine an editable Figma experience with me."
+    ]
   }
 }

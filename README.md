@@ -1,6 +1,6 @@
 # Design Kit
 
-Version 0.3.4. A native, model-agnostic Codex plugin that improves design through
+Version 0.6.1. A native, model-agnostic Codex plugin that improves design through
 reusable visual context, reference mechanisms, art direction, appropriate assets,
 native Figma creation and visual refinement. One primary session owns the work.
 
@@ -9,9 +9,14 @@ native Figma creation and visual refinement. One primary session owns the work.
 Ask for the current design task with `$design-director`, or let the skill activate
 for relevant Figma work. Specify the authorized file and any constraints. Narrow edits
 stay narrow. For substantial creation, Design Kit retrieves and inspects references,
-synthesizes an internal direction, resolves essential assets, builds and inspects the
-primary surface, then expands and recomposes mobile when in scope. UX Canon and
-archetypes support real content/usability needs; they do not prescribe aesthetics.
+synthesizes an internal direction, resolves essential assets, materializes a local
+design system, then composes and inspects the governing surface from it. The system
+and design evolve together; mobile reuses the same foundations and component sources
+when in scope. UX Canon and archetypes support real content/usability needs;
+they do not prescribe aesthetics.
+New substantial designs with no destination use a dedicated professionally named page
+in the clearly authorized active file. Explicit edits stay in their specified target;
+real iterations remain organized together, without manufactured alternatives.
 
 The normal deliverable is editable Figma. No frontend code, project memory, automatic
 draft, QA board or workflow document. Verification renders are transient internal
@@ -26,23 +31,76 @@ and the permitted persistent library. Discover only genuine coverage gaps. User
 exclusivity always wins; insufficient supplied references get one supplementation
 question. No reference images ship with the plugin.
 
-Valid discovered captures from approved sources are retained even if not selected for
-today's task. Only duplicates, broken/inaccessible or invalid/non-design material are
-excluded from ingestion. Task selection is stricter: actual images must reveal useful
-mechanisms for the current brief. Library size can grow; visual context stays focused.
+All 23 approved visual sources (8 Tier 1, 13 Tier 2, 2 Tier 3) ship in the source registry
+with independent acquisition modes and dated access evidence. A source remains approved when bulk downloading is
+restricted: use targeted research, in-source visual inspection or a retained bookmark.
+No unapproved gallery, outbound website or sponsor becomes a discovery source.
 
 Storage is outside repositories: Windows `%LOCALAPPDATA%/design-kit/references`;
-elsewhere `${XDG_DATA_HOME:-~/.local/share}/design-kit/references`. Existing receipts
-are a lightweight searchable index, with optional titles, tags and visual descriptions.
-No vector database or background service. See
-[reference policy](skills/design-director/references/visual-references.md) and
-[search, import and explicit cleanup](skills/design-director/references/session.md).
-Only explicit user cleanup deletes references. Completion and uninstall never do.
+elsewhere `${XDG_DATA_HOME:-~/.local/share}/design-kit/references`. Original receipts
+and images remain authoritative. Separate source metadata and hash-bound visual
+analysis feed a rebuildable SQLite FTS index. Search returns four compact candidates;
+hydrate selected references for complete observations, with acquisition receipts on demand.
+Complementary roles and source-specific gap routes remain available. Actual visual opening
+is required before design use; evidence attestations do not prove model cognition.
+
+See [source policy](skills/design-director/references/visual-references.md),
+[intelligence and acquisition](skills/design-director/references/intelligence.md), and
+[retention and explicit cleanup](skills/design-director/references/session.md).
+Only explicit user cleanup deletes references. Upgrades and uninstall never do.
+
+## Experience knowledge
+
+Twelve permanent authorities complement visual intelligence: Apple HIG, Material 3,
+Fluent 2, W3C/WAI, NN/g, GOV.UK, USWDS, Baymard, Carbon, SAP/Fiori, Spectrum and
+Atlassian. The existing Canon remains the local knowledge library; an optional
+read-only helper returns bounded, relevant sections with classified provenance. Discovery
+can return metadata only; precise needs/selected IDs read their sections directly. The
+42 selectively available sections include bidi, recurrence and editing-history guidance.
+No authority is a mandatory consultation or a default aesthetic. Narrow edits need
+no new lookup. See [experience knowledge](skills/design-director/references/experience.md).
+
+## Creative capability, without a prescribed aesthetic
+
+One small skill routes only relevant intelligence to the primary model: Experience,
+visual references, creative direction, asset direction, and finish/craft. Project truth
+and human edits govern their use. Internal Task Design DNA connects observed visual
+relationships to a precise thesis and, when useful, one meaningful signature moment.
+No planning report, reference quota, evaluator or fixed creative sequence is required.
+
+Reference candidates separate task fit from observed creative contribution and its
+evidence strength. Specific visible gaps can drive lateral mechanism retrieval; partial
+matches and limited evidence remain unresolved. No role list certifies creative coverage.
+Important custom imagery uses visual anchors,
+prompt-independent semantic inspection, and a verified master for related variants.
+Preparation and placed Figma inspection remain separate checks. High ambition can justify
+one specific material investigation before native content closes the direction. Finish
+seeks consequential opportunities and checks that selected reference relationships survive
+into the artifact; flat, dense and restrained work are valid. Stop when no material defect
+or supported high-leverage improvement remains, not merely when geometry is correct.
+Narrow edits load neither asset direction nor the substantial creative route by default.
+
+## Design Foundations
+
+Substantial net-new designs include an authored basic palette, perceptual color ramps
+and semantic variables, reusable typography styles, rational spacing/layout language
+and product-derived components. Components follow semantic reuse, even with one current
+instance; primary and responsive screens consume the same system. A compact working
+Foundations / Components area makes those definitions inspectable alongside the design.
+Existing systems and human edits lead; small button, spacing and shadow edits do not
+generate a new system, board or page. Systemization preserves expressive composition.
+
+The optional dependency-free `skills/design-director/scripts/color.py` calculates
+OKLCH ramps (20 stops by default, fewer when quantized values become redundant), maps
+to sRGB and measures WCAG contrast. The primary model chooses the anchors and roles.
+See [Design Foundations](skills/design-director/references/design-foundations.md) for
+construction, proportionality and iteration; no new workflow engine or evaluator.
 
 ## Install, connect and update
 
 Requires a Codex client supporting native plugins. Python 3.10+ is needed for reference
-helpers and development tooling. A separately configured healthy local Figma bridge is
+helpers and development tooling. Pillow is required for image decoding, analysis
+validation and inspection sheets; SQLite FTS5 ships with standard Python. A separately configured healthy local Figma bridge is
 the primary transport; official Figma MCP is optional fallback. Design Kit neither
 bundles nor silently installs/changes the bridge. Use the bridge's documented setup,
 confirm current tools, and authorize the target file. No transport source or credentials

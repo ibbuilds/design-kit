@@ -65,3 +65,33 @@ synthesis, not experimentally established universal style rules.
   and alternatives to motion/gesture-only interaction.
 - **Source / scope:** Original aesthetic methodology; constraints from `wcag22`
   and `nng-heuristics`, visual evidence from session-approved references only.
+
+## Language and formatting context
+
+- **Principle / problem:** Keep language choice findable and preserve understandable task context across languages.
+- **Use:** Multilingual services and locale-dependent names, dates, units and currency.
+- **Do not use:** Assuming nationality predicts language or one text expansion percentage fits every script.
+- **Alternatives:** Recognizable language names, supported context preservation, explicit incomplete translation and representative long/bidirectional content.
+- **Exceptions:** This is not a complete internationalization specification; retrieve scoped W3C guidance when script direction or semantics affect the decision.
+- **Accessibility:** Test actual reading/focus order and meaningful labels, not blanket visual mirroring.
+- **Source / scope:** `uswds-language` public-service pattern; formatting/layout resilience is original heuristic synthesis verified 2026-09-05.
+
+## Mixed-direction content and layout
+
+- **Principle / problem:** Language, base direction and alignment are different decisions. RTL text can contain LTR names, URLs and numbers; blanket reversal corrupts meaning.
+- **Use:** Multiscript interfaces, user-entered names, identifiers and mixed-direction labels.
+- **Do not use:** Reverse stored text, infer direction from language alone, or mirror every object.
+- **Alternatives:** Direction-aware start/end alignment; isolate opposite-direction phrases from adjacent punctuation/numbers. In web handoff, explicit direction for known phrases and `dir=auto`/`bdi` for unknown inserted text preserve isolation; automatic first-strong detection has exceptions.
+- **Exceptions:** Physical/spatial arrangements may remain fixed. Script-specific line breaking, shaping and font metrics require relevant language guidance and representative text, not a universal expansion percentage.
+- **Accessibility:** Check actual reading/focus order, caret/selection and punctuation around mixed names/numbers; Figma appearance alone cannot verify browser text behavior.
+- **Source / scope:** `w3c-bidi-structure`, `w3c-bidi-inline`, informative internationalization guidance read 2026-09-05. Original design translation; not a normative universal layout rule.
+
+## Directional controls and imagery
+
+- **Principle / problem:** Mirror by meaning. Reading/navigation direction can reverse while physical direction, identity and imagery retain meaning.
+- **Use:** RTL localization of navigation, progress, ordered content and custom icons.
+- **Do not use:** Flip logos, digits within a number, photographs or an arrow meaning physical right merely because the interface is RTL.
+- **Alternatives:** Reverse reading-order navigation and associated progress endpoints where the platform expects it; use localized directional symbols. Reorder meaningfully ordered images without flipping their pixels.
+- **Exceptions:** Complex icons need component-level judgment; script-specific artwork may need a localized version. These are Apple conventions; transfer to another platform only after checking its context.
+- **Accessibility:** Preserve understandable control names, numeric values and reading order; inspect actual mixed-script size balance without prescribing a universal font adjustment.
+- **Source / scope:** `apple-rtl`, platform guidance read 2026-09-05. No Apple visual-style mandate.

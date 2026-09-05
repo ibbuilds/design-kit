@@ -33,3 +33,13 @@ checkout. Baymard findings are domain research, not rules for every conversion U
 - **Accessibility:** Legible prices/units, distinguish options beyond color,
   announce cart changes and preserve context during quantity/variant edits.
 - **Source / scope:** `baymard-checkout`, `nng-heuristics`, `wcag22`; commerce only.
+
+## Product finding and comparison
+
+- **Principle / problem:** Choose search, facets, sorting and comparison from actual shopping criteria.
+- **Use:** Consumer product discovery and attribute/variant comparison.
+- **Do not use:** Transferring internal database filters unchanged into shopping or treating gallery pixels as usability evidence.
+- **Alternatives:** Visible applied criteria, no-result recovery, comparable price basis/variants and relevant fulfillment constraints.
+- **Exceptions:** Baymard product-list HTTP client access returned 403, but the normal browser loaded its public research overview. Full reports remain paid; do not invent restricted findings or conversion uplift.
+- **Accessibility:** Preserve focus, label filters, expose selection and explain changed results without announcing every keystroke.
+- **Source / scope:** `baymard-product-lists` reports that product presentation, filtering and sorting work together to support finding and evaluating relevant products. Public commerce research, verified in browser 2026-09-05; recovery details are original synthesis with `nng-heuristics`. Study outcomes are not forecasts for this product.

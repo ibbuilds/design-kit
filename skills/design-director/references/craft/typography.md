@@ -4,6 +4,19 @@ Use when type carries hierarchy, reading, identity, density, or a diagnosed defe
 Typography is a relationship among content, roles, measures, spacing, and rendering;
 a font name or scale alone is not a system.
 
+## Choose the families
+
+For a new system, choose from product context, brand voice and actual reading roles.
+Default to one or two families; three is the maximum and needs a distinct structural
+reason, such as display + reading/UI + mono/data. A variable family may cover the whole
+range. Pair through functional contrast, not novelty or automatic serif/sans mixing.
+Compare x-height, width, stroke contrast, numeral behavior and weight range at actual
+sizes: a distinctive display face may need a quieter reading partner, while a dense
+tool may benefit from one economical family. Verify required faces/styles are available;
+use a compatible available fallback if necessary and disclose a material identity loss.
+Use variable axes, optical sizing and OpenType features only where font and transport
+support them; a font name does not prove those controls exist.
+
 ## Build the hierarchy
 
 - Start from content roles and reading order. Give distinct treatment only to roles
@@ -15,6 +28,12 @@ a font name or scale alone is not a system.
 - Make hierarchy legible in grayscale and at a glance before relying on accent color.
 - In data work, align comparable numbers, preserve signs/units, and consider tabular
   figures when the available font and task support them.
+- For substantial new designs, encode actual roles in reusable Figma text styles
+  (and supported variables where useful): family/face, size, leading, tracking and
+  relevant paragraph behavior. Screens consume these styles. Establish deliberate
+  responsive role settings rather than multiplying every size by one factor.
+  [Foundations](../design-foundations.md#figma-system-objects) owns system binding;
+  these craft decisions supply its values.
 
 ## Set and inspect
 

@@ -26,7 +26,30 @@ or moves into another view. Validate extreme content and interaction targets. Us
 platform conventions where they serve orientation; adaptation need not erase the
 visual thesis.
 
+For a narrow viewport, decide what retains priority, moves earlier, changes crop,
+becomes a detail route or changes navigation. Check headline measure, density and
+sticky controls against the usable viewport and touch reach. A desktop preview cannot
+prove its mobile behavior: inspect an actual mobile state or mark the recomposition
+as design judgment. Compare paired states when available; do not infer hidden states
+from a small screenshot. These are scoped craft judgments, not fixed breakpoints.
+
 ## Diagnose
+
+For expressive pages, inspect the whole scroll silhouette for **uniform containment
+without a spatial reason**: every concept in its own rectangle, identical section
+geometry, same-depth surfaces, equal weight and boundaries that never interact.
+Professional containers clarify comparison, grouping, density or interaction; keep
+them where they earn that role. Consistency does not require identical composition.
+
+If the page reads as a stack of slides, identify the missing spatial relationship and
+seek evidence for it: open canvas, bleed/overlap, shared assets across boundaries,
+foreground/background, changes of scale/density, controlled grid breaks or asymmetric
+transitions. Apply only what serves content and the visual thesis. One region can be
+typographic, another image-led, another immersive product UI and another quiet; shared
+type, color and material rules connect them. Do not decorate every section differently
+or force depth/devices. Recheck reading order, collisions and responsive composition.
+This is a conditional aesthetic diagnosis from user benchmark feedback, 2026-09-05,
+not a ban on cards, Auto Layout or section frames in the editable layer structure.
 
 Distinguish structural weakness from decoration. If the wrong object dominates,
 fix hierarchy. If connected content feels scattered, fix grouping or axes. If the

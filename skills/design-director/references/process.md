@@ -1,75 +1,66 @@
-# Creative runtime
+# Substantial creation
 
-For substantial design creation, keep this reasoning inside the primary session.
-It is an internal quality safeguard, not a user-facing sequence or a reason to restart.
-For a narrow change, execute and verify that change without running the whole method.
+Use from the current authorized state, only for substantial design work. These are
+available decisions, not sequential phases or user-facing artifacts. A revision does
+not restart creation; preserve its approved direction and human edits.
 
-## Establish the design material
+Recover the brief, audience, content, task and constraints. Resolve the smallest complete
+experience using [adequacy](adequacy.md) only when unclear; retrieve [Experience](experience.md)
+for consequential UX uncertainty. Product evidence leads. Illustrative concept copy
+must not masquerade as real research, testimonials or claims.
 
-Read the current authorized artifact and human edits. Recover the brief, content and
-constraints; decide the smallest complete experience that satisfies them. Use
-[adequacy](adequacy.md) only if unclear. Organize content around actual questions and
-decisions: overview, selection/detail, action and recovery where the request needs them.
-Realistic concept copy is acceptable; invented facts remain illustrative, not evidence.
+Use sufficient user/project material, then permitted [visual references](visual-references.md)
+for actual missing decisions. [Art direction](craft/art-direction.md) owns the compact
+Task Design DNA, visual thesis and optional signature. Read it when forming or materially
+revising a direction; reuse established decisions otherwise. No automatic alternatives,
+fixed reference quota or aesthetic template.
 
-Follow [reference intelligence](visual-references.md): retrieve existing permitted
-material first, visually inspect the decision-relevant subset, and search coverage
-gaps. Extract what exactly works, why, and how it transfers. Tags or “same vibe” are
-insufficient. Preserve complementary mechanisms rather than averaging into generic style.
+Before closing a substantial high-ambition direction, is the current native material
+sufficient for its thesis, or could a credible external/custom visual materially improve
+it? No benefit: continue. A specific benefit: use [asset direction](craft/assets.md) to
+investigate that focal opportunity; this does not authorize automatic generation.
+Resolve essential material before dependent composition. Existing usable assets may
+suffice. A gallery reference is not automatically licensed production content.
+An unresolved essential image is a foundation gap: disclose it and adapt the composition,
+instead of expanding geometric stand-ins or decorative UI into the whole experience.
 
-Resolve essential assets early. Where imagery is core—hospitality, architecture,
-fashion, travel, portfolios, editorial or product storytelling—obtain appropriate user
-assets, generated originals or legitimately usable assets through available tools.
-Reference imagery is not automatically production content. Inspect assets and intended
-crops. Never use muddy rectangles, geometric picture stand-ins or decorative UI because
-they are easier to construct. Disclose an unresolved essential asset before expansion.
+For substantial net-new work, materialize [Design Foundations](design-foundations.md)
+from that direction before fully composing screens. Reuse compatible existing system
+objects; establish missing ones locally. Foundations are normally the first tangible
+Figma construction, not an exhaustive kit: build the semantic components needed by
+the governing surface, then extend the system with the experience. Small exploratory
+compositions can test an uncertain relationship; do not finish raw screens and bolt
+on disconnected swatches afterward. This dependency creates no approval gate.
 
-## Internal art-direction lock
+## Judge the governing surface before multiplying it
 
-Synthesize a short decision packet from brief + content + observed references + assets:
+Build enough to evaluate the consequential relationships. For storytelling, this may be
+the hero and continuation; for an application, its primary operating state with realistic
+density and relationships. It need not be the top of the page. Use bounded native
+[Figma construction](figma.md), then inspect the actual result against the brief and DNA.
 
-- emotional focal point and dominant visual material;
-- composition principle and primary/secondary visual mass;
-- typography relationship, not a font shopping list;
-- color/material logic and image/asset strategy;
-- pacing across the requested experience;
-- interaction/motion principle when relevant;
-- a few task-specific constraints that prevent dilution.
+Does the dominant material carry the intended meaning? Do scale, type, focal hierarchy,
+product presentation and any signature work together? Distinguish missing finesse from
+a weak visual idea. Rebuild a failed governing relationship before propagating it;
+adding edges and shadows cannot rescue the wrong asset or an interchangeable composition.
+For ambitious work, [finish](craft/finish.md) helps identify the highest-leverage credible
+improvement here; coherence alone need not close a direction. Continue strong foundations
+without repeating exploration unless the render or feedback reveals a consequential gap.
 
-Keep it in active reasoning/context, not a document. It must explain actual choices;
-never fill a generic aesthetic template. User-approved direction stays authoritative.
-Alternatives are conditional on the request or a materially unresolved choice.
+Expand in coherent batches, including the connected content and states inherent in the
+request. Reopen decisions only when evidence or feedback implicates them. Keep critical
+UI/text editable. Build semantic UI as component instances using the foundation
+variables/styles and content-driven Auto Layout. A single current use does not excuse
+a raw control. If a rendered relationship fails, correct the relevant system source
+and inspect affected instances rather than preserving a weak token or adding overrides.
 
-## Resolve the primary surface before expansion
+When responsive work is in scope, preserve or deliberately evolve the visual thesis:
+focal anchor, type/image tension, crop, signature, density, pacing and interaction.
+Mobile shares tokens, type roles and semantic component sources with desktop, while
+adapting layout, type size, navigation, priority and asset treatment. If a desktop device cannot
+survive touch or narrow width, find the equivalent benefit; do not leave a merely
+correct stack after removing everything distinctive.
 
-For marketing, hospitality, editorial or portfolios, build the hero plus enough
-continuation to establish the system. For apps, dashboards or workspaces, build the
-primary operational state with realistic density, relationships and affordances.
-Use [Figma](figma.md) for bounded native construction and fresh rendering.
-
-Inspect closely against the brief and selected mechanisms. Is the dominant material
-doing the work? Does hierarchy survive a glance? Is there an authored relationship
-beyond familiar cards, default type and decoration? A clean but generic or unresolved
-composition fails this safeguard: rebuild the governing hierarchy, asset treatment or
-composition before expansion. Do not polish a weak foundation or propagate it into
-all screens and components.
-
-Once strong, extend in coherent batches. Preserve locked visual logic and inspect
-meaningful milestones. Reopen only decisions implicated by current evidence. Build
-connected detail and states inherent in the request, without adding a component wall.
-
-## Recompose, inspect, correct
-
-When responsive work is in scope, re-evaluate hierarchy, headline measure, image crop,
-stacking, spacing, navigation, CTA placement, pacing and touch behavior. Mobile remains
-in the same primary session and is deliberately composed, never mechanically scaled.
-
-Use [quality](quality.md): observation → diagnosis → intervention → fresh visual
-verification. Fix structural incompleteness first. If direction is strong, correct
-specifically; if the foundation fails, rebuild. Inspect important frames individually
-at readable scale, not only a downscaled canvas overview.
-
-Stop the authorized pass when material defects are resolved and no strong improvement
-hypothesis remains, two major attempts fail to improve it, remaining choices are
-subjective taste, or the user stops. No endless nudges, scores, status reports or
-plugin-owned completion/cleanup stage. The user continues directing work.
+Use [quality](quality.md) for scoped observation, intervention, fresh visual comparison
+and stopping. Inspect the affected complete composition as well as readable details.
+The user directs acceptance and further work.

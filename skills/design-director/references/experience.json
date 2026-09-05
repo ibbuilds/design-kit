@@ -1,0 +1,1015 @@
+{
+  "schema_version": 1,
+  "source_class": "experience-knowledge",
+  "authorities": [
+    {
+      "id": "apple",
+      "name": "Apple Human Interface Guidelines",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/",
+      "role": "platform-convention",
+      "scope": "iOS, iPadOS, macOS, watchOS, tvOS, visionOS; input, navigation, accessibility, privacy and adaptation.",
+      "checked_on": "2026-09-05",
+      "access": "Public JS documentation; official HIG JSON read. Retrieve the specific current platform topic.",
+      "related": []
+    },
+    {
+      "id": "material",
+      "name": "Material Design 3",
+      "url": "https://m3.material.io/",
+      "role": "platform-convention",
+      "scope": "Android and adaptive interaction, states, panes, input and components.",
+      "checked_on": "2026-09-05",
+      "access": "Public JS documentation; adaptive design rendered and read in browser.",
+      "related": []
+    },
+    {
+      "id": "fluent",
+      "name": "Microsoft Fluent 2",
+      "url": "https://fluent2.microsoft.design/",
+      "role": "platform-convention",
+      "scope": "Windows/productivity expectations, focus, hierarchy, inclusive cross-platform interaction.",
+      "checked_on": "2026-09-05",
+      "access": "Public accessibility guidance read; employee-only resources separate. Published WCAG 2.1 baseline does not lower current WCAG requirements.",
+      "related": []
+    },
+    {
+      "id": "w3c",
+      "name": "W3C / WAI",
+      "url": "https://www.w3.org/WAI/",
+      "role": "normative-and-informative",
+      "scope": "WCAG conformance, WAI-ARIA semantics, APG widget behavior and relevant internationalization.",
+      "checked_on": "2026-09-05",
+      "access": "WCAG 2.2 and ARIA 1.2 Recommendations and APG read. Check current status, criteria levels/exceptions; APG examples are informative.",
+      "related": [
+        "https://www.w3.org/TR/WCAG22/",
+        "https://www.w3.org/TR/wai-aria-1.2/",
+        "https://www.w3.org/WAI/ARIA/apg/",
+        "https://www.w3.org/International/"
+      ]
+    },
+    {
+      "id": "nng",
+      "name": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/",
+      "role": "research-and-heuristic",
+      "scope": "General usability, IA, navigation/search, complex applications, content and UX research.",
+      "checked_on": "2026-09-05",
+      "access": "Public complex-application article read. Reports/training may be paid. General findings are not current-product user research.",
+      "related": []
+    },
+    {
+      "id": "govuk",
+      "name": "GOV.UK Design System / Service Manual",
+      "url": "https://design-system.service.gov.uk/",
+      "role": "design-system-pattern",
+      "scope": "Transactional services, questions, validation, review, dependencies, confirmation and service content.",
+      "checked_on": "2026-09-05",
+      "access": "Public pattern index and multi-task pattern read; Open Government Licence except stated material.",
+      "related": [
+        "https://www.gov.uk/service-manual"
+      ]
+    },
+    {
+      "id": "uswds",
+      "name": "U.S. Web Design System",
+      "url": "https://designsystem.digital.gov/",
+      "role": "design-system-pattern",
+      "scope": "Inclusive public services, complex forms, profiles, language and accessible responsive journeys.",
+      "checked_on": "2026-09-05",
+      "access": "Public complex-form and language patterns read. Prefer the closer service context; no automatic paired GOV.UK load.",
+      "related": []
+    },
+    {
+      "id": "baymard",
+      "name": "Baymard Institute",
+      "url": "https://baymard.com/",
+      "role": "research-finding",
+      "scope": "Commerce checkout, cart, product finding, product pages, filtering, mobile and fulfillment.",
+      "checked_on": "2026-09-05",
+      "access": "Public checkout and product-list research overview read. HTTP client 403 on product-list page, but normal browser access succeeded. Free articles accessible; full reports require Premium. Do not copy wholesale or invent paid findings.",
+      "related": []
+    },
+    {
+      "id": "carbon",
+      "name": "IBM Carbon Design System",
+      "url": "https://carbondesignsystem.com/",
+      "role": "design-system-pattern",
+      "scope": "Structured data, tables, filters, sorting, selection, batch actions, density and visualization.",
+      "checked_on": "2026-09-05",
+      "access": "Public data-table usage read. Table explicitly is not a spreadsheet replacement; retrieve relevant behavior, not brand tokens.",
+      "related": []
+    },
+    {
+      "id": "sap",
+      "name": "SAP Design System / Fiori",
+      "url": "https://www.sap.com/design-system/",
+      "role": "design-system-pattern",
+      "scope": "Enterprise workflows, analytical/grid/tree tables, object detail and large-data operational patterns.",
+      "checked_on": "2026-09-05",
+      "access": "HTTP client root attempt returned 403; normal browser root and official Fiori 1.151 analytical-table guidance loaded and were read. Prefer normal browser navigation to current/versioned official topics.",
+      "related": [
+        "https://www.sap.com/design-system/fiori-design-web/v1-151/ui-elements/analytical-table-alv"
+      ]
+    },
+    {
+      "id": "spectrum",
+      "name": "Adobe Spectrum / Spectrum 2",
+      "url": "https://spectrum.adobe.com/",
+      "role": "design-system-pattern",
+      "scope": "Professional creative tools, contextual controls, dense action groups, selection and adaptive components.",
+      "checked_on": "2026-09-05",
+      "access": "Public JS action-group article read. Spectrum 2 is presented as a preview; verify component status before applying.",
+      "related": [
+        "https://s2.spectrum.adobe.com/"
+      ]
+    },
+    {
+      "id": "atlassian",
+      "name": "Atlassian Design System",
+      "url": "https://atlassian.design/",
+      "role": "design-system-pattern",
+      "scope": "Collaborative workspaces, productivity, consistent navigation/content and accessible product interaction.",
+      "checked_on": "2026-09-05",
+      "access": "Public accessibility article read. Private employee resources not accessed.",
+      "related": []
+    }
+  ],
+  "entries": [
+    {
+      "id": "task-structure",
+      "needs": [
+        "task-priority",
+        "information-hierarchy"
+      ],
+      "local": "canon/foundations.md",
+      "section": "Task before surface",
+      "sources": [
+        "nng-heuristics",
+        "nng-complex"
+      ],
+      "authorities": [
+        "nng"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "wayfinding",
+      "needs": [
+        "wayfinding",
+        "drilldown"
+      ],
+      "local": "canon/navigation.md",
+      "section": "Wayfinding and hierarchy",
+      "sources": [
+        "nng-heuristics",
+        "apg-patterns"
+      ],
+      "authorities": [
+        "nng",
+        "w3c"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "find-records",
+      "needs": [
+        "record-search",
+        "result-recovery"
+      ],
+      "local": "canon/navigation.md",
+      "section": "Search and result recovery",
+      "sources": [
+        "nng-heuristics",
+        "carbon-filter"
+      ],
+      "authorities": [
+        "nng",
+        "carbon"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "filter-records",
+      "needs": [
+        "record-filtering",
+        "record-sorting"
+      ],
+      "local": "canon/navigation.md",
+      "section": "Filters and sorting",
+      "sources": [
+        "carbon-filter",
+        "carbon-table"
+      ],
+      "authorities": [
+        "carbon"
+      ],
+      "evidence_type": "design-system-pattern",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "input-burden",
+      "needs": [
+        "input-burden",
+        "field-labels"
+      ],
+      "local": "canon/forms.md",
+      "section": "Ask only what is needed",
+      "sources": [
+        "gov-questions",
+        "wcag22"
+      ],
+      "authorities": [
+        "govuk",
+        "w3c"
+      ],
+      "evidence_type": "design-system-pattern",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "form-recovery",
+      "needs": [
+        "validation",
+        "form-recovery"
+      ],
+      "local": "canon/forms.md",
+      "section": "Validation and recovery",
+      "sources": [
+        "gov-errors",
+        "wcag22"
+      ],
+      "authorities": [
+        "govuk",
+        "w3c"
+      ],
+      "evidence_type": "design-system-pattern",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "review-commitment",
+      "needs": [
+        "review-commitment"
+      ],
+      "local": "canon/forms.md",
+      "section": "Review before commitment",
+      "sources": [
+        "gov-check",
+        "wcag22"
+      ],
+      "authorities": [
+        "govuk",
+        "w3c"
+      ],
+      "evidence_type": "design-system-pattern",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "service-dependencies",
+      "needs": [
+        "service-dependencies",
+        "submission-record",
+        "service-trust"
+      ],
+      "local": "canon/forms.md",
+      "section": "Dependencies, trust and a usable record",
+      "sources": [
+        "gov-tasks",
+        "uswds-forms"
+      ],
+      "authorities": [
+        "govuk",
+        "uswds"
+      ],
+      "evidence_type": "design-system-pattern",
+      "platforms": [],
+      "contexts": [
+        "service"
+      ]
+    },
+    {
+      "id": "booking",
+      "needs": [
+        "availability-change",
+        "booking-time"
+      ],
+      "local": "canon/forms.md",
+      "section": "Booking and time-dependent availability",
+      "sources": [
+        "nng-heuristics"
+      ],
+      "authorities": [
+        "nng"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": [
+        "transaction"
+      ]
+    },
+    {
+      "id": "wait-feedback",
+      "needs": [
+        "wait-feedback",
+        "empty-results"
+      ],
+      "local": "canon/states.md",
+      "section": "Empty, loading and asynchronous work",
+      "sources": [
+        "carbon-loading",
+        "fluent-wait",
+        "nng-heuristics"
+      ],
+      "authorities": [
+        "carbon",
+        "fluent",
+        "nng"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "action-recovery",
+      "needs": [
+        "action-recovery",
+        "destructive-action",
+        "unsaved-work"
+      ],
+      "local": "canon/states.md",
+      "section": "Feedback, errors and undo",
+      "sources": [
+        "nng-heuristics",
+        "gov-errors"
+      ],
+      "authorities": [
+        "nng",
+        "govuk"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "dialog-focus",
+      "needs": [
+        "modal-focus"
+      ],
+      "local": "canon/states.md",
+      "section": "Dialog or page",
+      "sources": [
+        "apg-dialog",
+        "wcag22"
+      ],
+      "authorities": [
+        "w3c"
+      ],
+      "evidence_type": "informative-guidance",
+      "platforms": [
+        "web"
+      ],
+      "contexts": []
+    },
+    {
+      "id": "session-expiry",
+      "needs": [
+        "session-expiry"
+      ],
+      "local": "canon/states.md",
+      "section": "Timeout and interrupted sessions",
+      "sources": [
+        "home-timeout",
+        "wcag22"
+      ],
+      "authorities": [
+        "govuk",
+        "w3c"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "record-comparison",
+      "needs": [
+        "record-comparison",
+        "record-density"
+      ],
+      "local": "canon/data-work.md",
+      "section": "Tables and grids",
+      "sources": [
+        "carbon-table",
+        "apg-grid",
+        "wcag22"
+      ],
+      "authorities": [
+        "carbon",
+        "w3c"
+      ],
+      "evidence_type": "design-system-pattern",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "batch-selection",
+      "needs": [
+        "batch-selection"
+      ],
+      "local": "canon/data-work.md",
+      "section": "Selection and bulk action",
+      "sources": [
+        "carbon-table",
+        "nng-heuristics"
+      ],
+      "authorities": [
+        "carbon",
+        "nng"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "analytic-question",
+      "needs": [
+        "analytic-comparison",
+        "data-uncertainty"
+      ],
+      "local": "canon/data-work.md",
+      "section": "Charts and decision support",
+      "sources": [
+        "carbon-charts",
+        "wcag22"
+      ],
+      "authorities": [
+        "carbon",
+        "w3c"
+      ],
+      "evidence_type": "design-system-pattern",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "live-operation",
+      "needs": [
+        "live-status",
+        "alert-triage",
+        "command-confirmation",
+        "stale-data"
+      ],
+      "local": "canon/data-work.md",
+      "section": "Live operations and command consequences",
+      "sources": [
+        "nng-complex",
+        "nng-heuristics"
+      ],
+      "authorities": [
+        "nng"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "tool-modes",
+      "needs": [
+        "tool-mode",
+        "inspector-selection",
+        "command-discovery"
+      ],
+      "local": "canon/productivity.md",
+      "section": "Commands, modes and selection",
+      "sources": [
+        "spectrum-actions",
+        "nng-complex"
+      ],
+      "authorities": [
+        "spectrum",
+        "nng"
+      ],
+      "evidence_type": "design-system-pattern",
+      "platforms": [],
+      "contexts": [
+        "tool",
+        "operations"
+      ]
+    },
+    {
+      "id": "task-continuity",
+      "needs": [
+        "task-continuity",
+        "nonlinear-work"
+      ],
+      "local": "canon/productivity.md",
+      "section": "Resume nonlinear work",
+      "sources": [
+        "nng-complex",
+        "spectrum2"
+      ],
+      "authorities": [
+        "nng",
+        "spectrum"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "collaboration",
+      "needs": [
+        "shared-context",
+        "edit-conflict"
+      ],
+      "local": "canon/productivity.md",
+      "section": "Shared context and conflicts",
+      "sources": [
+        "atlassian-accessibility",
+        "nng-complex"
+      ],
+      "authorities": [
+        "atlassian",
+        "nng"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "access-recovery",
+      "needs": [
+        "authentication",
+        "account-recovery"
+      ],
+      "local": "canon/access.md",
+      "section": "Authentication and account recovery",
+      "sources": [
+        "gov-passwords",
+        "wcag22"
+      ],
+      "authorities": [
+        "govuk",
+        "w3c"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "permission-scope",
+      "needs": [
+        "permission-scope"
+      ],
+      "local": "canon/access.md",
+      "section": "Permission and denied access",
+      "sources": [
+        "nng-heuristics",
+        "apple-accessibility",
+        "wcag22"
+      ],
+      "authorities": [
+        "nng",
+        "apple",
+        "w3c"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "first-use",
+      "needs": [
+        "first-use"
+      ],
+      "local": "canon/access.md",
+      "section": "Onboarding at the point of need",
+      "sources": [
+        "nng-complex",
+        "nng-heuristics"
+      ],
+      "authorities": [
+        "nng"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "checkout",
+      "needs": [
+        "checkout-burden",
+        "purchase-review"
+      ],
+      "local": "canon/commerce.md",
+      "section": "Checkout without avoidable burden",
+      "sources": [
+        "baymard-checkout",
+        "wcag22"
+      ],
+      "authorities": [
+        "baymard",
+        "w3c"
+      ],
+      "evidence_type": "research-finding",
+      "platforms": [],
+      "contexts": [
+        "commerce"
+      ]
+    },
+    {
+      "id": "product-finding",
+      "needs": [
+        "product-finding",
+        "product-comparison"
+      ],
+      "local": "canon/commerce.md",
+      "section": "Product finding and comparison",
+      "sources": [
+        "baymard-product-lists",
+        "nng-heuristics"
+      ],
+      "authorities": [
+        "baymard",
+        "nng"
+      ],
+      "evidence_type": "research-finding",
+      "platforms": [],
+      "contexts": [
+        "commerce"
+      ]
+    },
+    {
+      "id": "fulfillment",
+      "needs": [
+        "fulfillment-confidence"
+      ],
+      "local": "canon/commerce.md",
+      "section": "Purchase confidence and fulfillment",
+      "sources": [
+        "baymard-checkout",
+        "nng-heuristics"
+      ],
+      "authorities": [
+        "baymard",
+        "nng"
+      ],
+      "evidence_type": "research-finding",
+      "platforms": [],
+      "contexts": [
+        "commerce"
+      ]
+    },
+    {
+      "id": "reading",
+      "needs": [
+        "sustained-reading",
+        "tabular-reading"
+      ],
+      "local": "canon/content.md",
+      "section": "Reading hierarchy and rhythm",
+      "sources": [
+        "wcag22",
+        "nng-heuristics"
+      ],
+      "authorities": [
+        "w3c",
+        "nng"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "copy",
+      "needs": [
+        "action-labels",
+        "error-language"
+      ],
+      "local": "canon/content.md",
+      "section": "Microcopy and feedback language",
+      "sources": [
+        "gov-errors",
+        "nng-heuristics"
+      ],
+      "authorities": [
+        "govuk",
+        "nng"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "language",
+      "needs": [
+        "language-choice",
+        "locale-formatting"
+      ],
+      "local": "canon/content.md",
+      "section": "Language and formatting context",
+      "sources": [
+        "uswds-language"
+      ],
+      "authorities": [
+        "uswds"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "keyboard",
+      "needs": [
+        "keyboard-access",
+        "focus-visibility",
+        "target-access"
+      ],
+      "local": "canon/accessibility.md",
+      "section": "Keyboard, focus and targets",
+      "sources": [
+        "wcag22",
+        "apg-patterns"
+      ],
+      "authorities": [
+        "w3c"
+      ],
+      "evidence_type": "normative-standard",
+      "platforms": [
+        "web"
+      ],
+      "contexts": []
+    },
+    {
+      "id": "web-reflow",
+      "needs": [
+        "text-enlargement",
+        "web-reflow"
+      ],
+      "local": "canon/accessibility.md",
+      "section": "Reflow and readable content",
+      "sources": [
+        "wcag22"
+      ],
+      "authorities": [
+        "w3c"
+      ],
+      "evidence_type": "normative-standard",
+      "platforms": [
+        "web"
+      ],
+      "contexts": []
+    },
+    {
+      "id": "contrast",
+      "needs": [
+        "web-contrast",
+        "noncolor-meaning"
+      ],
+      "local": "canon/accessibility.md",
+      "section": "Perceivable contrast and meaning",
+      "sources": [
+        "wcag22"
+      ],
+      "authorities": [
+        "w3c"
+      ],
+      "evidence_type": "normative-standard",
+      "platforms": [
+        "web"
+      ],
+      "contexts": []
+    },
+    {
+      "id": "motion-access",
+      "needs": [
+        "motion-access",
+        "timing-access"
+      ],
+      "local": "canon/accessibility.md",
+      "section": "Motion and time",
+      "sources": [
+        "wcag22",
+        "apple-accessibility"
+      ],
+      "authorities": [
+        "w3c",
+        "apple"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "apple-platform",
+      "needs": [
+        "platform-expectations",
+        "native-text-scaling",
+        "native-targets"
+      ],
+      "local": "canon/platform.md",
+      "section": "Touch and native sizing",
+      "sources": [
+        "apple-accessibility"
+      ],
+      "authorities": [
+        "apple"
+      ],
+      "evidence_type": "platform-convention",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "watchos",
+        "tvos",
+        "visionos"
+      ],
+      "contexts": []
+    },
+    {
+      "id": "android-platform",
+      "needs": [
+        "platform-expectations",
+        "adaptive-panes",
+        "mixed-input"
+      ],
+      "local": "canon/platform.md",
+      "section": "Adapt structure, preserve task",
+      "sources": [
+        "material-adaptive"
+      ],
+      "authorities": [
+        "material"
+      ],
+      "evidence_type": "platform-convention",
+      "platforms": [
+        "android"
+      ],
+      "contexts": []
+    },
+    {
+      "id": "windows-platform",
+      "needs": [
+        "platform-expectations",
+        "desktop-focus"
+      ],
+      "local": "canon/platform.md",
+      "section": "Follow the approved platform system",
+      "sources": [
+        "fluent-accessibility"
+      ],
+      "authorities": [
+        "fluent"
+      ],
+      "evidence_type": "platform-convention",
+      "platforms": [
+        "windows"
+      ],
+      "contexts": []
+    },
+    {
+      "id": "adaptive-task",
+      "needs": [
+        "adaptive-panes",
+        "mobile-recomposition",
+        "mixed-input"
+      ],
+      "local": "canon/platform.md",
+      "section": "Adapt structure, preserve task",
+      "sources": [
+        "material-adaptive",
+        "wcag22"
+      ],
+      "authorities": [
+        "material",
+        "w3c"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [
+        "web"
+      ],
+      "contexts": []
+    },
+    {
+      "id": "analytical-structure",
+      "needs": [
+        "cell-aggregation",
+        "hierarchical-records",
+        "large-selection"
+      ],
+      "local": "canon/data-work.md",
+      "section": "Analytical structures and loaded selection",
+      "sources": [
+        "sap-analytical"
+      ],
+      "authorities": [
+        "sap"
+      ],
+      "evidence_type": "design-system-pattern",
+      "platforms": [],
+      "contexts": [
+        "operations",
+        "tool"
+      ]
+    },
+    {
+      "id": "bidi",
+      "needs": [
+        "bidirectional-text",
+        "mixed-direction",
+        "rtl-layout",
+        "script-layout"
+      ],
+      "local": "canon/content.md",
+      "section": "Mixed-direction content and layout",
+      "sources": [
+        "w3c-bidi-structure",
+        "w3c-bidi-inline"
+      ],
+      "authorities": [
+        "w3c"
+      ],
+      "evidence_type": "informative-guidance",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "recurrence",
+      "needs": [
+        "recurring-events",
+        "time-zone-intent",
+        "schedule-conflicts",
+        "rescheduling"
+      ],
+      "local": "canon/forms.md",
+      "section": "Recurrence and time-zone intent",
+      "sources": [
+        "w3c-timezone",
+        "nng-heuristics",
+        "gov-check"
+      ],
+      "authorities": [
+        "w3c",
+        "nng",
+        "govuk"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": []
+    },
+    {
+      "id": "editing-history",
+      "needs": [
+        "editing-history",
+        "undo-scope",
+        "direct-manipulation"
+      ],
+      "local": "canon/productivity.md",
+      "section": "Predictable editing history",
+      "sources": [
+        "apple-undo",
+        "spectrum-actions"
+      ],
+      "authorities": [
+        "apple",
+        "spectrum"
+      ],
+      "evidence_type": "heuristic",
+      "platforms": [],
+      "contexts": [
+        "tool"
+      ]
+    },
+    {
+      "id": "rtl-mirroring",
+      "needs": [
+        "directional-icons",
+        "rtl-mirroring"
+      ],
+      "local": "canon/content.md",
+      "section": "Directional controls and imagery",
+      "sources": [
+        "apple-rtl"
+      ],
+      "authorities": [
+        "apple"
+      ],
+      "evidence_type": "platform-convention",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "watchos",
+        "visionos"
+      ],
+      "contexts": []
+    }
+  ]
+}
