@@ -1,17 +1,28 @@
 # Frontend workflow
 
-Adapted from [WORKFLOW.pdf](WORKFLOW.pdf). Use [BRIEF.md](BRIEF.md) for facts,
-[taste/PROFILE.md](taste/PROFILE.md) for quality, [OPENDESIGN.md](OPENDESIGN.md) for execution.
+Use [BRIEF.md](BRIEF.md) for project context and [TASTE.md](TASTE.md) for shared quality.
+Read [OPENDESIGN.md](OPENDESIGN.md) only for that execution path.
 
 Adaptive checkpoints: combine, revisit or omit satisfied work; retain applicable
-acceptance checks. Choose the least costly method likely to meet the quality bar.
-No document per checkpoint.
+acceptance checks. Choose methods for the strongest result within project constraints;
+prefer lower cost between methods likely to deliver comparable quality. Explore or
+replace a direction when that can materially improve the experience.
+No document per checkpoint. Passing checks is a floor: also review the rendered
+result against the user's taste and selected references. Address identifiable craft
+and usability gaps; stop when the agreed goal is met, reporting evidence and limits.
+
+Scope can be a site, app, flow, feature, section or component. For scoped changes,
+reuse the surrounding system and inspect the change in context; do not restart
+whole-site discovery or create unrelated screens.
 
 ## 00 - Prepare
 
-Inspect the target and tools, including browser/capture and media. Reuse existing
+Resolve kit and target paths, then inspect the target's applicable agent instructions,
+current changes and tools, including browser/capture and media. Reuse existing
 routing, fonts, accessible controls and build/test paths. Establish only missing
 foundations, with semantic tokens, states and responsive behavior; leave brand open.
+Use its existing locations for documentation, tests and evidence; kit folder names
+do not prescribe target folders. Preserve unrelated and concurrent work.
 
 ## 01 - Understand
 
@@ -29,8 +40,9 @@ signature assets only when they add meaning; check mobile crop and delivery cost
 
 ## 03 - Render early
 
-Render the hero/core workspace, a representative deeper state and mobile. Use realistic
-content and data, including relevant extremes. Check the critical flow and risky
+Render the scoped surface in context; for full builds include the hero/core workspace,
+a representative deeper state and mobile. Use realistic content and data, including
+relevant extremes. Check the critical flow and risky
 failure/recovery states at the delivery mode's fidelity before freezing. Judge taste,
 clarity, originality and behavior in the running result, not screenshots alone.
 
@@ -52,13 +64,13 @@ controls or severe layout faults. A plateau cannot pass a blocker.
 
 Freeze after representative experience checks support the direction and remaining
 critique is refinement. For production, prove one complete real user job before
-scaling. Preserve accepted states and authority using [baselines](qa/baselines/README.md).
+scaling. Preserve accepted states and authority using [baselines](BASELINES.md).
 Extract reusable tokens, components, assets and responsive/interaction rules into
 the target. Justify later drift with a product, usability or engineering reason.
 
 ## 07 - Verify
 
-Apply [QA](qa/README.md) to the integrated frontend for its delivery mode. Production
+Apply [QA](QA.md) to the integrated frontend for its delivery mode. Production
 requires real service behavior and fresh release review. Publication is separate;
 keep mocks and unverified requirements explicit.
 

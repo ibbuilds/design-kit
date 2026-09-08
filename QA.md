@@ -4,6 +4,9 @@ Review the brief, taste and actual rendered experience. Keep evidence in the tar
 not this skeleton. OpenDesign success, self-scores and passing tests do not prove
 visual quality. Self-review is not independent release approval.
 Agent walkthroughs are heuristic review, not evidence from representative users.
+These checks are a minimum, not a complete definition of excellence. Add relevant
+checks for the actual experience; judge visual craft and usability against the brief,
+user taste and selected references as well as functional correctness.
 
 ## Every handoff
 
@@ -11,7 +14,7 @@ Agent walkthroughs are heuristic review, not evidence from representative users.
   hierarchy, typography/wrapping, composition, copy, meaningful assets and motion.
 - Perform the primary job. Check orientation, findable actions, feedback and relevant
   failure/recovery states. Density must serve the task; polish covers behavior too.
-- After integration, inspect the target app as well as the OpenDesign preview.
+- When using OpenDesign, inspect the integrated target as well as its preview.
 - Record each issue as **viewport/state + location + defect + impact + smallest
   repair + recheck**. Prioritize by user impact; preserve good
   work and verify repairs. Missing evidence stays open; a plateau cannot pass a blocker.
@@ -27,7 +30,7 @@ Agent walkthroughs are heuristic review, not evidence from representative users.
 ## Production checks
 
 - Visual/responsive: accepted targets, type/crops, section rhythm, assets and justified
-  post-freeze changes. Use [baseline guidance](baselines/README.md) for comparisons.
+  post-freeze changes. Use [baseline guidance](BASELINES.md) for comparisons.
 - UX: relevant loading/empty/error/success/disabled/permission/destructive states;
   real action result, validation/input preservation, sign-in/recovery, deep links,
   refresh/back and slow/offline recovery where needed.
@@ -41,7 +44,8 @@ Agent walkthroughs are heuristic review, not evidence from representative users.
 - Integration/reliability: supplied contracts, session/permission UI, stale state,
   cancellation, recovery and required persistence. Protect client trust boundaries;
   secrets and privileged operations remain in services.
-- Code: dependencies, dead/duplicate logic, fragile effects and needless abstractions.
+- Code: run the target's required checks and relevant regression tests; inspect
+  dependencies, dead/duplicate logic, fragile effects and needless abstractions.
 - Release: use the authorized deployed preview; check routes/services, client error
   monitoring and recovery/rollback. A fresh reviewer/context must inspect the running
   result and decide SHIP / DO NOT SHIP; extra agents require authorization.
