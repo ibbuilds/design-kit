@@ -1,48 +1,46 @@
-# Review context
+# Frontend acceptance
 
-Use this guidance while reviewing the actual site in its target project. Run that
-project's available tools and keep its tests, captures, baselines and review records
-there. This context repo supplies no test harness and has no site-quality score.
+Review the brief, taste and actual rendered experience. Keep evidence in the target,
+not this skeleton. OpenDesign success, self-scores and passing tests do not prove
+visual quality. Self-review is not independent release approval.
 
-## Review the actual result
+## Every handoff
 
-Open the rendered desktop/mobile interface and perform the primary job. Inspect
-the hero/core workspace, a deeper section/state, and relevant failure cases. Judge
-product-specific identity, originality, hierarchy, type/wrapping, composition,
-product meaning, copy/action clarity, assets, motion and responsive priorities.
-
-For each issue, name viewport and section/control; describe the visible defect;
-explain its effect on meaning, conversion, UX or craft; choose the smallest repair;
-then render/use again and verify it improved without losing successful decisions.
-Fix the two or three most important issues per pass. Preserve the best snapshot.
+- Inspect desktop/mobile with realistic content. Apply taste criteria to identity,
+  hierarchy, typography/wrapping, composition, copy, meaningful assets and motion.
+- Perform the primary job. Check orientation, findable actions, feedback and relevant
+  failure/recovery states. Density must serve the task; polish covers behavior too.
+- After integration, inspect the target app as well as the OpenDesign preview.
+- Record each issue as **viewport/state + location + defect + impact + smallest
+  repair + recheck**. Fix the two or three biggest issues per pass; preserve good
+  work and verify repairs. Missing evidence stays open; a plateau cannot pass a blocker.
 
 ## Match the mode
 
-| Mode | Evidence before handoff |
+| Mode | Required evidence |
 | --- | --- |
-| Concept | Visual hierarchy, responsive composition, interaction intent and honest labels. |
-| Interactive prototype | Working primary frontend flow, believable demo data/states, keyboard/touch; mocks explicit. |
-| Production frontend | Real required integrations/state/persistence, failures, accessibility, measured performance, client security/reliability, deployed preview and fresh review. |
+| Concept | Visual hierarchy, mobile composition, interaction intent, honest labels |
+| Interactive prototype | Working primary frontend flow, believable demo data/states, keyboard/touch; mocks explicit |
+| Production frontend | All applicable checks below, real integrations and fresh release review |
 
-## Production frontend review
+## Production checks
 
-- Visual/responsive: accepted native-size targets, type/wrapping, crop/assets,
-  section rhythm, mobile composition and justified post-freeze changes.
+- Visual/responsive: accepted targets, type/crops, section rhythm, assets and justified
+  post-freeze changes. Use [baseline guidance](baselines/README.md) for comparisons.
 - UX: relevant loading/empty/error/success/disabled/permission/destructive states;
-  actual CTA/task result, deep links, refresh/back, slow/offline recovery as needed.
-- Accessibility: semantics, labels, contrast, keyboard/focus, touch, reduced motion
-  and the critical screen-reader path. Automated checks cover only part of this.
-- Performance: profile relevant bundle/network/media/rendering/memory, set product
-  budgets and rerun after repairs. Lab checks are not field Web Vitals.
-- Integrations/reliability: supplied service contracts, session/permission UI,
-  request cancellation, stale state, failure recovery and required persistence.
-  Keep secrets/privileged operations in services; backend implementation is separate.
-- Code: client trust boundaries, dependencies, dead/duplicate logic, fragile effects
-  and unnecessary abstractions. Evaluate the actual stack rather than imposing one.
-- Release: use the authorized deployed preview, inspect routes/services and errors,
-  and obtain a fresh reviewer/context's actual SHIP / DO NOT SHIP decision.
+  real action result, deep links, refresh/back and slow/offline recovery where needed.
+- Accessibility: semantics, labels, contrast, keyboard/focus, touch, reduced motion,
+  zoom/reflow, error identification and the critical screen-reader path. Automation
+  covers only part of this; still images cannot prove interaction or motion.
+- Performance: measure relevant bundle/network/media/render/memory against product
+  budgets and recheck repairs. Lab results are not field Web Vitals.
+- Integration/reliability: supplied contracts, session/permission UI, stale state,
+  cancellation, recovery and required persistence. Protect client trust boundaries;
+  secrets and privileged operations remain in services.
+- Code: dependencies, dead/duplicate logic, fragile effects and needless abstractions.
+- Release: use the authorized deployed preview; check routes/services, client error
+  monitoring and recovery/rollback. A fresh reviewer/context must inspect the running
+  result and decide SHIP / DO NOT SHIP; extra agents require authorization.
 
-Still images do not prove motion or interactions. Test success does not prove taste.
-Self-review is not independent approval. Missing evidence stays explicit, and a
-plateau does not turn a blocker into a pass. A release decision is not authorization
-to publish. Service-free sites need no invented backend requirements.
+No invented backend requirements. Report unverified work. Release review does not
+itself authorize publication. Research only the specific uncertainty that needs it.

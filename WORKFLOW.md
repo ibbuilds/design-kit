@@ -1,105 +1,75 @@
-# High-end frontend workflow
+# Frontend workflow
 
-Applied from the final six-page source PDF. This is guidance for work in a separate
-site project. It does not prescribe a bundled framework, library, brand or deployment.
+Operational version of [WORKFLOW.pdf](WORKFLOW.pdf). Project facts live in
+[BRIEF.md](BRIEF.md); quality intent in [taste/PROFILE.md](taste/PROFILE.md).
+[OPENDESIGN.md](OPENDESIGN.md) handles execution, not a competing design process.
 
-## 00 — Prepare the working context
+## 00 - Prepare
 
-Inspect the target repo and available tools. Reuse its verified routing, shell,
-fonts, accessible controls and build/test path. Establish missing essentials only
-as that project needs them. Check browser/capture and media-generation availability.
-Do not treat the PDF's named capabilities as tools already connected.
+Inspect the target and available tools. Reuse routing, shell, fonts, accessible
+controls and build/test paths; establish only missing essentials in that project.
+Use semantic tokens, states and responsive foundations without pre-deciding its brand.
+Check browser/capture and media capabilities rather than assuming availability.
 
-Apply a professional craft floor: semantic spacing/type/color roles, native or
-established accessible controls, reachable states, focus/touch and responsive behavior.
-Use existing components/blocks where they fit. A neutral foundation must not decide
-the new brand identity. All implementation belongs in the target project.
+## 01 - Understand
 
-Load only the taste pack supplied by the user. Do not select or collect substitutes.
-Reuse that shared pack across projects until the user changes it. Apply any
-user-authorized project-specific differences locally; do not reset the pack for
-each new interface. If it is missing, leave it empty and request the user's material
-when a design task needs it. Finishing this context skeleton needs no taste content.
-The PDF suggests a compact mix of annotated internal/external and before/after
-examples; that is guidance for the user's pack, not permission for agent curation.
-Adding, replacing, annotating or promoting taste material requires explicit permission.
+Resolve audience, job, primary action, delivery mode, product truth, constraints and
+creative authority from supplied context. Ask only about material gaps. Consult the
+relevant library section when a decision needs evidence; never fabricate product
+claims, testimonials, logos or metrics. Do not demand more references to fill blanks.
 
-## 01 — Read the mission
+## 02 - Direct
 
-Establish audience, user job, value, primary action, content truth, hard technical
-constraints, quality bar, delivery mode and what the agent may invent. Infer routine
-details from supplied context and the actual target repo. Do not ask the user to
-repeat information already available. Request only missing facts or decisions that
-matter. Keep the prompt dense with useful information, not a design manifesto.
+Form one coherent identity: composition, typography, palette, copy, product visuals
+and motion. Respect accepted systems. Author meaningful signature assets early when
+useful; select for product meaning, composition, mobile crop and delivery cost.
 
-## 02 — Form one strong direction
+## 03 - Render early
 
-Co-invent identity, type, palette, composition, copy voice, section rhythm, product
-visuals and motion. An accepted product system remains authoritative. Make the
-product understandable; never fabricate testimonials, customer logos or metrics.
+Build hero/core workspace, one representative deeper section/state and mobile with
+realistic content. Open and use it before expanding. Judge the user's taste criteria,
+product clarity, originality, interactions and visible technical defects.
 
-When a hero/product visual carries the idea, source or generate serious options
-early. Select for product meaning, composition, crop, mobile behavior and delivery
-cost. A generic polished asset does not substitute for a relevant concept.
+## 04 - Repair or pivot
 
-## 03 — Render an early real sample
+Choose the smallest correct action: local repair for an isolated defect; refinement
+for a promising but underdeveloped idea; element pivot for a wrong major section or
+asset; direction pivot for an unsuitable or generic premise. Preserve successful
+choices and snapshots. Do not default to three full designs.
 
-Build the hero/core workspace, one representative deeper section/state, and mobile
-using realistic content. Open the running result before finishing all pages. Judge
-identity, originality, hierarchy, readability, product clarity, asset meaning,
-conversion/task usability and obvious technical defects. Use the interface too.
+## 05 - Complete and refine
 
-## 04 — Make the smallest correct change
+Finish the promising direction. Capture and use desktop/mobile; fix the two or three
+highest-impact issues, render again and check for regressions. Continue without
+making the user manage routine phases. The first handoff must already show identity,
+meaningful product presentation, deliberate type/rhythm, clear actions, useful feedback,
+intentional mobile composition and no obvious broken controls or severe layout faults.
+A plateau never converts a blocker into a pass; report unresolved limitations.
 
-| Decision | When to use it |
-| --- | --- |
-| Local repair | One control, state, copy block or spacing decision is weak. |
-| Refine | The idea works but needs stronger craft, clarity or depth. |
-| Pivot an element | A major section or asset is conceptually wrong; preserve the successful identity. |
-| Pivot the direction | The core premise is generic, unsuitable or lacks an identity. |
+## 06 - Freeze and scale
 
-Preserve successful decisions and useful snapshots in the target project. Branch
-only when needed; do not generate three complete designs by default. Critique names
-the viewport/section, visible problem, why it matters and the smallest repair.
+Freeze only when remaining critique is refinement, not a different premise. Preserve
+accepted screens/states and authority using [baseline guidance](qa/baselines/README.md).
+Extract principles, semantic tokens, components/blocks, assets, responsive rules, copy
+and interaction/motion grammar into the target. Justify later drift with a concrete
+product, usability or engineering reason. For production, prove one complete real
+user job before expanding: implement, use, render/compare, repair, accept, then scale.
 
-## 05 — Complete and self-refine
+## 07 - Verify
 
-Develop the promising seed into the whole experience. Capture desktop/mobile,
-fix the two or three highest-impact problems, render and use it again, then verify
-the repair without regressions. Continue without waiting for another user prompt.
+Apply [QA](qa/README.md) for the delivery mode, including the integrated frontend.
+Production requires actual relevant service behavior and fresh release review.
+Publication is separate. Keep mocks and unverified requirements explicit.
 
-The first handoff should already show distinct identity, meaningful product
-presentation, deliberate typography and rhythm, clear copy/action, useful feedback,
-authored mobile composition and no obvious broken controls or severe layout faults.
-The PDF's “7–8+ seed” is an ambition for the first result, not an automated score.
-Stop at diminishing returns only with outstanding limitations explicit.
+## 08 - Learn
 
-## 06 — Earn the freeze, then scale
+Keep one compact proposal in the frontend project for a recurring issue:
+**problem + impact; before/after evidence and revision; applicability; smallest rule
+change; user approval; comparable recheck**. One-off opinion stays local.
 
-Freeze when the remaining critique is refinement, not a different idea. Capture
-accepted screens/states and record the authority and revision. Extract principles,
-semantic tokens, canonical components/blocks, assets, interaction/motion grammar,
-responsive rules, copy hierarchy and anti-patterns into the target project.
-Later visual/behavior drift needs a concrete product, usability or engineering reason.
-
-For production work, prove one complete user job before extending another:
-**implement → use → render and compare → repair → accept and scale**.
-Use real frontend behavior and supplied services; cover the states that can occur.
-
-## 07 — Verify the delivery mode
-
-Use qa/README.md. A concept, interactive prototype and production frontend need
-different evidence. Production requires relevant integration, accessibility,
-performance, client reliability/security and deployed-preview checks, followed by
-fresh review of the running result. A local mock cannot prove a real service works.
-Do not create backend infrastructure to satisfy this frontend workflow.
-Publication is separate from a design task and requires authorization.
-
-## 08 — Learn narrowly
-
-Recurring accepted taste corrections → proposals for the user's approval before
-changing taste context. Repeated mechanics
-→ the relevant project's tokens/components/blocks. Detectable failures → its checks
-or tests. Accepted visual states → its baselines. One-off opinion → nothing permanent.
-Use matched first attempts when assessing a reusable rule; add holdouts as evidence
-matures. Do not generalize a brand's colors, pills or motion into universal laws.
+Repeated mechanics go into its components/tokens; detectable failures into checks;
+accepted states into baselines. Propose transferable changes to the original kit
+before editing it. After approval, replace redundant guidance instead of accumulating
+rules. Recheck on comparable first attempts and later holdouts; revise failed rules.
+Never generalize a project's colors or shapes into universal taste. No private evidence,
+model-training claims or automatic fork updates belong in this process.

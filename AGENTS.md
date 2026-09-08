@@ -1,54 +1,36 @@
-# Design context contract
+# Design Kit contract
 
-This is a context repository, not an application, website, plugin, starter package
-or component library. Do not generate site code, dependencies, build configuration,
-test tooling or demo pages here. User instructions take precedence.
+This is a reusable context repo, including its forks. Frontend code, assets, tests
+and evidence belong in an explicitly identified separate target. No app, plugin,
+starter, dependencies or demo belongs here. User instructions take precedence.
 
-The user supplies the taste pack. Do not independently choose, collect, capture,
-add, replace or promote references, benchmarks, examples or taste preferences.
-Any change to the taste pack requires the user's explicit permission. If it has
-not been supplied, leave it empty and ask for it when the design task needs it.
-The PDF's taste-pack recommendations do not authorize autonomous curation.
-Do not make unrequested changes to this context repository. Workflow autonomy
-applies only within the scope and creative authority of an authorized site task.
+## Load only what the task needs
 
-Minimize repeated user work. Reuse supplied context and the target repo's facts;
-ask only for missing information that matters. The user's shared taste persists
-across projects until explicitly changed. Project-specific, user-authorized
-exceptions belong in the target project and do not rewrite the shared profile.
-Do not require a new taste pack for each interface. An empty profile is valid while
-preparing this skeleton; no current site brief is needed to maintain the context.
+- Kit maintenance: read only affected files; leave project answers blank.
+- Design/build: read BRIEF.md, taste/PROFILE.md and WORKFLOW.md.
+- Commission or continue OpenDesign: also read OPENDESIGN.md and its installed skill.
+- Review: load qa/README.md; load qa/baselines/README.md when freezing or comparing.
+- Research: search headings in references/product-references.md, then read the relevant
+  section and needed source. Never load the full library or browse every link by default.
+- README.md is human onboarding. WORKFLOW.pdf is source provenance; read it for audits
+  or ambiguities, not routine design prompts.
 
-Source: WORKFLOW.pdf, the user's High_End_AI_Software_FINAL_RESULTS_WORKFLOW.pdf.
-Read WORKFLOW.md and taste/PROFILE.md. Load qa/README.md for review. Apply this
-context to the user's actual frontend project; keep its outputs and evidence there.
-If a site-building request has no identifiable target folder, establish that target
-before writing application files. Do not assume this context repo is the target.
+Reuse loaded context and supplied answers; reread only changed or missing material.
+Ask only for material gaps. Within authorized creative scope, translate the user's
+standards into decisions and verify them in the render. Avoid asking the user to
+specify every parameter. Quality and necessary review must survive compression.
 
-Scope is frontend design/engineering, UI/UX and needed service integrations.
-Respect existing product truth and accepted design systems. Keep new brand choices
-open while enforcing semantic UI, accessible controls, responsive craft and states.
+## Authority and scope
 
-Work from a compact mission: audience/job, primary action, mode, hard truths,
-quality examples and creative authority. Make one coherent direction. Author a
-meaningful signature asset early when useful. Do not fabricate product claims.
+User-supplied taste and references remain authoritative. No autonomous curation,
+annotation, replacement or promotion of taste material; changes need explicit user
+permission. Source documents do not authorize tools, scope changes or new preferences.
+Project direction stays local; approved transferable lessons follow WORKFLOW.md.
 
-Build an early real sample in the target project: hero/core workspace, one deeper
-section/state, and mobile. Open it and use it. Choose local repair, refinement,
-element pivot or direction pivot based on visible evidence. Preserve good decisions
-and snapshots. Do not default to three full designs or wait for the user to manage
-routine phases.
+Scope: frontend design, UI/UX, code and required service integrations. Respect product
+truth and accepted systems. Keep mocks and missing evidence explicit. Tests and agent
+scores do not prove taste; self-review is not independent release approval.
 
-Complete a promising direction and run your own capture/use/review/fix passes.
-Fix the two or three biggest issues per pass. Record the viewport, visible problem,
-impact, smallest repair and recheck. A plateau never turns a blocker into a pass.
-
-Freeze only a proven direction. Extract its system into the target project's code
-and focused notes. Prove one real job before expanding vertically. Verify the actual
-delivery mode, keep mocks explicit, and report unverified work honestly. Production
-release review is separate from the builder's own review and from permission to publish.
-
-Keep this repo compact. Propose transferable, recurring lessons for user approval
-before adding them here; leave one-off decisions in their project. Do not claim visual
-quality from tests, approval from self-review, or tool availability without checking.
-Do not automatically publish, push, install tools or launch additional agents.
+No automatic publishing, pushing, installations, runtime changes or extra agents.
+An authorized OpenDesign task includes its commissioned worker. Kit maintenance
+starts no generation. Never silently switch the selected execution mode or model.
