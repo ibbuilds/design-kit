@@ -1,54 +1,63 @@
 # Frontend acceptance
 
-Review the brief, taste and actual rendered experience. Keep evidence in the target,
-not this skeleton. OpenDesign success, self-scores and passing tests do not prove
-visual quality. Self-review is not independent release approval.
-Agent walkthroughs are heuristic review, not evidence from representative users.
-These checks are a minimum, not a complete definition of excellence. Add relevant
-checks for the actual experience; judge visual craft and usability against the brief,
-user taste and selected references as well as functional correctness.
+Review the scoped result against BRIEF.md, [TASTE.md](TASTE.md) and relevant selected
+references. This is a quality floor, not an aesthetic formula. Use applicable checks;
+add checks for actual risks. Keep evidence in the target. Passing tests, agent scores
+and OpenDesign success do not prove excellent design or independent approval.
 
-## Every handoff
+## Inspect every handoff
 
-- Inspect desktop/mobile with realistic content. Apply taste criteria to identity,
-  hierarchy, typography/wrapping, composition, copy, meaningful assets and motion.
-- Perform the primary job. Check orientation, findable actions, feedback and relevant
-  failure/recovery states. Density must serve the task; polish covers behavior too.
-- When using OpenDesign, inspect the integrated target as well as its preview.
-- Record each issue as **viewport/state + location + defect + impact + smallest
-  repair + recheck**. Prioritize by user impact; preserve good
-  work and verify repairs. Missing evidence stays open; a plateau cannot pass a blocker.
+- **Craft:** compare actual hierarchy, type relationships, composition, assets and
+  motion with the selected reference intent. Identify the gap, not just "needs polish."
+  Check deeper content as carefully as the opening; repetition must serve the content.
+- **Comprehension:** can a new user identify where they are, the value/task, next action
+  and result? Test concrete labels and believable content; remove contradictory cues.
+- **Behavior:** complete the primary job and consequential recovery states. Inspect
+  input preservation, feedback and continuity. Match the fidelity promised in the brief.
+- **Adaptation:** inspect desktop and small screens plus intermediate widths where the
+  layout changes. Try long content and realistic data density; check wrapping, crops,
+  overflow, sticky layers and touch access. A scaled-down desktop is not mobile design.
+- **Integration:** when delivered, inspect the target application as well as the
+  OpenDesign preview. Compare fonts, assets, layout, interactions and state behavior.
+
+Record issues as **viewport/state + location + defect + impact + repair + recheck**.
+Prioritize blocked tasks, misleading behavior and major craft gaps before micro-polish.
+Attach a capture for visual defects or reproduction steps for behavior. Preserve good
+work; a plateau cannot pass a blocker. Keep unobserved behavior marked unverified.
 
 ## Match the mode
 
-| Mode | Required evidence |
+| Mode | Evidence required |
 | --- | --- |
-| Concept | Visual hierarchy, mobile composition, interaction intent, honest labels |
-| Interactive prototype | Working primary frontend flow, believable demo data/states, keyboard/touch; mocks explicit |
-| Production frontend | All applicable checks below, real integrations and fresh release review |
+| Concept | Visual direction, mobile composition, interaction intent; unfinished behavior explicit |
+| Interactive prototype | Usable primary frontend flow, credible demo data/states, keyboard/touch; mocks explicit |
+| Production frontend | Applicable checks below, real integrations and fresh release review |
 
 ## Production checks
 
-- Visual/responsive: accepted targets, type/crops, section rhythm, assets and justified
-  post-freeze changes. Use [baseline guidance](BASELINES.md) for comparisons.
-- UX: relevant loading/empty/error/success/disabled/permission/destructive states;
-  real action result, validation/input preservation, sign-in/recovery, deep links,
-  refresh/back and slow/offline recovery where needed.
-- Localization: required languages/locales, text expansion, formats and RTL where
-  applicable. Do not invent extra locale scope.
-- Accessibility: semantics, labels, contrast, keyboard/focus, touch, reduced motion,
-  zoom/reflow, error identification and the critical screen-reader path. Automation
-  covers only part of this; still images cannot prove interaction or motion.
-- Performance: measure relevant bundle/network/media/render/memory against product
-  budgets and recheck repairs. Lab results are not field Web Vitals.
-- Integration/reliability: supplied contracts, session/permission UI, stale state,
-  cancellation, recovery and required persistence. Protect client trust boundaries;
-  secrets and privileged operations remain in services.
-- Code: run the target's required checks and relevant regression tests; inspect
-  dependencies, dead/duplicate logic, fragile effects and needless abstractions.
-- Release: use the authorized deployed preview; check routes/services, client error
-  monitoring and recovery/rollback. A fresh reviewer/context must inspect the running
-  result and decide SHIP / DO NOT SHIP; extra agents require authorization.
+- **Accessibility:** semantic controls and names; logical keyboard order, visible and
+  restored focus; contrast, zoom/reflow, touch, reduced motion and critical screen-reader
+  path. Check custom widgets against APG and applicable WCAG requirements. Automated
+  checks supplement manual use; decorative originality does not excuse inaccessible controls.
+- **Forms and navigation:** useful validation timing, actionable errors, preserved input,
+  clear success, recoverable destructive actions where appropriate; deep links, refresh,
+  back and permission/session recovery. Test actual results, not just click handlers.
+- **Relevant product risks:** search/filter/sort preserve orientation; charts communicate
+  units, scales and comparisons honestly; AI flows expose limitations, progress, correction
+  and recovery. Apply only to features in scope; use the relevant library section for gaps.
+- **Localization:** test required locales, expansion, formats and bidirectional content.
+  Do not invent additional locale scope.
+- **Performance:** measure loading, interaction responsiveness and layout stability;
+  investigate costly fonts, media, effects and requests. Compare with product budgets.
+  Smooth animation alone is not responsiveness; lab measurements are not field Web Vitals.
+- **Integration/code:** verify supplied contracts, persistence, stale/slow/failed requests,
+  cancellation and session/permission UI. Keep privileged operations in services. Run
+  existing required checks and relevant regression tests; inspect duplicate logic, fragile
+  effects, unused dependencies and unnecessary abstractions.
+- **Release:** a fresh reviewer/context checks the authorized deployed preview, routes,
+  services and applicable monitoring/recovery, then decides SHIP / DO NOT SHIP. Extra
+  agents require authorization. Self-review is not independent release approval.
 
-No invented backend requirements. Report unverified work. Release review does not
-itself authorize publication. Research only the specific uncertainty that needs it.
+Use [BASELINES.md](BASELINES.md) to detect drift. Agent walkthroughs are heuristic review,
+not representative-user research. Report missing evidence; do not invent backend scope
+or claim accessibility conformance from partial checks. Release review does not publish.

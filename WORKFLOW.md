@@ -1,88 +1,87 @@
 # Frontend workflow
 
-Use [BRIEF.md](BRIEF.md) for project context and [TASTE.md](TASTE.md) for shared quality.
-Read [OPENDESIGN.md](OPENDESIGN.md) only for that execution path.
-
-Adaptive checkpoints: combine, revisit or omit satisfied work; retain applicable
-acceptance checks. Choose methods for the strongest result within project constraints;
-prefer lower cost between methods likely to deliver comparable quality. Explore or
-replace a direction when that can materially improve the experience.
-No document per checkpoint. Passing checks is a floor: also review the rendered
-result against the user's taste and selected references. Address identifiable craft
-and usability gaps; stop when the agreed goal is met, reporting evidence and limits.
-
-Scope can be a site, app, flow, feature, section or component. For scoped changes,
-reuse the surrounding system and inspect the change in context; do not restart
-whole-site discovery or create unrelated screens.
+Use [BRIEF.md](BRIEF.md), [TASTE.md](TASTE.md) and [OPENDESIGN.md](OPENDESIGN.md).
+These are adaptive checkpoints, not mandatory phases or documents. Reuse satisfied
+work; choose methods for the strongest experience within scope. Efficiency breaks
+ties between comparable quality, never substitutes for it. A component needs its
+surrounding context, not a new site-wide design exercise.
 
 ## 00 - Prepare
 
-Resolve kit and target paths, then inspect the target's applicable agent instructions,
-current changes and tools, including browser/capture and media. Reuse existing
-routing, fonts, accessible controls and build/test paths. Establish only missing
-foundations, with semantic tokens, states and responsive behavior; leave brand open.
-Use its existing locations for documentation, tests and evidence; kit folder names
-do not prescribe target folders. Preserve unrelated and concurrent work.
+Identify kit and target roots, applicable instructions, current changes, stack and
+review tools. Inspect the existing experience before replacing it. Reuse routing,
+accessible primitives, fonts, tests and project conventions; preserve concurrent work.
+Verify OpenDesign with Local Codex and the selected model before commissioning.
 
 ## 01 - Understand
 
-Resolve the user job, success criteria, mode, facts, constraints and creative authority.
-Separate the problem from a proposed solution; test assumptions that could invalidate
-the direction. Reuse supplied answers. Consult references only for a concrete decision.
-Never fabricate claims, testimonials, logos or metrics.
+Resolve who is doing what, with which content, constraints and success evidence.
+Trace the primary journey, decision points and consequential failure/recovery states.
+Separate known product facts from assumptions; test the uncertainty most likely to
+invalidate the direction. For marketing, establish value, credible proof and the next
+action; for applications, orientation, useful information and task completion.
+Never invent claims, testimonials, logos or metrics.
 
 ## 02 - Direct
 
-Reuse an accepted direction. When uncertain, compare inexpensive composition or
-interaction sketches before committing; no mandatory variants. Resolve a coherent
-identity through type, composition, copy, color, product visuals and motion. Create
-signature assets only when they add meaning; check mobile crop and delivery cost.
+Inspect relevant user-selected references for a concrete decision: type relationships,
+composition, content hierarchy, interaction or motion. Record only the useful takeaway
+and its fit to this product; gallery membership alone is not evidence of suitability.
+Use the library's behavioral/standards hierarchy for usability decisions.
+
+Reuse an accepted direction or develop a coherent product-specific idea across copy,
+type, layout, imagery and behavior. Explore alternatives when uncertainty warrants it;
+no fixed number or prescribed aesthetic. Prototype the risky interaction or expressive
+technique before investing in full polish. Resolve content and assets with the layout.
 
 ## 03 - Render early
 
-Render the scoped surface in context; for full builds include the hero/core workspace,
-a representative deeper state and mobile. Use realistic content and data, including
-relevant extremes. Check the critical flow and risky
-failure/recovery states at the delivery mode's fidelity before freezing. Judge taste,
-clarity, originality and behavior in the running result, not screenshots alone.
+In OpenDesign, render the scoped experience with credible content and relevant extremes.
+For full builds, include the opening/core workspace, a deeper state and small-screen
+composition. Perform the primary job and a consequential recovery path at the agreed
+fidelity. Inspect actual type, crops, motion and interaction; screenshots alone cannot
+prove the experience. Honor any preview approval boundary recorded in BRIEF.md.
 
 ## 04 - Repair or pivot
 
-Choose the smallest correct action: repair an isolated defect; refine a promising
-idea; replace a wrong section/asset; pivot an unsuitable or generic direction.
-Preserve successful choices and snapshots.
+Compare against taste and relevant reference craft. Name the observable gap and its
+cause: wrong information, composition, typography, asset, behavior or implementation.
+Repair isolated defects; refine a promising idea; replace the section or direction
+when its premise is wrong. Adding effects cannot repair weak hierarchy or unclear value.
+Preserve successful decisions and snapshots.
 
 ## 05 - Complete and refine
 
-Finish the promising direction. Fix the highest-impact issues in focused passes;
-render and use the affected states again, checking for regressions. The first handoff
-must show identity, meaningful product presentation, deliberate type/rhythm, clear
-actions, useful feedback and intentional mobile composition. No obvious broken
-controls or severe layout faults. A plateau cannot pass a blocker.
+Resolve the highest-impact experience gaps in focused passes, then render and use the
+changed states again. Carry identity and craft through deeper content, forms and edge
+states. Recompose across widths; check long labels, real data, touch and keyboard.
+Refine optical alignment, wrapping, image treatment, transitions and feedback where
+they improve the result. No generic first draft presented as finished work.
 
 ## 06 - Freeze and scale
 
-Freeze after representative experience checks support the direction and remaining
-critique is refinement. For production, prove one complete real user job before
-scaling. Preserve accepted states and authority using [baselines](BASELINES.md).
-Extract reusable tokens, components, assets and responsive/interaction rules into
-the target. Justify later drift with a product, usability or engineering reason.
+Freeze a promising direction after representative experience checks; for production,
+prove one complete real user job before scaling. Preserve accepted decisions with
+[baselines](BASELINES.md). Extract repeated visual/behavioral rules into the target's
+existing tokens and components. Share mechanics without forcing identical compositions.
+Accepted direction can evolve for a clear product, usability or craft improvement.
 
 ## 07 - Verify
 
-Apply [QA](QA.md) to the integrated frontend for its delivery mode. Production
-requires real service behavior and fresh release review. Publication is separate;
-keep mocks and unverified requirements explicit.
+Integrate through [OPENDESIGN.md](OPENDESIGN.md), then apply [QA.md](QA.md) in the actual
+application. Preview approval does not prove integration quality. Close identifiable
+craft/usability gaps and applicable blockers; report evidence, remaining limits and
+needed decisions. Stop when the agreed goal is met. Release approval and publication
+remain separate; do not expand scope merely to keep polishing.
 
 ## 08 - Learn
 
-Keep one compact proposal in the frontend project for a recurring issue:
+For a recurring problem, keep one compact proposal in the target:
 **problem + impact; before/after evidence and revision; applicability; smallest rule
-change; user approval; comparable recheck**. One-off opinion stays local.
+change; user approval; comparable recheck**. One-off preference stays local.
 
-Repeated mechanics go into its components/tokens; detectable failures into checks;
-accepted states into baselines. Propose transferable changes to the original kit
-before editing it. After approval, replace redundant guidance instead of accumulating
-rules. Recheck on comparable first attempts and later holdouts; revise failed rules.
-Never generalize a project's colors or shapes into universal taste. No private evidence,
-model-training claims or automatic fork updates belong in this process.
+Repeated mechanics become components/tokens; detectable failures become checks;
+accepted experiences become baselines. Propose transferable kit changes, then replace
+redundant guidance after approval. Compare first attempts, correction effort and later
+holdouts; revise rules that fail. Do not generalize a project's visual identity into
+universal taste or copy private evidence into the kit. No automatic fork updates.

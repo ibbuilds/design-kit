@@ -21,7 +21,7 @@ specific missing access or capabilities.
 - Kit maintenance: affected files only; leave project answers blank.
 - Design/build: BRIEF.md, TASTE.md and WORKFLOW.md.
 - Review: QA.md; BASELINES.md only when preserving or comparing accepted states.
-- OpenDesign, only when selected: OPENDESIGN.md and the installed skill.
+- Design generation/refinement: OPENDESIGN.md and the installed OpenDesign skill.
 - Reference lookup: search REFERENCES.md headings, then read the relevant section
   and needed source. Never load the whole library or browse every link by default.
 - README.md is onboarding; RESEARCH.md is provenance. Neither is routine context.
@@ -33,6 +33,11 @@ methods when they resolve a concrete need; this kit is not an exhaustive playboo
 Reuse context; reread only what changed or resolves uncertainty. Reduce wasted work,
 never useful exploration, craft or verification. No mandatory variants, documents
 per phase or routine phase approvals.
+
+Use OpenDesign with Local Codex for design generation/refinement unless the user
+explicitly selects another path. The current coding agent owns target integration
+and verification. Carry relevant reference intent and quality criteria into the
+worker handoff; tool access alone does not provide that context.
 
 ## Authority
 

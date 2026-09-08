@@ -66,6 +66,21 @@ These are documentation comparisons, not completed trials or an exhaustive ranki
 | [Superdesign](https://github.com/superdesigndev/superdesign/blob/main/README.md) | Original IDE extension is explicitly no longer maintained; its README points to the current web app and coding-agent skill. | Evaluate the current offering, not old extension demos. No superiority conclusion from the historical repository. |
 | [Onlook](https://github.com/onlook-dev/onlook/blob/main/README.md) | Open-source visual editing of Next.js/Tailwind code; the next hosted product is described separately as early access. | Relevant when direct visual manipulation matters. Its editor and stack assumptions differ from this context repo's general frontend scope. |
 
+## Operational use of the supplied references
+
+The September 8 maintenance pass translates the existing [library](REFERENCES.md)
+into decisions and checks; it does not add sources or claim a new external audit.
+SVPG/Product Talk and NN/g inform problem framing; Baymard/GOV.UK inform task and
+recovery checks; APG/WCAG inform accessible behavior; Datawrapper, HAX/PAIR and web.dev
+inform relevant data, AI and performance checks. The visual sources inform craft
+comparison in TASTE.md. Consult the actual relevant source before asserting a specific
+finding or standard. Source categories alone do not prove a design decision.
+
+OpenDesign with Local Codex is the user's chosen default, not a comparative winner
+established by this maintenance pass. QA now asks for observable defects and integrated
+verification; baselines preserve behavior as well as appearance. Their value still
+needs evaluation on real project outcomes, without inflating routine prompt context.
+
 ## What would establish a winner
 
 No comparative output evaluation has been completed for this kit. Vendor demos,

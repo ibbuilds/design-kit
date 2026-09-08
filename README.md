@@ -1,8 +1,9 @@
 # Design Kit
 
 Reusable context for polished frontend design, UI and UX: whole sites and apps,
-flows, features, sections or components. Your coding agent chooses the method;
-the kit supplies quality criteria, an adaptive workflow and verification guidance.
+flows, features, sections or components. OpenDesign with Local Codex generates and
+refines the design; your coding agent integrates and verifies it. The kit carries
+your quality criteria and reference intent through both stages.
 
 ## Use with an existing or new project
 
@@ -21,7 +22,8 @@ Continue your coding task in the application and send:
 
 > Read .design-kit/AGENTS.md as supplemental frontend guidance. Use it to [task]
 > in [target work area], preserving this project's instructions and existing work.
-> Reuse our context and BRIEF.md. Keep shared kit guidance unchanged. Do not publish.
+> Use OpenDesign with Local Codex and our BRIEF.md. Integrate and verify the result.
+> Keep shared kit guidance unchanged. Do not publish.
 
 Use the actual kit path if different. Explicit reading avoids relying on nested
 instruction discovery. To reuse it in future tasks, add a short frontend-only pointer
@@ -34,9 +36,11 @@ stay reusable. No new skill, agent, dependencies or folder layout is required.
 Exclude the kit from application build/public output if your tooling would otherwise
 include it; keep it accessible to the agent.
 
-For OpenDesign, explicitly request **OpenDesign with Local Codex** and use
-[its guide](OPENDESIGN.md). Otherwise your current coding agent executes the workflow.
-Required tools and access depend on the selected execution path and delivery scope.
+Follow the [OpenDesign handoff](OPENDESIGN.md): verify access, commission a focused
+preview, refine against the references, integrate into the target, then review there.
+For review before integration, reserve that boundary in BRIEF.md. The preview itself
+is code; preview acceptance does not establish production readiness. A different
+execution path requires an explicit user choice.
 
 ## Files and reading cost
 
@@ -60,7 +64,8 @@ enforced context loader or a measured token-saving guarantee.
 ## Maintain
 
 Leave BRIEF.md blank in the reusable source; fill it only in project copies.
-Preserve shared user taste and references. Keep project evidence outside the kit; propose small transferable changes through the
+Preserve shared user taste and references. Keep project evidence outside the kit;
+propose small transferable changes through the
 [learning loop](WORKFLOW.md#08---learn), replacing redundant rules after approval.
 Copies receive updates deliberately, never automatically.
 
