@@ -1,80 +1,48 @@
 # Design Kit
 
-Reusable context for polished frontend design, UI and UX: whole sites and apps,
-flows, features, sections or components. OpenDesign with Local Codex generates and
-refines the design; your coding agent integrates and verifies it. The kit carries
-your quality criteria and reference intent through both stages.
+Reusable AI guidance for high-quality frontend design and engineering, from components to complete apps.
 
-## Use with an existing or new project
+## Use
 
-Copy this kit's files into one unused `.design-kit/` folder inside your project.
-Copy the contents, not the kit's `.git` history. Keep your application's existing
-instructions and structure. If that folder already exists, choose another name;
-do not overwrite it. A separate shared checkout also works when accessible.
+1. Copy the files into an unused `.design-kit/` folder in your project, without this repo's `.git`. An accessible external checkout also works.
+2. Append the pointer below to the target's root `AGENTS.md`. Preserve existing instructions; create the file only if absent. For another agent, use its recognized project-instruction file.
+3. Fill relevant fields in [BRIEF.md](BRIEF.md) in the project copy, or ask the agent to fill them from your chat/specs. This is the only project-specific kit file.
+4. Work from the target project and request the site, feature, section, component or review you need.
 
-```text
-your-project/
-  .design-kit/     All kit documents, flat
-  ...             Your existing application and agent configuration
+```md
+For frontend design, implementation or review, read `.design-kit/AGENTS.md`
+as supplemental guidance and follow its selective reading routes.
+Preserve this project's instructions, stack and conventions.
 ```
 
-Continue your coding task in the application and send:
+- The folder alone does not activate the kit: nested instructions do not automatically guide sibling application files. Use the root pointer, or explicitly request reading `.design-kit/AGENTS.md` in the task.
+- If the kit is external or named `design-kit/`, adjust the pointer to its actual path. Use a project copy when recording a brief; keep the reusable source blank.
+- Check first use by asking the agent to identify the kit/target roots and guidance applied. Reading guidance supports consistency; it does not guarantee compliance or output quality.
+- Keep the kit out of application build/public output.
+- Use the current agent. No external design runtime or new dependencies required.
+- Project references define direction. General references provide knowledge and examples when needed.
 
-> Read .design-kit/AGENTS.md as supplemental frontend guidance. Use it to [task]
-> in [target work area], preserving this project's instructions and existing work.
-> Use OpenDesign with Local Codex and our BRIEF.md. Integrate and verify the result.
-> Keep shared kit guidance unchanged. Do not publish.
+## Files
 
-Use the actual kit path if different. Explicit reading avoids relying on nested
-instruction discovery. To reuse it in future tasks, add a short frontend-only pointer
-to your existing agent instructions; do not replace them with the kit's contract.
-
-**Edit only [BRIEF.md](BRIEF.md) for each project.** It holds scope, project references,
-design direction, constraints and execution choice. Link existing specs instead of
-duplicating them; the agent can fill supplied facts from chat. All other kit files
-stay reusable. No new skill, agent, dependencies or folder layout is required.
-Exclude the kit from application build/public output if your tooling would otherwise
-include it; keep it accessible to the agent.
-
-Follow the [OpenDesign handoff](OPENDESIGN.md): verify access, commission a focused
-preview, refine against the references, integrate into the target, then review there.
-For review before integration, reserve that boundary in BRIEF.md. The preview itself
-is code; preview acceptance does not establish production readiness. A different
-execution path requires an explicit user choice.
-
-## Files and reading cost
-
-| File | Purpose / when to read |
+| File | Read for |
 | --- | --- |
-| [AGENTS.md](AGENTS.md) | Short entry contract and reading routes |
-| [TASTE.md](TASTE.md) | Shared quality criteria |
-| [WORKFLOW.md](WORKFLOW.md) | Adaptive design/build checkpoints and learning loop |
-| [BRIEF.md](BRIEF.md) | The only project-specific file |
-| [QA.md](QA.md) | Review the scoped result |
-| [BASELINES.md](BASELINES.md) | Preserve/compare an accepted state |
-| [OPENDESIGN.md](OPENDESIGN.md) | Selected runtime and integration handoff only |
-| [REFERENCES.md](REFERENCES.md) | User library; search relevant sections on demand |
-| [RESEARCH.md](RESEARCH.md) | Evidence, alternatives and limits; reassessment only |
-
-Markdown is plain text with searchable headings and links. Renaming it to `.txt`
-does not reduce the content the model reads. Keep guidance concise and load it on
-demand; do not inject this entire repo. Selective reading is an instruction, not an
-enforced context loader or a measured token-saving guarantee.
+| [AGENTS.md](AGENTS.md) | Entry instructions and reading routes |
+| [BRIEF.md](BRIEF.md) | Project-specific facts and direction |
+| [TASTE.md](TASTE.md) | Shared quality standards |
+| [GUIDELINES.md](GUIDELINES.md) | Relevant work-type priorities |
+| [WORKFLOW.md](WORKFLOW.md) | Design/build steps, reference lookup and learning |
+| [QA.md](QA.md) | Verification |
+| [BASELINES.md](BASELINES.md) | Comparing accepted work |
+| [REFERENCES.md](REFERENCES.md) | Free design, UX and implementation references |
+| [RESEARCH.md](RESEARCH.md) | Historical evidence; audits only |
 
 ## Maintain
 
-Leave BRIEF.md blank in the reusable source; fill it only in project copies.
-Preserve shared user taste and references. Keep project evidence outside the kit;
-propose small transferable changes through the
-[learning loop](WORKFLOW.md#08---learn), replacing redundant rules after approval.
-Copies receive updates deliberately, never automatically.
-
-Check local links, reading paths, blank fields and source integrity before committing.
-This kit has no executable app tests. Document checks establish consistency;
-actual UI/UX quality requires building and reviewing a real interface.
-
-The workflow derives from the user-supplied
-**High_End_AI_Software_FINAL_RESULTS_WORKFLOW.pdf** and subsequent approved refinements.
-[WORKFLOW.pdf](WORKFLOW.pdf) is optional source provenance, read only for audits;
-it is not required at runtime.
-[REFERENCES.md](REFERENCES.md) preserves **product-references-elite.md** verbatim.
+- Leave BRIEF.md blank upstream. Keep implementation and evidence in target projects.
+- Propose transferable improvements through [the learning loop](WORKFLOW.md#08---learn).
+- Apply approved updates deliberately to project copies.
+- Check links, reading paths, blank fields and source integrity before committing.
+- Read selectively. Markdown is plain text; renaming it to TXT does not save tokens.
+- Document checks verify consistency. Real output quality requires building and reviewing interfaces.
+- REFERENCES.md combines user-supplied and researched free resources for frontend craft, UX and implementation.
+- Original source: High_End_AI_Software_FINAL_RESULTS_WORKFLOW.pdf. Later user instructions govern current guidance.

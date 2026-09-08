@@ -1,68 +1,36 @@
 # Taste
 
-Aim for exceptional visual craft and a seamless, complete product experience.
-Interpret the user's standards through these criteria and their supplied references.
-Quality means intentional, distinctive and useful—not merely clean or technically
-correct. Less is more means removing waste and doing the remaining work better;
-it does not mean sparse screens, fewer capabilities or timid art direction.
+- Aim for exceptional, product-specific visual craft and effortless use.
+- Do fewer things better. Preserve useful depth and creative freedom.
+- Choose expression for the audience and purpose, not a prescribed aesthetic.
 
-## What excellent looks like
+## Foundations
 
-- **Art direction with a reason.** Type, composition, imagery, color, copy and motion
-  express one product-specific idea. The interface should feel made for this product,
-  not interchangeable after swapping its logo. Extend an accepted identity thoughtfully;
-  originality does not require replacing familiar, effective interaction patterns.
-- **Composition that directs attention.** Establish a clear focal point, reading order
-  and relationship between elements. Balance density, whitespace, scale and contrast
-  deliberately. Give sections the structure their content needs; repeated containers
-  should express a real relationship, not substitute for layout decisions.
-- **Typography as design.** Choose type for character and reading conditions. Resolve
-  scale, weight, measure, line height, wrapping and optical alignment together. Headings,
-  body copy, labels and data must form a legible hierarchy at actual viewport sizes.
-- **Meaningful visual detail.** Use color roles, borders, surfaces, depth, iconography
-  and crops coherently. Product demonstrations should explain real value with credible
-  content. Illustration, photography, 3D or expressive effects can be central when they
-  strengthen the idea; neither decoration nor minimalism is a quality shortcut.
-- **Complete, effortless interaction.** Make orientation, available actions and their
-  consequences clear. Preserve input and context, reveal complexity when useful, and
-  provide timely feedback and recovery. Dense tools should support fluent work; simple
-  tasks should feel simple. Copy is part of the interaction, not placeholder filling.
-- **Motion with craft.** Choreograph timing, continuity and transitions to communicate
-  relationships, state or identity. Small details can provide delight. Keep controls
-  responsive, scrolling usable and reduced-motion behavior intentional; animation
-  should not make users wait for access to content or completion of a task.
-- **Polish across the experience.** Carry the same care through deeper screens, forms,
-  empty/error states and long or awkward content. Recompose for small screens rather
-  than merely shrinking desktop. Touch, keyboard, focus and perceived speed contribute
-  to the design's quality as much as the opening screenshot.
-- **Durable coherence.** Use consistent visual and behavioral rules without making
-  every surface identical. Preserve accessibility and maintainability as the product
-  grows. Choose expression for the audience and purpose, not a prescribed decade,
-  futuristic theme, universal palette or font.
+- **Spacing:** use a 4px base grid and its multiples for spacing, not every dimension or type size.
+- **Fonts:** 1–3 families maximum; generally two, one for a minimal approach. Prefer suitable variable fonts.
+- **Minimalism:** every element adds understanding, action, feedback, identity or meaningful delight.
+- **Copy:** remove filler labels, redundant captions and closing lines that merely explain the section.
+- **Conversion:** use realistic, product-specific benefits, relevant objections and clear CTAs. In apps, help users complete the task.
+- **Truth:** use real claims and proof. Never invent testimonials, metrics, scarcity or guarantees. Label demo content and missing facts.
 
-## Use the references as evidence
+## Craft
 
-Search [REFERENCES.md](REFERENCES.md) for the relevant decision, not an entire moodboard.
-Its visual sources—HOVERSTAT.ES, Codrops and Landing.Love—inform art direction and
-experience; Fonts In Use informs typography; Design Spells informs interaction detail.
-These roles come from the user's library, not a claim that every example fits every job.
-Inspect relevant source work before drawing conclusions; an index or DESIGN.md alone
-cannot establish the rendered quality or behavior.
+- **Direction:** make type, layout, imagery, color, copy and motion express a coherent product identity.
+- **Composition:** establish focus and reading order. Balance density, space, scale and contrast. Let content determine section structure.
+- **Typography:** resolve character, hierarchy, line length, line height, wrapping and optical alignment at actual screen sizes.
+- **Detail:** use coherent color roles, borders, depth, icons and crops. Demonstrations should show real value.
+- **Expression:** use photography, illustration, 3D or effects when they strengthen the idea. Keep the medium open.
+- **Interaction:** clarify actions and consequences. Preserve input/context; provide timely feedback and recovery.
+- **Motion:** communicate relationships, state or identity. Keep controls responsive, scrolling natural and reduced-motion behavior complete.
+- **Responsiveness:** recompose for mobile, tablet, desktop and container widths; preserve useful content and actions.
+- **Completeness:** carry the same care through deeper screens, forms, errors and awkward content.
+- **Engineering:** use semantic, accessible, maintainable code and target conventions. Reuse mechanics without making every screen identical.
 
-For product behavior, follow the library's hierarchy: user evidence, platform and
-accessibility standards, production patterns, then visual inspiration. Borrow decision
-logic and the level of craft; do not transplant another product's identity or assume
-reference assets are licensed for reuse. Specific selections and exceptions belong
-only in [BRIEF.md](BRIEF.md).
+## References and review
 
-## Judge the result, not the intention
-
-Compare the actual scoped experience with relevant user-selected references. Identify
-concrete gaps in hierarchy, composition, type, assets, interaction and mobile behavior;
-repair the highest-impact gap and inspect again. Do not substitute extra effects or
-more UI for stronger design decisions.
-
-Ask: does this feel specific to the product? Does its craft hold beyond the first
-screen and under real use? What observable gap still separates it from the reference
-quality? Passing functional checks alone is not excellence. Infer project decisions
-within creative authority; never turn those inferences into permanent user preferences.
+- Use project references in [BRIEF.md](BRIEF.md) for direction.
+- Consult [REFERENCES.md](REFERENCES.md) when knowledge or inspiration would help; follow WORKFLOW.md's lookup guidance.
+- Borrow useful reasoning and craft; respect asset rights and product context.
+- Inspect the actual result. Fix observable gaps in hierarchy, type, composition, imagery, behavior and responsiveness.
+- Functional checks alone do not establish design excellence.
+- Keep inferred project preferences local.

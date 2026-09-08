@@ -1,43 +1,39 @@
 # Project brief
 
-The only project-specific kit file. Leave blank in the reusable source; fill the
-relevant fields in your project's copy. Reuse supplied answers from chat or existing
-docs instead of asking twice. Unknowns stay explicit; ask only about material gaps.
-Never include secrets. Links below resolve from this file; label external paths.
+- Fill relevant fields in the project copy; leave the reusable source blank.
+- Reuse chat and existing docs. Ask only about material gaps; label unknowns.
+- Exclude secrets. Resolve links from this file; label external paths.
 
 ## Task
 
 - Product / interface and audience:
-- Primary user job, outcome and action (including known evidence):
+- Primary user job, outcome and action:
 - Mode (concept / interactive prototype / production frontend):
 - Scope (site / app / flow / feature / section / component; routes or states):
-- Target work area (relative to this file or absolute; outside kit files):
-- Required content, product facts and assets (or existing source):
-- Existing stack / design system / constraints (or existing source):
-- Required integrations and available contracts:
+- Target work area (outside kit files):
+- Content, product facts and assets (or source):
+- Stack / design system / constraints (or source):
+- Integrations and available contracts:
 - Devices, locales, accessibility needs and performance budgets:
-- Task-specific acceptance criteria and consequential failure/recovery states:
+- Acceptance criteria and important failure/recovery states:
 
 ## Design direction
 
-Apply [TASTE.md](TASTE.md) unless an explicit project instruction overrides it.
-These answers are local direction, not changes to shared taste or the reference library.
-Use user-supplied or authorized selections. A reference grants no asset-copying rights.
+- Apply [TASTE.md](TASTE.md); record project-specific overrides below.
+- General references help when needed. Project references define this direction.
 
 - Existing brand / accepted design system:
-- Project character, density and interaction priorities:
-- Project-specific constraints or exceptions:
-- Creative decisions the agent may make / user-reserved decisions:
-- Selected references (URL/file + relevant state + intended lesson / what to avoid):
-- Rejected examples or corrections and reasons, if supplied:
+- Character, density and interaction priorities:
+- Constraints or exceptions:
+- Agent creative authority / user-reserved decisions:
+- Project references (URL/file + relevant state + lesson / what to avoid):
+- Rejected examples or corrections and reasons:
 
 ## Execution
 
-Default: OpenDesign with Local Codex; the current coding agent integrates and verifies.
+- Use the current agent and target instructions/checks. Apply [QA.md](QA.md).
+- Leave overrides blank unless requested.
 
-- Explicit execution override, if any:
-- Requested model, if any:
-- User-reserved preview/integration approval boundary, if any:
-
-An empty override retains OpenDesign with Local Codex. Reuse the target's existing
-instructions and checks; apply [QA.md](QA.md) without copying shared guidance here.
+- Execution override:
+- Requested model:
+- User-reserved approval boundary:
