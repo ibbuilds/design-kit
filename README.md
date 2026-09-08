@@ -45,4 +45,3 @@ Preserve this project's instructions, stack and conventions.
 - Read selectively. Markdown is plain text; renaming it to TXT does not save tokens.
 - Document checks verify consistency. Real output quality requires building and reviewing interfaces.
 - REFERENCES.md combines user-supplied and researched free resources for frontend craft, UX and implementation.
-- Original source: High_End_AI_Software_FINAL_RESULTS_WORKFLOW.pdf. Later user instructions govern current guidance.
