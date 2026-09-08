@@ -70,5 +70,6 @@ actual UI/UX quality requires building and reviewing a real interface.
 
 The workflow derives from the user-supplied
 **High_End_AI_Software_FINAL_RESULTS_WORKFLOW.pdf** and subsequent approved refinements.
-The PDF is not bundled or required at runtime; obtain the original for a source audit.
+[WORKFLOW.pdf](WORKFLOW.pdf) is optional source provenance, read only for audits;
+it is not required at runtime.
 [REFERENCES.md](REFERENCES.md) preserves **product-references-elite.md** verbatim.
