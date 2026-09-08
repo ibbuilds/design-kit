@@ -3,6 +3,7 @@
 Review the brief, taste and actual rendered experience. Keep evidence in the target,
 not this skeleton. OpenDesign success, self-scores and passing tests do not prove
 visual quality. Self-review is not independent release approval.
+Agent walkthroughs are heuristic review, not evidence from representative users.
 
 ## Every handoff
 
@@ -12,7 +13,7 @@ visual quality. Self-review is not independent release approval.
   failure/recovery states. Density must serve the task; polish covers behavior too.
 - After integration, inspect the target app as well as the OpenDesign preview.
 - Record each issue as **viewport/state + location + defect + impact + smallest
-  repair + recheck**. Fix the two or three biggest issues per pass; preserve good
+  repair + recheck**. Prioritize by user impact; preserve good
   work and verify repairs. Missing evidence stays open; a plateau cannot pass a blocker.
 
 ## Match the mode
@@ -28,7 +29,10 @@ visual quality. Self-review is not independent release approval.
 - Visual/responsive: accepted targets, type/crops, section rhythm, assets and justified
   post-freeze changes. Use [baseline guidance](baselines/README.md) for comparisons.
 - UX: relevant loading/empty/error/success/disabled/permission/destructive states;
-  real action result, deep links, refresh/back and slow/offline recovery where needed.
+  real action result, validation/input preservation, sign-in/recovery, deep links,
+  refresh/back and slow/offline recovery where needed.
+- Localization: required languages/locales, text expansion, formats and RTL where
+  applicable. Do not invent extra locale scope.
 - Accessibility: semantics, labels, contrast, keyboard/focus, touch, reduced motion,
   zoom/reflow, error identification and the critical screen-reader path. Automation
   covers only part of this; still images cannot prove interaction or motion.

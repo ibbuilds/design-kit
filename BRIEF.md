@@ -13,7 +13,7 @@ fields are unknown. Ask only about material gaps. Never include secrets.
 - Separate frontend target folder:
 - Existing stack / design system / constraints:
 - Required integrations and available contracts:
-- Devices, languages and accessibility needs:
+- Devices, languages, accessibility needs and performance budgets (if supplied):
 - Task-specific acceptance criteria:
 - Creative authority / user-reserved decisions:
 - Requested Local Codex model (optional):

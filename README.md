@@ -8,19 +8,24 @@ functional depth and lasting quality. Project direction stays open.
 
 | Reusable material | Role |
 | --- | --- |
-| [AGENTS.md](AGENTS.md) | Short entry contract and phase-based reading |
-| [WORKFLOW.md](WORKFLOW.md) | PDF-derived design process and improvement procedure |
+| [AGENTS.md](AGENTS.md) | Short entry contract and selective reading |
+| [WORKFLOW.md](WORKFLOW.md) | Adaptive design checkpoints and improvement procedure |
 | [OPENDESIGN.md](OPENDESIGN.md) | Execution and source handoff |
 | [taste/PROFILE.md](taste/PROFILE.md) | Supplied taste plus blank project direction |
 | [BRIEF.md](BRIEF.md) | Blank project brief |
 | [QA](qa/README.md) | Mode-specific acceptance criteria |
 | [Baselines](qa/baselines/README.md) | Accepted-state comparison |
 | [Reference library](references/product-references.md) | Latest user-supplied sources, unchanged |
+| [Research](RESEARCH.md) | Source-backed rationale, alternatives and evidence limits; read on demand |
 
 Source: [WORKFLOW.pdf](WORKFLOW.pdf), the user's final
 **High_End_AI_Software_FINAL_RESULTS_WORKFLOW.pdf**. The context-only scope overrides
 its illustrative bundled starter layout. The reference library preserves the supplied
-`product-references(1)(1).md`; it is consulted selectively, not injected wholesale.
+`product-references-elite.md`; it is consulted selectively, not injected wholesale.
+
+The agent chooses its method within your scope and quality criteria. Checkpoints
+guide decisions without mandatory variants or repeated approvals. Optimize total
+work to an accepted result; keep detailed references and research out of routine context.
 
 ## Fork and start
 

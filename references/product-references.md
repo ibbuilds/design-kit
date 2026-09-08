@@ -4,6 +4,8 @@
 >
 > **Filter:** free to browse/use as a reference, primary sources where possible, research-backed when the question is behavioral, and aggressively curated when the question is visual.
 >
+> **Admission bar:** a new source must be a primary standard/specification, first-party platform authority, strongly research-backed reference, or an exceptional curated source with a clear signal advantage. **Good is not enough.**
+>
 > **Rule:** this is **not** a directory of directories. `★` means “open this first.”
 >
 > Last reviewed: **2026-09-07**
@@ -107,6 +109,7 @@ This is more useful for real product work than concept-shot galleries.
 | ★ [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/) | Platform patterns, inputs, navigation, behavior, Apple ecosystem |
 | [Atlassian Design System](https://atlassian.design/) | Dense productivity UI, content, accessibility, patterns |
 | [Shopify Polaris](https://polaris.shopify.com/) | Commerce/admin-product patterns and content guidance |
+| ★ [GOV.UK Design System](https://design-system.service.gov.uk/) | Research-informed components and service patterns; especially strong for forms, validation, task completion and transactional UX |
 
 Do not copy a design system’s visual language blindly. Steal its **decision logic**.
 
@@ -268,6 +271,8 @@ Do not let metrics replace research. Metrics tell you **what happened**; researc
 | Reference | Use it for |
 |---|---|
 | ★ [NN/g — Artificial Intelligence](https://www.nngroup.com/topic/artificial-intelligence/) | Research and UX guidance around AI-assisted interfaces |
+| ★ [Microsoft HAX Toolkit](https://www.microsoft.com/en-us/haxtoolkit/) | Evidence-based human-AI interaction guidelines, failure planning, design patterns and team exercises |
+| ★ [Google People + AI Guidebook](https://pair.withgoogle.com/guidebook-v2/) | Research-backed guidance for user needs, mental models, explainability, feedback/control and graceful AI failure |
 | [OpenAI Developer Docs](https://developers.openai.com/api/docs) | Understand actual model/tool capabilities before designing impossible UX |
 | [Anthropic Platform Docs](https://platform.claude.com/docs/en/home) | Same principle for Claude-based product behavior |
 | [OWASP GenAI Security Project](https://genai.owasp.org/) | Product risks: prompt injection, excessive agency, data exposure, unsafe tool use |
@@ -276,17 +281,68 @@ Do not let metrics replace research. Metrics tell you **what happened**; researc
 
 | Reference | Use it for |
 |---|---|
-| ★ [Google DESIGN.md specification](https://github.com/google-labs-code/design.md) | Canonical format, token schema, section structure, linting and diffing for agent-readable design systems |
-| [Refero Styles](https://styles.refero.design/) | Browsing detailed AI-readable style references from real product sites; useful for visual direction, tokens and constraints |
-| [designmd.supply](https://designmd.supply/) | Open-source URL → Google-spec DESIGN.md generation grounded in extracted styleguide data, screenshots and live page markup |
+| ★ [Google DESIGN.md specification](https://github.com/google-labs-code/design.md) | Primary specification for the DESIGN.md format: agent-readable visual identity, tokens, rationale, linting and export tooling |
 
-Treat generated or extracted DESIGN.md files as **secondary evidence**. Verify important tokens, behavior and accessibility against the original site or an official design system before shipping.
+**Scope:** DESIGN.md is currently an **alpha format**. Use the primary spec when DESIGN.md itself is the task; do not treat it as a replacement for mature platform, accessibility or design-token standards.
 
 Design AI experiences around **capability boundaries, uncertainty, recovery, permissions, latency and user control**.
 
 ---
 
-## 22. Product critique checklist
+## 22. Forms, validation & task completion
+
+| Reference | Use it for |
+|---|---|
+| ★ [GOV.UK Design System — Patterns](https://design-system.service.gov.uk/patterns/) | Research-informed patterns for collecting information, validation, accounts, confirmation, navigation, errors and service states |
+| [GOV.UK — Recover from validation errors](https://design-system.service.gov.uk/patterns/validation/) | Concrete guidance for validation timing, error summaries, focus behavior and preserving user input |
+
+For generic transactional flows, this is one of the strongest complements to Baymard: **less commerce-specific, more task-completion-specific**.
+
+---
+
+## 23. Authentication, identity & recovery
+
+| Reference | Use it for |
+|---|---|
+| ★ [NIST SP 800-63B-4](https://pages.nist.gov/800-63-4/sp800-63b.html) | Authoritative authentication requirements plus unusually detailed usability guidance for passwords, authenticators, reauthentication and recovery |
+| ★ [FIDO Alliance — Passkey Design Guidelines](https://www.passkeycentral.org/design-guidelines/) | Data-driven UX guidance for passkey creation, sign-in, rollout and user communication from the standards body behind FIDO authentication |
+
+Authentication UX must satisfy **security, usability and recovery** together; do not invent these flows from visual convention alone.
+
+---
+
+## 24. Internationalization & localization
+
+| Reference | Use it for |
+|---|---|
+| ★ [W3C Internationalization](https://www.w3.org/International/) | Web internationalization: language, scripts, bidirectional text, forms, encoding and locale-sensitive interface behavior |
+| ★ [Unicode CLDR](https://cldr.unicode.org/) | The canonical locale-data reference for dates, numbers, currencies, units, calendars and regional formatting |
+
+A layout that only works in English is **not a finished layout**. Test text expansion, RTL/bidirectional content and locale-dependent formats.
+
+---
+
+## 25. Performance & perceived responsiveness
+
+| Reference | Use it for |
+|---|---|
+| ★ [web.dev — Web Vitals](https://web.dev/articles/vitals) | User-centric field metrics for loading, interaction responsiveness and visual stability: LCP, INP and CLS |
+
+Performance is part of UX. A polished surface that is slow to load, slow to respond or visually unstable is still a **product-quality failure**.
+
+---
+
+## 26. Design tokens & interoperability
+
+| Reference | Use it for |
+|---|---|
+| ★ [Design Tokens Community Group — Format Module 2025.10](https://www.designtokens.org/TR/2025.10/format/) | Stable, vendor-neutral interchange format for design tokens across tools and design systems |
+
+The DTCG report is a **W3C Community Group specification, not a W3C Standard**, but the 2025.10 release is final, considered stable and intended for implementation.
+
+---
+
+## 27. Product critique checklist
 
 Before calling a product surface “done,” check it against:
 

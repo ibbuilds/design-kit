@@ -14,11 +14,13 @@ starter, dependencies or demo belongs here. User instructions take precedence.
   section and needed source. Never load the full library or browse every link by default.
 - README.md is human onboarding. WORKFLOW.pdf is source provenance; read it for audits
   or ambiguities, not routine design prompts.
+- RESEARCH.md backs workflow decisions; load only for provenance or reassessment.
 
-Reuse loaded context and supplied answers; reread only changed or missing material.
-Ask only for material gaps. Within authorized creative scope, translate the user's
-standards into decisions and verify them in the render. Avoid asking the user to
-specify every parameter. Quality and necessary review must survive compression.
+Reuse context and answers; load or research only what resolves a concrete uncertainty.
+Within authorized scope, choose the method; ask only about material gaps. Minimize
+total work to an accepted result, not prompt length alone. Preserve successful work;
+never trade required quality or verification for fewer tokens. No exhaustive method
+catalog, mandatory variants or routine phase approvals.
 
 ## Authority and scope
 

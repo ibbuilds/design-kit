@@ -18,11 +18,12 @@ compact, self-contained handoff from:
 
 - Resolved brief, creative authority and selected project references/assets.
 - Shared taste criteria and any project-specific direction.
-- WORKFLOW.md sections 00-07 and the applicable QA criteria.
+- Decision rule, deliverable, remaining applicable checkpoints and QA.
 - Constraints: no fabricated claims, new taste curation, shared-memory edits,
   publication, recursive OpenDesign calls or extra commissioned agents.
 
-Send relevant text and accessible resources, not path mentions alone. Verify that
+Preserve creative freedom, scope and acceptance criteria when compressing. Send
+relevant text and accessible resources, not path mentions alone. Verify that
 required files/images are reachable. Omit blank fields, README, learning notes, the
 PDF, full source library and conflicting design workflows. Bundled systems or memories
 must not replace user taste or the accepted product system; resolve material conflicts.
@@ -42,7 +43,8 @@ issue evidence and relevant source delta. Reuse confirmed context when the worke
 retains it; restore the compact handoff when it does not. Do not re-send the full
 conversation or refetch unchanged artifacts.
 
-Retrieve the complete artifact bundle when source is needed. Integrate styles,
+Retrieve the artifact bundle when source is needed. Check truncation and missing
+dependencies/assets; retrieve missing material before treating it as complete. Integrate styles,
 modules, fonts, assets and behavior into the target stack; preserve unrelated work
 and remove preview-only assumptions. Open and test the integrated frontend.
 
