@@ -2,14 +2,11 @@
 
 - Read the relevant section; combine sections for mixed products.
 - Adapt priorities to the user's job. No prescribed layout or required effects.
-- Apply shared taste, responsive behavior and code standards throughout.
-- Use WORKFLOW.md's reference lookup guidance when knowledge or examples would help.
 
 ## Landing pages and campaigns
 
 - Communicate value, credible proof and the next action through reading and scrolling.
 - Favor visible composition and purposeful scroll interactions over hidden hover effects.
-- Preserve natural scrolling, readable content and a convincing reduced-motion experience.
 - Use interactive demos when they explain value; keep essential selling points visible.
 - Let useful copy and evidence earn the CTA.
 
@@ -35,7 +32,6 @@
 - Preserve selections, edits and location between tasks.
 - Make frequent actions obvious; offer accessible alternatives to hover shortcuts.
 - Explain save/sync status and recovery where relevant.
-- Make polish improve the fluency of actual work.
 
 ## Ecommerce, catalogs and marketplaces
 
@@ -66,7 +62,6 @@
 - Explain capabilities and limits through useful examples and the actual task.
 - Show progress honestly; let users inspect, edit and recover from results.
 - Preserve context and provide sources when the product supports grounded answers.
-- Never imply verification that did not occur.
 - Choose chat, direct manipulation or structured controls to fit the job.
 - Give users appropriate control before consequential actions.
 

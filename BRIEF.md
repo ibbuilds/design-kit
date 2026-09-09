@@ -1,39 +1,34 @@
 # Project brief
 
-- Fill relevant fields in the project copy; leave the reusable source blank.
-- Reuse chat and existing docs. Ask only about material gaps; label unknowns.
-- Exclude secrets. Resolve links from this file; label external paths.
+- Fill only relevant fields in the project copy; keep the reusable source blank.
+- Reuse chat and link existing sources instead of duplicating them. Ask only about material gaps; label unknowns.
+- Exclude secrets. Resolve relative links from this file; label external paths.
 
-## Task
+## Outcome
 
-- Product / interface and audience:
-- Primary user job, outcome and action:
-- Mode (concept / interactive prototype / production frontend):
-- Scope (site / app / flow / feature / section / component; routes or states):
-- Target work area (outside kit files):
-- Content, product facts and assets (or source):
-- Stack / design system / constraints (or source):
-- Integrations and available contracts:
+- Product / audience:
+- Primary user task, outcome and action:
+- Scope (site / app / flow / feature / section / component; routes and states):
+- Target root / work area:
+- Fidelity (concept / interactive prototype / production frontend):
+- Acceptance criteria and important recovery states:
+
+## Inputs
+
+- Product facts, content and assets (or source):
+- Existing brand, design system and accepted work:
+- Stack, conventions and constraints (or source):
+- Integrations / available contracts:
 - Devices, locales, accessibility needs and performance budgets:
-- Acceptance criteria and important failure/recovery states:
 
-## Design direction
+## Direction
 
-- Apply [TASTE.md](TASTE.md); record project-specific overrides below.
-- General references help when needed. Project references define this direction.
-
-- Existing brand / accepted design system:
 - Character, density and interaction priorities:
-- Constraints or exceptions:
-- Agent creative authority / user-reserved decisions:
-- Project references (URL/file + relevant state + lesson / what to avoid):
-- Rejected examples or corrections and reasons:
+- Project references (URL/file + relevant view or state + intent):
+- Exceptions to TASTE.md:
+- Accepted decisions, rejected approaches and reasons (or source):
 
-## Execution
+## Authority
 
-- Use the current agent and target instructions/checks. Apply [QA.md](QA.md).
-- Leave overrides blank unless requested.
-
-- Execution override:
-- Requested model:
-- User-reserved approval boundary:
+- Creative freedom / user-reserved decisions and approvals:
+- Execution or model override, only if explicitly requested:

@@ -29,19 +29,18 @@ Preserve this project's instructions, stack and conventions.
 | [AGENTS.md](AGENTS.md) | Entry instructions and reading routes |
 | [BRIEF.md](BRIEF.md) | Project-specific facts and direction |
 | [TASTE.md](TASTE.md) | Shared quality standards |
-| [GUIDELINES.md](GUIDELINES.md) | Relevant work-type priorities |
 | [WORKFLOW.md](WORKFLOW.md) | Design/build steps, reference lookup and learning |
-| [QA.md](QA.md) | Verification |
-| [BASELINES.md](BASELINES.md) | Comparing accepted work |
+| [GUIDELINES.md](GUIDELINES.md) | Relevant work-type priorities |
+| [QA.md](QA.md) | Verification and accepted-baseline comparison |
 | [REFERENCES.md](REFERENCES.md) | Free design, UX and implementation references |
 | [RESEARCH.md](RESEARCH.md) | Historical evidence; audits only |
 
 ## Maintain
 
 - Leave BRIEF.md blank upstream. Keep implementation and evidence in target projects.
-- Propose transferable improvements through [the learning loop](WORKFLOW.md#08---learn).
+- Propose transferable improvements through [the learning loop](WORKFLOW.md#learn).
 - Apply approved updates deliberately to project copies.
 - Check links, reading paths, blank fields and source integrity before committing.
-- Read selectively. Markdown is plain text; renaming it to TXT does not save tokens.
+- Keep the flat layout. Read only relevant sections; Markdown supports headings and links without a separate format or loader.
 - Document checks verify consistency. Real output quality requires building and reviewing interfaces.
 - REFERENCES.md combines user-supplied and researched free resources for frontend craft, UX and implementation.

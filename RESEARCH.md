@@ -26,9 +26,6 @@
 
 ## Evaluate improvements
 
-- Use [WORKFLOW.md's learning loop](WORKFLOW.md#08---learn).
-- Compare actual interfaces under comparable briefs, references, models and constraints.
-- Judge visual craft, task completion, responsive states, accessibility and maintainability.
-- Track correction effort and actual usage. Keep evidence in target projects.
+- Use [WORKFLOW.md's learning loop](WORKFLOW.md#learn) and [QA.md](QA.md) to assess actual interfaces and correction effort. Keep evidence in target projects.
 - No comparative output evaluation has established this kit as superior.
 - Reference quality, document audits and agent scores cannot guarantee output quality.

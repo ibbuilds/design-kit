@@ -1,14 +1,6 @@
 .DS_Store
 Thumbs.db
 tmp/
-node_modules/
-dist/
-build/
-.next/
-coverage/
-playwright-report/
-test-results/
-*.tsbuildinfo
 .env
 .env.*
 !.env.example

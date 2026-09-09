@@ -1,75 +1,39 @@
 # Frontend workflow
 
-- Use BRIEF.md for scope, TASTE.md for quality and relevant GUIDELINES.md sections for work-type priorities.
-- Adapt these checkpoints; reuse completed work. Choose methods for the strongest result.
-- Reduce wasted context and repetition, not useful exploration or verification.
+- Adapt the work to the scope. Reuse resolved decisions; spend effort where it improves the result.
+- These are checkpoints, not required phases, documents or numbers of iterations.
 
-## 00 - Prepare
+## Understand and direct
 
-- Identify kit/target roots, instructions, current changes, stack and tools.
-- Inspect the existing experience. Reuse conventions, components and accepted decisions.
-- Reuse suitable target components and mechanics; customize the design. Consult REFERENCES.md's implementation sources when a gap needs a foundation. Choose alternatives only when they improve the result.
+- Inspect the target, existing experience, components and relevant project inputs.
+- Establish audience, primary task, content, constraints and important recovery states from BRIEF.md or linked sources.
+- Resolve material uncertainty; label assumptions and missing facts.
+- Develop copy, composition, typography, imagery and behavior together, guided by TASTE.md and project references.
+- Explore alternatives or prototype risky techniques when useful. Keep decisions in BRIEF.md or the target's existing source of truth.
 
-## 01 - Understand
+## Build and refine
 
-- Establish audience, job, content, constraints and desired outcome.
-- Trace the main journey and important failure/recovery states.
-- Separate facts from assumptions. Resolve uncertainty that could invalidate the design.
-- Use truthful product claims and credible content.
+- Render a representative part early with realistic content at the requested fidelity.
+- Inspect it in the actual target at relevant widths and states.
+- Identify the cause of each important gap: content, hierarchy, type, imagery, behavior or code.
+- Repair isolated defects; reconsider a direction when its premise is wrong. Preserve strong work.
+- Reuse suitable components and mechanics; customize their treatment. Abstract repeated needs only when useful.
+- Complete the requested scope with consistent care, including deeper screens and recovery paths.
+- Apply QA.md, fix material gaps and recheck affected behavior. Report evidence and limitations at completion.
 
-## 02 - Direct
+## References when useful
 
-- Follow project references and accepted identity.
-- Resolve copy, type, composition, imagery and behavior as one coherent direction.
-- Explore alternatives or prototype risky techniques when useful.
-- Keep project decisions in BRIEF.md or the target's existing source of truth.
+- Browse when outside knowledge or examples would improve a decision; no lookup is required for every element.
+- Open the closest direct link under the relevant REFERENCES.md heading. Narrow broad indexes only as needed.
+- Inspect the original site, study, documentation or demo. Extract only findings relevant to the decision.
+- Use galleries for craft, products for market context, research for behavior, standards for requirements and implementation sources for mechanics.
+- Adapt findings to this product, respect asset rights and verify the result in context. Report inaccessible or unseen evidence.
+- Reuse useful findings in the target instead of repeating research.
 
-### Use references when needed
+## Learn
 
-- Identify the question or missing inspiration; search REFERENCES.md for that topic.
-- Choose a site's listed purpose. Use its search, categories or filters; if needed, search `site:domain topic`.
-- UX research: read the relevant article's finding, evidence and context.
-- Standards/platform guides: open the matching pattern's behavior, accessibility and implementation guidance.
-- Component Gallery/design systems: find the component, then inspect original documentation and states.
-- Visual galleries: find relevant work; open the actual site and inspect composition, responsiveness and interactions.
-- Motion/creative coding: inspect the demo and implementation. Typography: inspect specimens or usage in context.
-- Apply useful findings to this product. Separate requirements, research and inspiration; an attractive example is not a UX fact.
-- Reuse findings. No lookup required for every element. Report inaccessible sources; never claim unseen evidence.
-
-## 03 - Render early
-
-- Build a representative part in the target with realistic content.
-- Inspect widths, states and interactions that expose important decisions.
-- Respect the brief's fidelity and user-reserved decisions.
-
-## 04 - Repair or pivot
-
-- Name the defect and cause: content, hierarchy, type, imagery, behavior or code.
-- Fix isolated defects; replace a direction when its premise is wrong.
-- Preserve good work. Effects cannot repair unclear value or weak hierarchy.
-
-## 05 - Complete and refine
-
-- Resolve the highest-impact gaps and inspect again.
-- Carry the same quality through the full scope. Finish before presenting completion.
-
-## 06 - Preserve and extend
-
-- Use [BASELINES.md](BASELINES.md) when comparisons help prevent drift.
-- Reuse repeated mechanics in target tokens/components.
-- Evolve the design when it improves the product; avoid premature abstraction.
-
-## 07 - Verify
-
-- Apply [QA.md](QA.md) in the actual application.
-- Close applicable blockers and craft gaps. Report evidence, limitations and remaining decisions.
-- Stop at the agreed goal. Publication requires authorization.
-
-## 08 - Learn
-
-- Keep recurring failures and before/after evidence in the target.
-- Propose the smallest transferable change: problem, impact, applicability and replacement rule.
-- Keep one-off preferences local. Update shared guidance after approval.
-- Assess changes by comparing first attempts with/without them under comparable task, reference and model conditions.
-- Track corrections and later regressions. One comparison is a signal, not proof.
-- Turn repeated mechanics into components and detectable failures into checks. No automatic fork updates.
+- Keep recurring failures, corrections and useful before/after evidence in the target.
+- Propose the smallest transferable improvement: problem, impact, applicability and replacement guidance.
+- Keep project preferences local; apply approved shared changes deliberately.
+- Compare first attempts under similar briefs, references, models and constraints. Track correction effort and regressions.
+- Turn repeated mechanics into components and detectable failures into checks. A single comparison is a signal, not proof.
