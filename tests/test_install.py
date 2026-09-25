@@ -1,6 +1,8 @@
 """Offline package tests; they do not evaluate model behavior or visual quality."""
 import importlib.util
 import json
+import os
+import stat
 from pathlib import Path
 import tempfile
 import unittest
@@ -144,6 +146,91 @@ class InstallTests(unittest.TestCase):
         self.assertFalse((self.target / "AGENTS.md").exists())
 
 
+    def test_active_override_gets_pointer_not_inactive_agents(self):
+        ordinary = self.target / "AGENTS.md"
+        ordinary.write_bytes(b"# Ordinary instructions\n")
+        override = self.target / "AGENTS.override.md"
+        original = b"# Active instructions\r\nKeep this.\r\n"
+        override.write_bytes(original)
+        installer.install(self.source, self.target)
+        self.assertEqual(b"# Ordinary instructions\n", ordinary.read_bytes())
+        self.assertTrue(override.read_bytes().startswith(original))
+        self.assertIn(installer.START.encode(), override.read_bytes())
+        self.assertEqual([], installer.install(self.source, self.target))
+
+    def test_empty_override_leaves_fallback_active(self):
+        override = self.target / "AGENTS.override.md"
+        override.write_bytes(b" \r\n")
+        installer.install(self.source, self.target)
+        self.assertEqual(b" \r\n", override.read_bytes())
+        self.assertIn(installer.START, (self.target / "AGENTS.md").read_text())
+
+    def test_new_override_is_detected_by_check_without_writes(self):
+        installer.install(self.source, self.target)
+        override = self.target / "AGENTS.override.md"
+        override.write_bytes(b"# Added later\n")
+        planned = installer.install(self.source, self.target, check=True)
+        self.assertEqual([override], [path for path, _ in planned])
+        self.assertEqual(b"# Added later\n", override.read_bytes())
+
+    def test_malformed_override_is_rejected_before_writes(self):
+        (self.target / "AGENTS.override.md").write_text(installer.START)
+        with self.assertRaisesRegex(ValueError, "Malformed"):
+            installer.install(self.source, self.target)
+        self.assertFalse(self.dest.exists())
+
+    def test_symlinked_override_is_not_modified(self):
+        outside = self.source / "other-instructions.md"
+        outside.write_text("Preserve")
+        try:
+            (self.target / "AGENTS.override.md").symlink_to(outside)
+        except (OSError, NotImplementedError):
+            self.skipTest("Symlinks unavailable")
+        with self.assertRaisesRegex(ValueError, "symlink"):
+            installer.install(self.source, self.target)
+        self.assertEqual("Preserve", outside.read_text())
+        self.assertFalse(self.dest.exists())
+
+    def test_symlinked_source_parent_is_rejected_before_writes(self):
+        original = self.source / "agents"
+        other = self.source / "external-agents"
+        original.rename(other)
+        try:
+            original.symlink_to(other, target_is_directory=True)
+        except (OSError, NotImplementedError):
+            self.skipTest("Symlinks unavailable")
+        with self.assertRaisesRegex(ValueError, "symlink"):
+            installer.install(self.source, self.target)
+        self.assertEqual([], list(self.target.iterdir()))
+
+    @unittest.skipUnless(os.name == "posix", "POSIX permission semantics")
+    def test_replacing_instructions_preserves_permissions(self):
+        path = self.target / "AGENTS.md"
+        path.write_text("# Shared instructions\n")
+        path.chmod(0o640)
+        installer.install(self.source, self.target)
+        self.assertEqual(0o640, stat.S_IMODE(path.stat().st_mode))
+
+    def test_failed_update_restores_existing_files(self):
+        installer.install(self.source, self.target)
+        (self.source / "SKILL.md").write_text("Updated skill")
+        (self.source / "TASTE.md").write_text("Updated taste")
+        before = {p: p.read_bytes() for p in self.target.rglob("*") if p.is_file()}
+        real_write = installer.atomic_write
+        calls = 0
+        def fail_second(path, content):
+            nonlocal calls
+            calls += 1
+            if calls == 2:
+                raise OSError("simulated update failure")
+            real_write(path, content)
+        with patch.object(installer, "atomic_write", side_effect=fail_second):
+            with self.assertRaises(OSError):
+                installer.install(self.source, self.target)
+        after = {p: p.read_bytes() for p in self.target.rglob("*") if p.is_file()}
+        self.assertEqual(before, after)
+
+
 class SkillContractTests(unittest.TestCase):
     def test_frontmatter_and_native_invocation(self):
         text = (ROOT / "SKILL.md").read_text()
@@ -152,6 +239,21 @@ class SkillContractTests(unittest.TestCase):
         meta = (ROOT / "agents/openai.yaml").read_text()
         self.assertIn("allow_implicit_invocation: true", meta)
         self.assertIn("$design-kit", meta)
+
+    def test_metadata_strings_are_unambiguous_without_yaml_dependency(self):
+        # Our authored metadata uses JSON-quoted strings, a valid YAML subset.
+        # Unlike a substring check, this rejects an unquoted colon in description.
+        lines = (ROOT / "SKILL.md").read_text().split("---", 2)[1].splitlines()
+        raw = next(line.partition(": ")[2] for line in lines if line.startswith("description: "))
+        description = json.loads(raw)
+        self.assertIsInstance(description, str)
+        self.assertTrue(0 < len(description) <= 1024)
+        ui = (ROOT / "agents/openai.yaml").read_text().splitlines()
+        for key in ("display_name", "short_description", "default_prompt"):
+            raw = next(line.partition(": ")[2] for line in ui if line.startswith("  " + key + ": "))
+            self.assertIsInstance(json.loads(raw), str)
+        self.assertIn("policy:", ui)
+        self.assertIn("  allow_implicit_invocation: true", ui)
 
     def test_reference_library_is_packaged_not_replaced(self):
         self.assertIn("REFERENCES.md", installer.PACKAGE)

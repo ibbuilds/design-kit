@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import os
+import stat
 from pathlib import Path
 import sys
 import tempfile
@@ -54,11 +55,11 @@ def guarded_path(root, relative):
 def pointer_text(text):
     """Replace only our block or the exact documented legacy pointer."""
     if text.count(START) != text.count(END) or text.count(START) > 1:
-        raise ValueError("Malformed or duplicate Design Kit markers in AGENTS.md")
+        raise ValueError("Malformed or duplicate Design Kit markers in instruction file")
     if START in text:
         start, end = text.index(START), text.index(END)
         if end < start:
-            raise ValueError("Reversed Design Kit markers in AGENTS.md")
+            raise ValueError("Reversed Design Kit markers in instruction file")
         end += len(END)
         if text[end:end + 2] == "\r\n":
             end += 2
@@ -68,6 +69,14 @@ def pointer_text(text):
     text = text.replace(LEGACY, "").replace(LEGACY.replace("\n", "\r\n"), "")
     separator = "" if not text or text.endswith("\n") else "\n"
     return text + separator + POINTER
+
+
+def instruction_path(target):
+    """Write into the active root instruction file, not one Codex will skip."""
+    override = guarded_path(target, "AGENTS.override.md")
+    if override.exists() and override.read_bytes().strip():
+        return override
+    return guarded_path(target, "AGENTS.md")
 
 
 def installation_plan(source, target):
@@ -94,8 +103,8 @@ def installation_plan(source, target):
 
     planned, hashes = [], {}
     for relative in PACKAGE:
-        incoming = source / relative
-        if incoming.is_symlink() or not incoming.is_file():
+        incoming = guarded_path(source, relative)
+        if not incoming.is_file():
             raise ValueError("Missing or symlinked package file: " + relative)
         payload = incoming.read_bytes()
         hashes[relative] = digest(payload)
@@ -112,7 +121,7 @@ def installation_plan(source, target):
     payload = (json.dumps(data, indent=2, sort_keys=True) + "\n").encode()
     if not manifest_path.exists() or manifest_path.read_bytes() != payload:
         planned.append((manifest_path, payload))
-    agents = guarded_path(target, "AGENTS.md")
+    agents = instruction_path(target)
     old = agents.read_bytes() if agents.exists() else b""
     new = pointer_text(old.decode("utf-8")).encode("utf-8")
     if old != new:
@@ -122,10 +131,13 @@ def installation_plan(source, target):
 
 def atomic_write(path, content):
     path.parent.mkdir(parents=True, exist_ok=True)
+    mode = stat.S_IMODE(path.stat().st_mode) if path.exists() else None
     fd, name = tempfile.mkstemp(prefix=".design-kit-", dir=str(path.parent))
     try:
         with os.fdopen(fd, "wb") as stream:
             stream.write(content)
+        if mode is not None:
+            os.chmod(name, mode)
         os.replace(name, path)
     finally:
         if os.path.exists(name):

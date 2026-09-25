@@ -5,8 +5,8 @@
 
 ## Foundations
 
-- **Spacing:** use a 4px base grid and multiples for spacing; other dimensions and type sizes may differ.
-- **Fonts:** 1–3 families maximum; generally two, or one for a minimal approach. Prefer suitable variable fonts.
+- **Spacing:** inherit the accepted scale. For new work, a 4px base is a useful default, not a universal constraint; preserve deliberate optical corrections and content-driven spacing.
+- **Fonts:** inherit accepted typography; otherwise choose a small set for voice, hierarchy and legibility. Usually one or two families suffice. Check available glyphs, weights and loading rather than changing fonts for novelty.
 - **Purpose:** every element adds understanding, action, feedback, identity or meaningful delight.
 - **Copy:** use realistic, product-specific language, benefits, relevant objections and clear actions. Remove filler labels and captions that merely explain the section.
 - **Truth:** use real claims and proof. Never invent testimonials, metrics, scarcity or guarantees; label demo content and missing facts.

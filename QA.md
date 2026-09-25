@@ -1,8 +1,8 @@
 # Frontend QA
 
-- Review the scoped result against BRIEF.md, TASTE.md and supplied project references.
+- Review the scoped result against the target's actual brief, accepted work, TASTE.md and active references; the packaged BRIEF.md is only a template.
 - Apply relevant checks; add checks for actual risks. Keep evidence in the target.
-- Follow target release requirements and user-reserved decisions.
+- Follow target release requirements and user-reserved decisions. Review-only tasks report repairs without applying them or updating project records.
 
 ## Review depth
 
@@ -11,12 +11,22 @@
 - **Production frontend:** apply the experience checks, relevant production checks and target requirements.
 - Recheck affected areas after repairs; repeat broader checks only when changes introduce broader risk.
 
+## Early visual decision
+
+Inspect the integrated sample at actual viewing sizes, with loaded fonts/media and honest content. Use the active references and product job, not a numeric self-score:
+
+- Does the opening explain this product/task through a clear focal point and next action, rather than interchangeable copy and decoration?
+- Do type, alignment, spacing, imagery and surfaces form one deliberate hierarchy? Judge wraps/crops in the render, not only token values.
+- Does the deeper region add substance and appropriate density instead of repeating the same box pattern? Is mobile recomposed and usable?
+
+Name the actual mismatch before changing anything: repair execution, replace the weak element, or reconsider the premise only when necessary. Reuse this inspection in the final review; it is not another mandatory audit loop.
+
 ## Experience
 
 - **Craft:** identify concrete gaps in hierarchy, composition, type, imagery and detail, including deeper screens.
 - **Clarity:** verify the user can identify the value/job, available action and expected result.
 - **Copy:** check audience fit, meaningful benefits, relevant objections and accurate CTA promises. Remove filler and unsupported proof.
-- **Behavior:** complete the primary task and relevant recovery paths. Check feedback, input preservation and continuity.
+- **Behavior:** in an authorized local/test state, exercise the primary task and relevant recovery paths. Check feedback, input preservation and continuity.
 - **Responsive:** inspect mobile, tablet, desktop and intermediate widths with realistic content. Test components within their actual containers.
 - **Layout:** check wrapping, crops, overflow, sticky layers and touch access; preserve useful information and actions.
 - **Code:** follow target conventions; use semantics, clear names, cohesive components, predictable state and appropriate types.
@@ -45,7 +55,7 @@
 ## Close the review
 
 - Record useful issues as **location + viewport/state + defect + impact + repair + recheck**.
-- Fix blocked tasks, misleading behavior and major craft gaps before micro-polish.
+- In an authorized edit task, fix blocked tasks, misleading behavior and major craft gaps before micro-polish; in review-only mode, report them.
 - Preserve accepted work; use baseline comparison when it helps.
 - Report unobserved behavior and missing evidence. Keep captures/reproduction steps when useful.
 - Tests do not prove design excellence; walkthroughs do not replace user research.
