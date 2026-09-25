@@ -1,34 +1,40 @@
-# Project brief
+# Project brief template
 
-- Fill only relevant fields in the project copy; keep the reusable source blank.
-- Reuse chat and link existing sources instead of duplicating them. Ask only about material gaps; label unknowns.
-- Exclude secrets. Resolve relative links from this file; label external paths.
+Use an existing project record when possible; otherwise copy this template into the target project, not the installed skill. Fill relevant fields from the conversation and code. Ask only about material gaps. Keep this reusable source blank. Exclude secrets.
 
 ## Outcome
 
-- Product / audience:
-- Primary user task, outcome and action:
-- Scope (site / app / flow / feature / section / component; routes and states):
-- Target root / work area:
+- Product / audience / primary user job:
+- Scope (routes, screens, sections, components, states):
 - Fidelity (concept / interactive prototype / production frontend):
-- Acceptance criteria and important recovery states:
+- Target root / existing commands / technical constraints:
+- Observable success and important recovery paths:
 
-## Inputs
+## Available truth
 
-- Product facts, content and assets (or source):
-- Existing brand, design system and accepted work:
-- Stack, conventions and constraints (or source):
-- Integrations / available contracts:
+- Product facts, copy, proof, assets and their sources:
+- Existing visual system, canonical component/token paths:
+- Accepted work, owner approval status, and decisions to preserve:
 - Devices, locales, accessibility needs and performance budgets:
 
-## Direction
+## Current design decision
 
-- Character, density and interaction priorities:
-- Project references (URL/file + relevant view or state + intent):
-- Exceptions to TASTE.md:
-- Accepted decisions, rejected approaches and reasons (or source):
+- Mode (create/redesign / extend / refine / review):
+- Product-specific premise and reading/task sequence:
+- Dominant visual and available source/production method:
+- Type, composition, density, surfaces, motion and mobile intent:
+- Open creative choices / reserved decisions / exceptions to TASTE.md:
 
-## Authority
+## Active references (agent selects from existing sources when needed)
 
-- Creative freedom / user-reserved decisions and approvals:
-- Execution or model override, only if explicitly requested:
+For each useful reference: region/problem; URL or local capture; viewport/state;
+what was actually seen; transferable decision; where it applies; rights/limitations.
+Mark inferred behavior and inaccessible evidence. Link only the relevant examples,
+not the whole research history. A selected example is not automatically user-approved.
+
+## Continuity (only what the next task needs)
+
+- Implemented direction / accepted direction, distinguished:
+- Evidence and verification actually performed:
+- Known defects, rejected approaches and why:
+- Next action and any explicit budget or authority override:

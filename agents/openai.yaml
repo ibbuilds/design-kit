@@ -1,0 +1,6 @@
+interface:
+  display_name: "Design Kit"
+  short_description: "Reference-grounded frontend design and scoped refinement"
+  default_prompt: "Use $design-kit to build or refine this interface using the project's brief, existing implementation, and curated reference sources."
+policy:
+  allow_implicit_invocation: true
