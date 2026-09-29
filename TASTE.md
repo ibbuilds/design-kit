@@ -14,10 +14,13 @@
 ## Visual craft
 
 - **Identity:** coordinate type, layout, imagery, color, copy and motion into a coherent direction.
+- **Direction:** for a new surface, decide what leads the first viewport, how the next region changes pace/density, and how the hierarchy recomposes on mobile. Tie these choices to the product's message or task; a palette and radius scale are not a composition.
 - **Composition:** establish focus and reading order through scale, space, density and contrast. Let content shape the layout.
 - **Typography:** resolve hierarchy, line length, line height, wrapping and optical alignment at actual sizes.
 - **Detail:** make color roles, borders, depth, icons and crops deliberate and consistent.
 - **Expression:** use photography, illustration, 3D or effects when they strengthen the idea. No prescribed aesthetic or medium.
+- **Restraint with purpose:** make a few product-specific choices carry the identity. Repeated cards, oversized headings, gradients, glass and decorative motion are techniques, not evidence of quality. Keep them only when their role fits the content and intended experience.
+- **Reference transfer:** preserve a useful relationship, not another site's identity. Translate scale, framing, rhythm or interaction into our content and verify it in the render. An accessible primitive can provide reliable mechanics while its composition and finish remain specific to this product.
 
 ## Experience and engineering
 

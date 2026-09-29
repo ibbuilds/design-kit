@@ -1,0 +1,29 @@
+# Quality and efficient execution
+
+Read when selecting effort, managing a long task, or handling a budget. This is a working recommendation for design and programming, not a benchmark or runtime configuration. The user's current model, effort, speed and explicit choices win.
+
+## Spend effort on decisions that affect the result
+
+Use GPT-6.1 Sol as the normal model when available. For demanding visual direction, substantial implementation, architecture or difficult debugging, **High + Standard** is a quality-oriented starting point. Use Medium for well-defined extensions and local work; Low fits simple, easily checked edits. Choose based on ambiguity and consequences, not prompt length. Do not lower effort halfway through a hard task just to shorten a response.
+
+Raise effort to Xhigh/Max for a named unresolved problem when better reasoning could change the answer. Reserve Astra for a problem Sol cannot resolve reliably or an explicit user choice. Do not automatically switch models, escalate every action, or assume maximum effort guarantees better visual judgment. A failed render needs inspection or code repair, not necessarily a stronger model.
+
+Standard is the default recommendation for quota efficiency. Fast trades more consumption for speed where supported. Brief visible output does not bound hidden reasoning. API prices cannot be converted directly into hours or a subscription percentage. When usage is observable, compare representative completed tasks with equivalent input and quality requirements; record actual consumption, rework and limitations. Otherwise leave cost unknown.
+
+Official references: [GPT-6.1 Sol](https://developers.openai.com/api/docs/models/gpt-6.1-sol), [reasoning effort](https://developers.openai.com/api/docs/guides/reasoning), [Codex usage](https://developers.openai.com/codex/pricing). Availability and rates can change.
+
+## Preserve useful context
+
+- Work in the real target with its existing commands and environment. Read the entrypoint and only relevant supporting documents, code and reference regions.
+- Keep a coherent task in its current chat while the context remains useful. For an unrelated task or an overloaded session, preserve a compact handoff rather than replaying the whole history.
+- Keep logs and broad search results outside active context; surface errors, conclusions and paths for deeper inspection. Retain evidence needed for diagnosis.
+- Reuse accepted code, assets and comparisons. A local cache saves retrieval, not necessarily model context; do not re-send every stored image.
+- Batch related repairs. Repeat tests and reference discovery only when a change, failure or new scope justifies them.
+
+Do not sacrifice acceptance criteria to a token target. Close on verified scope and concrete quality criteria, not a self-score or a fixed number of rounds. Continue substantive repairs while progress is possible; stop preference churn when there is no defect or supported improvement. A repeated failure calls for a changed hypothesis, missing evidence, or a clear blocker. Explicit user budgets always win; report incomplete work honestly.
+
+## Long work and handoff
+
+Preserve the objective, closed/open decisions, accepted code/token paths, selected evidence, run/check commands, verification results, remaining defects and next action. Distinguish implemented, verified, agent-selected and user-accepted work. Use existing project records; create a new document only when it improves continuity. No mandatory PRD, ceremony, agent team, full-page variant tournament or extra server.
+
+Tools and dependencies enter for a demonstrated need and authorized scope. Do not install the reference catalog, change runtime settings, activate background jobs, or create additional agents by default. Complete the authorized work with the available capabilities; request approval only where the actual action requires it and prior authorization does not cover it.

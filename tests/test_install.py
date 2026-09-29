@@ -2,11 +2,13 @@
 import importlib.util
 import json
 import os
+import re
 import stat
 from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 SPEC = importlib.util.spec_from_file_location("design_kit_install", ROOT / "scripts/install.py")
@@ -39,6 +41,63 @@ class InstallTests(unittest.TestCase):
         installer.install(self.source, self.target)
         self.assertEqual([], installer.install(self.source, self.target))
 
+    def test_software_is_opt_in_on_new_install(self):
+        installer.install(self.source, self.target)
+        self.assertNotIn(installer.SOFTWARE_RULE, (self.target / "AGENTS.md").read_text())
+
+    def test_software_install_survives_ordinary_updates(self):
+        installer.install(self.source, self.target, with_software=True)
+        original = (self.target / "AGENTS.md").read_bytes()
+        self.assertIn(installer.SOFTWARE_RULE.encode(), original)
+        (self.source / "SOFTWARE.md").write_text("Updated engineering workflow")
+        installer.install(self.source, self.target)
+        self.assertEqual(original, (self.target / "AGENTS.md").read_bytes())
+        self.assertEqual("Updated engineering workflow", (self.dest / "SOFTWARE.md").read_text())
+        self.assertEqual([], installer.install(self.source, self.target))
+
+    def test_software_pointer_can_be_enabled_and_disabled_without_losing_rules(self):
+        before, after = "# Project\nPreserve contracts.\n", "\nKeep tests.\n"
+        (self.target / "AGENTS.md").write_text(before)
+        installer.install(self.source, self.target)
+        agents = self.target / "AGENTS.md"
+        agents.write_text(agents.read_text() + after)
+        installer.install(self.source, self.target, with_software=True)
+        self.assertIn(installer.SOFTWARE_RULE, agents.read_text())
+        installer.install(self.source, self.target, with_software=False)
+        self.assertEqual(before + installer.POINTER + after, agents.read_text())
+        self.assertEqual([], installer.install(self.source, self.target, with_software=False))
+
+    def test_check_software_route_does_not_write(self):
+        installer.install(self.source, self.target)
+        agents = self.target / "AGENTS.md"
+        before = {p: p.read_bytes() for p in self.target.rglob("*") if p.is_file()}
+        planned = installer.install(self.source, self.target, check=True, with_software=True)
+        self.assertEqual({agents, self.dest / installer.MANIFEST}, {path for path, _ in planned})
+        self.assertEqual(before, {p: p.read_bytes() for p in self.target.rglob("*") if p.is_file()})
+
+    def test_project_prose_cannot_silently_enable_software_route(self):
+        text = "Reference only: .agents/skills/design-kit/SOFTWARE.md\n"
+        (self.target / "AGENTS.md").write_text(text)
+        installer.install(self.source, self.target)
+        self.assertEqual(text + installer.POINTER, (self.target / "AGENTS.md").read_text())
+        self.assertEqual([], installer.install(self.source, self.target))
+
+    def test_update_from_previous_bundle_adds_new_resources(self):
+        added = {"REFERENCE_ROUTER.md", "EXECUTION.md", "SOFTWARE.md"}
+        old_package = tuple(path for path in installer.PACKAGE if path not in added)
+        with patch.object(installer, "PACKAGE", old_package):
+            installer.install(self.source, self.target)
+        manifest = self.dest / installer.MANIFEST
+        previous = json.loads(manifest.read_text())
+        previous.pop("software")
+        manifest.write_text(json.dumps(previous))
+        self.assertFalse((self.dest / "SOFTWARE.md").exists())
+        installer.install(self.source, self.target, with_software=True)
+        for relative in added:
+            self.assertEqual((self.source / relative).read_bytes(), (self.dest / relative).read_bytes())
+        self.assertIn(installer.SOFTWARE_RULE, (self.target / "AGENTS.md").read_text())
+        self.assertEqual([], installer.install(self.source, self.target))
+
     def test_check_does_not_write(self):
         self.assertTrue(installer.install(self.source, self.target, check=True))
         self.assertEqual([], list(self.target.iterdir()))
@@ -52,6 +111,15 @@ class InstallTests(unittest.TestCase):
         installer.install(self.source, self.target)
         self.assertTrue((self.target / "AGENTS.md").read_bytes().startswith(original))
         self.assertEqual("Actual product facts", legacy.read_text())
+
+    def test_utf8_project_instructions_and_resources_survive_update(self):
+        original = "# Proyecto\nDiseño aprobado: tipografía y navegación.\n".encode("utf-8")
+        (self.target / "AGENTS.md").write_bytes(original)
+        (self.source / "SOFTWARE.md").write_text("Programación: éxito y recuperación.\n", encoding="utf-8")
+        installer.install(self.source, self.target, with_software=True)
+        self.assertTrue((self.target / "AGENTS.md").read_bytes().startswith(original))
+        self.assertEqual((self.source / "SOFTWARE.md").read_bytes(), (self.dest / "SOFTWARE.md").read_bytes())
+        self.assertEqual([], installer.install(self.source, self.target))
 
     def test_exact_legacy_pointer_is_replaced(self):
         old = "# App\n" + installer.LEGACY + "\nOther rules.\n"
@@ -97,6 +165,17 @@ class InstallTests(unittest.TestCase):
         (self.dest / installer.MANIFEST).write_text(json.dumps({"format": 1, "name": "design-kit", "files": {"../escape": "0" * 64}}))
         with self.assertRaisesRegex(ValueError, "Invalid"):
             installer.install(self.source, self.target)
+
+    def test_invalid_manifest_routing_is_rejected_before_writes(self):
+        installer.install(self.source, self.target)
+        manifest = self.dest / installer.MANIFEST
+        data = json.loads(manifest.read_text())
+        data["software"] = "true"
+        manifest.write_text(json.dumps(data))
+        before = {p: p.read_bytes() for p in self.target.rglob("*") if p.is_file()}
+        with self.assertRaisesRegex(ValueError, "Invalid software"):
+            installer.install(self.source, self.target, with_software=True)
+        self.assertEqual(before, {p: p.read_bytes() for p in self.target.rglob("*") if p.is_file()})
 
     def test_malformed_pointer_rejects_install_before_writes(self):
         (self.target / "AGENTS.md").write_text(installer.START)
@@ -157,6 +236,60 @@ class InstallTests(unittest.TestCase):
         self.assertTrue(override.read_bytes().startswith(original))
         self.assertIn(installer.START.encode(), override.read_bytes())
         self.assertEqual([], installer.install(self.source, self.target))
+
+    def test_software_route_uses_active_override_and_preserves_opt_in(self):
+        ordinary = self.target / "AGENTS.md"
+        ordinary.write_text("# Inactive instructions\n")
+        override = self.target / "AGENTS.override.md"
+        override.write_text("# Active project\n")
+        installer.install(self.source, self.target, with_software=True)
+        self.assertIn(installer.SOFTWARE_RULE, override.read_text())
+        self.assertEqual("# Inactive instructions\n", ordinary.read_text())
+        self.assertEqual([], installer.install(self.source, self.target))
+
+    def test_software_opt_in_survives_new_override_and_return_to_fallback(self):
+        installer.install(self.source, self.target, with_software=True)
+        override = self.target / "AGENTS.override.md"
+        override.write_text("# New active instructions\n")
+        ordinary = self.target / "AGENTS.md"
+        before = ordinary.read_bytes()
+        planned = installer.install(self.source, self.target, check=True)
+        self.assertIn(override, [p for p, _ in planned])
+        installer.install(self.source, self.target)
+        self.assertIn(installer.SOFTWARE_RULE, override.read_text())
+        self.assertEqual(before, ordinary.read_bytes())
+        self.assertEqual([], installer.install(self.source, self.target))
+        override.write_text(" \n")
+        self.assertEqual([], installer.install(self.source, self.target))
+
+    def test_saved_opt_in_survives_replacement_of_root_instruction_file(self):
+        installer.install(self.source, self.target, with_software=True)
+        agents = self.target / "AGENTS.md"
+        agents.write_text("# Replacement project instructions\n")
+        installer.install(self.source, self.target)
+        self.assertTrue(agents.read_text().startswith("# Replacement project instructions\n"))
+        self.assertIn(installer.SOFTWARE_RULE, agents.read_text())
+        self.assertEqual([], installer.install(self.source, self.target))
+
+    def test_disabled_software_route_does_not_return_with_stale_fallback(self):
+        installer.install(self.source, self.target, with_software=True)
+        override = self.target / "AGENTS.override.md"
+        override.write_text("# Override\n")
+        installer.install(self.source, self.target, with_software=False)
+        self.assertNotIn(installer.SOFTWARE_RULE, override.read_text())
+        override.write_text(" \n")
+        installer.install(self.source, self.target)
+        self.assertNotIn(installer.SOFTWARE_RULE, (self.target / "AGENTS.md").read_text())
+        self.assertEqual([], installer.install(self.source, self.target))
+
+    def test_locally_edited_new_resource_blocks_update_before_pointer_change(self):
+        installer.install(self.source, self.target)
+        (self.dest / "SOFTWARE.md").write_text("My engineering rules")
+        (self.source / "SKILL.md").write_text("New skill")
+        before = {p: p.read_bytes() for p in self.target.rglob("*") if p.is_file()}
+        with self.assertRaisesRegex(ValueError, "refusing overwrite"):
+            installer.install(self.source, self.target, with_software=True)
+        self.assertEqual(before, {p: p.read_bytes() for p in self.target.rglob("*") if p.is_file()})
 
     def test_empty_override_leaves_fallback_active(self):
         override = self.target / "AGENTS.override.md"
@@ -232,23 +365,44 @@ class InstallTests(unittest.TestCase):
 
 
 class SkillContractTests(unittest.TestCase):
+    def test_real_installed_bundle_has_resolvable_local_document_links(self):
+        # Validate the actual exported package in a clean project. A valid link
+        # in the checkout can still be broken if its resource is not packaged.
+        with tempfile.TemporaryDirectory() as folder:
+            target = Path(folder)
+            installer.install(ROOT, target, with_software=True)
+            bundle = target / ".agents/skills/design-kit"
+            links_checked = 0
+            for document in bundle.rglob("*.md"):
+                text = document.read_text(encoding="utf-8")
+                for href in re.findall(r"\[[^\]\n]+\]\(([^)\s]+)\)", text):
+                    url = urlsplit(href)
+                    if url.scheme or url.netloc or not url.path:
+                        continue
+                    resource = (document.parent / unquote(url.path)).resolve()
+                    self.assertTrue(resource.is_relative_to(bundle.resolve()), (document, href))
+                    self.assertTrue(resource.is_file(), (document, href))
+                    links_checked += 1
+            self.assertGreater(links_checked, 0)
+            self.assertEqual([], installer.install(ROOT, target, check=True))
+
     def test_frontmatter_and_native_invocation(self):
-        text = (ROOT / "SKILL.md").read_text()
+        text = (ROOT / "SKILL.md").read_text(encoding="utf-8")
         self.assertTrue(text.startswith("---\nname: design-kit\n"))
         self.assertIn("description:", text.split("---", 2)[1])
-        meta = (ROOT / "agents/openai.yaml").read_text()
+        meta = (ROOT / "agents/openai.yaml").read_text(encoding="utf-8")
         self.assertIn("allow_implicit_invocation: true", meta)
         self.assertIn("$design-kit", meta)
 
     def test_metadata_strings_are_unambiguous_without_yaml_dependency(self):
         # Our authored metadata uses JSON-quoted strings, a valid YAML subset.
         # Unlike a substring check, this rejects an unquoted colon in description.
-        lines = (ROOT / "SKILL.md").read_text().split("---", 2)[1].splitlines()
+        lines = (ROOT / "SKILL.md").read_text(encoding="utf-8").split("---", 2)[1].splitlines()
         raw = next(line.partition(": ")[2] for line in lines if line.startswith("description: "))
         description = json.loads(raw)
         self.assertIsInstance(description, str)
         self.assertTrue(0 < len(description) <= 1024)
-        ui = (ROOT / "agents/openai.yaml").read_text().splitlines()
+        ui = (ROOT / "agents/openai.yaml").read_text(encoding="utf-8").splitlines()
         for key in ("display_name", "short_description", "default_prompt"):
             raw = next(line.partition(": ")[2] for line in ui if line.startswith("  " + key + ": "))
             self.assertIsInstance(json.loads(raw), str)
@@ -257,8 +411,8 @@ class SkillContractTests(unittest.TestCase):
 
     def test_reference_library_is_packaged_not_replaced(self):
         self.assertIn("REFERENCES.md", installer.PACKAGE)
-        self.assertIn("[REFERENCES.md](REFERENCES.md)", (ROOT / "SKILL.md").read_text())
-        self.assertIn("[SKILL.md](SKILL.md)", (ROOT / "WORKFLOW.md").read_text())
+        self.assertIn("[REFERENCES.md](REFERENCES.md)", (ROOT / "SKILL.md").read_text(encoding="utf-8"))
+        self.assertIn("[SKILL.md](SKILL.md)", (ROOT / "WORKFLOW.md").read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

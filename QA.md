@@ -21,6 +21,21 @@ Inspect the integrated sample at actual viewing sizes, with loaded fonts/media a
 
 Name the actual mismatch before changing anything: repair execution, replace the weak element, or reconsider the premise only when necessary. Reuse this inspection in the final review; it is not another mandatory audit loop.
 
+## Completion criteria
+
+Judge the scoped result in the actual render, with the relevant reference/base beside it when comparison matters. A successful build or attractive hero alone is insufficient. Apply only criteria relevant to the requested fidelity and scope:
+
+- **Product and authority:** the main job, content and next action are clear; closed structural/final-design decisions are respected. Claims and proof are real or explicitly labeled demo content.
+- **Composition:** the intended focal point, reading/task order and density survive the render. The dominant visual is useful, legible and correctly cropped; its absence is not covered with decoration. Deeper regions have their own content-driven treatment instead of an interchangeable card grid.
+- **Type and finish:** actual fonts/weights load; wraps, line lengths, alignment, spacing, borders and image quality form the intended hierarchy. No major clipping, placeholder assets or inconsistent controls remain within scope.
+- **Reference impact:** each reference used to justify a material decision can be connected to the implementation. Compare the specific relationship (scale, rhythm, framing, density or behavior), not a checklist of copied colors. Reject irrelevant references instead of forcing them in. Record unobserved behavior as unknown.
+- **Responsive and access:** the composition works at relevant mobile/desktop/container widths, including troublesome intermediate sizes. Content and actions remain available; required keyboard, focus, contrast and reduced-motion behavior work. Screenshots alone do not verify interaction.
+- **Behavior and integration:** the scoped primary action and important failure/recovery states work at the requested fidelity. Mocks remain labeled. Required target checks pass and accepted work has no material regression.
+
+Classify gaps before repairing: **requirement violation**, **material craft/usability defect**, or **optional preference**. Resolve the first two in authorized edit work while a justified repair is possible. Do not reopen accepted identity for an unrequested preference. Batch related changes and recheck their effects. Stop after criteria are met; do not add effects, variants or audits solely to keep improving. If a user budget or missing capability prevents completion, preserve the result and name the unmet criterion rather than claiming readiness.
+
+For a short local change, reuse existing evidence and inspect the affected region/states; do not turn these criteria into a full-site audit. Review-only tasks report gaps without applying repairs. User acceptance remains separate from the agent's verification.
+
 ## Experience
 
 - **Craft:** identify concrete gaps in hierarchy, composition, type, imagery and detail, including deeper screens.

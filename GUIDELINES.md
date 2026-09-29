@@ -9,6 +9,7 @@
 - Favor visible composition and purposeful scroll interactions over hidden hover effects.
 - Use interactive demos when they explain value; keep essential selling points visible.
 - Let useful copy and evidence earn the CTA.
+- Resolve what the dominant visual explains before filling the hero. Match depth and pacing to the actual proof, product demonstration and objections; do not put every section in the same feature-card pattern.
 
 ## Brand websites, portfolios and service sites
 
@@ -25,6 +26,7 @@
 - Keep detail discoverable and filters understandable.
 - Use motion for updates and continuity; keep repeated use fast.
 - Give workspace to decision-relevant information, not decorative metrics.
+- Inspect dense/populated, sparse and filtered states. Keep table/chart labels, units and controls legible at the actual container width; polished empty widgets do not establish a usable dashboard.
 
 ## Working applications, admin tools and editors
 
@@ -48,6 +50,7 @@
 - Keep labels, requirements and actionable errors visible; preserve input after failure.
 - Explain completion, next steps and account recovery.
 - Use motion for continuity without delaying input or task completion.
+- Exercise invalid, submitting, failed and successful states with realistic content. Preserve entered values and focus during recovery; a static happy-path screen is not a finished flow.
 
 ## Content sites, documentation and search
 

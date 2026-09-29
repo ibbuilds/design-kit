@@ -13,6 +13,7 @@ PACKAGE = (
     "SKILL.md", "agents/openai.yaml", "README.md", "BRIEF.md", "TASTE.md",
     "GUIDELINES.md", "QA.md", "REFERENCES.md", "WORKFLOW.md", "RESEARCH.md",
     "docs/EXECUTION_DECISION.md", "scripts/install.py", "tests/test_install.py",
+    "REFERENCE_ROUTER.md", "EXECUTION.md", "SOFTWARE.md",
 )
 MANIFEST = ".design-kit-manifest.json"
 START = "<!-- design-kit:begin -->"
@@ -21,6 +22,11 @@ POINTER = (
     START + "\nFor frontend design, implementation, or review, read and apply\n"
     "`.agents/skills/design-kit/SKILL.md`. Preserve this project's own\n"
     "instructions and use its existing brief and accepted implementation.\n" + END + "\n"
+)
+SOFTWARE_RULE = (
+    "For programming tasks, read and apply `.agents/skills/design-kit/SOFTWARE.md`.\n"
+    "Use Design Kit for visual/frontend decisions in mixed tasks; backend-only\n"
+    "work does not need the design reference library.\n"
 )
 LEGACY = (
     "For frontend design, implementation or review, read `.design-kit/AGENTS.md`\n"
@@ -52,7 +58,7 @@ def guarded_path(root, relative):
     return path
 
 
-def pointer_text(text):
+def pointer_text(text, with_software=None):
     """Replace only our block or the exact documented legacy pointer."""
     if text.count(START) != text.count(END) or text.count(START) > 1:
         raise ValueError("Malformed or duplicate Design Kit markers in instruction file")
@@ -61,14 +67,20 @@ def pointer_text(text):
         if end < start:
             raise ValueError("Reversed Design Kit markers in instruction file")
         end += len(END)
+        # Older manifests derive the choice only from our marked block,
+        # never from arbitrary project prose.
+        if with_software is None:
+            with_software = ".agents/skills/design-kit/SOFTWARE.md" in text[start:end]
         if text[end:end + 2] == "\r\n":
             end += 2
         elif text[end:end + 1] == "\n":
             end += 1
-        return text[:start] + POINTER + text[end:]
+        pointer = POINTER.replace(END, SOFTWARE_RULE + END) if with_software else POINTER
+        return text[:start] + pointer + text[end:]
     text = text.replace(LEGACY, "").replace(LEGACY.replace("\n", "\r\n"), "")
     separator = "" if not text or text.endswith("\n") else "\n"
-    return text + separator + POINTER
+    pointer = POINTER.replace(END, SOFTWARE_RULE + END) if with_software else POINTER
+    return text + separator + pointer
 
 
 def instruction_path(target):
@@ -79,7 +91,7 @@ def instruction_path(target):
     return guarded_path(target, "AGENTS.md")
 
 
-def installation_plan(source, target):
+def installation_plan(source, target, with_software=None):
     source, target = Path(source).resolve(), Path(target).resolve()
     if not target.is_dir():
         raise ValueError("Target must be an existing project directory")
@@ -89,6 +101,7 @@ def installation_plan(source, target):
     manifest_path = guarded_path(target, bundle / MANIFEST)
     destination = target / bundle
     previous = {}
+    previous_software = None
     if manifest_path.exists():
         data = json.loads(manifest_path.read_text(encoding="utf-8"))
         if not isinstance(data, dict) or data.get("format") != 1 or data.get("name") != "design-kit":
@@ -98,6 +111,9 @@ def installation_plan(source, target):
             raise ValueError("Invalid managed-file list")
         if not all(isinstance(v, str) and len(v) == 64 for v in previous.values()):
             raise ValueError("Invalid managed-file hashes")
+        previous_software = data.get("software")
+        if previous_software is not None and not isinstance(previous_software, bool):
+            raise ValueError("Invalid software routing state")
     elif destination.exists() and any(destination.iterdir()):
         raise ValueError("Existing skill is not managed by this installer; review it first")
 
@@ -117,13 +133,18 @@ def installation_plan(source, target):
                 raise ValueError("Locally edited/unmanaged file; refusing overwrite: " + str(output))
         planned.append((output, payload))
 
-    data = {"format": 1, "name": "design-kit", "files": hashes}
+    agents = instruction_path(target)
+    old = agents.read_bytes() if agents.exists() else b""
+    text = old.decode("utf-8")
+    # The saved choice survives a new override or a return to a stale fallback
+    # block. Older manifests derive their initial choice from the active block.
+    routing = previous_software if with_software is None else with_software
+    new = pointer_text(text, routing).encode("utf-8")
+    data = {"format": 1, "name": "design-kit", "files": hashes,
+            "software": SOFTWARE_RULE.encode("utf-8") in new}
     payload = (json.dumps(data, indent=2, sort_keys=True) + "\n").encode()
     if not manifest_path.exists() or manifest_path.read_bytes() != payload:
         planned.append((manifest_path, payload))
-    agents = instruction_path(target)
-    old = agents.read_bytes() if agents.exists() else b""
-    new = pointer_text(old.decode("utf-8")).encode("utf-8")
     if old != new:
         planned.append((agents, new))
     return planned
@@ -144,9 +165,9 @@ def atomic_write(path, content):
             os.unlink(name)
 
 
-def install(source, target, check=False):
+def install(source, target, check=False, with_software=None):
     # Preflight every conflict before changing any file. Writes are atomic per file.
-    planned = installation_plan(source, target)
+    planned = installation_plan(source, target, with_software)
     if check:
         return planned
     originals = [(path, path.read_bytes() if path.exists() else None) for path, _ in planned]
@@ -170,9 +191,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("target", type=Path)
     parser.add_argument("--check", action="store_true", help="Report drift without writes (exit 1 if changes needed)")
+    routing = parser.add_mutually_exclusive_group()
+    routing.add_argument("--with-software", dest="with_software", action="store_true", help="Activate engineering guidance for programming as well as design")
+    routing.add_argument("--design-only", dest="with_software", action="store_false", help="Keep only the frontend instruction pointer")
+    parser.set_defaults(with_software=None)
     args = parser.parse_args()
     try:
-        planned = install(Path(__file__).resolve().parents[1], args.target, args.check)
+        planned = install(Path(__file__).resolve().parents[1], args.target, args.check, args.with_software)
     except (ValueError, OSError) as error:
         print("ERROR: " + str(error), file=sys.stderr)
         return 2

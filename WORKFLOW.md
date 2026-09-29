@@ -1,7 +1,9 @@
-# Frontend workflow
+# Design and software entrypoints
 
 The canonical procedure is now [SKILL.md](SKILL.md). Read and apply it for frontend work; do not run another sequence from this file.
 
-It routes create/redesign, extend, refine, and review tasks; selects visual examples from the existing [reference library](REFERENCES.md); builds in the real target; and bounds discretionary refinement. Review-only requests stop after findings without editing project records. [QA.md](QA.md) remains the detailed check reference, not an additional unbounded loop.
+It distinguishes no base/moodboard, structural composition, final design and accepted code; selects evidence through [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md); and compares applied decisions in the real render. [QA.md](QA.md) defines scoped completion criteria, not a fixed round ceiling or an additional audit loop. Review-only requests stop after findings without editing project records.
+
+For programming, [SOFTWARE.md](SOFTWARE.md) is the canonical engineering workflow. Mixed frontend features use it for behavior/contracts and Design Kit for visual decisions; backend-only work skips design research. [EXECUTION.md](EXECUTION.md) supplies selective effort/context guidance for either path. Install with `--with-software` to activate the engineering pointer in the target's root instructions, or retain the design-only default.
 
 Existing project facts and accepted decisions remain authoritative. A legacy project copy of BRIEF.md can continue to hold its context. See [README.md](README.md) for native Codex installation and migration.

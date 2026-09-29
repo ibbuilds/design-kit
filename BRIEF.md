@@ -7,6 +7,7 @@ Use an existing project record when possible; otherwise copy this template into 
 - Product / audience / primary user job:
 - Scope (routes, screens, sections, components, states):
 - Fidelity (concept / interactive prototype / production frontend):
+- Input authority (no base / moodboard / structural composition / final design / accepted system):
 - Target root / existing commands / technical constraints:
 - Observable success and important recovery paths:
 
@@ -24,11 +25,15 @@ Use an existing project record when possible; otherwise copy this template into 
 - Dominant visual and available source/production method:
 - Type, composition, density, surfaces, motion and mobile intent:
 - Open creative choices / reserved decisions / exceptions to TASTE.md:
+- Closed decisions / open decisions / illustrative placeholders:
+- Early-sample decision (agent-delegated / user-requested approval):
+- Scoped completion criteria and explicit work budget, if any:
 
 ## Active references (agent selects from existing sources when needed)
 
 For each useful reference: region/problem; URL or local capture; viewport/state;
-what was actually seen; transferable decision; where it applies; rights/limitations.
+what was actually seen; transferable decision; what is not copied; where it applies;
+comparable render/state and observed impact; rights/limitations.
 Mark inferred behavior and inaccessible evidence. Link only the relevant examples,
 not the whole research history. A selected example is not automatically user-approved.
 
