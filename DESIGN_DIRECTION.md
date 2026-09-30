@@ -2,6 +2,14 @@
 
 Read for a new direction or an unresolved finish. Skip for a supplied final design, an accepted system or a local repair with sufficient context. Aim for an intentional result appropriate to the product, not a recognizable agent-generated template.
 
+## Establish the requested creative standard
+
+For ambitious original work, inspect a few excellent references that illuminate this product's unresolved choices. A Godly/Awwwards selection can calibrate craft; pair its useful qualities with the actual audience, content and task. A gallery's curation is evidence of selection, not a tested workflow or a promise of an award. Use the access policy in [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md); a named gallery does not require a paid service or MCP installation.
+
+State a compact creative premise grounded in the product: the idea the experience expresses, how content unfolds and the visual or interactive relationship that makes it recognizable. The premise can come from editorial typography, product behavior, meaningful imagery or another appropriate medium. Do not force a metaphor, bespoke typeface, WebGL scene or motion quota. An existing system can express exceptional craft without inventing another identity.
+
+Turn the chosen standard into inspectable relationships: dominant-to-supporting scale, type/image balance, content-driven rhythm, asset fidelity, optical finish and, when relevant, motion continuity. Name what belongs to the reference's content or resources and cannot transfer. Record the few decisions in existing context. Build the representative screen to test that premise before expanding it; do not treat a polished but interchangeable template as a successful interpretation of an ambitious brief.
+
 ## Make consequential choices before expanding
 
 Derive a compact direction from the brief and inspected evidence. Keep it in the existing record or the working conversation; no mandatory new document:
@@ -14,6 +22,8 @@ Derive a compact direction from the brief and inspected evidence. Keep it in the
 - **Reference contribution:** which observed relationships support those choices and where they will appear.
 
 Describe the few decisions that distinguish this product. A palette, a list of adjectives, or a standard hero/features/pricing sequence alone does not resolve direction. If a fundamental choice is still ambiguous, compare a small number of concise concepts by product fit; implement one. Additional complete variant builds follow the task's scope and authorization.
+
+When uncertainty is concentrated in a dominant widget or region, resolve it there before generating another complete page. Keep the same content, data and required behavior across candidate treatments so the comparison isolates the open decision. Use only enough alternatives to decide; no fixed four-widget exercise. Then inspect the selected treatment inside the representative screen, because a good isolated widget does not establish page hierarchy, responsive composition or system fit. Skip exploration for an accepted direction or a straightforward repair.
 
 Do not enforce a numeric taste floor, a bespoke asset, motion or a template ban as universal signs of quality. Judge the product job and observed composition. Resolve engineering constraints that affect the experience before expanding a visual premise; visual acceptance does not postpone data, permissions or host feasibility.
 
@@ -34,6 +44,8 @@ Typography, CSS geometry or a useful diagram can carry a composition when approp
 For a new product, establish a small provisional foundation from inspected evidence: type roles, semantic colors, spacing and the reusable controls needed by the representative screen. Describe when a semantic token/component is used, not merely its name and value. Infer only visible relationships from screenshots; hidden states, original token architecture and full system completeness remain unknown. In an existing product, use its canonical system directly instead of creating a competing one.
 
 Inspect desktop and mobile at actual viewing sizes with fonts/media loaded. Compare the intended hierarchy, framing and density to the reference and product job. Check a deeper region or important state so that the hero alone cannot conceal a weak system. If the result is generic, name which relationship or product-specific choice failed. Repair spacing/type/crop for an execution defect; replace an unsuitable asset or content structure for a conceptual defect. Extra effects do not fix the wrong premise.
+
+For expressive work, inspect the actual transition or scroll sequence as well as stills: pacing, continuity, interruption, pointer/touch/keyboard access and a complete reduced-motion alternative. Keep content and actions usable while assets load or an effect is unavailable. Choose complexity for a demonstrated contribution; use existing motion mechanics first and measure costly effects on relevant devices. A case study's claimed smoothness is not our performance evidence.
 
 Before expanding, sync the selected refinements into the canonical tokens and reusable components, then check affected consumers. Scope changes to an existing shared system; a screen experiment does not authorize changing every product. Verify actual component reuse/bindings and semantic token roles, not just matching pixels. A visually plausible table must also support the required content, states and composition; avoid both rigid screenshot replicas and speculative variant inventories. Keep usage notes beside the relevant code/design source and load only the needed component family. No mandatory skill per component or documentation generation for every edit.
 

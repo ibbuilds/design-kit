@@ -18,6 +18,7 @@ Inspect the integrated sample at actual viewing sizes, with loaded fonts/media a
 - Does the opening explain this product/task through a clear focal point and next action, rather than interchangeable copy and decoration?
 - Do type, alignment, spacing, imagery and surfaces form one deliberate hierarchy? Judge wraps/crops in the render, not only token values.
 - Does the deeper region add substance and appropriate density instead of repeating the same box pattern? Is mobile recomposed and usable?
+- For an ambitious visual brief, which product-specific decisions carry the idea, and where does the render still fall short of the relevant strong reference in composition, type/image balance, rhythm, asset fidelity or finish? A clear but interchangeable page has not met that brief. For closed designs, judge fidelity to the supplied authority.
 
 Name the actual mismatch before changing anything: repair execution, replace the weak element, or reconsider the premise only when necessary. Reuse this inspection in the final review; it is not another mandatory audit loop.
 
@@ -31,6 +32,7 @@ Judge the scoped result in the actual render, with the relevant reference/base b
 - **Composition:** the intended focal point, reading/task order and density survive the render. The dominant visual is useful, legible and correctly cropped; its absence is not covered with decoration. Deeper regions have their own content-driven treatment instead of an interchangeable card grid.
 - **Type and finish:** actual fonts/weights load; wraps, line lengths, alignment, spacing, borders and image quality form the intended hierarchy. No major clipping, placeholder assets or inconsistent controls remain within scope.
 - **Reference impact:** each reference used to justify a material decision can be connected to the implementation. Compare the specific relationship (scale, rhythm, framing, density or behavior), not a checklist of copied colors. Reject irrelevant references instead of forcing them in. Record unobserved behavior as unknown.
+- **Requested creative level:** an open direction expresses a coherent product-specific idea at the requested reference standard, with no material unresolved gaps in hierarchy, type/image relationships, rhythm, asset quality or finish. Compare observable relationships and preserve intended usability; do not certify an award, copy another brand or give the work a self-score. In faithful implementation, this criterion follows the supplied design rather than a new art direction.
 - **Responsive and access:** the composition works at relevant mobile/desktop/container widths, including troublesome intermediate sizes. Content and actions remain available; required keyboard, focus, contrast and reduced-motion behavior work. Screenshots alone do not verify interaction.
 - **Behavior and integration:** the scoped primary action and important failure/recovery states work at the requested fidelity. Mocks remain labeled. Required target checks pass and accepted work has no material regression.
 
@@ -76,6 +78,7 @@ For a short local change, reuse existing evidence and inspect the affected regio
 - In an authorized edit task, fix blocked tasks, misleading behavior and major craft gaps before micro-polish; in review-only mode, report them.
 - Preserve accepted work; use baseline comparison when it helps.
 - Report unobserved behavior and missing evidence. Keep captures/reproduction steps when useful.
+- Distinguish directly exercised keyboard/focus behavior, DOM/accessibility-tree observations and inferred screen-reader behavior. Name the method and evidence for a reported defect; do not present a planned check or an inferred reading order as an actual assistive-technology test. Reuse existing captures/annotations for precise feedback; a separate HTML/PDF audit artifact is optional.
 - Tests do not prove design excellence; walkthroughs do not replace user research.
 - Synthetic personas can suggest hypotheses and edge cases, not establish actual user needs or usability findings. Validate consequential assumptions with real evidence when available.
 - Partial checks do not establish accessibility conformance. Lab metrics are not field Web Vitals.

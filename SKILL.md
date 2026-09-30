@@ -7,6 +7,8 @@ description: "Create, extend, refine, or review web UI: landing pages, product s
 
 Deliver a product-specific, inspected frontend in the real target with the least total consumption needed to meet the agreed quality, including verification and rework. Use the current agent and existing environment.
 
+Aim for exceptional professional craft. For an open visual direction, calibrate against strong, relevant work at the level requested by the user, including Godly/Awwwards examples when appropriate. Translate that ambition into composition, identity, type, content, interaction and finish that can be inspected. Functional correctness alone does not satisfy an ambitious visual brief; respect closed designs and accepted systems.
+
 ## Scope and selective context
 
 Resolve application paths from the target and kit links from this directory. Preserve the target's instructions, stack, user edits, factual content and reserved decisions. Match concept, prototype or production fidelity. A build/fix request authorizes completing the scoped implementation and relevant checks; do not stop at a plan or sample unless requested. User instructions and existing authorization take precedence over this guidance.

@@ -10,7 +10,7 @@ A custom client is not the same as a custom execution engine: Codex SDK can run 
 
 Source: Ras Mic, video `i26XdSwoZ3g`, published 2026-09-11; the YouTube title surfaced as "I Stopped Using OpenClaw & Hermes. I Built My Own Agent Instead" and transcript mirrors retain "I'm Tired of OpenClaw & Hermes".
 
-Reviewed the accessible timestamped transcript passages via two mirrors and compared the described architecture with the author's repository and Eve's public documentation. Did not inspect every moving frame or independently reproduce his deployment/performance claims. This is not a controlled comparison of coding agents or a first-pass design benchmark.
+The initial review used accessible timestamped passages via two mirrors and compared the architecture with the author's repository and Eve's public documentation. On September 29, the complete timestamped transcript from 00:00 through 20:40 was reviewed through the first mirror and cross-checked against the original video identity. Did not inspect every moving frame or independently reproduce his deployment/performance claims. This is not a controlled comparison of coding agents or a first-pass design benchmark.
 
 - Around 02:46–04:33 and 07:48–10:31, the author motivates Eve as a middle ground between a low-level SDK and a highly opinionated personal assistant. The file-based structure is an implementation convenience, not evidence of better design judgment.
 - Around 04:33–06:29, a promotional Mobbin segment describes improving onboarding through real UI/UX references. Treat the claimed improvement as the author's demonstration, not a verified saving or proof that a paid MCP is required.
@@ -32,4 +32,4 @@ The author's eve-agents README describes a hosted personal-assistant application
 
 ## What this revision proves
 
-Unit tests cover the installer and package contract. Repository checks can establish that REFERENCES.md and the existing craft documents have not changed. Neither proves aesthetic quality, model obedience, or token savings. Test the skill in the actual target; distinguish activation, reference access, interpretation, implementation, and verification failures before adding mechanisms.
+Unit tests cover the installer and package contract. Repository checks can establish preservation of the curated REFERENCES.md and blank BRIEF.md independently of the later direction, craft and QA changes. Neither proves aesthetic quality, model obedience, or token savings. When testing the skill in an actual target, distinguish activation, reference access, interpretation, implementation, and verification failures before adding mechanisms. The user reserved practical application testing for later; it is not a gate for the current research update.

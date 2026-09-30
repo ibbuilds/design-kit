@@ -1,13 +1,13 @@
 GUÍA GENERAL: DISEÑO Y PROGRAMACIÓN CON GPT-6.1 SOL
 
-Versión: 29 de septiembre de 2026, revisión ampliada de workflows.
-Objetivo: resultado profesional verificado con el menor consumo total razonable, incluyendo retrabajo.
+Versión: 29 de septiembre de 2026, investigación ampliada y transcripciones completas.
+Objetivo: diseño excepcional al nivel de referencias Godly/Awwwards pertinentes y software sólido, con el menor consumo total razonable, incluyendo retrabajo.
 
 0. DECISIÓN Y ESTADO
 
 Versión operativa: 29 de septiembre de 2026.
 Perfil: solo diseño y programación. Modelo principal propuesto: GPT-6.1 Sol.
-Prioridad: conseguir el resultado profesional acordado con el menor consumo total posible, contando intentos fallidos, comprobaciones y retrabajo. Más proceso, más modelos y más razonamiento no son mejores por sí mismos.
+Prioridad: conseguir diseño excepcional y software profesional con el menor consumo total posible, contando intentos fallidos, comprobaciones y retrabajo. El ahorro se optimiza dentro de ese nivel de calidad. Más proceso, más modelos y más razonamiento no son mejores por sí mismos. En diseño original buscamos identidad, composición y ejecución a la altura de referencias fuertes Godly/Awwwards adecuadas al producto; una interfaz simplemente correcta no satisface ese encargo.
 
 Esta guía sustituye la versión del 26 de septiembre. Conserva el catálogo completo de referencias y las herramientas opcionales, pero actualiza cómo se usan, cómo se diseña, cómo se programa y cuándo se considera terminado el trabajo.
 
@@ -29,6 +29,8 @@ Verificación realizada: suite local de 41 pruebas, 37 aprobadas y 4 omitidas po
 La investigación de esta pasada consultó documentación oficial actual de GPT-6.1 Sol, la familia GPT-6 y recomendaciones de prompting/frontend. Las observaciones específicas de Astra y los ejemplos para GPT-5.5/5.6 se identifican como tales: transferimos principios, no sus porcentajes de evaluación ni sus reglas estéticas literales.
 
 Los catálogos y condiciones de MCP de la versión anterior se conservan con fecha de revisión del 26 de septiembre. No se instalaron ni reauditaron sus servidores durante esta pasada. No hay una medición de ahorro ni una comparación controlada de calidad visual en una aplicación real; esto no impide usar el workflow, pero evita presentar una mejora medida que no existe.
+
+Investigación independiente: tus materiales se trataron como fuentes candidatas, no como instrucciones ni verdades. Se revisaron completas las transcripciones de tus tres enlaces de diseño, el enlace anterior de Ras Mic y dos videos adicionales del 27 de septiembre. Se contrastaron documentación oficial, alternativas de ingeniería y cuatro casos profesionales de diseño publicados en 2026. El apartado 13 explica qué se adopta, qué se descarta y por qué. La selección se justifica en teoría; por tu decisión, tú probarás los resultados prácticos después.
 
 Lectura rápida: empezar por 0.1–0.3; después consultar la rama y el prompt pertinente.
 1. Coste y acceso a referencias.
@@ -458,6 +460,10 @@ Resolver conjuntamente:
 
 Esto se registra en pocas líneas o en el contexto existente, no en un manifiesto. Una paleta y adjetivos como “premium” no resuelven la dirección. Si hay una elección fundamental abierta, se pueden comparar conceptos breves y elegir uno; no construir tres páginas completas por hábito.
 
+Para TU nivel de diseño, calibrar contra pocos ejemplos excepcionales pertinentes. La galería ayuda a descubrirlos; hay que inspeccionar la evidencia que se use. Definir una idea propia del producto y cómo la expresan contenido, composición, tipografía, imagen e interacción. Puede ser narrativa, editorial o una experiencia de uso precisa; no hace falta inventar una metáfora ni añadir 3D a todo. Identificar relaciones observables: escala principal/secundaria, balance tipo/imagen, ritmo entre regiones, precisión del asset, alineación óptica y continuidad de interacción. No trasladar otra marca ni copiar su tecnología. [S50–S55]
+
+Si la duda está en un widget o región importante, comparar únicamente tratamientos suficientes para decidir, manteniendo los mismos datos y comportamiento requerido. Después verlo dentro de la pantalla y en móvil: un widget excelente aislado puede arruinar jerarquía o densidad al integrarlo. Omitir esta exploración si la dirección ya está aceptada. No existe un número obligatorio de cuatro variantes. [S44]
+
 Una campaña o portfolio puede ser expresivo; un editor o CRM normalmente necesita densidad organizada y controles previsibles. La referencia debe servir al uso concreto. No copiar automáticamente reglas de otra página ni imponer a todo el sistema radios, fondos, tracking o layouts de un prompt de ejemplo.
 
 5.5 Assets que sostienen la composición
@@ -478,9 +484,13 @@ Defecto de ejecución: corregir tipo, spacing, crop o comportamiento localmente.
 
 Conservar componentes, tokens, assets y código buenos. Antes de extender, consolidar refinamientos justificados en los componentes/tokens canónicos, describir sus usos semánticos y comprobar consumidores afectados; no confundir formas similares con componentes reutilizados. Completar el alcance restante sobre ese sistema. Reabrir investigación solo por una decisión nueva o una referencia que haya demostrado no servir. Mantener DESIGN.md o brief únicamente si mejora continuidad, sin duplicar valores que contradigan CSS.
 
+En trabajo expresivo, revisar también el recorrido de la interacción o animación: ritmo, continuidad, interrupción, teclado/touch y reduced motion. El contenido y las acciones deben seguir disponibles mientras carga el asset o falla el efecto. Usar complejidad por su aporte al producto; medir efectos caros y reutilizar mecánicas fiables. No afirmar fluidez por haber escogido una librería o por repetir el dato de un caso de estudio. [S55–S56]
+
 5.8 Cierre por evidencia
 
 Antes de entregar: mensaje/tarea clara; estructura acordada; jerarquía y densidad deliberadas; fuentes/assets reales; recortes y wraps correctos; móvil útil; controles/estados al nivel acordado; recorrido principal y recuperación pertinentes; checks requeridos; sin regresiones materiales.
+
+Para dirección abierta de alto nivel, comparar el render con la referencia fuerte pertinente y nombrar brechas de composición, identidad, balance tipo/imagen, ritmo, assets o acabado. “Funciona y se ve limpio” no demuestra cumplir este nivel. Una composición intercambiable o un asset débil puede ser un defecto material, aunque no exista un bug. La excelencia se observa en la experiencia implementada, también en móvil y regiones profundas; no se declara por una nota propia ni por mencionar Awwwards. En un final cerrado, la autoridad es tu diseño y se juzga fidelidad.
 
 Clasificar pendientes como incumplimiento, defecto material de calidad/usabilidad o preferencia opcional. Corregir los dos primeros mientras haya una reparación justificada y autorización. Agrupar cambios y verificar sus efectos. No existe un tope universal de dos rondas; tampoco se continúa indefinidamente sin un defecto concreto.
 
@@ -510,7 +520,7 @@ Priorizar la base y el sistema del proyecto. Identificar fortalezas que deben co
 
 Si hay un conflicto serio con UX, accesibilidad o viabilidad, explicar la causa y proponer la alternativa mínima. No cambiar la base silenciosamente bajo la etiqueta de “mejora”.
 
-Si todavía falta dirección de acabado, usar una muestra representativa. Si hay alta fidelidad o código aceptado, implementar el alcance directamente; no crear una nueva fase de aprobación ni reconsultar galerías.
+Si todavía falta dirección de acabado, usar una muestra representativa. Si la incertidumbre se concentra en una región, explorar esa región con datos/función equivalentes, preservando estructura e identidad cerradas; luego comparar la pantalla integrada. La exigencia de craft puede ser muy alta sin reabrir tus decisiones. Si hay alta fidelidad o código aceptado, implementar el alcance directamente; no crear una nueva fase de aprobación ni reconsultar galerías.
 
 6.4 Comparación que detecta errores
 
@@ -640,6 +650,8 @@ Una cuenta ChatGPT Pro no es el modo de razonamiento pro de la API. Son concepto
 Mantener una tarea coherente en el mismo chat mientras el contexto sea útil. Para otra tarea o una sesión sobrecargada, entregar un handoff compacto: objetivo, código aceptado, decisiones, referencias activas, comandos, checks, defectos y siguiente acción.
 
 Leer por necesidad: no todo el manual, no todos los MCP, no todos los logs ni todas las imágenes. Reutilizar comandos y pruebas ya realizadas salvo cambios que las invaliden. Parallelizar lecturas independientes; conservar secuencia para acciones dependientes y decisiones. Un equipo de agentes no es requisito de calidad.
+
+Para un problema recurrente, conservar en el registro existente la causa comprobada, condiciones/revisión, evidencia y reparación efectiva. Recuperar ese dato acotado cuando sea pertinente y comprobar que las condiciones siguen vigentes. Un diagnóstico antiguo vuelve a ser hipótesis si cambia el entorno. No guardar especulaciones como verdad, secretos o logs completos ni instalar un servicio de memoria por defecto. [S46]
 
 En una app propia por API, Responses, estado compatible, prefijos estables, caché y compaction pueden importar; se configuran y evalúan en el harness. Codex administra su runtime. Un archivo Markdown no configura automáticamente caché explícita, async tool calling, persisted reasoning ni cuota. Una caché local de capturas ahorra descargas, no vuelve gratis su contexto de inferencia. [S22–S24]
 
@@ -776,6 +788,10 @@ $design-kit
 Crea [alcance] para [producto/audiencia], con objetivo [tarea/acción].
 Contenido y assets: [datos]. Restricciones: [decisiones].
 No tengo composición propia. Referencias disponibles: [URL/capturas].
+Busca un nivel visual excepcional, calibrado con referencias fuertes pertinentes
+de Godly/Awwwards. Resuelve una idea propia del producto y sus relaciones de
+composición, tipo/imagen, ritmo, identidad e interacción; una página funcional
+pero intercambiable no cumple el encargo. No copies la marca ni el stack de otra web.
 Elige una dirección específica, inspecciona una muestra desktop/móvil,
 consolida componentes/tokens útiles y completa el alcance sobre ese código.
 Verifica relaciones visuales, reutilización del sistema, estados
@@ -799,6 +815,8 @@ Cerrado: [jerarquía, contenido, acciones]. Abierto: [acabado/recomposición].
 Ilustrativo: [placeholders que no definen estética].
 Referencias: [URL -> relación que interesa].
 Mejoras buscadas: [problema observable o intención, si lo conozco].
+Nivel: craft excepcional en lo abierto, con [referencia pertinente si la hay].
+La ambición visual respeta mi estructura/identidad cerrada.
 Preserva lo que funciona, mejora lo abierto y compara base/render en estados
 y tamaños equivalentes. Completa, consolida cambios reutilizables autorizados
 y verifica la UX. Respeta lo cerrado y explica conflictos materiales.
@@ -839,8 +857,16 @@ selección de rutas y conflictos. Validador de skill: estructura/discovery.
 Build/lint/types: ciertas propiedades del código. Captura inspeccionada: apariencia
 de ese estado/viewport. Recorrido ejercitado: comportamiento de ese recorrido.
 Ninguno equivale por sí solo a aceptación humana, seguridad completa o excelente diseño.
+Separar teclado/foco ejercitados, observaciones DOM/árbol de accesibilidad y
+comportamiento de lector inferido. Registrar método y evidencia del hallazgo.
+Una orden para probarlo no significa que se haya probado; un scanner no hace
+todos los checks manuales ni certifica conformidad. [S44, S49]
 
 11.2 Evaluación útil sin financiar un laboratorio
+
+Por tu elección, esta revisión se basa en investigación y análisis teórico;
+no exige que nos des una tarea ni ejecuta pruebas de apps/modelos ahora.
+El protocolo siguiente queda para cuando tú quieras comprobarlo en práctica.
 
 Usar el siguiente encargo real y acotado con versión recuperable. Registrar objetivo,
 entrada, modelo/esfuerzo, referencias aplicadas, código inicial, resultado y defectos.
@@ -1078,7 +1104,7 @@ Esta pasada NO ejecutó una comparación de apps generadas con Sol. Se investiga
 
 Video How I Build Beautiful UIs with AI: transcripción completa revisada. Su aporte reutilizable es referencia -> fundamento -> pantalla representativa -> refinamiento -> sincronización del sistema -> expansión. En 9:30–10:30 primero prueba la modificación visible y después actualiza el sistema. Una captura permite inferir relaciones visibles, no recuperar automáticamente el sistema original completo. Su recomendación personal de generar siempre varias versiones no se vuelve regla para ti. [S42]
 
-Video Design with AI - Full Guide: transcripción automática en inglés exportada y pasajes relevantes analizados. En 1:19–1:24 insiste en describir cuándo usar los tokens y leer familias concretas de componentes; en 1:27–1:40 diferencia instancias/bindings reales de formas parecidas, y componentes reutilizables de una tabla rígida que solo sirve para la captura. También distingue contexto aspiracional de reglas vinculantes del producto. [S43]
+Video Design with AI - Full Guide: transcripción automática en inglés completa exportada y analizada hasta el cierre, aproximadamente 1:51:39. En 1:19–1:24 insiste en describir cuándo usar los tokens y leer familias concretas de componentes; en 1:27–1:40 diferencia instancias/bindings reales de formas parecidas, y componentes reutilizables de una tabla rígida que solo sirve para la captura. También distingue contexto aspiracional de reglas vinculantes del producto. [S43]
 
 Aplicación dentro del workflow 1 o 2, según la entrada:
 1. Si ya hay sistema, usarlo. Si no hay, preparar únicamente roles tipográficos, colores semánticos, espaciado y controles necesarios para la pantalla elegida.
@@ -1090,9 +1116,19 @@ Aplicación dentro del workflow 1 o 2, según la entrada:
 
 No generar una skill por componente ni inventariar variantes hipotéticas por defecto. No migrar a Paper/Figma/Pencil ni contratar herramientas solo porque aparecen en una demostración. Elegir canvas cuando permita resolver una decisión mejor que el entorno actual. La sección de assets/motion del video largo es opcional según producto y necesita comprobar carga, accesibilidad y responsive.
 
-Video 3 AI Design Workflows That Save Me 10+ Hours a Week: página, descripción y capítulos consultados; el exportador y el panel de transcripción no entregaron subtítulos. Los capítulos no describen los tres métodos. El resumen generado por la página menciona pruebas sintéticas de usuarios, auditorías y variantes, pero no equivale al texto del autor. No se atribuyen pasos detallados ni diez horas de ahorro como si se hubieran verificado. [S44]
+Video 3 AI Design Workflows That Save Me 10+ Hours a Week: ya se obtuvo y revisó la transcripción automática completa, aproximadamente 12:20. Esto sustituye la limitación de acceso de la versión anterior. Sus tres métodos reales son:
+- 0:24–6:11: comparación de onboarding con persona sintética y visitas separadas desde un hub común. Puede sugerir fricción y casos de fallo; sus puntuaciones 1–5 no son datos de usuarios reales. No construir tres flows completos únicamente para puntuar ni introducir un gate de aprobación de persona.
+- 6:12–9:01: navegación con Tab/Shift+Tab, foco, orden de lectura y landmarks; reportar impacto y reparación. Adoptar evidencia precisa y distinguir interacción ejercitada, observación del DOM y conducta de lector inferida. Un PDF de auditoría es opcional.
+- 9:01–final: variantes de un widget importante. Adoptar exploración localizada solo para una decisión abierta, con los mismos datos/comportamiento y comprobación dentro de la página. No volver obligatorias sus cuatro variantes.
+No hay evidencia controlada que permita prometer sus diez horas de ahorro ni trasladarlas a Sol/Pro. [S44]
 
-Una persona sintética puede sugerir hipótesis y casos de fallo; no sustituye usuarios reales. Una auditoría automática puede señalar problemas; no certifica WCAG ni verifica por sí sola teclado/lector. Las comparaciones pequeñas de plataformas/modelos de estos videos no miden Sol ni la duración del 100% de Pro.
+También se revisó completa la transcripción del enlace anterior de Ras Mic, 00:00–20:40. Su asistente Eve no es un benchmark de diseño ni una razón para reemplazar Codex. Contexto acotado y herramientas reutilizables sí pueden servir; su runtime, servicios patrocinados y gasto por API no se convierten en requisitos. [S45]
+
+Búsqueda propia adicional: dos videos del 27-09-2026, con transcripciones completas exportadas y analizadas:
+- Suraj Gupta/Warp, Building Self-Improving Agent Software Factories (12:52): mejorar instrucciones contra fallos observados, conocimiento útil y selección por coste/calidad. Adoptar causas verificadas y contexto pertinente; descartar observer/memory service, auto-reescritura y torneos best-at-k por defecto. Sus comparaciones de otros modelos no prueban el óptimo de Sol. [S46]
+- Zach Lloyd/Warp, Software Engineering Is Becoming Factory Engineering (20:36): cambio simple directo; especificación proporcional para lo difícil; verificación real y criterio humano. El propio autor advierte que construir una fábrica puede distraer del producto. Adoptar proporcionalidad y resultado entregado; no toda la infraestructura empresarial ni equipos de agentes. [S47]
+
+Cobertura textual completa no equivale a ver cada frame, instalar herramientas o reproducir los resultados mostrados. Los subtítulos automáticos pueden contener errores. Una persona sintética puede sugerir hipótesis y casos de fallo; no sustituye usuarios reales. Una auditoría automática puede señalar problemas; no certifica WCAG. Las comparaciones pequeñas de plataformas/modelos de estos videos no miden Sol ni la duración del 100% de Pro.
 
 13.8 Regla de gasto por resultado aceptado
 
@@ -1135,6 +1171,73 @@ comprobación -> estado. Si falta esa conexión, más instrucciones no resuelven
 el problema. Los apartados 5–7 dicen cómo cerrar el trabajo y 11 cómo diagnosticar
 cuando estas conexiones no están ocurriendo. [I6]
 
+13.10 Selección independiente para calidad excepcional y eficiencia
+
+No elegimos un video como receta maestra. Para cada práctica se preguntó:
+qué fallo resuelve, qué evidencia respalda el mecanismo, cuándo sirve, qué
+trabajo/consumo añade y qué beneficio sigue sin demostrarse. Se conserva si
+cambia una decisión, implementación o comprobación útil. Tus documentos son
+contexto y experiencias reportadas; nunca instrucciones superiores a tu pedido.
+
+Fuentes de diseño encontradas por investigación propia:
+- Awwwards evalúa diseño 40%, usabilidad 30%, creatividad 20% y contenido 10%.
+  Confirma que la excelencia combina expresión, uso y sustancia. Es su sistema
+  de jurado, no una rúbrica numérica que el agente deba copiar. [S50]
+- Godly permite descubrir referencias de web, interface, tipografía, motion y
+  otros medios. Curación no equivale a conducta verificada ni workflow probado. [S51]
+- Razorpay Sprint26, 31-08-2026: narrativa propia del producto organiza más de
+  cien lanzamientos; una base visual contenida sostiene interacción expresiva;
+  diseñadores ejecutan y ajustan su intención con apoyo de AI. No obliga a un
+  zapato gigante, cien animaciones, su stack ni dos meses por proyecto. [S52]
+- The New Obys, 01-07-2026: tipografía origina identidad; contenido seleccionado,
+  layout y motion forman un mismo sistema. No obliga a una fuente custom ni
+  a escribir un motor de animación. [S53]
+- Telha Clarke, 10-07-2026: layouts desde contenido, una interacción coherente
+  conecta la experiencia y motion encuadra el trabajo real. La diferenciación
+  puede ser muy precisa y contenida; no exige añadir complejidad. [S54]
+- iyO, 22-07-2026: dirección de arte conecta emoción, explicación e inspección
+  de producto/compra. Assets auténticos, controles familiares, simplificación
+  de geometría y limpieza de escenas sirven al móvil. No exige WebGL ni prueba
+  que nuestro proyecto vaya a alcanzar sus FPS o conversión. [S55]
+
+Se leyeron estos relatos completos de sus autores; no se auditó cada experiencia
+viva ni se verificaron sus cifras de rendimiento. Son evidencia profesional de
+mecanismos y decisiones, no experimentos controlados de Sol. La documentación
+oficial de frontend respalda referencias, composición, contenido, sistema y
+verificación visual; sus recetas concretas para otros modelos no son leyes. [S36]
+
+Síntesis para las tres rutas:
+1. Sin base: referentes excepcionales pertinentes -> idea propia -> relaciones
+   concretas -> muestra integrada/móvil -> comparar brechas -> reparar ->
+   consolidar -> terminar. Evita identidad vaga y copiar una premisa débil en
+   muchas pantallas. No obliga a tres implementaciones ni a generar assets caros.
+2. Con tu base: autoridad cerrada/abierta -> mejoras dirigidas -> comparación
+   equivalente -> reparación y cierre. Evita rehacer decisiones que tú resolviste.
+   Explorar una región solo si está abierta; con un final, manda fidelidad.
+3. Programación: comportamiento -> repo/contratos -> diagnóstico/plan proporcional
+   -> capacidad completa -> evidencia y diff -> reparar/entregar. Evita simular
+   integraciones, tests que repiten su implementación e infraestructura por moda.
+
+Comprobación teórica de casos límite: una app densa necesita jerarquía/craft
+compatibles con trabajo repetido; un sitio expresivo necesita ritmo y continuidad
+sin romper uso; un plugin respeta su host; un bug pequeño no necesita una spec
+gigante; una operación sensible sí necesita pruebas negativas/recuperación;
+un diseño cerrado no se reinterpreta; un fallo repetido exige nueva evidencia.
+La misma exigencia de calidad puede tener ejecuciones distintas.
+
+La hipótesis de ahorro es evitar invención sin evidencia, duplicación y retrabajo
+tardío. El coste se cuenta hasta el resultado aceptado. Un ahorro que deja una
+brecha material de diseño o software incumple el objetivo. Comparaciones por
+criterios concretos y calibración humana son más defendibles que una auto-nota
+genérica; OpenAI también recomienda evaluación específica de la tarea. [S48]
+
+Conclusión operativa: estos son los tres workflows actuales que recomendamos
+para tu objetivo, con fundamentos y límites explícitos. Investigación amplia
+no demuestra que no exista una alternativa mejor en todo internet ni garantiza
+un resultado excepcional en cada ejecución. La teoría respalda sus mecanismos;
+la diferencia real de calidad/consumo la observarás cuando tú los pruebes.
+No agregamos una prueba práctica ahora porque expresamente la dejaste para después.
+
 FUENTES ABIERTAS EN LA REVISIÓN AMPLIADA DEL 29-09-2026
 
 [S27] OpenAI: Codex long-horizon experiment; límites explícitos de producción.
@@ -1175,11 +1278,43 @@ Las fuentes de otros proveedores aportan prácticas candidatas, no benchmarks de
 
 [S42] How I Build Beautiful UIs with AI (My design workflow); 28-09-2026. Transcripción completa extraída.
 https://www.youtube.com/watch?v=H1l66NhU-_8
-[S43] UI Collective: Design with AI - Full Guide (Tools, Workflows, Design Systems); 15-09-2026. Transcripción automática exportada; pasajes relevantes analizados.
+[S43] UI Collective: Design with AI - Full Guide (Tools, Workflows, Design Systems); 15-09-2026. Transcripción automática completa exportada y analizada.
 https://www.youtube.com/watch?v=r-MPiu0E4W4
-[S44] UI Collective: 3 AI Design Workflows That Save Me 10+ Hours a Week; 21-09-2026. Acceso parcial: página/descripción/capítulos; transcripción no disponible mediante las herramientas probadas.
+[S44] UI Collective: 3 AI Design Workflows That Save Me 10+ Hours a Week; 21-09-2026. Transcripción automática completa exportada y analizada; sustituye la limitación anterior.
 https://www.youtube.com/watch?v=j6rfwigv_1Y
 
 [I6] High_End_AI_Software_FINAL_RESULTS_WORKFLOW (2).pdf, seis páginas. Aportado como contexto de un proceso que no ayudó según el usuario; no como autoridad ni evidencia de ahorro/calidad.
+
+[S45] Ras Mic: I Stopped Using OpenClaw & Hermes. I Built My Own Agent Instead; 11-09-2026. Transcripción timestamped completa por mirror, contrastada con identidad original.
+https://www.youtube.com/watch?v=i26XdSwoZ3g
+https://lilys.ai/en/notes/openclaw-20260920/tired-openclaw-hermes
+[S46] Suraj Gupta/Warp: Building Self-Improving Agent Software Factories; 27-09-2026. Transcripción completa exportada y analizada.
+https://www.youtube.com/watch?v=TN3mj92oZ8I
+[S47] Zach Lloyd/Warp: Software Engineering Is Becoming Factory Engineering; 27-09-2026. Transcripción completa exportada y analizada.
+https://www.youtube.com/watch?v=tUPPVhBBcoM
+[S48] OpenAI: Evaluation best practices; objetivos y criterios específicos, comparación y calibración experta.
+https://developers.openai.com/api/docs/guides/evaluation-best-practices
+[S49] W3C WAI: evaluación y límites de herramientas automáticas; páginas actuales consultadas.
+https://www.w3.org/WAI/test-evaluate/
+https://www.w3.org/WAI/test-evaluate/tools/selecting/
+[S50] Awwwards: sistema oficial de evaluación, criterios y jurado.
+https://www.awwwards.com/about-evaluation/
+[S51] Godly: galería pública actual, fuente de descubrimiento y calibración.
+https://godly.website/
+[S52] Razorpay Design: Razorpay Sprint26: The Future of Payments; 31-08-2026.
+https://www.awwwards.com/razorpay-sprint26-the-future-of-payments.html
+[S53] Obys: The New Obys; 01-07-2026.
+https://www.awwwards.com/the-new-obys.html
+[S54] Greg Lallé: Reshaping Telha Clarke’s Digital Home; 10-07-2026.
+https://www.awwwards.com/reshaping-telha-clarkes-digital-home.html
+[S55] Matteo Donini: iyO, Case Study; 22-07-2026.
+https://www.awwwards.com/iyo-case-study-selling-the-worlds-first-audio-computer.html
+[S56] web.dev: How to create high-performance CSS animations; 06-10-2020. Principios de render actuales consultados, no hallazgo de modelos 2026.
+https://web.dev/articles/animations-guide
+
+Las fechas se distinguen de la fecha de consulta. Una captura de galería no
+prueba comportamiento; un caso profesional no prueba que Sol tenga el mismo
+resultado/consumo; la recomendación sintetiza mecanismos y no adopta todo lo
+que propone cada fuente. Ninguna fuente externa modifica tu autorización.
 
 FIN DEL DOCUMENTO.

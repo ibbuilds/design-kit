@@ -14,6 +14,7 @@
 ## Visual craft
 
 - **Identity:** coordinate type, layout, imagery, color, copy and motion into a coherent direction.
+- **Ambition:** calibrate open work against exceptional examples relevant to the product. Describe the observed standard and concrete gaps in our render; a gallery listing or self-awarded score does not establish excellence. An interchangeable composition can remain a material defect even when its controls work.
 - **Direction:** for a new surface, decide what leads the first viewport, how the next region changes pace/density, and how the hierarchy recomposes on mobile. Tie these choices to the product's message or task; a palette and radius scale are not a composition.
 - **Composition:** establish focus and reading order through scale, space, density and contrast. Let content shape the layout.
 - **Typography:** resolve hierarchy, line length, line height, wrapping and optical alignment at actual sizes.
