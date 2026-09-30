@@ -1,6 +1,6 @@
 # Design Kit
 
-A repo-scoped skill that guides the agent you already use through design: brand/product information, curated visual/UX references, designer's foundations, base and composite components, coherent pages, and authorized implementation. It provides onboarding, missing-input questions and continuity between phases. No custom agent, server, paid MCP or extra model is required.
+A repo-scoped skill that guides the agent you already use through design: product/brand context, content/navigation and task flows, curated references, designer's foundations, reusable components, page composition and comparative visual refinement. Code is conditional on request. It provides onboarding, missing-input questions and continuity between phases. No custom agent, server, paid MCP or extra model is required.
 
 ## Start and let your agent guide the phases
 
@@ -11,7 +11,7 @@ needed next. Use the curated sources for reference discovery. I will make the
 design decisions unless I explicitly delegate one.
 ```
 
-If no brand context exists, the agent requests a readable link, attachment or `<project>/.design/brand.md`. Next it asks whether you have references or want it to search the curated library, clarifies the intended direction and shows useful inspected candidates. You select/refine the direction, provide or develop foundations with focused help, then choose how much expansion to delegate. The agent does not assume a style from examples in this repository.
+If no brand context exists, the agent requests a readable link, attachment or `<project>/.design/brand.md`. Before dependent visual expansion it resolves open content/navigation and task/state structure with you, using a small sketch/prototype when helpful. Then it clarifies your direction and asks whether you have references or want curated discovery. You select/refine the direction, provide or develop foundations with focused help, then choose how much expansion to delegate. The agent does not assume a style from examples in this repository.
 
 The agent reads [ONBOARDING.md](ONBOARDING.md)'s shared contract and current phase, then only the routes needed for that operation. The checkpoint identifies the reviewed revision/capture and your decision, separately from pending changes; a mutable path alone is not approval. The default project record is `.design/project.md`; existing records remain valid. Reference review uses eight clear candidates by default and captures what you want to take from each; a shortage is discussed, never hidden. Suggested input paths are `.design/brand.md`, `.design/references/`, `.design/foundations.md`, `.design/base/` and `.design/assets/`. These are relative to your project, never the installed skill. They are created only when needed. Attachments, existing files and accessible links are equally valid; Notion is optional and requires available authorized access.
 
@@ -20,6 +20,12 @@ You can enter any phase directly: "references only", "help choose typography", "
 The catalog is the discovery allowlist. [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) describes vibe interpretation, scoped search, visual inspection, shortlists and provenance. [scripts/reference_scope.py](scripts/reference_scope.py) generates optional catalog-scoped queries and checks candidate source membership without network/model calls. Queries with only `--source-url` generate only those human-added sources; adding `--section` combines the chosen scopes. It is not a browser firewall or visual ranking engine. External originals are inspected only through verified curated links or user-supplied material. Preserve the curated catalog; do not automatically broaden to the web.
 
 [BRIEF.md](BRIEF.md) is a blank handoff you can copy into Notion or an existing project record. The agent can capture your answers there; you do not have to complete the entire template before starting. Choose or reuse the design medium before the first visual system output. The designer can work in their current design medium. If an HTML/CSS prototype is chosen, reuse its code through integration rather than rebuilding it from screenshots.
+
+## What should improve in the design
+
+The default output is an actual design, not an audit. With an existing base, identify what to preserve and the most consequential open gap; produce one coherent treatment and show base/proposal at equivalent content/state/viewport. Improvements must appear in hierarchy, type/image balance, identity, rhythm, content/flow, interaction or finish. The designer reviews the actual result before expansion. A passing package test, self-score or generic "premium" explanation cannot establish that improvement.
+
+The professional responsibilities are context/problem framing, content/information structure, interaction/flow exploration, visual direction, foundations/reusable system, composition/refinement and handoff. They inform each other rather than impose a rigid waterfall. Reuse already-resolved responsibilities; choose prototype fidelity for the open decision. User research supports needs when available; no fabricated findings or mandatory paid tools. Requested later refinements reuse the accepted baseline. [Research](RESEARCH.md#uiux-process-and-ai-design-context--september-30-2026) explains the independent sources and their limits.
 
 ## Use with your chosen agent
 
@@ -66,9 +72,9 @@ When you ask it to discover references, the agent selects and inspects relevant 
 
 ## Choose the task's input and acceptance
 
-- **From scratch / moodboard:** start the guided phases. Confirm the brand summary and intended direction, review eight references, supply foundations, then review system/component/page batches. The agent waits before dependent expansion.
+- **From scratch / moodboard:** confirm context/problem and scoped experience structure, then direction/references, foundations and system/component/page batches. No mandatory persona, sitemap or user-study document; existing inputs are reused. The agent waits before dependent expansion.
 - **Wireframe / structural composition:** state what is closed, open and illustrative. Preserve the closed structure while resolving finish and responsive behavior.
-- **Final design / accepted system:** implement or extend faithfully. No new identity-discovery phase.
+- **Final design / accepted system:** implement faithfully when code is requested; refine or extend only delegated/open decisions when design is requested. No new identity-discovery phase.
 - **Programming:** state the observable behavior, important constraints and recovery paths. SOFTWARE.md scales the process to a local change, feature or sensitive operation.
 - **Review only:** request findings; code and project records remain unchanged.
 
@@ -96,11 +102,12 @@ The second prompt uses the installed engineering pointer; it does not invoke `$d
 - **PENPOT.md:** conditional official canvas/MCP connection, target verification, supervised batches and handoff; no bundled runtime or automatic installation.
 - **REFERENCE_ROUTER.md:** interpret a vibe, search inside eligible curated sources, inspect candidate evidence, report fit/mismatches and preserve designer selection; implementation follows only the requested scope.
 - **scripts/reference_scope.py:** dependency-free catalog search planning and deterministic source-membership checks; no network, ranking model or browser enforcement.
-- **DESIGN_DIRECTION.md:** resolve an open composition through product/task, type/content, dominant asset, density and responsive behavior; skip for final designs and accepted-system repairs.
+- **DESIGN_DIRECTION.md:** develop open UI/UX decisions and compare base/proposal; refine composition, identity, content/flow, typography, imagery and responsive expression without reopening closed choices.
 - **SOFTWARE.md:** one engineering procedure for programming; optional root activation through `--with-software`.
 - **PRODUCT_DELIVERY.md:** conditional requirements, evidence and release guidance for substantial capabilities or readiness work.
 - **EXECUTION.md:** quality-oriented effort, context reuse, budgets and handoff; read when relevant, not every turn.
-- **TASTE.md / GUIDELINES.md / QA.md:** craft and work-specific checks, read selectively.
+- **TASTE.md / GUIDELINES.md:** the UI/UX design standard and product-specific treatment.
+- **QA.md:** relevant agent-owned artifact checks before presentation, plus conditional implementation/audit requirements; no separate QA process for the designer.
 - **REFERENCES.md:** the original curated sources, unchanged by this migration.
 - **BRIEF.md:** blank template; actual facts, selected captures, decisions and code stay in the target. Reuse existing records instead of multiplying documents.
 - **agents/openai.yaml:** Codex discovery metadata with implicit invocation enabled.
@@ -118,7 +125,7 @@ Manual installation is also possible: copy the files listed in `scripts/install.
 
 ## Execution defaults and limits
 
-Your chosen agent, supervised design-first phases, real visual inspection and no automatic full-page variant tournament. The designer supplies the base; the agent develops it and presents each meaningful review batch before advancing. Code starts when requested after accepted design. Complete necessary implementation, functional debugging, and required checks. Resolve material requirement, craft, responsive and behavior gaps against QA.md's scoped completion criteria. Batch justified repairs; stop when the criteria are met, an explicit user budget is exhausted or essential evidence/access blocks progress. There is no fixed two-round ceiling and no endless “make it perfect” loop. Repeated identical failures change the hypothesis or expose a blocker. Review-only requests skip construction and do not update code or project records.
+Your chosen agent, supervised design-first phases, real visual inspection and no automatic full-page variant tournament. The designer supplies the base; the agent develops it and presents each meaningful review batch before advancing. Code starts when requested after accepted design. Complete necessary implementation, functional debugging, and required checks. Use TASTE.md and DESIGN_DIRECTION.md to make the UI/UX contribution concrete, compare it to the base and preserve the stronger treatment. The agent owns relevant QA inside each batch before presentation; the designer reviews creative decisions/result rather than executing a checklist. Formal compliance/release work is separate requested scope. Batch justified repairs; stop when the criteria are met, an explicit user budget is exhausted or essential evidence/access blocks progress. There is no fixed two-round ceiling and no endless “make it perfect” loop. Repeated identical failures change the hypothesis or expose a blocker. Review-only requests skip construction and do not update code or project records.
 
 These limits are instructions, **not a hard token/money cap**. No 8/10 score, first-pass success rate, token savings, browser availability, or production readiness is guaranteed. Package tests establish install behavior only. Validate quality on an actual project before treating this as a proven workflow.
 
@@ -148,6 +155,6 @@ These are standalone human learning manuals. Each begins with the user's decisio
 - [Iterate on your design base](https://github.com/ibbuilds/design-kit/blob/main/docs/02_diseno_sobre_tu_base.txt): enter with existing work, resolve only missing inputs and preserve authorship.
 - [Professional programming](https://github.com/ibbuilds/design-kit/blob/main/docs/03_programacion_profesional.txt): define observable behavior, judge contracts and evidence, and complete appropriate verification and recovery.
 
-The prior combined `docs/GUIA_GENERAL.txt` remains a consolidated reference/catalog and research record. The three manuals are the current human-facing workflow guides; SKILL.md and SOFTWARE.md remain the canonical agent procedures.
+`docs/GUIA_GENERAL.txt` is a concise index/setup guide to the three manuals. It replaces the accumulated historical runbook; prior versions remain in Git and detailed research remains in RESEARCH.md/docs. The manuals teach the human; SKILL.md and SOFTWARE.md remain the canonical agent procedures.
 
 The [broader workflow comparison](docs/WORKFLOW_RESEARCH.md) documents alternatives from Codex/Figma, Spec Kit, Kiro, Anthropic, Cursor and Google, the supplied videos and the failed prior runbook, including costs and limits that prevent blindly adopting heavier processes. The Spanish guide presents three workflows: design from scratch, iteration on the user's design base, and programming. For substantial features, [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) connects requirements to evidence, challenges the working result and records applicable release readiness. It is loaded conditionally; a local refinement stays local. The research record includes a real-task comparison protocol, but no measured improvement in generated product quality is claimed.

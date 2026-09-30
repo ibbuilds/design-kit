@@ -1,6 +1,6 @@
 # Deliver a real product capability
 
-Read for a substantial product feature, integration, or release-readiness task. Local edits use [SOFTWARE.md](SOFTWARE.md) directly. This complements its engineering loop and [SKILL.md](SKILL.md)'s visual procedure; it does not create a second implementation or authorize additional scope.
+Read for a substantial product feature, integration, or release-readiness task. Local edits use [SOFTWARE.md](SOFTWARE.md) directly. Design-only work stays in SKILL.md/ONBOARDING.md and does not load this route. This complements SOFTWARE.md's engineering loop and SKILL.md's design procedure; it does not create a second implementation or authorize additional scope.
 
 ## Establish a checkable outcome
 

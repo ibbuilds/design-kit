@@ -1,32 +1,32 @@
-# Taste
+# UI/UX design standard
 
-- Aim for exceptional visual craft and effortless use, specific to the product and audience.
-- Do fewer things better. Minimalism can carry depth, expression and useful complexity.
+Aim for exceptional, product-specific visual craft and an effortless experience. Judge the actual artifact against the brief, strongest parts of the base and relevant selected references. Functional correctness, a familiar template and an agent's positive summary do not establish design quality.
 
-## Foundations
+## Design relationships that matter
 
-- **Spacing:** inherit the accepted scale. For new work, a 4px base is a useful default, not a universal constraint; preserve deliberate optical corrections and content-driven spacing.
-- **Fonts:** inherit accepted typography; otherwise choose a small set for voice, hierarchy and legibility. Usually one or two families suffice. Check available glyphs, weights and loading rather than changing fonts for novelty.
-- **Purpose:** every element adds understanding, action, feedback, identity or meaningful delight.
-- **Copy:** use realistic, product-specific language, benefits, relevant objections and clear actions. Remove filler labels and captions that merely explain the section.
-- **Truth:** use real claims and proof. Never invent testimonials, metrics, scarcity or guarantees; label demo content and missing facts.
+- **Identity and premise:** coordinate type, imagery, composition, color, copy and motion around a recognisable product idea. Adjectives such as "premium" are not decisions. An accepted identity remains authoritative.
+- **Composition:** establish a deliberate focal point, reading/task order, relative scale, negative space and density. Deeper regions should develop the content with appropriate changes of pace; do not repeat one card pattern everywhere.
+- **Typography:** resolve expressive versus supporting roles, real font/weight, proportions, line length, wrapping, leading, tracking and optical alignment at actual viewing sizes. Keep the accepted family unless change is delegated; novelty alone is not improvement.
+- **Imagery and art direction:** use meaningful product/brand material, strong framing/crops and consistent treatment. Assets must support the idea and remain legible. A missing dominant visual is unresolved design, not an invitation to random decoration.
+- **Color and surfaces:** give colors semantic and expressive roles; coordinate contrast, borders, geometry, depth and emphasis. Effects must strengthen hierarchy or identity, not conceal weak structure.
+- **Rhythm and detail:** make spacing, alignment, control proportions, icons, transitions and repeated relationships intentional. Preserve deliberate optical adjustments; no universal 4px/8px grid or radius aesthetic.
+- **Reference transfer:** translate the selected hierarchy, rhythm, framing, density or interaction into this content. Copying a palette does not transfer composition; a curated entry does not automatically suit the product.
 
-## Visual craft
+## Experience is part of the design
 
-- **Identity:** coordinate type, layout, imagery, color, copy and motion into a coherent direction.
-- **Ambition:** calibrate open work against exceptional examples relevant to the product. Describe the observed standard and concrete gaps in our render; a gallery listing or self-awarded score does not establish excellence. An interchangeable composition can remain a material defect even when its controls work.
-- **Direction:** for a new surface, decide what leads the first viewport, how the next region changes pace/density, and how the hierarchy recomposes on mobile. Tie these choices to the product's message or task; a palette and radius scale are not a composition.
-- **Composition:** establish focus and reading order through scale, space, density and contrast. Let content shape the layout.
-- **Typography:** resolve hierarchy, line length, line height, wrapping and optical alignment at actual sizes.
-- **Detail:** make color roles, borders, depth, icons and crops deliberate and consistent.
-- **Expression:** use photography, illustration, 3D or effects when they strengthen the idea. No prescribed aesthetic or medium.
-- **Restraint with purpose:** make a few product-specific choices carry the identity. Repeated cards, oversized headings, gradients, glass and decorative motion are techniques, not evidence of quality. Keep them only when their role fits the content and intended experience.
-- **Reference transfer:** preserve a useful relationship, not another site's identity. Translate scale, framing, rhythm or interaction into our content and verify it in the render. An accessible primitive can provide reliable mechanics while its composition and finish remain specific to this product.
+- **Understanding:** content priority, grouping, labels and navigation should make the offering/task and next action apparent. Use the audience's vocabulary; remove duplication and filler instead of explaining a confusing layout with more text.
+- **Interaction:** make affordances, consequences, feedback and recovery clear. Design relevant loading, empty, error, success, selected and unavailable states with the same care as the default. Preserve context/input where needed.
+- **Flow:** connect entry, decisions, actions and completion. A beautiful isolated screen can still leave the person lost; use actual product tasks and content to compose the sequence.
+- **Responsive expression:** recompose hierarchy, crops, density and controls for their real containers/mobile rather than shrinking a screenshot. Preserve meaningful content and access.
+- **Motion and inclusion:** use motion to express identity or relationships with appropriate pacing and continuity. Keep content/actions available to keyboard, touch and reduced-motion use. These are design decisions throughout, not a separate paperwork stage.
+- **Honest content:** use product-specific copy, credible proof and real or clearly labeled representative material. Never invent testimonials, metrics, scarcity or research findings to make the interface impressive.
 
-## Experience and engineering
+## How to establish an improvement
 
-- **Interaction:** clarify actions and consequences; preserve input/context and provide timely feedback and recovery.
-- **Motion:** communicate relationships, state or identity; preserve responsive controls, natural scrolling and complete reduced-motion behavior.
-- **Responsive:** recompose across mobile, tablet, desktop and container widths while preserving useful content and actions.
-- **Complete:** carry the same care into deeper screens, forms, errors and awkward content.
-- **Code:** use semantic, accessible, maintainable code and target conventions. Reuse mechanics while keeping composition flexible.
+For existing work, compare a readable base and proposal at equivalent content, state, viewport and asset loading. Name the intended difference and preserve what is already strong. For new work, use the brief and selected reference relationships as the standard. Inspect the whole composition as well as the changed part.
+
+Accept a proposed treatment only when its contribution is visible/explainable: a stronger focal point, better type/image balance, clearer grouping/task, more coherent identity, useful state or better finish. State material tradeoffs. Extra effects, more elements, smaller output or a high self-score do not prove improvement. The designer makes the acceptance decision; agent critique and human approval are not user-research findings.
+
+The agent handles applicable QA before presentation, using only relevant QA.md sections. Inspect clipping/wrapping, fonts/crops, responsive states and actual interactions when available; a static canvas cannot establish working browser behavior. Repair material defects and report unresolved limits concisely. This supports the design; a technical pass does not establish its beauty.
+
+Repair the largest consequential gap before micro-polish. Keep a stronger prior treatment when later iterations lose coherence. Continue useful refinement inside scope; stop when the agreed design is ready for review, a user budget is reached or missing input/visual access blocks it. Repeated inconclusive iterations need a different hypothesis or evidence. Respect closed decisions; propose a reviewed change rather than restoring or replacing them silently.

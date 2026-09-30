@@ -1,56 +1,42 @@
 # Project design record — blank template
 
-Use the target's existing authoritative record, or `<target>/.design/project.md`. The agent captures relevant answers as the workflow progresses; the designer need not fill every field to start. Keep this shared template blank. Point to supplied originals rather than duplicating them; exclude secrets. Examples elsewhere in the kit are not this project's preferences.
+Use the target's authoritative record, otherwise `.design/project.md`. Capture only useful answers as the work progresses; no form to complete before starting. Link originals, keep this shared template blank and exclude secrets. Examples are not project preferences.
 
 ## Current checkpoint
 
-- Current phase / requested scope / fidelity:
-- Decisions already accepted or explicitly delegated:
-- Accepted artifact revision/capture + human decision reference:
-- Current proposed revision / pending feedback (distinct from accepted):
-- Missing input or reserved decision:
-- Next useful output / action:
+- Phase / requested design scope / fidelity:
+- Accepted decisions or explicit delegation; closed/open/illustrative choices:
+- Accepted source paths/IDs + reviewed revision/capture + human decision:
+- Pending proposal/feedback / missing input / next authorized action:
 
-## 1. Brand, product and user
+## Context and experience
 
-- Input sources (file, attachment, accessible page or conversation):
-- What the brand/product does and why it matters:
-- Audience / real need / main user task:
-- Distinction, values, voice and evidence relevant to design:
-- Intended result / required content / assets / important constraints:
-- Unknowns that matter now:
+- Brand/product, audience, main need/task and intended design result:
+- Actual inputs/research/feedback; assumptions distinguished from evidence:
+- Existing base: what works, what falls short and what to preserve:
+- Relevant content, terms/grouping/navigation and task/state sequence:
+- Device/container, responsive, inclusion, asset and feasibility constraints:
+- Structural sketch/prototype or accepted equivalent; open decisions:
 
-## 2–3. Designer's direction and reviewed references
+## Direction, references and foundations
 
-- Supplied references or requested discovery route:
-- Designer's direction in their words; explicit constraints versus hypotheses:
-- Relevant catalog families / any additional source explicitly chosen by the human:
-- Inspected candidates versus designer-selected references:
-- Selected relationships, useful contrasts, mismatches and rejected directions:
-- Source/capture paths and known viewport/state; unseen behavior distinguished:
+- Designer's direction; selected source/capture relationships and exclusions:
+- Reference state/viewport; observed versus inferred behavior:
+- Chosen medium / actual capability / real assets and provisional material:
+- Canonical typography, semantic colors, spacing/density, geometry and usage:
+- Supplied values versus proposed system additions and acceptance:
 
-## 4. Foundations and system rules
+## Components, compositions and refinement
 
-- Chosen design medium / verified capability before visual system output:
-- Foundation source / canonical token and component paths:
-- Type roles, semantic colors, spacing/density, geometry and control behavior:
-- Representative composition/design source and acceptance status:
-- Whole-page/flow outline, main action, important states and responsive intent:
-- Real content and asset paths / provisional material:
-- Closed decisions / open decisions / illustrative placeholders:
-- Decisions reserved to the designer / work delegated to the agent:
+- Canonical component/pattern paths/IDs and scoped states:
+- Whole-page/flow outline; requested batch and accepted regions:
+- Before/after sources; intended and visible contribution; material tradeoffs:
+- Designer's correction/acceptance and strongest retained baseline:
+- Remaining design gaps and next authorized action:
 
-## 5–8. Components, pages, implementation and continuity
+## Only when code is requested
 
-- Approved base components / composite patterns and canonical paths/IDs:
-- Current review batch / human response and acceptance status:
-- Accepted regions/pages / pending scope:
-- Design medium / implementation root / stack and relevant commands:
-- Evidence paths and verification actually performed:
-- Material defects, unknowns or rejected approaches and why:
-- Next action and explicit budget or authority override, if any:
+- Accepted design handoff, structure/styles/assets/states/responsive intent:
+- Implementation root/stack, relevant technical requirements and evidence:
 
-For a retained reference, capture only the relevant question/region, exact source,
-what was observed, what transfers or does not, and where it is applied. A proposed
-example is not automatically designer-approved. Keep implemented, verified and
-accepted work distinct; no transcript dump or new record for every section.
+Keep project data in the target, not the installed kit. A supplied file or positive agent verdict is not human acceptance or user research. One short record and actual working artifacts are sufficient; no transcript archive or document per section.

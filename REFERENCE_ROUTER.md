@@ -10,7 +10,7 @@ Read for a design question requiring outside evidence. [REFERENCES.md](REFERENCE
 4. Initial direction review defaults to **eight distinct, useful, inspected references** (or the user's explicit count), supplied/retrieved/combined. If fit/access is insufficient, show the valid subset and ask whether to search other eligible sources, accept user additions or waive the count. Do not pad or silently advance. For each: preview when possible; exact gallery/verified original links; family; region/relationship; observed fit; differences/unknowns.
 5. Ask which to keep/reject and what to take from each. Synthesize human feedback into `selected relationship -> product application -> exclusions -> evidence`. Show that interpretation and wait for acceptance before dependent design. A candidate is not an approved direction; references-only does not authorize UI.
 
-After acceptance, research only the open question. Do not repeat eight references for type assistance or a local repair. Confirm important font identity, glyphs/loading/license; do not infer exact fonts, CSS or unseen behavior from a still. Avoid mechanically blending eight identities.
+Task-oriented UX/pattern lookup can precede visual direction when the experience structure is open; it is a focused question, not the initial eight-example visual-discovery set. After acceptance, research only the open question. Do not repeat eight references for type assistance or a local repair. Confirm important font identity, glyphs/loading/license; do not infer exact fonts, CSS or unseen behavior from a still. Avoid mechanically blending eight identities.
 
 ## Scope and provenance
 

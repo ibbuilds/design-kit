@@ -1,5 +1,7 @@
 # Frontend QA
 
+The agent owns applicable QA within the authorized design/implementation batch before presenting it. Read only relevant sections for fidelity and scope; no separate QA phase, questionnaire or checklist for the designer. TASTE.md and DESIGN_DIRECTION.md remain the design standard and refinement procedure; passing checks cannot establish beauty. Formal audits and production/release checks apply only to that requested scope.
+
 - Review the scoped result against the target's actual brief, accepted work, TASTE.md and active references; the packaged BRIEF.md is only a template.
 - Apply relevant checks; add checks for actual risks. Keep evidence in the target.
 - Follow target release requirements and user-reserved decisions. Review-only tasks report repairs without applying them or updating project records.

@@ -1,46 +1,52 @@
-# Resolve an open visual direction
+# Develop and improve the actual UI/UX
 
-Read for an unresolved composition/foundation/finish. Skip for final designs, accepted systems and repairs with sufficient context. Follow [ONBOARDING.md](ONBOARDING.md)'s current phase/batch and human checkpoints; this route never authorizes independent expansion.
+Read for an open design decision or requested refinement. Use [ONBOARDING.md](ONBOARDING.md)'s phase/batch authority and [TASTE.md](TASTE.md)'s design standard. The goal is design improvement; relevant QA is the agent's supporting responsibility within the batch, not another workflow for the designer. Skip discovery already resolved by the supplied final design/system.
 
-## Help the designer make the consequential decision
+## Understand the base before changing it
 
-Use the actual product/job, human direction, selected reference relationships and current open question. Offer focused options and tradeoffs. Develop the supplied foundations; choosing a new identity or establishing provisional foundations requires explicit delegation and human review before dependent work. Typography/colors establish vocabulary, not composition or UX.
+Inspect readable views of the actual base, relevant states and surrounding composition; for code/canvas, inspect only necessary structure and canonical tokens/components. Identify the product/task, accepted experience, intended identity and closed/open/illustrative choices. Ask only material gaps. A screenshot cannot disclose hidden behavior or exact values.
 
-For ambitious open work, calibrate against excellent relevant evidence through [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md). A gallery selection is not a tested workflow or award guarantee. Express the premise in inspectable relationships rather than adjectives or a generic hero/features/pricing sequence:
+For requested improvement, first identify **what to preserve; the highest-impact open gap; the relationship to change; the expected design contribution**. A weak hierarchy needs a hierarchy decision before a shadow adjustment. If the user gave foundations only, develop composition/flow instead of claiming the rest is repetition. Changing a closed choice requires a human-reviewed proposal.
 
-| Decision | What to resolve |
+## Resolve structure and expression together
+
+| Decision | Design outcome |
 | --- | --- |
-| Product/task | What the opening must explain or enable; marketing versus actual workspace |
-| Composition | Focal element, reading/task order, relative scale, density and deeper-region pacing |
-| Type/content | Display/body/data roles, honest copy, useful line lengths/hierarchy at real sizes |
-| Dominant asset | What it proves/explains, authorized source and intentional crop/framing |
-| Interaction/mobile | Main action, state changes, responsive recomposition and useful motion |
-| Reference contribution | Observed relationship, product application and what cannot transfer |
+| Audience/task and context | What the person must understand/do, relevant constraints and why the current experience falls short |
+| Content and information structure | Priority, grouping, terminology, navigation and relationships; no duplicate sections or unsupported claims |
+| Flow and interaction | Entry, decisions, actions, feedback/completion/recovery; meaningful states and preserved context |
+| Composition | Focal point, relative scale, density, negative space and deeper-region pacing |
+| Type/image/art direction | Product-specific voice, real type roles, dominant asset, crop/framing and consistent treatment |
+| Responsive/motion | Recomposition, continuity and access without losing the intended expression |
 
-Keep only consequential decisions in existing context. If a fundamental choice is open, compare a few concise concepts or the uncertain region with identical content/required behavior. The designer selects; implement only the selected treatment within authorized scope. Do not routinely build complete variants or reopen accepted identity.
+Resolve only open decisions needed now. Content/flow and visual direction can inform each other; do not force a rigid waterfall. Use a sketch, concise flow or working prototype to examine an uncertain structure before building a full library. An existing accepted base skips this exploration. A low-fidelity probe does not close typography/colors or permit changing the final design.
 
-## Test the idea in context
+## Apply high-quality evidence deliberately
 
-Use the chosen medium and agreed representative artifact. Include a deeper region/important state and mobile when relevant; inspect actual fonts/media/content. A small screen can be the sample. Present it for human review and wait before dependent expansion. Keep the whole-page/flow outline visible as parts develop; accepted components do not settle every composition.
+Use the designer's direction and accepted reference map. If needed, retrieve focused evidence through [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md). Compare observed composition/type/image/interaction relationships and explain what can transfer to this product; do not treat an admired brand or gallery as a universal layout. No compulsory metaphor, bespoke font, WebGL, effects, grid or motion quota.
 
-Compare dominant/supporting scale, type/image balance, rhythm, density, optical finish and task clarity against selected evidence. Name the mismatch: local type/spacing/crop repair for execution defects; reconsider an unsuitable asset/content structure for a conceptual defect, within delegated decisions. Added decoration cannot repair the wrong premise. Preserve a stronger accepted treatment if polishing weakens it.
+Express a compact creative premise through consequential choices. Brand/campaign work may need expressive type/imagery and scale; a dense workspace may need precise information hierarchy and economical repeated controls. Either can have an exceptional identity. Build one coherent treatment rather than averaging incompatible references or generating complete variants by routine.
 
-Brand/portfolio/campaign work may benefit from expressive type/images/scale changes; editors/CRM/data tools need appropriate density, predictable navigation and practical repeated controls. Let the task decide. No mandatory metaphor, bespoke font, WebGL, motion quota, radius scale or template ban. Use familiar semantics and target component/icon mechanics; do not put a marketing page ahead of an app unless requested.
+If ambiguity remains, compare a few concise directions or the uncertain region using the same content/task. The human chooses. Resolve a dominant asset using real product/brand material, meaningful UI, illustration or an appropriate diagram; authorized search/generation is conditional on need. Check subject, rights, resolution and crop. Keep interface text/controls editable/working; no rasterized UI or decorative replacement for missing substance.
 
-## Assets, behavior and finish
+## Design, compare, refine
 
-Prefer real product/brand material and authorized existing assets. Image search/generation is conditional on a needed asset and actual authorization; a separate tool produces bitmap media. Check subject, rights, resolution, crop and loading. Meaningful UI, type, geometry or a diagram can carry the idea; random gradients/stock atmosphere or a mockup hiding the product do not solve missing evidence. Keep controls/text as working UI and label provisional material.
+1. Develop the agreed region/sample in the chosen medium. Use representative content and actual fonts/assets; include a deeper region or significant state where it reveals system/composition fit. Reuse components while retaining layout flexibility.
+2. Inspect the result at real viewing sizes, including relevant mobile/container layouts. Apply relevant [QA.md](QA.md) checks and fix material artifact defects before presentation; do not make the designer run them. For motion, examine the actual sequence and transition states; stills cannot establish pacing.
+3. Compare the **base -> proposal** at equivalent content/state/viewport. With new work, compare selected reference relationships and the brief. Name what improved and what became weaker in hierarchy, type/image balance, rhythm, identity, flow or finish. No self-score or unsupported "premium" verdict.
+4. Repair the highest-impact design mismatch locally. If the concept itself is weak, propose the smallest meaningful alternative inside delegated decisions. More decoration does not solve it. Retain the stronger version when a later refinement regresses the design.
+5. Present the actual before/after or accessible canvas/prototype, concise contribution and material tradeoffs. Wait for human acceptance/correction before dependent expansion. Missing visual access requires a usable view; code/JSON alone cannot establish beauty.
 
-For expressive interaction, inspect real trigger/states/pacing and interruption, touch/keyboard access and reduced-motion behavior. Preserve actions/content during loading or effect failure. Existing mechanics first; complexity needs a demonstrated contribution and relevant performance checks, not a reference's smoothness claim.
+Useful refinement is not an endless perfection loop: change the hypothesis when iterations repeat without a clear improvement. Do not spend rounds polishing an unapproved premise or repeat discovery for a straightforward accepted-system addition.
 
-## Expand accepted work, preserve the system
+## Expand the approved treatment
 
-After human acceptance, incorporate agreed additions into canonical tokens/components and inspect affected consumers. A screen experiment does not authorize global system changes. Check real semantic roles, bindings and component reuse; similar pixels do not prove a system. Support required content/states without rigid screenshot replicas or speculative variant inventories. Usage notes belong beside the relevant source; no skill/document per component.
+After human acceptance, carry the selected relationships into canonical foundations/components and inspect affected in-context compositions. A screen experiment does not authorize global identity changes. Verify real component/instance reuse and supported token bindings for system work; matching pixels alone do not establish reusable design.
 
-Keep useful code/assets as the next baseline. Accepted-system additions inherit it unless a real task difference calls for a reviewed change. Parts/pages can reveal upstream gaps: propose the smallest repair and revisit only actual dependencies. Resolve engineering constraints affecting experience before expansion; visual acceptance does not postpone data/permission feasibility. Apply relevant [QA.md](QA.md), not another complete audit by default.
+Keep the whole page/flow visible as parts develop. Derive needed states/patterns from actual tasks; no exhaustive future library. Context can expose an upstream design gap: propose the smallest correction, preserve unrelated approvals and revisit only its dependencies. Keep useful usage notes beside the existing source, not a skill/document per component.
 
-## Conditional canvas/code handoff
+## Deliver design; implement only when requested
 
-Use the designer's existing medium. For chosen Penpot follow [PENPOT.md](PENPOT.md); for chosen Figma use the available specialist skill/authorized connection. Inspect relevant structure and screenshot, variables and actual component mappings; drill into necessary nodes instead of repeatedly reading whole files. Do not assume a link establishes access or switch to a paid canvas.
+Use the chosen medium. Penpot follows [PENPOT.md](PENPOT.md); chosen Figma uses the available specialist connection. A link is not access, and a paid canvas is not a default. Export only useful states; no automatic private uploads.
 
-Present each meaningful canvas batch and wait before dependent work. Implementation uses accepted structure/tokens/assets, states and responsive intent in the target stack; generated snippets are evidence to adapt, not permission to replace that stack. Reuse accepted HTML/CSS prototypes through integration. Verify the browser against the design and user task; static frames cannot establish navigation, persistence or responsive behavior. Private captures need actual upload authorization.
+Design-only ends with accepted editable work or readable visuals, important states/behavior, responsive intent and canonical sources. When code is requested, preserve accepted structure/styles and reuse useful prototype layout/assets; replace mock/unsafe logic and meet the target's engineering requirements rather than blindly shipping prototype code. Compare implementation to the approved design; no silent aesthetic reinterpretation. The agent owns the applicable QA; formal compliance audits, telemetry and release work remain conditional on separately requested scope.
