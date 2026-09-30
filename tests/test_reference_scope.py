@@ -1,5 +1,8 @@
 """Source-boundary regressions; these do not test reference taste or model behavior."""
 import importlib.util
+from contextlib import redirect_stderr, redirect_stdout
+from io import StringIO
+import json
 from pathlib import Path
 import unittest
 
@@ -70,6 +73,52 @@ class ReferenceScopeTests(unittest.TestCase):
         self.assertTrue(any(q["source_scope"] == "github.com/pmndrs/drei" for q in github))
         self.assertTrue(all(q["source_scope"].count("/") == 2 for q in github))
         self.assertFalse(any(q["query"] == "site:github.com composition" for q in github))
+
+    def run_cli(self, *args):
+        output, errors = StringIO(), StringIO()
+        with redirect_stdout(output), redirect_stderr(errors):
+            status = scope.main(args)
+        return status, output.getvalue(), errors.getvalue()
+
+    def test_source_only_query_does_not_include_catalog(self):
+        status, output, errors = self.run_cli(
+            "queries", "--source-url", "https://example.org/references", "--query", "editorial")
+        self.assertEqual(0, status, errors)
+        self.assertEqual(["site:example.org editorial"],
+                         [q["query"] for q in json.loads(output)["queries"]])
+
+    def test_multiple_source_only_queries_preserve_repository_scopes_and_deduplicate(self):
+        status, output, errors = self.run_cli(
+            "queries", "--source-url", "https://github.com/designer/first",
+            "--source-url", "https://github.com/designer/second",
+            "--source-url", "https://github.com/designer/first/tree/main", "--query", "layout")
+        self.assertEqual(0, status, errors)
+        self.assertEqual({"github.com/designer/first", "github.com/designer/second"},
+                         {q["source_scope"] for q in json.loads(output)["queries"]})
+        self.assertEqual(2, len(json.loads(output)["queries"]))
+
+    def test_section_plus_user_source_queries_are_only_the_requested_union(self):
+        section = "Typography, color and extracted style"
+        selected, _ = scope.select(self.records, [section])
+        expected = {q["source_scope"] for q in scope.search_queries(selected, "type")}
+        status, output, errors = self.run_cli(
+            "queries", "--section", section, "--source-url", "https://example.org", "--query", "type")
+        self.assertEqual(0, status, errors)
+        self.assertEqual(expected | {"example.org"},
+                         {q["source_scope"] for q in json.loads(output)["queries"]})
+
+    def test_queries_without_scope_fail_without_producing_searches(self):
+        status, output, errors = self.run_cli("queries", "--query", "layout")
+        self.assertEqual(2, status)
+        self.assertEqual("", output)
+        self.assertIn("error", json.loads(errors))
+
+    def test_default_check_keeps_catalog_and_explicit_user_sources(self):
+        status, output, errors = self.run_cli(
+            "check", "https://onepagelove.com/entry", "https://example.org/entry",
+            "--source-url", "https://example.org")
+        self.assertEqual(0, status, errors)
+        self.assertTrue(all(r["allowed"] for r in json.loads(output)["results"]))
 
 
 if __name__ == "__main__":

@@ -1,66 +1,46 @@
 # Resolve an open visual direction
 
-Read for a new direction or an unresolved finish. Skip for a supplied final design, an accepted system or a local repair with sufficient context. Aim for an intentional result appropriate to the product, not a recognizable agent-generated template.
+Read for an unresolved composition/foundation/finish. Skip for final designs, accepted systems and repairs with sufficient context. Follow [ONBOARDING.md](ONBOARDING.md)'s current phase/batch and human checkpoints; this route never authorizes independent expansion.
 
-## Assist the designer before extending their direction
+## Help the designer make the consequential decision
 
-In designer-led work, use the product/brand brief, selected reference relationships and the current question. Offer focused options for a foundation or pattern; do not generate all foundations or choose a new identity without that delegation. Typography, colors, spacing and geometry establish vocabulary, while a representative composition and user flow establish how to use it. A palette alone does not make all remaining design choices repetitive.
+Use the actual product/job, human direction, selected reference relationships and current open question. Offer focused options and tradeoffs. Develop the supplied foundations; choosing a new identity or establishing provisional foundations requires explicit delegation and human review before dependent work. Typography/colors establish vocabulary, not composition or UX.
 
-Before autonomous expansion, check the approved example, task/flow, important states, content/assets and closed/open decisions. Missing material patterns call for focused assistance or a decision within existing delegation, not automatic invention. Keep a whole-page/flow outline while producing sections; inspect related parts together for hierarchy, pacing, navigation and state continuity. Familiar states still require product-specific behavior.
+For ambitious open work, calibrate against excellent relevant evidence through [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md). A gallery selection is not a tested workflow or award guarantee. Express the premise in inspectable relationships rather than adjectives or a generic hero/features/pricing sequence:
 
-Respect design-first work: the designer can use their existing medium and hand over captures, values and behavior. If a local HTML/CSS prototype is chosen, reuse its code through functional integration to avoid a second full implementation. No new canvas subscription is required. The requested stage determines whether the deliverable is references, advice, a prototype or production code.
+| Decision | What to resolve |
+| --- | --- |
+| Product/task | What the opening must explain or enable; marketing versus actual workspace |
+| Composition | Focal element, reading/task order, relative scale, density and deeper-region pacing |
+| Type/content | Display/body/data roles, honest copy, useful line lengths/hierarchy at real sizes |
+| Dominant asset | What it proves/explains, authorized source and intentional crop/framing |
+| Interaction/mobile | Main action, state changes, responsive recomposition and useful motion |
+| Reference contribution | Observed relationship, product application and what cannot transfer |
 
-## Establish the requested creative standard
+Keep only consequential decisions in existing context. If a fundamental choice is open, compare a few concise concepts or the uncertain region with identical content/required behavior. The designer selects; implement only the selected treatment within authorized scope. Do not routinely build complete variants or reopen accepted identity.
 
-For ambitious original work, inspect a few excellent references from the curated library or explicitly human-added sources that illuminate this product's unresolved choices. Pair useful qualities with the actual audience, content and task. A gallery's curation is evidence of selection, not a tested workflow or a promise of an award. Use the source/access policy in [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md); a named quality benchmark is not permission to expand discovery.
+## Test the idea in context
 
-State a compact creative premise grounded in the product: the idea the experience expresses, how content unfolds and the visual or interactive relationship that makes it recognizable. The premise can come from editorial typography, product behavior, meaningful imagery or another appropriate medium. Do not force a metaphor, bespoke typeface, WebGL scene or motion quota. An existing system can express exceptional craft without inventing another identity.
+Use the chosen medium and agreed representative artifact. Include a deeper region/important state and mobile when relevant; inspect actual fonts/media/content. A small screen can be the sample. Present it for human review and wait before dependent expansion. Keep the whole-page/flow outline visible as parts develop; accepted components do not settle every composition.
 
-Turn the chosen standard into inspectable relationships: dominant-to-supporting scale, type/image balance, content-driven rhythm, asset fidelity, optical finish and, when relevant, motion continuity. Name what belongs to the reference's content or resources and cannot transfer. Record the few decisions in existing context. Build the representative screen to test that premise before expanding it; do not treat a polished but interchangeable template as a successful interpretation of an ambitious brief.
+Compare dominant/supporting scale, type/image balance, rhythm, density, optical finish and task clarity against selected evidence. Name the mismatch: local type/spacing/crop repair for execution defects; reconsider an unsuitable asset/content structure for a conceptual defect, within delegated decisions. Added decoration cannot repair the wrong premise. Preserve a stronger accepted treatment if polishing weakens it.
 
-## Make consequential choices before expanding
+Brand/portfolio/campaign work may benefit from expressive type/images/scale changes; editors/CRM/data tools need appropriate density, predictable navigation and practical repeated controls. Let the task decide. No mandatory metaphor, bespoke font, WebGL, motion quota, radius scale or template ban. Use familiar semantics and target component/icon mechanics; do not put a marketing page ahead of an app unless requested.
 
-Derive a compact direction from the brief and inspected evidence. Keep it in the existing record or the working conversation; no mandatory new document:
+## Assets, behavior and finish
 
-- **Product and task:** what the first viewport must make understandable or actionable; distinguish a marketing page from the application itself.
-- **Composition:** focal element, reading/task order, relative scale, density and how the next region changes pace or information structure.
-- **Type and content:** role of display/body/data text, real or honestly labeled copy, useful line lengths and hierarchy at actual sizes.
-- **Visual asset:** what it proves or explains, available source and intended crop/framing. A product screenshot should reveal the product; a gallery should let the work be inspected.
-- **Interaction and mobile:** primary action, meaningful state changes, responsive recomposition and any motion that clarifies relationships.
-- **Reference contribution:** which observed relationships support those choices and where they will appear.
+Prefer real product/brand material and authorized existing assets. Image search/generation is conditional on a needed asset and actual authorization; a separate tool produces bitmap media. Check subject, rights, resolution, crop and loading. Meaningful UI, type, geometry or a diagram can carry the idea; random gradients/stock atmosphere or a mockup hiding the product do not solve missing evidence. Keep controls/text as working UI and label provisional material.
 
-Describe the few decisions that distinguish this product. A palette, a list of adjectives, or a standard hero/features/pricing sequence alone does not resolve direction. If a fundamental choice is still ambiguous, compare a small number of concise concepts by product fit; implement one. Additional complete variant builds follow the task's scope and authorization.
+For expressive interaction, inspect real trigger/states/pacing and interruption, touch/keyboard access and reduced-motion behavior. Preserve actions/content during loading or effect failure. Existing mechanics first; complexity needs a demonstrated contribution and relevant performance checks, not a reference's smoothness claim.
 
-When uncertainty is concentrated in a dominant widget or region, resolve it there before generating another complete page. Keep the same content, data and required behavior across candidate treatments so the comparison isolates the open decision. Use only enough alternatives to decide; no fixed four-widget exercise. Then inspect the selected treatment inside the representative screen, because a good isolated widget does not establish page hierarchy, responsive composition or system fit. Skip exploration for an accepted direction or a straightforward repair.
+## Expand accepted work, preserve the system
 
-Do not enforce a numeric taste floor, a bespoke asset, motion or a template ban as universal signs of quality. Judge the product job and observed composition. Resolve engineering constraints that affect the experience before expanding a visual premise; visual acceptance does not postpone data, permissions or host feasibility.
+After human acceptance, incorporate agreed additions into canonical tokens/components and inspect affected consumers. A screen experiment does not authorize global system changes. Check real semantic roles, bindings and component reuse; similar pixels do not prove a system. Support required content/states without rigid screenshot replicas or speculative variant inventories. Usage notes belong beside the relevant source; no skill/document per component.
 
-## Match expression to use
+Keep useful code/assets as the next baseline. Accepted-system additions inherit it unless a real task difference calls for a reviewed change. Parts/pages can reveal upstream gaps: propose the smallest repair and revisit only actual dependencies. Resolve engineering constraints affecting experience before expansion; visual acceptance does not postpone data/permission feasibility. Apply relevant [QA.md](QA.md), not another complete audit by default.
 
-A brand/portfolio/campaign can use expressive type, image-led composition and strong changes of scale when they make the subject and message clearer. A working editor, CRM or analytics screen often needs organized density, restrained repeated controls and predictable navigation. An expressive interface can still be practical; a quiet application can still have a precise identity. Let the task decide rather than forcing every project into either aesthetic.
+## Conditional canvas/code handoff
 
-Use familiar control semantics and the target's component/icon mechanics. Make navigation, commands and recovery states genuinely usable at the requested fidelity. Do not add a marketing landing page before the application unless that is part of the request. Avoid filler copy that merely describes styling or explains obvious controls; retain instructional/help content when users need it to complete the task.
+Use the designer's existing medium. For chosen Penpot follow [PENPOT.md](PENPOT.md); for chosen Figma use the available specialist skill/authorized connection. Inspect relevant structure and screenshot, variables and actual component mappings; drill into necessary nodes instead of repeatedly reading whole files. Do not assume a link establishes access or switch to a paid canvas.
 
-## Resolve assets and framing
-
-Prefer authorized product captures, brand material and existing assets. For an illustrative concept, an available image search/generation tool can supply a needed asset within user authorization; a separate tool, not the language model's text output, produces bitmap media. Check subject accuracy, rights, resolution, crop and loading. Do not add generation merely because the tool exists.
-
-Typography, CSS geometry or a useful diagram can carry a composition when appropriate. Do not fill a missing product visual with random gradients, stock atmosphere or a decorative mockup that hides what users need to inspect. Keep interface text and controls as working UI. Resolve a critical missing asset before treating the sample as finished; label provisional material.
-
-## Judge the sample, then preserve what works
-
-For a new product, establish a small provisional foundation from inspected evidence: type roles, semantic colors, spacing and the reusable controls needed by the representative screen. Describe when a semantic token/component is used, not merely its name and value. Infer only visible relationships from screenshots; hidden states, original token architecture and full system completeness remain unknown. In an existing product, use its canonical system directly instead of creating a competing one.
-
-Inspect desktop and mobile at actual viewing sizes with fonts/media loaded. Compare the intended hierarchy, framing and density to the reference and product job. Check a deeper region or important state so that the hero alone cannot conceal a weak system. If the result is generic, name which relationship or product-specific choice failed. Repair spacing/type/crop for an execution defect; replace an unsuitable asset or content structure for a conceptual defect. Extra effects do not fix the wrong premise.
-
-For expressive work, inspect the actual transition or scroll sequence as well as stills: pacing, continuity, interruption, pointer/touch/keyboard access and a complete reduced-motion alternative. Keep content and actions usable while assets load or an effect is unavailable. Choose complexity for a demonstrated contribution; use existing motion mechanics first and measure costly effects on relevant devices. A case study's claimed smoothness is not our performance evidence.
-
-Before expanding, sync the selected refinements into the canonical tokens and reusable components, then check affected consumers. Scope changes to an existing shared system; a screen experiment does not authorize changing every product. Verify actual component reuse/bindings and semantic token roles, not just matching pixels. A visually plausible table must also support the required content, states and composition; avoid both rigid screenshot replicas and speculative variant inventories. Keep usage notes beside the relevant code/design source and load only the needed component family. No mandatory skill per component or documentation generation for every edit.
-
-Keep useful code, tokens and assets as the baseline for expansion. A new screen inherits that system unless a real task difference requires another treatment. Separate transferable composition principles from a project's brand, copy, assets and constraints when reusing learning elsewhere. Apply [QA.md](QA.md) to the relevant result; do not repeat discovery or force aesthetic rules from an example onto closed decisions.
-
-## Optional canvas roundtrip
-
-When the user chooses Figma exploration or supplies a Figma design, use the available specialist skill and connection. Read the relevant frame's design context and screenshot; use variables and actual Code Connect/component mappings where present. For an oversized selection, retrieve structure and drill into relevant nodes instead of repeatedly loading the entire file. Treat generated code as design evidence to adapt to the target's stack, not a mandate to replace it.
-
-If authorized canvas work helps compare flows or alternatives, use the user's chosen medium; Penpot is the preferred editable-canvas candidate through [PENPOT.md](PENPOT.md). Capture/refine only the needed states and present each agreed batch for human review before dependent work. Preserve canonical tokens/components and inspect the resulting code render when implementation is requested. A static frame does not establish navigation, persistence or responsive behavior. Do not export private application states without authorization or switch to a paid canvas by default.
+Present each meaningful canvas batch and wait before dependent work. Implementation uses accepted structure/tokens/assets, states and responsive intent in the target stack; generated snippets are evidence to adapt, not permission to replace that stack. Reuse accepted HTML/CSS prototypes through integration. Verify the browser against the design and user task; static frames cannot establish navigation, persistence or responsive behavior. Private captures need actual upload authorization.

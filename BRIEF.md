@@ -6,6 +6,8 @@ Use the target's existing authoritative record, or `<target>/.design/project.md`
 
 - Current phase / requested scope / fidelity:
 - Decisions already accepted or explicitly delegated:
+- Accepted artifact revision/capture + human decision reference:
+- Current proposed revision / pending feedback (distinct from accepted):
 - Missing input or reserved decision:
 - Next useful output / action:
 
@@ -29,6 +31,7 @@ Use the target's existing authoritative record, or `<target>/.design/project.md`
 
 ## 4. Foundations and system rules
 
+- Chosen design medium / verified capability before visual system output:
 - Foundation source / canonical token and component paths:
 - Type roles, semantic colors, spacing/density, geometry and control behavior:
 - Representative composition/design source and acceptance status:

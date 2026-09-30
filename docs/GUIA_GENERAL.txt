@@ -3,6 +3,9 @@ El agente elegido usa el skill como aditivo: summary de marca -> dirección tuya
 -> ocho referencias revisadas e interpretadas -> tus foundations/desarrollo del
 sistema -> base components -> composites/patrones -> páginas -> código solicitado.
 Cada fase/batch tiene salida concreta y espera tu respuesta antes de avanzar.
+Optimización 30/09/2026: carga solo contrato/checkpoint y fase actual; conserva
+la versión/captura aprobada separada de propuestas. Elige el medio antes del
+primer uso visual del sistema. Consultas por fuente usan solo esa fuente.
 Penpot es el canvas candidato preferido; PENPOT.md describe el MCP oficial y sus
 requisitos reales. El kit no lo instala ni afirma una conexión activa.
 Los dos TXT de diseño actualizados sustituyen el uso autónomo descrito en partes

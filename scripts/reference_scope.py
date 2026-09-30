@@ -99,11 +99,14 @@ def main(argv=None):
     parser.add_argument("--section", action="append", default=[], help="Exact catalog heading; repeat to combine")
     parser.add_argument("--query", help="Search traits; queries operation only")
     parser.add_argument("--source-url", action="append", default=[],
-                        help="Additional source expressly chosen by the human user; never an agent-selected fallback")
+                        help="Human-chosen source; queries use only these URLs and chosen sections, never an agent fallback")
     args = parser.parse_args(argv)
     try:
         records = read_catalog()
-        eligible, excluded = select(records, args.section, args.source_url)
+        # Query planning is opt-in: explicit URLs alone must not silently add
+        # the entire catalog. Listing/checking retain their global defaults.
+        scoped_records = records if args.operation != "queries" or args.section else []
+        eligible, excluded = select(scoped_records, args.section, args.source_url)
         if args.operation == "sources":
             if args.urls or args.query:
                 raise ValueError("sources does not take candidates or a query")

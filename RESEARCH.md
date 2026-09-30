@@ -26,6 +26,6 @@
 
 ## Evaluate improvements
 
-- Use [WORKFLOW.md's learning loop](WORKFLOW.md#learn) and [QA.md](QA.md) to assess actual interfaces and correction effort. Keep evidence in target projects.
+- Use [QA completion criteria](QA.md#completion-criteria) to assess actual interfaces and correction effort. Keep evidence in target projects.
 - No comparative output evaluation has established this kit as superior.
 - Reference quality, document audits and agent scores cannot guarantee output quality.

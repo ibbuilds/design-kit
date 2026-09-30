@@ -4,6 +4,8 @@ import json
 import os
 import re
 import stat
+import subprocess
+import sys
 from pathlib import Path
 import tempfile
 import unittest
@@ -83,7 +85,7 @@ class InstallTests(unittest.TestCase):
         self.assertEqual([], installer.install(self.source, self.target))
 
     def test_update_from_previous_bundle_adds_new_resources(self):
-        added = {"REFERENCE_ROUTER.md", "EXECUTION.md", "SOFTWARE.md", "DESIGN_DIRECTION.md", "PRODUCT_DELIVERY.md", "docs/QUALITY_EVIDENCE.md", "docs/WORKFLOW_RESEARCH.md", "scripts/reference_scope.py", "ONBOARDING.md", "PENPOT.md"}
+        added = {"REFERENCE_ROUTER.md", "EXECUTION.md", "SOFTWARE.md", "DESIGN_DIRECTION.md", "PRODUCT_DELIVERY.md", "docs/QUALITY_EVIDENCE.md", "docs/WORKFLOW_RESEARCH.md", "scripts/reference_scope.py", "tests/test_reference_scope.py", "ONBOARDING.md", "PENPOT.md"}
         old_package = tuple(path for path in installer.PACKAGE if path not in added)
         with patch.object(installer, "PACKAGE", old_package):
             installer.install(self.source, self.target)
@@ -365,6 +367,16 @@ class InstallTests(unittest.TestCase):
 
 
 class SkillContractTests(unittest.TestCase):
+    def test_installed_reference_regressions_run_against_exported_catalog_and_helper(self):
+        with tempfile.TemporaryDirectory() as folder:
+            target = Path(folder)
+            installer.install(ROOT, target)
+            bundle = target / ".agents/skills/design-kit"
+            result = subprocess.run(
+                [sys.executable, str(bundle / "tests/test_reference_scope.py"), "-v"],
+                cwd=target, capture_output=True, text=True, timeout=30)
+            self.assertEqual(0, result.returncode, result.stdout + result.stderr)
+
     def test_real_installed_bundle_has_resolvable_local_document_links(self):
         # Validate the actual exported package in a clean project. A valid link
         # in the checkout can still be broken if its resource is not packaged.

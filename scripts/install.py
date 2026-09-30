@@ -16,7 +16,7 @@ PACKAGE = (
     "REFERENCE_ROUTER.md", "EXECUTION.md", "SOFTWARE.md",
     "DESIGN_DIRECTION.md", "docs/QUALITY_EVIDENCE.md",
     "PRODUCT_DELIVERY.md", "docs/WORKFLOW_RESEARCH.md",
-    "scripts/reference_scope.py", "ONBOARDING.md", "PENPOT.md",
+    "scripts/reference_scope.py", "tests/test_reference_scope.py", "ONBOARDING.md", "PENPOT.md",
 )
 MANIFEST = ".design-kit-manifest.json"
 START = "<!-- design-kit:begin -->"

@@ -1,6 +1,6 @@
 WORKFLOW 2 — DESARROLLAR E ITERAR TU BASE DE DISEÑO
 MANUAL PERSONAL PARA CONSERVAR AUTORÍA Y APROVECHAR TRABAJO EXISTENTE
-Actualizado: 29 de septiembre de 2026.
+Actualizado: 30 de septiembre de 2026. Fuentes revisadas el 29/09/2026.
 
 LA IDEA QUE VAS A APLICAR
 
@@ -41,7 +41,9 @@ Captura el contexto y te muestra summary: qué hace, público/tarea, intención 
 restricciones. Tú confirmas o corriges antes de trabajo creativo dependiente.
 
 No hagas doble documentación de la misma marca ni repitas información del repo.
-El checkpoint vive en .design/project.md o tu registro existente, con fuentes.
+El checkpoint vive en .design/project.md o tu registro existente, con fuentes
+y versión/captura revisada vinculada a tu aprobación, distinta de lo pendiente.
+Reutiliza el medio; si falta, elígelo antes de la primera aplicación visual.
 Si el agente puede encontrar un comando o componente en el código, que lo lea;
 no te lo pregunte como si fuera una decisión de diseño tuya.
 
@@ -141,9 +143,11 @@ vez las mismas preguntas ni aprobar un sistema final que ya proporcionaste.
 Cambiar el régimen de supervisión requiere una instrucción tuya explícita.
 
 El registro es .design/project.md o tu fuente existente. Guarda facts útiles,
-fuentes, intención visual, interpretación de referencias, paths/IDs aceptados,
-fase/batch actual, feedback pendiente y siguiente acción autorizada. No vuelca
-todas las conversaciones ni carga todos los links en cada turno. Si una decisión
+fuentes, intención visual, interpretación de referencias y paths/IDs con la
+versión/captura que revisaste y tu decisión, separados de cambios pendientes.
+Mantiene fase/batch y siguiente acción autorizada. Una ruta mutable no prueba
+que su contenido actual sea lo que aprobaste; conserva tus ediciones posteriores.
+No vuelca las conversaciones ni carga todos los links en cada turno. Si una decisión
 cambia, revisa las partes que dependen de ella; no rehagas todo por costumbre.
 
 CALIDAD VISUAL Y UX: QUÉ EVALUAR EN LO QUE TE ENTREGA
@@ -201,11 +205,15 @@ incluye PENPOT.md con las fuentes, ruta de setup, validación y límites; no cam
 tu configuración ni instala dependencias durante esta revisión documental.
 
 La superficie documentada incluye high_level_overview, penpot_api_info,
-execute_code y export_shape. El agente verifica los schemas reales; no inventa
-APIs ni asume que toda versión tiene las mismas capacidades. Confirma archivo
-y página antes de escribir: el foco puede cambiar el destino del MCP. Usa batches
-pequeños, reversibles, IDs canónicos y verificación visual. En remoto algunas
-exportaciones pueden estar limitadas; reporta ese límite y pide una vista usable.
+execute_code y export_shape. El agente verifica schemas/API, reutiliza métodos
+ya comprobados y consulta solo lo desconocido o lo afectado por un fallo. Confirma
+archivo/página y destino aprobado antes de escribir; una selección incidental
+no sustituye ese destino. Para un ajuste local lee la zona, su layout/bindings y
+consumidores afectados, no el archivo completo por rutina. Cada llamada resuelve
+una operación lógica reversible y devuelve IDs/cambios útiles; no toda la pantalla
+en una megallamada. Si falla, comprueba qué sí se aplicó antes de reintentar para
+evitar duplicados o reconstrucciones. Verifica estructura/reutilización y aspecto
+por separado. Si exportar no funciona, pide una vista usable y declara ese límite.
 
 El agente debe generar componentes reutilizables y bindings cuando el API lo
 permita, no figuras visualmente similares y afirmar que ya hay una biblioteca.
@@ -389,9 +397,10 @@ esté disponible; no equivale a una mejora automática de calidad. Respuestas
 cortas no garantizan poco razonamiento interno. Las tarifas de API no permiten
 calcular cuánto durará el 100% de Pro; se necesita consumo observado de tu cuenta.
 
-No pegar este manual entero por rutina. El agente lee el skill, la fase y
-los inputs necesarios, espera tu review y conserva decisiones aceptadas. Usar el prompt del archivo y los datos
-del encargo. La skill y los recursos canónicos se cargan por necesidad; este TXT
+No pegar este manual entero por rutina. El agente lee el skill, el contrato
+común/checkpoint y solo la fase actual de ONBOARDING.md. Carga inputs y rutas
+pertinentes, espera tu review y conserva decisiones aceptadas. Usa el prompt del
+archivo y los datos del encargo. Los recursos se cargan por necesidad; este TXT
 es una guía humana autónoma. Si lo adjuntas, pedir que se lea para elegir el
 procedimiento pertinente, sin convertir todos los anexos en acciones obligatorias.
 
