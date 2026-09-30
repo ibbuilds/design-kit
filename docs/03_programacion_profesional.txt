@@ -1,0 +1,490 @@
+WORKFLOW 3 — PROGRAMACIÓN PROFESIONAL
+SOFTWARE CORRECTO, MANTENIBLE Y VERIFICABLE CON AI
+
+Versión: 29 de septiembre de 2026. Manual personal para aprender y aplicar el workflow.
+Tú defines el comportamiento y evalúas la evidencia; la AI ayuda a implementar y verificar.
+
+CÓMO USAR ESTE MANUAL PARA APRENDER
+
+Aprende a dirigir un cambio por comportamiento y evidencia. Puedes delegar la
+implementación y el diagnóstico técnico; conserva claridad sobre qué debe pasar,
+qué no debe romperse y qué se comprobó. Usa primero la pasada guiada y consulta
+detalle proporcional al riesgo. Los prompts están después del ejemplo.
+
+TU PASADA GUIADA
+
+A. DESCRIBE QUÉ CAMBIA PARA QUIEN USA EL SOFTWARE.
+Escribe entrada/acción, resultado esperado, restricciones y errores importantes.
+Ejemplo: "Guardo la preferencia, reabro y sigue ahí; un fallo conserva el input".
+Un resultado observable guía mejor que una lista de clases o nombres de archivos.
+
+B. IDENTIFICA EL TIPO DE TRABAJO.
+¿Cambio pequeño, bug reproducible, feature acoplada o operación sensible?
+No necesitas diseñar toda la arquitectura para un ajuste local. Si puede perder
+datos, exponer permisos o cobrar dinero, pide evidencia y recuperación adecuadas.
+
+C. DELEGA CONTRA EL REPO REAL.
+Usa el prompt de inicio y pide conservar contratos/datos/UI aceptados. La AI
+inspecciona callers y convenciones. Si un plan importante decide algo que cambia
+el producto, evalúa esa decisión; no hace falta aprobar cada paso rutinario.
+
+D. PIDE UNA CAPACIDAD COMPLETA.
+Comprueba el recorrido solicitado, no solo la pantalla o función nueva. Pregunta:
+"¿Qué demuestra que esto persiste, integra el host o respeta el permiso?"
+La respuesta debe apuntar a evidencia/checks, no a un summary positivo.
+
+E. REVISA LO COMPROBADO Y LO PENDIENTE.
+Mira comportamiento y fallos relevantes. Pide explicación breve de los checks
+y sus límites: unit, integración, host/E2E, build y diff aportan cosas distintas.
+Si puedes, reproduce el path importante en el entorno autorizado. No necesitas
+convertirte en auditor de todo el código para exigir pruebas pertinentes.
+
+F. CORRIGE CON INFORMACIÓN REPRODUCIBLE.
+Ejemplo: "Con estas entradas y este estado, esperaba X y pasó Y; ocurre al reabrir".
+La AI distingue causas y repara la apoyada. Si repite parches sin entenderlo,
+pide cambiar evidencia/hipótesis antes de otra reescritura o escalada de modelo.
+
+G. CIERRA LA ENTREGA Y PRESERVA EL ESTADO ÚTIL.
+Comprueba alcance, checks y riesgos pendientes; entrega al destino autorizado.
+Guarda revisión, decisión/contrato, verificación y siguiente acción si falta algo.
+Merge, deploy y operación sobre datos tienen autorizaciones propias: expresa
+tu destino. Un permiso ya dado no exige repetirlo.
+
+VOCABULARIO MÍNIMO PARA LEER LA EVIDENCIA
+
+Contrato: qué promete una frontera y qué entradas/errores admite.
+Invariante: condición que debe seguir siendo verdadera.
+Oracle: resultado esperado fiable con el que un test detecta una respuesta errónea.
+Mock: sustituto controlado de una dependencia; prueba nuestra lógica bajo ese
+supuesto, sin demostrar que el proveedor real cumple.
+Integración: interacción entre fronteras reales relevantes del entorno de prueba.
+E2E: recorrido desde una acción de usuario hasta su resultado y estados importantes.
+Idempotencia: repetir una operación no produce un efecto extra no deseado.
+Rollback/recovery: cómo se restaura o recupera una situación tras un fallo.
+
+PARA PRACTICAR CUANDO TÚ QUIERAS
+
+Toma un cambio pequeño con un resultado comprobable. Escribe el éxito antes de
+delegar, observa la entrega y comprueba el path junto con un error relevante.
+Después identifica qué evidencia te permitió confiar y qué faltó. Aumenta la
+complejidad con requisitos y riesgos reales, sin instalar una fábrica para aprender.
+
+QUÉ VAMOS A CONSEGUIR
+
+Un cambio que cumpla el comportamiento solicitado, respete contratos/datos y
+se pueda comprobar en su entorno real, con recuperación y calidad de código
+proporcionales al riesgo. Optimizar consumo hasta entregar ese resultado útil.
+Un build verde, una función presente o un toast de éxito no prueban el producto.
+
+Usar para features, bugs, refactors, integraciones y mantenimiento. Backend puro
+omite referencias visuales. Si la feature tiene UI, aplicar Design Kit únicamente
+a esas decisiones y estados, conservando diseño aceptado y el mismo alcance.
+
+El recorrido: comportamiento verificable -> repo y fronteras -> diagnóstico o
+plan proporcional -> capacidad completa -> pruebas y revisión de evidencia/diff
+-> reparar -> entrega y recuperación correspondientes a la autorización.
+
+1. ENTENDER EL RESULTADO Y CLASIFICAR EL CAMBIO
+
+CAMBIO LOCAL: resultado acotado, fronteras conocidas y fácil verificación.
+Inspección -> modificación -> checks dirigidos -> diff. Sin PRD nuevo por rutina.
+BUG: reproducir síntoma, separar hipótesis, reparar causa y verificar original.
+FEATURE IMPORTANTE: definir comportamiento, contratos/estados, datos, errores,
+fronteras y evidencia; construir una capacidad completa antes de expandir.
+TRABAJO LARGO: pocas capacidades/milestones verificables y estado recuperable.
+RIESGO SENSIBLE: permisos, dinero, datos privados, borrado, migración o efecto
+externo. Añadir pruebas negativas y recuperación aunque el diff sea pequeño.
+
+Tamaño de diff y riesgo son cosas distintas. Separar requisitos, supuestos y
+extras propuestos. Preguntar por huecos que cambian materialmente el producto;
+inferir detalles rutinarios contra el repo y continuar trabajo independiente.
+
+2. INSPECCIONAR LO NECESARIO ANTES DE ELEGIR LA SOLUCIÓN
+
+Leer instrucciones del target, estado de Git, módulos/callers pertinentes,
+contratos existentes, schema/fixtures y comandos run/check. Preservar cambios
+del usuario y concurrentes. La inspección debe responder preguntas del cambio,
+no resumir todo el repo ni volcar todos los logs al chat.
+
+Identificar host y arquitectura reales. Un plugin de Obsidian tiene archivos y
+ciclo de vida; una web estática no necesita backend/login por defecto; un servicio
+transaccional puede requerir base de datos/transactions. Elegir abstracciones,
+colas, caché o infraestructura por requisito/bottleneck comprobado.
+
+Resultado: límites claros, punto de cambio y vía para comprobarlo. Si una
+integración incierta puede invalidar el diseño, comprobarla temprano con una
+acción pequeña autorizada. No construir todo antes de descubrir que el host
+o proveedor no admite el contrato.
+
+3. DEFINIR CONTRATOS Y EVIDENCIA SUFICIENTES
+
+Precisar lo relevante: entrada/salida, fuente de verdad, estados, invariantes,
+errores, permisos, persistencia e integración. Un cambio local puede expresarlo
+en una frase; una feature acoplada puede necesitar un mapa corto en el registro
+existente. No exigir tres documentos porque otra herramienta los genere.
+
+Para una feature importante usar filas como:
+Requisito -> frontera/contrato -> comprobación que podría refutarlo -> estado.
+Estados útiles: planeado, implementado, verificado, bloqueado.
+
+Ejemplo hipotético de guardar una nota:
+- Se recupera tras reabrir -> operación y almacenamiento -> guardar/reabrir/leer.
+- Otro usuario no la lee -> autorización confiable -> intento de acceso cruzado.
+- Un fallo no pierde texto -> estado/recovery -> fallo controlado, input y retry.
+- Reintento no duplica -> contrato/idempotencia -> repetir solicitud pertinente.
+Aplicar solo filas relevantes al producto, no imponer usuarios/servicio a un plugin
+local. Mantener requisitos del usuario separados de ideas del agente.
+
+Un check debe poder fallar ante una implementación incorrecta. Derivar el resultado
+esperado del contrato o fixture confiable, no copiar la lógica nueva en el test.
+TDD ayuda cuando especifica comportamiento; su secuencia no garantiza arquitectura
+ni mejores resultados. No añadir tests triviales para un ajuste reversible de
+bajo impacto si una comprobación existente/directa es suficiente.
+
+4. DIAGNOSTICAR UN BUG SIN REESCRIBIR POR INTUICIÓN
+
+Reproducir síntoma en el path/host real con las condiciones conocidas. Registrar
+entrada, estado y resultado esperado/observado. Formular hipótesis que puedan
+distinguirse mediante logs, trace, inspección o una prueba focalizada.
+
+Recoger la evidencia más pequeña que separa las causas; reparar la apoyada.
+Verificar el síntoma original y riesgos adyacentes. Si el test rojo falla por
+import/setup, todavía no demuestra el bug. Si no se puede reproducir, reportar
+el límite y qué evidencia falta; no afirmar una causa comprobada por especulación.
+
+Después de fallos repetidos, cambiar hipótesis o instrumentación. Evitar broad
+rewrites y escalar razonamiento ciegamente. Retirar diagnóstico temporal o
+conservarlo deliberadamente sin secretos/datos sensibles. Guardar causas recurrentes
+verificadas con condiciones/revisión y fuente; un diagnóstico antiguo se revalida.
+
+5. CONSTRUIR UNA CAPACIDAD COMPLETA Y ÚTIL
+
+Seguir la ruta pertinente de input/UI -> estado/lógica -> efectos/servicio ->
+datos/host -> respuesta -> éxito/error/recuperación. Autorización en la frontera
+confiable cuando aplica. No es construir todas las capas imaginables: es demostrar
+la capacidad solicitada cruzando sus fronteras reales.
+
+Aplicar convenciones del target, nombres claros, cohesión y una fuente de verdad
+por concepto. Reutilizar dependencias/componentes fiables y mantener cambios
+relacionados. No introducir abstracciones porque parecen empresariales ni hacer
+un refactor amplio de zonas que no impiden el cambio.
+
+Si hay UI aceptada, preservar su identidad/composición al integrar. Completar
+carga, vacío, error/invalidación, estados de sesión y success donde correspondan.
+Un prototipo puede usar mocks etiquetados; un claim de integración real necesita
+evidencia de esa integración. Una demo browser no prueba load/unload del plugin.
+
+6. VERIFICAR POR FRONTERA Y POR RIESGO
+
+Elegir checks que aportan evidencia distinta:
+- Unit: lógica e invariantes aislados con entradas representativas.
+- Integración: contratos y fronteras reales del entorno de prueba autorizado.
+- E2E/host: recorrido crítico del usuario, efecto real y recovery pertinente.
+- Lint/types/build: propiedades estáticas/compilación y convenciones requeridas.
+- Diff/revisión: alcance, contratos, dependencias y riesgo que los tests no captan.
+
+Ejecutar comprobaciones dirigidas primero y todos los checks requeridos por el
+proyecto. Ampliar cuando nuevo código, fallos o alcance crean riesgo mayor. Tras
+reparar, repetir lo invalidado; no rerun total por cada cambio de una línea.
+
+Comprobar el oracle, fixtures y condiciones. Un mock exitoso no verifica al
+proveedor; una captura no comprueba persistencia; cobertura no mide efectividad.
+No borrar tests, debilitar assertions, esconder contenido o marcar un fallo como
+omitido para aparentar completion. Un bloqueo externo no se declara aprobado.
+
+Para frontend, comprobar render y los controles reales además de tests; keyboard,
+focus, touch y recovery según alcance. Locators y assertions deben apuntar a
+comportamiento visible y estable. Estado independiente y datos controlados evitan
+que tests pasen por residuos de otro caso.
+
+7. SEGURIDAD, DATOS Y RECUPERACIÓN DONDE CORRESPONDA
+
+Identificar fronteras de confianza y consecuencias. Aplicar requisitos relevantes
+de OWASP ASVS para web; mencionar el estándar no certifica seguridad.
+
+Casos típicos, solo cuando están presentes:
+- Autorización confiable y acceso cruzado entre usuarios/tenants.
+- Validación de entradas, queries parametrizadas, sesiones y secretos protegidos.
+- Logs sin credenciales/datos privados; redacciones cuando se usa runtime evidence.
+- URL externas: destinos internos, redirects y exposición de credenciales.
+- Archivos: rutas acotadas, originales protegidos y conflictos concurrentes.
+- Datos: constraints, compatibilidad de schema, migración y rollback/recovery.
+- Operaciones repetidas: reintento, idempotencia, transacciones y efectos parciales.
+
+La recuperación puede ser restore, forward fix o rollback según operación;
+describir lo que es viable, no prometer revertir datos irreversibles. Preparar
+cambios, validación y plan concreto antes de ejecutar una operación sensible.
+Usar entorno/datos de prueba autorizados para inducir fallos; no probar borrados,
+pagos o mutaciones en producción sin autorización correspondiente.
+
+8. RENDIMIENTO Y MANTENIBILIDAD CON EVIDENCIA
+
+Medir el bottleneck sospechado con datos representativos y condiciones conocidas.
+Optimizar contra el presupuesto del producto: latencia, uso de memoria, requests,
+carga/interaction, queries o recursos del host pertinentes. No declarar una mejora
+por preferir una estructura ni añadir una plataforma de observabilidad por un bug.
+
+Comprobar concurrencia, cancelación, stale data, cleanup de listeners/escenas,
+load/unload y reapertura cuando afectan al producto. Una caché introduce invalidación;
+una cola añade estados/reintentos; adoptar su coste solo cuando es útil.
+
+Mantener fronteras claras y notas cerca de la fuente pertinente. No documentar
+cada paso narrativo ni repetir contratos en tres sitios. El siguiente cambio debe
+poder encontrar el dato fiable sin cargar el historial entero.
+
+9. REVISAR EL RESULTADO, NO SOLO EL RESUMEN DEL AGENTE
+
+Contrastar requisito, código/diff y artefactos/checks crudos. Revisar callers y
+paths negativos relevantes. Buscar permiso faltante, datos inconsistentes,
+contrato roto, test débil o feature parcial que un summary positivo ocultaría.
+
+Una segunda pasada del mismo agente puede detectar errores, pero no es revisión
+independiente. Usar revisor adicional cuando se pidió, lo exige el target o hay
+riesgo y disponibilidad/autorización; no activar un comité de agentes por defecto.
+Complejidad y ambición no obligan a múltiples modelos ni best-at-k tournaments.
+
+Si el riesgo sigue sin evidencia suficiente, exponerlo y resolverlo dentro del
+alcance. Clasificar estados honestamente: implementado no es verificado; verificado
+no es aceptado por ti ni preparado para todos los escenarios de producción.
+
+10. CERRAR Y ENTREGAR AL DESTINO AUTORIZADO
+
+Cierre: comportamiento solicitado y recuperación importante funcionan; checks
+requeridos pasan; diff respeta contratos/datos/alcance; regresiones materiales
+resueltas; host/servicios no probados y bloqueos quedan explícitos.
+
+Para release autorizado, aplicar checks del target: configuración/migraciones,
+routes/servicios, manejo de secretos, verificación posentrega y recuperación
+relevantes. No es una lista universal de infraestructura para una función pequeña.
+Autorización de branch/main no equivale por sí sola a deploy ni a borrar datos.
+Si ya autorizaste una acción, no preguntar otra vez; si falta una autorización
+material, presentar el cambio concreto y su evidencia antes de solicitarla.
+
+Entregar qué cambió, por qué, evidencia/checks reales y limitaciones. Un bloqueo
+de facturación de CI se reporta como tal; no culpa al código ni prueba CI aprobado.
+Completar lo independiente mientras se resuelve. No inventar un PR si elegiste
+main/branch ni sustituir una capacidad terminada por un plan.
+
+11. TRABAJO LARGO Y CONTINUIDAD
+
+Dividir por capacidades útiles y dependencias, con evidencia por milestone.
+Mantener handoff compacto en el registro existente: objetivo, revisión/código,
+decisiones, contratos, comandos, checks, riesgos pendientes y siguiente acción.
+Separar decisiones cerradas de hipótesis. No reiniciar cada cierto número fijo de
+tokens ni copiar todo el historial a un archivo permanente.
+
+Instrucciones/versiones se corrigen por un fallo comprobado y con revisión; no
+auto-reescribir reglas con cada resultado ni instalar observer/memory service.
+Las charlas recientes de software factories aportan proporcionalidad, feedback
+y coste/calidad; su arquitectura empresarial no es requisito para este flow.
+
+EJEMPLO HIPOTÉTICO: FEATURE DE GUARDADO
+
+Pedido: guardar una preferencia y recuperarla tras reabrir la app.
+Inspección: ya hay storage y módulo de settings; reutilizarlos.
+Contrato: valor válido, resultado persistido, default compatible, error conserva
+input y retry no duplica efectos. Identificar permisos solo si el producto los tiene.
+Implementación: una capacidad completa, no solo toggle y toast.
+Verificación: escribir, reabrir/leer, valor inválido, fallo controlado y retry;
+comprobar consumidores que leen esa preferencia y review del diff.
+Entrega: evidencia del recorrido y checks; proveedor/host pendiente si no se probó.
+No añadir autenticación, una cola o backend nuevo sin un requisito.
+
+PROMPT PARA INICIAR TU ENCARGO
+
+Implementa [capacidad/cambio] en este proyecto.
+Usuario/resultado: [comportamiento observable].
+Preserva: [contratos, datos, UI aceptada y restricciones].
+Casos importantes: [errores, permisos, recuperación o concurrencia pertinentes].
+Fuera de alcance: [límites reales]. Entrega autorizada: [local/branch/main/deploy].
+Inspecciona repo y callers; usa el procedimiento de programación instalado.
+Define evidencia suficiente, implementa una capacidad completa, ejecuta checks
+pertinentes y revisa resultado/diff. Repara brechas materiales sin extras inventados.
+Reporta qué cambió, por qué, pruebas reales, límites y recuperación aplicable.
+
+Con instalación --with-software, el puntero raíz dirige a SOFTWARE.md.
+Si no está activo, leer .agents/skills/design-kit/SOFTWARE.md tras instalarlo.
+No inventar una invocación $software ni usar $design-kit para backend puro.
+Para un bug pequeño puedes sustituir la primera línea por "Corrige [síntoma]".
+
+PROMPTS PARA BUGS, REVIEW Y CONTINUACIÓN
+
+Corrige [síntoma]. Condiciones: [input/host/estado]. Esperado: [resultado].
+Reproduce el path real, distingue causas con evidencia mínima, repara la apoyada
+y verifica síntoma original y riesgos adyacentes. Conserva [contratos/UI/datos].
+Entrega [destino]; reporta causa verificada o incertidumbre concreta y checks.
+
+Revisa [diff/feature] sin editar. Contrasta requisitos, callers, raw checks y
+fallos/permisos relevantes. Prioriza defectos materiales con ubicación, impacto
+y evidencia. No declarar producción por un build ni actualizar archivos/baselines.
+
+Continúa desde [revisión/estado]. Ya está verificado [evidencia]. Pendiente: [X].
+Preserva [contratos/decisiones]. Completa la capacidad y recheck de lo invalidado;
+no replantees arquitectura ni repitas verificaciones válidas sin una razón.
+
+PREPARACIÓN: SOLO AL INSTALAR O ACTUALIZAR EL KIT
+
+Trabajar en el repositorio objetivo. Design Kit es una biblioteca separada;
+tenerla al lado o escribir su nombre no asegura que el agente la esté usando.
+Requisitos del instalador: Python 3.9+ y un checkout actualizado del kit.
+
+Desde el checkout de Design Kit:
+python scripts/install.py "/ruta/al/proyecto" --with-software
+python scripts/install.py "/ruta/al/proyecto" --check
+
+Ejemplo de forma en Windows; reemplazar ambas rutas por las reales:
+python "C:\ruta\design-kit\scripts\install.py" "C:\ruta\proyecto" --with-software
+python "C:\ruta\design-kit\scripts\install.py" "C:\ruta\proyecto" --check
+
+El instalador copia el paquete a .agents/skills/design-kit/ y añade un puntero
+al archivo raíz activo: AGENTS.override.md no vacío, o AGENTS.md en otro caso.
+Preserva instrucciones ajenas y rechaza sobrescribir recursos gestionados que
+modificaste localmente. Revisar esos cambios si bloquean una actualización.
+--with-software activa también la entrada de programación; las reinstalaciones
+ordinarias conservan esa elección. --check comprueba archivos sin escribirlos;
+no comprueba por sí mismo que el modelo invocó la skill o puede ver un render.
+
+Actualizar main no actualiza sus copias instaladas: repetir el instalador sobre
+cada proyecto que quieras actualizar. Si Codex no lista la skill, reiniciar y
+seleccionar $design-kit explícitamente; evitar dos copias con el mismo nombre.
+El instalador no instala MCP, navegadores ni dependencias y no cambia tu modelo,
+esfuerzo o cuota. Kit: https://github.com/ibbuilds/design-kit
+
+MODELO, CONTEXTO Y CONSUMO
+
+Objetivo: gastar lo menos posible para cumplir la calidad pedida, contando
+investigación, implementación, verificaciones y reparaciones. Evitar consumo
+innecesario; mantener la evidencia que puede descubrir un error importante.
+
+GPT-6.1 Sol + Standard es la propuesta principal. Medium sirve como punto de
+partida para trabajo acotado con información y criterios claros; Low para un
+cambio sencillo y fácilmente comprobable; High para ambigüedad importante,
+arquitectura acoplada o diagnóstico difícil donde pueda resolver un problema
+concreto. Xhigh/Max o Astra se justifican por un problema no resuelto o tu
+elección explícita. El agente respeta tu ajuste; no cambia automáticamente el
+modelo ni baja tu razonamiento. Estos son ajustes recomendados, no un óptimo
+medido de Sol. Más razonamiento no sustituye mejores datos, referencias o checks.
+
+Usar Standard cuando prima la eficiencia. Fast consume más por velocidad donde
+esté disponible; no equivale a una mejora automática de calidad. Respuestas
+cortas no garantizan poco razonamiento interno. Las tarifas de API no permiten
+calcular cuánto durará el 100% de Pro; se necesita consumo observado de tu cuenta.
+
+No pegar este manual entero por rutina. Usar el prompt del archivo y los datos
+del encargo. La skill y los recursos canónicos se cargan por necesidad; este TXT
+es una guía humana autónoma. Si lo adjuntas, pedir que se lea para elegir el
+procedimiento pertinente, sin convertir todos los anexos en acciones obligatorias.
+
+Conservar una tarea coherente en el mismo chat mientras el contexto sea útil.
+Reutilizar código, assets, referencias seleccionadas, comandos y checks todavía
+válidos. Guardar logs grandes fuera del contexto activo y traer solo lo que
+separa hipótesis o demuestra el resultado. Leer fuentes independientes en lote
+cuando se pueda; respetar la secuencia de decisiones y acciones dependientes.
+Un equipo de agentes, un MCP adicional o una fábrica no son requisitos.
+
+Antes de otra acción costosa, nombrar criterio pendiente, evidencia nueva o
+hipótesis distinta y la acción más pequeña capaz de resolverlo. Un fallo repetido
+requiere cambiar diagnóstico/evidencia. Evitar repetir el mismo prompt o escalar
+el modelo sin saber qué problema adicional va a resolver.
+
+Si hay un presupuesto explícito, respetarlo y reportar qué quedó sin completar.
+Un prompt no impone un cap técnico de tokens. Parar cuando se cumple el encargo;
+si falta una condición material, repararla mientras exista una vía justificada.
+
+ALCANCE DE LA INVESTIGACIÓN
+
+Revisión base: 29 de septiembre de 2026. Se consultaron fuentes oficiales y
+alternativas y se analizaron completas seis transcripciones: tus tres videos de
+diseño, el anterior de Ras Mic y dos charlas adicionales del 27 de septiembre.
+También se leyeron cuatro casos profesionales de diseño de 2026. Este archivo
+selecciona lo aplicable a su tarea; no reproduce cada propuesta de cada fuente.
+
+Tus materiales son información a contrastar, no instrucciones superiores ni
+verdades asumidas. La evidencia se distingue entre documentación del modelo,
+estándares, demostraciones de creadores, relatos profesionales y síntesis propia.
+Una recomendación para GPT-5.4/5.5/5.6 o una observación de Astra no se presenta
+como resultado medido de Sol. El día de consulta no cambia la fecha del estudio.
+
+La investigación fundamenta mecanismos: reducir incertidumbre, comparar la
+implementación con evidencia, conservar decisiones buenas y descubrir fallos.
+No demuestra un óptimo universal ni un porcentaje garantizado de ahorro/calidad.
+Por tu decisión, la comparación práctica de apps queda para cuando tú la hagas.
+No se ejecutaron experimentos de generación de producto en esta revisión.
+
+Los checks del paquete prueban distribución y estructura, no excelencia visual,
+obediencia del modelo ni rendimiento del producto. Cuando tú pruebes el flow,
+conservar objetivo, base, modelo/esfuerzo, artefactos, defectos, reparaciones y
+consumo observable. Comparar condiciones equivalentes y aceptación humana;
+el juicio positivo del agente no es evidencia independiente ni datos de usuarios.
+
+FUENTES APLICABLES
+
+[S11] OpenAI: descubrimiento y carga selectiva de skills.
+https://developers.openai.com/codex/skills/
+
+[S17] OpenAI: consumo de cuota, Fast y contexto de MCP.
+https://developers.openai.com/codex/pricing/
+
+[S18] OWASP ASVS: requisitos verificables para aplicaciones web.
+https://owasp.org/projects/asvs
+
+[S22] GPT-6.1 Sol: capacidades, esfuerzos, endpoints y tarifas API.
+https://developers.openai.com/api/docs/models/gpt-6.1-sol
+
+[S23] Guía GPT-6: autonomía, prioridad de instrucciones, calibración de pruebas
+y selección de la familia. Las observaciones de comportamiento se describen para
+Astra; se proponen como punto de partida para evaluar otros modelos de la familia.
+https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6.1-sol
+
+[S24] Razonamiento: esfuerzo, verificación, tokens internos, persistencia y pro mode.
+https://developers.openai.com/api/docs/guides/reasoning
+
+[S27] OpenAI: Codex long-horizon experiment; límites explícitos de producción.
+https://developers.openai.com/blog/run-long-horizon-tasks-with-codex.md
+
+[S28] OpenAI: harness engineering, caso de producto con usuarios; 11-02-2026.
+https://openai.com/index/harness-engineering/
+
+[S29] GitHub Spec Kit: README actual abierto, SDD/convergencia y ruta de bugs.
+https://github.com/github/spec-kit/blob/main/README.md
+
+[S30] Kiro Feature Specs: requisitos o diseño técnico primero; actualización 04-08-2026.
+https://kiro.dev/docs/specs/feature-specs
+
+[S31] Anthropic: diseño/evaluación y desarrollo de aplicaciones; 24-03-2026.
+https://www.anthropic.com/engineering/harness-design-long-running-apps
+
+[S32] Anthropic: harness largo anterior y posterior separación del runtime.
+https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+https://www.anthropic.com/engineering/managed-agents
+
+[S33] Cursor: planificación proporcional, contexto, pruebas, review y debugging; 09-01-2026.
+https://cursor.com/blog/agent-best-practices
+
+[S34] Google: evals de comportamiento complementarios a E2E; 09-09-2026.
+https://developers.googleblog.com/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents/
+
+[S38] Playwright: comportamiento visible, aislamiento, locators y assertions.
+https://playwright.dev/docs/best-practices
+
+[S39] Thoughtworks: análisis SDD histórico y exploración TDD de alcance limitado.
+https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html
+https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html
+
+[S40] Requisitos de accesibilidad WCAG 2.2 y estándar ASVS 5.0.
+https://www.w3.org/WAI/WCAG22/quickref/
+https://github.com/OWASP/ASVS
+
+[S41] OpenAI: evaluación sistemática de skills; traces/artefactos y criterios útiles.
+https://developers.openai.com/blog/eval-skills.md
+
+[S46] Suraj Gupta/Warp: Building Self-Improving Agent Software Factories; 27-09-2026. Transcripción completa exportada y analizada.
+https://www.youtube.com/watch?v=TN3mj92oZ8I
+
+[S47] Zach Lloyd/Warp: Software Engineering Is Becoming Factory Engineering; 27-09-2026. Transcripción completa exportada y analizada.
+https://www.youtube.com/watch?v=tUPPVhBBcoM
+
+[S48] OpenAI: Evaluation best practices; objetivos y criterios específicos, comparación y calibración experta.
+https://developers.openai.com/api/docs/guides/evaluation-best-practices
+
+FIN DEL WORKFLOW.

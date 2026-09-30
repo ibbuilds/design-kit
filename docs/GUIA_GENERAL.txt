@@ -1,5 +1,15 @@
 GUÍA GENERAL: DISEÑO Y PROGRAMACIÓN CON GPT-6.1 SOL
 
+EDICIÓN ACTUAL PARA APRENDER Y APLICAR: TRES MANUALES AUTÓNOMOS
+01_diseno_desde_cero.txt
+02_diseno_sobre_tu_base.txt
+03_programacion_profesional.txt
+Cada manual incluye tu pasada guiada, decisiones, procedimiento explicado,
+ejemplo, prompts, instalación, eficiencia y fuentes pertinentes. Están en docs/
+del repositorio y se entregan también como TXT separados. Este archivo general
+se conserva como referencia consolidada, catálogo e historial de investigación.
+SKILL.md y SOFTWARE.md siguen siendo las instrucciones canónicas del agente.
+
 Versión: 29 de septiembre de 2026, investigación ampliada y transcripciones completas.
 Objetivo: diseño excepcional al nivel de referencias Godly/Awwwards pertinentes y software sólido, con el menor consumo total razonable, incluyendo retrabajo.
 

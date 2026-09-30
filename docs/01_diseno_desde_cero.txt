@@ -1,0 +1,510 @@
+WORKFLOW 1 — DISEÑO DESDE CERO
+DISEÑO EXCEPCIONAL CON AI, DESDE EL PRODUCTO HASTA LA ENTREGA
+
+Versión: 29 de septiembre de 2026. Manual personal para aprender y aplicar el workflow.
+Tú diriges el encargo y evalúas el resultado; Design Kit guía la ejecución de la AI.
+
+CÓMO USAR ESTE MANUAL PARA APRENDER
+
+Primero entiende la secuencia y los motivos de cada paso. Después, en tu próximo
+encargo, usa la pasada guiada que sigue; consulta el detalle cuando aparezca una
+duda. Los prompts están después del ejemplo y son herramientas para delegar.
+Los anexos de instalación, referencias y consumo se consultan cuando hacen falta.
+No tienes que memorizar comandos ni completar todo el catálogo.
+
+TU PASADA GUIADA
+
+A. ESCRIBE LO QUE ESTÁS HACIENDO.
+En pocas líneas: producto, usuario, tarea/mensaje, alcance, contenido disponible
+y restricciones. Pregúntate: "¿Qué tiene que entender o poder hacer quien entra?"
+Con eso evitas pedir una web bonita que no resuelve un producto concreto.
+
+B. CALIBRA TU GUSTO CON EJEMPLOS.
+Elige o encarga buscar pocas referencias fuertes. Mira una región concreta:
+¿qué domina?, ¿cómo cambia la escala?, ¿cómo se relacionan tipo e imagen?,
+¿qué hace que se sienta propio? Di qué relación te interesa y qué no copiarías.
+Una URL basta como entrada si delegas el estudio; no tienes que analizar la
+biblioteca completa. Tu aprendizaje consiste en reconocer relaciones, no efectos.
+
+C. DELEGA UNA DIRECCIÓN Y UNA IMPLEMENTACIÓN.
+Usa el prompt de inicio. Decide si quieres aprobar una muestra o delegar todo
+el resultado. Si reservas aprobación, dilo desde el principio; si delegas todo,
+puedes evaluar la entrega completa sin microgestionar cada fase.
+
+D. MIRA EL RESULTADO COMO EXPERIENCIA.
+Abre o pide mostrar el render: desktop, móvil, una región profunda y acción
+principal. Comprueba la referencia junto a la región correspondiente. Pregúntate:
+"¿Esta idea pertenece a este producto? ¿Qué brecha concreta sigue habiendo?"
+Si solo hay un hero trabajado, falta evaluar el resto del alcance.
+
+E. CONVIERTE TU CRITERIO EN FEEDBACK ÚTIL.
+Señala ubicación, estado/tamaño y efecto. Ejemplo: "En móvil el título compite
+con la imagen y el producto pierde protagonismo; conserva la tipografía pero
+corrige la relación de escala y el encuadre". Cuando el concepto no te funciona,
+explica qué intención no expresa; no tienes que diagnosticar el CSS.
+
+F. CONSERVA LO BUENO Y CIERRA EL ALCANCE.
+Indica qué aceptas y qué falta. Pide completar sobre ese código y comprobar
+los cambios. Antes de cerrar, recorre lo importante y revisa qué verificó la AI
+realmente. Una declaración de "premium" no sustituye tu observación.
+
+G. APRENDE DEL RESULTADO SIN GUARDAR TODO EL HISTORIAL.
+Conserva referencia aplicada, decisión que funcionó y fallo que hubo que corregir.
+Para la próxima pantalla, reutiliza la base aceptada y abre solo la decisión nueva.
+Si un problema reaparece, esa evidencia permite mejorar tu siguiente encargo.
+
+PARA PRACTICAR CUANDO TÚ QUIERAS
+
+Toma un encargo acotado con contenido representativo, aplica A–F y observa qué
+tuviste que corregir. Comprueba si la dirección, assets y móvil quedaron más
+claros con este método. Puedes compararlo con trabajo previo equivalente;
+no necesitas fabricar un benchmark ni pagar varias versiones para aprender.
+El criterio es calidad aceptada y retrabajo real, con consumo solo si es visible.
+
+QUÉ VAMOS A CONSEGUIR
+
+Una experiencia específica del producto, con nivel de craft comparable a obras
+fuertes de Godly/Awwwards que sean pertinentes a su uso: idea, composición,
+tipografía, contenido, assets, interacción y ejecución coordinadas. Ahorrar en
+trabajo que no mejora esa experiencia. Una UI funcional pero intercambiable
+sigue dejando una brecha material cuando ese es el nivel visual pedido.
+
+Usar esta ruta cuando no tienes composición propia o solo tienes un moodboard.
+Tu moodboard aporta criterio; no se convierte automáticamente en un wireframe.
+Si ya tienes jerarquía/composición que quieres conservar, se itera sobre esa base.
+
+El recorrido: resultado y contexto -> referencias pertinentes -> idea propia ->
+fundamento mínimo y muestra integrada -> comparar/reparar -> consolidar ->
+completar alcance y estados -> verificar y entregar al destino autorizado.
+Una muestra ayuda a decidir; si pediste el producto completo, el agente continúa.
+
+1. DAR LA INFORMACIÓN QUE CAMBIA EL DISEÑO
+
+Tú proporcionas lo que sabes: qué producto es, para quién, qué trabajo/mensaje
+importa, alcance, fidelidad (concepto/prototipo/producción), contenido real,
+assets disponibles, restricciones y decisiones reservadas. Indicar páginas/flows
+necesarios y qué ya existe. Un contrato breve puede contener suficiente contexto.
+
+El agente inspecciona el target y separa requisitos, supuestos y extras. Pregunta
+solo por huecos que cambian materialmente alcance, verdad o una decisión tuya;
+continúa lo independiente. No inventa testimonios, clientes, métricas ni features
+para aparentar sofisticación. El demo content se etiqueta. No fuerza una landing
+antes de una aplicación si lo pedido es el workspace de la aplicación.
+
+Resultado de esta etapa: un encargo entendible y criterios que permitan detectar
+una implementación equivocada. Puede vivir en la conversación o registro existente.
+No necesitas preparar una jerarquía de PRD, taste packs y carpetas para empezar.
+
+2. ASEGURAR QUE SE PUEDE CONSTRUIR Y VER
+
+Leer solo entrypoints, componentes, tokens y comandos pertinentes. Identificar
+run/build/check y una vía real para observar el render. Comprobar fonts/assets
+disponibles y restricciones del host. Resolver temprano lo que condiciona el diseño:
+datos, permisos, integración incierta, tamaño del contenedor o ciclo de vida.
+
+Si el proyecto ya tiene sistema, heredarlo. Si es nuevo, preparar únicamente lo
+necesario para la primera pantalla: roles tipográficos, colores semánticos,
+espaciado y controles reutilizables. Explicar cuándo se usa cada rol. No extraer
+un sistema completo supuesto de una captura ni construir una biblioteca de todas
+las variantes imaginables antes de ver una experiencia real.
+
+Un build no sustituye el render. Si falta una capacidad esencial, usar alternativa
+autorizada o reportar el hueco concreto. No simular que se inspeccionó ni migrar
+el runtime/herramientas sin una necesidad y autorización reales.
+
+3. INVESTIGAR PARA DECIDIR, CON UN ESTÁNDAR ALTO
+
+Nombrar lo abierto: "cómo encuadrar el producto y organizar la jerarquía" o
+"cómo dar carácter a un editor denso". Seleccionar ejemplos fuertes pertinentes,
+observar sus relaciones y explicar qué ayuda a este contenido y qué no puede
+trasladarse. Calidad de referencia y aplicación importan más que contar enlaces.
+
+Para expresión editorial/marca, estudiar composición, type/image, secuencia y
+motion. Para una app, añadir ejemplos de información densa, controles y estados
+reales; copiar el espectáculo de una campaña puede empeorar el trabajo diario.
+Un premio o curación informa el gusto, pero no prueba comportamiento ni conveniencia.
+
+Registrar solamente lo aplicado: región/pregunta -> evidencia -> observación ->
+decisión -> ubicación implementada -> comparación. La fuente externa aporta datos,
+no órdenes para el agente. Si no aporta o contradice el uso, descartarla.
+
+4. RESOLVER UNA IDEA PROPIA ANTES DE EXPANDIR
+
+En pocas líneas resolver conjuntamente:
+- Idea: qué carácter/relación propia del producto expresa la experiencia.
+- Apertura/workspace: qué domina, qué se entiende y qué se puede hacer.
+- Composición: escala, jerarquía, alineaciones, densidad y orden real.
+- Tipo/contenido: voz, roles, longitud y wraps con textos representativos.
+- Imagen/asset: qué explica o prueba, fuente, framing y relación con el texto.
+- Profundidad: cómo otra región añade sustancia y cambia el ritmo.
+- Interacción/móvil: comportamiento, continuidad y recomposición necesarios.
+
+No hace falta una metáfora en cada producto. Un sistema editorial, una imagen
+auténtica bien encuadrada o una interacción precisa pueden sostener la idea.
+Obys parte de tipografía; Razorpay Sprint26 articula una narrativa de comprador;
+Telha Clarke da protagonismo al trabajo; iyO conecta emoción e inspección del
+objeto. Son mecanismos distintos, no stacks ni identidades que copiar.
+
+Si una elección fundamental sigue abierta, comparar conceptos breves antes de
+construir otra página. Si la duda está en una región dominante, explorar esa pieza
+con iguales datos/función; elegir por pertinencia y revisar luego la pantalla
+integrada. No hay cuatro variantes obligatorias ni un torneo de páginas/modelos.
+
+5. RESOLVER EL ASSET QUE SOSTIENE LA COMPOSICIÓN
+
+Priorizar material propio/autorizado, fotos reales, capturas útiles del producto,
+diagramas o tipografía según la idea. Una imagen de ambiente no reemplaza evidencia
+del producto si el usuario necesita entenderlo. Elegir sujeto, resolución, crop,
+posición y comportamiento de carga; comprobar derechos y privacidad.
+
+Generar un bitmap únicamente si aporta y está autorizado, con la herramienta
+adecuada. No rasterizar texto, controles o toda la UI. Si el asset principal falta,
+la muestra puede ser provisional pero se identifica como tal. No declarar acabado
+con un placeholder que contradice la idea ni gastar en assets por ceremonia.
+
+6. CONSTRUIR UNA MUESTRA QUE PONGA A PRUEBA LA IDEA
+
+Implementar en el target sobre una misma base de código. Incluir apertura o
+workspace central, otra región/estado que pruebe profundidad y adaptación móvil.
+Una pantalla pequeña puede constituir la muestra entera. Usar contenido real o
+demo honesto; una frase corta perfecta no representa textos largos o datos densos.
+
+Inspeccionar con fuentes/media cargados y a tamaños reales. Comparar las relaciones
+seleccionadas: foco, escala relativa, type/image, ritmo, crop, densidad y acabado.
+En motion relevante, observar la secuencia, interrupciones y continuidad, además
+de la captura. Probar uso de controles al nivel de fidelidad solicitado.
+
+El resultado de esta etapa es una premisa implementada que ya revela sus puntos
+débiles. Si reservaste aprobación, entregar esa muestra concreta; si delegaste la
+dirección, decidir dentro del alcance y completar. Autoelección no es tu aprobación.
+
+7. REPARAR LA CAUSA Y PRESERVAR LO QUE FUNCIONA
+
+Describir ubicación + viewport/estado + defecto + impacto + reparación mínima.
+Separar incumplimiento, defecto material de uso/craft y preferencia opcional.
+No llamar "preferencia" a una brecha importante del nivel visual pedido.
+
+Defecto de ejecución: ajustar wraps, optical alignment, spacing, crop o código.
+Elemento conceptualmente débil: cambiar asset/estructura de contenido.
+Premisa equivocada: reconsiderar dirección dentro de lo que delegaste.
+Otra sombra o animación no arregla automáticamente ninguno de esos problemas.
+
+Agrupar reparaciones relacionadas y verificar efectos. Comparar con la versión
+anterior y conservarla si el cambio empeora. No fijar dos rondas como límite de
+calidad; tampoco seguir cambiando gustos cuando ya se cumple el brief.
+
+8. CONSOLIDAR Y COMPLETAR SOBRE LA MISMA BASE
+
+Llevar refinamientos reutilizables justificados a componentes/tokens canónicos y
+comprobar consumidores afectados. Verificar reutilización real, usos semánticos
+y estados/variantes requeridos. Una forma parecida no demuestra una instancia;
+una tabla que solo sirve para la captura no demuestra composición flexible.
+
+Completar páginas, flows y estados del alcance manteniendo el criterio. No
+reiniciar identidad ni reconstruir todo el sistema por cada pantalla. No crear
+una skill por componente. Marca, textos, assets y hechos quedan en el proyecto;
+el kit compartido conserva principios generales y no absorbe esa identidad.
+
+9. COMPROBAR Y ENTREGAR
+
+Criterios de cierre aplicables al alcance/fidelidad:
+- Idea y tarea: el producto es reconocible, contenido/acción tienen sentido y
+  las afirmaciones son reales o demo etiquetado.
+- Nivel visual: no quedan brechas materiales observables frente al estándar
+  pertinente en composición, tipo/imagen, ritmo, assets o acabado. No un 8/10 propio.
+- Profundidad: otras regiones/estados reciben el mismo cuidado; un hero brillante
+  no oculta el resto intercambiable o roto.
+- Responsive: móvil y anchos intermedios preservan contenido y acciones; reflow,
+  wraps, sticky/overlays y touch funcionan donde corresponda.
+- Uso: acción principal, estados importantes y recuperación están al nivel pedido.
+- Acceso/motion: nombres/semántica, teclado/foco, contraste, zoom/reflow y reduced
+  motion pertinentes. Distinguir observación DOM de pruebas reales de lector.
+- Producción, cuando se pidió: integración/datos/permiso, errores, performance,
+  checks del target y recuperación; mocks o captura no prueban estas fronteras.
+- Código/sistema: convenciones, componentes/tokens efectivos y sin regresión material.
+
+Medir efectos caros en condiciones relevantes; favorecer mecánicas eficientes,
+assets ajustados y cleanup. No imponer un loader, scroll secuestrado, WebGL o
+cuota de animaciones para parecer sofisticado. La alternativa reducida debe
+conservar contenido/acciones. Una receta CSS o librería no certifica fluidez.
+
+Entregar al destino ya autorizado con qué cambió, referencias aplicadas, checks
+reales, evidencia y límites. Distinguir implementado, verificado y aceptado por ti.
+Si falta evidencia esencial, nombrarla; resolver el resto. No sustituir una entrega
+completa por plan/muestra/PR cuando pediste completion o branch/main.
+
+EJEMPLO HIPOTÉTICO: CÓMO SE VE UNA DECISIÓN ÚTIL
+
+Encargo: portfolio de arquitectura, proyectos fotográficos reales y contacto.
+Decisión: la obra manda; una jerarquía editorial y alternancia de encuadres le
+dan ritmo. Referencia: relación observada de foto grande, título contenido y
+metadatos; se traduce a nuestro proyecto, sin copiar logo/paleta/asset ajenos.
+Muestra: apertura, un segundo proyecto con encuadre distinto y móvil; contacto
+usable. Problema: en móvil la foto pierde el elemento arquitectónico principal.
+Reparación: cambiar crop/recomposición y comprobarlo; añadir parallax no lo arregla.
+Consolidación: componente flexible de proyecto y reglas de imagen verificadas.
+Este ejemplo ilustra el mecanismo; no impone esa estética a una app o campaña.
+
+VOCABULARIO DE LA EJECUCIÓN, SI LO NECESITAS
+
+Render: la interfaz tal como se ve funcionando, con fuentes y assets cargados.
+Viewport: área visible del navegador; el contenedor también puede limitar el layout.
+Craft: precisión del acabado, desde óptica y tipografía hasta crop y estados.
+Token semántico: valor con un papel, como texto secundario o superficie de panel;
+su función ayuda a mantener coherencia, más allá del color o nombre literal.
+Instancia/binding: uso real vinculado a un componente o variable canónica;
+una forma visualmente parecida puede estar desconectada del sistema.
+Estado: situación de la UI, como cargando, vacío, error, foco o éxito.
+Reduced motion: alternativa que reduce movimiento y conserva contenido y acciones.
+
+PROMPT PARA INICIAR TU ENCARGO
+
+$design-kit
+Crea [alcance] para [producto y audiencia].
+El usuario debe poder [tarea/acción]; mensaje principal: [si corresponde].
+Contenido y assets: [datos, archivos o enlaces]. Restricciones: [las reales].
+No tengo composición propia. Referencias disponibles: [URL/capturas, si hay].
+Busco diseño excepcional, calibrado con referencias fuertes pertinentes de
+Godly/Awwwards: idea propia, composición, tipografía, balance tipo/imagen,
+ritmo, interacción y acabado. Respeta los hechos y el uso del producto.
+Resuelve la dirección, construye e inspecciona una muestra integrada desktop/móvil,
+consolida lo reutilizable y completa el alcance sobre ese código.
+Comprueba estados, acción principal y criterios visuales; repara brechas materiales.
+Entrega: [local/branch/main/publicación autorizada]. Límites: [si existen].
+Reporta resultado, referencias aplicadas, checks reales y pendientes concretos.
+
+Para un encargo pequeño bastan resultado, contenido y restricciones; el agente
+infiere detalles rutinarios. Si quieres aprobar antes de ampliar, añadir:
+"Después de construir e inspeccionar la muestra, detente para mi aprobación."
+Sin esa reserva, completa el trabajo delegado. No hay un gate automático por fase.
+
+PROMPTS PARA CONTINUAR Y CORREGIR
+
+Acepto [dirección/código]. Completa [alcance restante] preservando [decisiones].
+Reutiliza refs/componentes/asset útiles; corrige brechas materiales y verifica
+lo afectado sin reiniciar identidad ni generar otras versiones completas.
+
+En [región], [viewport/estado], ocurre [defecto y efecto en la experiencia].
+La referencia/base muestra [relación]. Conserva [lo que funciona]. Corrige la
+causa, compara antes/después y verifica [estado/acción afectada].
+
+Para revisión sin modificaciones:
+Revisa [alcance] sin editar. Compara render/refs y reporta defectos observables
+con ubicación, estado, impacto, evidencia y reparación. Separa lo no observado.
+
+PREPARACIÓN: SOLO AL INSTALAR O ACTUALIZAR EL KIT
+
+Trabajar en el repositorio objetivo. Design Kit es una biblioteca separada;
+tenerla al lado o escribir su nombre no asegura que el agente la esté usando.
+Requisitos del instalador: Python 3.9+ y un checkout actualizado del kit.
+
+Desde el checkout de Design Kit:
+python scripts/install.py "/ruta/al/proyecto" --with-software
+python scripts/install.py "/ruta/al/proyecto" --check
+
+Ejemplo de forma en Windows; reemplazar ambas rutas por las reales:
+python "C:\ruta\design-kit\scripts\install.py" "C:\ruta\proyecto" --with-software
+python "C:\ruta\design-kit\scripts\install.py" "C:\ruta\proyecto" --check
+
+El instalador copia el paquete a .agents/skills/design-kit/ y añade un puntero
+al archivo raíz activo: AGENTS.override.md no vacío, o AGENTS.md en otro caso.
+Preserva instrucciones ajenas y rechaza sobrescribir recursos gestionados que
+modificaste localmente. Revisar esos cambios si bloquean una actualización.
+--with-software activa también la entrada de programación; las reinstalaciones
+ordinarias conservan esa elección. --check comprueba archivos sin escribirlos;
+no comprueba por sí mismo que el modelo invocó la skill o puede ver un render.
+
+Actualizar main no actualiza sus copias instaladas: repetir el instalador sobre
+cada proyecto que quieras actualizar. Si Codex no lista la skill, reiniciar y
+seleccionar $design-kit explícitamente; evitar dos copias con el mismo nombre.
+El instalador no instala MCP, navegadores ni dependencias y no cambia tu modelo,
+esfuerzo o cuota. Kit: https://github.com/ibbuilds/design-kit
+
+REFERENCIAS Y HERRAMIENTAS: ELEGIR POR UNA NECESIDAD REAL
+
+Primero tu base, enlaces y assets; después las fuentes pertinentes de la biblioteca.
+Una referencia útil tiene pregunta/región, fuente/captura y viewport/estado
+conocidos, relación observada, aplicación concreta y límites de transferencia.
+Abrir imágenes legibles; para movimiento, observar la secuencia. Una lista de
+enlaces, JSON de tokens o un resumen del sitio no prueban investigación visual.
+
+Rutas públicas para elegir según el hueco, no para recorrerlas todas:
+- Dirección/composición: https://godly.website/ y https://www.awwwards.com/
+  o una galería pertinente de REFERENCES.md. Seleccionar una obra concreta.
+- Tipografía aplicada: https://fontsinuse.com/ y material real de la marca.
+- Interacción: https://designspells.com/ y https://60fps.design/
+- Técnica de motion: https://motion.dev/docs o https://gsap.com/docs/v3/
+  según la mecánica elegida y el stack existente.
+- Mecánica accesible: https://www.w3.org/WAI/ARIA/apg/ y componentes del repo.
+- Patrones de producto: experiencia existente, docs del componente y requisitos
+  del usuario. Una galería de campañas no demuestra usabilidad de una app.
+
+Usar pocas referencias activas que cambien decisiones. Hasta tres es un punto
+de partida práctico, no un máximo ni un óptimo probado. Ampliar por un hueco
+nombrado; detener discovery cuando alcance para decidir. Seleccionar por calidad
+y pertinencia, además de fecha. Un ejemplo reciente mediocre no supera a uno
+excelente que sigue siendo relevante. Reutilizar ejemplos ya aceptados.
+
+MCP locales Awwards y Design Intelligence son candidatos opcionales; no son
+servidores oficiales/bundled ni están necesariamente instalados. Comprobar
+versión, herramientas y un resultado pequeño si se eligen. Local no implica
+offline y obtener JSON no equivale a ver imágenes. Catálogo consultado el 26 de
+septiembre; sus condiciones externas no se reauditaron en esta separación.
+
+One Page Love y Landing Gallery alojados entran cuando aceptas sus condiciones
+de acceso gratuito con límites. Mobbin, A1, Mozaika, Swaggin completo y Appllama
+quedan fuera del descubrimiento automático según la política actual. Un fracaso
+gratuito no autoriza pagar/registrarse. Los enlaces públicos y el navegador
+existente suelen bastar; no instalar toda la lista. Respetar términos y derechos.
+
+Figma es opcional si aporta contexto editable o ya es tu fuente. Usar contexto
+del frame relevante, captura, variables y mappings reales; adaptar al stack.
+Una selección grande requiere drill-down pertinente, no repetir todo el archivo.
+Si se hace roundtrip autorizado: UI real -> frame relevante -> refinamiento ->
+mismo código -> render verificado. Un frame no prueba comportamiento ni datos.
+No subir capturas privadas ni crear archivos externos fuera de la autorización.
+
+Capturas numeradas o anotaciones existentes bastan para feedback. Agentation,
+HTML/PDF de revisión y skills puntuales de animación son opcionales por necesidad;
+no un segundo workflow general ni dependencias de producción automáticas.
+
+MODELO, CONTEXTO Y CONSUMO
+
+Objetivo: gastar lo menos posible para cumplir la calidad pedida, contando
+investigación, implementación, verificaciones y reparaciones. Evitar consumo
+innecesario; mantener la evidencia que puede descubrir un error importante.
+
+GPT-6.1 Sol + Standard es la propuesta principal. Medium sirve como punto de
+partida para trabajo acotado con información y criterios claros; Low para un
+cambio sencillo y fácilmente comprobable; High para ambigüedad importante,
+arquitectura acoplada o diagnóstico difícil donde pueda resolver un problema
+concreto. Xhigh/Max o Astra se justifican por un problema no resuelto o tu
+elección explícita. El agente respeta tu ajuste; no cambia automáticamente el
+modelo ni baja tu razonamiento. Estos son ajustes recomendados, no un óptimo
+medido de Sol. Más razonamiento no sustituye mejores datos, referencias o checks.
+
+Usar Standard cuando prima la eficiencia. Fast consume más por velocidad donde
+esté disponible; no equivale a una mejora automática de calidad. Respuestas
+cortas no garantizan poco razonamiento interno. Las tarifas de API no permiten
+calcular cuánto durará el 100% de Pro; se necesita consumo observado de tu cuenta.
+
+No pegar este manual entero por rutina. Usar el prompt del archivo y los datos
+del encargo. La skill y los recursos canónicos se cargan por necesidad; este TXT
+es una guía humana autónoma. Si lo adjuntas, pedir que se lea para elegir el
+procedimiento pertinente, sin convertir todos los anexos en acciones obligatorias.
+
+Conservar una tarea coherente en el mismo chat mientras el contexto sea útil.
+Reutilizar código, assets, referencias seleccionadas, comandos y checks todavía
+válidos. Guardar logs grandes fuera del contexto activo y traer solo lo que
+separa hipótesis o demuestra el resultado. Leer fuentes independientes en lote
+cuando se pueda; respetar la secuencia de decisiones y acciones dependientes.
+Un equipo de agentes, un MCP adicional o una fábrica no son requisitos.
+
+Antes de otra acción costosa, nombrar criterio pendiente, evidencia nueva o
+hipótesis distinta y la acción más pequeña capaz de resolverlo. Un fallo repetido
+requiere cambiar diagnóstico/evidencia. Evitar repetir el mismo prompt o escalar
+el modelo sin saber qué problema adicional va a resolver.
+
+Si hay un presupuesto explícito, respetarlo y reportar qué quedó sin completar.
+Un prompt no impone un cap técnico de tokens. Parar cuando se cumple el encargo;
+si falta una condición material, repararla mientras exista una vía justificada.
+
+ALCANCE DE LA INVESTIGACIÓN
+
+Revisión base: 29 de septiembre de 2026. Se consultaron fuentes oficiales y
+alternativas y se analizaron completas seis transcripciones: tus tres videos de
+diseño, el anterior de Ras Mic y dos charlas adicionales del 27 de septiembre.
+También se leyeron cuatro casos profesionales de diseño de 2026. Este archivo
+selecciona lo aplicable a su tarea; no reproduce cada propuesta de cada fuente.
+
+Tus materiales son información a contrastar, no instrucciones superiores ni
+verdades asumidas. La evidencia se distingue entre documentación del modelo,
+estándares, demostraciones de creadores, relatos profesionales y síntesis propia.
+Una recomendación para GPT-5.4/5.5/5.6 o una observación de Astra no se presenta
+como resultado medido de Sol. El día de consulta no cambia la fecha del estudio.
+
+La investigación fundamenta mecanismos: reducir incertidumbre, comparar la
+implementación con evidencia, conservar decisiones buenas y descubrir fallos.
+No demuestra un óptimo universal ni un porcentaje garantizado de ahorro/calidad.
+Por tu decisión, la comparación práctica de apps queda para cuando tú la hagas.
+No se ejecutaron experimentos de generación de producto en esta revisión.
+
+Los checks del paquete prueban distribución y estructura, no excelencia visual,
+obediencia del modelo ni rendimiento del producto. Cuando tú pruebes el flow,
+conservar objetivo, base, modelo/esfuerzo, artefactos, defectos, reparaciones y
+consumo observable. Comparar condiciones equivalentes y aceptación humana;
+el juicio positivo del agente no es evidencia independiente ni datos de usuarios.
+
+FUENTES APLICABLES
+
+[S11] OpenAI: descubrimiento y carga selectiva de skills.
+https://developers.openai.com/codex/skills/
+
+[S17] OpenAI: consumo de cuota, Fast y contexto de MCP.
+https://developers.openai.com/codex/pricing/
+
+[S22] GPT-6.1 Sol: capacidades, esfuerzos, endpoints y tarifas API.
+https://developers.openai.com/api/docs/models/gpt-6.1-sol
+
+[S23] Guía GPT-6: autonomía, prioridad de instrucciones, calibración de pruebas
+y selección de la familia. Las observaciones de comportamiento se describen para
+Astra; se proponen como punto de partida para evaluar otros modelos de la familia.
+https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6.1-sol
+
+[S24] Razonamiento: esfuerzo, verificación, tokens internos, persistencia y pro mode.
+https://developers.openai.com/api/docs/guides/reasoning
+
+[S35] OpenAI: UI código -> Figma -> código.
+https://developers.openai.com/blog/building-frontend-uis-with-codex-and-figma.md
+
+[S36] OpenAI: frontend GPT-5.4; recomendaciones específicas de ese modelo.
+https://developers.openai.com/blog/designing-delightful-frontends-with-gpt-5-4.md
+
+[S37] Figma: tools, contexto acotado, tokens, screenshots y mappings.
+https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts
+
+[S38] Playwright: comportamiento visible, aislamiento, locators y assertions.
+https://playwright.dev/docs/best-practices
+
+[S40] Requisitos de accesibilidad WCAG 2.2 y estándar ASVS 5.0.
+https://www.w3.org/WAI/WCAG22/quickref/
+https://github.com/OWASP/ASVS
+
+[S42] How I Build Beautiful UIs with AI (My design workflow); 28-09-2026. Transcripción completa extraída.
+https://www.youtube.com/watch?v=H1l66NhU-_8
+
+[S43] UI Collective: Design with AI - Full Guide (Tools, Workflows, Design Systems); 15-09-2026. Transcripción automática completa exportada y analizada.
+https://www.youtube.com/watch?v=r-MPiu0E4W4
+
+[S44] UI Collective: 3 AI Design Workflows That Save Me 10+ Hours a Week; 21-09-2026. Transcripción automática completa exportada y analizada; sustituye la limitación anterior.
+https://www.youtube.com/watch?v=j6rfwigv_1Y
+
+[S48] OpenAI: Evaluation best practices; objetivos y criterios específicos, comparación y calibración experta.
+https://developers.openai.com/api/docs/guides/evaluation-best-practices
+
+[S49] W3C WAI: evaluación y límites de herramientas automáticas; páginas actuales consultadas.
+https://www.w3.org/WAI/test-evaluate/
+https://www.w3.org/WAI/test-evaluate/tools/selecting/
+
+[S50] Awwwards: sistema oficial de evaluación, criterios y jurado.
+https://www.awwwards.com/about-evaluation/
+
+[S51] Godly: galería pública actual, fuente de descubrimiento y calibración.
+https://godly.website/
+
+[S52] Razorpay Design: Razorpay Sprint26: The Future of Payments; 31-08-2026.
+https://www.awwwards.com/razorpay-sprint26-the-future-of-payments.html
+
+[S53] Obys: The New Obys; 01-07-2026.
+https://www.awwwards.com/the-new-obys.html
+
+[S54] Greg Lallé: Reshaping Telha Clarke’s Digital Home; 10-07-2026.
+https://www.awwwards.com/reshaping-telha-clarkes-digital-home.html
+
+[S55] Matteo Donini: iyO, Case Study; 22-07-2026.
+https://www.awwwards.com/iyo-case-study-selling-the-worlds-first-audio-computer.html
+
+[S56] web.dev: How to create high-performance CSS animations; 06-10-2020. Principios de render actuales consultados, no hallazgo de modelos 2026.
+https://web.dev/articles/animations-guide
+
+FIN DEL WORKFLOW.

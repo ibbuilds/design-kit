@@ -108,6 +108,16 @@ GitHub Actions runs the offline suite on Linux and Windows with supported Python
 
 Preserve source URLs and keep shared BRIEF.md blank. Add reusable examples/checks only after recurring accepted corrections justify them. See [the execution decision](docs/EXECUTION_DECISION.md) for Codex versus a custom runtime and the video analysis.
 
-The [quality evidence record](docs/QUALITY_EVIDENCE.md) connects the September 29 update to current GPT-6 guidance and identifies which frontend/prompt principles come from earlier-model examples. It is research history, not extra default context. The full Spanish human guide is in `docs/GUIA_GENERAL.txt`; it is deliberately not installed into the active skill package.
+The [quality evidence record](docs/QUALITY_EVIDENCE.md) connects the September 29 update to current GPT-6 guidance and identifies which frontend/prompt principles come from earlier-model examples. It is research history, not extra default context.
+
+## Spanish manuals for learning and applying the workflows
+
+These are standalone human learning manuals. Each begins with the user's decisions and a guided pass, explains the detailed procedure, provides examples and prompts, and includes the setup, efficiency guidance and relevant research sources. They are not installed into the active skill package or new procedures to inject into every turn.
+
+- [Design from scratch](docs/01_diseno_desde_cero.txt): direct the product-specific idea and evaluate exceptional composition, assets, interaction and finish.
+- [Iterate on your design base](docs/02_diseno_sobre_tu_base.txt): distinguish closed, open and illustrative decisions, preserve authorship and compare the implemented improvement.
+- [Professional programming](docs/03_programacion_profesional.txt): define observable behavior, judge contracts and evidence, and complete appropriate verification and recovery.
+
+The prior combined `docs/GUIA_GENERAL.txt` remains a consolidated reference/catalog and research record. The three manuals are the current human-facing workflow guides; SKILL.md and SOFTWARE.md remain the canonical agent procedures.
 
 The [broader workflow comparison](docs/WORKFLOW_RESEARCH.md) documents alternatives from Codex/Figma, Spec Kit, Kiro, Anthropic, Cursor and Google, the supplied videos and the failed prior runbook, including costs and limits that prevent blindly adopting heavier processes. The Spanish guide presents three workflows: design from scratch, iteration on the user's design base, and programming. For substantial features, [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) connects requirements to evidence, challenges the working result and records applicable release readiness. It is loaded conditionally; a local refinement stays local. The research record includes a real-task comparison protocol, but no measured improvement in generated product quality is claimed.
