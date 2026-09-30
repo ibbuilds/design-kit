@@ -6,6 +6,7 @@ This repository distributes reusable frontend guidance. It is not the target app
 
 - Read only the affected files. Preserve the curated sources in REFERENCES.md unless changing them is explicitly requested.
 - SKILL.md is the single canonical design procedure. WORKFLOW.md is a compatibility pointer, not a second workflow.
+- ONBOARDING.md supplies its supervised phase inputs/outputs and human checkpoints; PENPOT.md is conditional canvas guidance, not another runtime. Keep phase/batch acceptance aligned across entrypoints and documentation.
 - SOFTWARE.md is the canonical programming procedure; REFERENCE_ROUTER.md and EXECUTION.md are conditional supporting guidance. Keep installed pointers aligned with those sources rather than duplicating their procedures.
 - Keep BRIEF.md a blank template. Product facts, active captures, assets, accepted examples, and implementation live in target projects, not in the shared library.
 - Keep TASTE.md and GUIDELINES.md general; no project's identity becomes a universal rule without approval.

@@ -1,300 +1,295 @@
-WORKFLOW 2 — ITERAR SOBRE TU BASE DE DISEÑO
-ELEVAR EL DISEÑO Y LLEVARLO A CÓDIGO RESPETANDO TU INTENCIÓN
-
-Versión: 29 de septiembre de 2026. Manual personal para aprender y aplicar el workflow.
-Tú diriges el encargo y evalúas el resultado; Design Kit guía la ejecución de la AI.
-
-CÓMO USAR ESTE MANUAL PARA APRENDER
-
-Este flow parte de tu trabajo como diseñador. Aprende primero a expresar la
-autoridad de tu base y a distinguir una mejora de una reinterpretación no pedida.
-Después aplica la pasada guiada. El detalle explica cómo juzgar comparación,
-craft, estados e integración; los prompts aparecen después del ejemplo.
-
-TU PASADA GUIADA
-
-A. CLASIFICA LO QUE ESTÁS ENTREGANDO.
-¿Es estructura, borrador con estilo, final o sistema/código aceptado? Pregúntate
-si esperas creatividad dentro de la base o implementación fiel. Esa respuesta
-cambia la ejecución mucho más que pedir "mejor calidad" sin delimitarla.
-
-B. NOMBRA LO CERRADO, ABIERTO E ILUSTRATIVO.
-Por ejemplo: "Conserva orden y jerarquía; mejora tipografía/spacing/móvil; los
-grises son placeholders". Si algo te importa especialmente, escríbelo. No hace
-falta especificar cada píxel para conservar tu intención.
-
-C. COMPARTE LA BASE Y SU CONTEXTO.
-Frame/captura legible o código, contenido, assets y objetivo. Si sabes qué
-falla, señálalo. Si aún no lo sabes, puedes pedir que detecte brechas dentro de
-lo abierto. Dar una base parcial es válido; explica qué está por decidir.
-
-D. DELEGA LA MEJORA CORRECTA.
-Usa "itera" para lo abierto y "implementa fielmente" para un final. Pide que
-preserve fortalezas, aplique sistema existente y compare el render. Decide
-si reservas aprobar una recomposición; no necesitas aprobar cambios rutinarios.
-
-E. REVISA BASE Y RESULTADO BAJO CONDICIONES EQUIVALENTES.
-Mismo contenido, viewport y estado cuando la comparación lo requiere. Pregúntate:
-"¿Respetó mi decisión? ¿La mejora es visible? ¿Móvil conserva intención y uso?"
-Una diferencia no siempre es un defecto: distingue cambio delegado, mala
-implementación, recomposición necesaria y simple preferencia.
-
-F. DA FEEDBACK QUE CONSERVE TU AUTORÍA.
-Ejemplo: "Conserva el orden y el carácter; la tabla perdió densidad y los filtros
-dominan el contenido. Corrige esos pesos y verifica datos largos". Puedes
-señalar el problema visual sin saber la solución de código. Si la AI propone
-cambiar algo cerrado, evalúa su causa antes de ampliar la autorización.
-
-G. ACEPTA UNA BASE Y ÚSALA PARA CONTINUAR.
-Di qué aceptas, pide completar lo pendiente y verifica estados/consumidores
-afectados. Conserva antes/después cuando ayude. La siguiente pantalla debe heredar
-esa base; no volver a discutir identidad desde cero.
-
-PARA PRACTICAR CUANDO TÚ QUIERAS
-
-Usa una composición tuya, escribe sus tres clases de autoridad y pide una mejora
-acotada. Compara si conservó lo cerrado y si el acabado/uso mejoró en lo abierto.
-Si hubo desviación, descubre qué autoridad faltaba explicar o qué implementación
-falló. No concluyas automáticamente que todo problema fue culpa de tu brief;
-el modelo también puede interpretar o ejecutar mal.
-
-QUÉ VAMOS A CONSEGUIR
-
-Que tu composición/diseño/código sea el punto de partida real y la AI aporte
-craft, implementación y mejoras dentro de lo delegado. La ambición es excepcional:
-jerarquía, tipografía, imágenes, ritmo, detalle e interacción comparables a
-referencias fuertes pertinentes, preservando las decisiones que tú cerraste.
-
-Este flow sirve para una estructura inicial, un diseño parcial, un final o un
-sistema/código aceptado. Cada entrada necesita acciones distintas. Una referencia
-de gusto sin composición propia sigue siendo trabajo desde cero; un borrador no
-es automáticamente un final cerrado.
-
-El recorrido: tu base + autoridades -> inspección de base/sistema -> gaps
-concretos -> implementación/mejoras dirigidas -> comparación equivalente ->
-reparar -> consolidar cambios autorizados -> completar/verificar/entregar.
-
-1. DEFINIR LA AUTORIDAD DE TU BASE
-
-MOODBOARD: ejemplos de gusto, no composición propia. Hay que componer.
-ESTRUCTURA/WIREFRAME: manda lo que cerraste de orden, jerarquía y uso. El acabado
-delegado se resuelve; rectángulos grises o una fuente temporal pueden ser ilustrativos.
-BORRADOR DE ALTA FIDELIDAD: identificar decisiones aceptadas y lo que todavía
-quieres elevar. Que tenga color no hace que todo esté cerrado.
-FINAL: fidelidad en layout, estilo, contenido y comportamiento indicados. Móvil
-y estados que no se especificaron son huecos concretos, no carta blanca creativa.
-SISTEMA/CÓDIGO ACEPTADO: tokens, componentes y patrones canónicos gobiernan la
-ampliación. No crear un segundo sistema ni empezar discovery de marca otra vez.
-
-La fuente vinculante depende de tu pedido: frame final, código aceptado, tokens
-del producto o brief. Si dos fuentes se contradicen de forma importante, señalar
-la discrepancia y resolver la autoridad; no elegir silenciosamente la más bonita.
-Para detalle rutinario, inferir coherentemente sin pedirte cada valor CSS.
-
-2. DAR MATERIAL SUFICIENTE SIN SOBREPREPARAR
-
-Entregar frame/captura legible o código relevante, texto, assets y objetivo.
-Indicar viewport/frame exacto, comportamiento importante y quién puede decidir
-el móvil. Si usas Figma, compartir la selección relevante; no todo el archivo
-por defecto. Si son capturas, el agente puede observar relaciones visibles,
-pero no conoce automáticamente tokens, componentes, CSS o estados ocultos.
-
-Un registro breve ayuda:
-- Cerrado: "orden de secciones, imagen principal, contenido y CTA".
-- Abierto: "tipo, spacing, bordes, framing secundario y adaptación móvil".
-- Ilustrativo: "grises y rectángulos del wireframe".
-- Éxito: "lectura clara, mismo carácter y flujo completo en desktop/móvil".
-
-Es un ejemplo de cómo expresar autoridad, no una lista fija para todos los encargos.
-No inventar hechos ni garantías para rellenar tu base. Conservar tu trabajo y
-ediciones concurrentes; aislar/refinar el alcance sin sobrescribirlo indiscriminadamente.
-
-3. INSPECCIONAR BASE, CÓDIGO Y SISTEMA
-
-Leer solo lo que afecta al resultado: componentes usados, tokens, estilos,
-callers, estados y comandos. Identificar cómo ver el render en el host real,
-fuentes disponibles, assets y límites de ingeniería relevantes desde el comienzo.
-
-Separar fortalezas, defectos observables y decisiones abiertas. Una captura
-bonita no demuestra que la tabla admita otras columnas, que una instancia esté
-vinculada ni que el formulario recupere el input. Un valor similar no es un
-token semántico aplicado. Verificar inventarios extraídos antes de confiar en ellos.
-
-Resultado: una lista corta priorizada de gaps dentro del alcance, con ubicación,
-estado/viewport, impacto y criterio. Para trabajo pequeño puede ser una sola línea;
-no se exige una auditoría de todo el producto ni un nuevo dossier por componente.
-
-4. ESCOGER LAS MEJORAS QUE SÍ APORTAN
-
-Primero incumplimientos y uso roto; después brechas materiales de craft frente
-al estándar delegado; preferencias pequeñas solo si aportan y están en alcance.
-Comparar relaciones visibles en vez de ordenar "hazlo más premium" sin diagnóstico.
-
-Ejemplos de aporte concreto:
-- Jerarquía: el contenido principal pierde fuerza porque controles secundarios
-  tienen el mismo peso; ajustar relación de escala/contraste dentro de lo abierto.
-- Tipografía: wrap débil, pesos que no cargan o line-height que rompe la densidad.
-- Imagen: crop desvía el foco o calidad inferior impide apreciar el producto.
-- Ritmo: regiones repiten tratamiento aunque su contenido exige otra composición.
-- Interacción: hover/foco/feedback no expresan estado o no conservan continuidad.
-
-Si necesitas referencia de acabado, seleccionar pocas que resuelvan el gap;
-tu base y sistema conservan prioridad. No buscar una identidad alternativa cuando
-solo falta ajustar tipografía. La exigencia top no autoriza reabrir lo cerrado.
-
-Una región incierta puede explorarse por separado con iguales datos y función;
-después debe verse dentro de la pantalla. Si hay una premisa amplia todavía
-abierta, una muestra integrada puede decidirla. Si tienes final/código aceptado
-o una reparación clara, implementar directamente: sin muestra creativa adicional.
-
-5. IMPLEMENTAR SIN PERDER LA INTENCIÓN
-
-Usar mecánicas, componentes y stack del target. Mapear el diseño a roles
-semánticos y controles reales; no copiar ciegamente código generado por otro
-entorno ni convertir la UI en una imagen. Cargar fuentes/weights correctos y
-usar assets autorizados. Mantener textos honestos, jerarquía y acciones cerradas.
-
-Para alta fidelidad, reconstruir relaciones y medidas observables; verificar
-viewport, contenedor, zoom, fuentes y assets antes de concluir que hay un fallo.
-No inventar exactitud de CSS a partir de una captura. Para adaptación responsive,
-preservar intención/lectura, no encoger toda la pantalla ni ocultar contenido útil.
-
-Si una decisión cerrada tiene un conflicto material con acceso, UX o viabilidad,
-explicar causa y alternativa mínima. No cambiarla silenciosamente. Si la decisión
-está reservada y cambia el encargo, esperar esa respuesta mientras se completa
-trabajo independiente; no inventar autorización por el deseo de mejorar.
-
-6. COMPARAR EN LAS MISMAS CONDICIONES
-
-Usar base/referencia y render con viewport/contenedor, contenido, estado, fonts y
-assets equivalentes. En motion, comparar secuencia/intención y continuidad,
-no solo un frame intermedio. Conservar antes/después cuando ayude a evaluar.
-
-Clasificar diferencias:
-- Violación de una decisión cerrada: hay que restaurar o resolver el conflicto.
-- Defecto de implementación: wrap, recorte, alignment, fuente, foco o estado.
-- Mejora delegada: cambio que resuelve un problema dentro de lo abierto.
-- Preferencia no especificada: no es incumplimiento por sí sola.
-- Recomposición para otro dispositivo: juzgar intención y uso, no píxeles idénticos.
-- Diferencia de rendering/condiciones: comprobar antes de modificar buen código.
-
-Para feedback, una captura numerada + estado + impacto suele bastar. Anotaciones
-existentes ayudan; no hacen falta tres reportes ni otra herramienta para señalar
-un elemento. Una revisión sin editar reporta diferencias y no cambia baselines.
-
-7. REPARAR Y CONSOLIDAR CON ALCANCE CONTROLADO
-
-Corregir causas con una acción suficiente y recheck de lo afectado. Un ajuste
-óptico puede ser correcto aunque no coincida con una escala matemática. Una
-premisa mala no mejora por añadir efectos. Un fallo de comportamiento se arregla
-con evidencia de código/runtime, no con nuevas galerías.
-
-En cambios reutilizables, actualizar tokens/componentes canónicos únicamente
-dentro de la autorización y comprobar consumidores. Si el cambio es específico
-de esa pantalla, mantenerlo local en vez de alterar todos los productos. No
-crear variantes paralelas o una skill por componente para aparentar un sistema.
-
-Conservar la versión anterior cuando sea más fuerte. Si tu feedback cambia
-una decisión, actualizar ese acuerdo en el registro existente; no conservar reglas
-contradictorias ni descubrir la misma identidad de nuevo en cada conversación.
-
-8. COMPLETAR LOS ESTADOS Y VERIFICAR EL RESULTADO
-
-La base puede mostrar un estado ideal; la entrega incluye estados requeridos
-por el alcance: carga/vacío/contenido largo/error/success/disabled/foco según el
-componente. Un prototipo etiqueta mocks; producción necesita fronteras reales.
-Una interacción preserva contexto/input y da feedback/recovery útiles.
-
-Comprobar:
-- Autoridad: lo cerrado se conserva y las mejoras están dentro de lo abierto.
-- Craft: jerarquía, type/image, ritmo, crop, óptica y detalle al nivel delegado.
-- Responsive: móvil/desktop/anchos intermedios y contenedor real, sin esconder fallos.
-- Sistema: fuentes/media cargados, bindings/reutilización efectivos y sin drift material.
-- Uso/acceso: acciones, keyboard/foco, semántica, contraste/reflow y reduced motion.
-- Integración: preservar diseño aceptado al añadir servicios/datos/host reales.
-- Regresiones: consumidores afectados y checks requeridos por el target.
-
-Una auditoría automática o una captura no prueba conformidad WCAG completa.
-Separar teclado ejercitado, observaciones DOM/árbol accesible y comportamiento
-de lector inferido. Si no se ejercitó un método, reportarlo como pendiente o
-desconocido, no como aprobado. Personas sintéticas solo sugieren hipótesis.
-
-9. ENTREGAR Y CERRAR
-
-Informar qué se preservó, qué mejoró y por qué, con comparación/evidencia útil,
-checks realmente ejecutados y limitaciones. Distinguir diseño implementado,
-comprobado y aceptado por ti. La aprobación humana de dirección no prueba
-comportamiento; los tests tampoco declaran excepcional una composición.
-
-Entregar al destino autorizado; no inventar un PR o aprobación adicional si
-ya elegiste branch/main. Publicación/efectos externos siguen autorización real.
-Cerrar cuando fidelidad, mejoras delegadas y comportamiento del alcance cumplen
-los criterios. Si quedan brechas materiales, corregirlas por evidencia; no
-seguir cambiando gustos ni fijar un número arbitrario de rondas.
-
-EJEMPLO HIPOTÉTICO: BASE ESTRUCTURAL DE UN DASHBOARD
-
-Tu decisión cerrada: navegación lateral, tabla central y acción de crear.
-Abierto: tipografía, densidad, spacing, estados y adaptación móvil.
-El agente descubre que el título y filtros compiten con el contenido; usa un
-patrón de producto pertinente para ajustar jerarquía sin cambiar la estructura.
-La tabla se implementa con datos largos, filtros, vacío y error requeridos.
-Móvil mantiene acceso a columnas necesarias y acciones; no esconde datos para
-simular limpieza. Se comparan mismos registros/estado en base y render.
-Si el token de densidad es global, comprobar consumidores antes de cambiarlo.
-La mejora es observable y preserva tu autoría; no necesita una landing o nueva marca.
-
-VOCABULARIO DE LA EJECUCIÓN, SI LO NECESITAS
-
-Render: la interfaz tal como se ve funcionando, con fuentes y assets cargados.
-Viewport: área visible del navegador; el contenedor también puede limitar el layout.
-Craft: precisión del acabado, desde óptica y tipografía hasta crop y estados.
-Token semántico: valor con un papel, como texto secundario o superficie de panel;
-su función ayuda a mantener coherencia, más allá del color o nombre literal.
-Instancia/binding: uso real vinculado a un componente o variable canónica;
-una forma visualmente parecida puede estar desconectada del sistema.
-Estado: situación de la UI, como cargando, vacío, error, foco o éxito.
-Reduced motion: alternativa que reduce movimiento y conserva contenido y acciones.
-
-PROMPT PARA INICIAR TU ENCARGO
-
-$design-kit
-Itera y completa [alcance] a partir de mi base [frame/capturas/wireframe/código].
-Producto/usuario: [datos]. Resultado: [tarea o mensaje principal].
-Tipo de base: [estructural/borrador/final/sistema aceptado].
-Cerrado: [jerarquía, orden, contenido, identidad o comportamiento que conserva].
-Abierto: [acabado, composición, interacción o móvil que delego].
-Ilustrativo: [placeholders que no son decisiones de estilo].
-Assets y textos: [archivos/datos]. Referencias de acabado: [si las hay].
-Eleva lo abierto a un nivel visual excepcional adecuado al producto.
-Preserva lo fuerte y lo cerrado; compara base y render en condiciones equivalentes.
-Completa código y estados, consolida cambios reutilizables autorizados y verifica
-lo afectado. Explica conflictos materiales con mis decisiones.
-Entrega: [destino autorizado]. Límites: [si existen].
-Reporta mejoras, fidelidad, evidencia, checks reales y pendientes concretos.
-
-Para alta fidelidad cerrada, sustituir "Itera" por "Implementa fielmente" y
-enumerar solo huecos abiertos. No invocar un rediseño por rutina. Si quieres
-aprobar una recomposición, reservar esa decisión; el agente prepara un resultado
-concreto antes de pedirla. Lo demás autorizado continúa.
-
-PROMPTS PARA CONTINUAR, CORREGIR Y MANTENER FIDELIDAD
-
-Acepto [cambios/base]. Completa [resto] conservando [decisiones].
-Mantén sistema/refs útiles y verifica estados y consumidores afectados.
-No reabras identidad ni generes propuestas completas alternativas.
-
-En [región y viewport/estado], el render difiere en [relación observable].
-Esto afecta [lectura/uso/identidad]. La base manda en [decisión].
-Corrige dentro de [lo abierto], conserva [fortaleza] y compara antes/después.
-
-Implementa fielmente [diseño final] en [alcance]. Cerrado: [decisiones].
-Huecos abiertos: [móvil/estados concretos]. Usa sistema/componentes existentes,
-compara bajo condiciones equivalentes y explica conflictos materiales.
-
-Revisa fidelidad y mejoras de [alcance] sin editar. Reporta diferencias
-observadas con ubicación/estado, impacto, evidencia y reparación; separa
-preferencias de violaciones y deja explícito lo que no pudiste comprobar.
+WORKFLOW 2 — DESARROLLAR E ITERAR TU BASE DE DISEÑO
+MANUAL PERSONAL PARA CONSERVAR AUTORÍA Y APROVECHAR TRABAJO EXISTENTE
+Actualizado: 29 de septiembre de 2026.
+
+LA IDEA QUE VAS A APLICAR
+
+Tu trabajo es la fuente de dirección. Design Kit guía a tu agente para entenderlo,
+pedir lo que falte, desarrollar lo abierto y mostrarte entregas revisables antes
+de avanzar. No debe reemplazar tu criterio por un gusto de AI. Tampoco te obliga
+a empezar de cero cuando ya diste una base o aprobaste fases.
+
+El mismo onboarding se retoma donde tu entrada deja una decisión pendiente:
+contexto/summary -> vibe -> referencias -> foundations -> componentes base ->
+composites/patrones -> páginas -> código solicitado. Las fases resueltas se reutilizan;
+las propuestas nuevas se revisan. Un final puede entrar directamente a implementación.
+
+1. CLASIFICA TU ENTRADA Y EL TRABAJO QUE QUIERES
+
+Una base puede ser cuatro cosas distintas:
+- Foundations: roles, valores y reglas; todavía no una composición o experiencia.
+- Estructura/borrador: jerarquía/layout con decisiones visuales o estados abiertos.
+- Diseño final: diseño aceptado que debe implementarse fielmente.
+- Sistema/componentes/código aceptados: ampliar una base canónica sin duplicarla.
+
+Puedes dar un canvas, un archivo, captura legible o código existente. Para un
+archivo local, .design/base/ es una opción, no una obligación de mover lo que tienes.
+Nombra lo cerrado, abierto e ilustrativo. Por ejemplo: un graybox puede fijar el
+orden y ser provisional en color; un radio expresamente elegido es cerrado.
+Esos ejemplos no son tus preferencias por defecto.
+
+El agente primero inspecciona tu entrada, luego refleja su autoridad y lo que
+necesita. Si no sabe si iterar o implementar fielmente, pregunta esa diferencia.
+No inventa medidas, fuente exacta o comportamiento oculto desde una imagen.
+
+2. COMPLETA SOLO EL CONTEXTO QUE FALTA
+
+Si ya hay brief, accepted summary y dirección, retómalos. Si faltan los datos
+necesarios de marca/producto, el agente ofrece adjunto TXT/MD/PDF, enlace accesible
+o .design/brand.md. Notion funciona con acceso real; export o texto funciona sin MCP.
+Captura el contexto y te muestra summary: qué hace, público/tarea, intención y
+restricciones. Tú confirmas o corriges antes de trabajo creativo dependiente.
+
+No hagas doble documentación de la misma marca ni repitas información del repo.
+El checkpoint vive en .design/project.md o tu registro existente, con fuentes.
+Si el agente puede encontrar un comando o componente en el código, que lo lea;
+no te lo pregunte como si fuera una decisión de diseño tuya.
+
+3. USA TU DIRECCIÓN Y REFERENCIAS CON SU AUTORIDAD REAL
+
+Tu final o sistema aceptado no necesita otra búsqueda para "elevarlo". Si la
+dirección sigue abierta, describe la intención visual y confirma la interpretación.
+Puedes aportar referencias o pedir búsqueda limitada a REFERENCES.md. El set por
+defecto para esa fase abierta es ocho referencias claras; si faltan, el agente
+te presenta el gap y pide decidir, nunca rellena con material sin inspeccionar.
+
+Revisa links/previews y di qué relación deseas tomar de cada ejemplo útil, qué
+rechazas y dónde aplica. El agente sintetiza tu feedback, señala contradicciones
+y espera aceptación. Una referencia no sustituye tu layout ni autoriza cambiar
+lo cerrado. Si buscas ayuda puntual sobre un detalle, no hay que repetir ocho sitios.
+
+4. DESARROLLA FOUNDATIONS Y COMPONENTES SIN COMPETIR CON TU BASE
+
+Si tus foundations ya existen, usa sus rutas/valores. Si faltan, aporta lo básico
+o pide ayuda acotada. El agente propone solo derivados/reglas necesarios: semántica,
+uso, variantes y comportamiento. Te muestra qué proviene de ti y qué añadió para
+que lo aceptes/corrijas. No asume que cambiar el azul o familia tipográfica es
+una mejora permitida si los cerraste.
+
+Desde foundations, sigue batches de base components -> composites/patrones ->
+páginas, con tu aceptación en cada entrega. Desde una biblioteca aceptada, salta
+a la adición realmente necesaria. Verifica reutilización real y estados requeridos,
+no clones con nombres nuevos. No construyas todas las variantes imaginables antes
+de conocer las necesidades de tu producto.
+
+Si una adición requiere modificar un componente compartido, revisa su impacto
+antes de aceptarla. Un experimento local no autoriza alterar toda la biblioteca.
+El agente debe presentarte el cambio propuesto a una decisión cerrada, no hacerlo
+silenciosamente. Reutiliza aceptación previa solo dentro de su alcance.
+
+5. ITERA EN CONTEXTO Y COMPARA BASE CONTRA RESULTADO
+
+Usa contenido, tamaño, estado y assets cargados comparables cuando corresponda.
+Mira jerarquía/densidad, wraps, espacio, crop, continuidad y tarea del usuario.
+Una diferencia puede ser mejora delegada, ejecución incorrecta, recomposición
+necesaria o preferencia; el agente no debe tratar toda diferencia como error.
+
+Para lo abierto puede proponer alternativas breves fundamentadas; para lo cerrado
+debe implementar con fidelidad. Un cambio fundamental necesita tu decisión, pero
+arreglar overflow o una instancia rota dentro del batch pedido puede hacerlo ya.
+La entrega se inspecciona antes de presentarse y se espera tu respuesta después.
+
+6. AMPLÍA SOLO EL BATCH AUTORIZADO
+
+Si aceptaste componentes, autoriza la siguiente composición/página concreta.
+Mantén el mapa general: bloques aislados deben convivir en una experiencia.
+La AI usa las reglas aceptadas, muestra la expansión y espera tus correcciones
+o aceptación. No genera todas las páginas porque un primer componente te gustó.
+
+Un componente puede necesitar ajuste después de verse con contenido real. La AI
+presenta la evidencia y la propuesta; tú decides. Actualiza dependencias reales,
+no todo el proyecto. Si un nuevo patrón es necesario, retoma ese batch y revisa
+su integración; no reinicia marca/vibe/referencias como si no hubiera trabajo previo.
+
+7. IMPLEMENTA UN FINAL O PULE EL DISEÑO, SEGÚN TU ENCARGO
+
+Tras aceptar las páginas, elige pulirlas tú, con AI o pasar a código. Si ya aportas
+un final y pides código, esa fase está autorizada: no necesitas redescubrir identidad
+ni completar un ritual de ocho referencias. Sí necesita inputs de estados/medidas
+relevantes si no están visibles, y un medio real para verificar la implementación.
+
+Desde Penpot, estructura/tokens/components/IDs más captures ayudan a traducir;
+desde código aceptado, conserva ese código. La AI no debe "perfeccionar" tu final
+inventando otra composición. Verifica la página funcionando, mobile, estados y
+recuperación, más checks de proyecto. Presenta discrepancias y pide decisión para
+cualquier cambio de diseño cerrado. El diseño-only termina con diseño; no con un
+backend o deployment no solicitado.
+
+EJEMPLO DE ENTRADA Y FEEDBACK (HIPOTÉTICO)
+
+Entrada: una composición tuya con orden y jerarquía aceptados, espaciado provisional
+y filtros cuyo comportamiento está definido. Pides finalizar el acabado.
+El agente confirma qué es cerrado/abierto, usa tu sistema y produce el batch.
+Feedback: "Acepto el type scale. La tabla perdió densidad y el filtro pesa demasiado;
+conserva el orden, corrige esos pesos y muestra mobile con datos largos".
+El agente modifica ese batch y lo verifica; no rediseña navegación o marca.
+Tu siguiente aceptación autoriza la siguiente adición. No depende de esa estética
+en particular: el mecanismo es claridad de autoridad + evidencia + revisión real.
+
+CÓMO OPERA EL AGENTE ENTRE ENTREGAS
+
+El contrato es: lee lo existente -> identifica fase y batch -> obtiene el input
+faltante -> crea una salida concreta -> te la muestra -> espera tu respuesta ->
+registra aceptación o correcciones. Feedback de corrección no es aceptación.
+Silencio, tiempo transcurrido, "me parece bueno" dicho por la AI y presencia de
+un archivo no autorizan avanzar. Dentro del batch pedido, la AI sí puede hacer
+los arreglos normales y comprobarlos sin preguntarte por cada operación.
+
+Un pedido amplio de "haz el diseño" no elimina la supervisión. Una aprobación
+previa tuya sí se reutiliza dentro de su alcance. No tienes que responder otra
+vez las mismas preguntas ni aprobar un sistema final que ya proporcionaste.
+Cambiar el régimen de supervisión requiere una instrucción tuya explícita.
+
+El registro es .design/project.md o tu fuente existente. Guarda facts útiles,
+fuentes, intención visual, interpretación de referencias, paths/IDs aceptados,
+fase/batch actual, feedback pendiente y siguiente acción autorizada. No vuelca
+todas las conversaciones ni carga todos los links en cada turno. Si una decisión
+cambia, revisa las partes que dependen de ella; no rehagas todo por costumbre.
+
+CALIDAD VISUAL Y UX: QUÉ EVALUAR EN LO QUE TE ENTREGA
+
+Busca carácter propio y relaciones precisas, no solo "premium" en el texto.
+Comprueba jerarquía, type/image, densidad, ritmo, alineación óptica, crop de assets
+y coherencia entre regiones. Tu estándar puede ser muy alto y expresivo o muy
+preciso y contenido: depende del producto, público y dirección que elegiste.
+Las referencias deben cambiar decisiones visibles; copiar un color no aplica
+una composición. Mira la región de referencia y la propuesta con condiciones
+comparables: contenido, tamaño y estado cuando corresponda.
+
+Para UX, revisa qué entiende la persona, qué puede hacer, qué sucede al actuar
+y cómo se recupera. Incluye contenido largo/ausente, loading, error, éxito y
+permisos cuando sean relevantes. Una imagen no demuestra interacción, teclado,
+screen reader, performance ni conversión. Un premio tampoco demuestra esos usos.
+En código, prueba el flujo real y las necesidades de accesibilidad aplicables.
+No conviertas checks visuales en una certificación de WCAG sin la evaluación real.
+
+Para feedback, di ubicación + tamaño/estado + defecto observable + efecto.
+"En móvil, el título compite con el producto; conserva la familia tipográfica y
+revisa proporción y encuadre" es una crítica accionable. "Más premium" deja la
+decisión sin resolver. Si falla la idea, explica qué no representa; la AI puede
+proponer una alternativa para que la aceptes, sin decorar el concepto equivocado.
+
+No apruebes solo el hero: revisa regiones profundas, controles y continuidad.
+Componentes aprobados reducen decisiones repetidas; no garantizan una buena
+composición, contenido o flujo. La página puede revelar un problema en la base.
+Ese retorno es normal: el agente muestra la propuesta de ajuste, tú decides y
+solo se actualizan consumidores realmente afectados. Atomic Design no es una
+cascada rígida en la que jamás se vuelve a componentes desde páginas.
+
+PENPOT: MEDIO EDITABLE PROPUESTO, NO OTRO SISTEMA
+
+Design Kit aporta el proceso. Penpot aporta el canvas y su MCP las operaciones
+del agente. Tu agente sigue siendo el que elegiste. La ruta preferida para
+diseño editable es Penpot si decides usarlo y se comprueba acceso; no hay que
+pagar Figma ni comprar otro modelo para este workflow.
+
+Según la documentación oficial revisada el 29/09/2026, Penpot MCP es gratuito y
+abierto. El plan cloud Professional anuncia $0 con límites de equipo, storage
+e historial; no equivale a infraestructura universalmente ilimitada. Tu modelo
+sigue consumiendo tu suscripción. El kit no promete una cuenta o conexión activa.
+
+Para remoto: revisa Account/Integrations/MCP Server, habilita la función disponible,
+genera la key privada y copia la URL de TU cuenta en la configuración privada de
+tu cliente MCP. Abre el archivo de diseño y File/MCP Server/Connect; conserva la
+pestaña conectada activa. No pegues la key o URL con credenciales en el repo,
+registro, screenshot o entrega pública. Primero confirma acceso con una lectura.
+La guía oficial recomienda remoto para la mayoría: no exige servidor local.
+
+Local es otra opción elegida explícitamente: necesita Node, servidor/plugin y la
+conexión del cliente. No se instala al invocar Design Kit por defecto. El kit
+incluye PENPOT.md con las fuentes, ruta de setup, validación y límites; no cambia
+tu configuración ni instala dependencias durante esta revisión documental.
+
+La superficie documentada incluye high_level_overview, penpot_api_info,
+execute_code y export_shape. El agente verifica los schemas reales; no inventa
+APIs ni asume que toda versión tiene las mismas capacidades. Confirma archivo
+y página antes de escribir: el foco puede cambiar el destino del MCP. Usa batches
+pequeños, reversibles, IDs canónicos y verificación visual. En remoto algunas
+exportaciones pueden estar limitadas; reporta ese límite y pide una vista usable.
+
+El agente debe generar componentes reutilizables y bindings cuando el API lo
+permita, no figuras visualmente similares y afirmar que ya hay una biblioteca.
+Si falta soporte, propone un procedimiento viable y espera tu decisión.
+No importa otro workflow completo del Penpot AI Kit ni su autofix/scoring por
+defecto: tu supervisión sigue siendo la regla de Design Kit.
+
+PROMPTS QUE PUEDES USAR
+
+Arranque:
+"Usa Design Kit y guíame por fases. Revisa lo existente; dime la fase y pide
+el input necesario. Desarrolla la base que te daré, presenta cada entrega y
+espera mi respuesta antes de avanzar. No uses mis ejemplos como gustos reales."
+
+Referencias:
+"El contexto y vibe están aceptados. Busca ocho referencias claras dentro de
+las fuentes del kit. Muéstrame los links exactos, previews disponibles, relaciones
+útiles y mismatches. Yo revisaré qué tomar de cada una. No generes el sistema aún."
+
+Feedback de referencias:
+"De A tomo [relación], de B [tratamiento], de C [patrón]. Rechazo [aspectos].
+Sintetiza mi feedback como reglas aplicables a esta marca; separa conflictos y
+dudas. Muéstrame la interpretación y espera a que la confirme."
+
+System/components:
+"Aquí están mis foundations [ruta/archivo]. Desarrolla las reglas necesarias y
+separa mis valores de tus propuestas. Después de mi aprobación generaremos el
+batch de componentes acordado. Muestra uso y estados en [medio elegido]."
+
+Iteración:
+"En [objeto/región], a [tamaño/estado], sucede [defecto y efecto]. Conserva
+[decisiones aceptadas]. Corrige ese batch, comprueba lo afectado y muéstramelo;
+no avances al siguiente hasta mi respuesta."
+
+Aceptación acotada:
+"Acepto [artifact/valores/batch]. Continúa con [siguiente batch concreto] usando
+esa base y espera mi revisión al terminar. Todavía no [trabajo fuera de alcance]."
+
+Código:
+"Acepto el diseño de [scope y fuente]. Implementa ese diseño en [repo/stack].
+Preserva tokens/componentes, usa las reglas de responsive y estados aceptadas,
+verifica la UI real y los checks relevantes. Presenta discrepancias materiales;
+no cambies una decisión cerrada por tu cuenta ni publiques sin ese encargo."
+
+Revisión sin edición:
+"Revisa [scope] sin modificar diseño, código o registros. Señala brechas con
+ubicación/estado, evidencia y propuesta mínima. Yo decidiré qué corregir."
+
+FUENTES NUEVAS DE ESTA CLARIFICACIÓN
+
+Matt Pocock: setup por repo, explorar antes de preguntar y rondas de preguntas
+cuyas dependencias ya están resueltas. Adoptamos el mecanismo; no instalamos
+su paquete, tracker, subagentes o entrevista ilimitada por defecto.
+https://github.com/mattpocock/skills
+https://github.com/mattpocock/skills/blob/main/skills/engineering/setup-matt-pocock-skills/SKILL.md
+https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md
+
+RasMic: archivos de instrucciones/skills y verificación con evidencia real.
+Su repo original confirma el formato portable; no copiamos sus mandatos de PR,
+worktrees, Greptile, recorder o publicación de capturas. No prueba una mejora de Sol.
+https://github.com/michaelshimeles/skills
+
+OpenAI: skills con entradas/salidas explícitas y disclosure progresivo; el agente
+carga recursos relevantes. No equivale a memoria permanente ni a enforcement.
+https://developers.openai.com/codex/build-skills
+https://developers.openai.com/codex/guides/agents-md
+
+Carbon: foundations -> componentes reutilizables -> patrones para objetivos/flows.
+Atomic Design: componentes y páginas se informan mutuamente; no es cascada rígida.
+El libro es de 2016; es una base metodológica, no evidencia de modelos de 2026.
+https://preview.carbondesignsystem.com/getting-started/designing/overview
+https://carbondesignsystem.com/patterns/overview
+https://atomicdesign.bradfrost.com/chapter-2/
+https://www.designtokens.org/tr/2025.10/format/
+
+Penpot: ruta real de MCP, prompts acotados, reglas/tokens/components y validación.
+La recomendación de ahorrar contexto no fija un porcentaje medido de ahorro ni
+obliga a generar cinco archivos de extracción en cada proyecto.
+https://help.penpot.app/mcp/
+https://help.penpot.app/mcp/good-prompting-practices-design/
+https://help.penpot.app/mcp/prompting-token-aware/
+https://help.penpot.app/mcp/design-file-structure-best-practices/
+https://penpot.app/ai/mcp-server
+https://penpot.app/pricing
 
 PREPARACIÓN: SOLO AL INSTALAR O ACTUALIZAR EL KIT
 
@@ -332,7 +327,9 @@ conocidos, relación observada, aplicación concreta y límites de transferencia
 Abrir imágenes legibles; para movimiento, observar la secuencia. Una lista de
 enlaces, JSON de tokens o un resumen del sitio no prueban investigación visual.
 
-Rutas públicas para elegir según el hueco, no para recorrerlas todas:
+Descubrir solo en REFERENCES.md o fuentes añadidas explícitamente por ti.
+Las siguientes categorías orientan la consulta; no amplían esa allowlist:
+Rutas para elegir según el hueco, no para recorrerlas todas:
 - Dirección/composición: https://godly.website/ y https://www.awwwards.com/
   o una galería pertinente de REFERENCES.md. Seleccionar una obra concreta.
 - Tipografía aplicada: https://fontsinuse.com/ y material real de la marca.
@@ -343,7 +340,7 @@ Rutas públicas para elegir según el hueco, no para recorrerlas todas:
 - Patrones de producto: experiencia existente, docs del componente y requisitos
   del usuario. Una galería de campañas no demuestra usabilidad de una app.
 
-Usar pocas referencias activas que cambien decisiones. Hasta tres es un punto
+Tras revisar ocho candidatos, usar relaciones seleccionadas que cambien decisiones. Un conjunto pequeño es un punto
 de partida práctico, no un máximo ni un óptimo probado. Ampliar por un hueco
 nombrado; detener discovery cuando alcance para decidir. Seleccionar por calidad
 y pertinencia, además de fecha. Un ejemplo reciente mediocre no supera a uno
@@ -392,7 +389,8 @@ esté disponible; no equivale a una mejora automática de calidad. Respuestas
 cortas no garantizan poco razonamiento interno. Las tarifas de API no permiten
 calcular cuánto durará el 100% de Pro; se necesita consumo observado de tu cuenta.
 
-No pegar este manual entero por rutina. Usar el prompt del archivo y los datos
+No pegar este manual entero por rutina. El agente lee el skill, la fase y
+los inputs necesarios, espera tu review y conserva decisiones aceptadas. Usar el prompt del archivo y los datos
 del encargo. La skill y los recursos canónicos se cargan por necesidad; este TXT
 es una guía humana autónoma. Si lo adjuntas, pedir que se lea para elegir el
 procedimiento pertinente, sin convertir todos los anexos en acciones obligatorias.

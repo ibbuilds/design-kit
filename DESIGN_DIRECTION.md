@@ -2,9 +2,17 @@
 
 Read for a new direction or an unresolved finish. Skip for a supplied final design, an accepted system or a local repair with sufficient context. Aim for an intentional result appropriate to the product, not a recognizable agent-generated template.
 
+## Assist the designer before extending their direction
+
+In designer-led work, use the product/brand brief, selected reference relationships and the current question. Offer focused options for a foundation or pattern; do not generate all foundations or choose a new identity without that delegation. Typography, colors, spacing and geometry establish vocabulary, while a representative composition and user flow establish how to use it. A palette alone does not make all remaining design choices repetitive.
+
+Before autonomous expansion, check the approved example, task/flow, important states, content/assets and closed/open decisions. Missing material patterns call for focused assistance or a decision within existing delegation, not automatic invention. Keep a whole-page/flow outline while producing sections; inspect related parts together for hierarchy, pacing, navigation and state continuity. Familiar states still require product-specific behavior.
+
+Respect design-first work: the designer can use their existing medium and hand over captures, values and behavior. If a local HTML/CSS prototype is chosen, reuse its code through functional integration to avoid a second full implementation. No new canvas subscription is required. The requested stage determines whether the deliverable is references, advice, a prototype or production code.
+
 ## Establish the requested creative standard
 
-For ambitious original work, inspect a few excellent references that illuminate this product's unresolved choices. A Godly/Awwwards selection can calibrate craft; pair its useful qualities with the actual audience, content and task. A gallery's curation is evidence of selection, not a tested workflow or a promise of an award. Use the access policy in [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md); a named gallery does not require a paid service or MCP installation.
+For ambitious original work, inspect a few excellent references from the curated library or explicitly human-added sources that illuminate this product's unresolved choices. Pair useful qualities with the actual audience, content and task. A gallery's curation is evidence of selection, not a tested workflow or a promise of an award. Use the source/access policy in [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md); a named quality benchmark is not permission to expand discovery.
 
 State a compact creative premise grounded in the product: the idea the experience expresses, how content unfolds and the visual or interactive relationship that makes it recognizable. The premise can come from editorial typography, product behavior, meaningful imagery or another appropriate medium. Do not force a metaphor, bespoke typeface, WebGL scene or motion quota. An existing system can express exceptional craft without inventing another identity.
 
@@ -55,4 +63,4 @@ Keep useful code, tokens and assets as the baseline for expansion. A new screen 
 
 When the user chooses Figma exploration or supplies a Figma design, use the available specialist skill and connection. Read the relevant frame's design context and screenshot; use variables and actual Code Connect/component mappings where present. For an oversized selection, retrieve structure and drill into relevant nodes instead of repeatedly loading the entire file. Treat generated code as design evidence to adapt to the target's stack, not a mandate to replace it.
 
-If authorized canvas work helps compare flows or alternatives, capture only the needed running UI states, refine them in Figma and implement the selected changes back in the same application. Preserve the canonical tokens/components and inspect the resulting code render. Writing to Figma is a tool action within the user's scope; it is not mandatory for code-first design. A static frame does not establish navigation, persistence or responsive behavior. Do not export private application states without authorization.
+If authorized canvas work helps compare flows or alternatives, use the user's chosen medium; Penpot is the preferred editable-canvas candidate through [PENPOT.md](PENPOT.md). Capture/refine only the needed states and present each agreed batch for human review before dependent work. Preserve canonical tokens/components and inspect the resulting code render when implementation is requested. A static frame does not establish navigation, persistence or responsive behavior. Do not export private application states without authorization or switch to a paid canvas by default.

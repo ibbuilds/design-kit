@@ -1,3 +1,13 @@
+ENTRADA ACTUAL — DISEÑO SUPERVISADO
+El agente elegido usa el skill como aditivo: summary de marca -> dirección tuya
+-> ocho referencias revisadas e interpretadas -> tus foundations/desarrollo del
+sistema -> base components -> composites/patrones -> páginas -> código solicitado.
+Cada fase/batch tiene salida concreta y espera tu respuesta antes de avanzar.
+Penpot es el canvas candidato preferido; PENPOT.md describe el MCP oficial y sus
+requisitos reales. El kit no lo instala ni afirma una conexión activa.
+Los dos TXT de diseño actualizados sustituyen el uso autónomo descrito en partes
+históricas de este archivo. SOFTWARE.md sigue siendo el procedimiento de programación.
+
 GUÍA GENERAL: DISEÑO Y PROGRAMACIÓN CON GPT-6.1 SOL
 
 EDICIÓN ACTUAL PARA APRENDER Y APLICAR: TRES MANUALES AUTÓNOMOS

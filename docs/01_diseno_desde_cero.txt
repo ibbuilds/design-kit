@@ -1,296 +1,326 @@
-WORKFLOW 1 — DISEÑO DESDE CERO
-DISEÑO EXCEPCIONAL CON AI, DESDE EL PRODUCTO HASTA LA ENTREGA
+WORKFLOW 1 — DISEÑO DESDE CERO, CON TU DIRECCIÓN Y SUPERVISIÓN
+MANUAL PERSONAL PARA APRENDER Y USAR DESIGN KIT
+Actualizado: 29 de septiembre de 2026.
 
-Versión: 29 de septiembre de 2026. Manual personal para aprender y aplicar el workflow.
-Tú diriges el encargo y evalúas el resultado; Design Kit guía la ejecución de la AI.
+LA IDEA QUE VAS A APLICAR
 
-CÓMO USAR ESTE MANUAL PARA APRENDER
+Tú aportas el conocimiento de marca, criterio, dirección y foundations. El agente
+procesa esa base, busca evidencia cuando se lo pides, desarrolla el sistema y
+genera componentes/páginas sobre lo que apruebas. Design Kit es el skill que
+guía al agente elegido, no otra app, un servidor o un diseñador autónomo.
 
-Primero entiende la secuencia y los motivos de cada paso. Después, en tu próximo
-encargo, usa la pasada guiada que sigue; consulta el detalle cuando aparezca una
-duda. Los prompts están después del ejemplo y son herramientas para delegar.
-Los anexos de instalación, referencias y consumo se consultan cuando hacen falta.
-No tienes que memorizar comandos ni completar todo el catálogo.
+El recorrido: marca y summary -> intención visual -> ocho referencias revisadas
+-> foundations y desarrollo del sistema -> componentes base -> composites y
+patrones -> páginas -> implementación si la solicitas. En cada fase recibes una
+entrega que puedes revisar; el agente espera tu respuesta para avanzar.
 
-TU PASADA GUIADA
+No necesitas tener todo listo para empezar. Sí necesitas resolver lo que falta
+antes de que el agente produzca trabajo dependiente. Las rutas sugeridas son
+comodidades; no una jerarquía de documentos que por existir produce calidad.
+Lo que debe marcar diferencia es qué decisiones se basan en tus inputs, cómo se
+aplican a artifacts reales y qué cambios evitas multiplicar antes de revisarlos.
 
-A. ESCRIBE LO QUE ESTÁS HACIENDO.
-En pocas líneas: producto, usuario, tarea/mensaje, alcance, contenido disponible
-y restricciones. Pregúntate: "¿Qué tiene que entender o poder hacer quien entra?"
-Con eso evitas pedir una web bonita que no resuelve un producto concreto.
+1. INICIA EL PROCESO EN EL PROYECTO
 
-B. CALIBRA TU GUSTO CON EJEMPLOS.
-Elige o encarga buscar pocas referencias fuertes. Mira una región concreta:
-¿qué domina?, ¿cómo cambia la escala?, ¿cómo se relacionan tipo e imagen?,
-¿qué hace que se sienta propio? Di qué relación te interesa y qué no copiarías.
-Una URL basta como entrada si delegas el estudio; no tienes que analizar la
-biblioteca completa. Tu aprendizaje consiste en reconocer relaciones, no efectos.
+Instala/carga el kit con tu agente; en Codex invoca $design-kit. Puedes decir:
+"Inicia el workflow de diseño y guíame; revisa lo que ya te di y pregunta lo que
+falte para la fase actual". El agente identifica el repo correcto y sus inputs.
+No confunde el checkout de Design Kit con el producto que vas a diseñar.
 
-C. DELEGA UNA DIRECCIÓN Y UNA IMPLEMENTACIÓN.
-Usa el prompt de inicio. Decide si quieres aprobar una muestra o delegar todo
-el resultado. Si reservas aprobación, dilo desde el principio; si delegas todo,
-puedes evaluar la entrega completa sin microgestionar cada fase.
+Su primera respuesta útil tiene fase, lo que ya sabe, input necesario y siguiente
+salida. Si falta contexto, pide adjunto, enlace legible o .design/brand.md dentro
+del proyecto, mostrando la ruta real. Si solo tienes ideas, te ayuda a capturarlas
+en conversación. No exige que prepares un PRD empresarial para una pantalla.
 
-D. MIRA EL RESULTADO COMO EXPERIENCIA.
-Abre o pide mostrar el render: desktop, móvil, una región profunda y acción
-principal. Comprueba la referencia junto a la región correspondiente. Pregúntate:
-"¿Esta idea pertenece a este producto? ¿Qué brecha concreta sigue habiendo?"
-Si solo hay un hero trabajado, falta evaluar el resto del alcance.
+2. PROPORCIONA LA INFORMACIÓN Y REVISA EL SUMMARY
 
-E. CONVIERTE TU CRITERIO EN FEEDBACK ÚTIL.
-Señala ubicación, estado/tamaño y efecto. Ejemplo: "En móvil el título compite
-con la imagen y el producto pierde protagonismo; conserva la tipografía pero
-corrige la relación de escala y el encuadre". Cuando el concepto no te funciona,
-explica qué intención no expresa; no tienes que diagnosticar el CSS.
+Cuenta qué hace la marca/producto, por qué importa, público, necesidades y tarea
+principal. Añade valores/voz, diferenciación, contenido, proof, assets y restricciones
+que afecten la experiencia. Distingue lo que existe de lo que deseas crear.
+Puedes dar Notion, TXT, MD o PDF. Un enlace necesita acceso real: si el agente no
+lo tiene, sirve export, adjunto o contenido relevante pegado. Notion no es obligatorio.
 
-F. CONSERVA LO BUENO Y CIERRA EL ALCANCE.
-Indica qué aceptas y qué falta. Pide completar sobre ese código y comprobar
-los cambios. Antes de cerrar, recorre lo importante y revisa qué verificó la AI
-realmente. Una declaración de "premium" no sustituye tu observación.
+El agente extrae hechos útiles y te muestra un summary: contexto, implicaciones
+para diseño y dudas materiales. Lo guarda en .design/project.md o tu registro
+existente, apuntando a los originales. Ese summary no inventa identidad visual:
+todavía no hay aprobación de tipografías, colores o logo.
 
-G. APRENDE DEL RESULTADO SIN GUARDAR TODO EL HISTORIAL.
-Conserva referencia aplicada, decisión que funcionó y fallo que hubo que corregir.
-Para la próxima pantalla, reutiliza la base aceptada y abre solo la decisión nueva.
-Si un problema reaparece, esa evidencia permite mejorar tu siguiente encargo.
+Tu revisión: ¿entendió público, tarea y objetivo? ¿Mezcló un supuesto con un hecho?
+Corrige o confirma. El agente espera esa respuesta antes de pasar a la dirección.
+No acepta datos inventados para que una página parezca más sofisticada.
 
-PARA PRACTICAR CUANDO TÚ QUIERAS
+3. EXPLICA LA DIRECCIÓN QUE IMAGINAS
 
-Toma un encargo acotado con contenido representativo, aplica A–F y observa qué
-tuviste que corregir. Comprueba si la dirección, assets y móvil quedaron más
-claros con este método. Puedes compararlo con trabajo previo equivalente;
-no necesitas fabricar un benchmark ni pagar varias versiones para aprender.
-El criterio es calidad aceptada y retrabajo real, con consumo solo si es visible.
+Da tus ideas de diseño para esa marca. No necesitas conocer nombres de estilos:
+describe sensación, jerarquía, imágenes, densidad, interacción o comparaciones.
+Separa lo que es obligatorio de lo que solo quieres explorar. Si no sabes, el
+agente puede plantear unas pocas opciones breves fundamentadas en el contexto.
 
-QUÉ VAMOS A CONSEGUIR
+Recibe la interpretación del agente y corrígela o acéptala. No debe convertir
+una industria en una estética estereotipada ni usar ejemplos de este manual como
+preferencias tuyas. El output es una dirección de búsqueda entendible; no una
+paleta elegida por AI. Esa respuesta desbloquea referencias.
 
-Una experiencia específica del producto, con nivel de craft comparable a obras
-fuertes de Godly/Awwwards que sean pertinentes a su uso: idea, composición,
-tipografía, contenido, assets, interacción y ejecución coordinadas. Ahorrar en
-trabajo que no mejora esa experiencia. Una UI funcional pero intercambiable
-sigue dejando una brecha material cuando ese es el nivel visual pedido.
+4. CONSIGUE Y REVISA OCHO REFERENCIAS CLARAS
 
-Usar esta ruta cuando no tienes composición propia o solo tienes un moodboard.
-Tu moodboard aporta criterio; no se convierte automáticamente en un wireframe.
-Si ya tienes jerarquía/composición que quieres conservar, se itera sobre esa base.
+Elige: aportar tus links/capturas, ponerlos en .design/references/ o pedir búsqueda
+al agente. Puede combinar material tuyo y descubierto hasta el set de revisión.
+Por defecto busca ocho referencias distintas y pertinentes. Ocho es el default
+que escogimos para revisar; no un número probado como óptimo de costo o calidad.
 
-El recorrido: resultado y contexto -> referencias pertinentes -> idea propia ->
-fundamento mínimo y muestra integrada -> comparar/reparar -> consolidar ->
-completar alcance y estados -> verificar y entregar al destino autorizado.
-Una muestra ayuda a decidir; si pediste el producto completo, el agente continúa.
+La búsqueda se limita a familias pertinentes de REFERENCES.md o fuentes que tú
+agregues expresamente. El agente no sale a buscar otras galerías porque un query
+dio resultados malos. Puede ampliar dentro del catálogo. Abrir el sitio original
+de un ejemplo curado requiere verificar el link desde la galería; guarda ambos.
 
-1. DAR LA INFORMACIÓN QUE CAMBIA EL DISEÑO
+Recibe previews legibles cuando el host lo permite, links exactos, región útil,
+qué encaja, qué no y qué comportamiento no vio. Si no puede inspeccionar ocho,
+entrega el subconjunto real y pide decidir entre otra búsqueda permitida, más
+inputs tuyos o aceptar un set menor. No completa con basura para llegar al número.
 
-Tú proporcionas lo que sabes: qué producto es, para quién, qué trabajo/mensaje
-importa, alcance, fidelidad (concepto/prototipo/producción), contenido real,
-assets disponibles, restricciones y decisiones reservadas. Indicar páginas/flows
-necesarios y qué ya existe. Un contrato breve puede contener suficiente contexto.
+Tu parte: explica qué te gusta y qué tomar de cada referencia útil. No necesitas
+usar las ocho ni mezclar ocho identidades. Puedes tomar jerarquía de una, framing
+de otra y un patrón de recuperación de otra; descarta lo incompatible.
+La AI procesa tu feedback como mapa de decisiones: relación -> aplicación en
+tu producto -> límites/evitar -> evidencia. Te lo muestra para confirmar.
+Si tus instrucciones chocan, pregunta; no promedia estilos silenciosamente.
 
-El agente inspecciona el target y separa requisitos, supuestos y extras. Pregunta
-solo por huecos que cambian materialmente alcance, verdad o una decisión tuya;
-continúa lo independiente. No inventa testimonios, clientes, métricas ni features
-para aparentar sofisticación. El demo content se etiqueta. No fuerza una landing
-antes de una aplicación si lo pedido es el workspace de la aplicación.
+5. ENTREGA FOUNDATIONS; LA AI DESARROLLA LO FALTANTE
 
-Resultado de esta etapa: un encargo entendible y criterios que permitan detectar
-una implementación equivocada. Puede vivir en la conversación o registro existente.
-No necesitas preparar una jerarquía de PRD, taste packs y carpetas para empezar.
+Tu base puede ser un archivo .design/foundations.md, tokens existentes, un canvas,
+capturas con valores/reglas o un documento. No debes preparar un sistema completo.
+Normalmente incluye tipo y roles, colores principales/semánticos, sizing, spacing,
+densidad, geometría y sombras cuando son parte del estilo. Añade la mecánica de
+controles relevante si ya la tienes. No todas las marcas necesitan shadows/motion.
 
-2. ASEGURAR QUE SE PUEDE CONSTRUIR Y VER
+Si falta una decisión importante, la AI te la solicita o te ayuda con una propuesta
+puntual que debes aceptar. Después convierte lo suministrado en reglas de uso,
+roles/aliases semánticos y derivados necesarios para el alcance. Separa valores
+tuyos de adiciones propuestas. No crea cinco sistemas incompatibles ni cientos
+de tokens decorativos porque podría hacerlo.
 
-Leer solo entrypoints, componentes, tokens y comandos pertinentes. Identificar
-run/build/check y una vía real para observar el render. Comprobar fonts/assets
-disponibles y restricciones del host. Resolver temprano lo que condiciona el diseño:
-datos, permisos, integración incierta, tamaño del contenedor o ciclo de vida.
+Revisa el uso visual real de esas reglas en el medio elegido: ¿los roles tienen
+sentido? ¿Legibilidad y densidad responden a la marca y tarea? ¿Cambió un valor tuyo?
+Corrige o acepta. Tu aceptación desbloquea componentes, no todo el resto del proyecto.
 
-Si el proyecto ya tiene sistema, heredarlo. Si es nuevo, preparar únicamente lo
-necesario para la primera pantalla: roles tipográficos, colores semánticos,
-espaciado y controles reutilizables. Explicar cuándo se usa cada rol. No extraer
-un sistema completo supuesto de una captura ni construir una biblioteca de todas
-las variantes imaginables antes de ver una experiencia real.
+6. REVISA COMPONENTES BASE, POR BATCHES
 
-Un build no sustituye el render. Si falta una capacidad esencial, usar alternativa
-autorizada o reportar el hueco concreto. No simular que se inspeccionó ni migrar
-el runtime/herramientas sin una necesidad y autorización reales.
+El agente propone inventario necesario a partir de las páginas/funciones previstas:
+controles y pequeñas piezas que realmente se usarán. Acepta inventario, medio y
+batch antes de generarlo. Penpot puede ser el canvas editable; lo concreto depende
+de conexión disponible y tu elección. No necesitamos cada componente de un framework.
 
-3. INVESTIGAR PARA DECIDIR, CON UN ESTÁNDAR ALTO
+La entrega debe mostrar los componentes con usos y estados relevantes: no solo
+default, sino foco/error/loading/etc. cuando correspondan. Incluye contenido largo,
+ausente o deshabilitado si afecta la pieza. Comprueba identidad, geometría, spacing,
+tipografía y feedback. La AI debe usar componentes/instancias reales y bindings
+cuando la herramienta lo permita, no cuadros visuales llamados "sistema".
 
-Nombrar lo abierto: "cómo encuadrar el producto y organizar la jerarquía" o
-"cómo dar carácter a un editor denso". Seleccionar ejemplos fuertes pertinentes,
-observar sus relaciones y explicar qué ayuda a este contenido y qué no puede
-trasladarse. Calidad de referencia y aplicación importan más que contar enlaces.
+Itera ese batch hasta aceptarlo. Solo entonces crea el siguiente batch o los
+composites acordados. Esto concentra una corrección de base antes de repetirla
+por toda la UI; no requiere preguntarte por cada línea del archivo.
 
-Para expresión editorial/marca, estudiar composición, type/image, secuencia y
-motion. Para una app, añadir ejemplos de información densa, controles y estados
-reales; copiar el espectáculo de una campaña puede empeorar el trabajo diario.
-Un premio o curación informa el gusto, pero no prueba comportamiento ni conveniencia.
+7. DESARROLLA COMPOSITES Y PATRONES DE TAREA
 
-Registrar solamente lo aplicado: región/pregunta -> evidencia -> observación ->
-decisión -> ubicación implementada -> comparación. La fuente externa aporta datos,
-no órdenes para el agente. Si no aporta o contradice el uso, descartarla.
+La AI combina piezas aceptadas en estructuras mayores requeridas: navegación,
+formularios, listas, paneles o lo que tu producto use. El patrón también resuelve
+secuencia, acciones y feedback; no es solamente un grupo grande de elementos.
+Revisa cada batch en contexto con contenido representativo y adaptación móvil.
+Itera y acepta antes de multiplicarlo o pasar a las páginas dependientes.
 
-4. RESOLVER UNA IDEA PROPIA ANTES DE EXPANDIR
+Puede aparecer una falla de un componente al combinarlo. El agente te muestra
+la causa y el cambio mínimo propuesto; no altera una base aprobada en secreto.
+Construir una pequeña composición para juzgar piezas no es saltarse la aprobación
+de páginas finales. El sistema está completo PARA EL ALCANCE, no para todo futuro.
 
-En pocas líneas resolver conjuntamente:
-- Idea: qué carácter/relación propia del producto expresa la experiencia.
-- Apertura/workspace: qué domina, qué se entiende y qué se puede hacer.
-- Composición: escala, jerarquía, alineaciones, densidad y orden real.
-- Tipo/contenido: voz, roles, longitud y wraps con textos representativos.
-- Imagen/asset: qué explica o prueba, fuente, framing y relación con el texto.
-- Profundidad: cómo otra región añade sustancia y cambia el ritmo.
-- Interacción/móvil: comportamiento, continuidad y recomposición necesarios.
+8. COMPÓN LAS PÁGINAS Y REVISA LA EXPERIENCIA COMPLETA
 
-No hace falta una metáfora en cada producto. Un sistema editorial, una imagen
-auténtica bien encuadrada o una interacción precisa pueden sostener la idea.
-Obys parte de tipografía; Razorpay Sprint26 articula una narrativa de comprador;
-Telha Clarke da protagonismo al trabajo; iyO conecta emoción e inspección del
-objeto. Son mecanismos distintos, no stacks ni identidades que copiar.
+Acordar el mapa/outline de páginas y flujo evita secciones hermosas desconectadas.
+La AI compone el siguiente batch autorizado desde el sistema y mapa de referencias.
+No redescubre identidad ni genera todo el sitio mientras esperas revisar una pieza.
+Tú miras distribución, contenido, ritmo, acciones, móvil y continuidad entre estados.
+Componentes buenos no deciden por sí solos cómo debe leerse o funcionar una página.
 
-Si una elección fundamental sigue abierta, comparar conceptos breves antes de
-construir otra página. Si la duda está en una región dominante, explorar esa pieza
-con iguales datos/función; elegir por pertinencia y revisar luego la pantalla
-integrada. No hay cuatro variantes obligatorias ni un torneo de páginas/modelos.
+Da feedback específico; el agente reitera el batch y te lo muestra. Conserva lo
+aceptado. Repite hasta aceptar las páginas del alcance. El agente ofrece entonces
+pulido manual, pulido con AI o implementación y espera tu elección.
 
-5. RESOLVER EL ASSET QUE SOSTIENE LA COMPOSICIÓN
+9. PASA A CÓDIGO SI ASÍ LO ELIGES
 
-Priorizar material propio/autorizado, fotos reales, capturas útiles del producto,
-diagramas o tipografía según la idea. Una imagen de ambiente no reemplaza evidencia
-del producto si el usuario necesita entenderlo. Elegir sujeto, resolución, crop,
-posición y comportamiento de carga; comprobar derechos y privacidad.
+Una vez solicitado, el agente implementa la fuente aceptada, tokens, componentes,
+assets, responsive y estados, con el stack de tu repo. Inspecciona el render real
+y recorre la tarea/recuperación; también ejecuta checks pertinentes. No aplica una
+reinterpretación estética porque suponga que "perfeccionar" significa rediseñar.
 
-Generar un bitmap únicamente si aporta y está autorizado, con la herramienta
-adecuada. No rasterizar texto, controles o toda la UI. Si el asset principal falta,
-la muestra puede ser provisional pero se identifica como tal. No declarar acabado
-con un placeholder que contradice la idea ni gastar en assets por ceremonia.
+Una incompatibilidad real se presenta para decidir. No se promete exactitud
+automática desde cualquier captura: para fidelidad sirven estructura, medidas,
+reglas e IDs además del diseño visual. Si diseñaste mediante HTML/CSS autorizado,
+reutiliza ese código. Termina con evidencia, limitaciones y revisión del resultado.
 
-6. CONSTRUIR UNA MUESTRA QUE PONGA A PRUEBA LA IDEA
+CÓMO OPERA EL AGENTE ENTRE ENTREGAS
 
-Implementar en el target sobre una misma base de código. Incluir apertura o
-workspace central, otra región/estado que pruebe profundidad y adaptación móvil.
-Una pantalla pequeña puede constituir la muestra entera. Usar contenido real o
-demo honesto; una frase corta perfecta no representa textos largos o datos densos.
+El contrato es: lee lo existente -> identifica fase y batch -> obtiene el input
+faltante -> crea una salida concreta -> te la muestra -> espera tu respuesta ->
+registra aceptación o correcciones. Feedback de corrección no es aceptación.
+Silencio, tiempo transcurrido, "me parece bueno" dicho por la AI y presencia de
+un archivo no autorizan avanzar. Dentro del batch pedido, la AI sí puede hacer
+los arreglos normales y comprobarlos sin preguntarte por cada operación.
 
-Inspeccionar con fuentes/media cargados y a tamaños reales. Comparar las relaciones
-seleccionadas: foco, escala relativa, type/image, ritmo, crop, densidad y acabado.
-En motion relevante, observar la secuencia, interrupciones y continuidad, además
-de la captura. Probar uso de controles al nivel de fidelidad solicitado.
+Un pedido amplio de "haz el diseño" no elimina la supervisión. Una aprobación
+previa tuya sí se reutiliza dentro de su alcance. No tienes que responder otra
+vez las mismas preguntas ni aprobar un sistema final que ya proporcionaste.
+Cambiar el régimen de supervisión requiere una instrucción tuya explícita.
 
-El resultado de esta etapa es una premisa implementada que ya revela sus puntos
-débiles. Si reservaste aprobación, entregar esa muestra concreta; si delegaste la
-dirección, decidir dentro del alcance y completar. Autoelección no es tu aprobación.
+El registro es .design/project.md o tu fuente existente. Guarda facts útiles,
+fuentes, intención visual, interpretación de referencias, paths/IDs aceptados,
+fase/batch actual, feedback pendiente y siguiente acción autorizada. No vuelca
+todas las conversaciones ni carga todos los links en cada turno. Si una decisión
+cambia, revisa las partes que dependen de ella; no rehagas todo por costumbre.
 
-7. REPARAR LA CAUSA Y PRESERVAR LO QUE FUNCIONA
+CALIDAD VISUAL Y UX: QUÉ EVALUAR EN LO QUE TE ENTREGA
 
-Describir ubicación + viewport/estado + defecto + impacto + reparación mínima.
-Separar incumplimiento, defecto material de uso/craft y preferencia opcional.
-No llamar "preferencia" a una brecha importante del nivel visual pedido.
+Busca carácter propio y relaciones precisas, no solo "premium" en el texto.
+Comprueba jerarquía, type/image, densidad, ritmo, alineación óptica, crop de assets
+y coherencia entre regiones. Tu estándar puede ser muy alto y expresivo o muy
+preciso y contenido: depende del producto, público y dirección que elegiste.
+Las referencias deben cambiar decisiones visibles; copiar un color no aplica
+una composición. Mira la región de referencia y la propuesta con condiciones
+comparables: contenido, tamaño y estado cuando corresponda.
 
-Defecto de ejecución: ajustar wraps, optical alignment, spacing, crop o código.
-Elemento conceptualmente débil: cambiar asset/estructura de contenido.
-Premisa equivocada: reconsiderar dirección dentro de lo que delegaste.
-Otra sombra o animación no arregla automáticamente ninguno de esos problemas.
+Para UX, revisa qué entiende la persona, qué puede hacer, qué sucede al actuar
+y cómo se recupera. Incluye contenido largo/ausente, loading, error, éxito y
+permisos cuando sean relevantes. Una imagen no demuestra interacción, teclado,
+screen reader, performance ni conversión. Un premio tampoco demuestra esos usos.
+En código, prueba el flujo real y las necesidades de accesibilidad aplicables.
+No conviertas checks visuales en una certificación de WCAG sin la evaluación real.
 
-Agrupar reparaciones relacionadas y verificar efectos. Comparar con la versión
-anterior y conservarla si el cambio empeora. No fijar dos rondas como límite de
-calidad; tampoco seguir cambiando gustos cuando ya se cumple el brief.
+Para feedback, di ubicación + tamaño/estado + defecto observable + efecto.
+"En móvil, el título compite con el producto; conserva la familia tipográfica y
+revisa proporción y encuadre" es una crítica accionable. "Más premium" deja la
+decisión sin resolver. Si falla la idea, explica qué no representa; la AI puede
+proponer una alternativa para que la aceptes, sin decorar el concepto equivocado.
 
-8. CONSOLIDAR Y COMPLETAR SOBRE LA MISMA BASE
+No apruebes solo el hero: revisa regiones profundas, controles y continuidad.
+Componentes aprobados reducen decisiones repetidas; no garantizan una buena
+composición, contenido o flujo. La página puede revelar un problema en la base.
+Ese retorno es normal: el agente muestra la propuesta de ajuste, tú decides y
+solo se actualizan consumidores realmente afectados. Atomic Design no es una
+cascada rígida en la que jamás se vuelve a componentes desde páginas.
 
-Llevar refinamientos reutilizables justificados a componentes/tokens canónicos y
-comprobar consumidores afectados. Verificar reutilización real, usos semánticos
-y estados/variantes requeridos. Una forma parecida no demuestra una instancia;
-una tabla que solo sirve para la captura no demuestra composición flexible.
+PENPOT: MEDIO EDITABLE PROPUESTO, NO OTRO SISTEMA
 
-Completar páginas, flows y estados del alcance manteniendo el criterio. No
-reiniciar identidad ni reconstruir todo el sistema por cada pantalla. No crear
-una skill por componente. Marca, textos, assets y hechos quedan en el proyecto;
-el kit compartido conserva principios generales y no absorbe esa identidad.
+Design Kit aporta el proceso. Penpot aporta el canvas y su MCP las operaciones
+del agente. Tu agente sigue siendo el que elegiste. La ruta preferida para
+diseño editable es Penpot si decides usarlo y se comprueba acceso; no hay que
+pagar Figma ni comprar otro modelo para este workflow.
 
-9. COMPROBAR Y ENTREGAR
+Según la documentación oficial revisada el 29/09/2026, Penpot MCP es gratuito y
+abierto. El plan cloud Professional anuncia $0 con límites de equipo, storage
+e historial; no equivale a infraestructura universalmente ilimitada. Tu modelo
+sigue consumiendo tu suscripción. El kit no promete una cuenta o conexión activa.
 
-Criterios de cierre aplicables al alcance/fidelidad:
-- Idea y tarea: el producto es reconocible, contenido/acción tienen sentido y
-  las afirmaciones son reales o demo etiquetado.
-- Nivel visual: no quedan brechas materiales observables frente al estándar
-  pertinente en composición, tipo/imagen, ritmo, assets o acabado. No un 8/10 propio.
-- Profundidad: otras regiones/estados reciben el mismo cuidado; un hero brillante
-  no oculta el resto intercambiable o roto.
-- Responsive: móvil y anchos intermedios preservan contenido y acciones; reflow,
-  wraps, sticky/overlays y touch funcionan donde corresponda.
-- Uso: acción principal, estados importantes y recuperación están al nivel pedido.
-- Acceso/motion: nombres/semántica, teclado/foco, contraste, zoom/reflow y reduced
-  motion pertinentes. Distinguir observación DOM de pruebas reales de lector.
-- Producción, cuando se pidió: integración/datos/permiso, errores, performance,
-  checks del target y recuperación; mocks o captura no prueban estas fronteras.
-- Código/sistema: convenciones, componentes/tokens efectivos y sin regresión material.
+Para remoto: revisa Account/Integrations/MCP Server, habilita la función disponible,
+genera la key privada y copia la URL de TU cuenta en la configuración privada de
+tu cliente MCP. Abre el archivo de diseño y File/MCP Server/Connect; conserva la
+pestaña conectada activa. No pegues la key o URL con credenciales en el repo,
+registro, screenshot o entrega pública. Primero confirma acceso con una lectura.
+La guía oficial recomienda remoto para la mayoría: no exige servidor local.
 
-Medir efectos caros en condiciones relevantes; favorecer mecánicas eficientes,
-assets ajustados y cleanup. No imponer un loader, scroll secuestrado, WebGL o
-cuota de animaciones para parecer sofisticado. La alternativa reducida debe
-conservar contenido/acciones. Una receta CSS o librería no certifica fluidez.
+Local es otra opción elegida explícitamente: necesita Node, servidor/plugin y la
+conexión del cliente. No se instala al invocar Design Kit por defecto. El kit
+incluye PENPOT.md con las fuentes, ruta de setup, validación y límites; no cambia
+tu configuración ni instala dependencias durante esta revisión documental.
 
-Entregar al destino ya autorizado con qué cambió, referencias aplicadas, checks
-reales, evidencia y límites. Distinguir implementado, verificado y aceptado por ti.
-Si falta evidencia esencial, nombrarla; resolver el resto. No sustituir una entrega
-completa por plan/muestra/PR cuando pediste completion o branch/main.
+La superficie documentada incluye high_level_overview, penpot_api_info,
+execute_code y export_shape. El agente verifica los schemas reales; no inventa
+APIs ni asume que toda versión tiene las mismas capacidades. Confirma archivo
+y página antes de escribir: el foco puede cambiar el destino del MCP. Usa batches
+pequeños, reversibles, IDs canónicos y verificación visual. En remoto algunas
+exportaciones pueden estar limitadas; reporta ese límite y pide una vista usable.
 
-EJEMPLO HIPOTÉTICO: CÓMO SE VE UNA DECISIÓN ÚTIL
+El agente debe generar componentes reutilizables y bindings cuando el API lo
+permita, no figuras visualmente similares y afirmar que ya hay una biblioteca.
+Si falta soporte, propone un procedimiento viable y espera tu decisión.
+No importa otro workflow completo del Penpot AI Kit ni su autofix/scoring por
+defecto: tu supervisión sigue siendo la regla de Design Kit.
 
-Encargo: portfolio de arquitectura, proyectos fotográficos reales y contacto.
-Decisión: la obra manda; una jerarquía editorial y alternancia de encuadres le
-dan ritmo. Referencia: relación observada de foto grande, título contenido y
-metadatos; se traduce a nuestro proyecto, sin copiar logo/paleta/asset ajenos.
-Muestra: apertura, un segundo proyecto con encuadre distinto y móvil; contacto
-usable. Problema: en móvil la foto pierde el elemento arquitectónico principal.
-Reparación: cambiar crop/recomposición y comprobarlo; añadir parallax no lo arregla.
-Consolidación: componente flexible de proyecto y reglas de imagen verificadas.
-Este ejemplo ilustra el mecanismo; no impone esa estética a una app o campaña.
+PROMPTS QUE PUEDES USAR
 
-VOCABULARIO DE LA EJECUCIÓN, SI LO NECESITAS
+Arranque:
+"Usa Design Kit y guíame por fases. Revisa lo existente; dime la fase y pide
+el input necesario. Desarrolla la base que te daré, presenta cada entrega y
+espera mi respuesta antes de avanzar. No uses mis ejemplos como gustos reales."
 
-Render: la interfaz tal como se ve funcionando, con fuentes y assets cargados.
-Viewport: área visible del navegador; el contenedor también puede limitar el layout.
-Craft: precisión del acabado, desde óptica y tipografía hasta crop y estados.
-Token semántico: valor con un papel, como texto secundario o superficie de panel;
-su función ayuda a mantener coherencia, más allá del color o nombre literal.
-Instancia/binding: uso real vinculado a un componente o variable canónica;
-una forma visualmente parecida puede estar desconectada del sistema.
-Estado: situación de la UI, como cargando, vacío, error, foco o éxito.
-Reduced motion: alternativa que reduce movimiento y conserva contenido y acciones.
+Referencias:
+"El contexto y vibe están aceptados. Busca ocho referencias claras dentro de
+las fuentes del kit. Muéstrame los links exactos, previews disponibles, relaciones
+útiles y mismatches. Yo revisaré qué tomar de cada una. No generes el sistema aún."
 
-PROMPT PARA INICIAR TU ENCARGO
+Feedback de referencias:
+"De A tomo [relación], de B [tratamiento], de C [patrón]. Rechazo [aspectos].
+Sintetiza mi feedback como reglas aplicables a esta marca; separa conflictos y
+dudas. Muéstrame la interpretación y espera a que la confirme."
 
-$design-kit
-Crea [alcance] para [producto y audiencia].
-El usuario debe poder [tarea/acción]; mensaje principal: [si corresponde].
-Contenido y assets: [datos, archivos o enlaces]. Restricciones: [las reales].
-No tengo composición propia. Referencias disponibles: [URL/capturas, si hay].
-Busco diseño excepcional, calibrado con referencias fuertes pertinentes de
-Godly/Awwwards: idea propia, composición, tipografía, balance tipo/imagen,
-ritmo, interacción y acabado. Respeta los hechos y el uso del producto.
-Resuelve la dirección, construye e inspecciona una muestra integrada desktop/móvil,
-consolida lo reutilizable y completa el alcance sobre ese código.
-Comprueba estados, acción principal y criterios visuales; repara brechas materiales.
-Entrega: [local/branch/main/publicación autorizada]. Límites: [si existen].
-Reporta resultado, referencias aplicadas, checks reales y pendientes concretos.
+System/components:
+"Aquí están mis foundations [ruta/archivo]. Desarrolla las reglas necesarias y
+separa mis valores de tus propuestas. Después de mi aprobación generaremos el
+batch de componentes acordado. Muestra uso y estados en [medio elegido]."
 
-Para un encargo pequeño bastan resultado, contenido y restricciones; el agente
-infiere detalles rutinarios. Si quieres aprobar antes de ampliar, añadir:
-"Después de construir e inspeccionar la muestra, detente para mi aprobación."
-Sin esa reserva, completa el trabajo delegado. No hay un gate automático por fase.
+Iteración:
+"En [objeto/región], a [tamaño/estado], sucede [defecto y efecto]. Conserva
+[decisiones aceptadas]. Corrige ese batch, comprueba lo afectado y muéstramelo;
+no avances al siguiente hasta mi respuesta."
 
-PROMPTS PARA CONTINUAR Y CORREGIR
+Aceptación acotada:
+"Acepto [artifact/valores/batch]. Continúa con [siguiente batch concreto] usando
+esa base y espera mi revisión al terminar. Todavía no [trabajo fuera de alcance]."
 
-Acepto [dirección/código]. Completa [alcance restante] preservando [decisiones].
-Reutiliza refs/componentes/asset útiles; corrige brechas materiales y verifica
-lo afectado sin reiniciar identidad ni generar otras versiones completas.
+Código:
+"Acepto el diseño de [scope y fuente]. Implementa ese diseño en [repo/stack].
+Preserva tokens/componentes, usa las reglas de responsive y estados aceptadas,
+verifica la UI real y los checks relevantes. Presenta discrepancias materiales;
+no cambies una decisión cerrada por tu cuenta ni publiques sin ese encargo."
 
-En [región], [viewport/estado], ocurre [defecto y efecto en la experiencia].
-La referencia/base muestra [relación]. Conserva [lo que funciona]. Corrige la
-causa, compara antes/después y verifica [estado/acción afectada].
+Revisión sin edición:
+"Revisa [scope] sin modificar diseño, código o registros. Señala brechas con
+ubicación/estado, evidencia y propuesta mínima. Yo decidiré qué corregir."
 
-Para revisión sin modificaciones:
-Revisa [alcance] sin editar. Compara render/refs y reporta defectos observables
-con ubicación, estado, impacto, evidencia y reparación. Separa lo no observado.
+FUENTES NUEVAS DE ESTA CLARIFICACIÓN
+
+Matt Pocock: setup por repo, explorar antes de preguntar y rondas de preguntas
+cuyas dependencias ya están resueltas. Adoptamos el mecanismo; no instalamos
+su paquete, tracker, subagentes o entrevista ilimitada por defecto.
+https://github.com/mattpocock/skills
+https://github.com/mattpocock/skills/blob/main/skills/engineering/setup-matt-pocock-skills/SKILL.md
+https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md
+
+RasMic: archivos de instrucciones/skills y verificación con evidencia real.
+Su repo original confirma el formato portable; no copiamos sus mandatos de PR,
+worktrees, Greptile, recorder o publicación de capturas. No prueba una mejora de Sol.
+https://github.com/michaelshimeles/skills
+
+OpenAI: skills con entradas/salidas explícitas y disclosure progresivo; el agente
+carga recursos relevantes. No equivale a memoria permanente ni a enforcement.
+https://developers.openai.com/codex/build-skills
+https://developers.openai.com/codex/guides/agents-md
+
+Carbon: foundations -> componentes reutilizables -> patrones para objetivos/flows.
+Atomic Design: componentes y páginas se informan mutuamente; no es cascada rígida.
+El libro es de 2016; es una base metodológica, no evidencia de modelos de 2026.
+https://preview.carbondesignsystem.com/getting-started/designing/overview
+https://carbondesignsystem.com/patterns/overview
+https://atomicdesign.bradfrost.com/chapter-2/
+https://www.designtokens.org/tr/2025.10/format/
+
+Penpot: ruta real de MCP, prompts acotados, reglas/tokens/components y validación.
+La recomendación de ahorrar contexto no fija un porcentaje medido de ahorro ni
+obliga a generar cinco archivos de extracción en cada proyecto.
+https://help.penpot.app/mcp/
+https://help.penpot.app/mcp/good-prompting-practices-design/
+https://help.penpot.app/mcp/prompting-token-aware/
+https://help.penpot.app/mcp/design-file-structure-best-practices/
+https://penpot.app/ai/mcp-server
+https://penpot.app/pricing
 
 PREPARACIÓN: SOLO AL INSTALAR O ACTUALIZAR EL KIT
 
@@ -328,7 +358,9 @@ conocidos, relación observada, aplicación concreta y límites de transferencia
 Abrir imágenes legibles; para movimiento, observar la secuencia. Una lista de
 enlaces, JSON de tokens o un resumen del sitio no prueban investigación visual.
 
-Rutas públicas para elegir según el hueco, no para recorrerlas todas:
+Descubrir solo en REFERENCES.md o fuentes añadidas explícitamente por ti.
+Las siguientes categorías orientan la consulta; no amplían esa allowlist:
+Rutas para elegir según el hueco, no para recorrerlas todas:
 - Dirección/composición: https://godly.website/ y https://www.awwwards.com/
   o una galería pertinente de REFERENCES.md. Seleccionar una obra concreta.
 - Tipografía aplicada: https://fontsinuse.com/ y material real de la marca.
@@ -339,7 +371,7 @@ Rutas públicas para elegir según el hueco, no para recorrerlas todas:
 - Patrones de producto: experiencia existente, docs del componente y requisitos
   del usuario. Una galería de campañas no demuestra usabilidad de una app.
 
-Usar pocas referencias activas que cambien decisiones. Hasta tres es un punto
+Tras revisar ocho candidatos, usar relaciones seleccionadas que cambien decisiones. Un conjunto pequeño es un punto
 de partida práctico, no un máximo ni un óptimo probado. Ampliar por un hueco
 nombrado; detener discovery cuando alcance para decidir. Seleccionar por calidad
 y pertinencia, además de fecha. Un ejemplo reciente mediocre no supera a uno
@@ -388,7 +420,8 @@ esté disponible; no equivale a una mejora automática de calidad. Respuestas
 cortas no garantizan poco razonamiento interno. Las tarifas de API no permiten
 calcular cuánto durará el 100% de Pro; se necesita consumo observado de tu cuenta.
 
-No pegar este manual entero por rutina. Usar el prompt del archivo y los datos
+No pegar este manual entero por rutina. El agente lee el skill, la fase y
+los inputs necesarios, espera tu review y conserva decisiones aceptadas. Usar el prompt del archivo y los datos
 del encargo. La skill y los recursos canónicos se cargan por necesidad; este TXT
 es una guía humana autónoma. Si lo adjuntas, pedir que se lea para elegir el
 procedimiento pertinente, sin convertir todos los anexos en acciones obligatorias.

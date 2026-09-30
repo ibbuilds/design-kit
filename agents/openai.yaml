@@ -1,6 +1,6 @@
 interface:
   display_name: "Design Kit"
-  short_description: "Reference-grounded frontend design and scoped refinement"
-  default_prompt: "Use $design-kit for the requested frontend task with the existing brief, implementation and reference library. Keep review-only requests read-only."
+  short_description: "Guided design onboarding with curated UI/UX references"
+  default_prompt: "Use $design-kit to start or resume this project's design workflow, identify the current phase and ask for missing inputs, present each phase's output and wait for my acceptance before advancing."
 policy:
   allow_implicit_invocation: true

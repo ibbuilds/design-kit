@@ -1,45 +1,53 @@
-# Project brief template
+# Project design record — blank template
 
-Use an existing project record when possible; otherwise copy this template into the target project, not the installed skill. Fill relevant fields from the conversation and code. Ask only about material gaps. Keep this reusable source blank. Exclude secrets.
+Use the target's existing authoritative record, or `<target>/.design/project.md`. The agent captures relevant answers as the workflow progresses; the designer need not fill every field to start. Keep this shared template blank. Point to supplied originals rather than duplicating them; exclude secrets. Examples elsewhere in the kit are not this project's preferences.
 
-## Outcome
+## Current checkpoint
 
-- Product / audience / primary user job:
-- Scope (routes, screens, sections, components, states):
-- Fidelity (concept / interactive prototype / production frontend):
-- Input authority (no base / moodboard / structural composition / final design / accepted system):
-- Target root / existing commands / technical constraints:
-- Observable success and important recovery paths:
+- Current phase / requested scope / fidelity:
+- Decisions already accepted or explicitly delegated:
+- Missing input or reserved decision:
+- Next useful output / action:
 
-## Available truth
+## 1. Brand, product and user
 
-- Product facts, copy, proof, assets and their sources:
-- Existing visual system, canonical component/token paths:
-- Accepted work, owner approval status, and decisions to preserve:
-- Devices, locales, accessibility needs and performance budgets:
+- Input sources (file, attachment, accessible page or conversation):
+- What the brand/product does and why it matters:
+- Audience / real need / main user task:
+- Distinction, values, voice and evidence relevant to design:
+- Intended result / required content / assets / important constraints:
+- Unknowns that matter now:
 
-## Current design decision
+## 2–3. Designer's direction and reviewed references
 
-- Mode (create/redesign / extend / refine / review):
-- Product-specific premise and reading/task sequence:
-- Dominant visual and available source/production method:
-- Type, composition, density, surfaces, motion and mobile intent:
-- Open creative choices / reserved decisions / exceptions to TASTE.md:
+- Supplied references or requested discovery route:
+- Designer's direction in their words; explicit constraints versus hypotheses:
+- Relevant catalog families / any additional source explicitly chosen by the human:
+- Inspected candidates versus designer-selected references:
+- Selected relationships, useful contrasts, mismatches and rejected directions:
+- Source/capture paths and known viewport/state; unseen behavior distinguished:
+
+## 4. Foundations and system rules
+
+- Foundation source / canonical token and component paths:
+- Type roles, semantic colors, spacing/density, geometry and control behavior:
+- Representative composition/design source and acceptance status:
+- Whole-page/flow outline, main action, important states and responsive intent:
+- Real content and asset paths / provisional material:
 - Closed decisions / open decisions / illustrative placeholders:
-- Early-sample decision (agent-delegated / user-requested approval):
-- Scoped completion criteria and explicit work budget, if any:
+- Decisions reserved to the designer / work delegated to the agent:
 
-## Active references (agent selects from existing sources when needed)
+## 5–8. Components, pages, implementation and continuity
 
-For each useful reference: region/problem; URL or local capture; viewport/state;
-what was actually seen; transferable decision; what is not copied; where it applies;
-comparable render/state and observed impact; rights/limitations.
-Mark inferred behavior and inaccessible evidence. Link only the relevant examples,
-not the whole research history. A selected example is not automatically user-approved.
+- Approved base components / composite patterns and canonical paths/IDs:
+- Current review batch / human response and acceptance status:
+- Accepted regions/pages / pending scope:
+- Design medium / implementation root / stack and relevant commands:
+- Evidence paths and verification actually performed:
+- Material defects, unknowns or rejected approaches and why:
+- Next action and explicit budget or authority override, if any:
 
-## Continuity (only what the next task needs)
-
-- Implemented direction / accepted direction, distinguished:
-- Evidence and verification actually performed:
-- Known defects, rejected approaches and why:
-- Next action and any explicit budget or authority override:
+For a retained reference, capture only the relevant question/region, exact source,
+what was observed, what transfers or does not, and where it is applied. A proposed
+example is not automatically designer-approved. Keep implemented, verified and
+accepted work distinct; no transcript dump or new record for every section.

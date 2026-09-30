@@ -83,7 +83,7 @@ class InstallTests(unittest.TestCase):
         self.assertEqual([], installer.install(self.source, self.target))
 
     def test_update_from_previous_bundle_adds_new_resources(self):
-        added = {"REFERENCE_ROUTER.md", "EXECUTION.md", "SOFTWARE.md", "DESIGN_DIRECTION.md", "PRODUCT_DELIVERY.md", "docs/QUALITY_EVIDENCE.md", "docs/WORKFLOW_RESEARCH.md"}
+        added = {"REFERENCE_ROUTER.md", "EXECUTION.md", "SOFTWARE.md", "DESIGN_DIRECTION.md", "PRODUCT_DELIVERY.md", "docs/QUALITY_EVIDENCE.md", "docs/WORKFLOW_RESEARCH.md", "scripts/reference_scope.py", "ONBOARDING.md", "PENPOT.md"}
         old_package = tuple(path for path in installer.PACKAGE if path not in added)
         with patch.object(installer, "PACKAGE", old_package):
             installer.install(self.source, self.target)

@@ -4,6 +4,8 @@ Read when selecting effort, managing a long task, or handling a budget. This is 
 
 Keep the task contract small: outcome, relevant evidence, closed decisions, success criteria and actual side-effect boundaries. Remove repeated instructions and unnecessary tool/process scaffolding before adding more reasoning. Preserve the user's authorization across turns; a requested build/fix continues through implementation, checks and the requested delivery destination. Do not substitute a plan, sample or PR for a requested complete result or direct branch/main update.
 
+For design, that persistence respects [SKILL.md](SKILL.md)'s supervised phase/batch checkpoints: complete and inspect the current authorized artifact, then wait for the human's response before dependent work. A broad build request does not waive those checkpoints. Engineering-only tasks do not inherit a design interview.
+
 ## Spend effort on decisions that affect the result
 
 Optimize total consumption to reach the requested quality, including failed attempts, review and rework. Use GPT-6.1 Sol as the normal model when available. **Medium + Standard** is a practical starting proposal for bounded work with clear criteria; Low fits simple, easily checked edits. Use High for consequential ambiguity, coupled architecture or difficult diagnosis where deeper reasoning can resolve a named problem. Substantial scope alone does not require High for every action. These are working proposals, not measured Sol optima; the user's explicit choices win. Do not lower effort halfway through a hard task just to shorten a response.

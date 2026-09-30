@@ -1,6 +1,33 @@
 # Design Kit
 
-A native skill for product-specific frontend design with Codex or another compatible coding agent, with optional programming guidance. Connects curated references to concrete implementation decisions and inspected results. Quality closes on observable criteria; unnecessary discovery, context and rework are reduced. No custom agent server, paid MCP, extra model, or agent team is required.
+A repo-scoped skill that guides the agent you already use through design: brand/product information, curated visual/UX references, designer's foundations, base and composite components, coherent pages, and authorized implementation. It provides onboarding, missing-input questions and continuity between phases. No custom agent, server, paid MCP or extra model is required.
+
+## Start and let your agent guide the phases
+
+```text
+$design-kit Start the design workflow for this project. Inspect what I already
+provided, tell me the current phase and ask for the information or decisions
+needed next. Use the curated sources for reference discovery. I will make the
+design decisions unless I explicitly delegate one.
+```
+
+If no brand context exists, the agent requests a readable link, attachment or `<project>/.design/brand.md`. Next it asks whether you have references or want it to search the curated library, clarifies the intended direction and shows useful inspected candidates. You select/refine the direction, provide or develop foundations with focused help, then choose how much expansion to delegate. The agent does not assume a style from examples in this repository.
+
+See [ONBOARDING.md](ONBOARDING.md) for the actual phase inputs, outputs, questions and resume rules. The default project record is `.design/project.md`; existing records remain valid. Reference review uses eight clear candidates by default and captures what you want to take from each; a shortage is discussed, never hidden. Suggested input paths are `.design/brand.md`, `.design/references/`, `.design/foundations.md`, `.design/base/` and `.design/assets/`. These are relative to your project, never the installed skill. They are created only when needed. Attachments, existing files and accessible links are equally valid; Notion is optional and requires available authorized access.
+
+You can enter any phase directly: "references only", "help choose typography", "extend my accepted system" or "implement this final design". The agent skips resolved phases, asks only for material missing inputs and preserves prior decisions. Every phase and meaningful design batch is supervised: the agent shows the output and waits for your acceptance/correction before dependent work. A broad build request does not waive that. Previously supplied explicit approval is reused within its scope. A brief and palette need representative composition/flow evidence before reliable expansion.
+
+The catalog is the discovery allowlist. [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) describes vibe interpretation, scoped search, visual inspection, shortlists and provenance. [scripts/reference_scope.py](scripts/reference_scope.py) generates optional catalog-scoped queries and checks candidate source membership without network/model calls. It is not a browser firewall or visual ranking engine. External originals are inspected only through verified curated links or user-supplied material. Preserve the curated catalog; do not automatically broaden to the web.
+
+[BRIEF.md](BRIEF.md) is a blank handoff you can copy into Notion or an existing project record. The agent can capture your answers there; you do not have to complete the entire template before starting. The designer can work in their current design medium. If an HTML/CSS prototype is chosen, reuse its code through integration rather than rebuilding it from screenshots.
+
+## Use with your chosen agent
+
+The workflow is Markdown instructions and local resources. An agent with repo/file access and a browser or search capability can follow it. Use the host's supported skill location and invocation mechanism, or tell it to read `/actual/path/to/design-kit/SKILL.md` and follow its links. A folder being present does not make every host discover it automatically. `$design-kit` below is Codex's invocation syntax; other hosts may use a different selector or explicit file request. `agents/openai.yaml` is optional Codex UI metadata, not a runtime requirement. No universal compatibility claim replaces checking that the actual host loaded the entrypoint and can read the project inputs.
+
+## Editable design in Penpot
+
+Penpot is the preferred canvas candidate for this workflow. [PENPOT.md](PENPOT.md) documents the official MCP route, actual setup requirements, supervised writes and validation. Penpot's MCP is free/open; the existing AI subscription still supplies the model. Remote setup needs account availability, a private MCP key and an active connected design tab. Local setup needs its server/plugin. The kit does not install either or claim a live connection. Reference discovery remains separate and can use the existing browser without an extra MCP.
 
 ## Install once into a target project
 
@@ -24,22 +51,22 @@ This adds a pointer to SOFTWARE.md for programming. It does not broaden the desi
 python /path/to/design-kit/scripts/install.py /path/to/project --check
 ```
 
-`--check` performs no writes and reports whether installation/update is needed. This checks files, including a newly added root override, not model activation or visual capability. It does not inspect user-global instructions, custom fallbacks, or nested overrides; verify the active context from the actual working directory. If Codex does not list the skill after installation, restart it and select `$design-kit` explicitly. Do not install a second copy under the same name.
+`--check` performs no writes and reports whether installation/update is needed. This checks files, including a newly added root override, not model activation or visual capability. It does not inspect user-global instructions, custom fallbacks, or nested overrides; verify the active context from the actual working directory. If Codex does not list the skill after installation, restart it and select `$design-kit` explicitly. Do not install a second copy under the same name. The target can be a design workspace before application code exists; reference-only work does not require a running app.
 
 Run Codex **inside the target project**, not this library. A short task is enough to start:
 
 ```text
-$design-kit Build the landing page for [product and audience].
-Primary outcome: [job/action]. Preserve [facts and constraints].
-Choose suitable visual references from the existing library and make
-one coherent direction. Complete and inspect the result before handoff.
+$design-kit Start the supervised design workflow for [product and audience].
+Primary outcome: [job/action]. Use [existing brief/files] when available.
+Ask for missing phase inputs, develop my supplied base, present each phase's
+output and wait for my review before dependent work.
 ```
 
-The agent selects and inspects relevant examples from REFERENCES.md itself. You do not need to annotate the entire library first. Existing project references and accepted work win over generic examples. A new direction needs concrete visual evidence; a small refinement need not research again.
+When you ask it to discover references, the agent selects and inspects relevant examples from REFERENCES.md. You do not need to annotate the entire library first; you review the candidates and say what to take from each useful example. Existing project references and accepted work come first. A new direction needs concrete visual evidence; a small refinement need not research again.
 
 ## Choose the task's input and acceptance
 
-- **From scratch / moodboard:** ask for one product-specific direction. The agent inspects an integrated desktop/mobile sample before expanding. If you want to approve that direction first, explicitly request a stop at the sample; otherwise it continues within delegated scope.
+- **From scratch / moodboard:** start the guided phases. Confirm the brand summary and intended direction, review eight references, supply foundations, then review system/component/page batches. The agent waits before dependent expansion.
 - **Wireframe / structural composition:** state what is closed, open and illustrative. Preserve the closed structure while resolving finish and responsive behavior.
 - **Final design / accepted system:** implement or extend faithfully. No new identity-discovery phase.
 - **Programming:** state the observable behavior, important constraints and recovery paths. SOFTWARE.md scales the process to a local change, feature or sensitive operation.
@@ -64,8 +91,11 @@ The second prompt uses the installed engineering pointer; it does not invoke `$d
 
 ## What lives where
 
-- **SKILL.md:** one procedure for create/redesign, extend, refine, and review.
-- **REFERENCE_ROUTER.md:** choose one eligible source for a named gap, inspect it, apply the relationship and compare the render. Preserves the curated catalog while excluding incompatible access from automatic discovery.
+- **SKILL.md:** the canonical entrypoint for supervised design, extend, refine and review.
+- **ONBOARDING.md:** default phase inputs, outputs, concrete file/link questions, human checkpoints and resume behavior.
+- **PENPOT.md:** conditional official canvas/MCP connection, target verification, supervised batches and handoff; no bundled runtime or automatic installation.
+- **REFERENCE_ROUTER.md:** interpret a vibe, search inside eligible curated sources, inspect candidate evidence, report fit/mismatches and preserve designer selection; implementation follows only the requested scope.
+- **scripts/reference_scope.py:** dependency-free catalog search planning and deterministic source-membership checks; no network, ranking model or browser enforcement.
 - **DESIGN_DIRECTION.md:** resolve an open composition through product/task, type/content, dominant asset, density and responsive behavior; skip for final designs and accepted-system repairs.
 - **SOFTWARE.md:** one engineering procedure for programming; optional root activation through `--with-software`.
 - **PRODUCT_DELIVERY.md:** conditional requirements, evidence and release guidance for substantial capabilities or readiness work.
@@ -88,7 +118,7 @@ Manual installation is also possible: copy the files listed in `scripts/install.
 
 ## Execution defaults and limits
 
-One primary coding agent, code-first in the existing target, real visual inspection, and no automatic full-page variant tournament. Complete necessary implementation, functional debugging, and required checks. Resolve material requirement, craft, responsive and behavior gaps against QA.md's scoped completion criteria. Batch justified repairs; stop when the criteria are met, an explicit user budget is exhausted or essential evidence/access blocks progress. There is no fixed two-round ceiling and no endless “make it perfect” loop. Repeated identical failures change the hypothesis or expose a blocker. Review-only requests skip construction and do not update code or project records.
+Your chosen agent, supervised design-first phases, real visual inspection and no automatic full-page variant tournament. The designer supplies the base; the agent develops it and presents each meaningful review batch before advancing. Code starts when requested after accepted design. Complete necessary implementation, functional debugging, and required checks. Resolve material requirement, craft, responsive and behavior gaps against QA.md's scoped completion criteria. Batch justified repairs; stop when the criteria are met, an explicit user budget is exhausted or essential evidence/access blocks progress. There is no fixed two-round ceiling and no endless “make it perfect” loop. Repeated identical failures change the hypothesis or expose a blocker. Review-only requests skip construction and do not update code or project records.
 
 These limits are instructions, **not a hard token/money cap**. No 8/10 score, first-pass success rate, token savings, browser availability, or production readiness is guaranteed. Package tests establish install behavior only. Validate quality on an actual project before treating this as a proven workflow.
 
@@ -114,9 +144,9 @@ The [quality evidence record](docs/QUALITY_EVIDENCE.md) connects the September 2
 
 These are standalone human learning manuals. Each begins with the user's decisions and a guided pass, explains the detailed procedure, provides examples and prompts, and includes the setup, efficiency guidance and relevant research sources. They are not installed into the active skill package or new procedures to inject into every turn.
 
-- [Design from scratch](docs/01_diseno_desde_cero.txt): direct the product-specific idea and evaluate exceptional composition, assets, interaction and finish.
-- [Iterate on your design base](docs/02_diseno_sobre_tu_base.txt): distinguish closed, open and illustrative decisions, preserve authorship and compare the implemented improvement.
-- [Professional programming](docs/03_programacion_profesional.txt): define observable behavior, judge contracts and evidence, and complete appropriate verification and recovery.
+- [Design from scratch](https://github.com/ibbuilds/design-kit/blob/main/docs/01_diseno_desde_cero.txt): use guided onboarding, select direction and develop foundations before delegated expansion.
+- [Iterate on your design base](https://github.com/ibbuilds/design-kit/blob/main/docs/02_diseno_sobre_tu_base.txt): enter with existing work, resolve only missing inputs and preserve authorship.
+- [Professional programming](https://github.com/ibbuilds/design-kit/blob/main/docs/03_programacion_profesional.txt): define observable behavior, judge contracts and evidence, and complete appropriate verification and recovery.
 
 The prior combined `docs/GUIA_GENERAL.txt` remains a consolidated reference/catalog and research record. The three manuals are the current human-facing workflow guides; SKILL.md and SOFTWARE.md remain the canonical agent procedures.
 
