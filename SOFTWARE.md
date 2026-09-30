@@ -11,6 +11,8 @@ Use for programming and behavior. This is the canonical engineering procedure; [
 
 Work in the target project. Preserve its stack, instructions, uncommitted work and public contracts. Inspect callers and conventions before replacing a component. Clarify material ambiguity early while continuing independent authorized work; infer routine details from the available context.
 
+Carry a build/fix request through the requested delivery destination. Existing permission for a branch/main update, deployment or other action remains valid across turns; do not add a PR or new approval gate when the user chose direct integration. Complete unaffected work if an external service blocks one check, and report that specific limitation without marking it passed.
+
 ## Define evidence before significant implementation
 
 Identify inputs/outputs, source of truth, states, invariants, important errors and the expected user-visible result. Keep the contract as small as the task allows. Use the host's architecture: a plugin has a host lifecycle and files; a static site need not gain authentication or a database; a service may need transactions. Add abstractions, queues, caches or infrastructure for an identified requirement, not an enterprise appearance.

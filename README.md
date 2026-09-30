@@ -66,6 +66,7 @@ The second prompt uses the installed engineering pointer; it does not invoke `$d
 
 - **SKILL.md:** one procedure for create/redesign, extend, refine, and review.
 - **REFERENCE_ROUTER.md:** choose one eligible source for a named gap, inspect it, apply the relationship and compare the render. Preserves the curated catalog while excluding incompatible access from automatic discovery.
+- **DESIGN_DIRECTION.md:** resolve an open composition through product/task, type/content, dominant asset, density and responsive behavior; skip for final designs and accepted-system repairs.
 - **SOFTWARE.md:** one engineering procedure for programming; optional root activation through `--with-software`.
 - **EXECUTION.md:** quality-oriented effort, context reuse, budgets and handoff; read when relevant, not every turn.
 - **TASTE.md / GUIDELINES.md / QA.md:** craft and work-specific checks, read selectively.
@@ -105,3 +106,5 @@ Tests exercise deterministic installation behavior and static package contracts,
 GitHub Actions runs the offline suite on Linux and Windows with supported Python versions. Tests verify both entrypoint installation/update, opt-in preservation, conflict/rollback behavior and local Markdown link integrity. They do not certify visual quality or runtime activation.
 
 Preserve source URLs and keep shared BRIEF.md blank. Add reusable examples/checks only after recurring accepted corrections justify them. See [the execution decision](docs/EXECUTION_DECISION.md) for Codex versus a custom runtime and the video analysis.
+
+The [quality evidence record](docs/QUALITY_EVIDENCE.md) connects the September 29 update to current GPT-6 guidance and identifies which frontend/prompt principles come from earlier-model examples. It is research history, not extra default context. The full Spanish human guide is in `docs/GUIA_GENERAL.txt`; it is deliberately not installed into the active skill package.

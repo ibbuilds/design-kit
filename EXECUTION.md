@@ -2,6 +2,8 @@
 
 Read when selecting effort, managing a long task, or handling a budget. This is a working recommendation for design and programming, not a benchmark or runtime configuration. The user's current model, effort, speed and explicit choices win.
 
+Keep the task contract small: outcome, relevant evidence, closed decisions, success criteria and actual side-effect boundaries. Remove repeated instructions and unnecessary tool/process scaffolding before adding more reasoning. Preserve the user's authorization across turns; a requested build/fix continues through implementation, checks and the requested delivery destination. Do not substitute a plan, sample or PR for a requested complete result or direct branch/main update.
+
 ## Spend effort on decisions that affect the result
 
 Use GPT-6.1 Sol as the normal model when available. For demanding visual direction, substantial implementation, architecture or difficult debugging, **High + Standard** is a quality-oriented starting point. Use Medium for well-defined extensions and local work; Low fits simple, easily checked edits. Choose based on ambiguity and consequences, not prompt length. Do not lower effort halfway through a hard task just to shorten a response.
@@ -11,6 +13,8 @@ Raise effort to Xhigh/Max for a named unresolved problem when better reasoning c
 Standard is the default recommendation for quota efficiency. Fast trades more consumption for speed where supported. Brief visible output does not bound hidden reasoning. API prices cannot be converted directly into hours or a subscription percentage. When usage is observable, compare representative completed tasks with equivalent input and quality requirements; record actual consumption, rework and limitations. Otherwise leave cost unknown.
 
 Official references: [GPT-6.1 Sol](https://developers.openai.com/api/docs/models/gpt-6.1-sol), [reasoning effort](https://developers.openai.com/api/docs/guides/reasoning), [Codex usage](https://developers.openai.com/codex/pricing). Availability and rates can change.
+
+When building an API harness, use Responses for Sol tool calling, preserve compatible response/reasoning state and stable prompt prefixes, and evaluate cache/compaction behavior on that runtime. The desktop client manages those mechanisms; an instruction file does not activate explicit caching, async tools, pro reasoning mode or a larger subscription allowance. Subscription Pro and API pro reasoning mode are different concepts. See the [evidence record](docs/QUALITY_EVIDENCE.md) for source scope and transferred recommendations.
 
 ## Preserve useful context
 

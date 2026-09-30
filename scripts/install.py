@@ -14,6 +14,7 @@ PACKAGE = (
     "GUIDELINES.md", "QA.md", "REFERENCES.md", "WORKFLOW.md", "RESEARCH.md",
     "docs/EXECUTION_DECISION.md", "scripts/install.py", "tests/test_install.py",
     "REFERENCE_ROUTER.md", "EXECUTION.md", "SOFTWARE.md",
+    "DESIGN_DIRECTION.md", "docs/QUALITY_EVIDENCE.md",
 )
 MANIFEST = ".design-kit-manifest.json"
 START = "<!-- design-kit:begin -->"
