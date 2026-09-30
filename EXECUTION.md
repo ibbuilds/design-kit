@@ -6,7 +6,9 @@ Keep the task contract small: outcome, relevant evidence, closed decisions, succ
 
 ## Spend effort on decisions that affect the result
 
-Use GPT-6.1 Sol as the normal model when available. For demanding visual direction, substantial implementation, architecture or difficult debugging, **High + Standard** is a quality-oriented starting point. Use Medium for well-defined extensions and local work; Low fits simple, easily checked edits. Choose based on ambiguity and consequences, not prompt length. Do not lower effort halfway through a hard task just to shorten a response.
+Optimize total consumption to reach the requested quality, including failed attempts, review and rework. Use GPT-6.1 Sol as the normal model when available. **Medium + Standard** is a practical starting proposal for bounded work with clear criteria; Low fits simple, easily checked edits. Use High for consequential ambiguity, coupled architecture or difficult diagnosis where deeper reasoning can resolve a named problem. Substantial scope alone does not require High for every action. These are working proposals, not measured Sol optima; the user's explicit choices win. Do not lower effort halfway through a hard task just to shorten a response.
+
+High is not mandatory for all frontend work. OpenAI's GPT-5.4 frontend article recommends Low/Medium for simpler websites; it is useful counterevidence to “more reasoning always looks better,” not a measured Sol recommendation. For a straightforward visual task, start at the user's selected effort or Medium and inspect the result before paying for escalation. Preserve any explicit user choice. See [workflow research](docs/WORKFLOW_RESEARCH.md) for alternatives and model-specific limits.
 
 Raise effort to Xhigh/Max for a named unresolved problem when better reasoning could change the answer. Reserve Astra for a problem Sol cannot resolve reliably or an explicit user choice. Do not automatically switch models, escalate every action, or assume maximum effort guarantees better visual judgment. A failed render needs inspection or code repair, not necessarily a stronger model.
 
@@ -23,6 +25,8 @@ When building an API harness, use Responses for Sol tool calling, preserve compa
 - Keep logs and broad search results outside active context; surface errors, conclusions and paths for deeper inspection. Retain evidence needed for diagnosis.
 - Reuse accepted code, assets and comparisons. A local cache saves retrieval, not necessarily model context; do not re-send every stored image.
 - Batch related repairs. Repeat tests and reference discovery only when a change, failure or new scope justifies them.
+
+Before another expensive iteration, identify the unmet criterion, the new evidence or changed hypothesis, and the smallest action that can resolve it. Compare concise concepts or the uncertain region before building additional complete variants. Reuse the accepted sample for expansion; do not rebuild the system, generate a suite of project skills or migrate tools without a demonstrated need. Keep required verification even when it adds consumption: preventing a material defect can save more rework than skipping the check.
 
 Do not sacrifice acceptance criteria to a token target. Close on verified scope and concrete quality criteria, not a self-score or a fixed number of rounds. Continue substantive repairs while progress is possible; stop preference churn when there is no defect or supported improvement. A repeated failure calls for a changed hypothesis, missing evidence, or a clear blocker. Explicit user budgets always win; report incomplete work honestly.
 

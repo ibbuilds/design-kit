@@ -20,6 +20,10 @@ Reviewed September 29, 2026. This record explains choices; it is not routine bui
 3. Distinguish no-base, structural, final-design and accepted-system work; marketing composition and working-application density serve different jobs.
 4. Complete authorized work without inventing approval gates. Preserve explicit user stops, choices, budgets and publication instructions.
 5. Close on required behavior and material visual quality, with focused verification and changed hypotheses after repeated failure. A two-round ceiling cannot establish readiness; unlimited polishing cannot establish value.
-6. Recommend Sol High + Standard for this user's demanding quality-first tasks, with narrower effort for bounded work. This is an operating proposal; medium remains the official model default and higher effort is not a universal quality guarantee.
+6. Optimize total consumption through the agreed result, including rework. Propose Sol Medium + Standard for bounded work and High for named consequential ambiguity or difficult diagnosis; preserve the user's explicit choice. These are operating proposals, not measured Sol optima, and higher effort is not a universal quality guarantee.
 
 Reference-provider access policies were inherited from the supplied September 26 guide; third-party MCPs were not installed or re-audited during this update. The curated catalog remains intact. Offline tests validate installation, routing persistence and package integrity, not the design decisions an LLM will make on a future project.
+
+## Broader workflow comparison
+
+The subsequent [workflow review](WORKFLOW_RESEARCH.md) compares OpenAI/Codex/Figma, GitHub Spec Kit, Kiro, Anthropic, Cursor, Google and verification standards. It supports requirement-to-evidence mapping, calibrated visual critique, a distinct review of raw artifacts, reliable test oracles and release evidence appropriate to the product. It also documents why heavy agent loops, fixed sprint/reset structures, universal TDD and literal aesthetic bans are not defaults. No comparative Sol application-generation test was performed; these are source-supported operating choices, not proof of globally optimal workflows.

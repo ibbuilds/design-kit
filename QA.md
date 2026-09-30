@@ -21,6 +21,8 @@ Inspect the integrated sample at actual viewing sizes, with loaded fonts/media a
 
 Name the actual mismatch before changing anything: repair execution, replace the weak element, or reconsider the premise only when necessary. Reuse this inspection in the final review; it is not another mandatory audit loop.
 
+For an open direction, calibrate critique with relevant accepted examples: name what makes their hierarchy, density, identity and task usability strong, and what would not fit this product. Judge our live result against those relationships and the brief. Separate coherence, product-specific choices, craft and functionality rather than hiding tradeoffs in one score. Familiar controls are not a defect merely for being familiar. Preserve a stronger earlier candidate if later polishing reduces quality. In substantial work, a distinct review should inspect the brief, raw evidence and working states; the builder's positive summary is not verification. Independent review follows actual availability and authorization.
+
 ## Completion criteria
 
 Judge the scoped result in the actual render, with the relevant reference/base beside it when comparison matters. A successful build or attractive hero alone is insufficient. Apply only criteria relevant to the requested fidelity and scope:
@@ -46,6 +48,7 @@ For a short local change, reuse existing evidence and inspect the affected regio
 - **Layout:** check wrapping, crops, overflow, sticky layers and touch access; preserve useful information and actions.
 - **Code:** follow target conventions; use semantics, clear names, cohesive components, predictable state and appropriate types.
 - **Integration:** inspect the actual application. Preserve accepted prototype design and behavior when integrating.
+- **System adherence:** check actual component reuse, semantic token roles, required variants/states and affected consumers. Similar colors or detached shapes do not establish system adherence. Keep inferred style foundations distinct from a verified reusable system.
 
 ## Production
 
@@ -74,5 +77,6 @@ For a short local change, reuse existing evidence and inspect the affected regio
 - Preserve accepted work; use baseline comparison when it helps.
 - Report unobserved behavior and missing evidence. Keep captures/reproduction steps when useful.
 - Tests do not prove design excellence; walkthroughs do not replace user research.
+- Synthetic personas can suggest hypotheses and edge cases, not establish actual user needs or usability findings. Validate consequential assumptions with real evidence when available.
 - Partial checks do not establish accessibility conformance. Lab metrics are not field Web Vitals.
 - Review does not authorize publication.

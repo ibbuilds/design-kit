@@ -60,7 +60,7 @@ Preserve [contracts/data/accepted UI]. Verify [important failures/recovery].
 Complete the capability, inspect the diff and report actual evidence.
 ```
 
-The second prompt uses the installed engineering pointer; it does not invoke `$design-kit` for backend-only work. High reasoning on GPT-6.1 Sol with Standard speed is a recommended starting point for demanding tasks, not a setting changed by the installer. See EXECUTION.md for focused escalation and context reuse.
+The second prompt uses the installed engineering pointer; it does not invoke `$design-kit` for backend-only work. Medium + Standard on GPT-6.1 Sol is a practical proposal for bounded work; High addresses named consequential ambiguity or difficult diagnosis. The user's chosen settings win, and the installer changes none of them. See EXECUTION.md for escalation and total cost through an accepted result.
 
 ## What lives where
 
@@ -68,6 +68,7 @@ The second prompt uses the installed engineering pointer; it does not invoke `$d
 - **REFERENCE_ROUTER.md:** choose one eligible source for a named gap, inspect it, apply the relationship and compare the render. Preserves the curated catalog while excluding incompatible access from automatic discovery.
 - **DESIGN_DIRECTION.md:** resolve an open composition through product/task, type/content, dominant asset, density and responsive behavior; skip for final designs and accepted-system repairs.
 - **SOFTWARE.md:** one engineering procedure for programming; optional root activation through `--with-software`.
+- **PRODUCT_DELIVERY.md:** conditional requirements, evidence and release guidance for substantial capabilities or readiness work.
 - **EXECUTION.md:** quality-oriented effort, context reuse, budgets and handoff; read when relevant, not every turn.
 - **TASTE.md / GUIDELINES.md / QA.md:** craft and work-specific checks, read selectively.
 - **REFERENCES.md:** the original curated sources, unchanged by this migration.
@@ -108,3 +109,5 @@ GitHub Actions runs the offline suite on Linux and Windows with supported Python
 Preserve source URLs and keep shared BRIEF.md blank. Add reusable examples/checks only after recurring accepted corrections justify them. See [the execution decision](docs/EXECUTION_DECISION.md) for Codex versus a custom runtime and the video analysis.
 
 The [quality evidence record](docs/QUALITY_EVIDENCE.md) connects the September 29 update to current GPT-6 guidance and identifies which frontend/prompt principles come from earlier-model examples. It is research history, not extra default context. The full Spanish human guide is in `docs/GUIA_GENERAL.txt`; it is deliberately not installed into the active skill package.
+
+The [broader workflow comparison](docs/WORKFLOW_RESEARCH.md) documents alternatives from Codex/Figma, Spec Kit, Kiro, Anthropic, Cursor and Google, the supplied videos and the failed prior runbook, including costs and limits that prevent blindly adopting heavier processes. The Spanish guide presents three workflows: design from scratch, iteration on the user's design base, and programming. For substantial features, [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) connects requirements to evidence, challenges the working result and records applicable release readiness. It is loaded conditionally; a local refinement stays local. The research record includes a real-task comparison protocol, but no measured improvement in generated product quality is claimed.

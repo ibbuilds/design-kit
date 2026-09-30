@@ -9,6 +9,8 @@ Use for programming and behavior. This is the canonical engineering procedure; [
 - **Long work:** use scoped milestones and preserve a compact handoff in existing records. See [EXECUTION.md](EXECUTION.md) for effort and continuity.
 - **Sensitive change:** add relevant negative cases and recovery evidence for permissions, money, sensitive data, deletion, migrations or external side effects, even if the diff is small.
 
+For substantial product features or release readiness, apply [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md). It connects requirements, implementation and evidence; no additional specification framework is needed. Separate user requirements from agent-proposed extras.
+
 Work in the target project. Preserve its stack, instructions, uncommitted work and public contracts. Inspect callers and conventions before replacing a component. Clarify material ambiguity early while continuing independent authorized work; infer routine details from the available context.
 
 Carry a build/fix request through the requested delivery destination. Existing permission for a branch/main update, deployment or other action remains valid across turns; do not add a PR or new approval gate when the user chose direct integration. Complete unaffected work if an external service blocks one check, and report that specific limitation without marking it passed.
@@ -19,11 +21,15 @@ Identify inputs/outputs, source of truth, states, invariants, important errors a
 
 Choose checks that could reveal a wrong implementation. Unit tests cover logic; integration checks cover real boundaries; E2E covers important user paths. A mock that always succeeds does not verify a real service. For a reversible low-impact edit, an existing check or direct verification can be sufficient; do not add tests that simply restate the implementation.
 
+For a bug, reproduce the original symptom in the actual host/path, distinguish candidate causes and collect the smallest runtime evidence that separates them. Repair the supported cause, recheck the original symptom and adjacent risks. If reproduction is unavailable, name what remains unknown. Repeated speculative patches call for a changed hypothesis or instrumentation, not another broad rewrite. Remove temporary diagnostics or retain them deliberately without sensitive data.
+
 ## Implement and verify one complete capability
 
 Follow the relevant path from input/UI through logic, effects or persistence to success, error and recovery. Include authorization at the trusted boundary where applicable. For a plugin, exercise the actual host when verifying its integration; a browser demo alone is insufficient.
 
 Loop: **inspect/reproduce -> specify useful evidence -> implement -> run affected checks -> inspect diff and behavior -> repair concrete gaps.** Use test-first when it helps specify behavior. Finish necessary debugging and required checks; do not remove tests or weaken contracts to get a passing result. Broaden verification when changes create broader risk, not automatically after every small repair.
+
+Check the oracle and actual assertions: expected values must come from the requirement or a trusted fixture, not the implementation being tested. A red test caused by setup/import failure does not demonstrate the bug. A coverage percentage or TDD sequence cannot establish test effectiveness or architectural quality. Review contracts and dependency structure as well as green results.
 
 Preserve accepted frontend design while integrating real behavior; use Design Kit for changed UI states. Verify loading, empty, populated, invalid, slow/failed and success states where they belong to the feature. Do not call a visual mock a working backend or infer persistence from a success toast.
 

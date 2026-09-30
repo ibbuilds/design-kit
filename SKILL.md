@@ -5,7 +5,7 @@ description: "Create, extend, refine, or review web UI: landing pages, product s
 
 # Design Kit
 
-Deliver a product-specific, inspected frontend in the real target. Quality comes first; reduce work that does not improve the accepted result. Use the current agent and existing environment.
+Deliver a product-specific, inspected frontend in the real target with the least total consumption needed to meet the agreed quality, including verification and rework. Use the current agent and existing environment.
 
 ## Scope and selective context
 
@@ -25,6 +25,8 @@ Infer routine details and ask only about missing facts that materially change sc
 Read relevant target code/records, [TASTE.md](TASTE.md), and only the matching [GUIDELINES.md](GUIDELINES.md) sections. Reuse existing briefs, including a legacy `.design-kit/BRIEF.md`; [BRIEF.md](BRIEF.md) is a blank template. Do not load the full archive or create documents to satisfy phases.
 
 Conditional routes: [DESIGN_DIRECTION.md](DESIGN_DIRECTION.md) for an open visual direction; [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) for outside evidence/tool selection; [EXECUTION.md](EXECUTION.md) for effort, budgets or handoff; [SOFTWARE.md](SOFTWARE.md) for contracts/data/engineering in mixed work. Backend-only work skips the design library.
+
+For a substantial product feature or production-readiness task, use [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) to connect required outcomes to evidence and review the working result. A local visual edit does not load that route.
 
 Before substantial implementation, identify existing run/check commands and a working render-and-inspect path. Resolve an essential capability gap early with authorized alternatives; do not simulate inspection or silently replace the runtime.
 
