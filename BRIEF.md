@@ -41,6 +41,7 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 
 - Canonical component/pattern paths/IDs and scoped states:
 - Whole-page/flow outline; requested batch and accepted regions:
+- Structural causes / supporting current and reference evidence / reviewed repair order / resolved, pending or deferred:
 - Before/after sources; intended and visible contribution; material tradeoffs:
 - Designer's correction/acceptance and strongest retained baseline:
 - Exact review scope / rejected diagnosis and affected dependent work:

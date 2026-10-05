@@ -38,9 +38,9 @@ Curate 4–8 strong, distinct, inspected references unless the user asks otherwi
 If fewer than four fit, continue eligible retrieval or disclose incomplete coverage
 when access/budget is exhausted. Do not pad the selection with weak matches.
 Show readable visuals, exact provenance, fit, contributions and exclusions.
-Offer accept and advance, refine the search, or correct selection/direction in
-one checkpoint. Revise within eight active references; wait for accepted
-interpretation and the user's advance choice before foundations.
+Review selection/contributions, then ask whether to search further or continue.
+Reuse an advance/refine choice already supplied with acceptance. Revise within
+eight active references; wait for accepted interpretation and search closure.
 
 4. SCOPED VISUAL SYSTEM
 Reuse an existing system or propose missing foundations from accepted evidence.

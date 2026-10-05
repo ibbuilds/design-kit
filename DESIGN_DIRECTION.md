@@ -31,6 +31,18 @@ Express a compact creative premise through consequential choices. Brand/campaign
 
 If ambiguity remains, compare a few concise directions or the uncertain region using the same content/task. The human chooses. Resolve a dominant asset using real product/brand material, meaningful UI, illustration or an appropriate diagram; authorized search/generation is conditional on need. Check subject, rights, resolution and crop. Keep interface text/controls editable/working; no rasterized UI or decorative replacement for missing substance.
 
+## Diagnose structural causes in an existing design
+
+After the user accepts references and closes discovery, inspect the requested scope against their accepted relationships before proposing edits. Cover relevant page/component families, flows and states with representative views plus exceptions; reuse captures instead of collecting every screen by routine. State what remains unseen. For a section request, diagnose its structure and surrounding dependencies, not the whole application.
+
+Start with **hierarchy, composition, information grouping, task/interaction flow and shared system relationships**. Trace visible symptoms to a supported cause: scattered spacing may expose missing grouping rules; competing controls may expose unclear action priority; inconsistent marks/states may expose an incoherent shared vocabulary. These are diagnostic possibilities, not predeclared defects. Distinguish a demonstrated constraint/behavior violation, a mismatch with accepted design intent, and an aesthetic hypothesis. Intentional differences are not errors merely because a reference looks different.
+
+For each material cause, show `current evidence/symptoms -> causal explanation -> relevant reference relationship and why it works -> product-specific structural repair -> canonical source/affected consumers -> verification`. Inspect the actual relevant reference region/state; if it shares the problem or lacks the needed evidence, exclude that contribution or resolve the gap. A gallery screenshot cannot prove usability, contrast compliance or unseen behavior. Do not equate copying a radius, font or density with solving the cause.
+
+Group repeated symptoms by cause, rank by product/design impact and dependencies, and present the smallest coherent repair proposal under ONBOARDING.md's next scoped checkpoint. Do not replace this diagnosis with a list of micro-adjustments or cosmetic fixes. Review necessary hierarchy/flow/system changes; preserve protected decisions and semantics. Fix shared causes canonically, then inspect affected compositions and update their design guidance. Reuse evidence for each batch.
+
+Repair and verify the material structural causes within the reviewed scope before optional detail/finish. Show the improved integrated baseline, unresolved causes and any explicit deferrals; obtain scoped acceptance without claiming perfection. Then identify further useful reference principles the baseline lacks and propose refinements by their visible contribution. If refinements expose a structural cause, return to it. For a fully specified local repair, keep this proportional instead of inventing a structural overhaul.
+
 ## Design, compare, refine
 
 1. Develop the agreed region/sample in the chosen medium. Use representative content and actual fonts/assets; include a deeper region or significant state where it reveals system/composition fit. Reuse components while retaining layout flexibility.

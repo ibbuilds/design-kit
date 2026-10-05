@@ -42,10 +42,24 @@ If usable coverage is exhausted, describe the gap and invite user references.
 Curate 4–8 strong, distinct, inspected references unless the user asks otherwise.
 If fewer than four fit, continue eligible retrieval or report incomplete coverage
 when actual access/budget is exhausted; do not pad or silently advance.
-Show readable evidence, fit, transfer and exclusions. Offer accept and advance,
-refine discovery, or correct selection/direction in the same checkpoint.
-Refine within eight active references; wait for the accepted map and advance choice.
+Show readable evidence, fit, transfer and exclusions for acceptance/correction.
+After acceptance, ask whether to search further or continue with this selection;
+reuse an explicit choice already given. Refine within eight active references.
+Wait for the accepted map and search-closure choice.
 A focused typography/composition repair does not need a full discovery round.
+
+AFTER DISCOVERY CLOSES
+Diagnose structural causes before cosmetic symptoms using DESIGN_DIRECTION.md.
+Compare hierarchy, composition, grouping/task flow and shared system rules with
+the accepted references. Explain how a cause produces the visible inconsistencies,
+why a reference handles that relationship better and what transfers to this product.
+Separate demonstrated violations, accepted-intent mismatches and taste hypotheses;
+do not assume a reference is correct or copy its surface treatment.
+Review the scoped causal repair order, then fix shared causes canonically and
+verify affected compositions through the existing system/UI checkpoints.
+Show resolved/pending causes and the integrated baseline before optional polish.
+Refinement adds useful reference principles after the structural repair; return
+to a cause if new evidence reveals it. Preserve scope, semantics and accepted anchors.
 
 WHEN FOUNDATIONS CHANGE
 Reuse canonical tokens/components. Propose the minimum scoped correction supported

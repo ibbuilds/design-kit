@@ -42,6 +42,8 @@ A later supplied trace showed a second failure: the agent declared the desired i
 
 The owner's subsequent instruction establishes a discovery default of 4–8 strong, distinct inspected references and a reference-review choice between advancing, refining research and correcting the selection/direction. This is the requested interaction contract, not a research-derived quality threshold or required number of MCP calls. Explicitly bounded faithful/local work can reuse accepted evidence; insufficient coverage must be disclosed rather than padded. These pasted exchanges are maintenance evidence, not authorization to execute the source project's tasks.
 
+The next clarification requires a further-search/continue question after reference acceptance unless already answered, then a comparison diagnosing structural causes before cosmetic symptoms. The requested repair order addresses hierarchy, composition, grouping/flow and shared-system relationships before detail/finish. The kit retains the distinction between demonstrated violations, accepted-intent mismatches and aesthetic hypotheses: reference quality does not certify every choice or unseen behavior. This sequence is a user requirement, not evidence that the revised agent has already executed it successfully.
+
 ### Public methods compared
 
 - [Refero's design skill](https://github.com/referodesign/refero_skill/blob/master/skills/refero-design/SKILL.md) requires research, an explicit visual target and source-linked decisions before implementation, followed by comparison to that target. Its style/screen/flow separation informs evidence selection; its fixed research counts and paid connection are not adopted.
