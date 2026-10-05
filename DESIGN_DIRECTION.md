@@ -1,6 +1,6 @@
 # Develop and improve the actual UI/UX
 
-Read for an open design decision or requested refinement. Use [ONBOARDING.md](ONBOARDING.md)'s phase/batch authority and [TASTE.md](TASTE.md)'s design standard. The goal is design improvement; relevant QA is the agent's supporting responsibility within the batch, not another workflow for the designer. Skip discovery already resolved by the supplied final design/system.
+Read for an open design decision or requested refinement. Use [ONBOARDING.md](ONBOARDING.md)'s phase/batch authority and [TASTE.md](TASTE.md)'s design standard. The goal is design improvement; relevant QA supports the batch. Reuse discovery only when inspected evidence and acceptance cover the open choice; a supplied system or final design does not waive SKILL.md's comparison.
 
 ## Understand the base before changing it
 
@@ -35,7 +35,7 @@ If ambiguity remains, compare a few concise directions or the uncertain region u
 
 1. Develop the agreed region/sample in the chosen medium. Use representative content and actual fonts/assets; include a deeper region or significant state where it reveals system/composition fit. Reuse components while retaining layout flexibility.
 2. Inspect the result at real viewing sizes, including relevant mobile/container layouts. Apply relevant [QA.md](QA.md) checks and fix material artifact defects before presentation; do not make the designer run them. For motion, examine the actual sequence and transition states; stills cannot establish pacing.
-3. Compare the **base -> proposal** at equivalent content/state/viewport. With new work, compare selected reference relationships and the brief. Name what improved and what became weaker in hierarchy, type/image balance, rhythm, identity, flow or finish. No self-score or unsupported "premium" verdict.
+3. Compare the **base -> proposal** at equivalent content/state/viewport, then check the accepted visual target's relevant relationships. With new work, compare selected reference relationships and the brief. Name what improved and what became weaker in hierarchy, type/image balance, rhythm, identity, flow or finish. Passing technical checks or counting captures does not establish that match. No self-score or unsupported "premium" verdict.
 4. Repair the highest-impact design mismatch locally. If the concept itself is weak, propose the smallest meaningful alternative inside delegated decisions. More decoration does not solve it. Retain the stronger version when a later refinement regresses the design.
 5. Present the actual before/after or accessible canvas/prototype, concise contribution and material tradeoffs. Wait for human acceptance/correction before dependent expansion. Missing visual access requires a usable view; code/JSON alone cannot establish beauty.
 

@@ -25,6 +25,22 @@ Live read-only verification on October 5 reached One Page Love server 1.4.1, dis
 
 The skill installer changes no host settings. The MCP helper changes global settings only with explicit user scope and `--apply`; neither helper launches provider processes, downloads Node/browsers or calls models. The host may download/launch the Awwwards npm package when connecting: include that in the setup the user authorizes. Do not claim a package version was tested merely because the config uses its documented command.
 
+### Tools are visible but calls fail
+
+Tool discovery, a successful query and visual inspection are separate facts. If a call returns a transport/protocol error, report the provider and error briefly; do not count it as a search with no matches or proceed on imaginary evidence. Check the selected endpoint/executable and the host's connection status without dumping unrelated settings or credentials. Reuse the known schema; do not repeatedly reinstall a correctly configured server.
+
+For a native `Unexpected response type` or similar protocol failure, a read-only endpoint diagnostic can isolate service access from host integration:
+
+```sh
+python scripts/check_mcp.py --search "dark minimal"
+```
+
+This optional helper contacts only the public One Page Love endpoint, initializes MCP, lists tools and performs one small search when `--search` is supplied. It writes no settings, installs nothing, calls no model and may consume provider quota. Use it for an actual connection fault, not before every design task. Its JSON reports endpoint response and received content separately; it never certifies native host activation or visual inspection. Network restrictions can block this independent route too.
+
+If direct access works but the host call fails, treat native integration as unresolved. Use the host's supported reconnect/reload flow when authorized, then verify a native call and readable image in the affected surface. A fresh agent session may be needed; do not silently restart the user's application or claim success from the independent diagnostic. When that cannot be completed now, continue reference work through the available relevant MCP or public catalog/browser fallback, disclose which route was used, and retain the open connection issue. Do not bypass authentication, quotas or disabled-provider choices.
+
+On October 5, native Awwwards search returned a site preview. Native One Page Love calls returned `Unexpected response type` with both image and text-only requests, while independent initialization, tool listing and a small search returned image/text successfully. The configured URL matched the documented endpoint. This isolates a failure in that session's integrated route; it does not identify its internal cause or establish that other hosts fail. Host recovery remains unverified until a native call succeeds.
+
 `agents/openai.yaml` declares the selected MCP dependencies for Codex's native integration. One Page Love includes its Streamable HTTP endpoint; Awwwards is an identifier-only local dependency, so its stdio command and prerequisites still need host setup. Reuse an already connected equivalent alias rather than adding another server just to match metadata. Dependency metadata is not a custom popup implementation or proof that this host version will display an installation dialog. Native connection/trust/permission prompts are host-controlled; the skill must still detect actual access and guide missing setup. Other platforms use their native MCP controls and the same setup contract.
 
 ## Project or user configuration helper

@@ -17,6 +17,8 @@ A supervised **UI -> frontend -> QA skill**, designed primarily for the graphica
 
 Every dependent design phase waits for explicit human acceptance. Existing approvals remain valid within scope; local corrections do not restart the whole workflow. A supplied file, agent self-score or elapsed time is not acceptance. An existing base enters at its actual open question.
 
+Before a visual implementation, the agent shows the intended visual source, observed discrepancy/open choice, proposed treatment and review scope. It compares the source with the base, not just the base with itself. Density/structure approval does not approve an aesthetic diagnosis or global propagation. Rejected diagnoses reopen before further dependent edits.
+
 The same flow serves a full site/app, a page, a hero/other section, a component or a local improvement. Reuse resolved phases; review only necessary system additions and the requested region. User-supplied references can be used directly or guide discovery of matching visual relationships. Section-by-section work retains prior acceptance without expanding into a whole site automatically.
 
 For section work, find the requested pattern first and match its aesthetic there. If connected MCPs lack usable matches, continue through relevant catalog sites with ordinary browser/search, including readable public Refero evidence. Try subsequent relevant sources; if usable coverage is exhausted, explain the gap and invite user references/clarification. Missing MCP access does not disable the fallback library.
@@ -96,6 +98,8 @@ python -m unittest discover -s tests -v
 ```
 
 Offline tests verify installation/update safety, exported resources, provider config schemas and scoped reference queries. They do not evaluate an LLM following human checkpoints, working connections inside every GUI, aesthetic uplift or token savings. Platform paths are checked against primary documentation linked in HOSTS.md; provider limits/source behavior are linked in PROVIDERS.md.
+
+For connection failures, [PROVIDERS.md](PROVIDERS.md) distinguishes native tool access from independent endpoint diagnostics under [scripts/check_mcp.py](scripts/check_mcp.py). A working endpoint does not prove the current host connection. The behavioral regression cases in [workflow evaluation](docs/WORKFLOW_EVALUATION.md) assess the actual agent actions and review scope; they are manual trials, not package-test passes.
 
 The next useful design trial compares the **same brief, model, base, references and budget**, with and without the kit. Review actual renders for hierarchy, identity, coherence, responsive behavior and task usability; retain human choices, repair count and observable consumption. Do not claim a 9/10 result or success probability before those comparisons.
 

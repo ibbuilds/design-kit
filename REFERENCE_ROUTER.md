@@ -4,6 +4,8 @@ Read for a design question requiring outside evidence. [REFERENCES.md](REFERENCE
 
 For supplied references, inspect the relevant region and ask only its missing interpretation. Use them directly when sufficient. When more matches are requested/needed, translate the observed relationships into aesthetic queries within selected providers/catalog families; do not restrict matches to the original's industry. Explain the correspondence and proposed transfer. A user-selected example remains authoritative for direction; discovering more is not a reason to override it.
 
+Choose evidence by the question, not just by connection status. Awwwards/One Page Love are useful for website direction and supported sections; they are not exhaustive application-control or brand-asset libraries. For an existing product/library, inspect the named product's actual UI, component sources and assets first. Use suitable public product/pattern families when the connected gallery lacks that coverage. A failed MCP call is an access failure, not an empty catalog; an empty search is not proof that all sources are exhausted.
+
 ## Discover, inspect, let the designer select
 
 1. Translate the agreed vibe into observable traits: composition/density, type/image relationships, geometry/materials, tone and relevant interaction. Preserve the product/task as application context, not a compulsory search keyword. Distinguish human constraints from hypotheses. If direction is missing, ask or offer concise options; kit examples are not preferences. A focused question needs only its relevant context.

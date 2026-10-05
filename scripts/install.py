@@ -20,6 +20,7 @@ PACKAGE = (
     "PROVIDERS.md", "HOSTS.md", "PROMPT.md", "scripts/setup_mcp.py", "tests/test_setup_mcp.py",
     "docs/GENERAL_GUIDE.txt", "docs/01_design_from_scratch.txt",
     "docs/02_improve_existing_design.txt", "docs/03_frontend_engineering.txt",
+    "scripts/check_mcp.py", "tests/test_check_mcp.py", "docs/WORKFLOW_EVALUATION.md",
 )
 HOSTS = {
     "codex": (".agents/skills/design-kit", "AGENTS.md"),

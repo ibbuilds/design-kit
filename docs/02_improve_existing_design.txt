@@ -11,6 +11,12 @@ Inspect the actual base, instructions, assets/tokens and accepted decisions.
 Identify what already works and the highest-impact open gap.
 Do not restart the whole design or rediscover galleries when evidence suffices.
 
+Before visual edits, complete SKILL.md's comparison: intended visual source,
+current discrepancy, proposed treatment and review scope. Inspect the source
+and base separately; DESIGN.md or screenshots of the base alone do not suffice.
+A density preference does not approve a diagnosis or global propagation.
+If feedback rejects the diagnosis, reopen it before further dependent edits.
+
 Inspect the existing identity, canonical system sources and shared components.
 Reuse explicit instructions about what to preserve/change. Local improvements
 inside the existing vocabulary need no extra identity questionnaire. If the

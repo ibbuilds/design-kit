@@ -26,6 +26,7 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 - Interpreted visual traits / requested and avoided qualities:
 - Original product/vibe wording / faithful expanded prompt / confirmed versus proposed/unknown:
 - Selected reference providers / actual access / fallback or unverified limits:
+- Intended visual source versus current base / inspected comparison / discrepancy and proposed treatment:
 - Reusable query/result/capture evidence / retrieval gaps / explicit call budget:
 - Aesthetic-led search relationships / optional task/genre filter and reason:
 - Reference state/viewport; observed versus inferred behavior:
@@ -40,6 +41,7 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 - Whole-page/flow outline; requested batch and accepted regions:
 - Before/after sources; intended and visible contribution; material tradeoffs:
 - Designer's correction/acceptance and strongest retained baseline:
+- Exact review scope / rejected diagnosis and affected dependent work:
 - Remaining design gaps and next authorized action:
 
 ## Only when code is requested

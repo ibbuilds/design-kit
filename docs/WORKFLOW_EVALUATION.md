@@ -1,0 +1,24 @@
+# Behavioral regression trials
+
+Maintenance/evaluation guidance, not routine design context or a second workflow. Use SKILL.md as the procedure. Package and protocol tests cannot show that an agent followed it.
+
+## Run and assess
+
+Use a separate disposable target with its own raw screenshots, sources and instructions. Keep the model/settings, starting artifacts and budget fixed when comparing kit revisions or a no-kit baseline. Start from the actual user request below, not a prompt containing the expected answer. Supply only the scenario's raw inputs. Review the real action trace, viewed visuals, proposed changes and human responses, not a summary declaring compliance. Do not edit a live product or purchase model/provider access to run these cases without authorization.
+
+Record `kit revision; host/model; scenario; first proposed action; inspected sources/captures; actual queries/errors/fallback; human review and scope; first edits; outcome`. An absent required tool/view/review is **not tested**, not a pass. A claimed visual comparison without opened evidence is a failure. Keep results in the evaluation target; never import its identity into the kit. No numerical taste score is required.
+
+| Case | Initial request and raw inputs | Observable pass criterion |
+| --- | --- | --- |
+| Existing library, open visual quality | "Improve this UI library. Its structure is acceptable, but its controls and marks should match our existing products." Provide the library captures, design document, product captures and original assets. | Inspect the product targets separately from the library. Present an evidenced discrepancy and scoped treatment before visual edits. Structure acceptance does not close the visual diagnosis. No substitute audit of only widths/overflow. |
+| Narrow answer | At the proposed treatment checkpoint, answer only "I prefer denser layouts." | Record a density preference; do not infer acceptance of the diagnosis, an unseen specimen or changes to global defaults. Resolve the remaining review with the current artifacts. |
+| Rejected interpretation | After the first proposal: "That is not the problem. The selection controls and marks are off; the popover already works." | Stop dependent edits under the old diagnosis, inspect the named discrepancies and reopen the interpretation. Preserve the popover and unrelated accepted work. No global propagation while the premise is rejected. |
+| Requested MCP, host failure | "Use the connected reference MCP to find matching examples." Provide a visible tool that returns a protocol error and an available public-catalog route. | Actually call the relevant tool. Report its failure as an access issue; use and visually inspect eligible fallback evidence. Do not say the catalog is empty or label a direct endpoint diagnostic as native success. |
+| Hero, aesthetic across industries | "Improve only this hero: technical but human, approachable rather than cold." Provide surrounding context, a protected palette/font and working website-reference tools. | Search the requested pattern and observable aesthetic. Do not automatically constrain to the business genre or redesign the whole site. Show contribution/exclusions and review only required foundations. |
+| Supplied evidence suffices | "Match this accepted control treatment; use these screenshots, no extra gallery research." Provide readable source/current captures and existing component APIs. | Reuse the supplied evidence, compare the exact state and preserve semantics. No compulsory MCP search, full design-system rebuild or repeated identity questionnaire. |
+| Real component API versus prose | "Add this state to our existing component." Provide DESIGN.md, tokens, component source/API and a conflicting illustrative prose example. | Consult the existing API and canonical values, resolve material conflict, reuse the component and show the scoped state. Do not generate a parallel primitive from prose or copy the whole API into DESIGN.md. |
+| Visually changed selection control | "Use this square selection treatment." Provide a mutually exclusive group and a reference showing square indicators. | Adapt the visual treatment while retaining radio-group keyboard/selection semantics unless behavior is explicitly changed. Show checked, unchecked and focus states. |
+
+## Current evidence
+
+The reported existing-library conversation is a failure trace for comparison, priority, approval scope and correction handling. It is not a successful trial of the updated kit. The October 5 provider checks establish native Awwwards output and an unresolved native One Page Love error alongside successful direct endpoint access. Offline diagnostic tests exercise protocol/result/error handling; they do not invoke an LLM. No post-update independent model trial or measured visual uplift is claimed here.
