@@ -46,6 +46,8 @@ The next clarification requires a further-search/continue question after referen
 
 Further feedback requires deeper reuse of selected originals and continued reference review when system evidence is insufficient. The revision covers relevant subpages/states, actual accessible CSS/DOM and published system material, provenance of observed versus inferred values, and focused supplemental discovery/review without restarting accepted work. The initial 4–8 direction board is not a lifetime evidence ceiling or a mandatory fresh quota for every gap. Contributions must normalize into the confirmed product vocabulary rather than mixing incompatible source systems. These are requested workflow corrections, not measured evidence of aesthetic improvement.
 
+The owner clarified that references serve improvement of the target's intended aesthetic, including useful craft/finish beyond defect repair. The revision explicitly compares source achievement, current gap/opportunity, transferable mechanism and target-specific visible benefit. Texture/depth examples remain conditional possibilities, not universal taste rules or a change of identity. Their utility must be assessed in the reviewed target render; no post-update model result is claimed.
+
 ### Public methods compared
 
 - [Refero's design skill](https://github.com/referodesign/refero_skill/blob/master/skills/refero-design/SKILL.md) requires research, an explicit visual target and source-linked decisions before implementation, followed by comparison to that target. Its style/screen/flow separation informs evidence selection; its fixed research counts and paid connection are not adopted.

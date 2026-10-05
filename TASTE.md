@@ -8,9 +8,9 @@ Aim for exceptional, product-specific visual craft and an effortless experience.
 - **Composition:** establish a deliberate focal point, reading/task order, relative scale, negative space and density. Deeper regions should develop the content with appropriate changes of pace; do not repeat one card pattern everywhere.
 - **Typography:** resolve expressive versus supporting roles, real font/weight, proportions, line length, wrapping, leading, tracking and optical alignment at actual viewing sizes. Keep the accepted family unless change is delegated; novelty alone is not improvement.
 - **Imagery and art direction:** use meaningful product/brand material, strong framing/crops and consistent treatment. Assets must support the idea and remain legible. A missing dominant visual is unresolved design, not an invitation to random decoration.
-- **Color and surfaces:** give colors semantic and expressive roles; coordinate contrast, borders, geometry, depth and emphasis. Effects must strengthen hierarchy or identity, not conceal weak structure.
+- **Color and surfaces:** give colors semantic and expressive roles; coordinate contrast, borders, geometry, depth and emphasis. Effects can strengthen hierarchy, identity or material/visual finish; use them for an explainable contribution to the intended aesthetic, without concealing weak structure. Their presence or absence is not a quality score.
 - **Rhythm and detail:** make spacing, alignment, control proportions, icons, transitions and repeated relationships intentional. Preserve deliberate optical adjustments; no universal 4px/8px grid or radius aesthetic.
-- **Reference transfer:** translate the selected hierarchy, rhythm, framing, density or interaction into this content. Copying a palette does not transfer composition; a curated entry does not automatically suit the product.
+- **Reference transfer:** identify what a source does well, what our base lacks or handles poorly and the mechanism worth adapting. Translate it into this content and the confirmed target aesthetic; improvement does not require adopting the source's identity. Copying a palette does not transfer composition; a curated entry does not automatically suit the product.
 
 ## Experience is part of the design
 
