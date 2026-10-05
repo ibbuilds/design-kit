@@ -22,7 +22,8 @@ class InstallTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
-        root = Path(self.temp.name)
+        # Normalize Windows 8.3 aliases before comparing planned write paths.
+        root = Path(self.temp.name).resolve()
         self.source, self.target = root / "kit", root / "project"
         self.source.mkdir()
         self.target.mkdir()
@@ -46,7 +47,7 @@ class InstallTests(unittest.TestCase):
     def test_user_scope_installs_at_each_native_location_without_global_instructions(self):
         for host, relative in installer.USER_HOSTS.items():
             with self.subTest(host=host), tempfile.TemporaryDirectory() as folder:
-                home = Path(folder)
+                home = Path(folder).resolve()
                 preserved = {name: ("# Existing " + name + "\n").encode()
                              for name in ("AGENTS.md", "AGENTS.override.md", "CLAUDE.md", "GEMINI.md")}
                 for name, content in preserved.items():
@@ -105,7 +106,7 @@ class InstallTests(unittest.TestCase):
     def test_platform_adapters_preserve_their_project_instructions(self):
         for host, instruction in (("claude-code", "CLAUDE.md"), ("gemini-cli", "GEMINI.md"), ("antigravity", "GEMINI.md")):
             with self.subTest(host=host), tempfile.TemporaryDirectory() as folder:
-                target = Path(folder)
+                target = Path(folder).resolve()
                 path = target / instruction
                 original = b"# Human instructions\r\nPreserve my system.\r\n"
                 path.write_bytes(original)
@@ -458,7 +459,7 @@ class InstallTests(unittest.TestCase):
 class SkillContractTests(unittest.TestCase):
     def test_exported_mcp_helper_runs_from_target_and_stays_read_only(self):
         with tempfile.TemporaryDirectory() as folder:
-            target = Path(folder)
+            target = Path(folder).resolve()
             installer.install(ROOT, target, host="claude-code")
             bundle = target / ".claude/skills/design-kit"
             result = subprocess.run([sys.executable, str(bundle / "scripts/setup_mcp.py"), str(target),
@@ -470,7 +471,7 @@ class SkillContractTests(unittest.TestCase):
 
     def test_installed_reference_regressions_run_against_exported_catalog_and_helper(self):
         with tempfile.TemporaryDirectory() as folder:
-            target = Path(folder)
+            target = Path(folder).resolve()
             installer.install(ROOT, target)
             bundle = target / ".agents/skills/design-kit"
             result = subprocess.run(
@@ -482,7 +483,7 @@ class SkillContractTests(unittest.TestCase):
         # Validate the actual exported package in a clean project. A valid link
         # in the checkout can still be broken if its resource is not packaged.
         with tempfile.TemporaryDirectory() as folder:
-            target = Path(folder)
+            target = Path(folder).resolve()
             installer.install(ROOT, target, with_software=True)
             bundle = target / ".agents/skills/design-kit"
             links_checked = 0

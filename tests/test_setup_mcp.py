@@ -23,7 +23,8 @@ class SetupTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
-        self.target = Path(self.temp.name)
+        # Normalize Windows 8.3 aliases before comparing planned config paths.
+        self.target = Path(self.temp.name).resolve()
 
     def write_json(self, data, host="claude-code"):
         path = self.target / setup.HOSTS[host][0]
@@ -46,7 +47,7 @@ class SetupTests(unittest.TestCase):
             if host == "codex" and setup.tomllib is None:
                 continue
             with self.subTest(host=host), tempfile.TemporaryDirectory() as folder:
-                home = Path(folder)
+                home = Path(folder).resolve()
                 path = home / relative
                 path.parent.mkdir(parents=True, exist_ok=True)
                 original = (b'model = "keep-current-model"\n' if host == "codex" else
