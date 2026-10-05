@@ -1,5 +1,9 @@
 # Design Kit
 
+[![Validate kit](https://github.com/ibbuilds/design-kit/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/ibbuilds/design-kit/actions/workflows/validate.yml)
+
+[Install from your agent interface](#setup-from-the-interface) · [Supported platforms](HOSTS.md) · [Reference MCP setup](PROVIDERS.md) · [General guide](docs/GENERAL_GUIDE.txt)
+
 A supervised **UI -> frontend -> QA skill**, designed primarily for the graphical interfaces of OpenAI, Anthropic and Google. It guides the current agent through product/vibe clarification, inspected references, a rendered design system, components, interface refinement and requested frontend code. No backend work, paid inspiration subscription or separate design runtime is required.
 
 ## The experience
