@@ -27,19 +27,31 @@ can specify what to retain. Resolve it in the existing context/vibe checkpoint.
 Keep these decisions in this project, even when the skill is installed globally.
 
 WHEN DIRECTION IS OPEN
+Present the design MD's aesthetic as a hypothesis and ask a focused confirmation
+before an exhaustive audit or treatment. Prior component approval does not settle
+the whole identity. Reuse a vibe already supplied instead of asking it again.
 Expand the user's wording into a faithful brief/prompt: requirements/negatives,
 proposed interpretation and unknowns remain separate. Confirm the intended vibe.
 Search by aesthetic in the selected MCPs; constrain the requested section/pattern
 first when scoped. The business topic is an optional filter, not a requirement.
-Use supplied references directly or seek more matching visual relationships.
+For exploratory evolution, use supplied examples to seed complementary MCP
+research; reuse directly for faithful/local work or when accepted evidence covers
+the decision. An example URL alone does not close an exploratory reference phase.
 If MCPs lack usable evidence, try relevant catalog sources through browser/search.
 If usable coverage is exhausted, describe the gap and invite user references.
-Show readable evidence, fit, transfer and exclusions; revise until accepted.
+Curate 4–8 strong, distinct, inspected references unless the user asks otherwise.
+If fewer than four fit, continue eligible retrieval or report incomplete coverage
+when actual access/budget is exhausted; do not pad or silently advance.
+Show readable evidence, fit, transfer and exclusions. Offer accept and advance,
+refine discovery, or correct selection/direction in the same checkpoint.
+Refine within eight active references; wait for the accepted map and advance choice.
 A focused typography/composition repair does not need a full discovery round.
 
 WHEN FOUNDATIONS CHANGE
 Reuse canonical tokens/components. Propose the minimum scoped correction supported
 by accepted evidence, render its specimen and obtain review.
+Revise affected canonical design MDs with the accepted reference-to-product rules;
+keep documentation and the rendered system/UI consistent without duplicating APIs.
 Inspect affected shared consumers and show the relevant impact before propagation.
 Do not create a competing system or claim complete extraction of another site's
 internal system from public styles/screenshots.

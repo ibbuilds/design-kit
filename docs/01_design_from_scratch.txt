@@ -29,12 +29,18 @@ metrics or exact approved styles. Review this in the same vibe checkpoint.
 Search primarily by the agreed aesthetic, allowing cross-industry inspiration.
 Business terms are optional filters for a named question, not automatic tags.
 For a section, establish the requested pattern and match the vibe within it.
-Use supplied examples directly when sufficient, or find matching relationships.
+Inspect supplied examples as discovery seeds; reuse accepted evidence directly
+for faithful implementation or fully specified local work.
 Start with the selected MCP best suited to the question; use the other for a gap.
 Then search relevant public catalog sources directly when MCPs do not resolve it.
 If usable coverage is exhausted, explain the gap and invite user references.
+Curate 4–8 strong, distinct, inspected references unless the user asks otherwise.
+If fewer than four fit, continue eligible retrieval or disclose incomplete coverage
+when access/budget is exhausted. Do not pad the selection with weak matches.
 Show readable visuals, exact provenance, fit, contributions and exclusions.
-Revise affected examples until references and interpretation are accepted.
+Offer accept and advance, refine the search, or correct selection/direction in
+one checkpoint. Revise within eight active references; wait for accepted
+interpretation and the user's advance choice before foundations.
 
 4. SCOPED VISUAL SYSTEM
 Reuse an existing system or propose missing foundations from accepted evidence.

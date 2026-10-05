@@ -24,8 +24,10 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 
 - Designer's direction; selected source/capture relationships and exclusions:
 - Interpreted visual traits / requested and avoided qualities:
+- Documented aesthetic / agent's hypothesis / user's confirmation or correction / design-document gaps:
 - Original product/vibe wording / faithful expanded prompt / confirmed versus proposed/unknown:
 - Selected reference providers / actual access / fallback or unverified limits:
+- Curated selection / fit gaps / accepted advance-or-refine choice:
 - Intended visual source versus current base / inspected comparison / discrepancy and proposed treatment:
 - Reusable query/result/capture evidence / retrieval gaps / explicit call budget:
 - Aesthetic-led search relationships / optional task/genre filter and reason:
