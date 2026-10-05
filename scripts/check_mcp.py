@@ -18,6 +18,14 @@ class DiagnosticError(Exception):
     pass
 
 
+class RPCError(DiagnosticError):
+    """Preserve upstream JSON-RPC errors for the compatibility transport."""
+    def __init__(self, error):
+        self.error = error
+        code = error.get("code") if isinstance(error, dict) else None
+        super().__init__("Provider JSON-RPC error: " + str(code))
+
+
 def decode_response(raw, content_type, request_id):
     """Read JSON or SSE, ignoring notifications rather than confusing them with the reply."""
     try:
@@ -41,9 +49,7 @@ def decode_response(raw, content_type, request_id):
         if message.get("jsonrpc") != "2.0":
             raise DiagnosticError("Invalid JSON-RPC version")
         if "error" in message:
-            error = message["error"]
-            code = error.get("code") if isinstance(error, dict) else None
-            raise DiagnosticError("Provider JSON-RPC error: " + str(code))
+            raise RPCError(message["error"])
         if "result" in message and isinstance(message["result"], dict):
             return message["result"]
         raise DiagnosticError("Expected an object result")

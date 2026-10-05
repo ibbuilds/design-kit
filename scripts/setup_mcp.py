@@ -5,6 +5,7 @@ import copy
 import json
 import os
 from pathlib import Path
+import re
 import sys
 import uuid
 from urllib.parse import urlsplit, urlunsplit
@@ -32,7 +33,7 @@ PROVIDERS = ("awwwards", "onepagelove")
 OPL_URL = "https://api.onepagelove.com/mcp"
 
 
-def provider_spec(host, provider, windows=None):
+def provider_spec(host, provider, windows=None, onepagelove_transport="direct"):
     if host not in HOSTS or provider not in PROVIDERS:
         raise ValueError("Unsupported host or provider")
     if windows is None:
@@ -44,6 +45,13 @@ def provider_spec(host, provider, windows=None):
         if host == "claude-code":
             spec["type"] = "stdio"
         return spec
+    if onepagelove_transport == "codex-compat":
+        if host != "codex":
+            raise ValueError("The One Page Love compatibility adapter is Codex-only")
+        adapter = Path(__file__).resolve().with_name("onepagelove_compat.py")
+        if not adapter.is_file():
+            raise ValueError("Install the complete kit before configuring the compatibility adapter")
+        return {"command": sys.executable, "args": [str(adapter)]}
     spec = {HOSTS[host][2]: OPL_URL}
     if host == "claude-code":
         spec["type"] = "http"
@@ -62,6 +70,8 @@ def is_provider(spec, host, provider):
     if not isinstance(spec, dict):
         return False
     if provider == "onepagelove":
+        if host == "codex" and is_compat_adapter(spec):
+            return True
         if host == "claude-code" and spec.get("type") not in ("http", "streamable-http"):
             return False
         return normalized_url(spec.get(HOSTS[host][2])) == normalized_url(OPL_URL)
@@ -84,6 +94,48 @@ def is_provider(spec, host, provider):
     return executable in ("npx", "npx.cmd", "npx.exe") and any(
         isinstance(arg, str) and (arg == "awwwards-mcp" or arg.startswith("awwwards-mcp@"))
         for arg in args)
+
+
+def is_compat_adapter(spec):
+    command, args = spec.get("command"), spec.get("args")
+    if not isinstance(command, str) or not isinstance(args, list) or len(args) != 1:
+        return False
+    executable = command.replace("\\", "/").rsplit("/", 1)[-1].lower()
+    return bool(re.fullmatch(r"python(?:\d+(?:\.\d+)*)?(?:\.exe)?", executable) and
+                isinstance(args[0], str) and
+                args[0].replace("\\", "/").rsplit("/", 1)[-1] == "onepagelove_compat.py")
+
+
+def replace_codex_connection(raw, name, connection, original_data):
+    """Replace a simple direct URL table, preserving all other config bytes."""
+    text = raw.decode("utf-8")
+    headers = list(re.finditer(r"(?m)^[ \t]*\[(?!\[)([^\]\r\n]+)\][ \t]*(?:#[^\r\n]*)?(?=\r?$)", text))
+    found = None
+    for index, header in enumerate(headers):
+        table = tomllib.loads("[" + header.group(1) + "]\n")
+        path = []
+        while isinstance(table, dict) and len(table) == 1:
+            key, table = next(iter(table.items()))
+            path.append(key)
+        if path == ["mcp_servers", name]:
+            found = (header.end(), headers[index + 1].start() if index + 1 < len(headers) else len(text))
+            break
+    if found is None:
+        raise ValueError("Compatibility migration needs a separate MCP table; use native/manual setup")
+    start, end = found
+    body, count = re.subn(r"(?m)^[ \t]*url[ \t]*=[^\r\n]*(?:\r?\n|$)", "", text[start:end])
+    if count != 1:
+        raise ValueError("Cannot safely replace this URL declaration; use native/manual setup")
+    newline = "\r\n" if "\r\n" in text else "\n"
+    lines = newline.join(k + " = " + json.dumps(v) for k, v in connection.items())
+    payload = (text[:start] + newline + lines + newline + body.lstrip("\r\n") + text[end:]).encode("utf-8")
+    expected = copy.deepcopy(original_data)
+    selected = expected["mcp_servers"][name]
+    del selected["url"]
+    selected.update(connection)
+    if load_config(payload, "codex") != expected:
+        raise ValueError("Migration changed other settings; use native/manual setup")
+    return payload
 
 
 def is_disabled(spec):
@@ -115,7 +167,8 @@ def load_config(raw, host):
     return data
 
 
-def plan(target=None, host="codex", providers=PROVIDERS, windows=None, scope="project", user_home=None):
+def plan(target=None, host="codex", providers=PROVIDERS, windows=None, scope="project", user_home=None,
+         onepagelove_transport="direct"):
     target = installation_root(target, scope, user_home)
     if target == Path(__file__).resolve().parents[1]:
         raise ValueError("Select the application project, not the shared kit or installed skill directory")
@@ -124,6 +177,10 @@ def plan(target=None, host="codex", providers=PROVIDERS, windows=None, scope="pr
     chosen = tuple(dict.fromkeys(providers))
     if not chosen or any(p not in PROVIDERS for p in chosen):
         raise ValueError("Select only supported providers")
+    if onepagelove_transport not in ("direct", "codex-compat"):
+        raise ValueError("Unsupported One Page Love transport")
+    if onepagelove_transport == "codex-compat" and (host != "codex" or "onepagelove" not in chosen):
+        raise ValueError("Compatibility setup requires Codex and the One Page Love provider")
     filename, key, _ = HOSTS[host]
     if scope == "user":
         filename = USER_CONFIGS[host]
@@ -139,7 +196,7 @@ def plan(target=None, host="codex", providers=PROVIDERS, windows=None, scope="pr
             for spec in servers.values()):
         raise ValueError("Claude remote server needs an explicit transport type; review existing config")
     servers = copy.deepcopy(servers)
-    additions, existing = {}, []
+    additions, existing, updated = {}, [], []
     for provider in chosen:
         # A conflicting reserved name must never be silently bypassed via alias.
         if provider in servers and not is_provider(servers[provider], host, provider):
@@ -149,11 +206,22 @@ def plan(target=None, host="codex", providers=PROVIDERS, windows=None, scope="pr
             raise ValueError("Provider is explicitly disabled; review in the host: " + provider)
         if matches:
             existing.append(provider)
+            if provider == "onepagelove" and onepagelove_transport == "codex-compat":
+                if len(matches) != 1:
+                    raise ValueError("Multiple One Page Love aliases; review the selected native connection")
+                name, spec = matches[0]
+                if not is_compat_adapter(spec):
+                    if any(spec.get(k) for k in ("http_headers", "env_http_headers", "bearer_token_env_var", "command", "args")):
+                        raise ValueError("Custom connection options need native/manual compatibility setup")
+                    connection = provider_spec(host, provider, windows, onepagelove_transport)
+                    raw = replace_codex_connection(raw, name, connection, data)
+                    data = load_config(raw, host)
+                    updated.append(name)
             continue
-        additions[provider] = provider_spec(host, provider, windows)
+        additions[provider] = provider_spec(host, provider, windows, onepagelove_transport)
     if not additions:
         return {"path": path, "original": original, "payload": raw,
-                "added": [], "existing": existing}
+                "added": [], "existing": existing, "updated": updated}
     if host == "codex":
         # Append validated tables, preserving unrelated values and comments byte-for-byte.
         parts = [raw.decode("utf-8").rstrip("\n"), ""]
@@ -167,13 +235,14 @@ def plan(target=None, host="codex", providers=PROVIDERS, windows=None, scope="pr
         data[key] = {**servers, **additions}
         payload = (json.dumps(data, indent=2, ensure_ascii=False) + "\n").encode("utf-8")
     return {"path": path, "original": original, "payload": payload,
-            "added": list(additions), "existing": existing}
+            "added": list(additions), "existing": existing, "updated": updated}
 
 
-def configure(target=None, host="codex", providers=PROVIDERS, apply=False, windows=None, scope="project", user_home=None):
-    result = plan(target, host, providers, windows, scope, user_home)
+def configure(target=None, host="codex", providers=PROVIDERS, apply=False, windows=None, scope="project", user_home=None,
+              onepagelove_transport="direct"):
+    result = plan(target, host, providers, windows, scope, user_home, onepagelove_transport)
     result["backup"] = None
-    if not apply or not result["added"]:
+    if not apply or not (result["added"] or result["updated"]):
         return result
     path = result["path"]
     original = result["original"]
@@ -203,16 +272,20 @@ def main():
     parser.add_argument("--user-home", type=Path, help="Explicit existing user/profile home (user scope only)")
     parser.add_argument("--host", choices=HOSTS, default="codex")
     parser.add_argument("--provider", choices=PROVIDERS, action="append")
+    parser.add_argument("--onepagelove-transport", choices=("direct", "codex-compat"), default="direct",
+                        help="Codex-only workaround for confirmed decimal-priority parsing failures")
     parser.add_argument("--apply", action="store_true", help="Apply the reviewed config; creates a backup if it exists")
     args = parser.parse_args()
     try:
-        result = configure(args.target, args.host, args.provider or PROVIDERS, args.apply, scope=args.scope, user_home=args.user_home)
+        result = configure(args.target, args.host, args.provider or PROVIDERS, args.apply, scope=args.scope, user_home=args.user_home,
+                           onepagelove_transport=args.onepagelove_transport)
     except (ValueError, OSError) as error:
         print("ERROR: " + str(error), file=sys.stderr)
         return 2
     print(("APPLY: " if args.apply else "PLAN ONLY: ") + str(result["path"]))
     print("Scope: " + args.scope + "; host: " + args.host)
     print("Add: " + (", ".join(result["added"]) or "none"))
+    print("Update connection: " + (", ".join(result["updated"]) or "none"))
     print("Already configured locally: " + (", ".join(result["existing"]) or "none"))
     if result["backup"] is not None:
         print("Backup: " + str(result["backup"]))

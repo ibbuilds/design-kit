@@ -21,6 +21,7 @@ PACKAGE = (
     "docs/GENERAL_GUIDE.txt", "docs/01_design_from_scratch.txt",
     "docs/02_improve_existing_design.txt", "docs/03_frontend_engineering.txt",
     "scripts/check_mcp.py", "tests/test_check_mcp.py", "docs/WORKFLOW_EVALUATION.md",
+    "scripts/onepagelove_compat.py", "tests/test_onepagelove_compat.py",
 )
 HOSTS = {
     "codex": (".agents/skills/design-kit", "AGENTS.md"),

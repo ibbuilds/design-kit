@@ -244,6 +244,61 @@ class SetupTests(unittest.TestCase):
         self.assertIn("PLAN ONLY", result.stdout)
         self.assertEqual([], list(self.target.iterdir()))
 
+    @unittest.skipIf(setup.tomllib is None, "Codex TOML needs Python 3.11+")
+    def test_compat_migration_preserves_alias_options_comments_and_backup(self):
+        path = self.target / ".codex/config.toml"
+        path.parent.mkdir()
+        original = ('# Keep personal settings\r\nmodel = "keep"\r\n'
+                    '[mcp_servers."my.opl"] # preserve alias\r\n'
+                    'url = "https://api.onepagelove.com/mcp"\r\n'
+                    'enabled = true\r\ntool_timeout_sec = 45\r\n'
+                    '[mcp_servers.other]\r\ncommand = "keep"\r\n'
+                    '[mcp_servers.other.env]\r\nPRIVATE = "preserve"\r\n').encode()
+        path.write_bytes(original)
+        kwargs = {"host": "codex", "providers": ["onepagelove"], "onepagelove_transport": "codex-compat"}
+        planned = setup.configure(self.target, **kwargs)
+        self.assertEqual(original, path.read_bytes())
+        self.assertEqual(["my.opl"], planned["updated"])
+        result = setup.configure(self.target, apply=True, **kwargs)
+        self.assertEqual(original, result["backup"].read_bytes())
+        data = setup.load_config(path.read_bytes(), "codex")
+        spec = data["mcp_servers"]["my.opl"]
+        self.assertTrue(setup.is_compat_adapter(spec))
+        self.assertNotIn("url", spec)
+        self.assertEqual(45, spec["tool_timeout_sec"])
+        self.assertEqual("preserve", data["mcp_servers"]["other"]["env"]["PRIVATE"])
+        self.assertIn(b'# preserve alias', path.read_bytes())
+        before = path.read_bytes()
+        repeat = setup.configure(self.target, apply=True, **kwargs)
+        self.assertEqual([], repeat["updated"])
+        self.assertEqual(before, path.read_bytes())
+        # Normal setup recognizes the workaround and never duplicates/reverts it.
+        self.assertEqual([], setup.configure(self.target, "codex", ["onepagelove"])["added"])
+
+    @unittest.skipIf(setup.tomllib is None, "Codex TOML needs Python 3.11+")
+    def test_compat_refuses_disabled_authenticated_or_inline_connections(self):
+        path = self.target / ".codex/config.toml"
+        path.parent.mkdir()
+        variants = [
+            '[mcp_servers.onepagelove]\nurl = "https://api.onepagelove.com/mcp"\nenabled = false\n',
+            '[mcp_servers.onepagelove]\nurl = "https://api.onepagelove.com/mcp"\nhttp_headers = { Authorization = "retain" }\n',
+            'mcp_servers = { onepagelove = { url = "https://api.onepagelove.com/mcp" } }\n',
+        ]
+        for raw in variants:
+            path.write_text(raw)
+            with self.subTest(raw=raw), self.assertRaises(ValueError):
+                setup.configure(self.target, "codex", ["onepagelove"], apply=True, onepagelove_transport="codex-compat")
+            self.assertEqual(raw, path.read_text())
+
+    def test_compat_is_codex_only_and_opt_in(self):
+        with self.assertRaisesRegex(ValueError, "requires Codex"):
+            setup.configure(self.target, "claude-code", onepagelove_transport="codex-compat")
+        self.assertEqual({"url": setup.OPL_URL}, setup.provider_spec("codex", "onepagelove"))
+        if setup.tomllib is not None:
+            result = setup.configure(self.target, "codex", ["onepagelove"], apply=True, onepagelove_transport="codex-compat")
+            spec = setup.load_config(result["payload"], "codex")["mcp_servers"]["onepagelove"]
+            self.assertTrue(setup.is_compat_adapter(spec))
+
 
 if __name__ == "__main__":
     unittest.main()
