@@ -44,6 +44,8 @@ The owner's subsequent instruction establishes a discovery default of 4–8 stro
 
 The next clarification requires a further-search/continue question after reference acceptance unless already answered, then a comparison diagnosing structural causes before cosmetic symptoms. The requested repair order addresses hierarchy, composition, grouping/flow and shared-system relationships before detail/finish. The kit retains the distinction between demonstrated violations, accepted-intent mismatches and aesthetic hypotheses: reference quality does not certify every choice or unseen behavior. This sequence is a user requirement, not evidence that the revised agent has already executed it successfully.
 
+Further feedback requires deeper reuse of selected originals and continued reference review when system evidence is insufficient. The revision covers relevant subpages/states, actual accessible CSS/DOM and published system material, provenance of observed versus inferred values, and focused supplemental discovery/review without restarting accepted work. The initial 4–8 direction board is not a lifetime evidence ceiling or a mandatory fresh quota for every gap. Contributions must normalize into the confirmed product vocabulary rather than mixing incompatible source systems. These are requested workflow corrections, not measured evidence of aesthetic improvement.
+
 ### Public methods compared
 
 - [Refero's design skill](https://github.com/referodesign/refero_skill/blob/master/skills/refero-design/SKILL.md) requires research, an explicit visual target and source-linked decisions before implementation, followed by comparison to that target. Its style/screen/flow separation informs evidence selection; its fixed research counts and paid connection are not adopted.

@@ -39,7 +39,7 @@ research; reuse directly for faithful/local work or when accepted evidence cover
 the decision. An example URL alone does not close an exploratory reference phase.
 If MCPs lack usable evidence, try relevant catalog sources through browser/search.
 If usable coverage is exhausted, describe the gap and invite user references.
-Curate 4–8 strong, distinct, inspected references unless the user asks otherwise.
+Curate 4–8 strong, distinct, inspected initial references unless asked otherwise.
 If fewer than four fit, continue eligible retrieval or report incomplete coverage
 when actual access/budget is exhausted; do not pad or silently advance.
 Show readable evidence, fit, transfer and exclusions for acceptance/correction.
@@ -62,6 +62,14 @@ Refinement adds useful reference principles after the structural repair; return
 to a cause if new evidence reveals it. Preserve scope, semantics and accepted anchors.
 
 WHEN FOUNDATIONS CHANGE
+Inspect accepted originals beyond the home page: relevant public subpages,
+component states, CSS/DOM and available published token/system sources.
+Track coverage of needed rules. Deepen those sources first; if insufficient,
+search focused supplements matching the missing pattern and confirmed aesthetic.
+Show contribution/exclusions, review and replace rejected evidence, then resume
+the affected decision. No new four-reference quota or whole-workflow restart.
+Normalize accepted contributions into one coherent system and its protected anchors;
+distinguish observed declarations/computed values from inferred/proposed tokens.
 Reuse canonical tokens/components. Propose the minimum scoped correction supported
 by accepted evidence, render its specimen and obtain review.
 Revise affected canonical design MDs with the accepted reference-to-product rules;

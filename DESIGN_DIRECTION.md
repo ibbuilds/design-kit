@@ -25,7 +25,7 @@ Resolve only open decisions needed now. Content/flow and visual direction can in
 
 ## Apply high-quality evidence deliberately
 
-Use the designer's direction and accepted reference map. If needed, retrieve focused evidence through [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md). Compare observed composition/type/image/interaction relationships and explain what can transfer to this product; do not treat an admired brand or gallery as a universal layout. No compulsory metaphor, bespoke font, WebGL, effects, grid or motion quota.
+Use the designer's direction and accepted reference map. Exploit relevant subpages, patterns/states and actual public style/system evidence under [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md), not just home-page previews. When a needed relationship lacks coverage, reopen its focused research/review loop without discarding accepted direction. Compare observed composition/type/image/interaction relationships and explain what can transfer coherently to this product; do not treat an admired brand or gallery as a universal layout. No compulsory metaphor, bespoke font, WebGL, effects, grid or motion quota.
 
 Express a compact creative premise through consequential choices. Brand/campaign work may need expressive type/imagery and scale; a dense workspace may need precise information hierarchy and economical repeated controls. Either can have an exceptional identity. Build one coherent treatment rather than averaging incompatible references or generating complete variants by routine.
 

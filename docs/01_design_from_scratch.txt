@@ -34,7 +34,7 @@ for faithful implementation or fully specified local work.
 Start with the selected MCP best suited to the question; use the other for a gap.
 Then search relevant public catalog sources directly when MCPs do not resolve it.
 If usable coverage is exhausted, explain the gap and invite user references.
-Curate 4–8 strong, distinct, inspected references unless the user asks otherwise.
+Curate 4–8 strong, distinct, inspected initial references unless asked otherwise.
 If fewer than four fit, continue eligible retrieval or disclose incomplete coverage
 when access/budget is exhausted. Do not pad the selection with weak matches.
 Show readable visuals, exact provenance, fit, contributions and exclusions.
@@ -46,6 +46,12 @@ eight active references; wait for accepted interpretation and search closure.
 Reuse an existing system or propose missing foundations from accepted evidence.
 Define real typography, semantic tokens, spacing/geometry, assets and relevant
 behavior. Preserve canonical values/paths; DESIGN.md can document intent.
+Explore selected originals' relevant subpages, patterns/states and available
+public CSS/DOM or published token/component sources under REFERENCE_ROUTER.md.
+Check coverage of needed system rules; deepen accepted sources for gaps, then
+search focused supplements if necessary. Review new contributions and revise
+rejected ones before dependent work; reuse prior acceptance and the agreed vibe.
+Normalize contributions into consistent product roles/rules, not mixed identities.
 Render a specimen at useful widths/states, not merely a JSON/color list.
 Review/correct until accepted before styled interface construction.
 Public extracted styles are partial evidence, not a site's complete internal system.

@@ -32,6 +32,7 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 - Reusable query/result/capture evidence / retrieval gaps / explicit call budget:
 - Aesthetic-led search relationships / optional task/genre filter and reason:
 - Reference state/viewport; observed versus inferred behavior:
+- Inspected reference subpages/system/style sources / needed rule coverage / unresolved gap and accepted supplemental contribution:
 - Chosen medium / actual capability / real assets and provisional material:
 - Canonical typography, semantic colors, spacing/density, geometry and usage:
 - Canonical system document/token paths / rendered specimen and reviewed revision:
