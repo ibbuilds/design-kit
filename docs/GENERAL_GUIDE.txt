@@ -1,0 +1,80 @@
+GENERAL GUIDE — DESIGN KIT
+Updated: October 5, 2026.
+
+Design Kit is a skill with resources and scripts. It guides the current agent
+from UI through frontend and QA, preserving the selected model/settings.
+A plugin is host-specific packaging; the reusable procedure is the skill.
+
+PLATFORMS AND INTERFACES
+OpenAI: Codex desktop app, plus CLI/IDE.
+Anthropic: Claude Desktop Code tab, plus Claude Code CLI/IDE.
+Google: Antigravity app/IDE, with Gemini CLI as an additional surface.
+HOSTS.md explains activation and differences. Gemini consumer web chat is not
+a verified native target for this local skill-plus-MCP package.
+
+START FROM THE AGENT INTERFACE
+Provide access to the kit checkout and actual project. You can ask:
+"Install Design Kit here for this interface, preserving my instructions and work.
+Configure Awwwards and One Page Love if missing; verify tools and readable results.
+Then start the supervised UI-to-frontend workflow."
+
+The agent can run the helpers; the designer need not use a terminal.
+See README.md/HOSTS.md for installation, and PROVIDERS.md for MCP setup.
+The skill can be installed globally for the user or in one project. Global
+installation stores the reusable method; project facts and decisions remain local.
+For global setup, ask the agent to install for your user and choose global MCP
+configuration if desired. Helpers support --scope user without a project argument.
+The MCP helper changes only the explicitly selected config after --apply.
+Neither helper downloads dependencies or launches servers.
+Codex metadata declares the reference MCP dependencies. If something is missing,
+the skill shows the concrete setup, guides installation and verifies access.
+Native installation/trust dialogs belong to the host; chat is the fallback.
+Connecting Awwwards can download/launch its npm package within setup authorization.
+Writing config does not prove the provider is connected in the current session.
+
+FLOW
+Context/experience -> vibe and faithful expanded prompt -> reviewed references
+-> rendered scoped system -> components/interfaces and corrections
+-> requested frontend -> relevant QA.
+
+The flow serves sites, apps, pages, heroes, other sections, components and local
+improvements. Reuse resolved phases and review only necessary system additions.
+For an existing project, detect its identity and canonical system. Local changes
+reuse that vocabulary; ask only when a material identity/system change boundary
+is unclear. Preserve protected anchors, inspect shared consumers and review the
+proposed canonical change instead of creating a competing system.
+Show the actual artifact and wait for explicit acceptance before dependent work.
+Corrections keep the phase open; retain unrelated approvals across follow-ups.
+User examples can be used directly or guide discovery of matching relationships.
+PROMPT.md expands sparse input without inventing audience, features or approved
+styles: preserve requirements/negative constraints, label proposals and unknowns.
+
+REFERENCES AND EFFICIENT RETRIEVAL
+Find the requested section/pattern, then its agreed aesthetic across industries.
+Business/genre terms are optional filters when useful for an actual question.
+Use the suitable selected MCP first, then the other for an access/fit gap.
+If unresolved, work through relevant public catalog sources via browser/search,
+including readable public Refero evidence. If usable coverage is exhausted,
+explain the gap and invite user references or clarified direction.
+
+Plan supported filters before calls; reuse schemas, results and available
+captures. Retrieve only the useful shortlist; repeat only for an open evidence
+gap. Respect rate limits and explicit budgets. Images/tools still consume agent
+quota even when provider access is free. Inspo is not automatically added.
+
+MEDIUM AND SCOPE
+Reuse the existing medium or propose an in-agent HTML/CSS specimen/preview.
+Penpot is conditional on user choice/access. No separate app or Obsidian bridge
+is required. Review a visual system before styled interface construction.
+When frontend code was already requested, continue after design acceptance.
+Design-only stops at design. Backend, databases and infrastructure are outside scope.
+
+GUIDES
+docs/01_design_from_scratch.txt: design from scratch.
+docs/02_improve_existing_design.txt: improve an existing base.
+docs/03_frontend_engineering.txt: frontend implementation and QA.
+
+SKILL.md/ONBOARDING.md are the procedure; supporting routes load only as needed.
+BRIEF.md stays blank in the shared kit; project context stays in the target.
+Package tests do not prove visual uplift or savings. A real trial compares the
+same brief/model/base/reference access/budget with and without the kit.

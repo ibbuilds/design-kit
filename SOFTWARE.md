@@ -1,50 +1,39 @@
-# Software workflow
+# Frontend implementation and QA
 
-Use for programming and behavior. This is the canonical engineering procedure; [SKILL.md](SKILL.md) governs visual/frontend decisions only when the task has them. A backend-only change does not load the visual library. Review-only requests inspect and report without changing code or project records.
+Use for requested frontend code and behavior. [SKILL.md](SKILL.md) governs design checkpoints; this is the implementation procedure after relevant design acceptance. Scope ends at the frontend: consume existing APIs, but do not create backend endpoints, databases, migrations or infrastructure. Review-only inspects and reports without edits.
 
-## Match depth to the change
+## Work from the target and accepted design
 
-- **Local change:** inspect relevant code, reproduce the failure or state the observable acceptance criterion, implement, run focused checks and inspect the diff. No new architecture/specification by default.
-- **Substantial feature:** define the user outcome, contracts, state and failure paths, affected boundaries and verification; implement a complete useful capability before expanding.
-- **Long work:** use scoped milestones and preserve a compact handoff in existing records. See [EXECUTION.md](EXECUTION.md) for effort and continuity.
-- **Sensitive change:** add relevant negative cases and recovery evidence for permissions, money, sensitive data, deletion, migrations or external side effects, even if the diff is small.
+Inspect target instructions, stack, canonical tokens/components, affected callers, current changes and required checks. Reuse accepted structure, assets and useful prototype code. Harden prototype behavior rather than blindly copying it or rebuilding its visual vocabulary. Ask only for material missing contracts or reserved decisions; routine implementation follows existing conventions.
 
-For substantial product features or release readiness, apply [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md). It connects requirements, implementation and evidence; no additional specification framework is needed. Separate user requirements from agent-proposed extras.
+Keep the implementation proportional. A local repair needs reproduction, a scoped fix and relevant verification. A substantial frontend feature uses [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) to connect the user outcome, states and evidence. No new framework, architecture document or exhaustive test suite by default.
 
-Work in the target project. Preserve its stack, instructions, uncommitted work and public contracts. Inspect callers and conventions before replacing a component. Clarify material ambiguity early while continuing independent authorized work; infer routine details from the available context.
+## Define observable behavior
 
-Carry a build/fix request through the requested delivery destination. Existing permission for a branch/main update, deployment or other action remains valid across turns; do not add a PR or new approval gate when the user chose direct integration. Complete unaffected work if an external service blocks one check, and report that specific limitation without marking it passed.
+Identify the relevant UI inputs, outputs, state transitions, existing service contract and important errors. Include loading, empty, populated, invalid, disabled, slow/failed and success states where the feature needs them. Preserve work on failure and provide meaningful recovery. Label mocks, illustrative data and untested services; a toast is not evidence of persistence.
 
-## Define evidence before significant implementation
+For a bug, reproduce its symptom in the actual application or supported host. Separate candidate causes with the smallest useful evidence. If reproduction is unavailable, name the unknown. Repeated speculative patches require a changed hypothesis or targeted instrumentation.
 
-Identify inputs/outputs, source of truth, states, invariants, important errors and the expected user-visible result. Keep the contract as small as the task allows. Use the host's architecture: a plugin has a host lifecycle and files; a static site need not gain authentication or a database; a service may need transactions. Add abstractions, queues, caches or infrastructure for an identified requirement, not an enterprise appearance.
+## Implement and inspect
 
-Choose checks that could reveal a wrong implementation. Unit tests cover logic; integration checks cover real boundaries; E2E covers important user paths. A mock that always succeeds does not verify a real service. For a reversible low-impact edit, an existing check or direct verification can be sufficient; do not add tests that simply restate the implementation.
+Loop: **inspect/reproduce -> choose evidence -> implement -> run affected checks -> inspect render/diff/behavior -> repair concrete gaps.**
 
-For a bug, reproduce the original symptom in the actual host/path, distinguish candidate causes and collect the smallest runtime evidence that separates them. Repair the supported cause, recheck the original symptom and adjacent risks. If reproduction is unavailable, name what remains unknown. Repeated speculative patches call for a changed hypothesis or instrumentation, not another broad rewrite. Remove temporary diagnostics or retain them deliberately without sensitive data.
+Use the target's existing types, state patterns and API clients. Validate untrusted input at frontend boundaries; do not claim client-side checks provide server authorization. Handle cancellation, stale responses and retries where relevant. Keep secrets out of browser code, records and logs. Preserve project contracts and concurrent human edits.
 
-## Implement and verify one complete capability
+Use semantic elements, useful labels, keyboard behavior, visible focus and relevant accessibility requirements. Inspect responsive recomposition, text wrapping, asset/font loading, interaction states and reduced motion. Compare the accepted design and actual result under equivalent content, state, viewport and loaded assets. A needed departure from a closed visual decision requires the proposed alternative and human acceptance.
 
-Follow the relevant path from input/UI through logic, effects or persistence to success, error and recovery. Include authorization at the trusted boundary where applicable. For a plugin, exercise the actual host when verifying its integration; a browser demo alone is insufficient.
+For host plugins, inspect the actual host's UI and lifecycle when that integration is in scope. A standalone browser mock does not verify host behavior. Run the existing application/preview path when possible; do not change the user's runtime or install dependencies without applicable authorization.
 
-Loop: **inspect/reproduce -> specify useful evidence -> implement -> run affected checks -> inspect diff and behavior -> repair concrete gaps.** Use test-first when it helps specify behavior. Finish necessary debugging and required checks; do not remove tests or weaken contracts to get a passing result. Broaden verification when changes create broader risk, not automatically after every small repair.
+## Verify the relevant risks
 
-Check the oracle and actual assertions: expected values must come from the requirement or a trusted fixture, not the implementation being tested. A red test caused by setup/import failure does not demonstrate the bug. A coverage percentage or TDD sequence cannot establish test effectiveness or architectural quality. Review contracts and dependency structure as well as green results.
+Choose checks that could reveal an incorrect implementation. Unit tests suit meaningful pure logic; integration checks suit existing contract boundaries; browser tests suit critical user paths. Existing checks/direct inspection can suffice for reversible low-impact changes. Do not add tests that restate implementation or weaken valid assertions to pass.
 
-Preserve accepted frontend design while integrating real behavior; use Design Kit for changed UI states. Verify loading, empty, populated, invalid, slow/failed and success states where they belong to the feature. Do not call a visual mock a working backend or infer persistence from a success toast.
+Derive expected results from requirements or trusted fixtures. A setup/import error does not demonstrate the intended regression. Controlled mocks can exercise frontend failure handling; separately report whether the actual authorized service was exercised. Use stable accessible locators and condition-based assertions, not arbitrary sleeps.
 
-## Data, security and performance
+Measure a suspected performance problem before optimizing, with relevant content, device/network conditions and the project's budget. Check excessive rendering, oversized assets, font loading and layout instability when affected. No new observability platform for a local diagnostic.
 
-Select controls by actual risk. Verify access across users/tenants where relevant; validate untrusted input; keep secrets out of code, chat and logs; preserve session and file boundaries. External URL fetches need appropriate network/redirect controls; file mutations need bounded paths and conflict handling. Select relevant [OWASP ASVS](https://owasp.org/projects/asvs) requirements for web applications without claiming certification.
+## Finish the requested scope
 
-For schema/data changes, verify constraints, migration compatibility, repeat/retry behavior and rollback or recovery where needed. Protect the originals and account for concurrent edits. For host integrations, check load/unload, reopen, compatibility and resource cleanup as applicable.
+Complete relevant required checks and resolve material regressions. Present the working frontend, affected visuals/states, verification and actual limits. Preserve the strongest accepted baseline. Passing tests does not certify beauty, complete accessibility, security or live backend compatibility.
 
-Measure the suspected performance bottleneck before optimizing. Use realistic data and the product's budgets; record the conditions and limits. Avoid building a new observability platform for a local diagnostic. Preserve maintainable boundaries, clear naming and a canonical source of truth.
-
-## Completion and release
-
-Close when the requested behavior and important recovery paths work, required checks pass, the diff preserves scoped contracts/data, and material regressions are resolved. Report any untested host/service, missing credentials or environment limitations. Passing tests is evidence for the tested behavior, not complete security or production readiness.
-
-Review substantial/sensitive work against requirements, diff and evidence. Use independent review only when requested, required, or available and authorized for the risk; no automatic agent committee. A repeated failure must change the hypothesis or identify the blocker. Explicit user budgets take precedence; never mark incomplete work complete.
-
-Deploy, merge, publish or perform consequential data operations within existing user authorization and project requirements. Prepare the concrete diff, checks and recovery plan before requesting any missing approval. Report what changed, why, actual verification and material limitations. Preserve only the state the next task needs.
+Keep implemented, verified and human-accepted statuses separate in the existing project record. Continue authorized corrections through the result; only changed/dependent work needs review. Publishing/deployment follows separate existing authorization. No automatic backend extension, extra agents or background monitoring. [EXECUTION.md](EXECUTION.md) covers continuity and effort.

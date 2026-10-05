@@ -5,9 +5,11 @@ This repository distributes reusable frontend guidance. It is not the target app
 ## Maintaining the kit
 
 - Read only the affected files. Preserve the curated sources in REFERENCES.md unless changing them is explicitly requested.
+- Write all project documentation, instructions, prompts and authored code in English. Preserve original names/URLs and user material as source data; do not translate evidence into an invented source.
 - SKILL.md is the single canonical design procedure. WORKFLOW.md is a compatibility pointer, not a second workflow.
 - ONBOARDING.md supplies its supervised phase inputs/outputs and human checkpoints; PENPOT.md is conditional canvas guidance, not another runtime. Keep phase/batch acceptance aligned across entrypoints and documentation.
-- SOFTWARE.md is the canonical programming procedure; REFERENCE_ROUTER.md and EXECUTION.md are conditional supporting guidance. Keep installed pointers aligned with those sources rather than duplicating their procedures.
+- SOFTWARE.md is the canonical frontend implementation/QA procedure; backend is outside this kit. REFERENCE_ROUTER.md and EXECUTION.md are conditional supporting guidance. Keep installed pointers aligned rather than duplicating procedures.
+- HOSTS.md defines the three supported platforms and graphical surfaces; PROVIDERS.md defines selected reference MCPs and setup. Configuration tests do not establish live GUI/tool activation.
 - Keep BRIEF.md a blank template. Product facts, active captures, assets, accepted examples, and implementation live in target projects, not in the shared library.
 - Keep TASTE.md and GUIDELINES.md general; no project's identity becomes a universal rule without approval.
 - Changes to installation must pass `python -m unittest discover -s tests -v`. Document actual limits; passing package tests does not establish visual output quality.

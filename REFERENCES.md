@@ -5,12 +5,14 @@
 - Open the original product, study, documentation or demo before applying a finding.
 - Visual curation shows craft, not usability or conversion. Popularity, awards, funding and promotion are discovery signals only.
 - Use free public material; skip sponsors, paywalls, paid templates and premium tools.
+- For selected MCPs, query efficiency and direct-site fallback, use [PROVIDERS.md](PROVIDERS.md) and [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md). The catalog is optional evidence by need, not one giant context payload or an instruction to call every source.
 - Search headings for the decision, then open the closest link. Broad indexes remain useful when no exact topic link is listed; source coverage is not restricted to its heading.
 
 ## Complete websites and visual direction
 
 - [Recent — websites](https://recent.design/websites) — current product, startup, SaaS, portfolio, commerce and editorial websites.
 - [Recent — app screenshots](https://recent.design/app-store-screenshots) — mobile product screens and store presentation.
+- [Refero — public inspiration](https://refero.design/) — website/app examples and UI regions when publicly readable; use the requested pattern and visual relationships, with available search/browser tools. Paid/private content is outside automatic access.
 - [Refs.Gallery](https://refs.gallery/) — Editor's Choice, categories, collections and page-margin references.
 - [Site of Sites](https://www.siteofsites.co/) — websites, collections and studios by industry, type, style and platform.
 - **Awwwards:** [Sites of the Day](https://www.awwwards.com/websites/sites_of_the_day/) · [Collections](https://www.awwwards.com/collections/search/) · [Elements](https://www.awwwards.com/elements/) · [Hovers, cursors and interactions](https://www.awwwards.com/awwwards/collections/hovers-cursors-and-cute-interactions/).
@@ -38,7 +40,6 @@
 - [CTA Gallery](https://www.cta.gallery/) — button, form, download, newsletter and pricing calls to action.
 - [Gridddy](https://gridddy.framer.website/) — pre-footer calls to action.
 - [404s](https://www.404s.design/) — error pages by style, interaction and industry.
-- [Bento Grids](https://bentogrids.com/) — modular web layouts with source links.
 
 ## Interaction, motion and implementation experiments
 
@@ -104,6 +105,8 @@
 ### React components and primitives
 
 - [shadcn/ui components](https://ui.shadcn.com/docs/components) — editable component source and blocks.
+- [Registry Directory](https://registry.directory/) — search component/block registries by the needed pattern; inspect the original demo/source and free-access/license/stack fit before reuse.
+- [shadcn/ui Registry Directory](https://ui.shadcn.com/docs/directory) — official community-registry index for compatible components/blocks; browse first, installation only for an authorized implementation need.
 - [Base UI](https://base-ui.com/) — unstyled React controls, overlays and selection primitives.
 - [React Aria](https://react-aria.adobe.com/) — accessible collections, dates, internationalization and complex inputs.
 - [Radix Primitives](https://www.radix-ui.com/primitives) — unstyled accessible React controls.
@@ -137,5 +140,6 @@
 - **Datawrapper:** [visualization guidance](https://www.datawrapper.de/blog/category/datavis-dos-and-donts) · [Academy](https://www.datawrapper.de/academy) — chart choice, labels, maps, tables and implementation.
 - [Microsoft HAX Toolkit](https://www.microsoft.com/en-us/haxtoolkit/) — AI expectations, feedback, control and recovery.
 - [Google People + AI Guidebook](https://pair.withgoogle.com/guidebook-v2/) — human-centered AI interaction guidance.
+- [The Distance — Invisible UI](https://medium.com/@TheDistance/what-is-invisible-ui-and-why-its-changing-product-design-19ad7da529e1) — practitioner discussion of language, response timing and transparent behavior, published March 11, 2026; only for relevant conversational/intent-driven interface work, not a general visual-design rule or empirical benchmark.
 - [FIDO passkey design guidelines](https://www.passkeycentral.org/design-guidelines/) — passkey creation, sign-in and recovery.
 - [Design Tokens format](https://www.designtokens.org/TR/2025.10/format/) — token interchange when a project requires it.

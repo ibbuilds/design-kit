@@ -1,0 +1,65 @@
+IMPROVE AN EXISTING BASE — DESIGN KIT
+Updated: October 5, 2026.
+
+PROMPT IN THE AGENT INTERFACE
+"Use Design Kit to improve [interface/region/flow] in this base.
+Preserve [accepted decisions/content/system/behavior]. Open decision: [X].
+Wanted vibe or actual problem: [Y]. Show the result and wait for my feedback.
+Scope: [design / frontend with QA]."
+
+Inspect the actual base, instructions, assets/tokens and accepted decisions.
+Identify what already works and the highest-impact open gap.
+Do not restart the whole design or rediscover galleries when evidence suffices.
+
+Inspect the existing identity, canonical system sources and shared components.
+Reuse explicit instructions about what to preserve/change. Local improvements
+inside the existing vocabulary need no extra identity questionnaire. If the
+request could change the identity/system and that boundary is unclear, show what
+you found and ask a focused contextual question: preserve the relevant anchors,
+evolve selected relationships, or replace within the requested scope. Free text
+can specify what to retain. Resolve it in the existing context/vibe checkpoint.
+Keep these decisions in this project, even when the skill is installed globally.
+
+WHEN DIRECTION IS OPEN
+Expand the user's wording into a faithful brief/prompt: requirements/negatives,
+proposed interpretation and unknowns remain separate. Confirm the intended vibe.
+Search by aesthetic in the selected MCPs; constrain the requested section/pattern
+first when scoped. The business topic is an optional filter, not a requirement.
+Use supplied references directly or seek more matching visual relationships.
+If MCPs lack usable evidence, try relevant catalog sources through browser/search.
+If usable coverage is exhausted, describe the gap and invite user references.
+Show readable evidence, fit, transfer and exclusions; revise until accepted.
+A focused typography/composition repair does not need a full discovery round.
+
+WHEN FOUNDATIONS CHANGE
+Reuse canonical tokens/components. Propose the minimum scoped correction supported
+by accepted evidence, render its specimen and obtain review.
+Inspect affected shared consumers and show the relevant impact before propagation.
+Do not create a competing system or claim complete extraction of another site's
+internal system from public styles/screenshots.
+
+WHEN THE INTERFACE CHANGES
+Develop one coherent treatment within the requested scope.
+Compare before/after with equivalent content, state, viewport and loaded assets.
+Inspect the integrated result; an isolated attractive card or hero is insufficient
+evidence for a whole-interface claim. Explain the visible contribution.
+Correct and show again. Preserve a stronger earlier result if polishing weakens it.
+A section request remains that section; later sections reuse its accepted choices.
+
+FRONTEND AND QA
+Implement when frontend is already requested or requested later.
+Preserve accepted visual decisions while integrating existing behavior/API contracts.
+Verify relevant states, widths, loaded assets, keyboard/focus and target checks.
+Label mocks and untested services. Backend remains outside the kit.
+
+RESUME
+"Continue with Design Kit from [artifact/revision]. Accepted: [X].
+Pending: [corrections]. Preserve the rest and show the affected revision."
+Reread mutable work/human edits; paths alone do not prove acceptance.
+Invalidate only affected dependent work rather than the whole product.
+
+Reuse retrieved schemas/results/captures; repeat discovery only for an actual
+changed direction or evidence gap. Respect provider limits and user budgets.
+HOSTS.md covers the three platforms/interfaces; PROVIDERS.md covers reference
+access/efficiency. SKILL.md/ONBOARDING.md are the procedure. TASTE.md and
+DESIGN_DIRECTION.md guide judgment; QA does not establish beauty.

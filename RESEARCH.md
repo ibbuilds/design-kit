@@ -1,9 +1,31 @@
 # Research history
 
-- Historical sources below retain their original dates. UI/UX process sources were independently checked September 30, 2026 in the current section.
+- Historical sources below retain their original dates. UI/UX process sources were independently checked September 30, 2026; the October 5 section records the latest applied revision.
 - Current direction: the coding agent works directly in the target, guided by this kit.
 - These sources support individual practices, not a proven best workflow.
 - Read this file for audits, not routine builds.
+
+## Applied revision — October 5, 2026
+
+The prior kit already had supervised reference, foundation, component and page reviews. This revision makes the user's requested mechanism concrete: contextual vibe interpretation; selected Awwwards/One Page Love MCP access; inspected reference correction loops; a rendered system specimen before styled interface construction; then scoped components, frontend and QA. It removes the fixed eight-reference default, automatic dependency on supplied foundations, and the general backend engineering route. Existing accepted work and requested frontend authorization persist.
+
+Primary host documentation was checked for OpenAI Codex, Anthropic Claude Code Desktop and Google Antigravity/Gemini CLI; [HOSTS.md](HOSTS.md) links it and distinguishes graphical surfaces from consumer web chats and remote execution environments. [PROVIDERS.md](PROVIDERS.md) links the selected provider source/documentation, transport formats, free-access conditions and image-fidelity limits. Awwwards live capture/structure tools are optional; background-band grouping cannot establish universal semantic section extraction. No reference database or Obsidian crawler was built.
+
+The helpers install the same native skill per supported surface, globally for the user or in one project, and plan/apply the explicitly selected user/project MCP configuration without downloading dependencies or launching servers. Global skill installation does not edit global instructions or store project decisions. Codex metadata declares the selected MCP dependencies; the setup contract covers missing-prerequisite notices, authorization, native consent and actual-access verification. Offline tests exercise preservation, conflict handling, idempotence, platform schemas and exported resources in isolated profiles. These are integration preparations, not a live GUI activation test or controlled design-output comparison. No product demo, model generation or personal MCP setup was performed in kit maintenance. Visual uplift and savings remain unmeasured; compare equivalent real briefs/model/base/budget with and without the kit before assigning success probabilities.
+
+User steering added faithful prompt expansion under [PROMPT.md](PROMPT.md): preserve original words/negative constraints, separate facts/proposals/unknowns and review within the vibe checkpoint. Visual discovery leads with aesthetic relationships across industries; business terms are optional filters rather than mandatory tags. The product context governs transfer and task fit. This is a candidate improvement mechanism across models, not proof that every model improves.
+
+Existing-project steering is implemented as change-boundary resolution inside the existing context/direction checkpoint, not a mandatory extra questionnaire. Inspect identity, canonical tokens/components and the actual base; local improvements reuse that vocabulary. Ask only when a material identity/system change boundary remains unclear, retain protected anchors and inspect shared consumers before propagating a reviewed canonical change. Global installation does not carry one project's style or approvals into another.
+
+A read-only One Page Love MCP probe initialized server 1.4.1, discovered its current inspiration/section tools, and returned one provenance-linked result and image block. The 400 × 300 preview was inspected for overall composition; it did not establish fine type, full-page fidelity or host GUI integration. Awwwards runtime was not downloaded/launched. Current live observations supplement provider documentation rather than certify permanent free access.
+
+Offline validation after adding user scope: 86 tests, 81 passed and five skipped for unavailable Windows symlink/POSIX semantics; native skill metadata validation and diff whitespace checks passed. CI includes Python 3.9, 3.11 and 3.13; local checks do not establish remote CI status. Native GUI activation, dependency dialogs and comparative design-output trials remain untested.
+
+The resupplied reference sheet mostly matches the catalog. Added the verified Registry Directory and official shadcn registry index for scoped frontend components/blocks, plus The Distance's March 11 Invisible UI article only under specialized conversational-interface needs. Its language/timing/transparency discussion is practitioner interpretation, not evidence that removing visible controls improves arbitrary products. Retained the prior Bento removal and explicit Inspo exclusion instead of importing the attachment wholesale. Existing gallery/UX/type/accessibility references remain selectively routed; presence in the sheet does not authorize paid access or installation. All project documentation, prompts, code and guide filenames are in English.
+
+Provider call efficiency now requires schema/result reuse, planned filters and payloads, capability-based provider choice, targeted refresh and respect for rate limits/budgets. No proxy/cache service or runtime was added. This is a scoped retrieval strategy, not measured optimal consumption or proven savings.
+
+The final context pass reduced SKILL.md from 1,459 to 1,152 whitespace-separated words and shortened the invocation prompt, retaining the workflow and review boundaries. Detailed phase/setup instructions stay in conditional resources. Installation copies resources for availability; it does not inject the full package into model context. This measures text size only, not tokenizer-specific savings or end-to-end consumption.
 
 ## Earlier evidence
 

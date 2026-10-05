@@ -8,6 +8,8 @@ Inspect readable views of the actual base, relevant states and surrounding compo
 
 For requested improvement, first identify **what to preserve; the highest-impact open gap; the relationship to change; the expected design contribution**. A weak hierarchy needs a hierarchy decision before a shadow adjustment. If the user gave foundations only, develop composition/flow instead of claiming the rest is repetition. Changing a closed choice requires a human-reviewed proposal.
 
+Apply ONBOARDING.md's existing-project entry when identity/system change scope is materially unresolved: show detected canonical sources and ask a focused contextual question in the existing context/direction checkpoint. Reuse explicit prior instructions; local corrections inside the existing vocabulary need no extra identity menu. For evolution, carry the protected anchors into reference selection and system changes; for preservation, improve open relationships inside that vocabulary. Inspect shared consumers before a token/component change, show the proposed delta in context and retain unaffected decisions. A global skill installation never overrides a project's identity or creates a competing system.
+
 ## Resolve structure and expression together
 
 | Decision | Design outcome |

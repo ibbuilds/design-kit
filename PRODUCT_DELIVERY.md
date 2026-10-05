@@ -1,50 +1,33 @@
-# Deliver a real product capability
+# Deliver a complete frontend capability
 
-Read for a substantial product feature, integration, or release-readiness task. Local edits use [SOFTWARE.md](SOFTWARE.md) directly. Design-only work stays in SKILL.md/ONBOARDING.md and does not load this route. This complements SOFTWARE.md's engineering loop and SKILL.md's design procedure; it does not create a second implementation or authorize additional scope.
+Use for substantial requested frontend features or integrations. Local changes use [SOFTWARE.md](SOFTWARE.md) directly. Design-only work stays in [SKILL.md](SKILL.md). This route connects outcomes to frontend evidence; it adds no backend, infrastructure or release scope.
 
-## Establish a checkable outcome
+## Establish the outcome and boundaries
 
-Identify the user, job, starting conditions, successful result and consequences of failure. Separate user requirements from agent assumptions and proposed extras. A planner must not invent features, AI integrations or infrastructure to make the product look ambitious. Resolve material unknowns; proceed on routine details within delegated authority.
+Identify the user's task, starting state, successful result and important failure/recovery paths. Separate requested behavior from assumptions and proposed extras. Inspect the existing implementation, canonical components, API contracts and actual check commands. Probe an unfamiliar integration before expanding it.
 
-For substantial work, retain a small acceptance map in the target's existing issue/spec/record:
+Retain a small acceptance map in the target's existing issue/spec/record only when useful:
 
-| Required outcome | Contract or boundary | Evidence that could disprove it | Status |
+| Required outcome | Existing boundary | Evidence | Status |
 | --- | --- | --- | --- |
-| User saves an item and can recover it | UI -> authorized service -> durable store | Save, refresh/reopen, read back; reject another user's access where applicable | Planned / implemented / verified / blocked |
-| Failed save preserves work | Request/state/recovery | Induce a controlled failure, inspect retained input, retry without unintended duplication | Planned / implemented / verified / blocked |
+| User submits a valid form | UI -> existing API client | Exercise valid/invalid input, pending feedback and the actual response when authorized | Planned / implemented / verified / blocked |
+| Failed submission preserves input | Request/state/recovery | Controlled failure, retained work, useful retry without duplicate effects | Planned / implemented / verified / blocked |
+| Interface follows the accepted system | Canonical tokens/components | Comparable desktop/mobile renders and affected interaction states | Planned / implemented / verified / pending human review |
 
-Use rows appropriate to the feature, not this example's database or login by default. Link substantial requirements to their checks; an implemented function, passing build or success toast cannot mark an unexercised outcome verified. Keep agent-selected and user-accepted design decisions separate.
+These examples do not require forms or APIs in every project. If a needed service does not exist, disclose the missing contract and an explicitly labelled frontend mock; do not implement a backend under this kit.
 
-## Plan against the repository and probe uncertainty
+## Complete the actual user path
 
-Inspect the affected path, callers, data model and canonical components. Identify boundaries, incompatible contracts, concurrent work, run commands and disposable fixtures. Use a small plan proportional to dependencies and risk. For an unfamiliar integration or irreversible technical choice, probe the uncertain boundary early before expanding the implementation.
+Implement useful capabilities in dependency order, reusing accepted design and target conventions. Include connected navigation, task progression, feedback and recovery rather than isolated attractive screens. Keep the application runnable and preserve state across sessions with compact existing records.
 
-A behavior-led feature starts with requirements; an existing technical constraint may require a feasibility probe first. Both must converge on the user's outcome. Requirements and technical design may evolve with evidence, but changes to closed decisions need the user's authority. Do not impose a complete specification framework on a local repair.
+Inspect the running result against the original brief, approved references/system and actual requirements. Challenge the outcome with relevant awkward content, failure, stale/slow responses, keyboard paths and responsive changes. Review the real diff and raw check evidence. A same-agent review is not independent; a separate reviewer is conditional on actual authorization.
 
-Make important invariants executable with existing types, schemas, constraints, lint or tests when warranted. Parse/validate untrusted data at the boundary; do not infer a service shape from a sample that never ran. Preserve maintainable dependency directions and the target's source of truth. Add custom architecture enforcement only for a demonstrated recurring need.
+For browser checks, use controlled data, stable accessible locators and condition-based assertions. Mock uncontrolled third parties when needed for reproducible failure checks; distinguish that evidence from live integration verification. Screenshots establish visible states, not successful service effects.
 
-## Complete, then challenge the result
+## Present the result and limits
 
-Implement complete capabilities in dependency order. Milestones help when the task needs them; fixed sprints, one-feature-per-session resets and mandatory extra agents are not required. Keep the environment runnable and the acceptance map current across long work.
+Present the working interface, meaningful visual/behavior changes, affected checks and remaining gaps. Mark each important requirement implemented, verified, failed or untested with its evidence. Do not equate a build, success toast or a passing mock with production readiness.
 
-Review the running result against requirements, not the builder's summary. For substantial or sensitive work, take a distinct review pass using the original brief, diff, application/host and raw check evidence. Try to disprove the important outcomes: exercise a fresh session, persistence, invalid input, permission failure and recovery as relevant. Report reproducible findings rather than congratulating the implementation or assigning a self-score. A same-agent pass is not independent review; use a separate reviewer only when available and authorized for the task/risk. Give that reviewer the requirements and raw artifacts without the builder's desired verdict.
+Use relevant QA for responsive behavior, loaded assets/fonts, keyboard/focus, content hierarchy, state recovery and frontend performance. A marketing surface and a dense application need different evidence. Preserve closed design decisions and obtain review for material visual departures.
 
-For open visual work, calibrate critique against relevant accepted examples: explain which hierarchy, density, identity and interaction choices make an example strong or unsuitable. Evaluate coherence, product-specific decisions, craft and task usability separately. Weight them for the product; an expressive campaign and a dense work application have different needs. Visual originality cannot excuse a broken user task. Preserve a better earlier candidate; the last iteration is not automatically the best.
-
-Tests need a useful oracle: derive expected results from the contract, known fixtures or another trusted source, not by rerunning the implementation inside its assertion. For a regression test, confirm it exposes the original defect when feasible and inspect why it fails; an import/configuration error is not evidence of the intended regression. Test-first is an option, not proof of superior architecture. Correct a demonstrably wrong test with justification; never weaken a valid requirement to pass. Consider targeted mutation/property checks for important pure logic only when they add confidence.
-
-For browser E2E, use isolated controlled data, role/label or stable-contract locators and condition-based assertions rather than arbitrary sleeps. Exercise the real application path. Mock an uncontrolled third party for reproducible local failure tests, then separately verify the authorized real integration in its sandbox/staging environment where needed. A mocked E2E establishes frontend handling of that contract, not live provider compatibility. Inspect console/network/runtime evidence when it helps explain the failure; screenshots alone cannot verify behavior.
-
-## Release evidence proportional to the product
-
-For requested production readiness, identify applicable requirements and remaining gaps in:
-
-- **User experience:** complete critical journeys, useful real content, responsive states, actual assets, keyboard/focus and relevant WCAG requirements.
-- **Contracts/data:** validation, access at the trusted boundary, persistence, concurrency/retry behavior and compatibility; migration/recovery proof where applicable.
-- **Build/runtime:** reproducible build and configuration, supported host, required checks and actual integration behavior. Record the tested revision/environment.
-- **Operations:** observable failures, appropriate redacted diagnostics, deploy/rollback path and data restore where the product needs them; validate in an authorized disposable environment.
-- **Performance:** realistic dataset/device/network and explicit budgets for important journeys; distinguish a local measurement from field performance.
-
-Mark each applicable requirement verified, failed or untested with evidence and a concrete next action. A static site's profile differs from a SaaS or host plugin. Do not create irrelevant infrastructure or claim complete security/accessibility conformance from partial checks. Use the target's required review and release gates. Complete any already-authorized delivery; seek only missing authorization after preparing the concrete result.
-
-After an authorized release, confirm the critical path and observable health within that authorization. Retain rollback/recovery information and unresolved issues. Product feedback and real defects can refine the next task; the kit does not schedule monitoring or background cleanup by itself.
+Continue requested frontend corrections without reauthorizing their existing scope. Deployment or publishing needs its own existing authorization; migrations, backend services and operational infrastructure remain outside this procedure. No automatic monitoring, additional agent team or mandatory process documents.

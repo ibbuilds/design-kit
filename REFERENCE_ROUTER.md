@@ -2,15 +2,30 @@
 
 Read for a design question requiring outside evidence. [REFERENCES.md](REFERENCES.md) is the curated catalog, not a list to execute. Existing user references/accepted work first; no crawler, vector database or additional model required.
 
+For supplied references, inspect the relevant region and ask only its missing interpretation. Use them directly when sufficient. When more matches are requested/needed, translate the observed relationships into aesthetic queries within selected providers/catalog families; do not restrict matches to the original's industry. Explain the correspondence and proposed transfer. A user-selected example remains authoritative for direction; discovering more is not a reason to override it.
+
 ## Discover, inspect, let the designer select
 
-1. Translate brief/vibe into a few traits: product/task, composition/density, type, geometry/surfaces, imagery and relevant interaction. Distinguish human constraints from hypotheses. If direction is missing, ask or offer concise options; kit examples are not preferences. A focused question needs only its relevant context.
-2. Choose appropriate catalog families: sites/brand for direction, typography for type, patterns/research for UX, recordings/live sites for motion. Curated craft and studied usability are different evidence. Start with one or two useful sources; broaden inside the library only for a named gap.
-3. Search within those sources; no automatic open-web/paid fallback. Inspect actual source URLs, previews and relevant states. Search descriptions are leads, not evidence. Verify a gallery's outbound link before inspecting the original; label unavailable visuals/behavior rather than claiming fit.
-4. Initial direction review defaults to **eight distinct, useful, inspected references** (or the user's explicit count), supplied/retrieved/combined. If fit/access is insufficient, show the valid subset and ask whether to search other eligible sources, accept user additions or waive the count. Do not pad or silently advance. For each: preview when possible; exact gallery/verified original links; family; region/relationship; observed fit; differences/unknowns.
-5. Ask which to keep/reject and what to take from each. Synthesize human feedback into `selected relationship -> product application -> exclusions -> evidence`. Show that interpretation and wait for acceptance before dependent design. A candidate is not an approved direction; references-only does not authorize UI.
+1. Translate the agreed vibe into observable traits: composition/density, type/image relationships, geometry/materials, tone and relevant interaction. Preserve the product/task as application context, not a compulsory search keyword. Distinguish human constraints from hypotheses. If direction is missing, ask or offer concise options; kit examples are not preferences. A focused question needs only its relevant context.
+2. Use the selected Awwwards and One Page Love MCPs when actually available; inspect schemas under [PROVIDERS.md](PROVIDERS.md). **Visual discovery is aesthetic-first and can cross industries.** Query the confirmed relationships/styles, translating into actual supported filters. Do not routinely add a business/genre tag: a pet landing can draw from a human-centered technology, hospitality or editorial example. Add industry/product keywords only when requested, when they resolve an actual fit gap, or for a functional task/pattern question. Explain any consequential narrowing. One provider can fill the other's gap; avoid duplicate searches.
+3. For missing coverage/access, choose matching catalog families: sites/brand for direction, typography for type, patterns/research for UX, recordings/live sites for motion. Search within these or expressly human-added sources; no automatic arbitrary-web/paid fallback. Curated craft and studied usability are different evidence. Inspect actual source URLs, readable visuals and relevant states. Descriptions are leads, not visual evidence. Verify a gallery's outbound link before inspecting the original; label unavailable visuals/behavior.
+4. Show a compact useful selection resolving the open choices; no fixed reference count. Include readable preview, exact gallery/verified original links, region/relationship, fit to the vibe, how it transfers to the actual product/task, proposed contribution, exclusions and unknowns. A different industry is not a rejection reason; an incompatible task/composition can be. Reject attractive examples that cannot serve the intended relationship. Report gaps without padding or silently advancing.
+5. Ask which to keep/reject and what vibe/relationship to change. Research and replace affected examples, show the revision and wait again until the human accepts the selection and interpretation. Retain `selected relationship -> product application -> exclusions -> evidence`. A candidate or agent verdict is not an approved direction; references-only does not authorize UI.
 
-Task-oriented UX/pattern lookup can precede visual direction when the experience structure is open; it is a focused question, not the initial eight-example visual-discovery set. After acceptance, research only the open question. Do not repeat eight references for type assistance or a local repair. Confirm important font identity, glyphs/loading/license; do not infer exact fonts, CSS or unseen behavior from a still. Avoid mechanically blending eight identities.
+## Find the requested region, then match its aesthetic
+
+For a section/component request, establish its actual pattern first: hero, pricing, navigation, form or another requested region. Search **that pattern with the confirmed aesthetic**, across industries. A hero request must yield relevant heroes, not merely a vaguely similar whole site, footer or card. Use actual section/type filters when supported; do not invent generic slugs. One Page Love's current schema uses qualified variants such as `cta-hero`, not bare `hero`; inspect current supported types and choose the variant that serves the request. If a provider lacks a section filter, inspect the requested region in its returned site/original before recommending it. A small thumbnail may need a readable original/capture.
+
+Discovery fallback is sequential and purposeful:
+
+1. Inspect supplied evidence first when present. Search the connected selected MCPs for the pattern plus aesthetic, refining unsupported/literal wording into observed relationships. If one lacks access or fit, try the other rather than accepting unrelated results.
+2. If MCPs cannot resolve it, use **the public catalog directly without MCP**: matching section galleries, site galleries or app/pattern sources from [REFERENCES.md](REFERENCES.md). Enumerate the relevant families; try the next eligible source when one has no usable match. Refero's readable public material is eligible, alongside Supahero, Unsection, Awwwards Elements, One Page Love sections and the other matching catalog entries. Search scoped URLs, open results and inspect originals/regions with available browser/image tools. A missing connector does not make a public source unusable.
+3. Work through relevant eligible sources until evidence fits or the relevant coverage/access is exhausted, within any explicit user budget. No arbitrary two-source ceiling or identical-query retry loop. Preserve a short account of attempted sources and remaining gaps; do not claim the whole library was searched when only a subset was tried. Implementation docs and irrelevant families need not be searched for visual inspiration.
+4. If still unresolved, show what was searched, the actual visual-fit/access gap and any partial candidates clearly labelled. Invite the user to provide references or refine the aesthetic; wait before dependent design. Do not invent a match, silently weaken the vibe or construct from rejected candidates. User references can then enter the same inspection/interpretation loop.
+
+Stop discovery once the actual decision is supported, then show it for human review. Direct browsing/search is fallback access, not a new workflow or permission for paywalls/private material. The source helper can enumerate/plan eligible scopes; it cannot inspect or rank the visuals for the agent.
+
+Task-oriented UX/pattern lookup can precede visual direction when the experience structure is open. After acceptance, research only the open question; type assistance or a local repair need not restart discovery. Confirm important font identity, glyphs/loading/license; do not infer exact fonts, CSS, a complete internal design system or unseen behavior from a still. Select relationships instead of mechanically blending identities.
 
 ## Scope and provenance
 
@@ -34,23 +49,23 @@ External originals qualify only through a verified eligible gallery link or user
 | Gap | First useful evidence | Observation needed |
 | --- | --- | --- |
 | Supplied final design/capture/code | Inspect directly; skip gallery rediscovery | Relevant hierarchy, crop, states/behavior |
-| New website direction | User examples, relevant catalog gallery | Product-specific composition/type/image relation |
+| New website direction | User examples, selected MCPs, relevant catalog fallback | Product-specific composition/type/image relation |
 | Pricing/CTA/proof/navigation | Existing examples, matching catalog family | Information order, density, action |
 | App/form/editor/dashboard | Existing system, relevant UX patterns/research; component docs/APG for semantics | Task structure, states, recovery/access |
 | Motion/responsive interaction | Selected live reference | Trigger/states/timing/recomposition; reduced-motion alternative |
 | Private app / unavailable canvas | Authorized captures/public demos or readable user material | Observed behavior, explicit gaps |
 | Verification | Our actual artifact and checks | Comparable render and exercised task |
-| Backend/data/permissions | [SOFTWARE.md](SOFTWARE.md), code/technical docs | Engineering contracts, no gallery search |
+| Frontend integration | Existing API contract, [SOFTWARE.md](SOFTWARE.md), technical docs | UI states, contract handling; backend implementation is outside scope |
 
 A moodboard is not a layout; token vocabulary is not direction; a marketing still does not prove application usability.
 
-## Access and optional tools
+## Access and selected providers
 
-Default to user links/files, existing browser/search and already authorized tools. Installation/connection is separate; capability availability grants no authority.
+Reuse user material and available tools. [PROVIDERS.md](PROVIDERS.md) defines the selected free-access providers, host setup and verification. Honor prior setup authorization; an ordinary design request alone does not authorize arbitrary dependency installation.
 
-- **Optional local candidates:** [Awwards MCP](https://github.com/INSANE0777/Awwards-mcp), [Design Intelligence MCP](https://github.com/chrismicah/design-mcp). Verify live schemas/version and one small relevant result. Local does not guarantee remote availability, free third-party access or visual inspection.
-- **Hosted free with conditions:** [One Page Love MCP](https://onepagelove.com/mcp), [Landing Gallery MCP](https://www.landing.gallery/mcp), only when the user accepts that service/limits; reuse existing authorization. Choose one for the gap, not both by routine. September 29, 2026 One Page Love documents one `search`, screenshots/live URL/permalink, `https://api.onepagelove.com/mcp`, no API key, private-beta free access with IP rate limits and possible future paid caps. No numeric quota/perpetual-free guarantee; public browsing remains an alternative.
-- **Excluded from automatic discovery:** A1, Mozaika, full-resolution Swaggin, Mobbin, Appllama. Catalog presence or a failed free query does not authorize paid access/registration/metered services. Explicit human choice can change policy.
+- **Selected:** unofficial [Awwwards MCP](https://github.com/INSANE0777/Awwwards-mcp) and official [One Page Love MCP](https://onepagelove.com/mcp). Free provider access is conditional on actual availability and current limits; image/tool use still consumes the agent's quota. Do not infer unlimited access or fidelity from an MCP label.
+- **Fallback:** relevant entries in [REFERENCES.md](REFERENCES.md), readable user material and verified original sites. No new reference database, Obsidian bridge or paid service is required for this workflow.
+- **Not selected:** Inspo and other third-party full workflows. Do not install their skills to replace this procedure. A1, Mozaika, full-resolution Swaggin, Mobbin and Appllama remain excluded from automatic paid discovery. Catalog presence or a failed query does not authorize registration/metered access. Explicit human choice can change policy.
 
 Stop at paywalls/private content/incompatible terms; choose permitted evidence, no bypass. Obsidian links need no vault export/bridge. Do not upload private captures automatically. A specialist may fill a missing capability, never replace this with another full workflow.
 

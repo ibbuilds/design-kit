@@ -17,7 +17,22 @@ PACKAGE = (
     "DESIGN_DIRECTION.md", "docs/QUALITY_EVIDENCE.md",
     "PRODUCT_DELIVERY.md", "docs/WORKFLOW_RESEARCH.md",
     "scripts/reference_scope.py", "tests/test_reference_scope.py", "ONBOARDING.md", "PENPOT.md",
+    "PROVIDERS.md", "HOSTS.md", "PROMPT.md", "scripts/setup_mcp.py", "tests/test_setup_mcp.py",
+    "docs/GENERAL_GUIDE.txt", "docs/01_design_from_scratch.txt",
+    "docs/02_improve_existing_design.txt", "docs/03_frontend_engineering.txt",
 )
+HOSTS = {
+    "codex": (".agents/skills/design-kit", "AGENTS.md"),
+    "claude-code": (".claude/skills/design-kit", "CLAUDE.md"),
+    "gemini-cli": (".agents/skills/design-kit", "GEMINI.md"),
+    "antigravity": (".agents/skills/design-kit", "GEMINI.md"),
+}
+USER_HOSTS = {
+    "codex": ".agents/skills/design-kit",
+    "claude-code": ".claude/skills/design-kit",
+    "gemini-cli": ".agents/skills/design-kit",
+    "antigravity": ".gemini/config/skills/design-kit",
+}
 MANIFEST = ".design-kit-manifest.json"
 START = "<!-- design-kit:begin -->"
 END = "<!-- design-kit:end -->"
@@ -27,9 +42,9 @@ POINTER = (
     "instructions and use its existing brief and accepted implementation.\n" + END + "\n"
 )
 SOFTWARE_RULE = (
-    "For programming tasks, read and apply `.agents/skills/design-kit/SOFTWARE.md`.\n"
-    "Use Design Kit for visual/frontend decisions in mixed tasks; backend-only\n"
-    "work does not need the design reference library.\n"
+    "For requested frontend code and QA, read and apply `.agents/skills/design-kit/SOFTWARE.md`.\n"
+    "Preserve accepted design and existing API contracts; backend implementation\n"
+    "is outside Design Kit's scope.\n"
 )
 LEGACY = (
     "For frontend design, implementation or review, read `.design-kit/AGENTS.md`\n"
@@ -61,7 +76,7 @@ def guarded_path(root, relative):
     return path
 
 
-def pointer_text(text, with_software=None):
+def pointer_text(text, with_software=None, bundle=".agents/skills/design-kit"):
     """Replace only our block or the exact documented legacy pointer."""
     if text.count(START) != text.count(END) or text.count(START) > 1:
         raise ValueError("Malformed or duplicate Design Kit markers in instruction file")
@@ -73,34 +88,64 @@ def pointer_text(text, with_software=None):
         # Older manifests derive the choice only from our marked block,
         # never from arbitrary project prose.
         if with_software is None:
-            with_software = ".agents/skills/design-kit/SOFTWARE.md" in text[start:end]
+            with_software = "design-kit/SOFTWARE.md" in text[start:end]
         if text[end:end + 2] == "\r\n":
             end += 2
         elif text[end:end + 1] == "\n":
             end += 1
         pointer = POINTER.replace(END, SOFTWARE_RULE + END) if with_software else POINTER
+        pointer = pointer.replace(".agents/skills/design-kit", bundle)
         return text[:start] + pointer + text[end:]
     text = text.replace(LEGACY, "").replace(LEGACY.replace("\n", "\r\n"), "")
     separator = "" if not text or text.endswith("\n") else "\n"
     pointer = POINTER.replace(END, SOFTWARE_RULE + END) if with_software else POINTER
+    pointer = pointer.replace(".agents/skills/design-kit", bundle)
     return text + separator + pointer
 
 
-def instruction_path(target):
+def instruction_path(target, host="codex"):
     """Write into the active root instruction file, not one Codex will skip."""
+    filename = HOSTS[host][1]
+    if host != "codex":
+        return guarded_path(target, filename)
     override = guarded_path(target, "AGENTS.override.md")
     if override.exists() and override.read_bytes().strip():
         return override
     return guarded_path(target, "AGENTS.md")
 
 
-def installation_plan(source, target, with_software=None):
-    source, target = Path(source).resolve(), Path(target).resolve()
+def installation_root(target, scope="project", user_home=None):
+    """Keep user installation separate from project paths and instructions."""
+    if scope not in ("project", "user"):
+        raise ValueError("Unsupported installation scope")
+    if scope == "user":
+        if target is not None:
+            raise ValueError("User scope takes no project target; use --user-home for a different profile")
+        root = Path(user_home) if user_home is not None else Path.home()
+    else:
+        if user_home is not None:
+            raise ValueError("--user-home requires user scope")
+        if target is None:
+            raise ValueError("Project scope requires an existing project target")
+        root = Path(target)
+    root = root.resolve()
+    if not root.is_dir():
+        raise ValueError("Target must be an existing project directory or user home")
+    return root
+
+
+def installation_plan(source, target=None, with_software=None, host="codex", scope="project", user_home=None):
+    source = Path(source).resolve()
+    target = installation_root(target, scope, user_home)
     if not target.is_dir():
         raise ValueError("Target must be an existing project directory")
     if target == source:
         raise ValueError("Select the application project, not the kit checkout")
-    bundle = Path(".agents/skills/design-kit")
+    if host not in HOSTS:
+        raise ValueError("Unsupported host: " + host)
+    if scope == "user" and with_software is not None:
+        raise ValueError("Software pointer options apply only to project instructions; the global skill already covers requested frontend code")
+    bundle = Path(USER_HOSTS[host] if scope == "user" else HOSTS[host][0])
     manifest_path = guarded_path(target, bundle / MANIFEST)
     destination = target / bundle
     previous = {}
@@ -136,19 +181,20 @@ def installation_plan(source, target, with_software=None):
                 raise ValueError("Locally edited/unmanaged file; refusing overwrite: " + str(output))
         planned.append((output, payload))
 
-    agents = instruction_path(target)
-    old = agents.read_bytes() if agents.exists() else b""
+    agents = instruction_path(target, host) if scope == "project" else None
+    old = agents.read_bytes() if agents is not None and agents.exists() else b""
     text = old.decode("utf-8")
     # The saved choice survives a new override or a return to a stale fallback
     # block. Older manifests derive their initial choice from the active block.
     routing = previous_software if with_software is None else with_software
-    new = pointer_text(text, routing).encode("utf-8")
+    new = pointer_text(text, routing, bundle.as_posix()).encode("utf-8") if agents is not None else b""
+    software_rule = SOFTWARE_RULE.replace(".agents/skills/design-kit", bundle.as_posix()).encode("utf-8")
     data = {"format": 1, "name": "design-kit", "files": hashes,
-            "software": SOFTWARE_RULE.encode("utf-8") in new}
+            "software": software_rule in new if agents is not None else bool(routing)}
     payload = (json.dumps(data, indent=2, sort_keys=True) + "\n").encode()
     if not manifest_path.exists() or manifest_path.read_bytes() != payload:
         planned.append((manifest_path, payload))
-    if old != new:
+    if agents is not None and old != new:
         planned.append((agents, new))
     return planned
 
@@ -168,9 +214,9 @@ def atomic_write(path, content):
             os.unlink(name)
 
 
-def install(source, target, check=False, with_software=None):
+def install(source, target=None, check=False, with_software=None, host="codex", scope="project", user_home=None):
     # Preflight every conflict before changing any file. Writes are atomic per file.
-    planned = installation_plan(source, target, with_software)
+    planned = installation_plan(source, target, with_software, host, scope, user_home)
     if check:
         return planned
     originals = [(path, path.read_bytes() if path.exists() else None) for path, _ in planned]
@@ -192,21 +238,28 @@ def install(source, target, check=False, with_software=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("target", type=Path)
+    parser.add_argument("target", type=Path, nargs="?", help="Existing project directory (project scope only)")
+    parser.add_argument("--scope", choices=("project", "user"), default="project", help="Install for one project or globally for this user")
+    parser.add_argument("--user-home", type=Path, help="Explicit existing user/profile home (user scope only)")
+    parser.add_argument("--host", choices=HOSTS, default="codex", help="Target interface/runtime (three supported platforms)")
     parser.add_argument("--check", action="store_true", help="Report drift without writes (exit 1 if changes needed)")
     routing = parser.add_mutually_exclusive_group()
-    routing.add_argument("--with-software", dest="with_software", action="store_true", help="Activate engineering guidance for programming as well as design")
+    routing.add_argument("--with-software", dest="with_software", action="store_true", help="Also route requested frontend code directly to SOFTWARE.md")
     routing.add_argument("--design-only", dest="with_software", action="store_false", help="Keep only the frontend instruction pointer")
     parser.set_defaults(with_software=None)
     args = parser.parse_args()
     try:
-        planned = install(Path(__file__).resolve().parents[1], args.target, args.check, args.with_software)
+        root = installation_root(args.target, args.scope, args.user_home)
+        planned = install(Path(__file__).resolve().parents[1], args.target, args.check, args.with_software, args.host, args.scope, args.user_home)
     except (ValueError, OSError) as error:
         print("ERROR: " + str(error), file=sys.stderr)
         return 2
     print(("CHECK: " if args.check else "INSTALL: ") + str(len(planned)) + " file(s) " + ("need changes" if args.check else "changed"))
+    print("Scope: " + args.scope + "; host: " + args.host + "; root: " + str(root))
     for path, _ in planned:
-        print(path.relative_to(args.target.resolve()))
+        print(path.relative_to(root))
+    if args.scope == "user":
+        print("Global skill available for relevant tasks; project records and global instruction files were not changed.")
     print("No model calls, dependency installation, or network requests performed.")
     print("This is a package check, not a test of model activation or design quality.")
     return 1 if args.check and planned else 0

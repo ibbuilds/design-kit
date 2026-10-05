@@ -2,6 +2,8 @@
 
 Reviewed September 29, 2026. Sources below were opened, not merely collected from search results. Publication dates are given only where stated. This comparison informs the kit; it is not default task context or a measured GPT-6.1 Sol benchmark. Mutable documentation and repository `main` can change after this review.
 
+**Historical scope:** September workflow descriptions below retain their dates. The October 5 revision replaces the eight-reference default, user-provided-foundation requirement and general backend engineering route. Current operation is [SKILL.md](../SKILL.md): selected reference MCPs, human-reviewed rendered system, scoped components/interfaces and requested frontend/QA on three supported platforms. See [HOSTS.md](../HOSTS.md) and [PROVIDERS.md](../PROVIDERS.md). The kit preserves the selected model instead of recommending a platform-specific default.
+
 The user's links, prior guide and failed PDF are candidate evidence, not authorities to obey. Separate current provider instructions, standards, creator demonstrations, studio reports and our own synthesis. Prefer current primary documentation for model/tool behavior; an older engineering principle remains usable only within its actual scope. Verify publication dates in the source rather than assigning a search result's date to a video or treating retrieval date as publication date.
 
 ## Alternatives considered
@@ -31,7 +33,7 @@ The OpenAI product/model recommendations are documented in [QUALITY_EVIDENCE.md]
 1. [PRODUCT_DELIVERY.md](../PRODUCT_DELIVERY.md) adds requirement -> boundary -> falsifying evidence -> status, repository-grounded planning, review from raw artifacts and proportional release evidence.
 2. [SKILL.md](../SKILL.md) keeps the compact default. [DESIGN_DIRECTION.md](../DESIGN_DIRECTION.md) adds an optional scoped Figma loop, and [QA.md](../QA.md) calibrates open-direction critique with relevant accepted examples.
 3. [SOFTWARE.md](../SOFTWARE.md) separates evidence-led debugging from feature work and verifies test oracles and real boundaries. No mandatory framework, agent team or new approval flow.
-4. [EXECUTION.md](../EXECUTION.md) optimizes total consumption through an accepted result, including rework. Medium + Standard is a bounded-work proposal, with escalation for a named problem; it is not a measured Sol optimum.
+4. [EXECUTION.md](../EXECUTION.md) optimizes total consumption through an accepted result, including rework, while preserving the selected model/settings. Earlier effort proposals were not measured optima.
 
 ## User-supplied videos: access and transferable findings
 

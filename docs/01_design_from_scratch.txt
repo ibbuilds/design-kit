@@ -1,0 +1,66 @@
+DESIGN FROM SCRATCH — DESIGN KIT
+Updated: October 5, 2026.
+
+START IN YOUR INTERFACE
+Activate Design Kit in Codex app, Claude Desktop Code or Google Antigravity.
+HOSTS.md covers setup and additional surfaces. You need not operate a CLI.
+Prompt:
+"Use Design Kit for [site/app/flow/section/component].
+Product: [what it does and whom it serves]. Goal: [user task/result].
+Constraints: [content, stack, brand, scope]. Ask for missing material inputs,
+show references and a visual system before dependent construction.
+Requested deliverable: [design only / frontend with QA]."
+
+1. CONTEXT AND EXPERIENCE
+Inspect the actual base, instructions and supplied inputs first.
+Clarify only material audience, task, content, hierarchy and state gaps.
+Show a useful summary/sketch and review its open decisions.
+Do not invent user research or require a complete questionnaire.
+
+2. VIBE AND FAITHFUL PROMPT EXPANSION
+Reuse stated direction. Otherwise offer contextual options, surprise me and
+free text. Translate the intended character into observable relationships.
+Expand the sparse request into a useful brief/prompt under PROMPT.md.
+Separate sourced facts/requirements, proposed interpretations and unknowns.
+Preserve what the designer wants to avoid. Do not invent audience, features,
+metrics or exact approved styles. Review this in the same vibe checkpoint.
+
+3. REFERENCES
+Search primarily by the agreed aesthetic, allowing cross-industry inspiration.
+Business terms are optional filters for a named question, not automatic tags.
+For a section, establish the requested pattern and match the vibe within it.
+Use supplied examples directly when sufficient, or find matching relationships.
+Start with the selected MCP best suited to the question; use the other for a gap.
+Then search relevant public catalog sources directly when MCPs do not resolve it.
+If usable coverage is exhausted, explain the gap and invite user references.
+Show readable visuals, exact provenance, fit, contributions and exclusions.
+Revise affected examples until references and interpretation are accepted.
+
+4. SCOPED VISUAL SYSTEM
+Reuse an existing system or propose missing foundations from accepted evidence.
+Define real typography, semantic tokens, spacing/geometry, assets and relevant
+behavior. Preserve canonical values/paths; DESIGN.md can document intent.
+Render a specimen at useful widths/states, not merely a JSON/color list.
+Review/correct until accepted before styled interface construction.
+Public extracted styles are partial evidence, not a site's complete internal system.
+
+5. COMPONENTS AND INTERFACES
+Build only needed pieces/patterns, with representative content and relevant states.
+A hero-only request does not authorize a full site or exhaustive component library.
+Compose within scope, inspect the actual result and show the contribution.
+Correct affected work and retain the stronger baseline. Section-by-section work
+reuses accepted system/relationships instead of restarting each time.
+
+6. REQUESTED FRONTEND AND QA
+An initial frontend request authorizes implementation after design checkpoints.
+Reuse useful HTML/CSS/tokens, integrate in the target stack and verify behavior.
+Inspect relevant responsive states, fonts/assets, keyboard/focus and required checks.
+Design-only stops at design; backend/database/infrastructure remain outside scope.
+New setup/dependencies and publication follow actual existing authorization.
+
+CONTINUITY AND EFFICIENCY
+Retain accepted revisions, pending feedback and the next action in the existing
+target record. Reuse provider schemas/results/captures and plan filters before
+calls. Additional retrieval must answer an open question; honor quotas/budgets.
+SKILL.md/ONBOARDING.md govern the flow; README.md/HOSTS.md/PROVIDERS.md explain
+setup and limits. Tests do not establish aesthetic quality or model compliance.

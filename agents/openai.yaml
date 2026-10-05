@@ -1,6 +1,16 @@
 interface:
   display_name: "Design Kit"
-  short_description: "Guided design onboarding with curated UI/UX references"
-  default_prompt: "Use $design-kit to start or resume this project's design workflow, identify the current phase and ask for missing inputs, present each phase's output and wait for my acceptance before advancing."
+  short_description: "Supervised UI design, visual systems and frontend QA"
+  default_prompt: "Use $design-kit to start or resume the requested UI-to-frontend work, reuse this project's accepted decisions and guide me through the relevant design reviews."
 policy:
   allow_implicit_invocation: true
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "onepagelove"
+      description: "One Page Love visual reference and section search"
+      transport: "streamable_http"
+      url: "https://api.onepagelove.com/mcp"
+    - type: "mcp"
+      value: "awwwards"
+      description: "Unofficial Awwwards reference server; local setup is described in PROVIDERS.md"

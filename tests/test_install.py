@@ -43,6 +43,95 @@ class InstallTests(unittest.TestCase):
         installer.install(self.source, self.target)
         self.assertEqual([], installer.install(self.source, self.target))
 
+    def test_user_scope_installs_at_each_native_location_without_global_instructions(self):
+        for host, relative in installer.USER_HOSTS.items():
+            with self.subTest(host=host), tempfile.TemporaryDirectory() as folder:
+                home = Path(folder)
+                preserved = {name: ("# Existing " + name + "\n").encode()
+                             for name in ("AGENTS.md", "AGENTS.override.md", "CLAUDE.md", "GEMINI.md")}
+                for name, content in preserved.items():
+                    (home / name).write_bytes(content)
+                planned = installer.install(self.source, scope="user", host=host, user_home=home)
+                bundle = home / relative
+                self.assertTrue(planned)
+                self.assertTrue(all(path.is_relative_to(bundle) for path, _ in planned))
+                for resource in installer.PACKAGE:
+                    self.assertEqual((self.source / resource).read_bytes(), (bundle / resource).read_bytes())
+                for name, content in preserved.items():
+                    self.assertEqual(content, (home / name).read_bytes())
+                self.assertFalse((home / ".design").exists())
+                self.assertEqual([], installer.install(self.source, scope="user", host=host, user_home=home))
+
+    def test_user_scope_check_and_updates_preserve_local_edits(self):
+        self.assertTrue(installer.install(self.source, scope="user", user_home=self.target, check=True))
+        self.assertEqual([], list(self.target.iterdir()))
+        installer.install(self.source, scope="user", user_home=self.target)
+        (self.source / "PROMPT.md").write_text("Improved faithful prompt expansion\n")
+        installer.install(self.source, scope="user", user_home=self.target)
+        self.assertEqual("Improved faithful prompt expansion\n", (self.dest / "PROMPT.md").read_text())
+        (self.dest / "PROMPT.md").write_text("Human customization\n")
+        (self.source / "PROMPT.md").write_text("Another update\n")
+        with self.assertRaisesRegex(ValueError, "refusing overwrite"):
+            installer.install(self.source, scope="user", user_home=self.target)
+        self.assertEqual("Human customization\n", (self.dest / "PROMPT.md").read_text())
+
+    def test_user_scope_rejects_ambiguous_target_and_project_only_flags(self):
+        for arguments in ({"scope": "user", "target": self.target},
+                          {"scope": "project", "target": self.target, "user_home": self.target},
+                          {"scope": "user", "user_home": self.target, "with_software": True},
+                          {"scope": "unknown", "target": self.target}):
+            with self.subTest(arguments=arguments), self.assertRaises(ValueError):
+                installer.install(self.source, **arguments)
+        self.assertEqual([], list(self.target.iterdir()))
+
+    def test_user_scope_cli_uses_explicit_profile_and_check_is_read_only(self):
+        command = [sys.executable, str(ROOT / "scripts/install.py"), "--scope", "user",
+                   "--user-home", str(self.target), "--host", "claude-code"]
+        checked = subprocess.run(command + ["--check"], capture_output=True, text=True, timeout=15)
+        self.assertEqual(1, checked.returncode, checked.stdout + checked.stderr)
+        self.assertEqual([], list(self.target.iterdir()))
+        installed = subprocess.run(command, capture_output=True, text=True, timeout=15)
+        self.assertEqual(0, installed.returncode, installed.stdout + installed.stderr)
+        self.assertTrue((self.target / installer.USER_HOSTS["claude-code"] / "SKILL.md").is_file())
+        self.assertFalse((self.target / "CLAUDE.md").exists())
+
+    def test_default_user_home_and_shared_openai_google_bundle(self):
+        with patch.object(installer.Path, "home", return_value=self.target):
+            installer.install(self.source, scope="user", host="codex")
+            self.assertEqual([], installer.install(self.source, scope="user", host="gemini-cli"))
+        self.assertFalse((self.target / "AGENTS.md").exists())
+        self.assertFalse((self.target / "GEMINI.md").exists())
+
+    def test_platform_adapters_preserve_their_project_instructions(self):
+        for host, instruction in (("claude-code", "CLAUDE.md"), ("gemini-cli", "GEMINI.md"), ("antigravity", "GEMINI.md")):
+            with self.subTest(host=host), tempfile.TemporaryDirectory() as folder:
+                target = Path(folder)
+                path = target / instruction
+                original = b"# Human instructions\r\nPreserve my system.\r\n"
+                path.write_bytes(original)
+                installer.install(self.source, target, with_software=True, host=host)
+                bundle = installer.HOSTS[host][0]
+                self.assertTrue(path.read_bytes().startswith(original))
+                self.assertIn(bundle + "/SKILL.md", path.read_text())
+                self.assertIn(bundle + "/SOFTWARE.md", path.read_text())
+                self.assertTrue((target / bundle / "scripts/setup_mcp.py").is_file())
+                self.assertFalse((target / "AGENTS.md").exists())
+                self.assertEqual([], installer.install(self.source, target, host=host))
+
+    def test_openai_google_adapters_share_one_managed_bundle(self):
+        installer.install(self.source, self.target, host="codex")
+        original = (self.target / "AGENTS.md").read_bytes()
+        changes = installer.install(self.source, self.target, host="gemini-cli")
+        self.assertEqual([self.target / "GEMINI.md"], [p for p, _ in changes])
+        self.assertEqual(original, (self.target / "AGENTS.md").read_bytes())
+        self.assertEqual([], installer.install(self.source, self.target, host="antigravity"))
+        self.assertEqual([], installer.install(self.source, self.target, host="codex"))
+
+    def test_unsupported_host_cannot_create_a_bundle(self):
+        with self.assertRaisesRegex(ValueError, "Unsupported"):
+            installer.install(self.source, self.target, host="cursor")
+        self.assertEqual([], list(self.target.iterdir()))
+
     def test_software_is_opt_in_on_new_install(self):
         installer.install(self.source, self.target)
         self.assertNotIn(installer.SOFTWARE_RULE, (self.target / "AGENTS.md").read_text())
@@ -85,7 +174,7 @@ class InstallTests(unittest.TestCase):
         self.assertEqual([], installer.install(self.source, self.target))
 
     def test_update_from_previous_bundle_adds_new_resources(self):
-        added = {"REFERENCE_ROUTER.md", "EXECUTION.md", "SOFTWARE.md", "DESIGN_DIRECTION.md", "PRODUCT_DELIVERY.md", "docs/QUALITY_EVIDENCE.md", "docs/WORKFLOW_RESEARCH.md", "scripts/reference_scope.py", "tests/test_reference_scope.py", "ONBOARDING.md", "PENPOT.md"}
+        added = {"REFERENCE_ROUTER.md", "EXECUTION.md", "SOFTWARE.md", "DESIGN_DIRECTION.md", "PRODUCT_DELIVERY.md", "docs/QUALITY_EVIDENCE.md", "docs/WORKFLOW_RESEARCH.md", "scripts/reference_scope.py", "tests/test_reference_scope.py", "ONBOARDING.md", "PENPOT.md", "HOSTS.md", "PROVIDERS.md", "PROMPT.md", "scripts/setup_mcp.py", "tests/test_setup_mcp.py", "docs/GENERAL_GUIDE.txt", "docs/01_design_from_scratch.txt", "docs/02_improve_existing_design.txt", "docs/03_frontend_engineering.txt"}
         old_package = tuple(path for path in installer.PACKAGE if path not in added)
         with patch.object(installer, "PACKAGE", old_package):
             installer.install(self.source, self.target)
@@ -115,9 +204,9 @@ class InstallTests(unittest.TestCase):
         self.assertEqual("Actual product facts", legacy.read_text())
 
     def test_utf8_project_instructions_and_resources_survive_update(self):
-        original = "# Proyecto\nDiseño aprobado: tipografía y navegación.\n".encode("utf-8")
+        original = "# Project\nApproved typography and navigation — café.\n".encode("utf-8")
         (self.target / "AGENTS.md").write_bytes(original)
-        (self.source / "SOFTWARE.md").write_text("Programación: éxito y recuperación.\n", encoding="utf-8")
+        (self.source / "SOFTWARE.md").write_text("Frontend: success and recovery — résumé.\n", encoding="utf-8")
         installer.install(self.source, self.target, with_software=True)
         self.assertTrue((self.target / "AGENTS.md").read_bytes().startswith(original))
         self.assertEqual((self.source / "SOFTWARE.md").read_bytes(), (self.dest / "SOFTWARE.md").read_bytes())
@@ -367,6 +456,18 @@ class InstallTests(unittest.TestCase):
 
 
 class SkillContractTests(unittest.TestCase):
+    def test_exported_mcp_helper_runs_from_target_and_stays_read_only(self):
+        with tempfile.TemporaryDirectory() as folder:
+            target = Path(folder)
+            installer.install(ROOT, target, host="claude-code")
+            bundle = target / ".claude/skills/design-kit"
+            result = subprocess.run([sys.executable, str(bundle / "scripts/setup_mcp.py"), str(target),
+                                     "--host", "claude-code"], cwd=target, capture_output=True,
+                                    text=True, timeout=15)
+            self.assertEqual(0, result.returncode, result.stdout + result.stderr)
+            self.assertIn("PLAN ONLY", result.stdout)
+            self.assertFalse((target / ".mcp.json").exists())
+
     def test_installed_reference_regressions_run_against_exported_catalog_and_helper(self):
         with tempfile.TemporaryDirectory() as folder:
             target = Path(folder)
@@ -405,6 +506,9 @@ class SkillContractTests(unittest.TestCase):
         meta = (ROOT / "agents/openai.yaml").read_text(encoding="utf-8")
         self.assertIn("allow_implicit_invocation: true", meta)
         self.assertIn("$design-kit", meta)
+        self.assertIn('value: "onepagelove"', meta)
+        self.assertIn('url: "https://api.onepagelove.com/mcp"', meta)
+        self.assertIn('value: "awwwards"', meta)
 
     def test_metadata_strings_are_unambiguous_without_yaml_dependency(self):
         # Our authored metadata uses JSON-quoted strings, a valid YAML subset.

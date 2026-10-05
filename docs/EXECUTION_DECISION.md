@@ -1,5 +1,7 @@
 # Execution decision — 2026-09-25
 
+Historical decision. The October 5 scope supports the user's current agent on OpenAI, Anthropic and Google graphical surfaces under [HOSTS.md](../HOSTS.md). It retains the native-skill approach without imposing Codex or building a separate runtime. Current scope is UI, frontend and QA under [SKILL.md](../SKILL.md).
+
 ## Decision for this kit
 
 Keep Codex as the coding execution engine. Implement the repeatable frontend procedure as a native skill, with the existing reference library and target-owned decisions/assets. Do not build a new personal-agent runtime to address an unmeasured visual-quality problem.

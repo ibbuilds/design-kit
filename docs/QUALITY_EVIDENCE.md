@@ -2,7 +2,9 @@
 
 Reviewed September 29, 2026. This record explains choices; it is not routine build context or a measured benchmark of this kit.
 
-## Current official model guidance
+October 5 scope update: this is historical model-specific evidence. The active kit preserves the selected model/settings across its three supported platforms; see [EXECUTION.md](../EXECUTION.md), [HOSTS.md](../HOSTS.md) and [PROVIDERS.md](../PROVIDERS.md) for current guidance. Earlier engineering/release discussion does not authorize backend work.
+
+## Official model guidance checked September 29
 
 - [GPT-6.1 Sol](https://developers.openai.com/api/docs/models/gpt-6.1-sol): complex coding/computer use/professional work at lower cost, low/medium/high/xhigh/max effort with medium default; no none/minimal; tool calling uses Responses. API specifications do not establish Codex subscription hours or percentages.
 - [GPT-6 family guide](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6.1-sol): outcome completion, prior authorization, user-over-skill priority and calibrated testing. Its behavioral observations concern Astra; the guide proposes the prompts as starting points across the family and calls for evaluation on the chosen workload. We do not present them as a controlled Sol design benchmark.
@@ -20,7 +22,7 @@ Reviewed September 29, 2026. This record explains choices; it is not routine bui
 3. Distinguish no-base, structural, final-design and accepted-system work; marketing composition and working-application density serve different jobs.
 4. Complete authorized work without inventing approval gates. Preserve explicit user stops, choices, budgets and publication instructions.
 5. Close on required behavior and material visual quality, with focused verification and changed hypotheses after repeated failure. A two-round ceiling cannot establish readiness; unlimited polishing cannot establish value.
-6. Optimize total consumption through the agreed result, including rework. Propose Sol Medium + Standard for bounded work and High for named consequential ambiguity or difficult diagnosis; preserve the user's explicit choice. These are operating proposals, not measured Sol optima, and higher effort is not a universal quality guarantee.
+6. Optimize total consumption through the agreed result, including rework. Preserve the user's selected model/settings; model-specific observations are conditional evidence, not the kit's default choice. Higher effort is not a universal visual-quality guarantee.
 
 Reference-provider access policies were inherited from the supplied September 26 guide; third-party MCPs were not installed or re-audited during this update. The curated catalog remains intact. Offline tests validate installation, routing persistence and package integrity, not the design decisions an LLM will make on a future project.
 

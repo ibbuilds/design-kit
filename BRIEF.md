@@ -14,6 +14,8 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 - Brand/product, audience, main need/task and intended design result:
 - Actual inputs/research/feedback; assumptions distinguished from evidence:
 - Existing base: what works, what falls short and what to preserve:
+- Existing identity/system change boundary / protected anchors / authorized open changes:
+- Detected canonical identity, system and component sources / shared consumers affected by proposed changes:
 - Relevant content, terms/grouping/navigation and task/state sequence:
 - Device/container, responsive, inclusion, asset and feasibility constraints:
 - Structural sketch/prototype or accepted equivalent; open decisions:
@@ -21,9 +23,15 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 ## Direction, references and foundations
 
 - Designer's direction; selected source/capture relationships and exclusions:
+- Interpreted visual traits / requested and avoided qualities:
+- Original product/vibe wording / faithful expanded prompt / confirmed versus proposed/unknown:
+- Selected reference providers / actual access / fallback or unverified limits:
+- Reusable query/result/capture evidence / retrieval gaps / explicit call budget:
+- Aesthetic-led search relationships / optional task/genre filter and reason:
 - Reference state/viewport; observed versus inferred behavior:
 - Chosen medium / actual capability / real assets and provisional material:
 - Canonical typography, semantic colors, spacing/density, geometry and usage:
+- Canonical system document/token paths / rendered specimen and reviewed revision:
 - Supplied values versus proposed system additions and acceptance:
 
 ## Components, compositions and refinement
@@ -38,5 +46,6 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 
 - Accepted design handoff, structure/styles/assets/states/responsive intent:
 - Implementation root/stack, relevant technical requirements and evidence:
+- Existing API contracts, labelled mocks/missing services and frontend states:
 
 Keep project data in the target, not the installed kit. A supplied file or positive agent verdict is not human acceptance or user research. One short record and actual working artifacts are sufficient; no transcript archive or document per section.
