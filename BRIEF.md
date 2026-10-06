@@ -35,7 +35,7 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 - Aesthetic-led search relationships / optional task/genre filter and reason:
 - Reference state/viewport; observed versus inferred behavior:
 - Inspected reference subpages/system/style sources / needed rule coverage / unresolved gap and accepted supplemental contribution:
-- Chosen medium / actual capability / real assets and provisional material:
+- Chosen medium / actual capability / real assets and provisional material; supplied source format/region versus requested asset outputs/treatment and fidelity limits:
 - Canonical typography, semantic colors, spacing/density, geometry and usage:
 - Visual contract: affected role/family / expected relationship or requirement / source/rationale / canonical owner / observed render or measurement / unresolved mismatch:
 - Canonical system document/token paths / rendered specimen and reviewed revision:
@@ -44,7 +44,7 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 ## Components, compositions and refinement
 
 - Canonical component/pattern paths/IDs and scoped states:
-- Inspected family/variant/state/consumer coverage / unseen or deferred items:
+- Scoped coverage map: shared rule/owner / affected families, variants, states, containers and consumers / representative evidence and exceptions / fixed, verified or open:
 - Whole-page/flow outline; requested batch and accepted regions:
 - Structural causes / supporting current and reference evidence / reviewed repair order / resolved, pending or deferred:
 - Before/after sources; intended and visible contribution; material tradeoffs:

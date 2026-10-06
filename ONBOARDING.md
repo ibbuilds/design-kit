@@ -136,7 +136,7 @@ Render a **system specimen before styled page construction** using CRAFT.md's af
 
 ## 6. Base components
 
-Derive the inventory and review batches from agreed tasks/content/pages; obtain acceptance if not established. No exhaustive framework library. Build only the current batch from accepted foundations, applying CRAFT.md's affected family relationships and required states/content. Compare related variants together and in real consumers. Use canonical components/instances and token bindings where supported; matching rectangles do not establish reuse, and drawings do not prove keyboard behavior.
+Derive the inventory and review batches from agreed tasks/content/pages; obtain acceptance if not established. A whole-library request covers its actual current inventory and required missing pieces under CRAFT.md's consistency coverage map, retained across batches; it does not require an invented framework library. Build only the current batch from accepted foundations, applying CRAFT.md's affected family relationships and required states/content. Compare related variants together and in real consumers. Use canonical components/instances and token bindings where supported; matching rectangles do not establish reuse, and drawings do not prove keyboard behavior.
 
 Inspect the result and show location, relevant states, changes and unknowns. Iterate corrections within the batch; do not generate another batch/composites while its review is pending.
 

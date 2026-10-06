@@ -95,6 +95,10 @@ At 05:08-08:18, the speakers recommend essential tokens and only needed usage co
 
 Applied here: inspect real component APIs/assets alongside system intent, preserve one canonical definition of values, add scoped usage/exclusion rules and review changes before propagation. Do not migrate every project's DESIGN.md to Google's format, duplicate its library into prose or mandate a new design-system MCP. The inspiration MCPs selected here are a different capability from a project's own component API service.
 
+### Later library-completion excerpt
+
+The latest supplied excerpt shows the agent asking for an original SVG after the owner had provided a raster sprite and requested extraction/vectorization. It corrected that source-versus-output mistake after clarification. The excerpt also reports concrete source icon measurements, font-load checks and attention to the select's open state. Its images/annotations and completed output are absent; it ends during work. We cannot independently assess final consistency, responsive behavior or the proposed icon ratio from it. Existing instructions already required family/consumer verification. The narrow repair makes that requirement operational through a persistent map of the actual requested library, shared owners, evidence and implemented-versus-verified status; it also distinguishes source assets from desired derivatives and prevents one icon example from defining every role. These changes are not a passed visual trial or evidence of a new MCP failure.
+
 ### Verification boundary
 
 Native Awwwards returned a preview and source. Direct One Page Love failed with `Unexpected response type`, including text-only mode, although direct endpoint initialization/list/search succeeded. Its response included fractional `annotations.priority`. An ephemeral offline probe through the installed Codex 0.160.0 binary isolated the trigger: decimal `0.9` and `1.0` failed; integer `1` and omitted priority passed. This matches [the reported parser defect](https://github.com/openai/codex/issues/38979).
