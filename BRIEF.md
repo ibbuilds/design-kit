@@ -17,7 +17,7 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 - Existing identity/system change boundary / protected anchors / authorized open changes:
 - Requested quality priority / explicit visual requirements, numerical rules and exclusions:
 - Detected canonical identity, system and component sources / shared consumers affected by proposed changes:
-- Relevant content, terms/grouping/navigation and task/state sequence:
+- Relevant content, product language/locale, terms/grouping/navigation and task/state sequence:
 - Device/container, responsive, inclusion, asset and feasibility constraints:
 - Inspected viewport/container range, breakpoint/state evidence and unverified responsive limits:
 - Structural sketch/prototype or accepted equivalent; open decisions:
@@ -43,7 +43,7 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 
 ## Components, compositions and refinement
 
-- Canonical component/pattern paths/IDs and scoped states:
+- Canonical component/pattern paths/IDs, accepted working examples, inherited relationships/allowed variation and scoped states:
 - Scoped coverage map: shared rule/owner / affected families, variants, states, containers and consumers / representative evidence and exceptions / fixed, verified or open:
 - Whole-page/flow outline; requested batch and accepted regions:
 - Structural causes / supporting current and reference evidence / reviewed repair order / resolved, pending or deferred:

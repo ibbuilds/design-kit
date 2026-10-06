@@ -57,7 +57,7 @@ Repair and verify the material causes within the reviewed scope before optional 
 4. Repair the highest-impact design mismatch locally. If the concept itself is weak, propose the smallest meaningful alternative inside delegated decisions. More decoration does not solve it. Retain the stronger version when a later refinement regresses the design.
 5. Present the actual before/after or accessible canvas/prototype, concise contribution and material tradeoffs. Wait for human acceptance/correction before dependent expansion. Missing visual access requires a usable view; code/JSON alone cannot establish beauty.
 
-Useful refinement is not an endless perfection loop: change the hypothesis when iterations repeat without a clear improvement. Do not spend rounds polishing an unapproved premise or repeat discovery for a straightforward accepted-system addition.
+When the user still reports incoherence after a claimed complete audit, reconcile that contradiction before another broad pass. Compare one representative disputed region directly with the accepted treatment at readable, equivalent scale; identify the relationship the previous checks missed, repair its shared cause and verify the affected coverage. Reuse the user's existing examples and corrections rather than demanding a new defect list. If the available evidence cannot distinguish the intended treatment, ask only for that unresolved choice. More captures or passing tests with the same inadequate criterion do not resolve the contradiction. Do not spend rounds polishing an unapproved premise or repeat discovery for a straightforward accepted-system addition.
 
 ## Expand the approved treatment
 

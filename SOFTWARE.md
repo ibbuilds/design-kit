@@ -4,7 +4,7 @@ Use for requested frontend code and behavior. [SKILL.md](SKILL.md) governs desig
 
 ## Work from the target and accepted design
 
-Inspect target instructions, stack, canonical tokens/components, affected callers, current changes and required checks. Reuse accepted structure, assets and useful prototype code. Harden prototype behavior rather than blindly copying it or rebuilding its visual vocabulary. Ask only for material missing contracts or reserved decisions; routine implementation follows existing conventions.
+Inspect target instructions, stack, canonical tokens/components, affected callers, current changes and required checks. Locate the closest accepted component variant or composed pattern in existing source, stories/examples and real usage. Import or extend that implementation within the target's architecture; do not reconstruct it from screenshots or documentation when the working source is available. Preserve accepted structure/assets and useful prototype code, hardening behavior for the requested fidelity. Where reuse across products is incompatible, port the scoped pattern deliberately and verify its inherited relationships. Ask only for material missing contracts or reserved decisions; routine implementation follows existing conventions.
 
 Keep the implementation proportional. A local repair needs reproduction, a scoped fix and relevant verification. A substantial frontend feature uses [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) to connect the user outcome, states and evidence. No new framework, architecture document or exhaustive test suite by default.
 
