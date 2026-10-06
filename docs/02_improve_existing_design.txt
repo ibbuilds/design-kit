@@ -9,6 +9,8 @@ Scope: [design / frontend with QA]."
 
 Inspect the actual base, instructions, assets/tokens and accepted decisions.
 Identify what already works and the highest-impact open gap.
+Preserve source treatments the user values; distinguish later additions and
+regressions from approved originals. Include the library shell when it is in scope.
 Do not restart the whole design or rediscover galleries when evidence suffices.
 
 Before visual edits, complete SKILL.md's comparison: intended visual source,
@@ -16,6 +18,9 @@ current discrepancy, proposed treatment and review scope. Inspect the source
 and base separately; DESIGN.md or screenshots of the base alone do not suffice.
 A density preference does not approve a diagnosis or global propagation.
 If feedback rejects the diagnosis, reopen it before further dependent edits.
+Investigate the named discrepancy; permission to continue does not approve a
+diagnosis the user explicitly rejects. Show actual captures inline in chat when
+requested; do not add product pages/routes solely to present review material.
 
 Inspect the existing identity, canonical system sources and shared components.
 Reuse explicit instructions about what to preserve/change. Local improvements
@@ -53,6 +58,9 @@ Diagnose structural causes before cosmetic symptoms using DESIGN_DIRECTION.md.
 Compare hierarchy, composition, grouping/task flow and shared system rules with
 the accepted references. Explain how a cause produces the visible inconsistencies,
 why a reference handles that relationship better and what transfers to this product.
+Do not impose a layout redesign: repeated spacing/geometry drift may be the cause.
+Inspect intrinsic padding, parent gaps/margins and container insets before deciding
+where a spacing correction belongs; preserve source controls that already fit.
 Separate demonstrated violations, accepted-intent mismatches and taste hypotheses;
 do not assume a reference is correct or copy its surface treatment.
 Review the scoped causal repair order, then fix shared causes canonically and

@@ -48,6 +48,8 @@ Further feedback requires deeper reuse of selected originals and continued refer
 
 The owner clarified that references serve improvement of the target's intended aesthetic, including useful craft/finish beyond defect repair. The revision explicitly compares source achievement, current gap/opportunity, transferable mechanism and target-specific visible benefit. Texture/depth examples remain conditional possibilities, not universal taste rules or a change of identity. Their utility must be assessed in the reviewed target render; no post-update model result is claimed.
 
+A later correction reports that the proposed diagnosis missed widespread spacing and aesthetic inconsistencies in added library components and its own presentation, while the original product controls were valued. It also rejects presentation-only pages inside the application and asks for images in chat. These reports are not an independently inspected UI audit. The revision preserves valued source treatments, distinguishes additions/regressions, makes spacing ownership and complaint-led diagnosis explicit, and limits review presentation to actual captures/existing surfaces or isolated disposable artifacts. Structural investigation does not mandate a redesign; permission to continue does not approve an expressly rejected premise.
+
 ### Public methods compared
 
 - [Refero's design skill](https://github.com/referodesign/refero_skill/blob/master/skills/refero-design/SKILL.md) requires research, an explicit visual target and source-linked decisions before implementation, followed by comparison to that target. Its style/screen/flow separation informs evidence selection; its fixed research counts and paid connection are not adopted.

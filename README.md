@@ -89,7 +89,7 @@ MCP use is scoped to open decisions: plan filters before calls, reuse schemas/re
 
 Keep reference relationships, exclusions and accepted revisions in the target's existing record, otherwise `.design/project.md` using relevant [BRIEF.md](BRIEF.md) fields. Preserve the canonical token format and system document, or use target DESIGN.md for intent when absent. Do not duplicate token values into competing sources. Public extracted styles are partial evidence.
 
-Reuse the existing medium; otherwise propose an HTML/CSS specimen/preview inside the agent interface. [PENPOT.md](PENPOT.md) is conditional on user choice and actual access. No canvas app switch, Obsidian crawler or reference database is required. A future capture/index pipeline is separate scope.
+Reuse the existing medium and presentation preference; show actual captures inline in chat when useful. A needed separate specimen uses an isolated preview, not presentation-only product pages/routes. [ONBOARDING.md](ONBOARDING.md) covers evidence and disposable-artifact handling; [PENPOT.md](PENPOT.md) is conditional on user choice and actual access. No canvas app switch, Obsidian crawler or reference database is required. A future capture/index pipeline is separate scope.
 
 [TASTE.md](TASTE.md), [DESIGN_DIRECTION.md](DESIGN_DIRECTION.md) and relevant [GUIDELINES.md](GUIDELINES.md) sections guide visible improvement. [SOFTWARE.md](SOFTWARE.md), [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) and relevant [QA.md](QA.md) sections cover frontend implementation, existing API integration and verification. [EXECUTION.md](EXECUTION.md) covers continuity and effort without choosing a model.
 
