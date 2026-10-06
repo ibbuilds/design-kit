@@ -50,8 +50,9 @@ PROMPT.md expands sparse input without inventing audience, features or approved
 styles: preserve requirements/negative constraints, label proposals and unknowns.
 
 REFERENCES AND EFFICIENT RETRIEVAL
-Find the requested section/pattern, then its agreed aesthetic across industries.
-Business/genre terms are optional filters when useful for an actual question.
+Match deliverable/pattern and agreed aesthetic together across industries.
+Libraries need system/component evidence; a task match with the wrong aesthetic
+does not qualify as a visual reference. Business/genre filters remain optional.
 Use the suitable selected MCP first, then the other for an access/fit gap.
 If unresolved, work through relevant public catalog sources via browser/search,
 including readable public Refero evidence. If usable coverage is exhausted,

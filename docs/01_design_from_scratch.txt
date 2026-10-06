@@ -26,9 +26,9 @@ Preserve what the designer wants to avoid. Do not invent audience, features,
 metrics or exact approved styles. Review this in the same vibe checkpoint.
 
 3. REFERENCES
-Search primarily by the agreed aesthetic, allowing cross-industry inspiration.
-Business terms are optional filters for a named question, not automatic tags.
-For a section, establish the requested pattern and match the vibe within it.
+Match the deliverable/pattern and agreed aesthetic together across industries.
+Business terms are optional filters, not automatic tags. A UI-library request
+needs system/component evidence; a source's task fit cannot excuse a wrong aesthetic.
 Inspect supplied examples as discovery seeds; reuse accepted evidence directly
 for faithful implementation or fully specified local work.
 Start with the selected MCP best suited to the question; use the other for a gap.
@@ -44,15 +44,17 @@ eight active references; wait for accepted interpretation and search closure.
 
 4. SCOPED VISUAL SYSTEM
 Reuse an existing system or propose missing foundations from accepted evidence.
-Define real typography, semantic tokens, spacing/geometry, assets and relevant
-behavior. Preserve canonical values/paths; DESIGN.md can document intent.
+Apply affected CRAFT.md criteria to real type styles, semantic color/state roles,
+spacing/geometry, assets and relevant behavior. Keep a compact visual contract in
+the existing target record. Preserve canonical values/paths; DESIGN.md records usage.
 Explore selected originals' relevant subpages, patterns/states and available
 public CSS/DOM or published token/component sources under REFERENCE_ROUTER.md.
 Check coverage of needed system rules; deepen accepted sources for gaps, then
 search focused supplements if necessary. Review new contributions and revise
 rejected ones before dependent work; reuse prior acceptance and the agreed vibe.
 Normalize contributions into consistent product roles/rules, not mixed identities.
-Render a specimen at useful widths/states, not merely a JSON/color list.
+Render applied roles and related variants/states at useful widths; inspect actual
+properties/bindings and consumers, not merely a JSON/color list or one correct tile.
 Review/correct until accepted before styled interface construction.
 Public extracted styles are partial evidence, not a site's complete internal system.
 

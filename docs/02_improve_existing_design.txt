@@ -37,8 +37,10 @@ before an exhaustive audit or treatment. Prior component approval does not settl
 the whole identity. Reuse a vibe already supplied instead of asking it again.
 Expand the user's wording into a faithful brief/prompt: requirements/negatives,
 proposed interpretation and unknowns remain separate. Confirm the intended vibe.
-Search by aesthetic in the selected MCPs; constrain the requested section/pattern
-first when scoped. The business topic is an optional filter, not a requirement.
+Match the actual deliverable/pattern and confirmed aesthetic together.
+A UI library needs relevant system/component evidence, not only website mood.
+Use suitable MCP coverage, then the relevant public catalog; a business topic is
+an optional filter. A library with the wrong aesthetic is not a visual match.
 For exploratory evolution, use supplied examples to seed complementary MCP
 research; reuse directly for faithful/local work or when accepted evidence covers
 the decision. An example URL alone does not close an exploratory reference phase.
@@ -54,9 +56,10 @@ Wait for the accepted map and search-closure choice.
 A focused typography/composition repair does not need a full discovery round.
 
 AFTER DISCOVERY CLOSES
-Diagnose structural causes before cosmetic symptoms using DESIGN_DIRECTION.md.
-Compare hierarchy, composition, grouping/task flow and shared system rules with
-the accepted references. Explain how a cause produces the visible inconsistencies,
+Diagnose the actual complaint's causes using DESIGN_DIRECTION.md.
+For UI craft, inspect applied type/color roles, spacing, control families and
+asset treatments with CRAFT.md. Inspect composition/flow when evidence puts them
+in scope. Explain how a shared cause produces the visible inconsistencies,
 why a reference handles that relationship better and what transfers to this product.
 Do not impose a layout redesign: repeated spacing/geometry drift may be the cause.
 Inspect intrinsic padding, parent gaps/margins and container insets before deciding
@@ -66,7 +69,7 @@ do not assume a reference is correct or copy its surface treatment.
 Review the scoped causal repair order, then fix shared causes canonically and
 verify affected compositions through the existing system/UI checkpoints.
 Show resolved/pending causes and the integrated baseline before optional polish.
-Refinement adds useful reference principles after the structural repair; return
+Refinement adds useful reference principles after the shared repair; return
 to a cause if new evidence reveals it. Preserve scope, semantics and accepted anchors.
 
 WHEN FOUNDATIONS CHANGE
@@ -78,8 +81,11 @@ Show contribution/exclusions, review and replace rejected evidence, then resume
 the affected decision. No new four-reference quota or whole-workflow restart.
 Normalize accepted contributions into one coherent system and its protected anchors;
 distinguish observed declarations/computed values from inferred/proposed tokens.
-Reuse canonical tokens/components. Propose the minimum scoped correction supported
-by accepted evidence, render its specimen and obtain review.
+Reuse canonical tokens/components. Apply affected CRAFT.md criteria and retain
+explicit visual requirements/exclusions in the target's visual contract. Tie each
+requested defect to a concrete current failure and expected result. Inspect applied
+roles and related variants/states in the render with actual properties/ownership;
+a token list or one correct example does not certify a family. Review the specimen.
 Revise affected canonical design MDs with the accepted reference-to-product rules;
 keep documentation and the rendered system/UI consistent without duplicating APIs.
 Inspect affected shared consumers and show the relevant impact before propagation.

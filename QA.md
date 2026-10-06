@@ -30,6 +30,8 @@ For an open direction, calibrate critique with relevant accepted examples: name 
 
 Judge the scoped result in the actual render, with the relevant reference/base beside it when comparison matters. A successful build or attractive hero alone is insufficient. Apply only criteria relevant to the requested fidelity and scope:
 
+For visual-system/component work, apply the affected [CRAFT.md](CRAFT.md) criteria and reconcile the target visual contract with actual observations. Check applied color/type roles, effective spacing and related variants/states together, then affected consumers. Reading source or seeing one correct example does not verify the family. A missing view/measurement remains an explicit evidence gap; technical QA or an unrelated UX improvement cannot close the user's UI complaint.
+
 - **Product and authority:** the main job, content and next action are clear; closed structural/final-design decisions are respected. Claims and proof are real or explicitly labeled demo content.
 - **Composition:** the intended focal point, reading/task order and density survive the render. The dominant visual is useful, legible and correctly cropped; its absence is not covered with decoration. Deeper regions have their own content-driven treatment instead of an interchangeable card grid.
 - **Type and finish:** actual fonts/weights load; wraps, line lengths, alignment, spacing, borders and image quality form the intended hierarchy. No major clipping, placeholder assets or inconsistent controls remain within scope.

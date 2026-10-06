@@ -15,6 +15,7 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 - Actual inputs/research/feedback; assumptions distinguished from evidence:
 - Existing base: what works, what falls short and what to preserve:
 - Existing identity/system change boundary / protected anchors / authorized open changes:
+- Requested quality priority / explicit visual requirements, numerical rules and exclusions:
 - Detected canonical identity, system and component sources / shared consumers affected by proposed changes:
 - Relevant content, terms/grouping/navigation and task/state sequence:
 - Device/container, responsive, inclusion, asset and feasibility constraints:
@@ -35,12 +36,14 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 - Inspected reference subpages/system/style sources / needed rule coverage / unresolved gap and accepted supplemental contribution:
 - Chosen medium / actual capability / real assets and provisional material:
 - Canonical typography, semantic colors, spacing/density, geometry and usage:
+- Visual contract: affected role/family / expected relationship or requirement / source/rationale / canonical owner / observed render or measurement / unresolved mismatch:
 - Canonical system document/token paths / rendered specimen and reviewed revision:
 - Supplied values versus proposed system additions and acceptance:
 
 ## Components, compositions and refinement
 
 - Canonical component/pattern paths/IDs and scoped states:
+- Inspected family/variant/state/consumer coverage / unseen or deferred items:
 - Whole-page/flow outline; requested batch and accepted regions:
 - Structural causes / supporting current and reference evidence / reviewed repair order / resolved, pending or deferred:
 - Before/after sources; intended and visible contribution; material tradeoffs:
