@@ -56,6 +56,9 @@ Wait for the accepted map and search-closure choice.
 A focused typography/composition repair does not need a full discovery round.
 
 AFTER DISCOVERY CLOSES
+For consistency/completion with accepted source products, reuse their sufficient
+direction/reference evidence. Align additions and build needed missing families
+before proposing evolution; valued originals are not open to redesign by default.
 Diagnose the actual complaint's causes using DESIGN_DIRECTION.md.
 For UI craft, inspect applied type/color roles, spacing, control families and
 asset treatments with CRAFT.md. Inspect composition/flow when evidence puts them
@@ -95,6 +98,9 @@ internal system from public styles/screenshots.
 WHEN THE INTERFACE CHANGES
 Develop one coherent treatment within the requested scope.
 Compare before/after with equivalent content, state, viewport and loaded assets.
+Every UI batch includes CRAFT.md's responsive inspection: supported small/large
+containers, affected breakpoint transitions and content-stress/intermediate widths.
+Repair observed failures and report uninspected ranges instead of claiming readiness.
 Inspect the integrated result; an isolated attractive card or hero is insufficient
 evidence for a whole-interface claim. Explain the visible contribution.
 Correct and show again. Preserve a stronger earlier result if polishing weakens it.

@@ -62,6 +62,8 @@ Public extracted styles are partial evidence, not a site's complete internal sys
 Build only needed pieces/patterns, with representative content and relevant states.
 A hero-only request does not authorize a full site or exhaustive component library.
 Compose within scope, inspect the actual result and show the contribution.
+Every UI batch includes responsive design/inspection under CRAFT.md, including
+specimens, components and sections; record supported sizes checked and actual gaps.
 Correct affected work and retain the stronger baseline. Section-by-section work
 reuses accepted system/relationships instead of restarting each time.
 

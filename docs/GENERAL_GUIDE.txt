@@ -45,6 +45,10 @@ is unclear. Preserve protected anchors, inspect shared consumers and review the
 proposed canonical change instead of creating a competing system.
 Show the actual artifact and wait for explicit acceptance before dependent work.
 Corrections keep the phase open; retain unrelated approvals across follow-ups.
+For library consistency/completion, inherit accepted product controls/assets and
+complete missing families before proposing evolution; reuse sufficient source evidence.
+Every UI batch includes responsive treatment and inspection under CRAFT.md,
+including components/sections, supported container sizes and intermediate widths.
 User examples can be used directly or guide discovery of matching relationships.
 PROMPT.md expands sparse input without inventing audience, features or approved
 styles: preserve requirements/negative constraints, label proposals and unknowns.

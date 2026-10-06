@@ -19,6 +19,7 @@ Use the target's authoritative record, otherwise `.design/project.md`. Capture o
 - Detected canonical identity, system and component sources / shared consumers affected by proposed changes:
 - Relevant content, terms/grouping/navigation and task/state sequence:
 - Device/container, responsive, inclusion, asset and feasibility constraints:
+- Inspected viewport/container range, breakpoint/state evidence and unverified responsive limits:
 - Structural sketch/prototype or accepted equivalent; open decisions:
 
 ## Direction, references and foundations

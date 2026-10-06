@@ -17,6 +17,8 @@ A supervised **UI -> frontend -> QA skill**, designed primarily for the graphica
 
 Every dependent design phase waits for explicit human acceptance. Existing approvals remain valid within scope; local corrections do not restart the whole workflow. A supplied file, agent self-score or elapsed time is not acceptance. An existing base enters at its actual open question.
 
+For library consistency/completion, accepted product controls and assets supply the visual authority. Align additions and complete needed missing families before proposing evolution; sufficient source evidence does not require another aesthetic-discovery round. Every UI batch includes responsive design and actual inspection of the supported viewport/container range under [CRAFT.md](CRAFT.md).
+
 Before a visual implementation, the agent shows the intended visual source, observed discrepancy/open choice, proposed treatment and review scope. It compares the source with the base, not just the base with itself. Density/structure approval does not approve an aesthetic diagnosis or global propagation. Rejected diagnoses reopen before further dependent edits.
 
 For existing-design improvement, closing discovery leads to a diagnosis of the actual complaint. UI-craft work starts with visual roles, spacing, control families and assets; composition/flow problems use their relevant evidence. Repair shared causes through the scoped system/UI checkpoints before optional finish. [CRAFT.md](CRAFT.md) binds expected relationships to canonical owners and actual rendered results, so a token list or one correct specimen cannot certify a whole family. Demonstrated defects, accepted-intent mismatches and taste hypotheses remain distinct.

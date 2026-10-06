@@ -20,7 +20,7 @@ Loop: **inspect/reproduce -> choose evidence -> implement -> run affected checks
 
 Use the target's existing types, state patterns and API clients. Validate untrusted input at frontend boundaries; do not claim client-side checks provide server authorization. Handle cancellation, stale responses and retries where relevant. Keep secrets out of browser code, records and logs. Preserve project contracts and concurrent human edits.
 
-Use semantic elements, useful labels, keyboard behavior, visible focus and relevant accessibility requirements. Inspect responsive recomposition, text wrapping, asset/font loading, interaction states and reduced motion. Compare the accepted design and actual result under equivalent content, state, viewport and loaded assets. A needed departure from a closed visual decision requires the proposed alternative and human acceptance.
+Use semantic elements, useful labels, keyboard behavior, visible focus and relevant accessibility requirements. Apply [CRAFT.md's responsive criteria](CRAFT.md#responsive-in-every-ui-batch) in every UI implementation batch, checking actual containers, affected breakpoint transitions, content/states, asset/font loading and reduced motion. Compare accepted design and actual result under equivalent content, state, viewport and loaded assets. A needed departure from a closed visual decision requires the proposed alternative and human acceptance.
 
 For host plugins, inspect the actual host's UI and lifecycle when that integration is in scope. A standalone browser mock does not verify host behavior. Run the existing application/preview path when possible; do not change the user's runtime or install dependencies without applicable authorization.
 

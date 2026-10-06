@@ -10,6 +10,12 @@ Keep a compact visual contract in the target's existing record or working notes:
 
 For every requested defect, establish a concrete failure in the current view or source, then its expected result. If access is insufficient, mark that item unobserved. Do not infer that it passes from a design MD, successful build, matching token names or another component's capture. Propose necessary craft improvements beyond defects through the same scoped review, with their expected visible contribution.
 
+## Consistency before evolution
+
+When the request is to complete or align a library with accepted products, use those products' actual controls, tokens and assets as visual authority. Reuse the confirmed aesthetic and sufficient evidence without reopening vibe discovery or imposing a new reference quota. Compare accepted source treatments with derivatives/additions at equivalent sizes/states, trace shared rules and implement the required missing families inside that vocabulary. Preserve correct originals. Where no counterpart exists, extend the closest relevant family and review the proposed relationship; source conflicts need a scoped resolution rather than an average of both treatments.
+
+Close the requested consistency baseline first: the affected library, its own presentation when in scope, and real consumers must express the accepted role/spacing/geometry/asset relationships across relevant states and supported sizes. Keep remaining gaps explicit. Refining already valued originals, adding speculative variants or changing the identity is a separate open design choice requiring the user's scope; it is not necessary to complete the library. A broad improvement request can authorize evolution, but does not erase protected treatments.
+
 ## Color roles, not just swatches
 
 Map the roles the actual interface needs to canonical tokens: canvas and layered surfaces; primary/secondary/supporting text; passive and interactive borders; filled/subtle actions and their foregrounds; selected/pressed/hover treatments; focus; disabled; and applicable status/feedback roles. Separate decorative/brand colors from operational semantics. A monochrome identity can have rich surface, border and state distinctions without acquiring unrelated hues.
@@ -53,6 +59,16 @@ Inventory relevant existing icon assets and their intended roles. Prefer that li
 Distinguish a base symbol, wordmark/lockup and approved contextual rendering. Compare the source asset and accepted in-product treatment before proposing changes. Preserve valued enhancements and identity relationships; possession of a raw asset does not establish the final appearance. New artwork or changes to the base mark require the actual scope/authorization. Check clipping, resolution, cropping, transparency, theme/background fit and consistency across needed uses.
 
 Choose material, depth, texture and motion from accepted direction and reference achievements. Evaluate their role, intensity and coherence on real content. Useful finish can raise visual quality; adding every source effect or cloning its brand cannot. Inspect actual motion when it is part of the claim, including the relevant reduced-motion behavior.
+
+## Responsive in every UI batch
+
+Plan responsive behavior while developing the treatment, including system specimens, components and sections. Reuse the target's supported viewport/container range and existing breakpoints; clarify a material unknown instead of assuming desktop-only scope. For an embedded panel or desktop host, inspect its resizable containers rather than claiming unsupported phone behavior. Responsive work stays inside the requested region while checking affected dependencies.
+
+Inspect the actual result at narrow, medium and wide supported sizes, on both sides of affected breakpoints and at intermediate widths where content starts to fail. Select representative widths from the layout and real content, not only familiar device presets. Resize the working view or canvas constraints when supported; static small/large captures alone do not establish behavior between them. A component must work in its real parent, not merely in a full-width specimen.
+
+Check intrinsic sizing, min/max constraints, grid/flex wrapping, spacing and type hierarchy; long labels, multiline help/errors and populated states; image aspect/crop; and overlay/menu anchoring and viewport edges where applicable. Preserve meaningful actions and content as composition adapts. Diagnose unintended clipping, collisions and page overflow at the owning rule instead of hiding them with global overflow suppression. A table or other deliberately scrollable region needs an intentional, usable treatment. Hover-only affordances need an appropriate touch/keyboard equivalent when those inputs are supported.
+
+Repair affected responsive failures inside the batch and recheck the relevant sizes/states and shared consumers. Show concise actual narrow/wide evidence plus the significant intermediate/state findings in the normal checkpoint; record the inspected viewport/container range and remaining limits. In canvas/design-only work, verify the supported resizing/layout constraints and label behavior not executable there. One desktop capture, breakpoint declarations or a successful build cannot justify a responsive-complete claim. Missing inspection remains an explicit unverified requirement.
 
 ## Evidence before the batch is presented
 

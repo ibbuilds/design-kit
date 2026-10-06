@@ -20,7 +20,7 @@ Label a selected source's contribution:
 | Direction supplement | Its observed aesthetic fits, but a different task limits transfer. Identify the precise type/material/composition contribution; it does not close missing library/control/state evidence. |
 | Mechanics-only evidence | It resolves an API, anatomy, semantic or implementation question but its aesthetic differs. Use only the named mechanism inside the target's reviewed vocabulary; do not count it as a visual match or import its skin. |
 
-Prefer evidence satisfying both fit conditions. If that intersection lacks coverage, keep the gap explicit, deepen accepted sources or search the next relevant family. Any proposal combining a bounded mechanism with accepted visual authority must be rendered in the target aesthetic and reviewed; it is not a discovered visual match. Never weaken the direction silently to accommodate an available library. Review boards retain the requested 4–8 qualifying references without padding them with technical documentation or unrelated components.
+Prefer evidence satisfying both fit conditions. If that intersection lacks coverage, keep the gap explicit, deepen accepted sources or search the next relevant family. Any proposal combining a bounded mechanism with accepted visual authority must be rendered in the target aesthetic and reviewed; it is not a discovered visual match. Never weaken the direction silently to accommodate an available library. Initial direction selection retains the requested 4–8 qualifying references without padding them with technical documentation or unrelated components; focused supplemental gaps do not impose a fresh four-reference quota.
 
 ## Discover, inspect, let the designer select
 
