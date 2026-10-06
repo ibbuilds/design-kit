@@ -25,7 +25,7 @@ Produce product-specific UI with a visible contribution to composition, type/ima
 | No base / moodboard | Resolve context and direction; a gallery arrangement is not the layout. |
 | Structure / foundations | Preserve closed hierarchy/content/behavior; resolve composition and vocabulary. Tokens alone do not specify the experience. |
 | Final design | Implement faithfully when requested; improve only delegated/open choices. |
-| Identity / system / code | Inspect sources and protected anchors under ONBOARDING.md's existing-project entry. Confirm an open direction; the MD can need revision. Specified local corrections reuse vocabulary. Review shared changes before propagation. |
+| Identity / system / code | Inspect sources and protected anchors under ONBOARDING.md's existing-project entry. Confirm an open direction; the MD can need revision. Restore approved rules within the authorized batch; review new shared design choices before propagation. |
 | Consistency / library completion | Reuse the accepted product/system treatments; align derivatives and build only needed missing components. Derive and close the actual scoped coverage under CRAFT.md, not just the latest annotated example. New discovery/redesign is conditional on a gap or explicit request. |
 | Section / component | Inspect surrounding context, reuse accepted choices and stay within the region. No automatic whole-site or exhaustive-library expansion. |
 | User references | Inspect intended relationships; use directly when sufficient or find matches when requested/needed. Preserve the user's taste. |
