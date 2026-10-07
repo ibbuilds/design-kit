@@ -1,125 +1,49 @@
 IMPROVE AN EXISTING BASE — DESIGN KIT
-Updated: October 5, 2026.
+Updated: October 6, 2026.
 
-PROMPT IN THE AGENT INTERFACE
-"Use Design Kit to improve [interface/region/flow] in this base.
-Preserve [accepted decisions/content/system/behavior]. Open decision: [X].
-Wanted vibe or actual problem: [Y]. Show the result and wait for my feedback.
-Scope: [design / frontend with QA]."
+Use SKILL.md's artifact-first procedure. Existing code may be technically useful
+without having an approved appearance. Preserve required behavior/content, public
+interfaces and the visual treatments the user values; do not freeze every current
+choice or replace the identity by assumption.
 
-Inspect the actual base, instructions, assets/tokens and accepted decisions.
-Identify what already works and the highest-impact open gap.
-Preserve source treatments the user values; distinguish later additions and
-regressions from approved originals. Include the library shell when it is in scope.
-Do not restart the whole design or rediscover galleries when evidence suffices.
+Inspect relevant current/source views and their canonical owners. Distinguish
+accepted originals, derivatives and unresolved additions. The agent identifies
+sibling problems; the user should not enumerate every defective component.
 
-Before visual edits, complete SKILL.md's comparison: intended visual source,
-current discrepancy, proposed treatment and review scope. Inspect the source
-and base separately; DESIGN.md or screenshots of the base alone do not suffice.
-A density preference does not approve a diagnosis or global propagation.
-If feedback rejects the diagnosis, reopen it before further dependent edits.
-Investigate the named discrepancy; permission to continue does not approve a
-diagnosis the user explicitly rejects. Show actual captures inline in chat when
-requested; do not add product pages/routes solely to present review material.
+For consistency work, reuse the closest accepted implementation and repair shared
+causes across the authorized batch. Do not refine valued originals just because
+new additions are inconsistent. For open visual improvement, identify the highest-
+impact gap/opportunity and author a coherent treatment inside the delegated scope.
+Craft complaints begin with applied type/color, effective spacing, control families
+and assets; composition changes require an actual relevant need.
 
-Inspect the existing identity, canonical system sources and shared components.
-Reuse explicit instructions about what to preserve/change. Local improvements
-inside the existing vocabulary need no extra identity questionnaire. If the
-request could change the identity/system and that boundary is unclear, show what
-you found and ask a focused contextual question: preserve the relevant anchors,
-evolve selected relationships, or replace within the requested scope. Free text
-can specify what to retain. Resolve it in the existing context/vibe checkpoint.
-Keep these decisions in this project, even when the skill is installed globally.
+Keep a short working relationship: gap -> mechanism -> expected visible difference
+-> protected anchors. Do not ask the user to approve a rewritten prompt, diagnose
+every pixel, curate another reference board or define a finished visual contract.
+Explicit reserved decisions and requested supervised checkpoints still apply.
 
-WHEN DIRECTION IS OPEN
-Present the design MD's aesthetic as a hypothesis and ask a focused confirmation
-before an exhaustive audit or treatment. Prior component approval does not settle
-the whole identity. Reuse a vibe already supplied instead of asking it again.
-Expand the user's wording into a faithful brief/prompt: requirements/negatives,
-proposed interpretation and unknowns remain separate. Confirm the intended vibe.
-Match the actual deliverable/pattern and confirmed aesthetic together.
-A UI library needs relevant system/component evidence, not only website mood.
-Use suitable MCP coverage, then the relevant public catalog; a business topic is
-an optional filter. A library with the wrong aesthetic is not a visual match.
-For exploratory evolution, use supplied examples to seed complementary MCP
-research; reuse directly for faithful/local work or when accepted evidence covers
-the decision. An example URL alone does not close an exploratory reference phase.
-If MCPs lack usable evidence, try relevant catalog sources through browser/search.
-If usable coverage is exhausted, describe the gap and invite user references.
-Curate 4–8 strong, distinct, inspected initial references unless asked otherwise.
-If fewer than four fit, continue eligible retrieval or report incomplete coverage
-when actual access/budget is exhausted; do not pad or silently advance.
-Show readable evidence, fit, transfer and exclusions for acceptance/correction.
-After acceptance, ask whether to search further or continue with this selection;
-reuse an explicit choice already given. Refine within eight active references.
-Wait for the accepted map and search-closure choice.
-A focused typography/composition repair does not need a full discovery round.
+Use existing evidence first. Additional discovery is conditional and bounded by
+REFERENCE_ROUTER.md; no reference minimum or automatic MCP research. Inspect a
+required source before claiming fidelity. Where original design is authorized,
+missing optional inspiration need not block a clearly labelled proposal.
 
-AFTER DISCOVERY CLOSES
-For consistency/completion with accepted source products, reuse their sufficient
-direction/reference evidence. Align additions and build needed missing families
-before proposing evolution; valued originals are not open to redesign by default.
-Diagnose the actual complaint's causes using DESIGN_DIRECTION.md.
-For UI craft, inspect applied type/color roles, spacing, control families and
-asset treatments with CRAFT.md. Inspect composition/flow when evidence puts them
-in scope. Explain how a shared cause produces the visible inconsistencies,
-why a reference handles that relationship better and what transfers to this product.
-Do not impose a layout redesign: repeated spacing/geometry drift may be the cause.
-Inspect intrinsic padding, parent gaps/margins and container insets before deciding
-where a spacing correction belongs; preserve source controls that already fit.
-Separate demonstrated violations, accepted-intent mismatches and taste hypotheses;
-do not assume a reference is correct or copy its surface treatment.
-Review the scoped causal repair order, then fix shared causes canonically and
-verify affected compositions through the existing system/UI checkpoints.
-Show resolved/pending causes and the integrated baseline before optional polish.
-Refinement adds useful reference principles after the shared repair; return
-to a cause if new evidence reveals it. Preserve scope, semantics and accepted anchors.
+Author in the existing code/canvas. Resolve affected foundations in context, reuse
+canonical owners, preserve correct controls and inspect affected consumers. Use
+existing previews or disposable isolated material; no production review routes.
 
-WHEN FOUNDATIONS CHANGE
-Inspect accepted originals beyond the home page: relevant public subpages,
-component states, CSS/DOM and available published token/system sources.
-Track coverage of needed rules. Deepen those sources first; if insufficient,
-search focused supplements matching the missing pattern and confirmed aesthetic.
-Show contribution/exclusions, review and replace rejected evidence, then resume
-the affected decision. No new four-reference quota or whole-workflow restart.
-Normalize accepted contributions into one coherent system and its protected anchors;
-distinguish observed declarations/computed values from inferred/proposed tokens.
-Reuse canonical tokens/components. Apply affected CRAFT.md criteria and retain
-explicit visual requirements/exclusions in the target's visual contract. Tie each
-requested defect to a concrete current failure and expected result. Inspect applied
-roles and related variants/states in the render with actual properties/ownership;
-a token list or one correct example does not certify a family. Review the specimen.
-Revise affected canonical design MDs with the accepted reference-to-product rules;
-keep documentation and the rendered system/UI consistent without duplicating APIs.
-Inspect affected shared consumers and show the relevant impact before propagation.
-Do not create a competing system or claim complete extraction of another site's
-internal system from public styles/screenshots.
+Compare equivalent baseline/candidate views and the relevant quality anchor.
+Check meaningful variants, states, containers and content stress under CRAFT.md.
+A technically correct result can still lack visual coherence. Default budget: one
+candidate and at most two grouped visual refinement passes per bounded unit, not
+per phase or component. Stop repeating a hypothesis that produces no material gain.
 
-WHEN THE INTERFACE CHANGES
-Develop one coherent treatment within the requested scope.
-Compare before/after with equivalent content, state, viewport and loaded assets.
-Every UI batch includes CRAFT.md's responsive inspection: supported small/large
-containers, affected breakpoint transitions and content-stress/intermediate widths.
-Repair observed failures and report uninspected ranges instead of claiming readiness.
-Inspect the integrated result; an isolated attractive card or hero is insufficient
-evidence for a whole-interface claim. Explain the visible contribution.
-Correct and show again. Preserve a stronger earlier result if polishing weakens it.
-A section request remains that section; later sections reuse its accepted choices.
+Show the actual contribution and tradeoffs. Broad evolution waits for candidate
+acceptance before new shared choices propagate; already-authorized consistency
+repairs need no per-component permission. Reuse accepted implementation afterwards
+and verify contrasting consumers. Keep whole-library coverage/pending cases in the
+existing project record. Do not claim unseen families are complete.
 
-FRONTEND AND QA
-Implement when frontend is already requested or requested later.
-Preserve accepted visual decisions while integrating existing behavior/API contracts.
-Verify relevant states, widths, loaded assets, keyboard/focus and target checks.
-Label mocks and untested services. Backend remains outside the kit.
-
-RESUME
-"Continue with Design Kit from [artifact/revision]. Accepted: [X].
-Pending: [corrections]. Preserve the rest and show the affected revision."
-Reread mutable work/human edits; paths alone do not prove acceptance.
-Invalidate only affected dependent work rather than the whole product.
-
-Reuse retrieved schemas/results/captures; repeat discovery only for an actual
-changed direction or evidence gap. Respect provider limits and user budgets.
-HOSTS.md covers the three platforms/interfaces; PROVIDERS.md covers reference
-access/efficiency. SKILL.md/ONBOARDING.md are the procedure. TASTE.md and
-DESIGN_DIRECTION.md guide judgment; QA does not establish beauty.
+If the user rejects the diagnosis, reinspect the named mismatch before further
+dependent edits. Preserve unrelated accepted work. Required QA and explicit budgets
+both remain binding: stop and report incomplete work rather than hiding failure.
+No paid services, new runtime, mandatory second model or infrastructure rebuild.

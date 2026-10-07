@@ -1,85 +1,70 @@
 GENERAL GUIDE — DESIGN KIT
-Updated: October 5, 2026.
+Updated: October 6, 2026.
 
-Design Kit is a skill with resources and scripts. It guides the current agent
-from UI through frontend and QA, preserving the selected model/settings.
-A plugin is host-specific packaging; the reusable procedure is the skill.
+GOAL
+Improve the rendered interface at acceptable total effort. Procedural compliance,
+more references, passing tests and a positive model summary are not visual uplift.
+SKILL.md is the canonical procedure. This guide does not introduce extra phases.
 
-PLATFORMS AND INTERFACES
-OpenAI: Codex desktop app, plus CLI/IDE.
-Anthropic: Claude Desktop Code tab, plus Claude Code CLI/IDE.
-Google: Antigravity app/IDE, with Gemini CLI as an additional surface.
-HOSTS.md explains activation and differences. Gemini consumer web chat is not
-a verified native target for this local skill-plus-MCP package.
+START
+Use Design Kit in the actual project and current agent:
+"Use Design Kit to improve this UI. Preserve the treatments and behavior I have
+already accepted. Own the remaining visual decisions. Deliver one inspected
+candidate and use at most two grouped visual refinement passes. Do not install
+anything or research broadly; use our existing references/tools for concrete gaps."
 
-START FROM THE AGENT INTERFACE
-Provide access to the kit checkout and actual project. You can ask:
-"Install Design Kit here for this interface, preserving my instructions and work.
-Configure Awwwards and One Page Love if missing; verify tools and readable results.
-Then start the supervised UI-to-frontend workflow."
+Supply the actual target and product goal where they are not already known.
+You do not need a Figma file, finished visual specification or defect inventory.
+The agent inspects relevant evidence and chooses the intervention. A material
+protected choice, inaccessible required source or missing permission may need a
+focused question; ordinary open visual choices do not.
 
-The agent can run the helpers; the designer need not use a terminal.
-See README.md/HOSTS.md for installation, and PROVIDERS.md for MCP setup.
-The skill can be installed globally for the user or in one project. Global
-installation stores the reusable method; project facts and decisions remain local.
-For global setup, ask the agent to install for your user and choose global MCP
-configuration if desired. Helpers support --scope user without a project argument.
-The MCP helper changes only the explicitly selected config after --apply.
-Neither helper downloads dependencies or launches servers.
-Codex metadata declares the reference MCP dependencies. If something is missing,
-the skill shows the concrete setup, guides installation and verifies access.
-Native installation/trust dialogs belong to the host; chat is the fallback.
-Connecting Awwwards can download/launch its npm package within setup authorization.
-Writing config does not prove the provider is connected in the current session.
+WORK
+Inspect the relevant render and source -> identify high-impact visible changes
+-> author one coherent candidate in the existing medium -> inspect and refine
+within the budget -> show the result and relevant QA evidence.
 
-FLOW
-Context/experience -> vibe and faithful expanded prompt -> reviewed references
--> rendered scoped system -> components/interfaces and corrections
--> requested frontend -> relevant QA.
+For craft problems, inspect applied type/color, effective spacing, control
+families and assets. Do not assume a library complaint requires new navigation.
+For open composition, the agent owns hierarchy, proportion and enclosure choices.
+Resolve affected foundations in context; do not first commission a full system.
 
-The flow serves sites, apps, pages, heroes, other sections, components and local
-improvements. Reuse resolved phases and review only necessary system additions.
-For an existing project, detect its identity and canonical system. Local changes
-reuse that vocabulary; ask only when a material identity/system change boundary
-is unclear. Preserve protected anchors, inspect shared consumers and review the
-proposed canonical change instead of creating a competing system.
-Show the actual artifact and wait for explicit acceptance before dependent work.
-Corrections keep the phase open; retain unrelated approvals across follow-ups.
-For library consistency/completion, inherit accepted product controls/assets and
-complete missing families before proposing evolution; reuse sufficient source evidence.
-Every UI batch includes responsive treatment and inspection under CRAFT.md,
-including components/sections, supported container sizes and intermediate widths.
-User examples can be used directly or guide discovery of matching relationships.
-PROMPT.md expands sparse input without inventing audience, features or approved
-styles: preserve requirements/negative constraints, label proposals and unknowns.
+A broad evolution starts with one representative unit before application-wide
+propagation. After acceptance, reuse actual implementation and check contrasting
+consumers. An authorized repair restoring accepted shared rules can cover its
+agreed consumers without per-component permission. Keep whole-library coverage
+and pending cases visible; one attractive example is not a complete library.
 
-REFERENCES AND EFFICIENT RETRIEVAL
-Match deliverable/pattern and agreed aesthetic together across industries.
-Libraries need system/component evidence; a task match with the wrong aesthetic
-does not qualify as a visual reference. Business/genre filters remain optional.
-Use the suitable selected MCP first, then the other for an access/fit gap.
-If unresolved, work through relevant public catalog sources via browser/search,
-including readable public Refero evidence. If usable coverage is exhausted,
-explain the gap and invite user references or clarified direction.
+RESEARCH
+There is no reference minimum. Reuse accepted examples and supplied evidence.
+Default: one targeted discovery query, then one relevant retry/fallback only if
+needed. Inspect selected results; do not crawl entire sites or both MCPs routinely.
+An explicit research brief can change this budget. Missing optional inspiration
+permits an honestly labelled original proposal; missing required fidelity evidence
+does not permit a claim of alignment. Keep the two existing MCP integrations.
+Do not add paid services or equate MCP access with good visual judgment.
 
-Plan supported filters before calls; reuse schemas, results and available
-captures. Retrieve only the useful shortlist; repeat only for an open evidence
-gap. Respect rate limits and explicit budgets. Images/tools still consume agent
-quota even when provider access is free. Inspo is not automatically added.
+REVIEW AND STOP
+Default budget: one candidate plus at most two grouped visual refinement passes
+for the bounded unit, not per phase/component. Stop repeating a hypothesis when
+it gives no material gain. Keep the stronger version and disclose remaining gaps.
+Necessary verification remains required; exhaustion means incomplete, not ready.
+The agent shows the actual result, visible contribution, tradeoffs and inspected
+scope. You accept the result, not every intermediate design micro-decision.
+Explicit guided checkpoints remain available and existing user instructions win.
 
-MEDIUM AND SCOPE
-Reuse the existing medium or propose an in-agent HTML/CSS specimen/preview.
-Penpot is conditional on user choice/access. No separate app or Obsidian bridge
-is required. Review a visual system before styled interface construction.
-When frontend code was already requested, continue after design acceptance.
-Design-only stops at design. Backend, databases and infrastructure are outside scope.
+SETUP AND CONTINUITY
+Use the installed skill and browser first. Install/update only when needed and
+authorized, using README.md and HOSTS.md. PROVIDERS.md is for actual access/setup
+problems, not a mandatory startup step. Global and project installations retain
+their existing supported paths and safeguards. No forced model or app switch.
 
-GUIDES
-docs/01_design_from_scratch.txt: design from scratch.
-docs/02_improve_existing_design.txt: improve an existing base.
-docs/03_frontend_engineering.txt: frontend implementation and QA.
+Keep accepted code, captures, source relationships, relevant commands and pending
+work in the target's existing record. Do not build another compiler, schema,
+reference index or multi-agent system to use this flow.
 
-SKILL.md/ONBOARDING.md are the procedure; supporting routes load only as needed.
-BRIEF.md stays blank in the shared kit; project context stays in the target.
-Package tests do not prove visual uplift or savings. A real trial compares the
-same brief/model/base/reference access/budget with and without the kit.
+VALUE
+Record observable total usage and human intervention on a real task. Mark missing
+measurements unknown. Before/after improvement alone does not prove the kit caused
+it; a matched with/without-kit task is needed for that claim. Package tests are not
+aesthetic tests. No guaranteed score, savings percentage or zero-iteration claim.

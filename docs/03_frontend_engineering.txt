@@ -1,54 +1,27 @@
-FRONTEND ENGINEERING AND QA — DESIGN KIT
-Updated: October 5, 2026.
-Current scope is frontend, not general backend engineering.
+FRONTEND IMPLEMENTATION AND QA — DESIGN KIT
+Updated: October 6, 2026.
 
-PROMPT
-"Use Design Kit to implement [interface/flow] in this project.
-Accepted design: [artifact/revision]. Preserve [tokens/components/content].
-Existing contracts: [API/data]. Important states: [loading/empty/error/etc.].
-Inspect conventions, implement the frontend, verify the actual render/behavior
-and relevant required checks. Report limits and show the result."
+SOFTWARE.md is the implementation reference; SKILL.md owns scope and review.
+For a delegated coded-design assignment, visual authoring and relevant frontend
+verification happen in the same unit. A separate design-approval ceremony is not
+required before writing the candidate. Preserve explicit reserved checkpoints.
 
-PROCEDURE
-SOFTWARE.md is the implementation route. PRODUCT_DELIVERY.md connects requirements
-and evidence for substantial frontend capabilities. SKILL.md preserves human
-design checkpoints; QA.md supplies checks proportional to the requested work.
+Reuse the accepted code, components, tokens and assets instead of reconstructing
+them from screenshots or aesthetic prose. Preserve behavior, public interfaces,
+existing API contracts and human edits. When visual design is already resolved,
+implement faithfully rather than reopening references or identity.
 
-1. Inspect target instructions, stack, callers, existing changes and accepted system.
-2. Define observable outcomes, relevant states/recovery and available contracts.
-3. Reuse useful design/code/tokens; integrate without silently redesigning.
-4. Run affected/required checks and inspect actual render and behavior.
-5. Repair concrete gaps; present implementation, evidence and limits.
+Inspect only relevant callers, states and checks. Use existing preview/test tools;
+no dependency installation or new architecture by default. Exercise meaningful
+loading, empty, error, disabled and successful states when applicable. Inspect
+actual fonts/assets, responsive containers, content stress, keyboard/focus and the
+requested task. Stills and a successful build do not certify live interactions.
 
-Frontend evidence includes real content, relevant widths, loaded typography/assets,
-semantics, keyboard/focus, state feedback and recovery.
-A successful mock does not verify a provider; a screenshot does not verify
-persistence. Disclose a missing API and label authorized frontend mocks.
-Do not implement backend endpoints, databases, migrations or infrastructure.
+Group repairs by their owner. Do not weaken tests or hide defects to pass. Respect
+the global task budget; verification problems cannot become unlimited uncounted
+work. Exhaustion means report incomplete scope and stop, not declare readiness.
 
-TESTS AND BUGS
-Reproduce the actual symptom and distinguish causes before speculative repairs.
-Use checks that could reveal an incorrect result. Derive expectations from the
-requirement or trusted fixture rather than copying implementation logic.
-Existing checks/direct inspection can suffice for small reversible changes.
-Do not weaken valid assertions to pass. Measure suspected performance issues.
-
-AUTHORIZATION AND CONTINUITY
-An initial frontend request covers implementation after design acceptance;
-do not ask for that same permission again. Publishing/deployment needs its own
-existing authorization. Preserve accepted code and still-valid checks; reverify
-only affected work. Keep the selected platform/model/settings.
-No automatic additional agents, background monitoring or reference rediscovery.
-
-INTERFACES AND SETUP
-HOSTS.md covers Codex app, Claude Desktop Code and Google Antigravity.
-Gemini CLI is an additional surface. Setup can be requested in the agent chat.
---with-software adds a direct frontend pointer to SOFTWARE.md without backend scope.
---design-only removes that extra pointer; requested frontend handoff still routes
-through the design skill. README.md explains the helpers and target paths.
-
-RESEARCH AND LIMITS
-Historical research remains in RESEARCH.md and docs/WORKFLOW_RESEARCH.md.
-Load only relevant routes; do not inject every manual/annex by routine.
-Package tests do not certify beauty, complete security, live service behavior
-or identical compliance across models/interfaces. Evaluate the real result.
+For broad visual changes, preserve the accepted candidate during propagation and
+check a contrasting consumer. Keep implemented, verified and human-accepted states
+separate. Label mocks and untested services. Backend, database, infrastructure,
+publication and private uploads are outside scope without separate authorization.

@@ -1,16 +1,18 @@
 interface:
   display_name: "Design Kit"
-  short_description: "Supervised UI design, visual systems and frontend QA"
-  default_prompt: "Use $design-kit to start or resume the requested UI-to-frontend work, reuse this project's accepted decisions and guide me through the relevant design reviews."
+  short_description: "Artifact-first UI design and frontend QA"
+  default_prompt: "Use $design-kit to improve the requested UI in its existing medium. Own open visual decisions, preserve protected work, and deliver an inspected candidate within the stated budget. Use existing reference tools only for a concrete evidence gap."
 policy:
   allow_implicit_invocation: true
+# Preserve existing provider declarations for installed integrations.
+# SKILL.md governs conditional use; this is not a request to run discovery or setup.
 dependencies:
   tools:
     - type: "mcp"
       value: "onepagelove"
-      description: "One Page Love visual reference and section search"
+      description: "One Page Love reference search when relevant and already available"
       transport: "streamable_http"
       url: "https://api.onepagelove.com/mcp"
     - type: "mcp"
       value: "awwwards"
-      description: "Unofficial Awwwards reference server; local setup is described in PROVIDERS.md"
+      description: "Unofficial Awwwards reference server; optional task use and authorized setup in PROVIDERS.md"

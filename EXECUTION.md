@@ -1,31 +1,37 @@
-# Quality and efficient execution
+# Budget, continuity and stopping
 
-Read for effort, budget or continuity. Keep the user's selected platform, model, mode, effort and speed; this kit does not choose or silently switch them. The same design contract applies on supported OpenAI, Anthropic and Google surfaces, while actual tools and UI affordances differ.
+Optimize the accepted result, including preparation, failed attempts, verification and human intervention. A shorter file or cheaper model does not establish a cheaper successful task. Preserve the user's current model, effort, speed and platform; the kit does not silently switch them or introduce a multi-agent workflow.
 
-Optimize effort through the accepted result: stronger visual evidence, explicit choices, reuse and scoped correction reduce avoidable rework. More reasoning, a paid provider or a longer instruction file does not establish better visual judgment. A failed render normally needs observation and repair before model escalation.
+## Bound the assignment, not the ambition
 
-## Spend effort where it can change the result
+[SKILL.md](SKILL.md) defines the default: one candidate and at most two grouped visual refinement passes for one bounded unit. State that boundary briefly when the task is broad. A new phase, changed component or context handoff does not reset it. User-specified budgets and explicit supervision override defaults.
 
-Retain the brief, open question, closed decisions, relevant evidence and side-effect boundaries. Before another iteration, identify the unmet criterion, new evidence or changed hypothesis, and the smallest useful action. Investigate the uncertain region before producing complete variants.
+A pass is a coordinated revision after visual inspection, not each edit or screenshot. Do not create unlimited internal retries by renaming them debugging, responsive work or a new phase. One agent message can contain many expensive actions; a message count is not a quota guarantee.
 
-Complete and inspect the authorized phase/batch, then honor [SKILL.md](SKILL.md)'s human checkpoints before dependent construction. Prior explicit review and setup authorization persist within scope. Ask only for actual missing inputs, user-reserved choices or authorization; routine edits need no repeated permission.
+Research follows [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md)'s small default discovery allowance. Setup is not a prerequisite when the current environment already renders. Reuse commands, canonical paths, source captures and actual accepted code. Do not conduct a repository-wide audit or verify every provider before a local design task.
 
-Use the target's environment and existing commands. Read the entrypoint and matching resource sections instead of all research or the entire reference catalog. Batch related repairs and independent lookups. Repeat tests or discovery only when changes, failures or new scope justify them.
+## Require a reason for the next pass
 
-Reuse accepted code, assets, reference captures and system specimens. A local cache avoids retrieval but does not make images free in the model's context. Show only useful comparisons; avoid duplicate images, whole logs and repeated transcript summaries.
+Name the remaining visible problem and why the next action could change it. Separate:
 
-When consumption is observable, compare completed tasks with equivalent inputs and acceptance criteria; include failed attempts and rework. Otherwise leave cost unknown. Provider access can be free while model/tool/image use still consumes quota. Subscription percentages and API prices are not interchangeable.
+- Execution drift: the intended relationship did not reach the render; repair its owner.
+- Weak treatment: the design itself is unconvincing; change the hypothesis within scope instead of polishing it indefinitely.
+- Missing evidence or access: resolve the exact gap when necessary, not the entire tooling architecture.
 
-## Preserve useful context and acceptance
+If a pass yields no material improvement, do not repeat that hypothesis. Preserve the stronger version. Use a remaining pass for a genuinely different, supported intervention or stop and report the gap. Do not present a self-score, technical pass or larger diff as evidence of visual progress.
 
-Keep one compact project record: scope/current phase, canonical artifact/token/component paths, accepted revision and human decision, pending feedback, selected source relationships, verification/limits and next authorized action. Do not create a skill or process document for every project.
+Required functional/responsive verification stays part of the assignment. Group relevant checks and recheck affected risks. At an explicit resource/time/iteration limit, stop and disclose unfinished work; never claim readiness or silently expand the budget. Do not weaken tests, hide overflow or omit necessary states to manufacture completion. Do not rollback human changes when preserving an earlier candidate.
 
-Reread mutable work before resuming; preserve human changes and revisit only affected decisions. Distinguish agent-selected, implemented, verified and human-accepted work. An old diagnosis or gallery observation is conditional on its original state; verify it when conditions change.
+## Spend context on the relevant visual work
 
-Stay in the current useful conversation. If context becomes overloaded or the user requests a handoff, preserve that small record rather than replaying the history. No automatic memory service, private upload, background observer or agent committee.
+Read the canonical entrypoint and affected support sections, not all manuals and historical research. Revisit changed state only. Retain readable context for composition plus a close view only when it resolves a particular discrepancy. Avoid redundant images, long logs and repeated summaries; a locally cached image still consumes context when supplied again.
 
-## Stop on evidence, not ceremony
+Keep one target-owned record: scope/budget used, protected/open decisions, canonical paths, source relationships actually used, accepted revision/captures, verified scope, pending defects and next authorized action. Distinguish implemented, verified and human-accepted work. Do not require a new schema or document per component.
 
-Do not sacrifice acceptance criteria to an invented token target. Continue substantive repairs while progress is possible; stop decorative preference churn when no defect or supported improvement remains. Preserve a stronger earlier candidate. A repeated failure requires another hypothesis or a concrete gap, not identical retries.
+Stay in a useful current session. A handoff carries the compact state and actual artifacts rather than the conversation archive. Model splitting is optional only when the user already chooses it and the handoff removes more work than it creates; preserve accepted code instead of delegating a new interpretation of aesthetic prose.
 
-Explicit user budgets win; report incomplete work honestly. Tools/dependencies enter for a demonstrated capability gap and authorized scope under [PROVIDERS.md](PROVIDERS.md). Missing access permits independent work and eligible fallback, not fabricated inspection or a guaranteed quality score.
+## Measure only what is observable
+
+Record available usage before/after a bounded task and include failed attempts, preparation and repair. Otherwise leave consumption unknown. Do not derive subscription percentages from API prices, resets from memory, or savings from file length. Current plan/tool facts need current primary documentation when they affect a decision; do not hard-code them into the design procedure.
+
+Judge this kit by rendered quality, acceptance and total observed cost. A before/after gain does not isolate the skill's contribution; a matched with/without-kit comparison is needed for that inference. Package tests establish package behavior, not model obedience or aesthetics. Use a real necessary task before funding a benchmark program. No automatic model-credit experiments, background work or extra services.

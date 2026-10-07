@@ -1,82 +1,33 @@
-DESIGN FROM SCRATCH — DESIGN KIT
-Updated: October 5, 2026.
+DESIGN WITHOUT A FINISHED BASE — DESIGN KIT
+Updated: October 6, 2026.
 
-START IN YOUR INTERFACE
-Activate Design Kit in Codex app, Claude Desktop Code or Google Antigravity.
-HOSTS.md covers setup and additional surfaces. You need not operate a CLI.
-Prompt:
-"Use Design Kit for [site/app/flow/section/component].
-Product: [what it does and whom it serves]. Goal: [user task/result].
-Constraints: [content, stack, brand, scope]. Ask for missing material inputs,
-show references and a visual system before dependent construction.
-Requested deliverable: [design only / frontend with QA]."
+Use SKILL.md's artifact-first procedure in the actual target. Reuse the supplied
+product goal, content, constraints, existing assets and working preview. The user
+need not provide a wireframe or a token system. Ask only about material missing
+facts/reserved choices; otherwise own the open visual decisions.
 
-1. CONTEXT AND EXPERIENCE
-Inspect the actual base, instructions and supplied inputs first.
-Clarify only material audience, task, content, hierarchy and state gaps.
-Show a useful summary/sketch and review its open decisions.
-Do not invent user research or require a complete questionnaire.
+Choose one product-specific treatment and author a representative composition in
+the existing medium. Resolve affected typography, surfaces, spacing and assets
+inside it. Do not build a whole component library or approve a separate system
+specimen before exploring the screen. Use real or clearly representative content.
+An unresolved dominant asset is a design gap, not permission for fake detail.
 
-2. VIBE AND FAITHFUL PROMPT EXPANSION
-Reuse stated direction. Otherwise offer contextual options, surprise me and
-free text. Translate the intended character into observable relationships.
-Expand the sparse request into a useful brief/prompt under PROMPT.md.
-Separate sourced facts/requirements, proposed interpretations and unknowns.
-Preserve what the designer wants to avoid. Do not invent audience, features,
-metrics or exact approved styles. Review this in the same vibe checkpoint.
+Use supplied/accepted visual evidence first. Research only a concrete open question
+under REFERENCE_ROUTER.md. No mandatory gallery board, reference minimum or paid
+fallback. State any inference or missing calibration honestly.
 
-3. REFERENCES
-Match the deliverable/pattern and agreed aesthetic together across industries.
-Business terms are optional filters, not automatic tags. A UI-library request
-needs system/component evidence; a source's task fit cannot excuse a wrong aesthetic.
-Inspect supplied examples as discovery seeds; reuse accepted evidence directly
-for faithful implementation or fully specified local work.
-Start with the selected MCP best suited to the question; use the other for a gap.
-Then search relevant public catalog sources directly when MCPs do not resolve it.
-If usable coverage is exhausted, explain the gap and invite user references.
-Curate 4–8 strong, distinct, inspected initial references unless asked otherwise.
-If fewer than four fit, continue eligible retrieval or disclose incomplete coverage
-when access/budget is exhausted. Do not pad the selection with weak matches.
-Show readable visuals, exact provenance, fit, contributions and exclusions.
-Review selection/contributions, then ask whether to search further or continue.
-Reuse an advance/refine choice already supplied with acceptance. Revise within
-eight active references; wait for accepted interpretation and search closure.
+Inspect the actual render and relevant narrow container/contrasting state. Compare
+its hierarchy, type/image relationships, rhythm and coherence with the goal and
+relevant quality anchor. Correct the highest-impact gaps together. Default budget
+is one candidate and at most two grouped visual refinement passes for the bounded
+unit. A new stage does not reset it. User instructions override the default.
 
-4. SCOPED VISUAL SYSTEM
-Reuse an existing system or propose missing foundations from accepted evidence.
-Apply affected CRAFT.md criteria to real type styles, semantic color/state roles,
-spacing/geometry, assets and relevant behavior. Keep a compact visual contract in
-the existing target record. Preserve canonical values/paths; DESIGN.md records usage.
-Explore selected originals' relevant subpages, patterns/states and available
-public CSS/DOM or published token/component sources under REFERENCE_ROUTER.md.
-Check coverage of needed system rules; deepen accepted sources for gaps, then
-search focused supplements if necessary. Review new contributions and revise
-rejected ones before dependent work; reuse prior acceptance and the agreed vibe.
-Normalize contributions into consistent product roles/rules, not mixed identities.
-Render applied roles and related variants/states at useful widths; inspect actual
-properties/bindings and consumers, not merely a JSON/color list or one correct tile.
-Review/correct until accepted before styled interface construction.
-Public extracted styles are partial evidence, not a site's complete internal system.
+For a broad new direction, show this candidate for acceptance before multiplying
+pages or propagating new shared choices. Preserve accepted code and extend it after
+acceptance. Verify contrasting consumers rather than assuming the specimen proves
+every use. Explicitly requested supervised checkpoints remain binding.
 
-5. COMPONENTS AND INTERFACES
-Build only needed pieces/patterns, with representative content and relevant states.
-A hero-only request does not authorize a full site or exhaustive component library.
-Compose within scope, inspect the actual result and show the contribution.
-Every UI batch includes responsive design/inspection under CRAFT.md, including
-specimens, components and sections; record supported sizes checked and actual gaps.
-Correct affected work and retain the stronger baseline. Section-by-section work
-reuses accepted system/relationships instead of restarting each time.
-
-6. REQUESTED FRONTEND AND QA
-An initial frontend request authorizes implementation after design checkpoints.
-Reuse useful HTML/CSS/tokens, integrate in the target stack and verify behavior.
-Inspect relevant responsive states, fonts/assets, keyboard/focus and required checks.
-Design-only stops at design; backend/database/infrastructure remain outside scope.
-New setup/dependencies and publication follow actual existing authorization.
-
-CONTINUITY AND EFFICIENCY
-Retain accepted revisions, pending feedback and the next action in the existing
-target record. Reuse provider schemas/results/captures and plan filters before
-calls. Additional retrieval must answer an open question; honor quotas/budgets.
-SKILL.md/ONBOARDING.md govern the flow; README.md/HOSTS.md/PROVIDERS.md explain
-setup and limits. Tests do not establish aesthetic quality or model compliance.
+Requested frontend integration/QA uses SOFTWARE.md without rebuilding the visual
+implementation from prose. Design-only does not authorize backend or publication.
+Report actual contribution, inspected scope, remaining defects and consumption only
+when observable. No self-score or guarantee that a candidate has reached excellence.

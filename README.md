@@ -2,111 +2,90 @@
 
 [![Validate kit](https://github.com/ibbuilds/design-kit/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/ibbuilds/design-kit/actions/workflows/validate.yml)
 
-[Install from your agent interface](#setup-from-the-interface) · [Supported platforms](HOSTS.md) · [Reference MCP setup](PROVIDERS.md) · [General guide](docs/GENERAL_GUIDE.txt)
+[Setup](#setup-from-the-interface) · [Supported platforms](HOSTS.md) · [Reference access](PROVIDERS.md) · [General guide](docs/GENERAL_GUIDE.txt)
 
-A supervised **UI -> frontend -> QA skill**, designed primarily for the graphical interfaces of OpenAI, Anthropic and Google. It guides the current agent through product/vibe clarification, inspected references, a rendered design system, components, interface refinement and requested frontend code. No backend work, paid inspiration subscription or separate design runtime is required.
+A UI/frontend skill centered on **one visible improvement at a time**: inspect the relevant target, author a coherent candidate, compare its actual render, refine within a budget, and preserve the code that succeeds. It uses the current agent and existing tools. No additional paid service, custom runtime, reference database or required second model.
 
-## The experience
+This revision is a workflow proposal, not a demonstrated visual-quality boost. Package tests do not establish aesthetics, model compliance or token savings.
 
-1. Inspect the actual project and reuse its brief, base, system and scoped accepted decisions. For open visual improvement, present the documented aesthetic as a reading to confirm/correct; an existing MD does not close the desired direction. Clarify unresolved change boundaries, retain protected anchors and update canonical sources instead of introducing a competing system.
-2. Ask only missing product/experience and vibe questions, using contextual options, surprise me and free text. Expand the user's words into a detailed brief/prompt under [PROMPT.md](PROMPT.md), preserving requirements and negatives, marking proposed interpretation/unknowns, and reviewing it in the same vibe checkpoint.
-3. Match **deliverable/pattern and agreed aesthetic together**, allowing cross-industry inspiration; business/genre terms are optional. Use **Awwwards and One Page Love** where their coverage fits, then matching curated sources/user material. A UI-library task needs system/component evidence; unrelated library styling is not a visual match. Curate **4–8 strong, inspected references** for initial direction, review their contributions, then ask whether to search further or continue unless already answered. Insufficient coverage stays open.
-4. Reuse or develop the scoped design system: real typography, semantic tokens, spacing, geometry, assets and behavior. Inspect selected originals' relevant subpages, states and accessible CSS/system sources. If a needed rule lacks evidence, deepen those sources or find supplemental references and review their contributions within the agreed aesthetic. Normalize accepted relationships into one coherent vocabulary. Show a **rendered specimen** before styled page construction; revise it until accepted.
-5. Build scoped base/composite components and interfaces from that accepted system and reference map. Inspect the actual result, show it, apply feedback and preserve the stronger baseline.
-6. If frontend code was requested, continue through implementation and relevant QA without asking for that same permission again. Design-only stops at design.
+## Use it
 
-Every dependent design phase waits for explicit human acceptance. Existing approvals remain valid within scope; local corrections do not restart the whole workflow. A supplied file, agent self-score or elapsed time is not acceptance. An existing base enters at its actual open question.
+In the real project, ask:
 
-For library consistency/completion, accepted product controls and assets supply the visual authority. Align additions and complete needed missing families before proposing evolution; sufficient source evidence does not require another aesthetic-discovery round. Every UI batch includes responsive design and actual inspection of the supported viewport/container range under [CRAFT.md](CRAFT.md).
+> Use $design-kit to improve this UI. Preserve the behavior and treatments I have already accepted. Own the remaining visual decisions. Deliver one inspected candidate with at most two grouped visual refinement passes. Use our existing references and tools only for concrete gaps; do not install anything.
 
-Before a visual implementation, the agent shows the intended visual source, observed discrepancy/open choice, proposed treatment and review scope. It compares the source with the base, not just the base with itself. Density/structure approval does not approve an aesthetic diagnosis or global propagation. Rejected diagnoses reopen before further dependent edits.
+Name the target and product goal when not already clear. A finished Figma file, wireframe, exact token system or exhaustive defect list is not required. The agent must resolve the open design, not return that work to you.
 
-For existing-design improvement, closing discovery leads to a diagnosis of the actual complaint. UI-craft work starts with visual roles, spacing, control families and assets; composition/flow problems use their relevant evidence. Repair shared causes through the scoped system/UI checkpoints before optional finish. [CRAFT.md](CRAFT.md) binds expected relationships to canonical owners and actual rendered results, so a token list or one correct specimen cannot certify a whole family. Demonstrated defects, accepted-intent mismatches and taste hypotheses remain distinct.
+The default is **artifact-first**, not a sequence of approvals for an expanded prompt, reference board, token sheet and component specimen. Existing explicit user checkpoints remain binding; ask for guided/supervised work when that is useful. A broad new direction is reviewed on a representative candidate before new shared choices propagate across the application. Authorized consistency repairs can update their shared owner and agreed consumers without per-component permission.
 
-The same flow serves a full site/app, a page, a hero/other section, a component or a local improvement. Reuse resolved phases; review only necessary system additions and the requested region. Supplied examples seed complementary exploratory discovery; faithful implementation, fully specified local corrections or an accepted reference map can reuse evidence directly. The user's explicit research/count instructions take precedence. Section-by-section work retains prior acceptance without expanding into a whole site automatically.
+[SKILL.md](SKILL.md) owns the procedure. [ONBOARDING.md](ONBOARDING.md) handles missing inputs and review boundaries. [WORKFLOW.md](WORKFLOW.md) is only a compatibility pointer.
 
-For section work, find the requested pattern first and match its aesthetic there. If connected MCPs lack usable matches, continue through relevant catalog sites with ordinary browser/search, including readable public Refero evidence. Try subsequent relevant sources; if usable coverage is exhausted, explain the gap and invite user references/clarification. Missing MCP access does not disable the fallback library.
+## What should change the output
 
-[SKILL.md](SKILL.md) is the entrypoint; [ONBOARDING.md](ONBOARDING.md) supplies phase guidance. This is **one skill with supporting resources and scripts**, not a custom model/runtime or an automatically installed marketplace plugin. Plugins are host-specific bundles; the skill is the reusable design procedure.
+The agent identifies a concrete visual gap/opportunity and a coherent intervention, rather than merely auditing tokens. Craft complaints start with applied typography/color, effective spacing, control families and assets; they do not automatically become navigation redesigns. Composition work examines attention order, proportion, enclosure and density.
+
+Affected foundations are resolved inside a real composition. The candidate is compared both with its baseline and a relevant accepted example/reference where available. A technically valid or less inconsistent result is not automatically good enough. Shared changes are verified in consumers, not only isolated tiles. Accepted implementation is reused rather than recreated from aesthetic prose.
+
+[TASTE.md](TASTE.md), [DESIGN_DIRECTION.md](DESIGN_DIRECTION.md), affected [CRAFT.md](CRAFT.md) sections and relevant [GUIDELINES.md](GUIDELINES.md) sections remain available. They are selective resources, not a stack to load before every edit. [SOFTWARE.md](SOFTWARE.md), [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) and relevant [QA.md](QA.md) sections cover requested frontend integration and checks.
+
+## Budget and evidence
+
+Default for one bounded unit: one candidate and at most two grouped visual refinement passes. A pass groups consequential fixes; phases, components and context handoffs do not reset it. Stop repeating a hypothesis when it produces no material gain. Preserve the stronger version and report unresolved gaps. User budgets override defaults; necessary verification is not waived when the budget is exhausted.
+
+There is no minimum reference count. Reuse supplied/accepted evidence. Default discovery is one targeted query and one narrower query or relevant fallback when needed; inspecting selected results remains scoped. These are proposed spending guardrails, not optimal counts proved by research. Explicit user research requests take precedence. [EXECUTION.md](EXECUTION.md) and [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) give details.
+
+Keep the two selected integrations, Awwwards and One Page Love, where already configured. Use whichever actually fits the decision; do not call both or repair working setup by routine. The curated [REFERENCES.md](REFERENCES.md) catalog is unchanged. The [reference helper](scripts/reference_scope.py) plans scopes/checks membership, not visual quality or source provenance. Missing optional inspiration permits an honest original proposal when authorized; missing required fidelity evidence does not permit a claimed match.
+
+Provider access is conditional on current availability and limits. Free provider access does not make model/image usage free. Do not add paid providers, registration, uploads or dependencies because discovery failed. [PROVIDERS.md](PROVIDERS.md) is for actual access and authorized setup problems, not a mandatory startup step.
 
 ## Supported interfaces
 
-| Platform | Primary interface | Adapter |
+The existing adapters and native paths are retained:
+
+| Platform | Interface | Adapter |
 | --- | --- | --- |
-| OpenAI | Codex desktop app | `codex` (also CLI/IDE) |
-| Anthropic | Claude Desktop, Code tab | `claude-code` (also CLI/IDE) |
-| Google | Antigravity app/IDE | `antigravity`; `gemini-cli` for Gemini CLI |
+| OpenAI | Codex desktop app, CLI/IDE | `codex` |
+| Anthropic | Claude Desktop Code tab, Claude Code CLI/IDE | `claude-code` |
+| Google | Antigravity app/IDE; Gemini CLI | `antigravity`; `gemini-cli` |
 
-Use it from the agent's prompt/skill picker; the designer does not need to operate a terminal. Native questions, previews and annotations are preferred, with chat/readable artifacts as fallback. [HOSTS.md](HOSTS.md) explains activation, project paths and surface boundaries. Consumer web chats, cloud environments and local coding interfaces do not automatically share skill files or stdio runtimes.
-
-Keep the current model, mode and settings. The same contract does not guarantee identical tools, compliance or visual quality across platforms.
+[HOSTS.md](HOSTS.md) covers the existing integration boundaries. Keep the current model/settings; different hosts do not guarantee identical tool access or output. Native questions/previews are useful when available; readable chat artifacts are the fallback. [PENPOT.md](PENPOT.md) applies only to explicitly chosen, accessible Penpot. No automatic app switch.
 
 ## Setup from the interface
 
-Give the agent access to this checkout. For installation across your projects, ask:
+Use the current installation first. To install/update, give the agent access to this checkout and ask:
 
-> Install Design Kit globally for my user in this interface. Preserve my existing skills and settings. Configure Awwwards and One Page Love globally if missing, verify actual tools and readable results, and guide any required installation or native consent step. Keep each project's brief and design decisions in that project.
+> Install or update Design Kit for this interface using its existing installer. Preserve my instructions, local changes, selected model and working MCP connections. Do not configure additional tools. Use the artifact-first procedure in the actual target project.
 
-For a team/project-local installation, open the real target project and ask:
-
-> Install Design Kit into this project for the interface I am using. Preserve existing instructions and work. Configure Awwwards and One Page Love if missing, verify actual tools and readable results, then start the supervised design workflow.
-
-The agent can perform setup with the helpers under that explicit authorization. It should report concrete conflicts or missing prerequisites, not ask again for already-authorized steps. This repository is the kit, never the target application.
-
-For the agent or manual installation, from this checkout:
+Specify global/user or project scope when installation is needed; reuse an already-known scope. From the checkout, the existing installer supports:
 
 ```sh
-python scripts/install.py --scope user --host codex --check
-python scripts/install.py --scope user --host codex
-python scripts/setup_mcp.py --scope user --host codex
-python scripts/setup_mcp.py --scope user --host codex --apply
-```
-
-For one project instead:
-
-```sh
+# One project; --check reports drift without changing files.
 python scripts/install.py "<target-project>" --host codex --check
 python scripts/install.py "<target-project>" --host codex
-python scripts/setup_mcp.py "<target-project>" --host codex
-python scripts/setup_mcp.py "<target-project>" --host codex --apply
+
+# Or global installation for this user; no project argument.
+python scripts/install.py --scope user --host codex --check
+python scripts/install.py --scope user --host codex
 ```
 
-Choose the appropriate adapter from the table. `--scope user` installs globally for this user; omit the project argument. Project scope remains the default and requires a target directory. `--user-home "<existing-profile-home>"` explicitly selects another home for user scope. Global native paths are listed in [HOSTS.md](HOSTS.md). Avoid installing the same skill globally and locally unless a project needs its own version; hosts differ in duplicate precedence.
+Choose the existing host adapter from the table. `--user-home "<existing-profile-home>"` selects another profile for user scope. Avoid duplicate global/project copies unless intentionally needed. Updating the checkout does not automatically update copied installations; run the existing installer against the selected target/scope. Do not bypass a locally edited-file conflict.
 
-Python 3.9+ supports skill installation and JSON MCP config; validating Codex TOML requires Python 3.11+. The installer copies the full bundle, adds a marked pointer to project instructions only in project scope, preserves unrelated content and refuses locally edited managed files. Global installation does not edit global instruction files or create a project brief. `--check` reports drift without writes (exit 1 when changes are needed); rerun installation to update an unmodified copy. Existing unmanaged resources remain intact. There is no force-overwrite option.
+The installer copies every `PACKAGE` resource, preserves unrelated files, refuses unmanaged/local-edit overwrites and writes a marked project instruction pointer only in project scope. Global installation does not modify global instruction files or create project facts. `--check` exits 1 when drift exists. `--with-software` adds the existing direct frontend pointer for project scope; ordinary updates preserve that choice and `--design-only` removes only that extra pointer. Do not copy SKILL.md alone.
 
-The MCP helper **plans by default**; `--apply` writes the explicitly selected project or user config after conflict checks and backs up an existing config. It installs no dependencies and launches no servers. The host may download/launch the documented Awwwards npm package when connecting. Inspect effective connections across scopes before applying to avoid duplicate providers; reload/trust may be required by the host. Codex metadata declares the reference MCP dependencies for native integration; it does not install Node or launch local Awwwards by itself. The skill detects missing access/prerequisites, presents the concrete setup and uses native questions/consent controls when available, otherwise chat. [PROVIDERS.md](PROVIDERS.md) documents setup and verification.
+MCP configuration remains separate and requires actual authorization. The existing helper plans by default; `--apply` writes the selected config with its conflict/backup protections. It does not itself install dependencies or launch servers. Provider metadata declarations are retained for the user's existing integrations; they are not a claim that every host skips its own setup prompts. The design assignment does not require discovery/setup when relevant tools and evidence already work.
 
-In project scope, `--with-software` optionally adds a direct pointer for requested frontend programming/QA. Ordinary updates preserve that choice; `--design-only` removes that extra pointer. These pointer options do not apply to global installation. The skill itself loads frontend implementation when requested in either scope; backend work remains excluded.
+Preserve the documented One Page Love decimal-priority compatibility path when genuinely needed; see [compatibility details](PROVIDERS.md#codex-decimal-priority-compatibility). Do not introduce it into an unaffected working connection by routine. Installation/provider scripts and supported paths are not changed by this revision.
 
-Manual installation copies every file in `scripts/install.py`'s `PACKAGE` to the selected native skill directory, with a project instruction pointer only for project scope. Copying only SKILL.md is incomplete. Legacy target briefs under `.design-kit/BRIEF.md` remain usable; [WORKFLOW.md](WORKFLOW.md) redirects to the canonical skill.
-
-## Evidence and reusable work
-
-[REFERENCES.md](REFERENCES.md) remains the curated fallback library. [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) scopes discovery, original-link provenance and visual inspection. The helper [scripts/reference_scope.py](scripts/reference_scope.py) plans scoped queries/checks membership; it does not rank visual quality, verify gallery outbound links or enforce browser requests.
-
-Selected MCPs supply reference evidence, not taste by themselves. One Page Love currently documents free beta access with IP limits and possible future paid caps; Awwwards is an unofficial open-source server dependent on the public site. No unlimited/free-forever claim. Inspo and paid providers are not added automatically. A hero thumbnail is not a complete page or proof of interaction.
-
-MCP use is scoped to open decisions: plan filters before calls, reuse schemas/results/captures, retrieve only the useful shortlist, and refresh only affected evidence. The agent chooses the provider by capability and falls back for a named gap instead of duplicating every search. PROVIDERS.md covers batching, payloads, rate limits and explicit budgets.
-
-Keep reference relationships, exclusions and accepted revisions in the target's existing record, otherwise `.design/project.md` using relevant [BRIEF.md](BRIEF.md) fields. Preserve the canonical token format and system document, or use target DESIGN.md for intent when absent. Do not duplicate token values into competing sources. Public extracted styles are partial evidence.
-
-Reuse the existing medium and presentation preference; show actual captures inline in chat when useful. A needed separate specimen uses an isolated preview, not presentation-only product pages/routes. [ONBOARDING.md](ONBOARDING.md) covers evidence and disposable-artifact handling; [PENPOT.md](PENPOT.md) is conditional on user choice and actual access. No canvas app switch, Obsidian crawler or reference database is required. A future capture/index pipeline is separate scope.
-
-[TASTE.md](TASTE.md), [DESIGN_DIRECTION.md](DESIGN_DIRECTION.md), affected [CRAFT.md](CRAFT.md) sections and relevant [GUIDELINES.md](GUIDELINES.md) sections guide visible improvement. [SOFTWARE.md](SOFTWARE.md), [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) and relevant [QA.md](QA.md) sections cover frontend implementation, existing API integration and verification. [EXECUTION.md](EXECUTION.md) covers continuity and effort without choosing a model.
-
-## Verification and the next real trial
+## Verification and honest status
 
 ```sh
 python -m unittest discover -s tests -v
 ```
 
-Offline tests verify installation/update safety, exported resources, provider config schemas and scoped reference queries. They do not evaluate an LLM following human checkpoints, working connections inside every GUI, aesthetic uplift or token savings. Platform paths are checked against primary documentation linked in HOSTS.md; provider limits/source behavior are linked in PROVIDERS.md.
+Existing tests cover installation/update safety, exported resource links, provider configuration and scoped reference queries. Added instruction lint catches known routing regressions; it does not exercise an AI model. A green suite is not a beauty test.
 
-For connection failures, [PROVIDERS.md](PROVIDERS.md) distinguishes native tool access from independent endpoint diagnostics under [scripts/check_mcp.py](scripts/check_mcp.py). A working endpoint does not prove the current host connection. The behavioral regression cases in [workflow evaluation](docs/WORKFLOW_EVALUATION.md) assess the actual agent actions and review scope; they are manual trials, not package-test passes.
+Use one necessary real product task before investing in broader evaluation. Record model/settings, base/content, reference access, task budget, actual renders, human intervention and observable total consumption including preparation and repairs. Mark unknown consumption unknown. A baseline-to-candidate gain is not proof the kit caused it: a matched with/without-kit comparison is needed for that inference. One pair remains preliminary, not reproducibility.
 
-For the confirmed Codex decimal-priority parsing bug, the agent can use the included One Page Love compatibility adapter and `--onepagelove-transport codex-compat` during authorized setup. It preserves reference images/text/links and changes only optional decimal priority metadata. Direct HTTP remains the default for other hosts and unaffected clients; see [the setup and verification limits](PROVIDERS.md#codex-decimal-priority-compatibility).
+The maintainer-only `docs/ARTIFACT_FIRST_REVIEW.md` records this revision's recent primary sources and limits; it is not installed or loaded for design tasks. Historical [research](RESEARCH.md), [workflow research](docs/WORKFLOW_RESEARCH.md), [quality evidence](docs/QUALITY_EVIDENCE.md) and [evaluation scenarios](docs/WORKFLOW_EVALUATION.md) preserve prior decisions. Their older supervised/default-count policies do not override SKILL.md. No model comparison or visual uplift is implied by their existence.
 
-The next useful design trial compares the **same brief, model, base, references and budget**, with and without the kit. Review actual renders for hierarchy, identity, coherence, responsive behavior and task usability; retain human choices, repair count and observable consumption. Do not claim a 9/10 result or success probability before those comparisons.
-
-Historical research and the previously attempted mechanisms remain in [RESEARCH.md](RESEARCH.md), [workflow research](docs/WORKFLOW_RESEARCH.md) and [quality evidence](docs/QUALITY_EVIDENCE.md). They inform choices and state their limits; they are not routine build context or extra mandatory phases. English usage guides live at `docs/GENERAL_GUIDE.txt`, `docs/01_design_from_scratch.txt`, `docs/02_improve_existing_design.txt` and `docs/03_frontend_engineering.txt`.
+Keep accepted code/assets/captures and relevant source relationships in the target's existing record, otherwise `.design/project.md` using [BRIEF.md](BRIEF.md). Do not duplicate token values or add a transcript archive. Design-only, review-only, backend, private uploads and publication retain their explicit scope boundaries.
