@@ -21,6 +21,19 @@ DEFAULT FOR MULTI-PART WORK
 6. STOP whenever the user wants: one word/element, component, group, library,
    section or full page. A smaller request does NOT require a larger workflow.
 
+PHASED IMPROVEMENT INSIDE EACH IMAGE UNIT (NOT INSTEAD OF COMPONENT-FIRST)
+Use PHASED_REFINEMENT.md on a word, component, family, section or page:
+  Phase 1: fundamental concept/visual implementation: copy, proportion,
+           hierarchy, size, base type/color, radius and shape.
+  Phase 2: precision/craft: optical alignment, stroke, controlled gradients,
+           surface detail, image/crop and family consistency.
+  Phase 3: advanced finish only IF it adds value: shadow, material, lighting,
+           highlight, texture, visual depth. Skip for deliberate flat/minimal UI.
+  Phase 4: user/contextual review of the best candidate and prior anchors.
+Return to an earlier phase for an unsolved foundational problem; do not mask
+bad proportions with effects. Phase 4 is a review, NOT a mandatory generation.
+All phases share the current image unit and accepted style/library references.
+
 MANDATORY FEEDBACK AFTER EVERY IMAGE ROUND OR RETURNED BATCH
 Present the actual image result, compare material differences, and ASK what
 the user wants next: revise, accept, change direction, generate matching

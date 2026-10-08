@@ -9,6 +9,12 @@ direction, clearly distinguishing proposal from acceptance. Use relevant
 actually inspected Awwwards / One Page Love reference images to inform open
 aesthetic choices. Don't demand a completed token system.
 
+Within each requested image unit, PHASED_REFINEMENT.md provides the optional
+4-phase lens: fundamental visual concept -> craft/detail -> advanced
+depth/effects only when useful -> user/contextual review. Run corrections
+inside the appropriate phase; ask after every image generation. These phases
+do not replace the component-first progression or require four generations.
+
 Generate images of a first high-leverage COMPONENT or typographic treatment.
 Explore meaningful differences in proportion, typography, geometry, material,
 color roles or framing until the user recognizes the intended style. Keep

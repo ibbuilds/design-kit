@@ -5,6 +5,12 @@ Accept an existing image of text, icon, component, family, section, screen or
 whole design. Keep its protected choices and actual content. Do not demand
 rebuilding the entire library for a local correction or impose sections first.
 
+Choose the active quality problem from PHASED_REFINEMENT.md: Phase 1
+fundamental structure/identity, Phase 2 craft and detail, optional Phase 3
+purposeful depth/effects, Phase 4 user/contextual review. Start directly
+at the weak phase for an existing strong design; if detail corrections
+expose bad foundations, return to Phase 1. Do not require new effects.
+
 Inspect the actual current image, selected earlier exemplars, confirmed or
 provisional foundation and relevant real MCP/user reference imagery.
 Form a material revision: KEEP accepted relationships, REWORK the visible

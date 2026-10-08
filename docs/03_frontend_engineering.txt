@@ -10,6 +10,11 @@ The user or Design Kit can refine each component's visual images. After
 EVERY image round or returned batch, ask the user whether to revise, accept,
 advance or stop. The user may stop at any milestone.
 
+Inside each requested visual unit, PHASED_REFINEMENT.md can guide concept,
+craft, optional advanced depth and user/context review. Its first phase means
+generating a visual concept image, NOT implementing working software.
+The last phase is a visual review, NOT permission for auto-conversion.
+
 Image-based component specimens are not implemented UI elements, editable
 Figma components or validated design tokens. No transition to final design,
 component coding, Figma creation or image-to-code conversion is automatic.

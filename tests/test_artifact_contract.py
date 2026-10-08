@@ -120,10 +120,41 @@ class ImageFirstContractTests(unittest.TestCase):
                 with self.subTest(file=file, pattern=pattern):
                     self.assertIsNone(re.search(pattern, read(file), re.I))
 
+    def test_phase_protocol_is_nested_inside_component_first_workflow(self):
+        phases = read("PHASED_REFINEMENT.md")
+        skill = read("SKILL.md")
+        library = read("COMPONENT_LIBRARY.md")
+        for phrase in ("Phase 1", "Phase 2", "Phase 3", "Phase 4",
+                       "foundation", "craft", "depth", "user", "correction loop",
+                       "skip", "text", "button", "section", "page"):
+            with self.subTest(phrase=phrase):
+                self.assertIn(phrase.lower(), phases.lower())
+        self.assertIn("not four automatic generations", phases)
+        self.assertIn("not a required waterfall", skill)
+        self.assertIn("component library", skill)
+        self.assertIn("PHASED_REFINEMENT.md", skill)
+        self.assertIn("PHASED_REFINEMENT.md", library)
+        self.assertIn("within", read("WORKFLOW.md").lower())
+        self.assertIn("optional", phases.lower())
+        self.assertIn("Phase 1", read("README.md"))
+        self.assertIn("Phase 4", read("ONBOARDING.md"))
+        self.assertIn("PHASED_REFINEMENT.md", read("PROMPT.md"))
+
+    def test_phase_corrections_are_user_led_and_no_effects_are_required(self):
+        phases = read("PHASED_REFINEMENT.md")
+        self.assertIn("every generated image round", phases)
+        self.assertIn("ask the user", phases)
+        self.assertIn("skip if", phases)
+        self.assertIn("visual-image", phases)
+        self.assertIn("return to Phase 1", phases)
+        self.assertIn("not working UI", read("PROMPT.md"))
+        self.assertIn("Stop before actual editable design", read("SKILL.md"))
+        self.assertIn("after every image round", read("README.md"))
+
     def test_new_guides_are_packaged_and_linked(self):
         installer = read("scripts/install.py")
         readme = read("README.md")
-        for file in ("IMAGE_WORKFLOW.md", "COMPONENT_LIBRARY.md", "FOUNDATION.md"):
+        for file in ("IMAGE_WORKFLOW.md", "PHASED_REFINEMENT.md", "COMPONENT_LIBRARY.md", "FOUNDATION.md"):
             with self.subTest(file=file):
                 self.assertIn('"' + file + '"', installer)
                 self.assertIn("](" + file + ")", readme)
