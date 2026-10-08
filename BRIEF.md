@@ -1,36 +1,40 @@
-# Image-first project record — blank template
+# Visual image iteration — blank target-project record
 
-Use the target project's existing record, or .design/project.md. **Keep this copy blank.** Record only facts and useful evidence as they arise; it is not a form the user must complete before an image can be generated.
+Use the target's existing record or .design/project.md. This shared template stays blank; record only known facts and real image references.
 
-## Assignment and authority
+## Scope and foundation
+- Requested unit: text / element / component / group / section / page:
+- Actual product/content/assets and protected visual decisions:
+- User-confirmed foundation / kit-proposed choices / unresolved details:
+- Inspected Awwwards / One Page Love or supplied references and observed relationships:
+- Selected prior images and strongest visual component exemplar:
+- Image tool, viewport/crop and actual user iteration/cost limits:
+- User-selected milestone at which to stop:
 
-- Page/product and design request:
-- Scope: section(s), page, desktop/mobile visual exploration:
-- User-owned foundation location/version and protected choices:
-- User-confirmed vs proposed vs unknown visual decisions:
-- Actual content/assets, known constraints and excluded treatments:
-- Approved reference images, previous accepted work and provenance:
-- Image tool/host actually available; known capability limits:
-- Image generation cost/iteration budget, if supplied:
+## Per-unit image iteration
+- Target unit/family and visual job:
+- Reference images, foundation and exact content:
+- Candidate image IDs/paths and prompt/revision:
+- **Keep / rework / expected visible difference:**
+- Strongest version and status (proposed / agent-selected / user-accepted / reopened):
+- **Feedback after this image round:** revise / accept / change direction / group / next unit / stop:
+- Remaining visual mismatch and next authorized action:
 
-## Section image ledger (repeat as needed)
+## Visual component library (if requested)
+- Accepted exemplar image, style DNA and foundation version:
+- Relevant components, variants and image IDs:
+- Individual components still open / groups ready for efficient batch generation:
+- Whole-library consistency observations, outliers and user or kit revisions:
+- User-selected library milestone:
 
-- Section name, page position and section job:
-- Input foundation/first-section anchor/neighboring selected images:
-- Exact content, target dimensions/aspect ratio and exclusions:
-- Image prompt and deliberate high-impact design changes:
-- Candidate image file paths/versions and comparative observations:
-- Strongest retained image and status (proposed / agent-selected / human-accepted):
-- Significant accepted relationships and responsive unknowns:
-- What must remain consistent in the next section:
+## Sections and page (only if requested)
+- Accepted component images used in each section:
+- Section image versions, composition decisions and review status:
+- Optional page order/storyboard, visual pacing and gaps:
 
-## Whole-page visual decision
+## Stop / handoff
+- User's actual stopping point and accepted image IDs:
+- Source provenance, pending decisions and unverified image limitations:
+- Optional separate future work, **only if user requests it**:
 
-- Intended page order and contact sheet/storyboard path:
-- Observed pacing, hierarchy, transitions and remaining gaps:
-- Foundation updates and which were actually confirmed:
-- Selected section images and unresolved visual decisions:
-- User review/approval and next **user-authorized** action:
-- Final image/spec handoff location (not an implementation claim):
-
-Do not invent paths, captures, approvals, source inspection or image quality evidence. Do not create working pages/components as part of this image-first kit. Preserve actual project code and user edits.
+Never invent captures, approved fonts/tokens, image paths or human acceptance. Image specimens are **not** coded components, accurate UI behavior or a completed editable design.

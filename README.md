@@ -1,76 +1,70 @@
-# Design Kit — image-first visual exploration
+# Design Kit — image-first visual iteration
 
 [![Validate kit](https://github.com/ibbuilds/design-kit/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/ibbuilds/design-kit/actions/workflows/validate.yml)
 
-[Install](#installation) · [Workflow](SKILL.md) · [Image iteration](IMAGE_WORKFLOW.md) · [Foundation](FOUNDATION.md) · [Reference tools](PROVIDERS.md)
+[Workflow](SKILL.md) · [Image iteration](IMAGE_WORKFLOW.md) · [Component library](COMPONENT_LIBRARY.md) · [Foundation](FOUNDATION.md) · [Reference MCPs](REFERENCE_ROUTER.md)
 
-**Design Kit is now for deciding an interface visually through generated images, section by section—not for building the final interface.**
+**Iterate with generated images, at any scale:** a word or type treatment, icon, individual control, component group, section or entire page. Design Kit is not a website/code generator.
 
-The user defines or selects a starting design-system foundation. Design Kit helps explore the first representative section through **multiple specific image generations** and significant revisions. The selected first image and foundation become the anchors for subsequent sections. After the requested sections are visually resolved, the output is an ordered page storyboard/contact sheet and the image-based design decisions. **The user separately decides whether and how the actual design, components or code will be created.**
+## Component-first by default, not compulsory
 
-The existing reference-discovery knowledge is retained: [Awwwards and One Page Love integrations](PROVIDERS.md), the curated [REFERENCES.md](REFERENCES.md) catalog, visual craft principles and scoped research. Existing installer hosts and safe update behavior remain intact. Third-party skills are optional experiments, not dependencies.
+For a multi-part interface:
 
-## How to use
+1. **Foundation:** reuse your choices or let the kit propose a starting direction from inspected references. You control acceptance.
+2. **First component:** iterate its images as many rounds as you want, making meaningful changes until its style is chosen.
+3. **Visual component library:** reuse the accepted image to style related components. Once the shared direction stabilizes, generate **groups of related component images**. You or Design Kit can continue refining outliers.
+4. **Sections, if requested:** compose section images using the chosen component imagery and foundation. Reuse their style across further sections.
+5. **Page, if requested:** view selected section images together and refine the weakest relationships.
+6. **Stop at any milestone:** one text image, component, group, visual library, section or page.
 
-In the actual product project, request:
+**After each image iteration or returned batch**, the kit shows the result, briefly compares it, and **asks what you want next**: revise, accept, change direction, make related components, move on or stop. There is no fixed two-pass limit, and no requirement to create a page for a smaller task. A user can also submit an existing full design image for direct visual refinement.
 
-> Use $design-kit to explore the visual direction with **images only**. Begin from my existing design foundation and supplied references. Start with the hero section, generate and compare substantially different image directions, and refine the strongest one in meaningful chunks until I select it. Reuse that visual anchor for each subsequent section. After all sections are visually decided, present the ordered image storyboard and stop. Do not build the site, components or code.
+These are **image concepts**, not working or editable UI components. Final implementation/conversion is separate, user-authorized work.
 
-Replace “hero” with the section you want to start with; you may request only a single section. Provide your foundation, original imagery/copy and known page sections where available. The kit should organize known constraints and propose missing visual choices clearly, **not invent an approved brand system**.
+## Example prompts
 
-### What you get
+**One component:**
 
-| Stage | Deliverable | Owner |
-| --- | --- | --- |
-| Foundation | User-authored or user-selected visual rules, with unknowns labelled | User |
-| First section | Candidate images, explicit major changes, strongest selected visual anchor | Design Kit explores; user accepts |
-| Remaining sections | Section images that inherit the anchor, with purposeful variation | Design Kit explores; user accepts |
-| Whole page | Ordered selected image set, storyboard/contact sheet, source decisions and unresolved gaps | Design Kit prepares visual handoff |
-| Actual design and implementation | Figma/components/code/live pages, **only in a separate user-selected workflow** | User decides next action |
+> Use $design-kit to explore images of my primary button. Use my foundation or suggest a provisional one from relevant inspected Awwwards/One Page Love references. Iterate with substantial visual changes and ask what I want after each image round. Do not build code.
 
-There is **no automatic two-iteration ceiling**. The desired number of image rounds depends on visible progress and the user's actual budget. Prefer large changes to composition, type/image hierarchy, density and art direction before small details. Images are visual hypotheses, **not functioning or responsive UIs**.
+**Extend the library:**
 
-[SKILL.md](SKILL.md) owns the operating rules; [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md) has concrete prompt/iteration examples. [ONBOARDING.md](ONBOARDING.md) and [BRIEF.md](BRIEF.md) preserve user decision rights and visual evidence. [WORKFLOW.md](WORKFLOW.md) is a compatibility pointer. Historical workflow/research records are not current defaults.
+> Take my selected button image and generate consistent visual images of a secondary button, text link and filter chip. Batch related images once the style is established. Review the family with me.
 
-## Research and optional skills
+**Any other size:**
 
-Reuse user-supplied images first; inspect selected examples through the existing MCP connections when a particular section decision needs references. Do not force an Awwwards/One Page Love search for every round, crawl entire sites, or add services when existing references suffice. The useful MCP/reference flows stay part of the skill.
+> Improve only this headline / icon / card / section / full-page image by generating and comparing images. Preserve my accepted references and stop when I say.
 
-Skills from Skills.sh or other sources might assist image prompts or critique. Do not assume they improve output. Run comparable image tasks with and without an optional skill, assess the **resulting images** and human effort, review permissions/security, and keep only proven contributors. The kit does not automatically install them.
+[IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md) explains prompts and the feedback loop. [COMPONENT_LIBRARY.md](COMPONENT_LIBRARY.md) explains reuse, family consistency and batching. [BRIEF.md](BRIEF.md) is a blank project record.
+
+## Reference advantage and efficiency
+
+Existing Awwwards and One Page Love MCP integrations, the curated [REFERENCES.md](REFERENCES.md) catalog and [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) remain available for **actual inspected images** that settle a visual question. Reuse the accepted reference relationships and first component images across later components and sections rather than researching the same style repeatedly. The intended savings come from that reuse and from coherent group generations; **token savings are not yet measured or guaranteed**.
+
+Optional third-party Skills.sh-style skills may be compared on actual image results when authorized; do not automatically install them or assume they help.
 
 ## Installation
 
-The supported hosts and bundle paths are unchanged:
-
-| Platform | Host flag |
-| --- | --- |
-| OpenAI Codex desktop/CLI/IDE | codex |
-| Anthropic Claude Code | claude-code |
-| Google Gemini CLI | gemini-cli |
-| Google Antigravity | antigravity |
-
-From a checkout, install or update into the real project (not this kit checkout):
+Existing supported host flags: codex, claude-code, gemini-cli, antigravity. For project installation from this checkout:
 
 ~~~sh
 python scripts/install.py "<target-project>" --host codex --check
 python scripts/install.py "<target-project>" --host codex
 ~~~
 
-For an existing global installation:
+For user scope:
 
 ~~~sh
 python scripts/install.py --scope user --host codex --check
 python scripts/install.py --scope user --host codex
 ~~~
 
-Select your actual host/scope. The installer copies the complete managed bundle, checks conflicts before writing, and preserves unrelated instructions, human changes and working MCP configuration. Updating this GitHub repository **does not automatically update previously installed copies**. See [HOSTS.md](HOSTS.md) and [PROVIDERS.md](PROVIDERS.md) for host-specific access issues. A legacy explicit `--with-software` routing option remains for compatibility; it does **not** turn the image-first skill into an autonomous implementation workflow.
+The installer preserves managed file safety, local edits and working MCP configuration. A merged PR **does not automatically update existing installed copies**. See [HOSTS.md](HOSTS.md) and [PROVIDERS.md](PROVIDERS.md). Legacy --with-software routing remains an opt-in for a separately authorized frontend task.
 
-## Verification
+## Verification and limits
 
 ~~~sh
 python -m unittest discover -s tests -v
 ~~~
 
-Tests validate installation safety, packaging, helper behavior and instruction contracts. They **do not prove** that image generation tools are available, that the model will follow instructions, or that images are beautiful. Assess quality using actual comparable section images, user selection and realistic usage. A matched with/without-kit comparison is needed before attributing any uplift to the kit.
-
-Older research and evaluations are preserved for provenance, but their previous artifact-first or implementation-first defaults no longer govern Design Kit.
+Tests verify packaging, installation safety, helper tools and instruction contracts. They **do not prove** visual quality, image-model compliance or savings. Real image outcomes and observable user effort are the measure; attributing improvement requires a matched **with/without-kit** task comparison. Historical implementation-first research is background, not an active default.
