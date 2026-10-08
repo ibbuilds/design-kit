@@ -1,11 +1,10 @@
 interface:
   display_name: "Design Kit"
-  short_description: "Artifact-first UI design and frontend QA"
-  default_prompt: "Use $design-kit to improve the requested UI in its existing medium. Own open visual decisions, preserve protected work, and deliver an inspected candidate within the stated budget. Use existing reference tools only for a concrete evidence gap."
+  short_description: "Image-first, section-by-section UI art direction"
+  default_prompt: "Use $design-kit to explore the UI with section images, starting from my foundation. Iterate with specific prompts and meaningful changes, use the chosen first section to anchor the rest, assemble the page's visual direction from selected images, then stop before actual design or code."
 policy:
   allow_implicit_invocation: true
-# Preserve existing provider declarations for installed integrations.
-# SKILL.md governs conditional use; this is not a request to run discovery or setup.
+# Preserve selected reference MCP connections; invocation is conditional.
 dependencies:
   tools:
     - type: "mcp"

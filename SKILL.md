@@ -1,71 +1,61 @@
 ---
 name: design-kit
-description: "Design, improve, or review interfaces in their existing medium. Use for visual UI work and requested frontend QA, not backend work or kit maintenance."
+description: "Image-first UI art direction: research visual references, iterate section images, and define a page visually; not frontend implementation or backend work."
 ---
 
-# Design Kit
+# Design Kit — decide the look in images
 
-Make the actual interface better, not merely more consistent with a checklist. Own the open visual decisions and deliver a rendered result. Preserve the user's constraints, behavior, content, valued source treatments, and later human edits. Existing code is an implementation baseline, not automatic aesthetic approval.
+**Purpose:** help the user decide what an interface should look like by iterating on **images, one section at a time**. The output is a coherent set of selected section images and a whole-page visual plan. **Do not build the actual design, component library, code or working page as part of Design Kit.** Whether, when and with what tool to implement the result is the user's decision.
 
-## Working agreement
+This replaces the old default of immediately authoring and refining a working UI. Preserve the useful reference research, existing MCP connections, reference catalog, craft judgment and protections against unsupported claims. This is an iterative visual-design skill, not an autonomous website builder.
 
-Default to an **artifact-first** assignment: inspect the relevant context, choose a coherent treatment, implement, inspect and refine, then show the result. Do not require approval of a rewritten prompt, reference board, token sheet, or intermediate diagnosis unless the user requested that supervision. [ONBOARDING.md](ONBOARDING.md) handles missing inputs and explicit checkpoints; it is not a mandatory sequence of phases.
+## Choose the right starting point
 
-A design request delegates open aesthetic choices within its scope. It does not authorize replacing protected identity, changing product behavior, expanding scope, installing dependencies, paid access, private uploads, external writes, or publication. Ask only when a material reserved choice or necessary permission is genuinely unresolved; reuse answers already given. Review-only edits neither code nor project records.
+- **Fresh direction:** start with the user's design-system foundation and one representative section.
+- **Existing design:** reuse accepted foundation values, supplied images and already-selected sections; change only what the user has reopened.
+- **One-section request:** explore that section, with surrounding page context if known; do not invent an entire page.
+- **Already-decided page / implementation request:** provide the visual handoff if requested; the actual design/implementation is outside this skill. Never silently continue into code.
+- **Review-only:** inspect and comment; do not modify assets, code or project records.
 
-Keep the current agent, model, settings, tools, and working medium. No automatic model handoffs, extra agents, runtime, or MCP setup. For broad visual evolution, work on a representative unit first and obtain acceptance before application-wide propagation. An authorized consistency repair may update its shared owner and affected consumers in the agreed batch without per-component permission.
+Preserve product content, brand constraints, valued treatments, real behavior requirements and human edits. A design request does not authorize subscriptions, skill installation, private uploads, external writes, code changes, deployment or model/provider switches.
 
-## 1. Find the visual problem
+## 1. Establish the user-owned foundation
 
-Inspect the actual render, relevant source files and accepted examples. Locate the canonical style/component owners and enough consumers to understand the proposed change. Do not begin with an exhaustive repository or catalog audit.
+Read the target's existing brand/system or the user's foundation first. [FOUNDATION.md](FOUNDATION.md) names the minimum useful choices: design intent, typography roles, color roles, layout/density, shapes/surfaces, imagery direction and explicit exclusions. Do **not** impose a generic design system or claim an agent-proposed font/color is approved. If no foundation exists, organize the user's choices and offer clearly labeled proposals for genuinely open parts; the user controls which become authoritative.
 
-Choose the appropriate treatment:
+The foundation is a **starting base**, not a demand for a completed component library or page. It may be updated when the user accepts evidence from the section images; track what changed so later sections do not drift.
 
-| Task | Starting point |
-| --- | --- |
-| Faithful implementation / consistency | Reuse the closest accepted code, component, source control or composition. Restore its relationships; do not redesign valued originals. |
-| Existing UI, appearance unapproved | Preserve engineering and protected anchors. Resolve the visual relationships that remain open; do not treat the whole library as approved. |
-| New design | Use product goals, real content, assets and constraints to author one representative composition in the chosen medium. |
-| Review | Compare evidence and report prioritized findings; no edits. |
+## 2. Generate the first section as the anchor
 
-For craft complaints, inspect applied typography, color roles, effective spacing, control families and assets before assuming that navigation or layout needs replacement. For composition complaints, inspect attention order, grouping, proportions, enclosure and density. The user supplies direction, not an exhaustive defect inventory. Read only the affected [CRAFT.md](CRAFT.md) sections; use [DESIGN_DIRECTION.md](DESIGN_DIRECTION.md) for unresolved visual choices.
+Pick the first high-leverage section (often the hero, not always) from the user's actual scope. Make a detailed, section-specific image brief using [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md): job and exact content, intended hierarchy, visual treatment, key elements, typography and image relationship, density, crop/framing, dimensions, negatives and references. [PROMPT.md](PROMPT.md) is the optional prompt-expansion aid.
 
-## 2. Choose changes that can actually improve the render
+Use the available image-generation/editing capability to create **images**, not frontend mockup code. The selected reference must be visually inspected, not described as inspected from an unread URL. If the host lacks image-generation access, produce a truthful prompt/brief for the user's image tool and state that no image was generated or reviewed. Do not replace missing visual output with a fabricated success claim.
 
-Use the user's strongest accepted example or an inspected, relevant reference as a quality anchor when available. A baseline that is merely less broken is not necessarily good enough.
+## 3. Iterate images in meaningful chunks
 
-Form a short working note, not a new specification document: **visible gap or opportunity -> proposed mechanism -> expected visible difference -> protected relationships**. Usually one to three coordinated moves suffice; this is a prioritization aid, not a cap on required fixes. Own the choices instead of asking the user to prescribe their pixels. Separate observed violations, intent mismatches and aesthetic proposals.
+For every image round: **inspect -> diagnose the highest-impact visible problem -> specify a substantial change -> generate/revise -> compare -> retain the strongest candidate**. Prefer composition, visual hierarchy, typographic scale, art direction, section structure, density and image framing over endless small border/radius nudges. One round may change several related features when they serve one hypothesis. Be maximally concrete about what should remain and what should change.
 
-The moves must address the requested quality: for example, coordinate control weight and label rhythm across a family rather than adjusting one convenient margin. Do not substitute generic decoration or an unrelated layout overhaul for the actual complaint. When references conflict, select a dominant treatment and bound secondary contributions instead of averaging their identities.
+Allow multiple image generations and divergent directions as necessary to decide the section; **there is no arbitrary two-pass cap**. Respect the user's iteration/cost limits and stop when the user selects the section, a requested budget is exhausted or the next round lacks a testable reason. An agent-picked image is **selected/proposed**, not human-accepted. Keep earlier strong images available for comparison.
 
-Use supplied evidence first. Additional research is conditional on a named decision it can resolve, not a required reference count. [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) uses existing MCPs or the curated [REFERENCES.md](REFERENCES.md) catalog selectively. Missing optional inspiration does not block an authorized original proposal; missing a required fidelity source does block a fidelity claim. Never invent visual inspection.
+## 4. Continue section by section
 
-## 3. Author one coherent candidate
+For each next section, supply the same foundation **and the actual selected first-section image plus relevant prior sections** as visual anchors when the tools support image inputs. Carry over the core type/color/spacing/surface/image rules while allowing different compositions to match each section's purpose. Do not generate full pages instead of resolving individual sections.
 
-Design directly in the target's existing code or chosen editable medium. Resolve affected foundations in a real composition; a separate specimen, complete token system or component library is not a prerequisite. Use an existing preview or isolated disposable artifact when necessary, not a new production review route.
+Compare adjoining sections at matching page width and a realistic reading scale. Preserve which version belongs to which section, and avoid drifting into unrelated styles. Repeat large, specific image iterations for each section. Cover requested responsive views separately; a desktop image does not prove a mobile composition.
 
-Change canonical owners where they explain repeated symptoms. Preserve correct source controls and semantic behavior. A proposed treatment may need coordinated type, spacing, asset and composition changes; do not mistake a tiny diff for a high-value design. Conversely, do not rebuild adequate structure merely to make the change look substantial.
+## 5. Decide the whole page visually, then stop
 
-Use real or explicitly representative content and loaded fonts/assets. Keep the full composition visible while refining details. For a family change, include an affected consumer and a meaningful variant/state; for a screen, include a contrasting state or narrow container where it challenges the design. Retain accepted implementation, not just prose about it. Requested frontend integration follows [SOFTWARE.md](SOFTWARE.md) inside this assignment.
+Put selected section images into the **intended page order** as a contact sheet/storyboard or another readable visual sequence. Inspect transitions, pacing, repeated patterns, hierarchy and missing section content. Revisit section images until the **complete page is visually decided**, not merely until every section has one draft. The approved foundation, selected images, exact section prompts, constraints, unresolved questions and image provenance form the handoff.
 
-## 4. Compare and correct within the budget
+**Stop at this visual specification.** Do not automatically turn images into Figma layers, components, HTML/CSS/React or a published page. The user chooses a separate implementation/design task and tool. Provide a handoff only when requested; do not imply generated images are working, accessible, responsive interfaces.
 
-Inspect the actual render at intended viewing size, then the discrepant region closely. Compare baseline/candidate under equivalent content, state, viewport and loaded assets. Compare the anchor's relevant relationships too, without assuming identical pixels suit different content. Judge the images before relying on your explanation of the changes.
+## Conditional resources and guardrails
 
-Check visual contribution separately from functional/responsive correctness. Repair affected states, widths, content stress and relevant failures using CRAFT.md and matching [QA.md](QA.md) sections. Numerical consistency, screenshot counts and passing tests do not certify visual quality.
+- [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) and the existing Awwwards / One Page Love MCPs: use when relevant to visual decisions. Preserve working integrations; no mandatory research quota or setup ritual. [REFERENCES.md](REFERENCES.md) remains the catalog.
+- [DESIGN_DIRECTION.md](DESIGN_DIRECTION.md), [TASTE.md](TASTE.md) and relevant [CRAFT.md](CRAFT.md): composition and image critique, selectively—not a required reading marathon.
+- [ONBOARDING.md](ONBOARDING.md): user ownership, review boundaries, existing decisions and continuity. [EXECUTION.md](EXECUTION.md): spending and stopping without a fixed iteration count.
+- [HOSTS.md](HOSTS.md) / [PROVIDERS.md](PROVIDERS.md): access and setup only when needed. [PENPOT.md](PENPOT.md), [SOFTWARE.md](SOFTWARE.md), [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) and frontend QA guidance are **not steps in this image-first skill**; they are retained as separate legacy/conditional references.
+- External skills (including Skills.sh-style packages) are **optional experiments**, not prerequisites. Do not install or execute unreviewed skill instructions. Evaluate concrete benefit on comparable image tasks before incorporating any.
+- Record concise project-specific decisions in the target's existing notes, otherwise .design/project.md with [BRIEF.md](BRIEF.md). Do not put product identities or generated images into this shared skill repository.
 
-Default budget for one bounded unit: **one candidate and at most two grouped visual refinement passes**. A pass addresses the highest-impact remaining gaps together; another phase, component or context handoff does not reset it. [EXECUTION.md](EXECUTION.md) defines the stopping rules. User-specified budgets override this default. Do not weaken correctness checks or hide incomplete work to fit the budget.
-
-If a pass produces no material improvement, do not repeat the same hypothesis. Distinguish execution drift from a weak treatment or missing evidence. Preserve the stronger version. An alternative must fit the remaining scope/budget; otherwise report the unresolved gap and stop, without declaring victory.
-
-## 5. Deliver evidence and preserve the gain
-
-Lead with the actual result and a useful before/after comparison. Briefly state the visible contribution, important tradeoffs, checked scope and remaining limits. No numerical self-score or unsupported quality claim. Human acceptance belongs to the user; agent-selected work is not human-approved.
-
-For broad evolution, wait here before propagating new shared visual choices. Once accepted, reuse their actual code/assets/tokens and verify a contrasting consumer. Keep a small coverage record for a whole-library request; a single attractive example does not close uninspected families.
-
-Retain paths, accepted revision/captures, protected choices, pending defects and next authorized action in the target's existing record, otherwise `.design/project.md`. Do not duplicate token values, archive the transcript, or update the shared kit during a design task.
-
-## Conditional resources
-
-[TASTE.md](TASTE.md) and [GUIDELINES.md](GUIDELINES.md): a relevant unresolved craft/experience question, not compulsory extra reading. [PROMPT.md](PROMPT.md): requested prompt help. [HOSTS.md](HOSTS.md) / [PROVIDERS.md](PROVIDERS.md): actual activation/access/setup problems. [PENPOT.md](PENPOT.md): user-selected Penpot only. Historical research is not build context. This file owns the current procedure; supporting documents do not add unrequested research quotas or approval phases.
+A good result is an **evidence-backed visual decision**, not a large diff, a pass count, a model's self-rating or a claim that the future implementation will work.

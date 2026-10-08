@@ -1,7 +1,7 @@
 # Workflow compatibility pointer
 
-[SKILL.md](SKILL.md) is the single canonical procedure. Start there for UI design, improvement, review and requested frontend QA.
+The canonical Design Kit workflow is [SKILL.md](SKILL.md). It is **image-first, section by section**: user-owned [foundation](FOUNDATION.md) -> repeated [section-image generation and meaningful visual iteration](IMAGE_WORKFLOW.md) -> later sections anchored in the first selected image -> ordered whole-page visual decision -> **stop**.
 
-The default is artifact-first: inspect the relevant target, author a coherent candidate, compare the actual render, refine within the budget, then present the result. Intermediate supervision is explicit, not a required prompt/reference/system approval sequence. Preserve existing user-reserved checkpoints.
+The final design, components and implementation happen only if the user separately chooses and authorizes that work; they are not part of the Design Kit flow.
 
-Use [ONBOARDING.md](ONBOARDING.md) only for scope, missing input and review boundaries; [EXECUTION.md](EXECUTION.md) for budget and continuity; [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) for a concrete evidence gap; and [SOFTWARE.md](SOFTWARE.md) for requested frontend implementation. Legacy target briefs remain valid. Historical workflow documents do not override the current entrypoint.
+Use [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) for relevant existing Awwwards / One Page Love MCP discovery, [ONBOARDING.md](ONBOARDING.md) for user ownership/checkpoints, and [EXECUTION.md](EXECUTION.md) for budgets and stopping. Historical artifact-first documentation does not override this workflow.
