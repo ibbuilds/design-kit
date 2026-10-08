@@ -1,6 +1,6 @@
 # Legacy frontend reference — outside Design Kit's default scope
 
-This document is retained for separately user-authorized frontend tasks and the explicit legacy installer software pointer. **Design Kit itself stops at selected section images and the complete page's visual decision. It never auto-implements these images.** Read [SKILL.md](SKILL.md) for the current purpose. The implementation advice below applies only after a separate user instruction chooses that work.
+This document is retained for separately user-authorized frontend tasks and the explicit legacy installer software pointer. **Design Kit stops at the user's chosen image milestone—text, element, component, visual library, section, or page—and never auto-implements those images.** Read [SKILL.md](SKILL.md) for the current purpose. The implementation advice below applies only after a separate user instruction chooses that work.
 
 # Frontend implementation and QA
 
