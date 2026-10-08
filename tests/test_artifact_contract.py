@@ -67,7 +67,7 @@ class ImageFirstContractTests(unittest.TestCase):
                        "contact sheet", "third-party"):
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase, workflow)
-        self.assertIn("There is **no arbitrary two-pass cap**", read("SKILL.md"))
+        self.assertIn("**there is no arbitrary two-pass cap**", read("SKILL.md"))
         self.assertIn("no universal two-pass cap", read("EXECUTION.md"))
         self.assertIn("small corrections", workflow)
 
@@ -78,7 +78,7 @@ class ImageFirstContractTests(unittest.TestCase):
                 self.assertRegex(text, r"(?i)user")
                 self.assertRegex(text, r"(?i)foundation")
         self.assertIn("agent-proposed", read("SKILL.md"))
-        self.assertIn("not human approval", read("ONBOARDING.md"))
+        self.assertIn("agent-picked image with user approval", read("ONBOARDING.md"))
         self.assertIn("No component implementation", read("IMAGE_WORKFLOW.md"))
         self.assertIn("outside this skill", read("SKILL.md"))
 
@@ -108,7 +108,7 @@ class ImageFirstContractTests(unittest.TestCase):
         installer = read("scripts/install.py")
         for relative in ("IMAGE_WORKFLOW.md", "FOUNDATION.md"):
             self.assertIn('"' + relative + '"', installer)
-            self.assertIn("[" + relative.split(".")[0].capitalize(), read("README.md"))
+            self.assertIn("](" + relative + ")", read("README.md"))
         self.assertIn("with/without-kit", read("README.md"))
         self.assertIn("do not prove", read("README.md"))
         self.assertIn("not frontend", read("SKILL.md"))
