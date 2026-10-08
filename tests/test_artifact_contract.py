@@ -69,7 +69,7 @@ class ImageFirstContractTests(unittest.TestCase):
                 self.assertIn(phrase, workflow)
         self.assertIn("**there is no arbitrary two-pass cap**", read("SKILL.md"))
         self.assertIn("no universal two-pass cap", read("EXECUTION.md"))
-        self.assertIn("small corrections", workflow)
+        self.assertIn("Small corrections", workflow)
 
     def test_user_owns_foundation_acceptance_and_actual_build(self):
         for relative in ("SKILL.md", "ONBOARDING.md", "README.md", "BRIEF.md"):
@@ -112,7 +112,7 @@ class ImageFirstContractTests(unittest.TestCase):
         self.assertIn("with/without-kit", read("README.md"))
         self.assertIn("do not prove", read("README.md"))
         self.assertIn("not frontend", read("SKILL.md"))
-        self.assertIn("separate user", read("docs/03_frontend_engineering.txt"))
+        self.assertIn("SEPARATE USER-SELECTED TASK", read("docs/03_frontend_engineering.txt"))
 
 
 if __name__ == "__main__":

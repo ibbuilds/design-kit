@@ -25,7 +25,15 @@ Use relevant product references only for the question they can settle. A landing
 
 There is **no minimum reference count**. One well-matched inspected example may be sufficient. Start from a targeted discovery query and narrow/fallback only for an unresolved gap; this is a spending guide, not a fixed limit that overrides the user's research instruction. Do not automatically call both providers, verify every MCP or launch setup before the first image round.
 
-Keep the selected unofficial Awwwards server and official One Page Love connection available under [PROVIDERS.md](PROVIDERS.md), with host boundaries in [HOSTS.md](HOSTS.md). Do not add paid providers or silently repair working configuration. The helper in scripts/reference_scope.py only scopes discovery and membership; it does not inspect imagery or judge design quality.
+Keep the selected unofficial Awwwards server and official One Page Love connection available under [PROVIDERS.md](PROVIDERS.md), with host boundaries in [HOSTS.md](HOSTS.md). Do not add paid providers or silently repair working configuration. The helper in scripts/reference_scope.py only scopes discovery and membership; it does not inspect imagery or judge design quality. From the skill directory, use it for the **specific source and section** relevant to the image decision:
+
+~~~sh
+python scripts/reference_scope.py sources --section "Complete websites and visual direction"
+python scripts/reference_scope.py queries --section "Complete websites and visual direction" --query "technical editorial typography"
+python scripts/reference_scope.py check https://onepagelove.com/example --section "Landing pages and marketing surfaces"
+~~~
+
+Choose an actual section reported by `sources`. The examples are not a request to run every query. `--source-url` is for an expressly user-added URL, not an unrestricted expansion. These commands scope references; the agent must still inspect the selected visuals through the current host before using them to condition a section image.
 
 ## Observe before transferring
 
