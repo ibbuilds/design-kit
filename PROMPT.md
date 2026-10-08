@@ -1,21 +1,21 @@
-# Precise prompts for section-image generation
+# Specific image prompts for any visual scale
 
-Use with [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md) when a section prompt needs improvement. This resource refines **image instructions**, not instructions to build a site or generate code.
+Use [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md) to expand **image-generation** prompts, never mandatory frontend instructions. Include the requested target, content, scale, provisional/confirmed foundation, actually inspected reference image, explicit style anchor, protected elements and visible expected change.
 
-## Expand specificity, not fictional authority
+## Template
 
-Preserve the user's actual product language, desired visual qualities, constraints, section scope, existing foundation, selected images and exclusions. Separate **confirmed**, **proposed** and **unknown** details. A reference URL that has not been visually inspected does not prove a style or composition.
+> Generate an **image** of [text / icon / component / family / section / page] for [known product] at [scale or aspect]. The visual job is [specific purpose]. Use [accepted or explicitly proposed typography/color/geometry/density]. Match the selected [actual component/library/section image] in [stable relationships]. Adapt [actually inspected MCP reference] only for [observed useful trait]. Show [exact content, relevant components/states, crop/visual hierarchy]. **Keep** [locked style/content]. **Rework** [material weak relationship] so [expected visible difference]. Avoid [specific unwanted patterns]. This is a static image concept, not working UI.
 
-A good image prompt answers what should be visible, at what image scale, in what hierarchy, with what assets and art direction, and what must not change. Do not invent product claims, brand typography, measurements, approved tokens, testimonials or intended user research. Let the user define or accept their foundation.
+## Examples
 
-## Image prompt template
+**Text only:** Generate a readable image specimen of the headline "Explore ideas" on the accepted neutral surface. Compare a compact modern geometric setting against a taller editorial setting. Preserve the exact words and don't add a hero section. Keep source copy outside the image, because generative imagery can misspell it.
 
-> Generate a visual concept image for [specific page section] of [product], viewed at [dimensions/aspect]. Its job is [one concrete section objective]. Use the user-owned foundation: [confirmed type roles, color roles, layout density, shapes/surfaces, imagery]. Preserve [exact approved content/assets/constraints]. Arrange [major regions and proportion]; prioritize [focal point and attention order]; use [image subject, framing, treatment and crop]. Match the chosen [first or previous section image] in [specific persistent relationships] while changing [section-specific rhythm]. Include [required text/control/proof elements]. Avoid [explicit unwanted styles and content]. Create **one static section image**, not a full page or functioning UI.
+**First component:** Generate images of one primary button labelled "Continue". Explore proportion, tactile edge/surface and typographic weight, using the inspected reference only for the observed control emphasis. Do not invent a whole website.
 
-When useful, add a second variation with a **different structural proposition**, not cosmetic rephrasing. Specify meaningful revision deltas to the existing chosen image: keep / replace / expected visible difference. Record what was actually generated and inspected, rather than assuming text rendering or identity transfer is exact.
+**Component batch after the first exemplar is selected:** Using the **attached accepted primary-button image** and the foundation, generate a coherent comparison sheet of secondary button, icon-only action, link and disabled state. Preserve accepted type, contrast, border/material and density while expressing distinct priority.
 
-## Discovery prompt is separate
+**Section after library:** Compose a pricing-section image using the selected typography, button and card specimen images. Preserve their style; improve relative emphasis and reading order for the real content.
 
-An Awwwards/One Page Love search should be aimed at a **named visual relationship** (for example asymmetrical editorial type with cropped product imagery), not a demand that the MCP generate our design. [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) owns discovery, provenance and limits.
+A submitted full-page image can also be revised **directly**, without a compulsory component-by-component reconstruction.
 
-Do not add an automatic research, foundation approval, component generation or frontend implementation phase after prompt expansion. The image loop remains the deliverable. Existing third-party prompting skills are optional experiments and may be compared on the same section brief.
+After every image round, **show and ask the user** whether to refine, accept, switch direction, generate siblings, advance or stop. A reference URL alone is not evidence the model saw the image. [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) owns Awwwards/One Page Love discovery and provenance; third-party prompt skills are optional, unproven experiments.

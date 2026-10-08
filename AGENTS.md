@@ -1,14 +1,11 @@
-# Design Kit repository — maintainer instructions
+# Design Kit repository — maintainer guidance
 
-This repository packages a **visual image-iteration skill**, not an autonomous product builder, code generator, or agent runtime. The canonical procedure is SKILL.md: user-owned foundation -> first section image explorations -> subsequent section images -> whole-page visual decision -> stop. The user, **not Design Kit**, decides whether and how to implement a completed direction.
+This repository packages an **image-first visual-iteration skill at any scale**. It does **not** create working designs, UI components, code or a custom runtime.
 
-- Preserve useful Awwwards and One Page Love MCP integrations, the curated REFERENCES.md catalog, HOSTS.md / PROVIDERS.md access guidance, safe installer/manifest behavior and existing user-edited work.
-- Keep canonical image workflow instructions consistent across README.md, SKILL.md, IMAGE_WORKFLOW.md, FOUNDATION.md, BRIEF.md, ONBOARDING.md, EXECUTION.md, PROMPT.md and the docs/ entrypoints. WORKFLOW.md is only a compatibility pointer.
-- When a product asks for images, do not substitute frontend implementation. When a product asks for code, acknowledge that implementation is outside this skill and requires a separately user-selected task. Preserve historical SOFTWARE.md and QA guidance without routing users to them automatically.
-- The user owns the design foundation and visual acceptances. Proposals/agent selections are not human approval; generated static images do not verify functioning responsive UI.
-- Make image prompts highly specific. Iterate section by section with meaningful visual changes; reuse the actual selected first-section image as an anchor. Do not impose a fixed two-pass cap. Use existing reference providers for concrete gaps, not as a mandatory waterfall.
-- Third-party skills are optional and should be evaluated against image outcomes under matched inputs. No automatic skill installs or unreviewed external instructions.
-- Keep authored docs/instructions/code in English. Product facts, actual captures and design decisions belong to target projects; do not put them in this kit.
-- Do not change external application code or make paid calls as part of kit maintenance. Preserve concurrent work; no force push/merge by default.
-- Run the existing unittest suite after package changes. Passing tests establish structural/package behavior only, not improved design quality.
-- Historical research/evaluation files remain archived context and do not override SKILL.md.
+- [SKILL.md](SKILL.md) is canonical. For broad work, default to foundation -> **first representative component image** -> **image-based component library** -> sections -> optional page. For a text/icon/button/section-only request, respect that smaller scope. Support direct full-page image revision.
+- The user controls foundation approval, image acceptance, iteration count and stopping point. Kit-proposed foundations are clearly provisional. **After every image iteration or returned batch**, show images and ask what the user wants next; never silently advance.
+- First component image establishes style DNA. Use accepted exemplar images to generate related components, then coherent **groups/batches** when style is stable. The user or Design Kit can refine inconsistent visual component images. Reuse those actual images for section exploration.
+- Preserve **Awwwards and One Page Love MCPs**, [REFERENCES.md](REFERENCES.md), [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md), HOSTS/PROVIDERS access guidance and existing installer safeguards. Inspect actual sources; don't impose gratuitous repeated gallery research.
+- Keep SKILL, IMAGE_WORKFLOW, COMPONENT_LIBRARY, FOUNDATION, README, BRIEF, PROMPT, ONBOARDING, EXECUTION, DESIGN_DIRECTION, WORKFLOW and docs usage guides aligned. Historical material is background.
+- External skills are optional experiments. No automatic installs, paid calls, model switches, private uploads, external product writes, implementation, conversion, merge or force-push.
+- Keep authored documentation in English and product-specific material in the target project. Run python -m unittest discover -s tests -v after package changes. Passing tests cannot establish image quality, model obedience or token savings.

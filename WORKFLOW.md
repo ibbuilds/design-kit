@@ -1,7 +1,11 @@
 # Workflow compatibility pointer
 
-The canonical Design Kit workflow is [SKILL.md](SKILL.md). It is **image-first, section by section**: user-owned [foundation](FOUNDATION.md) -> repeated [section-image generation and meaningful visual iteration](IMAGE_WORKFLOW.md) -> later sections anchored in the first selected image -> ordered whole-page visual decision -> **stop**.
+[SKILL.md](SKILL.md) is the canonical procedure. Design Kit is **image-first at any scale**—a single text treatment, icon, control, component family, section, screen or complete design image.
 
-The final design, components and implementation happen only if the user separately chooses and authorizes that work; they are not part of the Design Kit flow.
+**Default for a multi-part project, only as far as the user wants:**
 
-Use [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) for relevant existing Awwwards / One Page Love MCP discovery, [ONBOARDING.md](ONBOARDING.md) for user ownership/checkpoints, and [EXECUTION.md](EXECUTION.md) for budgets and stopping. Historical artifact-first documentation does not override this workflow.
+[Foundation](FOUNDATION.md) -> first representative component image -> [consistent visual component library](COMPONENT_LIBRARY.md) (batch related elements once stable) -> [section images](IMAGE_WORKFLOW.md) from accepted components -> optional page sequence.
+
+There is **no compulsory library** for a single-element request, and a user may submit a full design image directly. After **every image round or returned batch**, show the images and **ask whether to revise, accept, explore related elements, continue or stop**. No fixed two-pass cap; the user controls iteration.
+
+Reuse **actual accepted component images** and relevant inspected **Awwwards / One Page Love MCP references** through [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md). [ONBOARDING.md](ONBOARDING.md) governs checkpoints; [EXECUTION.md](EXECUTION.md) covers budgets and efficiency. Stop at the chosen visual milestone before editable design, coded components or conversion.
