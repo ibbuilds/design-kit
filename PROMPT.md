@@ -4,7 +4,7 @@ Use [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md) to expand **image-generation** prompt
 
 ## Template
 
-> Generate an **image** of [text / icon / component / family / section / page] for [known product] at [scale or aspect]. The visual job is [specific purpose]. Use [accepted or explicitly proposed typography/color/geometry/density]. Match the selected [actual component/library/section image] in [stable relationships]. Adapt [actually inspected MCP reference] only for [observed useful trait]. Show [exact content, relevant components/states, crop/visual hierarchy]. **Keep** [locked style/content]. **Rework** [material weak relationship] so [expected visible difference]. Avoid [specific unwanted patterns]. This is a static image concept, not working UI.
+> Generate an **image** of [text / icon / component / component group / family / section / page] for [known product] at [scale or aspect]. The visual job is [specific purpose]. Use [accepted or explicitly proposed typography/color/geometry/density]. Match the selected [actual component/library/section image] in [stable relationships]. Adapt [actually inspected MCP reference] only for [observed useful trait]. Show [exact content, relevant components/states, crop/visual hierarchy]. **Keep** [locked style/content]. **Rework** [material weak relationship] so [expected visible difference]. Avoid [specific unwanted patterns]. This is a static image concept, not working UI.
 
 ## Examples
 
