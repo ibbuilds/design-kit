@@ -1,74 +1,60 @@
-# Image-first section workflow
+# Image iteration at any visual scale
 
-This is the practical production loop used by [SKILL.md](SKILL.md). It deliberately **ends before implementation**. The unit of work is a **section image**, not a coded section or an entire functioning page.
+[SKILL.md](SKILL.md) owns the workflow. **One image work unit** may be a letterform, text treatment, icon, control, component, component group, section, screen or entire page. This is an **image concept**, not an editable coded component. Do not force section-sized deliverables onto smaller requests.
 
-## A. Prepare the visual input
+## 1. Establish the requested unit
 
-For a section, collect only what affects the image:
+| User input | Image unit | Important visual decisions |
+| --- | --- | --- |
+| Text, headline or typography | Isolated typographic treatment shown with enough context to judge it | Typeface character, scale, tracking, wraps, color, contrast, spacing |
+| Icon, logo detail or visual element | Isolated mark/treatment at an honest usage scale | Shape, weight, silhouette, alignment, material |
+| Button, input, menu, card or other component | One visual component specimen, with applicable variants | Hierarchy, content, proportion, material, states, neighbors |
+| Related components | Cohesive comparison sheet or grouped image variants | Shared style, useful differences, family consistency |
+| Page section | One section image composed from established visual components | Composition, type/image hierarchy, focal point, narrative and responsive crop |
+| Whole design or page | Existing image revision or assembled page image if requested | Global hierarchy, pacing, components, sections and consistency |
 
-1. **Section job:** what someone must understand or feel, and how this section advances the page.
-2. **Actual copy and content:** headline, supporting text, CTA labels, proof/data, assets. Mark unknown copy; never invent credible-sounding proof or testimonials.
-3. **Foundation:** user-approved or still-proposed typography roles, semantic/expressive color roles, layout width and density, surfaces and geometry, imagery direction and exclusions.
-4. **Section constraints:** desktop/mobile target, aspect ratio or dimensions, expected neighboring sections, must-show UI, crop safe areas and any locked treatments.
-5. **Visual references:** supplied images, selected preceding sections and relevant inspected provider examples. Note what *relationship* is worth transferring, not just the source URL.
-6. **What to solve now:** one or more material visual problems, such as an unconvincing opening composition or unclear type/image hierarchy.
+For a large project, prefer **component-first** work and build a visual library before designing sections. For a one-off target, begin and end at its actual size. Never demand a finished library for a user who asked to refine only a button or text treatment.
 
-Prefer an existing image as a conditioning reference where the current image tool permits it. Do not pretend a text-only mention of an image guarantees continuity.
+## 2. Gather enough real evidence
 
-## B. Write a specific prompt
+Use known product purpose and **exact supplied copy**, the current user-confirmed or proposed foundation, images already selected by the user, and relevant *actually inspected* examples from the existing reference MCPs. Ask a focused question when vital input is missing; do not invent logos, metrics, testimonials, fonts or approved tokens.
 
-Use the following structure and fill it with real decisions; remove irrelevant slots. Be descriptive enough that two distinct compositions would not both count as satisfying the brief.
+References serve different roles: a selected first component establishes **style DNA**; a selected related component establishes family rules; a selected section informs composition; a provider example can resolve a fresh visual question. Use actual image inputs when the image tool supports them. A link or text description alone does not guarantee the model saw the image.
 
-> Create an image of **[page section]** for **[product and known audience]** at **[width, height or aspect ratio]**. The section's job is **[specific outcome]**. Use the **[user-approved/proposed]** foundation: **[actual type hierarchy, colors, geometry, image treatment and density]**. Preserve **[locked elements/copy/assets]**. Compose it as **[clear structure, focal point, proportions, text placements and negative space]**. Art-direct **[subject, crop, lighting, background and visual relationship]**. Match the selected **[first-section/previous-section image]** in **[identified stable traits]**, but differentiate this section by **[purposeful change of pace]**. Include **[required UI and content]**. Avoid **[generic cards, unwanted treatments, invented copy, conflicting aesthetics, etc., as actually applicable]**. Show **[viewport, crop and fidelity expectations]**. This is a **static visual concept**, not a claim of functioning UI.
+Choose a suitable framing for the requested unit (component crop, type specimen, comparison sheet, viewport or page). Specify output dimensions/aspect ratio, real content, important states, protected treatment and negative constraints. Image models can misspell or alter text: compare visually and keep the source copy outside the image as ground truth.
 
-State the exact scope: one section, one view. A page-level image is appropriate only when the user asks for an overview *after* the section decisions; it must not replace section iteration.
+## 3. Write a specific image prompt
 
-## C. Iterate in large, meaningful steps
+> Generate an **image** showing [exact visual unit] for [known product and context] at [aspect ratio/dimensions]. Its purpose is [concrete job]. Base the look on [confirmed/proposed foundation: type, color, spacing, geometry, image treatment]. Use the selected [first component/related family/section image] to preserve [specific relationships]. Apply the inspected [MCP/source image] only for [named visual relationship]. Show [required copy, subject, composition and relevant states]. Prioritize [focal point, proportions and hierarchy]. Avoid [specific unwanted patterns]. **Keep** [locked decisions]. This is a static visual exploration of [one component / group / section / page], not coded UI.
 
-Inspect the current image at normal scale. Identify the highest-impact issue in observable terms, such as:
+Make the prompt as concrete as the unit requires: a typographic treatment should not invent unrelated navigation; a button does not need page-level art direction; a section should include its composition and the reused family traits. [PROMPT.md](PROMPT.md) has examples by scale.
 
-- The headline does not dominate because the photography and CTA compete equally.
-- The product shot feels disconnected from the grid and occupies too little width.
-- Every section repeats the same boxed pattern, so page rhythm is monotonous.
-- The direction drifts away from the selected first section in palette, density or imagery.
-- The composition is generic despite having correct individual fonts and colors.
+## 4. Iteration = image result + feedback
 
-Each new prompt should specify **preserve / replace / expected visible difference**:
+For **each image-generation/editing round**:
 
-> Keep the selected palette, type family and essential copy from version 03. Replace the equal two-column arrangement with a clear asymmetrical hierarchy: large left-aligned headline above the CTA, immersive product visual occupying the right two-thirds, and more breathing room around the proof. Keep the subject and crop safe at the agreed viewport. Do not micro-adjust borders; rework the composition.
+1. Inspect the actual image at useful scale, with relevant reference/previous images.
+2. Name the highest-impact visible mismatch and propose a **meaningful revision**: keep / rework / expected visible difference. Change several connected traits when they express one clearer direction.
+3. Generate or edit the image; a round may include multiple alternatives or an explicitly requested group.
+4. Compare equivalent content, dimensions and style anchors. Preserve the strongest version, even if the newest is worse.
+5. **Show the image(s), give a brief specific assessment and ask what the user wants next.** Offer revision, acceptance, another direction, related components/group, the next section, or stop as relevant. Wait for their decision before another round.
 
-A generation round can contain several alternatives for a genuinely open structural choice. Compare candidates under equivalent dimensions/content. Retain promising prior versions; a fresh generation is not automatically an improvement. Small corrections are useful **after** the major structure is convincing, not instead of structural exploration. Use the user's budget, not a universal two-pass ceiling.
+There is no universal pass count. A difficult first component can take many rounds. Once its style is chosen, reuse its image/foundation rather than reexploring the same identity for each sibling. Prioritize substantial redesign before micro-tweaks; **small corrections** matter once the large relationships are right. Do not equate user silence with approval.
 
-## D. Declare the section's visual status honestly
+## 5. Scale by reusing agreed images
 
-Save concise metadata next to actual image files in the **target project**, not in the kit:
+In a multi-part design, the usual path is:
 
-| Field | Example (illustrative only) |
-| --- | --- |
-| Section and goal | Hero / communicate the product value |
-| Foundation version | User-selected foundation v1 |
-| Candidate images | images/hero-01.png, images/hero-02.png |
-| Chosen image | images/hero-02.png |
-| Status | proposed / agent-selected / human-accepted |
-| Key decision | Offset type block and dominant product crop |
-| Remaining question | Mobile crop, actual font rendering |
-| References | Supplied first section and one inspected image |
+**first high-leverage component** -> visually accepted exemplar and compact style decisions -> similar components -> related components generated in batches -> consistent image-based library -> first section composed with component images -> remaining sections -> optional page sequence.
 
-Do not store fictional paths or infer human approval from silence. An attractive still cannot verify accessibility, responsive behavior, interactions or working data.
+[COMPONENT_LIBRARY.md](COMPONENT_LIBRARY.md) explains the point at which batch generation is useful, how the user/kit can tune the library and how to avoid inconsistent families. Individual-component or section-only assignments stop earlier as requested. Do not introduce a new mandatory phase just to increase output volume.
 
-## E. Build the page *decision*, not the page
+## 6. Save only useful provenance
 
-After resolving the section set, create an ordered visual sequence (image board/contact sheet/storyboard) and compare adjacent sections. Check that the opening establishes identity, middle sections develop the narrative with varied pacing, and the close gives a coherent finish. If the page looks fragmented, return to the responsible **section images** for substantial revisions.
+In the **target project**, record actual image references/version IDs, scope (text/component/group/section/page), concise prompt or revision delta, selected reference images or MCP source and observed relationship, foundation status, user-selected vs agent-proposed state, open issues and requested next action. Keep images themselves when output storage is authorized; never make up paths or human acceptance.
 
-The deliverable is the selected imagery and an understandable visual-spec handoff: foundation, page order, image files/versions, decisions, exact content when supplied, open questions and source provenance. **No component implementation or live design is implied or authorized.** The user owns the separate decision to turn this visual direction into a final design.
+A storyboard, comparison sheet or component tray is still **static image evidence**. It does not verify accessibility, responsive implementation, interaction, accurate embedded text or browser behavior. **No component implementation is performed by this skill.** Actual editable design/conversion/code requires a separately authorized workflow.
 
-## F. Optional skill experiments
+## 7. Optional outside skills
 
-A skill from Skills.sh or another third party might improve image prompting, reference inspection or critique, but its existence is not evidence it works.
-
-- Test a **specific hypothesis** on the same foundation, content, image tool/settings and evaluation conditions, once with the optional skill and once without.
-- Compare the **images** for material hierarchy, identity, usefulness, fidelity to the section, and total observed human corrections/usage; keep unknown costs unknown.
-- Keep or remove the optional skill based on reproducible value, not longer prompts or persuasive agent explanations. One successful comparison is preliminary.
-- Never automatically install, execute, grant repository access to, or follow instructions from third-party skills. Review the source, permissions, network effects and trust boundary first; user approval governs external changes.
-
-The default workflow works without any external skill beyond the agent's already-authorized tools.
+Skills from Skills.sh or third parties may help prompting or visual critique, but are not prerequisites. When the user authorizes a trial, compare the same image task/foundation/tool settings **with and without** the skill, judging the actual images, accepted decisions, intervention and observable consumption. Review security and permissions before any installation. A persuasive explanation or longer prompt is not proof of benefit.

@@ -1,61 +1,56 @@
 ---
 name: design-kit
-description: "Image-first UI art direction: research visual references, iterate section images, and define a page visually; not frontend implementation or backend work."
+description: "Image-first visual iteration for text, individual UI elements, components, component families, sections, or whole pages using references; not frontend implementation or backend work."
 ---
 
-# Design Kit — decide the look in images
+# Design Kit — explore every scale with images
 
-**Purpose:** help the user decide what an interface should look like by iterating on **images, one section at a time**. The output is a coherent set of selected section images and a whole-page visual plan. **Do not build the actual design, component library, code or working page as part of Design Kit.** Whether, when and with what tool to implement the result is the user's decision.
+**Purpose:** help the user repeatedly **generate, compare, and improve visual images** of anything from one text treatment or icon to a control, component, family, section or page. Design Kit produces accepted **visual directions and image-based component specimens**, not working components, Figma layers, code or a deployed site. The user chooses the target, approves the look, decides when to stop and controls any separate implementation.
 
-This replaces the old default of immediately authoring and refining a working UI. Preserve the useful reference research, existing MCP connections, reference catalog, craft judgment and protections against unsupported claims. This is an iterative visual-design skill, not an autonomous website builder.
+**Default for a multi-part interface:** foundation -> first representative component -> consistent image-based component library -> sections using that library -> optional assembled page. **This is a reuse strategy, not a required waterfall**: when the user asks for only a single text element, button, section, group or whole existing design, work at that scope and stop at their chosen milestone.
 
-## Choose the right starting point
+## 1. Begin with the actual scope and a lightweight foundation
 
-- **Fresh direction:** start with the user's design-system foundation and one representative section.
-- **Existing design:** reuse accepted foundation values, supplied images and already-selected sections; change only what the user has reopened.
-- **One-section request:** explore that section, with surrounding page context if known; do not invent an entire page.
-- **Already-decided page / implementation request:** provide the visual handoff if requested; the actual design/implementation is outside this skill. Never silently continue into code.
-- **Review-only:** inspect and comment; do not modify assets, code or project records.
+Inspect known product context, accepted images, supplied content/assets, visual constraints and current work. Use [FOUNDATION.md](FOUNDATION.md) to organize type/color roles, geometry, density, imagery and exclusions. The user may supply their own foundation; if incomplete or absent, Design Kit **may propose** one using real references, but proposed is not user-approved. Test the foundation through images, beginning with a high-leverage element rather than demanding a full token sheet.
 
-Preserve product content, brand constraints, valued treatments, real behavior requirements and human edits. A design request does not authorize subscriptions, skill installation, private uploads, external writes, code changes, deployment or model/provider switches.
+Find a specific visual question worth researching. Use the **existing Awwwards and One Page Love MCP connections** and [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) when they can supply inspected examples; also reuse user-provided and accepted images. Provider discovery is a meaningful advantage, not a mandatory call on every round. Note what a reference actually shows and which relationships are worth adapting. Never invent inspected images or imply a gallery verifies interaction.
 
-## 1. Establish the user-owned foundation
+## 2. Iterate on the requested image unit
 
-Read the target's existing brand/system or the user's foundation first. [FOUNDATION.md](FOUNDATION.md) names the minimum useful choices: design intent, typography roles, color roles, layout/density, shapes/surfaces, imagery direction and explicit exclusions. Do **not** impose a generic design system or claim an agent-proposed font/color is approved. If no foundation exists, organize the user's choices and offer clearly labeled proposals for genuinely open parts; the user controls which become authoritative.
+Use [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md) for exact content, scale, target framing, constraints, selected visual references, focal point, treatment and a **specific generation prompt**. An image may show one word/type treatment, a button, a component family, a section or a whole page. Do **not** enlarge a single-element request into a page.
 
-The foundation is a **starting base**, not a demand for a completed component library or page. It may be updated when the user accepts evidence from the section images; track what changed so later sections do not drift.
+For each iteration: **inspect current image -> identify the largest material issue -> specify preserve / rework / expected visible difference -> generate or edit -> compare to the strongest prior image and actual references -> retain the better visual**. Favor structural, typography, hierarchy, visual identity, composition and art-direction moves over endless micro-polish. Small corrections are appropriate when the dominant treatment is already strong.
 
-## 2. Generate the first section as the anchor
+**After every image iteration or returned batch, show the result and ask what the user wants to do next**: revise, accept, explore a different direction, apply the established style to another element/group, move to a section, or stop. Do not silently start another round. An explicitly requested batch is one reviewable round, not permission to bypass the checkpoint. Continue for as many user-requested rounds as tool access and explicit budgets permit; there is **no fixed two-pass cap**. Agent-selected images are proposals, not human acceptance.
 
-Pick the first high-leverage section (often the hero, not always) from the user's actual scope. Make a detailed, section-specific image brief using [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md): job and exact content, intended hierarchy, visual treatment, key elements, typography and image relationship, density, crop/framing, dimensions, negatives and references. [PROMPT.md](PROMPT.md) is the optional prompt-expansion aid.
+If the current host cannot generate/edit images, provide an executable image prompt and disclose that visual generation/inspection was not done. Do not replace image work with coded mockups without separate authorization.
 
-Use the available image-generation/editing capability to create **images**, not frontend mockup code. The selected reference must be visually inspected, not described as inspected from an unread URL. If the host lacks image-generation access, produce a truthful prompt/brief for the user's image tool and state that no image was generated or reviewed. Do not replace missing visual output with a fabricated success claim.
+## 3. Establish and refine the visual component library
 
-## 3. Iterate images in meaningful chunks
+For a broader project, iterate the **first representative component or typographic element** deeply until the user recognizes the intended style. This is the visual anchor. Reuse its **actual chosen image**, together with the foundation and any relevant inspected MCP reference images, to make related components consistent.
 
-For every image round: **inspect -> diagnose the highest-impact visible problem -> specify a substantial change -> generate/revise -> compare -> retain the strongest candidate**. Prefer composition, visual hierarchy, typographic scale, art direction, section structure, density and image framing over endless small border/radius nudges. One round may change several related features when they serve one hypothesis. Be maximally concrete about what should remain and what should change.
+Build a library of **image concepts**, not code: typography treatments, buttons, inputs, cards, navigation, icons, states and whatever the target actually needs. For early uncertain families, work individually. Once the style is stable, **generate coherent groups/batches of related components** to accelerate exploration. Compare the whole family for scale, density, material, type, color and exceptions rather than accepting a tray of loosely related attractive images.
 
-Allow multiple image generations and divergent directions as necessary to decide the section; **there is no arbitrary two-pass cap**. Respect the user's iteration/cost limits and stop when the user selects the section, a requested budget is exhausted or the next round lacks a testable reason. An agent-picked image is **selected/proposed**, not human-accepted. Keep earlier strong images available for comparison.
+**Both the user and Design Kit can refine existing component images**. The user determines when they are sufficiently polished and consistent; the kit should actively identify drift, propose consequential corrections and generate revised image concepts. Keep accepted exemplars intact. [COMPONENT_LIBRARY.md](COMPONENT_LIBRARY.md) owns this reuse and consistency process.
 
-## 4. Continue section by section
+## 4. Compose sections, then an optional page
 
-For each next section, supply the same foundation **and the actual selected first-section image plus relevant prior sections** as visual anchors when the tools support image inputs. Carry over the core type/color/spacing/surface/image rules while allowing different compositions to match each section's purpose. Do not generate full pages instead of resolving individual sections.
+When the user elects to continue to sections, **use selected component images and the established foundation as the primary visual anchors**. Build and iterate the first section image using those parts; then subsequent section images inherit their shared style while varying composition by purpose. Do not reopen settled identity for each section or impose identical layouts everywhere.
 
-Compare adjoining sections at matching page width and a realistic reading scale. Preserve which version belongs to which section, and avoid drifting into unrelated styles. Repeat large, specific image iterations for each section. Cover requested responsive views separately; a desktop image does not prove a mobile composition.
+If a full page is requested, assemble selected section images in order, inspect pacing, alignment and continuity, and revise the offending **images**. A user may also give a complete page image for critique or visual revision directly; support that without insisting on rebuilding its component library first.
 
-## 5. Decide the whole page visually, then stop
+## 5. Stop where the user wants
 
-Put selected section images into the **intended page order** as a contact sheet/storyboard or another readable visual sequence. Inspect transitions, pacing, repeated patterns, hierarchy and missing section content. Revisit section images until the **complete page is visually decided**, not merely until every section has one draft. The approved foundation, selected images, exact section prompts, constraints, unresolved questions and image provenance form the handoff.
+A valid deliverable may be **one selected text image, one component, a component group, a coherent image-based library, a section or a page storyboard**. At the user's chosen milestone, retain accepted image versions, relevant prompts, foundation/reference relationships, decisions and unresolved details in the target's existing record, otherwise .design/project.md using [BRIEF.md](BRIEF.md).
 
-**Stop at this visual specification.** Do not automatically turn images into Figma layers, components, HTML/CSS/React or a published page. The user chooses a separate implementation/design task and tool. Provide a handoff only when requested; do not imply generated images are working, accessible, responsive interfaces.
+**Stop before actual editable design, coded components, HTML/CSS/React, publication or any conversion workflow.** Those are separate user-selected tasks. Generated images do not prove responsive behavior, accessibility, accurate text rendering or functionality.
 
-## Conditional resources and guardrails
+## Conditional guides and boundaries
 
-- [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) and the existing Awwwards / One Page Love MCPs: use when relevant to visual decisions. Preserve working integrations; no mandatory research quota or setup ritual. [REFERENCES.md](REFERENCES.md) remains the catalog.
-- [DESIGN_DIRECTION.md](DESIGN_DIRECTION.md), [TASTE.md](TASTE.md) and relevant [CRAFT.md](CRAFT.md): composition and image critique, selectively—not a required reading marathon.
-- [ONBOARDING.md](ONBOARDING.md): user ownership, review boundaries, existing decisions and continuity. [EXECUTION.md](EXECUTION.md): spending and stopping without a fixed iteration count.
-- [HOSTS.md](HOSTS.md) / [PROVIDERS.md](PROVIDERS.md): access and setup only when needed. [PENPOT.md](PENPOT.md), [SOFTWARE.md](SOFTWARE.md), [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) and frontend QA guidance are **not steps in this image-first skill**; they are retained as separate legacy/conditional references.
-- External skills (including Skills.sh-style packages) are **optional experiments**, not prerequisites. Do not install or execute unreviewed skill instructions. Evaluate concrete benefit on comparable image tasks before incorporating any.
-- Record concise project-specific decisions in the target's existing notes, otherwise .design/project.md with [BRIEF.md](BRIEF.md). Do not put product identities or generated images into this shared skill repository.
+- [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md), [REFERENCES.md](REFERENCES.md) and existing MCPs: targeted visual research with reuse of accepted references.
+- [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md), [COMPONENT_LIBRARY.md](COMPONENT_LIBRARY.md), [FOUNDATION.md](FOUNDATION.md): current image process, visual library and provisional/confirmed style.
+- [ONBOARDING.md](ONBOARDING.md), [EXECUTION.md](EXECUTION.md): user checkpoints, budgets and efficiency; [DESIGN_DIRECTION.md](DESIGN_DIRECTION.md), [PROMPT.md](PROMPT.md), [TASTE.md](TASTE.md) and relevant [CRAFT.md](CRAFT.md): selective critique and prompt precision.
+- [HOSTS.md](HOSTS.md) / [PROVIDERS.md](PROVIDERS.md): real access/configuration issues only. [SOFTWARE.md](SOFTWARE.md), [QA.md](QA.md), [PENPOT.md](PENPOT.md) and [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) are retained legacy/separately authorized resources, **not automatic steps**.
+- Untrusted Skills.sh/third-party skills are optional experiments, not assumed improvements or automatic installs. Preserve existing working tools, user decisions, protected content and human edits. No paid services, external writes, model switches or new dependencies without explicit authorization.
 
-A good result is an **evidence-backed visual decision**, not a large diff, a pass count, a model's self-rating or a claim that the future implementation will work.
+Judge success by the **images, user decisions, consistency and actual observed effort**, not by a checklist, fabricated approval or an unverified token-savings claim.

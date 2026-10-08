@@ -1,29 +1,33 @@
-# User-owned visual foundation — blank guide
+# Visual foundation — proposed by Design Kit or supplied by the user
 
-The foundation belongs to the **user and target project**, not to this shared kit. Copy or summarize only what is known. This is a lightweight base for consistent image iterations, **not** a demand to build a finished component library before beginning.
+The foundation is the **user-controlled style baseline for image iterations**. The user can provide it directly, edit it, or ask Design Kit to **propose and improve it using actual visual references**. A proposal is not automatically approved. The foundation starts lightweight; the first selected component image helps refine it before similar components and sections inherit the look.
 
-## Minimum decisions for section images
+## Minimum decisions worth capturing
 
-| Decision | User-confirmed / proposed / unknown | Actual value or evidence |
+| Dimension | Status: user-confirmed / kit-proposed / unknown | Value, source or selected image |
 | --- | --- | --- |
-| Brand character and intended visual impression | | |
-| Primary and secondary type roles | | |
-| Color roles, contrast and dominant surface | | |
-| Layout width, grid, whitespace and density | | |
-| Geometry, borders, shape and depth language | | |
-| Imagery/illustration, crops and art direction | | |
-| Icon/control visual tendencies, if visible | | |
-| Required content/assets and explicit exclusions | | |
-| Target desktop/mobile visual framing | | |
+| Intended brand character and overall visual impression | | |
+| Typography roles: headline, label, body and emphasis | | |
+| Color roles: dominant surfaces, text, accents, contrast | | |
+| Geometry, border and depth/surface language | | |
+| Component density, proportions and spacing rhythm | | |
+| Iconography and imagery treatment, if relevant | | |
+| Content/assets that must remain exact | | |
+| Exclusions and protected prior visual choices | | |
+| Framing and dimensions for the requested unit(s) | | |
 
-Keep accepted values and the source of each decision in the target's existing design record. Agent suggestions are explicitly **proposed**, not silent substitutes for missing user choices. Avoid generic default token tables masquerading as a brand identity.
+Don't invent an authoritative font file, set of tokens or trademark identity from a generated screenshot. Label inferred relationships and actual user-selected values separately. An image can demonstrate style without resolving exact type metrics or browser CSS.
 
-## Foundation evolution
+## Foundation grows with the first component
 
-Start image generation once the foundation is sufficient to make a coherent **first section**. Inspect that section's image variations. If they reveal a missing or weak foundation decision, propose the change and capture the user's acceptance or explicit delegation before applying it across subsequent sections.
+1. Reuse the user's decisions and inspected **Awwwards / One Page Love or other relevant source images** when a visual question remains open.
+2. Propose only enough styling to generate a **first high-leverage element/component image**.
+3. After each image round, review the result and ask the user what to change, keep or stop.
+4. Once a component is selected, write down the visually meaningful stable relationships and use its **actual image** as the anchor for related components.
+5. As the component library is tuned by the user or Design Kit, record **confirmed** revisions to the foundation before propagating them into group generations and sections.
 
-Do not treat a new generated font, color or image texture as a revised global rule merely because it appeared in one candidate. The selected anchor image plus the recorded foundation constrain subsequent sections. Consistency should come from **actual accepted visual evidence**, not just an adjective list.
+The foundation is not a prerequisite to finishing an entire system before visual exploration, nor is an agent's first image a completed design system. Working component, section and page images should consistently inherit confirmed decisions while allowing task-appropriate variety.
 
-## What the foundation is not
+## What remains outside Design Kit
 
-It is not a requirement for Figma, React, Tailwind, token files, component APIs or working responsive states. Those belong to a separately authorized design/implementation workflow after the whole page's visual direction is decided by images. Preserve any pre-existing approved source tokens; do not re-create them from AI guesses.
+A foundation is not a working component library, design token package, Figma document, React components or validated responsive behavior. The **visual component library** described in [COMPONENT_LIBRARY.md](COMPONENT_LIBRARY.md) consists of images and accepted relationships only. A separate implementation is entirely user-controlled and never initiated as a side effect.
