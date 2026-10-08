@@ -15,6 +15,8 @@
 
 For a large project, prefer **component-first** work and build a visual library before designing sections. For a one-off target, begin and end at its actual size. Never demand a finished library for a user who asked to refine only a button or text treatment.
 
+At *any* scope, use [PHASED_REFINEMENT.md](PHASED_REFINEMENT.md) to choose the current improvement lens: **1 foundational visual implementation -> 2 craft/details -> 3 advanced depth/effects only if justified -> 4 user/contextual review**. A unit that is already strong can enter a later phase. Each phase has its own image corrections and after-round user checkpoint; phases do **not** imply separate implementation or four mandatory generations.
+
 ## 2. Gather enough real evidence
 
 Use known product purpose and **exact supplied copy**, the current user-confirmed or proposed foundation, images already selected by the user, and relevant *actually inspected* examples from the existing reference MCPs. Ask a focused question when vital input is missing; do not invent logos, metrics, testimonials, fonts or approved tokens.
@@ -31,13 +33,13 @@ Make the prompt as concrete as the unit requires: a typographic treatment should
 
 ## 4. Iteration = image result + feedback
 
-For **each image-generation/editing round**:
+For **each image-generation/editing round inside the active phase** (Phase 1, 2 or optional 3 of [PHASED_REFINEMENT.md](PHASED_REFINEMENT.md)):
 
 1. Inspect the actual image at useful scale, with relevant reference/previous images.
-2. Name the highest-impact visible mismatch and propose a **meaningful revision**: keep / rework / expected visible difference. Change several connected traits when they express one clearer direction.
+2. Name the highest-impact visible mismatch **at this phase's level** and propose a **meaningful revision**: keep / rework / expected visible difference. If the weakness belongs to an earlier phase, go back rather than masking it with effects. Change several connected traits when they express one clearer direction.
 3. Generate or edit the image; a round may include multiple alternatives or an explicitly requested group.
 4. Compare equivalent content, dimensions and style anchors. Preserve the strongest version, even if the newest is worse.
-5. **Show the image(s), give a brief specific assessment and ask what the user wants next.** Offer revision, acceptance, another direction, related components/group, the next section, or stop as relevant. Wait for their decision before another round.
+5. **Show the image(s), give a brief phase-specific assessment and ask what the user wants next.** Offer revision, acceptance, another direction, related components/group, the next section, or stop as relevant. Wait for their decision before another round.
 
 There is no universal pass count. A difficult first component can take many rounds. Once its style is chosen, reuse its image/foundation rather than reexploring the same identity for each sibling. Prioritize substantial redesign before micro-tweaks; **small corrections** matter once the large relationships are right. Do not equate user silence with approval.
 

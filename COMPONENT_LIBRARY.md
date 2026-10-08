@@ -2,13 +2,13 @@
 
 This is an **image-based exploration library**, not a collection of coded components, Figma components or a final design system implementation. The library consists of selected **image specimens**, foundation decisions and relationships that can be reused when generating related components and eventual section images.
 
-This is the **default route when designing a multi-part interface**, not a requirement for a single-element request. [SKILL.md](SKILL.md) controls the task scope and [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md) governs each iteration.
+This is the **default route when designing a multi-part interface**, not a requirement for a single-element request. Each component/family can move through [PHASED_REFINEMENT.md](PHASED_REFINEMENT.md)'s foundational image, craft/detail, optional advanced finish and final user review. **Do not use Phase 3 gloss to hide a Phase 1 problem**. [SKILL.md](SKILL.md) controls the task scope and [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md) governs each iteration.
 
 ## 1. Choose one high-leverage exemplar
 
 Choose the **first visual unit** to settle important style questions: a typographic headline, a button/control, a content card, navigation or a component specified by the user. Its exact identity depends on the project; do not force every project to begin with a button.
 
-If the foundation is missing, Design Kit may propose a **provisional** typography/color/surface direction using actual supplied or MCP reference imagery. Label it as proposed. Iterate substantially on the first exemplar's **image** until the user selects or delegates a stable direction. This can require many rounds. Preserve the strongest image and record its visible relationships (the **style DNA**): text hierarchy, color/emphasis, geometry, spacing/density, icon/image treatment and exclusions.
+If the foundation is missing, Design Kit may propose a **provisional** typography/color/surface direction using actual supplied or MCP reference imagery. Label it as proposed. Iterate substantially on the first exemplar's **image** through relevant phase-specific correction loops until the user selects or delegates a stable direction. This can require many rounds. Preserve the strongest image and record its visible relationships (the **style DNA**): text hierarchy, color/emphasis, geometry, spacing/density, icon/image treatment and exclusions.
 
 A selected exemplar does not imply the whole library is done or that incidental generated artifacts are confirmed tokens.
 

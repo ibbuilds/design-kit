@@ -1,6 +1,6 @@
 # Visual foundation — proposed by Design Kit or supplied by the user
 
-The foundation is the **user-controlled style baseline for image iterations**. The user can provide it directly, edit it, or ask Design Kit to **propose and improve it using actual visual references**. A proposal is not automatically approved. The foundation starts lightweight; the first selected component image helps refine it before similar components and sections inherit the look.
+The foundation is the **user-controlled style baseline for image iterations**. The user can provide it directly, edit it, or ask Design Kit to **propose and improve it using actual visual references**. A proposal is not automatically approved. The foundation starts lightweight; the first selected component image helps refine it before similar components and sections inherit the look. See [PHASED_REFINEMENT.md](PHASED_REFINEMENT.md): Phase 1 resolves base type/color/shape choices, while later phases refine craft and **optional** material effects without inventing new authoritative tokens.
 
 ## Minimum decisions worth capturing
 
