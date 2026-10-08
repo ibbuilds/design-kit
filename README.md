@@ -32,7 +32,7 @@ These are **image concepts**, not working or editable UI components. Final imple
 | **3. Advanced depth/effects, if useful** | A further *justified* expressive or dimensional contribution | Subtle shadow, material layering or highlight; **skip for a flat design** |
 | **4. User/contextual review** | Compare at intended scale with accepted related visuals; select or revisit earlier decisions | Check alongside sibling buttons; accept, return to a phase or stop |
 
-**Within every phase, images are revised in a correction loop, with user feedback after each round.** Four phases do not require four generations, and Phase 4 is a review, not a separate model call. An existing strong image can start at Phase 2 or 3; an error uncovered during surface polish returns to Phase 1. The goal is to identify the **specific missing design relationships**, not to assume more generations or more effects automatically create higher quality.
+**Within every phase, images are revised in a correction loop; after every image round, show the actual results and ask what the user wants next.** Four phases do not require four generations, and Phase 4 is a review, not a separate model call. An existing strong image can start at Phase 2 or 3; an error uncovered during surface polish returns to Phase 1. The goal is to identify the **specific missing design relationships**, not to assume more generations or more effects automatically create higher quality.
 
 ## Example prompts
 

@@ -15,7 +15,7 @@ For a multi-part project, use it on the first high-leverage component, reuse tha
 
 **Phase 4 is not an excuse to wait until the end for feedback.** At the end of **every generated image round or returned batch in Phases 1–3**, show the image(s), state the relevant phase-specific change and **ask the user** whether to revise, accept this phase/direction, try an alternative, revisit a prior phase, proceed or stop. Phase 4 is a distinct **final/contextual** user review, not an automatic fourth image generation.
 
-**Phases are lenses, not gates that manufacture work.** The default progression for a new unit is 1 -> 2 -> optional 3 -> 4. If requested by the user, a single text treatment may finish at Phase 1 or 2; an existing visually strong image may enter Phase 2 or 3; a component group may be reviewed together. Avoid mandatory full-page work for a small item. User-approved decisions can carry across phases, but an obvious structural problem discovered during polish sends the work **back to Phase 1**, not into more effects.
+**Phases are lenses, not gates that manufacture work.** The default progression for a new unit is 1 -> 2 -> optional 3 -> 4. If requested by the user, a single text treatment may finish at Phase 1 or 2; an existing visually strong image may enter Phase 2 or 3; a component group may be reviewed together. Avoid mandatory full-page work for a small item. User-approved decisions can carry across phases, but an obvious structural problem discovered during polish means **return to Phase 1**, not adding more effects.
 
 ## The correction loop inside each phase
 

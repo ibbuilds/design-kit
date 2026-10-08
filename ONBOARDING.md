@@ -16,7 +16,7 @@ For a typography-only request, do not suggest expanding into a page without reas
 
 [PHASED_REFINEMENT.md](PHASED_REFINEMENT.md) provides **foundation/visual implementation -> craft/details -> optional advanced depth -> final user/context review** for a text treatment, button, component family, section or page. This is **not a new mandatory progression across components and sections**; it governs improvement of the current image. Start at the phase the current candidate actually needs. A well-established direction can skip foundations and a deliberately flat direction can skip advanced effects.
 
-Each phase has its own **keep/change/expected-difference** correction loop. Show the image and **ask after every round**, even while staying in one phase. The final user review does not substitute for ongoing feedback; a user may return to a previous phase or stop whenever they want. Don't silently advance through all phases.
+Each phase has its own **keep/change/expected-difference** correction loop. Show the image and **ask after every round**, even while staying in one phase. The final **Phase 4 user review** does not substitute for ongoing feedback; a user may return to a previous phase or stop whenever they want. Don't silently advance through all phases.
 
 ## Build continuity, not compulsory stages
 
