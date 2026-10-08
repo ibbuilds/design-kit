@@ -73,7 +73,7 @@ class ImageFirstContractTests(unittest.TestCase):
                        "section images"):
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase, library)
-        self.assertIn("user-selected", library)
+        self.assertIn("User-selected exemplar", library)
         self.assertIn("batch", read("EXECUTION.md"))
         self.assertIn("group", read("PROMPT.md"))
 
@@ -82,7 +82,7 @@ class ImageFirstContractTests(unittest.TestCase):
                      "EXECUTION.md", "WORKFLOW.md", "README.md"):
             with self.subTest(file=file):
                 text = read(file).lower()
-                self.assertRegex(text, r"after (?:\*\*)?every|after each|for \*\*each")
+                self.assertRegex(text, r"after (?:\*\*)?(?:every|each)|for \*\*each")
                 self.assertRegex(text, r"ask")
                 self.assertRegex(text, r"stop")
         self.assertIn("no fixed two-pass cap", read("SKILL.md"))
