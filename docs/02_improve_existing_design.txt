@@ -1,26 +1,27 @@
-IMPROVE AN EXISTING VISUAL DIRECTION — IMAGE FIRST
+IMPROVE EXISTING VISUAL DESIGN — ANY SCALE
 Updated: October 8, 2026.
 
-Preserve accepted foundation decisions, earlier image versions, protected
-assets/content and selected sections. Existing code can identify real content
-or constraints, but Design Kit does NOT edit that code.
+Accept an existing image of text, icon, component, family, section, screen or
+whole design. Keep its protected choices and actual content. Do not demand
+rebuilding the entire library for a local correction or impose sections first.
 
-Locate the weak section image and the specific visual mismatch. Inspect its
-composition in context with the selected first section and neighboring images.
-Specify what to preserve, what significant structural/type/image treatment to
-replace, and how the expected visible result differs. Generate image revisions
-and keep the strongest comparison candidate. Do not substitute micro-polish
-for a weak visual premise.
+Inspect the actual current image, selected earlier exemplars, confirmed or
+provisional foundation and relevant real MCP/user reference imagery.
+Form a material revision: KEEP accepted relationships, REWORK the visible
+weakness, and state the EXPECTED difference. Generate new IMAGE concepts,
+compare at the same scope and preserve stronger earlier versions.
 
-For several affected sections, return to the same foundation and image anchor;
-do not redesign a whole page in one unconstrained generation. Review the
-ordered set and fix drift by revising individual section images. Distinguish
-agent-selected images from the user's approval. Separate desktop/mobile imagery.
+AFTER EVERY IMAGE ROUND OR RETURNED BATCH show the result and ASK whether to
+revise, accept, try a different direction, generate related components, move
+to another unit or stop. Honor unlimited user-led rounds within real budgets.
 
-Use existing Awwwards/One Page Love MCP research for material visual gaps when
-needed, not as mandatory browsing. Third-party skills are optional and should
-be evaluated on actual images.
+For library-wide work, choose the strongest accepted component image as the
+style anchor. Refine inconsistent sibling component images, singly or in
+GROUPS when shared styling is stable. The user can refine the library, and
+Design Kit can propose and regenerate visual improvements. Sections inherit
+the approved component styles only when the user asks for them.
 
-Deliver selected images, prompts, foundation updates and remaining visual
-unknowns. STOP before the actual editable design or implementation. The user
-decides that separately. No fabricated render inspection or claimed UI behavior.
+Use existing Awwwards / One Page Love MCPs to resolve concrete visual gaps;
+reuse relevant inspected sources instead of researching each component afresh.
+A whole-page image may be revised directly. Stop at the user's own milestone.
+Image concepts are not working components or final editable design.

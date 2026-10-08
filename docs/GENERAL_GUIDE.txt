@@ -2,37 +2,50 @@ GENERAL GUIDE — DESIGN KIT
 Updated: October 8, 2026.
 
 PURPOSE
-Design Kit helps decide visual UI direction with GENERATED IMAGES, one section at
-a time. It does NOT automatically create the real final design, components,
-Figma pages or frontend code. The user decides any subsequent implementation.
+Iterate with GENERATED IMAGES of any visual unit: text, icon, button, component,
+family, section or whole page. A final coded/editable design is NOT created by
+the kit. The user chooses the scope, visual acceptance and stopping point.
 
-FLOW
-1. Start from the USER's actual design foundation. Agent suggestions are
-   proposed until the user accepts or delegates them.
-2. Choose the first high-leverage section and write a highly specific prompt.
-   Generate section IMAGES, comparing meaningfully different arrangements.
-3. Iterate repeatedly in material chunks: composition, hierarchy, type/image
-   relationship, asset framing and visual density. Preserve the strongest image.
-   There is NO automatic two-refinement-pass limit.
-4. Use the selected first image plus foundation as visual references for each
-   subsequent section. Resolve each one through image rounds.
-5. Arrange selected section images in page order. Inspect overall rhythm and
-   consistency; revise the offending sections until the page is visually decided.
-6. STOP. The user separately chooses whether/how to build the actual design.
+DEFAULT FOR MULTI-PART WORK
+1. Use the user's foundation or a clearly provisional kit-proposed visual
+   direction, grounded in actual inspected Awwwards / One Page Love MCP
+   references where useful.
+2. Choose a high-leverage FIRST COMPONENT or typography element. Generate
+   and revise its image until the desired style is selected.
+3. Reuse that actual component image and foundation for related components.
+   When the shared style stabilizes, GENERATE COMPONENT GROUPS IN BATCHES.
+4. Inspect and refine the visual component library for consistency.
+   The USER or Design Kit can make those image refinements.
+5. When requested, compose SECTION IMAGES from the accepted components,
+   then more sections. Optionally review the complete page's images together.
+6. STOP whenever the user wants: one word/element, component, group, library,
+   section or full page. A smaller request does NOT require a larger workflow.
 
-Existing Awwwards / One Page Love MCP research remains useful for concrete visual
-questions. Reuse user-supplied images first and do not force discovery on every
-round. Existing provider integrations and reference catalog are preserved.
-Third-party prompting/design skills are optional experiments, not assumed gains.
+MANDATORY FEEDBACK AFTER EVERY IMAGE ROUND OR RETURNED BATCH
+Present the actual image result, compare material differences, and ASK what
+the user wants next: revise, accept, change direction, generate matching
+components, advance to sections or stop. Do not silently start another round.
+Continue for as many user-requested rounds as tools/budgets permit. There is
+no fixed two-pass ceiling.
 
-STARTING REQUEST
-"Use Design Kit with image generations only. Take my current foundation,
-iterate the first section with significant composition changes and detailed
-prompts, and use the chosen image to anchor all following sections. Once the
-ordered page is visually decided, give me the selected images and stop before
-creating the actual design."
+MCP REFERENCES AND EFFICIENCY
+Preserve working Awwwards / One Page Love integrations, curated REFERENCES.md
+and reference helper. Actually INSPECT source imagery before using it. Reuse
+accepted sources and chosen component images across descendants. Do not
+automatically browse both providers or rediscover settled visual decisions.
+Component-first reuse and batching may improve efficiency; token savings are
+not established without measured tasks.
 
-Keep selected image versions, exact prompts, foundation status and user approvals
-in the target project's existing record. Mark unavailable image tools or unknown
-costs honestly. Package tests do not demonstrate improved images or tool access.
-Canonical instructions: SKILL.md and IMAGE_WORKFLOW.md.
+EXAMPLES
+"Improve only this headline through images."
+"Iterate on this control until I select it, asking me after every round."
+"Match these three components to my accepted first-component image."
+"Revise this entire existing design image directly."
+No forced page or component library for a one-off request.
+
+OPTIONAL SKILLS AND HONESTY
+Third-party skills are optional authorized experiments, not guaranteed gains.
+Generated text may be wrong; retain exact copy separately. Static image
+specimens do not prove functionality or responsive implementation.
+Keep actual results, reference provenance and user choices in the target record.
+Canonical: SKILL.md, IMAGE_WORKFLOW.md, COMPONENT_LIBRARY.md.

@@ -1,20 +1,23 @@
 IMPLEMENTATION IS A SEPARATE USER-SELECTED TASK
 Updated: October 8, 2026.
 
-Design Kit no longer owns frontend creation or QA as an automatic phase.
-Its job is user-foundation-led, image-based section exploration and a selected
-whole-page visual direction. Do not treat completion of the image storyboard
-as authorization to create Figma designs, components, HTML/CSS, React or a
-published application.
+Design Kit iterates through IMAGES of text treatments, icons, components,
+component groups, sections or whole pages. For broad designs, the default
+begins with a first representative component IMAGE and builds a visually
+consistent IMAGE-BASED COMPONENT LIBRARY before optional section images.
 
-When asked for a handoff, provide actual selected image paths/versions, section
-order, user-approved and proposed foundation decisions, exact content/assets
-when known, dominant composition/imagery relationships, responsive unknowns,
-provenance and unresolved constraints. Be explicit that these are still images,
-not tested UI behavior or coded responsive states.
+The user or Design Kit can refine each component's visual images. After
+EVERY image round or returned batch, ask the user whether to revise, accept,
+advance or stop. The user may stop at any milestone.
 
-Legacy SOFTWARE.md, PRODUCT_DELIVERY.md and QA.md are retained for possible
-separately authorized frontend work outside the Design Kit workflow. They must
-not override SKILL.md's stop boundary or auto-start implementation.
+Image-based component specimens are not implemented UI elements, editable
+Figma components or validated design tokens. No transition to final design,
+component coding, Figma creation or image-to-code conversion is automatic.
 
-The user controls whether, when and where a separate implementation proceeds.
+If the user asks for a handoff, report selected images/versions, foundation
+status, actual inspected MCP reference relationships, exact source copy
+where available, user decisions and relevant unverified visual limits.
+Never claim static generated images establish working UI behavior.
+
+Legacy SOFTWARE.md, QA.md and PRODUCT_DELIVERY.md are retained for a
+SEPARATE USER-SELECTED TASK outside Design Kit's image-generation scope.

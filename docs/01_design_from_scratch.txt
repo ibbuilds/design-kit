@@ -1,23 +1,26 @@
-DESIGN DIRECTION FROM SCRATCH — IMAGE FIRST
+DESIGN FROM SCRATCH — IMAGE-FIRST AND COMPONENT-FIRST
 Updated: October 8, 2026.
 
-Begin with the user's own partial or complete visual foundation, not with a
-coded page. Foundation choices include intended impression, type/color roles,
-geometry, density and imagery. Clearly label proposed vs accepted values.
-You do not need a final token inventory or component library.
+Any single text/visual element, component, family, section or page is a valid
+requested unit. Do not expand a small request into a compulsory whole design.
 
-Choose a representative first section, specify its real content, visual job,
-image dimensions and foundation, then generate multiple IMAGE compositions.
-Look for substantial differences in region balance, headline hierarchy,
-asset scale/crop and art direction; compare at normal viewing size.
-Repeat meaningful rounds until the section's visual direction is selected.
-Do not impose a universal two-pass budget; obey user budget/tool limits.
+For a multi-part product, start with a user foundation or KIT-PROPOSED visual
+direction, clearly distinguishing proposal from acceptance. Use relevant
+actually inspected Awwwards / One Page Love reference images to inform open
+aesthetic choices. Don't demand a completed token system.
 
-Use that selected image as a reference for the next section, along with the
-same foundation. Repeat section by section. Existing Awwwards / One Page Love
-MCPs are optional targeted inspiration; preserve rather than reinstall them.
+Generate images of a first high-leverage COMPONENT or typographic treatment.
+Explore meaningful differences in proportion, typography, geometry, material,
+color roles or framing until the user recognizes the intended style. Keep
+the strongest image. AFTER EVERY ROUND ask what to refine, select, change,
+reuse or stop. No fixed two-refinement-pass ceiling.
 
-When all requested sections have selected images, arrange them in page order,
-check overall rhythm and revise weak transitions by changing the section images.
-Deliver the visual decision and selected imagery. STOP before final design,
-components or code. Only the user may choose that separate next workflow.
+Reuse the selected first-component image across siblings. As shared styling
+stabilizes, generate related component IMAGES IN GROUPS and compare their
+visual consistency. The user or Design Kit may keep refining the image-based
+library until the user's chosen quality milestone.
+
+If requested, use accepted components as the visual anchors for the first
+section and subsequent section images, then optionally a whole page. A direct
+full-page image iteration is also valid when requested. The user can stop
+at any milestone. No coded/editable final design or conversion is implied.
