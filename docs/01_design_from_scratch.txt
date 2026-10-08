@@ -1,33 +1,32 @@
-DESIGN WITHOUT A FINISHED BASE — DESIGN KIT
-Updated: October 6, 2026.
+DESIGN FROM SCRATCH — IMAGE-FIRST AND COMPONENT-FIRST
+Updated: October 8, 2026.
 
-Use SKILL.md's artifact-first procedure in the actual target. Reuse the supplied
-product goal, content, constraints, existing assets and working preview. The user
-need not provide a wireframe or a token system. Ask only about material missing
-facts/reserved choices; otherwise own the open visual decisions.
+Any single text/visual element, component, family, section or page is a valid
+requested unit. Do not expand a small request into a compulsory whole design.
 
-Choose one product-specific treatment and author a representative composition in
-the existing medium. Resolve affected typography, surfaces, spacing and assets
-inside it. Do not build a whole component library or approve a separate system
-specimen before exploring the screen. Use real or clearly representative content.
-An unresolved dominant asset is a design gap, not permission for fake detail.
+For a multi-part product, start with a user foundation or KIT-PROPOSED visual
+direction, clearly distinguishing proposal from acceptance. Use relevant
+actually inspected Awwwards / One Page Love reference images to inform open
+aesthetic choices. Don't demand a completed token system.
 
-Use supplied/accepted visual evidence first. Research only a concrete open question
-under REFERENCE_ROUTER.md. No mandatory gallery board, reference minimum or paid
-fallback. State any inference or missing calibration honestly.
+Within each requested image unit, PHASED_REFINEMENT.md provides the optional
+4-phase lens: fundamental visual concept -> craft/detail -> advanced
+depth/effects only when useful -> user/contextual review. Run corrections
+inside the appropriate phase; ask after every image generation. These phases
+do not replace the component-first progression or require four generations.
 
-Inspect the actual render and relevant narrow container/contrasting state. Compare
-its hierarchy, type/image relationships, rhythm and coherence with the goal and
-relevant quality anchor. Correct the highest-impact gaps together. Default budget
-is one candidate and at most two grouped visual refinement passes for the bounded
-unit. A new stage does not reset it. User instructions override the default.
+Generate images of a first high-leverage COMPONENT or typographic treatment.
+Explore meaningful differences in proportion, typography, geometry, material,
+color roles or framing until the user recognizes the intended style. Keep
+the strongest image. AFTER EVERY ROUND ask what to refine, select, change,
+reuse or stop. No fixed two-refinement-pass ceiling.
 
-For a broad new direction, show this candidate for acceptance before multiplying
-pages or propagating new shared choices. Preserve accepted code and extend it after
-acceptance. Verify contrasting consumers rather than assuming the specimen proves
-every use. Explicitly requested supervised checkpoints remain binding.
+Reuse the selected first-component image across siblings. As shared styling
+stabilizes, generate related component IMAGES IN GROUPS and compare their
+visual consistency. The user or Design Kit may keep refining the image-based
+library until the user's chosen quality milestone.
 
-Requested frontend integration/QA uses SOFTWARE.md without rebuilding the visual
-implementation from prose. Design-only does not authorize backend or publication.
-Report actual contribution, inspected scope, remaining defects and consumption only
-when observable. No self-score or guarantee that a candidate has reached excellence.
+If requested, use accepted components as the visual anchors for the first
+section and subsequent section images, then optionally a whole page. A direct
+full-page image iteration is also valid when requested. The user can stop
+at any milestone. No coded/editable final design or conversion is implied.

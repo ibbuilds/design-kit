@@ -1,37 +1,31 @@
-# Inputs, delegation and review
+# User-directed image exploration
 
-[SKILL.md](SKILL.md) is the canonical artifact-first procedure. This file resolves scope and review boundaries, not a mandatory onboarding itinerary. Preserve explicit supervision already requested by the user; a kit update does not revoke it.
+[SKILL.md](SKILL.md) supports **any size of visual task**: text, icon, control, component, family, section, page or complete submitted design image. Preserve the exact requested scope; do not require a whole component library for a single button, or force sections before components for a new multi-part project.
 
-## Start from what is already known
+The recommended progression for broad work is **foundation -> selected first component image -> coherent visual component library -> section images -> optional page**. The user owns the foundation; Design Kit may propose provisional styling from actual inspected MCP references. Kit proposals and agent-favorite images are not user approvals.
 
-Inspect the relevant target and reuse the supplied product goal, content, assets, references, working medium, constraints and accepted decisions. Ask only about a missing fact that materially prevents a valid result. Do not demand a wireframe, finished aesthetic, token inventory or rewritten prompt from the user.
+## Mandatory checkpoint after each image iteration
 
-For an existing library, separate accepted originals, derived components and unresolved additions. A design document states intent; a render shows implementation; neither proves that every current choice was approved. Preserve the treatments the user values. Do not infer a replacement identity from a broad request to improve quality.
+After **every image generation/editing round or returned batch**, show the image(s), briefly compare with the strongest prior image and **ask what the user wants to do next**. Adapt the question to scope:
 
-When the boundary is genuinely unclear, ask one grounded question about what may change. Otherwise own the delegated visual decisions. Label assumptions instead of inventing product facts or requiring a confirmation ritual for every inference. Keep the product's language independent of the conversation language.
+> Would you like to revise this, choose a version, explore another direction, make related components, continue to a section, or stop here?
 
-## The review unit
+For a typography-only request, do not suggest expanding into a page without reason. A requested batch counts as a **single reviewable iteration**; ask immediately after presenting it. Do not silently run another round, produce an unrequested family or move to sections. Continue for as many rounds as the user requests within actual tool and cost limits, not a universal two-pass ceiling.
 
-A bounded unit is a screen, section, component family with a real consumer, or an explicitly agreed batch. Choose it from the complaint and actual dependencies, not from whichever isolated component is easiest to polish. A whole-library request retains its coverage across units.
+## The refinement phases live inside the chosen image unit
 
-Default: carry that unit through diagnosis, candidate, visual inspection, permitted refinement and relevant QA before presentation. Do not stop separately for reference selection, expanded prompts, foundations or routine corrections. Develop affected foundations and the interface together. A specimen is useful only when it exposes a real unresolved relationship; it is not an entrance requirement.
+[PHASED_REFINEMENT.md](PHASED_REFINEMENT.md) provides **foundation/visual implementation -> craft/details -> optional advanced depth -> final user/context review** for a text treatment, button, component family, section or page. This is **not a new mandatory progression across components and sections**; it governs improvement of the current image. Start at the phase the current candidate actually needs. A well-established direction can skip foundations and a deliberately flat direction can skip advanced effects.
 
-For broad new direction or visual evolution, the representative candidate is a checkpoint before new shared choices spread across the application. For consistency work, restoring an already accepted rule across authorized consumers needs no per-component approval. Preserve unaffected work and inspect the relevant downstream impact.
+Each phase has its own **keep/change/expected-difference** correction loop. Show the image and **ask after every round**, even while staying in one phase. The final **Phase 4 user review** does not substitute for ongoing feedback; a user may return to a previous phase or stop whenever they want. Don't silently advance through all phases.
 
-If the user explicitly asks for guided/supervised work, agree only the useful checkpoints: for example direction, candidate, and propagation. Existing explicit checkpoints and reserved decisions remain binding. Supervision does not automatically require a gallery search or a full design-system program.
+## Build continuity, not compulsory stages
 
-## Authority and changed feedback
+Keep actual accepted component images and concise stable style relationships. Related components should inherit that exemplar; after the style becomes clear, group compatible component images to accelerate generation. The **user or Design Kit** may refine individual components and the whole library. Ask after each correction round.
 
-A file path, silence, the agent's recommendation or a successfully rendered component is not human acceptance. Record agent-selected, implemented, verified and human-accepted states distinctly.
+Sections reuse selected component images when the user wants them. Full-page image revisions are also supported directly. One image cannot prove responsive design, interaction, accurate text or working code.
 
-An expressly rejected diagnosis must not drive further dependent edits. Reinspect the named discrepancy and change the hypothesis; preserve unrelated accepted work. The user should not have to repeat existing references or enumerate every sibling defect.
+## Stop wherever the user chooses
 
-A change to a protected choice, missing required source, conflicting requirement or side effect outside authorization needs a focused resolution. Unavailable optional inspiration does not become an access blocker for authorized original design. Review-only work does not write a project record.
+The valid endpoint may be a text image, a component, the entire visual library, one section or a page. Preserve actual image versions, inspected references, confirmed/proposed foundation traits and user selection in the target's record using [BRIEF.md](BRIEF.md) if needed. User rejection of one image does not reverse unrelated approvals.
 
-## Working surface and continuity
-
-Reuse the existing app/canvas and supported preview. Show real captures in the user's preferred medium. Do not add product routes or navigation solely for review material. When isolation is necessary, keep it disposable and outside production routing; preserve human work during cleanup. Generated illustrative images do not verify a running UI.
-
-Use one short target-owned record, existing or `.design/project.md`, with relevant [BRIEF.md](BRIEF.md) fields: scope, protected/open decisions, source and implementation paths, accepted revision/capture, pending feedback, verified states/containers and next action. Store only useful evidence and decisions. Global installation does not store project identity in the kit.
-
-Resume from that record and reread mutable source before editing. Budget and accepted decisions survive phases, batches and context handoffs. [EXECUTION.md](EXECUTION.md) governs stopping. [CRAFT.md](CRAFT.md) and relevant [QA.md](QA.md) sections govern verification. Missing inspection remains unverified, not a fabricated pass.
+Stop before **editable design, implemented components, HTML/CSS/React, deployment or conversion**. Separate user authorization is required for other workflows. Never place private product images into this repository.

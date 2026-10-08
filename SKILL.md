@@ -1,71 +1,58 @@
 ---
 name: design-kit
-description: "Design, improve, or review interfaces in their existing medium. Use for visual UI work and requested frontend QA, not backend work or kit maintenance."
+description: "Image-first visual iteration for text, individual UI elements, components, component families, sections, or whole pages using references; not frontend implementation or backend work."
 ---
 
-# Design Kit
+# Design Kit — explore every scale with images
 
-Make the actual interface better, not merely more consistent with a checklist. Own the open visual decisions and deliver a rendered result. Preserve the user's constraints, behavior, content, valued source treatments, and later human edits. Existing code is an implementation baseline, not automatic aesthetic approval.
+**Purpose:** help the user repeatedly **generate, compare, and improve visual images** of anything from one text treatment or icon to a control, component, family, section or page. Design Kit produces accepted **visual directions and image-based component specimens**, not working components, Figma layers, code or a deployed site. The user chooses the target, approves the look, decides when to stop and controls any separate implementation.
 
-## Working agreement
+**Default for a multi-part interface:** foundation -> first representative component -> consistent image-based component library -> sections using that library -> optional assembled page. **This is a reuse strategy, not a required waterfall**: when the user asks for only a single text element, button, section, group or whole existing design, work at that scope and stop at their chosen milestone.
 
-Default to an **artifact-first** assignment: inspect the relevant context, choose a coherent treatment, implement, inspect and refine, then show the result. Do not require approval of a rewritten prompt, reference board, token sheet, or intermediate diagnosis unless the user requested that supervision. [ONBOARDING.md](ONBOARDING.md) handles missing inputs and explicit checkpoints; it is not a mandatory sequence of phases.
+**Each visual unit uses the phase-specific checks in [PHASED_REFINEMENT.md](PHASED_REFINEMENT.md):** Phase 1 **foundation / first image implementation**, Phase 2 **craft and details**, Phase 3 **optional advanced depth/effects**, Phase 4 **user/contextual review**. Loop on corrections *within* the relevant phase instead of regenerating without a diagnosis. Skip or revisit phases based on the actual image and user's requested scope; the phases are not four required image generations.
 
-A design request delegates open aesthetic choices within its scope. It does not authorize replacing protected identity, changing product behavior, expanding scope, installing dependencies, paid access, private uploads, external writes, or publication. Ask only when a material reserved choice or necessary permission is genuinely unresolved; reuse answers already given. Review-only edits neither code nor project records.
+## 1. Begin with the actual scope and a lightweight foundation
 
-Keep the current agent, model, settings, tools, and working medium. No automatic model handoffs, extra agents, runtime, or MCP setup. For broad visual evolution, work on a representative unit first and obtain acceptance before application-wide propagation. An authorized consistency repair may update its shared owner and affected consumers in the agreed batch without per-component permission.
+Inspect known product context, accepted images, supplied content/assets, visual constraints and current work. Use [FOUNDATION.md](FOUNDATION.md) to organize type/color roles, geometry, density, imagery and exclusions. The user may supply their own foundation; if incomplete or absent, Design Kit **may propose** one using real references, but proposed is not user-approved. Test the foundation through images, beginning with a high-leverage element rather than demanding a full token sheet.
 
-## 1. Find the visual problem
+Find a specific visual question worth researching. Use the **existing Awwwards and One Page Love MCP connections** and [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) when they can supply inspected examples; also reuse user-provided and accepted images. Provider discovery is a meaningful advantage, not a mandatory call on every round. Note what a reference actually shows and which relationships are worth adapting. Never invent inspected images or imply a gallery verifies interaction.
 
-Inspect the actual render, relevant source files and accepted examples. Locate the canonical style/component owners and enough consumers to understand the proposed change. Do not begin with an exhaustive repository or catalog audit.
+## 2. Iterate on the requested image unit
 
-Choose the appropriate treatment:
+Use [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md) for exact content, scale, target framing, constraints, selected visual references, focal point, treatment and a **specific generation prompt**. An image may show one word/type treatment, a button, a component family, a section or a whole page. Do **not** enlarge a single-element request into a page.
 
-| Task | Starting point |
-| --- | --- |
-| Faithful implementation / consistency | Reuse the closest accepted code, component, source control or composition. Restore its relationships; do not redesign valued originals. |
-| Existing UI, appearance unapproved | Preserve engineering and protected anchors. Resolve the visual relationships that remain open; do not treat the whole library as approved. |
-| New design | Use product goals, real content, assets and constraints to author one representative composition in the chosen medium. |
-| Review | Compare evidence and report prioritized findings; no edits. |
+For each iteration **within the chosen phase**: **inspect current image -> identify that phase's largest material issue -> specify preserve / rework / expected visible difference -> generate or edit -> compare to the strongest prior image and actual references -> retain the better visual**. Correct foundational problems in Phase 1 before investing in polish or depth. Do not treat a 6.5/10 or 7/10 self-score as a diagnosis; request/identify the exact missing design keys. Favor structural, typography, hierarchy, visual identity, composition and art-direction moves over endless micro-polish. Small corrections are appropriate when the dominant treatment is already strong.
 
-For craft complaints, inspect applied typography, color roles, effective spacing, control families and assets before assuming that navigation or layout needs replacement. For composition complaints, inspect attention order, grouping, proportions, enclosure and density. The user supplies direction, not an exhaustive defect inventory. Read only the affected [CRAFT.md](CRAFT.md) sections; use [DESIGN_DIRECTION.md](DESIGN_DIRECTION.md) for unresolved visual choices.
+**After every image iteration or returned batch, show the result and ask what the user wants to do next**: revise, accept, explore a different direction, apply the established style to another element/group, move to a section, or stop. Do not silently start another round. An explicitly requested batch is one reviewable round, not permission to bypass the checkpoint. Continue for as many user-requested rounds as tool access and explicit budgets permit; there is **no fixed two-pass cap**. Agent-selected images are proposals, not human acceptance.
 
-## 2. Choose changes that can actually improve the render
+If the current host cannot generate/edit images, provide an executable image prompt and disclose that visual generation/inspection was not done. Do not replace image work with coded mockups without separate authorization.
 
-Use the user's strongest accepted example or an inspected, relevant reference as a quality anchor when available. A baseline that is merely less broken is not necessarily good enough.
+## 3. Establish and refine the visual component library
 
-Form a short working note, not a new specification document: **visible gap or opportunity -> proposed mechanism -> expected visible difference -> protected relationships**. Usually one to three coordinated moves suffice; this is a prioritization aid, not a cap on required fixes. Own the choices instead of asking the user to prescribe their pixels. Separate observed violations, intent mismatches and aesthetic proposals.
+For a broader project, iterate the **first representative component or typographic element** deeply until the user recognizes the intended style. This is the visual anchor. Reuse its **actual chosen image**, together with the foundation and any relevant inspected MCP reference images, to make related components consistent.
 
-The moves must address the requested quality: for example, coordinate control weight and label rhythm across a family rather than adjusting one convenient margin. Do not substitute generic decoration or an unrelated layout overhaul for the actual complaint. When references conflict, select a dominant treatment and bound secondary contributions instead of averaging their identities.
+Build a library of **image concepts**, not code: typography treatments, buttons, inputs, cards, navigation, icons, states and whatever the target actually needs. For early uncertain families, work individually. Once the style is stable, **generate coherent groups/batches of related components** to accelerate exploration. Compare the whole family for scale, density, material, type, color and exceptions rather than accepting a tray of loosely related attractive images.
 
-Use supplied evidence first. Additional research is conditional on a named decision it can resolve, not a required reference count. [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) uses existing MCPs or the curated [REFERENCES.md](REFERENCES.md) catalog selectively. Missing optional inspiration does not block an authorized original proposal; missing a required fidelity source does block a fidelity claim. Never invent visual inspection.
+**Both the user and Design Kit can refine existing component images**. The user determines when they are sufficiently polished and consistent; the kit should actively identify drift, propose consequential corrections and generate revised image concepts. Keep accepted exemplars intact. [COMPONENT_LIBRARY.md](COMPONENT_LIBRARY.md) owns this reuse and consistency process.
 
-## 3. Author one coherent candidate
+## 4. Compose sections, then an optional page
 
-Design directly in the target's existing code or chosen editable medium. Resolve affected foundations in a real composition; a separate specimen, complete token system or component library is not a prerequisite. Use an existing preview or isolated disposable artifact when necessary, not a new production review route.
+When the user elects to continue to sections, **use selected component images and the established foundation as the primary visual anchors**. Build and iterate the first section image using those parts; then subsequent section images inherit their shared style while varying composition by purpose. Do not reopen settled identity for each section or impose identical layouts everywhere.
 
-Change canonical owners where they explain repeated symptoms. Preserve correct source controls and semantic behavior. A proposed treatment may need coordinated type, spacing, asset and composition changes; do not mistake a tiny diff for a high-value design. Conversely, do not rebuild adequate structure merely to make the change look substantial.
+If a full page is requested, assemble selected section images in order, inspect pacing, alignment and continuity, and revise the offending **images**. A user may also give a complete page image for critique or visual revision directly; support that without insisting on rebuilding its component library first.
 
-Use real or explicitly representative content and loaded fonts/assets. Keep the full composition visible while refining details. For a family change, include an affected consumer and a meaningful variant/state; for a screen, include a contrasting state or narrow container where it challenges the design. Retain accepted implementation, not just prose about it. Requested frontend integration follows [SOFTWARE.md](SOFTWARE.md) inside this assignment.
+## 5. Stop where the user wants
 
-## 4. Compare and correct within the budget
+A valid deliverable may be **one selected text image, one component, a component group, a coherent image-based library, a section or a page storyboard**. At the user's chosen milestone, retain accepted image versions, relevant prompts, foundation/reference relationships, decisions and unresolved details in the target's existing record, otherwise .design/project.md using [BRIEF.md](BRIEF.md).
 
-Inspect the actual render at intended viewing size, then the discrepant region closely. Compare baseline/candidate under equivalent content, state, viewport and loaded assets. Compare the anchor's relevant relationships too, without assuming identical pixels suit different content. Judge the images before relying on your explanation of the changes.
+**Stop before actual editable design, coded components, HTML/CSS/React, publication or any conversion workflow.** Those are separate user-selected tasks. Generated images do not prove responsive behavior, accessibility, accurate text rendering or functionality.
 
-Check visual contribution separately from functional/responsive correctness. Repair affected states, widths, content stress and relevant failures using CRAFT.md and matching [QA.md](QA.md) sections. Numerical consistency, screenshot counts and passing tests do not certify visual quality.
+## Conditional guides and boundaries
 
-Default budget for one bounded unit: **one candidate and at most two grouped visual refinement passes**. A pass addresses the highest-impact remaining gaps together; another phase, component or context handoff does not reset it. [EXECUTION.md](EXECUTION.md) defines the stopping rules. User-specified budgets override this default. Do not weaken correctness checks or hide incomplete work to fit the budget.
+- [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md), [REFERENCES.md](REFERENCES.md) and existing MCPs: targeted visual research with reuse of accepted references.
+- [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md), [PHASED_REFINEMENT.md](PHASED_REFINEMENT.md), [COMPONENT_LIBRARY.md](COMPONENT_LIBRARY.md), [FOUNDATION.md](FOUNDATION.md): image loop, phased craft criteria, visual library and provisional/confirmed style.
+- [ONBOARDING.md](ONBOARDING.md), [EXECUTION.md](EXECUTION.md): user checkpoints, budgets and efficiency; [DESIGN_DIRECTION.md](DESIGN_DIRECTION.md), [PROMPT.md](PROMPT.md), [TASTE.md](TASTE.md) and relevant [CRAFT.md](CRAFT.md): selective critique and prompt precision.
+- [HOSTS.md](HOSTS.md) / [PROVIDERS.md](PROVIDERS.md): real access/configuration issues only. [SOFTWARE.md](SOFTWARE.md), [QA.md](QA.md), [PENPOT.md](PENPOT.md) and [PRODUCT_DELIVERY.md](PRODUCT_DELIVERY.md) are retained legacy/separately authorized resources, **not automatic steps**.
+- Untrusted Skills.sh/third-party skills are optional experiments, not assumed improvements or automatic installs. Preserve existing working tools, user decisions, protected content and human edits. No paid services, external writes, model switches or new dependencies without explicit authorization.
 
-If a pass produces no material improvement, do not repeat the same hypothesis. Distinguish execution drift from a weak treatment or missing evidence. Preserve the stronger version. An alternative must fit the remaining scope/budget; otherwise report the unresolved gap and stop, without declaring victory.
-
-## 5. Deliver evidence and preserve the gain
-
-Lead with the actual result and a useful before/after comparison. Briefly state the visible contribution, important tradeoffs, checked scope and remaining limits. No numerical self-score or unsupported quality claim. Human acceptance belongs to the user; agent-selected work is not human-approved.
-
-For broad evolution, wait here before propagating new shared visual choices. Once accepted, reuse their actual code/assets/tokens and verify a contrasting consumer. Keep a small coverage record for a whole-library request; a single attractive example does not close uninspected families.
-
-Retain paths, accepted revision/captures, protected choices, pending defects and next authorized action in the target's existing record, otherwise `.design/project.md`. Do not duplicate token values, archive the transcript, or update the shared kit during a design task.
-
-## Conditional resources
-
-[TASTE.md](TASTE.md) and [GUIDELINES.md](GUIDELINES.md): a relevant unresolved craft/experience question, not compulsory extra reading. [PROMPT.md](PROMPT.md): requested prompt help. [HOSTS.md](HOSTS.md) / [PROVIDERS.md](PROVIDERS.md): actual activation/access/setup problems. [PENPOT.md](PENPOT.md): user-selected Penpot only. Historical research is not build context. This file owns the current procedure; supporting documents do not add unrequested research quotas or approval phases.
+Judge success by the **images, user decisions, consistency and actual observed effort**, not by a checklist, fabricated approval or an unverified token-savings claim.

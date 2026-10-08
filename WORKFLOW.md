@@ -1,7 +1,13 @@
 # Workflow compatibility pointer
 
-[SKILL.md](SKILL.md) is the single canonical procedure. Start there for UI design, improvement, review and requested frontend QA.
+[SKILL.md](SKILL.md) is the canonical procedure. Design Kit is **image-first at any scale**—a single text treatment, icon, control, component family, section, screen or complete design image.
 
-The default is artifact-first: inspect the relevant target, author a coherent candidate, compare the actual render, refine within the budget, then present the result. Intermediate supervision is explicit, not a required prompt/reference/system approval sequence. Preserve existing user-reserved checkpoints.
+**At each requested unit**, apply the optional-depth [four-phase image-refinement protocol](PHASED_REFINEMENT.md): foundation/first visual implementation -> detailed craft -> purposeful advanced finish **if needed** -> user/contextual review. Within **each** phase, correct the image in rounds with feedback. This sits **inside**, not instead of, the component-first workflow.
 
-Use [ONBOARDING.md](ONBOARDING.md) only for scope, missing input and review boundaries; [EXECUTION.md](EXECUTION.md) for budget and continuity; [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) for a concrete evidence gap; and [SOFTWARE.md](SOFTWARE.md) for requested frontend implementation. Legacy target briefs remain valid. Historical workflow documents do not override the current entrypoint.
+**Default for a multi-part project, only as far as the user wants:**
+
+[Foundation](FOUNDATION.md) -> first representative component image -> [consistent visual component library](COMPONENT_LIBRARY.md) (batch related elements once stable) -> [section images](IMAGE_WORKFLOW.md) from accepted components -> optional page sequence.
+
+There is **no compulsory library** for a single-element request, and a user may submit a full design image directly. After **every image round or returned batch**, show the images and **ask whether to revise, accept, explore related elements, continue or stop**. No fixed two-pass cap; the user controls iteration.
+
+Reuse **actual accepted component images** and relevant inspected **Awwwards / One Page Love MCP references** through [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md). [ONBOARDING.md](ONBOARDING.md) governs checkpoints; [EXECUTION.md](EXECUTION.md) covers budgets and efficiency. Stop at the chosen visual milestone before editable design, coded components or conversion.

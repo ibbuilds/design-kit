@@ -1,61 +1,42 @@
-# Project design record — blank template
+# Visual image iteration — blank target-project record
 
-Use the target's authoritative record, otherwise `.design/project.md`. Capture only useful answers as the work progresses; no form to complete before starting. Link originals, keep this shared template blank and exclude secrets. Examples are not project preferences.
+Use the target's existing record or .design/project.md. This shared template stays blank; record only known facts and real image references.
 
-## Current checkpoint
+## Scope and foundation
+- Requested unit: text / element / component / group / section / page:
+- Actual product/content/assets and protected visual decisions:
+- User-confirmed foundation / kit-proposed choices / unresolved details:
+- Inspected Awwwards / One Page Love or supplied references and observed relationships:
+- Selected prior images and strongest visual component exemplar:
+- Image tool, viewport/crop and actual user iteration/cost limits:
+- User-selected milestone at which to stop:
 
-- Phase / requested design scope / fidelity:
-- Accepted decisions or explicit delegation; closed/open/illustrative choices:
-- Accepted source paths/IDs + reviewed revision/capture + human decision:
-- Pending proposal/feedback / missing input / next authorized action:
+## Per-unit image iteration
+- Target unit/family and visual job:
+- Reference images, foundation and exact content:
+- Candidate image IDs/paths and prompt/revision:
+- Current refinement phase: **1 foundation / 2 craft / 3 optional depth / 4 user/context review** ([PHASED_REFINEMENT.md](PHASED_REFINEMENT.md)):
+- Phase-specific diagnosis, observed evidence and visual improvement hypothesis:
+- **Keep / rework / expected visible difference:**
+- Strongest version and status (proposed / agent-selected / user-accepted / reopened):
+- **Feedback after this image round (inside this phase):** revise / accept phase / revisit earlier phase / change direction / group / next unit / stop:
+- Remaining visual mismatch and next authorized action:
 
-## Context and experience
+## Visual component library (if requested)
+- Accepted exemplar image, style DNA and foundation version:
+- Relevant components, variants and image IDs:
+- Individual components still open / groups ready for efficient batch generation:
+- Whole-library consistency observations, outliers and user or kit revisions:
+- User-selected library milestone:
 
-- Brand/product, audience, main need/task and intended design result:
-- Actual inputs/research/feedback; assumptions distinguished from evidence:
-- Existing base: what works, what falls short and what to preserve:
-- Existing identity/system change boundary / protected anchors / authorized open changes:
-- Requested quality priority / explicit visual requirements, numerical rules and exclusions:
-- Detected canonical identity, system and component sources / shared consumers affected by proposed changes:
-- Relevant content, product language/locale, terms/grouping/navigation and task/state sequence:
-- Device/container, responsive, inclusion, asset and feasibility constraints:
-- Inspected viewport/container range, breakpoint/state evidence and unverified responsive limits:
-- Structural sketch/prototype or accepted equivalent; open decisions:
+## Sections and page (only if requested)
+- Accepted component images used in each section:
+- Section image versions, composition decisions and review status:
+- Optional page order/storyboard, visual pacing and gaps:
 
-## Direction, references and foundations
+## Stop / handoff
+- User's actual stopping point and accepted image IDs:
+- Source provenance, pending decisions and unverified image limitations:
+- Optional separate future work, **only if user requests it**:
 
-- Designer's direction; selected source/capture relationships and exclusions:
-- Interpreted visual traits / requested and avoided qualities:
-- Documented aesthetic / agent's hypothesis / user's confirmation or correction / design-document gaps:
-- Original product/vibe wording / faithful expanded prompt / confirmed versus proposed/unknown:
-- Selected reference providers / actual access / fallback or unverified limits:
-- Curated selection / fit gaps / accepted advance-or-refine choice:
-- Intended visual source versus current base / inspected comparison / discrepancy and proposed treatment:
-- Reusable query/result/capture evidence / retrieval gaps / explicit call budget:
-- Aesthetic-led search relationships / optional task/genre filter and reason:
-- Reference state/viewport; observed versus inferred behavior:
-- Inspected reference subpages/system/style sources / needed rule coverage / unresolved gap and accepted supplemental contribution:
-- Chosen medium / actual capability / real assets and provisional material; supplied source format/region versus requested asset outputs/treatment and fidelity limits:
-- Canonical typography, semantic colors, spacing/density, geometry and usage:
-- Visual contract: affected role/family / expected relationship or requirement / source/rationale / canonical owner / observed render or measurement / unresolved mismatch:
-- Canonical system document/token paths / rendered specimen and reviewed revision:
-- Supplied values versus proposed system additions and acceptance:
-
-## Components, compositions and refinement
-
-- Canonical component/pattern paths/IDs, accepted working examples, inherited relationships/allowed variation and scoped states:
-- Scoped coverage map: shared rule/owner / affected families, variants, states, containers and consumers / representative evidence and exceptions / fixed, verified or open:
-- Whole-page/flow outline; requested batch and accepted regions:
-- Structural causes / supporting current and reference evidence / reviewed repair order / resolved, pending or deferred:
-- Before/after sources; intended and visible contribution; material tradeoffs:
-- Designer's correction/acceptance and strongest retained baseline:
-- Exact review scope / rejected diagnosis and affected dependent work:
-- Remaining design gaps and next authorized action:
-
-## Only when code is requested
-
-- Accepted design handoff, structure/styles/assets/states/responsive intent:
-- Implementation root/stack, relevant technical requirements and evidence:
-- Existing API contracts, labelled mocks/missing services and frontend states:
-
-Keep project data in the target, not the installed kit. A supplied file or positive agent verdict is not human acceptance or user research. One short record and actual working artifacts are sufficient; no transcript archive or document per section.
+Never invent captures, approved fonts/tokens, image paths or human acceptance. Image specimens are **not** coded components, accurate UI behavior or a completed editable design.

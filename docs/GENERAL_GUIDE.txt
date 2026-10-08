@@ -1,70 +1,64 @@
 GENERAL GUIDE — DESIGN KIT
-Updated: October 6, 2026.
+Updated: October 8, 2026.
 
-GOAL
-Improve the rendered interface at acceptable total effort. Procedural compliance,
-more references, passing tests and a positive model summary are not visual uplift.
-SKILL.md is the canonical procedure. This guide does not introduce extra phases.
+PURPOSE
+Iterate with GENERATED IMAGES of any visual unit: text, icon, button, component,
+family, section or whole page. A final coded/editable design is NOT created by
+the kit. The user chooses the scope, visual acceptance and stopping point.
 
-START
-Use Design Kit in the actual project and current agent:
-"Use Design Kit to improve this UI. Preserve the treatments and behavior I have
-already accepted. Own the remaining visual decisions. Deliver one inspected
-candidate and use at most two grouped visual refinement passes. Do not install
-anything or research broadly; use our existing references/tools for concrete gaps."
+DEFAULT FOR MULTI-PART WORK
+1. Use the user's foundation or a clearly provisional kit-proposed visual
+   direction, grounded in actual inspected Awwwards / One Page Love MCP
+   references where useful.
+2. Choose a high-leverage FIRST COMPONENT or typography element. Generate
+   and revise its image until the desired style is selected.
+3. Reuse that actual component image and foundation for related components.
+   When the shared style stabilizes, GENERATE COMPONENT GROUPS IN BATCHES.
+4. Inspect and refine the visual component library for consistency.
+   The USER or Design Kit can make those image refinements.
+5. When requested, compose SECTION IMAGES from the accepted components,
+   then more sections. Optionally review the complete page's images together.
+6. STOP whenever the user wants: one word/element, component, group, library,
+   section or full page. A smaller request does NOT require a larger workflow.
 
-Supply the actual target and product goal where they are not already known.
-You do not need a Figma file, finished visual specification or defect inventory.
-The agent inspects relevant evidence and chooses the intervention. A material
-protected choice, inaccessible required source or missing permission may need a
-focused question; ordinary open visual choices do not.
+PHASED IMPROVEMENT INSIDE EACH IMAGE UNIT (NOT INSTEAD OF COMPONENT-FIRST)
+Use PHASED_REFINEMENT.md on a word, component, family, section or page:
+  Phase 1: fundamental concept/visual implementation: copy, proportion,
+           hierarchy, size, base type/color, radius and shape.
+  Phase 2: precision/craft: optical alignment, stroke, controlled gradients,
+           surface detail, image/crop and family consistency.
+  Phase 3: advanced finish only IF it adds value: shadow, material, lighting,
+           highlight, texture, visual depth. Skip for deliberate flat/minimal UI.
+  Phase 4: user/contextual review of the best candidate and prior anchors.
+Return to an earlier phase for an unsolved foundational problem; do not mask
+bad proportions with effects. Phase 4 is a review, NOT a mandatory generation.
+All phases share the current image unit and accepted style/library references.
 
-WORK
-Inspect the relevant render and source -> identify high-impact visible changes
--> author one coherent candidate in the existing medium -> inspect and refine
-within the budget -> show the result and relevant QA evidence.
+MANDATORY FEEDBACK AFTER EVERY IMAGE ROUND OR RETURNED BATCH
+Present the actual image result, compare material differences, and ASK what
+the user wants next: revise, accept, change direction, generate matching
+components, advance to sections or stop. Do not silently start another round.
+Continue for as many user-requested rounds as tools/budgets permit. There is
+no fixed two-pass ceiling.
 
-For craft problems, inspect applied type/color, effective spacing, control
-families and assets. Do not assume a library complaint requires new navigation.
-For open composition, the agent owns hierarchy, proportion and enclosure choices.
-Resolve affected foundations in context; do not first commission a full system.
+MCP REFERENCES AND EFFICIENCY
+Preserve working Awwwards / One Page Love integrations, curated REFERENCES.md
+and reference helper. Actually INSPECT source imagery before using it. Reuse
+accepted sources and chosen component images across descendants. Do not
+automatically browse both providers or rediscover settled visual decisions.
+Component-first reuse and batching may improve efficiency; token savings are
+not established without measured tasks.
 
-A broad evolution starts with one representative unit before application-wide
-propagation. After acceptance, reuse actual implementation and check contrasting
-consumers. An authorized repair restoring accepted shared rules can cover its
-agreed consumers without per-component permission. Keep whole-library coverage
-and pending cases visible; one attractive example is not a complete library.
+EXAMPLES
+"Improve only this headline through images."
+"Iterate on this control until I select it, asking me after every round."
+"Match these three components to my accepted first-component image."
+"Revise this entire existing design image directly."
+No forced page or component library for a one-off request.
 
-RESEARCH
-There is no reference minimum. Reuse accepted examples and supplied evidence.
-Default: one targeted discovery query, then one relevant retry/fallback only if
-needed. Inspect selected results; do not crawl entire sites or both MCPs routinely.
-An explicit research brief can change this budget. Missing optional inspiration
-permits an honestly labelled original proposal; missing required fidelity evidence
-does not permit a claim of alignment. Keep the two existing MCP integrations.
-Do not add paid services or equate MCP access with good visual judgment.
-
-REVIEW AND STOP
-Default budget: one candidate plus at most two grouped visual refinement passes
-for the bounded unit, not per phase/component. Stop repeating a hypothesis when
-it gives no material gain. Keep the stronger version and disclose remaining gaps.
-Necessary verification remains required; exhaustion means incomplete, not ready.
-The agent shows the actual result, visible contribution, tradeoffs and inspected
-scope. You accept the result, not every intermediate design micro-decision.
-Explicit guided checkpoints remain available and existing user instructions win.
-
-SETUP AND CONTINUITY
-Use the installed skill and browser first. Install/update only when needed and
-authorized, using README.md and HOSTS.md. PROVIDERS.md is for actual access/setup
-problems, not a mandatory startup step. Global and project installations retain
-their existing supported paths and safeguards. No forced model or app switch.
-
-Keep accepted code, captures, source relationships, relevant commands and pending
-work in the target's existing record. Do not build another compiler, schema,
-reference index or multi-agent system to use this flow.
-
-VALUE
-Record observable total usage and human intervention on a real task. Mark missing
-measurements unknown. Before/after improvement alone does not prove the kit caused
-it; a matched with/without-kit task is needed for that claim. Package tests are not
-aesthetic tests. No guaranteed score, savings percentage or zero-iteration claim.
+OPTIONAL SKILLS AND HONESTY
+Third-party skills are optional authorized experiments, not guaranteed gains.
+Generated text may be wrong; retain exact copy separately. Static image
+specimens do not prove functionality or responsive implementation.
+Keep actual results, reference provenance and user choices in the target record.
+Canonical: SKILL.md, IMAGE_WORKFLOW.md, COMPONENT_LIBRARY.md.

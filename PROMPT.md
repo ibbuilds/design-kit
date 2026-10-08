@@ -1,54 +1,32 @@
-# Expand the brief without inventing it
+# Specific image prompts for any visual scale
 
-Use after reading the product request and resolving the intended vibe, before reference discovery or dependent construction. The current agent synthesizes this; no separate prompt service, model call or optimizer installation is needed. [ONBOARDING.md](ONBOARDING.md) remains the workflow.
+Use [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md) to expand **image-generation** prompts, never mandatory frontend instructions. Include the requested target, content, scale, provisional/confirmed foundation, actually inspected reference image, explicit style anchor, protected elements and visible expected change.
 
-## Preserve intent and provenance
+## Template
 
-Keep the user's original product/vibe wording or a faithful short quotation beside the expanded interpretation in the target's existing record. Reuse facts from the conversation and authoritative project files, with source pointers. Later corrections override earlier interpretations; they do not erase unrelated accepted decisions.
+> Generate an **image** of [text / icon / component / component group / family / section / page] for [known product] at [scale or aspect]. The visual job is [specific purpose]. Use [accepted or explicitly proposed typography/color/geometry/density]. Match the selected [actual component/library/section image] in [stable relationships]. Adapt [actually inspected MCP reference] only for [observed useful trait]. Show [exact content, relevant components/states, crop/visual hierarchy]. **Keep** [locked style/content]. **Rework** [material weak relationship] so [expected visible difference]. Avoid [specific unwanted patterns]. This is a static image concept, not working UI.
 
-Preserve the requested unit of work: a hero, section, component or improvement is not an implicit full-site brief. Supplied reference images/links can anchor the interpretation; record the observed relationship and the human's intended use rather than inventing a description from an unread visual.
+## Write prompts for the active refinement phase
 
-For an existing project, include its agreed change boundary, protected identity anchors and open relationships under ONBOARDING.md's existing-project entry. Describe current styles as observed evidence, not as new user preferences. Do not turn a generic improvement into an unrequested rebrand or replace accepted foundations with a reference site's identity.
+Use [PHASED_REFINEMENT.md](PHASED_REFINEMENT.md) alongside the component-first image process:
 
-Separate three things:
+- **Phase 1 — foundation / visual implementation:** describe the underlying idea, exact copy, function, hierarchy, size, shape/radius, base color and proportions. When direction is unknown, offer meaningfully distinct approaches rather than fine polish.
+- **Phase 2 — craft / surface details:** preserve the selected foundation; specify optical alignment, control stroke/outline, typographic spacing, surface transitions, gradients or states *only where appropriate*. Re-render and compare details at real scale.
+- **Phase 3 — advanced finish (optional):** explain precisely what an effect would contribute (e.g., shallow elevation clarifying priority). Request an unadorned comparison if helpful; no automatic gloss, glow or elaborate gradient.
+- **Phase 4 — user/contextual review:** show best image, previous accepted reference and related component/section context. **Ask** what is missing, which phase to revisit or whether to stop; this phase does not require a new image.
 
-- **Stated/confirmed:** product, purpose, scope, constraints, wanted/avoided qualities and accepted decisions actually supplied by the user or project.
-- **Proposed interpretation:** observable design relationships derived from those words, labelled as proposals until confirmed.
-- **Unknown:** material audience, content, assets, proof or behavior not supplied. Ask only what unlocks the current phase; use explicit placeholders for the rest.
+Corrections within *each* phase use a **keep / rework / expected difference** prompt; show every resulting image and wait for user feedback before another round. The same phase logic applies to typography, component groups, sections and page images without forcing extra scope.
 
-Expansion adds actionable detail, not new facts. Do not invent a business model, B2B audience, features, personas, metrics, testimonials, brand claims, approved references, exact fonts/palette or fixed component layouts. A named company is a clue to a relationship; it does not authorize copying its identity or claiming its design system was inspected. Preserve negative constraints and emphasis. Resolve conflicts with a narrow question rather than silently choosing.
+## Examples
 
-## Produce one useful expanded prompt
+**Text only:** Generate a readable image specimen of the headline "Explore ideas" on the accepted neutral surface. Compare a compact modern geometric setting against a taller editorial setting. Preserve the exact words and don't add a hero section. Keep source copy outside the image, because generative imagery can misspell it.
 
-Convert the agreed product/vibe into a copyable execution prompt and compact search brief using only useful fields. Keep the application brief separate from the discovery query: product context informs transfer, while aesthetic relationships lead visual search. Do not automatically turn every business noun into a mandatory provider tag.
+**First component:** Generate images of one primary button labelled "Continue". Explore proportion, tactile edge/surface and typographic weight, using the inspected reference only for the observed control emphasis. Do not invent a whole website.
 
-```text
-Task and product: [sourced request; design-only or requested frontend scope]
-User/task/content: [known facts; explicit unknowns]
-Preserve: [existing base/system and accepted decisions]
-Change boundary: [protected anchors, open relationships and affected canonical
-sources; preservation/evolution/replacement only when relevant, no automatic rebrand]
-Visual direction: [user's own wanted and avoided qualities]
-Proposed observable interpretation: [type/content, density/spacing, imagery,
-geometry/materials and motion only where supported]
-Reference question: [confirmed aesthetic relationships; cross-industry discovery;
-optional product/task filters only for an identified need]
-Requested evidence pattern: [section/component type when scoped; actual provider
-taxonomy or direct browsing; do not substitute an unrelated region]
-Review flow: inspected reference selection -> rendered scoped system ->
-components/interfaces -> requested frontend and relevant QA.
-Constraints: [real stack/assets/access/budget; no invented backend scope]
-Open questions: [only material missing choices; other details remain proposals]
-```
+**Component batch after the first exemplar is selected:** Using the **attached accepted primary-button image** and the foundation, generate a coherent comparison sheet of secondary button, icon-only action, link and disabled state. Preserve accepted type, contrast, border/material and density while expressing distinct priority.
 
-Show a short plain-language interpretation and the expanded prompt as the current context/vibe review output. Do not force the designer to write it themselves or read every internal note. The human can correct it in native questions/annotations or chat. Corrections revise the prompt and search brief; wait for acceptance of the interpretation before searching under it. Reuse explicit acceptance/delegation already supplied; this is the existing vibe checkpoint, not another approval ceremony.
+**Section after library:** Compose a pricing-section image using the selected typography, button and card specimen images. Preserve their style; improve relative emphasis and reading order for the real content.
 
-For a standalone prompt-improvement request, return the expanded prompt with labelled assumptions/unknowns and stop; it does not authorize reference search, design or implementation. For a build, keep using the accepted prompt across the same skill, adding actual selected reference relationships/system paths as those phases become accepted. Never treat an enriched prompt as approval of yet-unseen artifacts.
+A submitted full-page image can also be revised **directly**, without a compulsory component-by-component reconstruction.
 
-## Example of a faithful interpretation
-
-Input: "A SaaS landing. Techy and modern, but humanist; less big tech, more like Airbnb, closer to people."
-
-Preserve the SaaS landing, modern/tech quality, human emphasis and **less big-tech** constraint. A proposed interpretation might favor approachable language, people/context imagery and clear product hierarchy, with warmer surface/typographic treatment. Those are directions to confirm and investigate, not permission to prescribe a pink palette, Airbnb's font, rounded cards everywhere or a target audience the user never named. Search the confirmed relationships across eligible sources without automatically restricting the genre to SaaS; inspect real evidence before choosing exact foundations.
-
-Store the accepted expanded brief/prompt in the existing target record. No separate permanent prompt archive, project skill or additional process document is required.
+After every image round, **show and ask the user** whether to refine, accept, switch direction, generate siblings, advance or stop. A reference URL alone is not evidence the model saw the image. [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) owns Awwwards/One Page Love discovery and provenance; third-party prompt skills are optional, unproven experiments.

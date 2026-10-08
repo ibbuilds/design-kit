@@ -1,37 +1,29 @@
-# Budget, continuity and stopping
+# Image iteration budgets, reference reuse and stopping
 
-Optimize the accepted result, including preparation, failed attempts, verification and human intervention. A shorter file or cheaper model does not establish a cheaper successful task. Preserve the user's current model, effort, speed and platform; the kit does not silently switch them or introduce a multi-agent workflow.
+[SKILL.md](SKILL.md) applies to text treatments, icons, components, groups, sections and pages. There is **no universal two-pass cap**; respect user-selected generation/cost budgets and actual tool access.
 
-## Bound the assignment, not the ambition
+## Every round produces an image and a question
 
-[SKILL.md](SKILL.md) defines the default: one candidate and at most two grouped visual refinement passes for one bounded unit. State that boundary briefly when the task is broad. A new phase, changed component or context handoff does not reset it. User-specified budgets and explicit supervision override defaults.
+Choose a visible target and clear revision hypothesis: **keep / rework / expected visible difference**. Prefer material changes in structure, type hierarchy, component geometry, density, color/material or framing rather than endlessly nudging details. Keep the strongest image if a revision is worse.
 
-A pass is a coordinated revision after visual inspection, not each edit or screenshot. Do not create unlimited internal retries by renaming them debugging, responsive work or a new phase. One agent message can contain many expensive actions; a message count is not a quota guarantee.
+After **each returned image iteration or batch**, compare what changed and **ask whether the user wants another revision, accepts it, wants a group or another unit, or wants to stop**. No unattended extra rounds or implicit transition to the next unit. Continue while the user requests meaningful image exploration and resources permit. A batch of related components is still one user-reviewable round.
 
-Research follows [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md)'s small default discovery allowance. Setup is not a prerequisite when the current environment already renders. Reuse commands, canonical paths, source captures and actual accepted code. Do not conduct a repository-wide audit or verify every provider before a local design task.
+## Focused corrections inside the current unit
 
-## Require a reason for the next pass
+Select the active criteria from [PHASED_REFINEMENT.md](PHASED_REFINEMENT.md): **Phase 1 foundations and concept; Phase 2 craft and precise detail; Phase 3 optional purposeful depth/effects; Phase 4 final user/contextual review.** Don't waste advanced effects on wrong content, weak hierarchy, inaccurate proportions or misaligned component styling. A user can request only one phase, skip another or return to Phase 1.
 
-Name the remaining visible problem and why the next action could change it. Separate:
+There is no mandated generation count **per phase**. Identify specific missing visual variables and judge each resulting image, rather than attempting indefinite generic regeneration because an informal 6.5/10 or 7/10 score feels insufficient. After **every image correction round** continue the existing user feedback checkpoint.
 
-- Execution drift: the intended relationship did not reach the render; repair its owner.
-- Weak treatment: the design itself is unconvincing; change the hypothesis within scope instead of polishing it indefinitely.
-- Missing evidence or access: resolve the exact gap when necessary, not the entire tooling architecture.
+## Intended efficiency mechanism — not guaranteed savings
 
-If a pass yields no material improvement, do not repeat that hypothesis. Preserve the stronger version. Use a remaining pass for a genuinely different, supported intervention or stop and report the gap. Do not present a self-score, technical pass or larger diff as evidence of visual progress.
+Explore the style deeply in a first representative component/text image. Preserve its **actual selected image** and a short style summary. Transfer those relationships into siblings; batch coherent component families once the style is stable, then check the visual library for drift. If the user requests sections, reuse the accepted components, not merely aesthetic adjectives, and optionally assemble section images into a page.
 
-Required functional/responsive verification stays part of the assignment. Group relevant checks and recheck affected risks. At an explicit resource/time/iteration limit, stop and disclose unfinished work; never claim readiness or silently expand the budget. Do not weaken tests, hide overflow or omit necessary states to manufacture completion. Do not rollback human changes when preserving an earlier candidate.
+Keep context restricted to the current image unit, accepted foundation, relevant exemplar/component images, last visual delta and **selected inspected MCP references**. Reuse source relationships; avoid broad research repeated for every component or generation. Reopen sources only for named unresolved questions.
 
-## Spend context on the relevant visual work
+User or kit may correct components until the user accepts the quality. Do not announce quality or token savings without observation; unknown costs remain unknown. A matched **with/without-kit** comparison is needed to attribute benefit to the kit.
 
-Read the canonical entrypoint and affected support sections, not all manuals and historical research. Revisit changed state only. Retain readable context for composition plus a close view only when it resolves a particular discrepancy. Avoid redundant images, long logs and repeated summaries; a locally cached image still consumes context when supplied again.
+## Stop at any milestone
 
-Keep one target-owned record: scope/budget used, protected/open decisions, canonical paths, source relationships actually used, accepted revision/captures, verified scope, pending defects and next authorized action. Distinguish implemented, verified and human-accepted work. Do not require a new schema or document per component.
+Deliver a text/element image, selected component, group, visual library, section or page only as far as the user requested. Respect user consent, access limits, and any unavailable image tools. Preserve strong earlier images, actual decisions and relevant source provenance. No auto-creation of final editable designs, working components, code or conversions.
 
-Stay in a useful current session. A handoff carries the compact state and actual artifacts rather than the conversation archive. Model splitting is optional only when the user already chooses it and the handoff removes more work than it creates; preserve accepted code instead of delegating a new interpretation of aesthetic prose.
-
-## Measure only what is observable
-
-Record available usage before/after a bounded task and include failed attempts, preparation and repair. Otherwise leave consumption unknown. Do not derive subscription percentages from API prices, resets from memory, or savings from file length. Current plan/tool facts need current primary documentation when they affect a decision; do not hard-code them into the design procedure.
-
-Judge this kit by rendered quality, acceptance and total observed cost. A before/after gain does not isolate the skill's contribution; a matched with/without-kit comparison is needed for that inference. Package tests establish package behavior, not model obedience or aesthetics. Use a real necessary task before funding a benchmark program. No automatic model-credit experiments, background work or extra services.
+Package validation cannot prove image beauty, user satisfaction or model obedience. Optional third-party skills require authorized matched testing and are never silently installed.

@@ -1,18 +1,11 @@
-# Design Kit repository
+# Design Kit repository — maintainer guidance
 
-This repository distributes reusable UI/frontend guidance. It is not the target application or a custom agent runtime.
+This repository packages an **image-first visual-iteration skill at any scale**. It does **not** create working designs, UI components, code or a custom runtime.
 
-## Maintaining the kit
-
-- Read affected files. Preserve the curated REFERENCES.md and blank BRIEF.md unless changing them is explicitly requested. Product identity, captures and accepted code belong in target projects.
-- Write authored documentation, instructions, prompts and code in English. Preserve original source names, URLs and user evidence.
-- SKILL.md is the canonical artifact-first procedure. WORKFLOW.md is a compatibility pointer. ONBOARDING.md resolves delegation and explicit human checkpoints, not a mandatory phase itinerary. Keep active guides consistent with that boundary.
-- CRAFT.md, TASTE.md and GUIDELINES.md provide selective visual guidance. SOFTWARE.md owns frontend implementation/QA; backend remains outside scope. REFERENCE_ROUTER.md and EXECUTION.md are conditional support.
-- HOSTS.md and PROVIDERS.md retain platform/access/setup details. Preserve installed integrations and compatibility helpers; do not require new setup for ordinary design work.
-- Keep changes reversible and preserve concurrent work. External writes need authorization; never force-push or merge by default. Kit maintenance does not authorize application changes, paid services, new dependencies, model-credit experiments or runtime-setting changes.
-- Run `python -m unittest discover -s tests -v` for package changes. Keep installer/configuration safety tests intact. Instruction lint and passing package tests do not establish model compliance, visual uplift or savings.
-- Maintainer rationale and comparison criteria for the artifact-first revision are in docs/ARTIFACT_FIRST_REVIEW.md. It is not routine model context or an installed design prerequisite. Historical research records prior decisions, not the current operating contract.
-
-## Using the kit
-
-Install into the actual target using scripts/install.py and follow SKILL.md. Resolve skill guidance from the installed kit and application paths from the target. Reuse existing target instructions and briefs, including legacy `.design-kit/BRIEF.md`. Do not run a product-design workflow while maintaining this repository.
+- [SKILL.md](SKILL.md) is canonical. [PHASED_REFINEMENT.md](PHASED_REFINEMENT.md) adds **within-unit** visual checkpoints: initial concept/foundations, craft details, optional depth/effects, final user/context review. Do not confuse this with or replace the **across-unit** component-first reuse workflow; do not require any particular number of image generations per phase. For broad work, default to foundation -> **first representative component image** -> **image-based component library** -> sections -> optional page. For a text/icon/button/section-only request, respect that smaller scope. Support direct full-page image revision.
+- The user controls foundation approval, image acceptance, iteration count and stopping point. Kit-proposed foundations are clearly provisional. **After every image iteration or returned batch**, show images and ask what the user wants next; never silently advance.
+- First component image establishes style DNA. Use accepted exemplar images to generate related components, then coherent **groups/batches** when style is stable. The user or Design Kit can refine inconsistent visual component images. Reuse those actual images for section exploration.
+- Preserve **Awwwards and One Page Love MCPs**, [REFERENCES.md](REFERENCES.md), [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md), HOSTS/PROVIDERS access guidance and existing installer safeguards. Inspect actual sources; don't impose gratuitous repeated gallery research.
+- Keep SKILL, IMAGE_WORKFLOW, COMPONENT_LIBRARY, FOUNDATION, README, BRIEF, PROMPT, ONBOARDING, EXECUTION, DESIGN_DIRECTION, WORKFLOW and docs usage guides aligned. Historical material is background.
+- External skills are optional experiments. No automatic installs, paid calls, model switches, private uploads, external product writes, implementation, conversion, merge or force-push.
+- Keep authored documentation in English and product-specific material in the target project. Run python -m unittest discover -s tests -v after package changes. Passing tests cannot establish image quality, model obedience or token savings.

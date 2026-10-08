@@ -10,7 +10,7 @@ import sys
 import tempfile
 
 PACKAGE = (
-    "SKILL.md", "agents/openai.yaml", "README.md", "BRIEF.md", "TASTE.md",
+    "SKILL.md", "IMAGE_WORKFLOW.md", "PHASED_REFINEMENT.md", "COMPONENT_LIBRARY.md", "FOUNDATION.md", "agents/openai.yaml", "README.md", "BRIEF.md", "TASTE.md",
     "GUIDELINES.md", "CRAFT.md", "QA.md", "REFERENCES.md", "WORKFLOW.md", "RESEARCH.md",
     "docs/EXECUTION_DECISION.md", "scripts/install.py", "tests/test_install.py",
     "REFERENCE_ROUTER.md", "EXECUTION.md", "SOFTWARE.md",
@@ -39,12 +39,12 @@ MANIFEST = ".design-kit-manifest.json"
 START = "<!-- design-kit:begin -->"
 END = "<!-- design-kit:end -->"
 POINTER = (
-    START + "\nFor design references, UI/UX assistance, frontend implementation, or review, read and apply\n"
+    START + "\nFor image-first visual exploration, section images, references and review, read and apply\n"
     "`.agents/skills/design-kit/SKILL.md`. Preserve this project's own\n"
     "instructions and use its existing brief and accepted implementation.\n" + END + "\n"
 )
 SOFTWARE_RULE = (
-    "For requested frontend code and QA, read and apply `.agents/skills/design-kit/SOFTWARE.md`.\n"
+    "For separately user-requested frontend code and QA, read and apply `.agents/skills/design-kit/SOFTWARE.md`.\n"
     "Preserve accepted design and existing API contracts; backend implementation\n"
     "is outside Design Kit's scope.\n"
 )
@@ -246,8 +246,8 @@ def main():
     parser.add_argument("--host", choices=HOSTS, default="codex", help="Target interface/runtime (three supported platforms)")
     parser.add_argument("--check", action="store_true", help="Report drift without writes (exit 1 if changes needed)")
     routing = parser.add_mutually_exclusive_group()
-    routing.add_argument("--with-software", dest="with_software", action="store_true", help="Also route requested frontend code directly to SOFTWARE.md")
-    routing.add_argument("--design-only", dest="with_software", action="store_false", help="Keep only the frontend instruction pointer")
+    routing.add_argument("--with-software", dest="with_software", action="store_true", help="Legacy opt-in to separate frontend guidance outside image-first Design Kit")
+    routing.add_argument("--design-only", dest="with_software", action="store_false", help="Keep the image-first skill pointer, removing the legacy frontend route")
     parser.set_defaults(with_software=None)
     args = parser.parse_args()
     try:

@@ -1,18 +1,17 @@
 interface:
   display_name: "Design Kit"
-  short_description: "Artifact-first UI design and frontend QA"
-  default_prompt: "Use $design-kit to improve the requested UI in its existing medium. Own open visual decisions, preserve protected work, and deliver an inspected candidate within the stated budget. Use existing reference tools only for a concrete evidence gap."
+  short_description: "Reference-guided image iteration for UI components"
+  default_prompt: "Use $design-kit for image iteration at my requested scale (text, component, group, section or page). For multi-part work reuse a first component exemplar to build a consistent visual library, then optional sections. Inside each unit refine through visual foundations, craft details, optional purposeful depth and user review; correct each phase through image rounds. Reuse actual accepted images and inspected Awwwards/One Page Love MCP references. After each image round, ask what I want next. Stop at my chosen milestone before actual design or code."
 policy:
   allow_implicit_invocation: true
-# Preserve existing provider declarations for installed integrations.
-# SKILL.md governs conditional use; this is not a request to run discovery or setup.
+# Preserve existing visual-reference MCP connections; invocation is conditional.
 dependencies:
   tools:
     - type: "mcp"
       value: "onepagelove"
-      description: "One Page Love reference search when relevant and already available"
+      description: "One Page Love visual references when relevant and already available"
       transport: "streamable_http"
       url: "https://api.onepagelove.com/mcp"
     - type: "mcp"
       value: "awwwards"
-      description: "Unofficial Awwwards reference server; optional task use and authorized setup in PROVIDERS.md"
+      description: "Unofficial Awwwards reference server; conditional use and authorized setup in PROVIDERS.md"

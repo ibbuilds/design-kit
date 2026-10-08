@@ -1,52 +1,30 @@
-# Make the visual treatment earn its place
+# Visual judgment from one element to an entire page
 
-Use for an unresolved design choice under [SKILL.md](SKILL.md). This is a decision aid, not an additional phase or a demand for another document. Apply only what the current complaint needs.
+Under [SKILL.md](SKILL.md), critique **the actual generated image**, not a persuasive explanation. Judge at the scope the user asked for: a text treatment needs legible type; a control needs deliberate proportions and weight; a group needs family consistency; a section needs composition; a page needs pacing.
 
-## Work at the right level
+## Where the style authority comes from
 
-Classify the actual gap before choosing the intervention:
+Early on, inspect user images and relevant real Awwwards/One Page Love MCP examples. Design Kit may propose foundation choices, clearly labelled. Once a **first component exemplar image is selected**, reuse its typography, geometry, density, color roles and material language across related components. When the visual component library is consistent, **reuse its actual images** to anchor sections. Don't restart the same styling question for every sibling or infer exact token values from one generated image.
 
-| Observed gap | Useful intervention |
+## Improve at the missing level, not by increasing generation count
+
+[PHASED_REFINEMENT.md](PHASED_REFINEMENT.md) splits image refinement into **Phase 1 initial visual foundation, Phase 2 optical/detail craft, optional Phase 3 purposeful depth/effects and Phase 4 user/contextual review**. These are **within** the existing individual-component -> library -> sections progression, not a replacement. If the concept is wrong, fix Phase 1. If the proportions and identity are right but craftsmanship is weak, work in Phase 2. If restrained material effects genuinely improve clarity or character, test Phase 3. Do not assume a 7/10 self-rating or unlimited unexamined generations identifies the remaining problem.
+
+Each phase permits specific correction loops, comparing the strongest earlier image and current relevant references. Ask the user after **every returned image round**. A deliberately minimal treatment can skip depth completely; acceptance occurs at the user's chosen milestone.
+
+## Material revisions by scope
+
+| Visible issue | Useful image change |
 | --- | --- |
-| Derived controls no longer resemble valued originals | Reuse the accepted implementation; trace changed padding, type, icon, border or state owners. |
-| Correct tokens but incoherent composition | Compare attention order, relative scale, effective whitespace, enclosure and asset weight in context. |
-| Weak visual premise or generic structure | Choose a stronger product-specific composition or type/image relationship inside the delegated scope. |
-| Good treatment, poor execution | Correct implementation drift rather than reopening identity. |
-| Good isolated specimen, weak consumers | Adjust the shared relationship and its usage together; inspect meaningful exceptions. |
-| Missing necessary asset or fidelity source | Resolve that concrete gap; do not substitute a decorative approximation and claim a match. |
+| Text looks generic or unreadable | Rework hierarchy, letterform character, wrap, contrast and line rhythm |
+| Button or input looks weak | Change proportion, label hierarchy, material/edge and relationship to sibling controls |
+| Component family drifts | Generate corrected specimens with accepted exemplar and shared style relationships |
+| Whole library feels consistently ordinary | Reopen the foundational treatment rather than micro-polishing every unit |
+| Section looks disconnected | Recompose around chosen components, focal point and content purpose |
+| Page feels repetitive | Adjust section pacing and variety without replacing accepted component language |
 
-This classification is a hypothesis, not a verdict. Inspect source/current views and relevant properties. If feedback rejects it, investigate the named issue instead of defending the prior explanation. A controls complaint does not automatically call for navigation or density redesign.
+A **substantial change** means an observable improvement in visual structure or treatment, not a large number of arbitrary edits. Minor polish is useful after the main style is established. Compare new images with the strongest retained versions at equivalent content and scale.
 
-## Select a coherent improvement
+When the user is refining a component library, show selected component images together and identify outliers. The user **or Design Kit** can revise these images. After **every generated image iteration or batch**, ask what to do next; don't equate an agent selection with approval.
 
-Identify what the user values, what currently limits quality, and which change could make the largest relevant visible difference. Consider both defect repair and positive design opportunity. A functional page can still need stronger identity, typography, imagery, rhythm or composition.
-
-Write only the useful working relationship: **gap/opportunity -> mechanism -> expected visible difference -> protected anchors**. Keep it in existing notes. Usually one to three coordinated moves are enough to focus the candidate; a family-wide spacing repair can be one move across many consumers. This is not an arbitrary limit on required scope.
-
-Use an accepted in-product example or inspected reference as a quality anchor when available. Examine the relevant region at a comparable viewing scale; distinguish real source observations from inferred design choices. Do not invent ratios, font identities, internal tokens, interaction behavior or conversion evidence from a screenshot.
-
-Select a dominant treatment instead of averaging every reference. Adapt relationships to this product's content, density and constraints; do not copy another identity or treat every source decision as correct. One reference can answer one question without resolving the entire system. When outside evidence cannot answer an open choice, make an explicitly agent-authored proposal if the scope permits it.
-
-No universal palette, radius, spacing grid, font, card ban or effect quota belongs here. A visual vocabulary constrains repetition, not every composition. Texture, depth and motion may contribute when they serve the intended treatment; their addition is not itself improvement. Preserve required grids and approved exceptions rather than inventing a new system.
-
-## Make the candidate persuasive in context
-
-Use real content, loaded fonts, correct assets and representative states. Compare the whole composition before zooming into a detail. For a family, examine related controls together and in a consumer. For a screen, include a state or container that challenges the initial treatment.
-
-Develop affected type/color roles, spacing and components inside that composition using [CRAFT.md](CRAFT.md). Prefer existing canonical implementations; change their owner when it explains repeated symptoms. Inspect actual effective values and inherited styles rather than compensating for unknown causes with local overrides.
-
-Keep code as the source of the chosen visual values. Do not first require a prose specification detailed enough to recreate the design. If a separate worker is already authorized, hand off the accepted implementation and captures rather than asking it to reinterpret aesthetic adjectives. The kit does not require a second model.
-
-## Judge the result, not the explanation
-
-Compare baseline and candidate at equivalent content/state/viewport and loaded assets, then compare the quality anchor's relevant relationships. Review the images before using your own rationale as evidence. Ask:
-
-- Is the intended visual contribution actually visible at normal viewing size?
-- Does the result hold together across the changed family/composition, or did a local win weaken something else?
-- Does it meet the user's requested quality bar, rather than only being less inconsistent than before?
-
-A better baseline is a relative gain, not automatic acceptance. A checklist pass is not visual uplift. Preserve stronger earlier work. Report tradeoffs and distinguish observed improvement from unverified usability or business outcomes. Do not assign a numerical self-score.
-
-Within SKILL.md's remaining budget, correct execution drift or replace a weak local hypothesis. Do not add unrelated embellishments because the prompt asks for excellence. If another pass gives no material gain, stop repeating it; report the unresolved treatment/evidence problem. Human acceptance remains distinct from the agent's recommendation.
-
-After acceptance, reuse actual code, assets and relationships. Verify a contrasting consumer before claiming a shared treatment generalizes. A whole-library task retains coverage of affected families, states and exceptions; one successful screenshot does not close the rest.
+Use [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) for actual inspected source relationships, but a gallery still can't verify interactions, accessibility or CSS values. Stop when the user chooses—element, component, library, section or page. Final editable design/implementation is separate.

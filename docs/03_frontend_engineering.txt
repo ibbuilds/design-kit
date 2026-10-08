@@ -1,27 +1,28 @@
-FRONTEND IMPLEMENTATION AND QA — DESIGN KIT
-Updated: October 6, 2026.
+IMPLEMENTATION IS A SEPARATE USER-SELECTED TASK
+Updated: October 8, 2026.
 
-SOFTWARE.md is the implementation reference; SKILL.md owns scope and review.
-For a delegated coded-design assignment, visual authoring and relevant frontend
-verification happen in the same unit. A separate design-approval ceremony is not
-required before writing the candidate. Preserve explicit reserved checkpoints.
+Design Kit iterates through IMAGES of text treatments, icons, components,
+component groups, sections or whole pages. For broad designs, the default
+begins with a first representative component IMAGE and builds a visually
+consistent IMAGE-BASED COMPONENT LIBRARY before optional section images.
 
-Reuse the accepted code, components, tokens and assets instead of reconstructing
-them from screenshots or aesthetic prose. Preserve behavior, public interfaces,
-existing API contracts and human edits. When visual design is already resolved,
-implement faithfully rather than reopening references or identity.
+The user or Design Kit can refine each component's visual images. After
+EVERY image round or returned batch, ask the user whether to revise, accept,
+advance or stop. The user may stop at any milestone.
 
-Inspect only relevant callers, states and checks. Use existing preview/test tools;
-no dependency installation or new architecture by default. Exercise meaningful
-loading, empty, error, disabled and successful states when applicable. Inspect
-actual fonts/assets, responsive containers, content stress, keyboard/focus and the
-requested task. Stills and a successful build do not certify live interactions.
+Inside each requested visual unit, PHASED_REFINEMENT.md can guide concept,
+craft, optional advanced depth and user/context review. Its first phase means
+generating a visual concept image, NOT implementing working software.
+The last phase is a visual review, NOT permission for auto-conversion.
 
-Group repairs by their owner. Do not weaken tests or hide defects to pass. Respect
-the global task budget; verification problems cannot become unlimited uncounted
-work. Exhaustion means report incomplete scope and stop, not declare readiness.
+Image-based component specimens are not implemented UI elements, editable
+Figma components or validated design tokens. No transition to final design,
+component coding, Figma creation or image-to-code conversion is automatic.
 
-For broad visual changes, preserve the accepted candidate during propagation and
-check a contrasting consumer. Keep implemented, verified and human-accepted states
-separate. Label mocks and untested services. Backend, database, infrastructure,
-publication and private uploads are outside scope without separate authorization.
+If the user asks for a handoff, report selected images/versions, foundation
+status, actual inspected MCP reference relationships, exact source copy
+where available, user decisions and relevant unverified visual limits.
+Never claim static generated images establish working UI behavior.
+
+Legacy SOFTWARE.md, QA.md and PRODUCT_DELIVERY.md are retained for a
+SEPARATE USER-SELECTED TASK outside Design Kit's image-generation scope.

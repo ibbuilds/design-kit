@@ -1,49 +1,33 @@
-IMPROVE AN EXISTING BASE — DESIGN KIT
-Updated: October 6, 2026.
+IMPROVE EXISTING VISUAL DESIGN — ANY SCALE
+Updated: October 8, 2026.
 
-Use SKILL.md's artifact-first procedure. Existing code may be technically useful
-without having an approved appearance. Preserve required behavior/content, public
-interfaces and the visual treatments the user values; do not freeze every current
-choice or replace the identity by assumption.
+Accept an existing image of text, icon, component, family, section, screen or
+whole design. Keep its protected choices and actual content. Do not demand
+rebuilding the entire library for a local correction or impose sections first.
 
-Inspect relevant current/source views and their canonical owners. Distinguish
-accepted originals, derivatives and unresolved additions. The agent identifies
-sibling problems; the user should not enumerate every defective component.
+Choose the active quality problem from PHASED_REFINEMENT.md: Phase 1
+fundamental structure/identity, Phase 2 craft and detail, optional Phase 3
+purposeful depth/effects, Phase 4 user/contextual review. Start directly
+at the weak phase for an existing strong design; if detail corrections
+expose bad foundations, return to Phase 1. Do not require new effects.
 
-For consistency work, reuse the closest accepted implementation and repair shared
-causes across the authorized batch. Do not refine valued originals just because
-new additions are inconsistent. For open visual improvement, identify the highest-
-impact gap/opportunity and author a coherent treatment inside the delegated scope.
-Craft complaints begin with applied type/color, effective spacing, control families
-and assets; composition changes require an actual relevant need.
+Inspect the actual current image, selected earlier exemplars, confirmed or
+provisional foundation and relevant real MCP/user reference imagery.
+Form a material revision: KEEP accepted relationships, REWORK the visible
+weakness, and state the EXPECTED difference. Generate new IMAGE concepts,
+compare at the same scope and preserve stronger earlier versions.
 
-Keep a short working relationship: gap -> mechanism -> expected visible difference
--> protected anchors. Do not ask the user to approve a rewritten prompt, diagnose
-every pixel, curate another reference board or define a finished visual contract.
-Explicit reserved decisions and requested supervised checkpoints still apply.
+AFTER EVERY IMAGE ROUND OR RETURNED BATCH show the result and ASK whether to
+revise, accept, try a different direction, generate related components, move
+to another unit or stop. Honor unlimited user-led rounds within real budgets.
 
-Use existing evidence first. Additional discovery is conditional and bounded by
-REFERENCE_ROUTER.md; no reference minimum or automatic MCP research. Inspect a
-required source before claiming fidelity. Where original design is authorized,
-missing optional inspiration need not block a clearly labelled proposal.
+For library-wide work, choose the strongest accepted component image as the
+style anchor. Refine inconsistent sibling component images, singly or in
+GROUPS when shared styling is stable. The user can refine the library, and
+Design Kit can propose and regenerate visual improvements. Sections inherit
+the approved component styles only when the user asks for them.
 
-Author in the existing code/canvas. Resolve affected foundations in context, reuse
-canonical owners, preserve correct controls and inspect affected consumers. Use
-existing previews or disposable isolated material; no production review routes.
-
-Compare equivalent baseline/candidate views and the relevant quality anchor.
-Check meaningful variants, states, containers and content stress under CRAFT.md.
-A technically correct result can still lack visual coherence. Default budget: one
-candidate and at most two grouped visual refinement passes per bounded unit, not
-per phase or component. Stop repeating a hypothesis that produces no material gain.
-
-Show the actual contribution and tradeoffs. Broad evolution waits for candidate
-acceptance before new shared choices propagate; already-authorized consistency
-repairs need no per-component permission. Reuse accepted implementation afterwards
-and verify contrasting consumers. Keep whole-library coverage/pending cases in the
-existing project record. Do not claim unseen families are complete.
-
-If the user rejects the diagnosis, reinspect the named mismatch before further
-dependent edits. Preserve unrelated accepted work. Required QA and explicit budgets
-both remain binding: stop and report incomplete work rather than hiding failure.
-No paid services, new runtime, mandatory second model or infrastructure rebuild.
+Use existing Awwwards / One Page Love MCPs to resolve concrete visual gaps;
+reuse relevant inspected sources instead of researching each component afresh.
+A whole-page image may be revised directly. Stop at the user's own milestone.
+Image concepts are not working components or final editable design.
