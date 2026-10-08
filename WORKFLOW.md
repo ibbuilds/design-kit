@@ -2,6 +2,8 @@
 
 [SKILL.md](SKILL.md) is the canonical procedure. Design Kit is **image-first at any scale**—a single text treatment, icon, control, component family, section, screen or complete design image.
 
+**At each requested unit**, apply the optional-depth [four-phase image-refinement protocol](PHASED_REFINEMENT.md): foundation/first visual implementation -> detailed craft -> purposeful advanced finish **if needed** -> user/contextual review. Within **each** phase, correct the image in rounds with feedback. This sits **inside**, not instead of, the component-first workflow.
+
 **Default for a multi-part project, only as far as the user wants:**
 
 [Foundation](FOUNDATION.md) -> first representative component image -> [consistent visual component library](COMPONENT_LIBRARY.md) (batch related elements once stable) -> [section images](IMAGE_WORKFLOW.md) from accepted components -> optional page sequence.

@@ -6,6 +6,12 @@ Under [SKILL.md](SKILL.md), critique **the actual generated image**, not a persu
 
 Early on, inspect user images and relevant real Awwwards/One Page Love MCP examples. Design Kit may propose foundation choices, clearly labelled. Once a **first component exemplar image is selected**, reuse its typography, geometry, density, color roles and material language across related components. When the visual component library is consistent, **reuse its actual images** to anchor sections. Don't restart the same styling question for every sibling or infer exact token values from one generated image.
 
+## Improve at the missing level, not by increasing generation count
+
+[PHASED_REFINEMENT.md](PHASED_REFINEMENT.md) splits image refinement into **Phase 1 initial visual foundation, Phase 2 optical/detail craft, optional Phase 3 purposeful depth/effects and Phase 4 user/contextual review**. These are **within** the existing individual-component -> library -> sections progression, not a replacement. If the concept is wrong, fix Phase 1. If the proportions and identity are right but craftsmanship is weak, work in Phase 2. If restrained material effects genuinely improve clarity or character, test Phase 3. Do not assume a 7/10 self-rating or unlimited unexamined generations identifies the remaining problem.
+
+Each phase permits specific correction loops, comparing the strongest earlier image and current relevant references. Ask the user after **every returned image round**. A deliberately minimal treatment can skip depth completely; acceptance occurs at the user's chosen milestone.
+
 ## Material revisions by scope
 
 | Visible issue | Useful image change |

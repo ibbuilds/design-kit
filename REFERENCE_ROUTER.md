@@ -18,6 +18,12 @@ The existing **Awwwards and One Page Love MCP integrations** are a core advantag
 
 There is **no minimum reference count**. A targeted query and a narrower query/fallback are reasonable spending defaults, not limits on explicit user research. Preserve host/provider guidance in [PROVIDERS.md](PROVIDERS.md) and [HOSTS.md](HOSTS.md). Do not install paid services or reconfigure a working provider by routine.
 
+## Reuse references across refinement phases
+
+When a new visual question arises inside a text, component, section or page, [PHASED_REFINEMENT.md](PHASED_REFINEMENT.md) offers a useful research lens: **Phase 1** may need examples of concept and foundation; **Phase 2** may benefit from inspected typography, spacing, border or image-crop craft; **Phase 3**, only if justified, may need inspected material, shadow or lighting treatments. **Phase 4** compares our generated output with actual references and surrounding accepted images.
+
+This is **not** a requirement to make one MCP call per phase. Reuse the same selected inspected Awwwards/One Page Love reference when it already resolves the question. Do not add effects simply because a provider image includes them; transfer the *specific* observed relationship that improves the requested unit.
+
 ## Existing scoped helper remains usable
 
 The reference helper plans queries and checks catalog membership; it **does not inspect imagery**. From the skill directory:
