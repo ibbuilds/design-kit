@@ -10,7 +10,7 @@ import sys
 import tempfile
 
 PACKAGE = (
-    "SKILL.md", "IMAGE_WORKFLOW.md", "FOUNDATION.md", "agents/openai.yaml", "README.md", "BRIEF.md", "TASTE.md",
+    "SKILL.md", "IMAGE_WORKFLOW.md", "COMPONENT_LIBRARY.md", "FOUNDATION.md", "agents/openai.yaml", "README.md", "BRIEF.md", "TASTE.md",
     "GUIDELINES.md", "CRAFT.md", "QA.md", "REFERENCES.md", "WORKFLOW.md", "RESEARCH.md",
     "docs/EXECUTION_DECISION.md", "scripts/install.py", "tests/test_install.py",
     "REFERENCE_ROUTER.md", "EXECUTION.md", "SOFTWARE.md",
