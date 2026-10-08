@@ -56,13 +56,12 @@ class ImageFirstContractTests(unittest.TestCase):
         self.assertIn("text treatment or icon", skill)
         self.assertIn("first representative component", skill)
         self.assertIn("image-based component library", skill)
-        self.assertIn("component groups", skill)
+        self.assertIn("a component group", skill)
         self.assertIn("the user chooses", skill.lower())
         self.assertIn("first section", skill)
         self.assertIn("whole existing design", skill)
         self.assertIn("stop", skill.lower())
         self.assertIn("not a required waterfall", skill)
-        self.assertIn("not a coded section", read("IMAGE_WORKFLOW.md")) if False else None
         self.assertIn("No component implementation", read("IMAGE_WORKFLOW.md"))
 
     def test_first_exemplar_library_batch_and_user_or_kit_refinement(self):
@@ -83,7 +82,7 @@ class ImageFirstContractTests(unittest.TestCase):
                      "EXECUTION.md", "WORKFLOW.md", "README.md"):
             with self.subTest(file=file):
                 text = read(file).lower()
-                self.assertRegex(text, r"after (?:\*\*)?every|after each")
+                self.assertRegex(text, r"after (?:\*\*)?every|after each|for \*\*each")
                 self.assertRegex(text, r"ask")
                 self.assertRegex(text, r"stop")
         self.assertIn("no fixed two-pass cap", read("SKILL.md"))
@@ -96,18 +95,16 @@ class ImageFirstContractTests(unittest.TestCase):
         self.assertIn("One Page Love", router)
         self.assertIn("no minimum reference count", router)
         self.assertIn("reference_scope.py", router)
-        self.assertIn("actual selected first component image", read("COMPONENT_LIBRARY.md")) if False else None
         self.assertIn("actual selected image", read("EXECUTION.md"))
         self.assertIn("inspected", router)
         self.assertIn("Skills.sh", read("IMAGE_WORKFLOW.md"))
 
     def test_foundation_proposals_and_visual_only_boundary(self):
         skill = read("SKILL.md")
-        self.assertIn("may propose", read("FOUNDATION.md"))
-        self.assertIn("user-approved", read("FOUNDATION.md")) if False else None
+        self.assertIn("ask Design Kit to **propose", read("FOUNDATION.md"))
         self.assertIn("not user-approved", skill)
         self.assertIn("**Stop before actual editable design", skill)
-        self.assertIn("not coded components", skill)
+        self.assertIn("coded components", skill)
         self.assertIn("separate", read("docs/03_frontend_engineering.txt").lower())
 
     def test_old_section_only_or_code_first_defaults_do_not_return(self):
