@@ -2,7 +2,7 @@
 
 [![Validate kit](https://github.com/ibbuilds/design-kit/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/ibbuilds/design-kit/actions/workflows/validate.yml)
 
-[Workflow](SKILL.md) · [Image iteration](IMAGE_WORKFLOW.md) · [Component library](COMPONENT_LIBRARY.md) · [Foundation](FOUNDATION.md) · [Reference MCPs](REFERENCE_ROUTER.md)
+[Workflow](SKILL.md) · [Four refinement phases](PHASED_REFINEMENT.md) · [Image iteration](IMAGE_WORKFLOW.md) · [Component library](COMPONENT_LIBRARY.md) · [Foundation](FOUNDATION.md) · [Reference MCPs](REFERENCE_ROUTER.md)
 
 **Iterate with generated images, at any scale:** a word or type treatment, icon, individual control, component group, section or entire page. Design Kit is not a website/code generator.
 
@@ -20,6 +20,19 @@ For a multi-part interface:
 **After each image iteration or returned batch**, the kit shows the result, briefly compares it, and **asks what you want next**: revise, accept, change direction, make related components, move on or stop. There is no fixed two-pass limit, and no requirement to create a page for a smaller task. A user can also submit an existing full design image for direct visual refinement.
 
 These are **image concepts**, not working or editable UI components. Final implementation/conversion is separate, user-authorized work.
+
+## Phase-specific quality refinement within each image unit
+
+[PHASED_REFINEMENT.md](PHASED_REFINEMENT.md) adds **quality guidance inside the existing component-first image workflow**. It does not replace the component -> library -> optional section -> optional page progression.
+
+| Phase | Visual problem to solve | Button example |
+| --- | --- | --- |
+| **1. Foundation & first visual implementation** | Right idea, content, proportions, hierarchy and baseline identity | Copy, size, shape/radius, basic color and visual priority |
+| **2. Craft & surface detail** | Optical precision, balance and finish | Stroke, inner padding, label position, purposeful gradients and state appearance |
+| **3. Advanced depth/effects, if useful** | A further *justified* expressive or dimensional contribution | Subtle shadow, material layering or highlight; **skip for a flat design** |
+| **4. User/contextual review** | Compare at intended scale with accepted related visuals; select or revisit earlier decisions | Check alongside sibling buttons; accept, return to a phase or stop |
+
+**Within every phase, images are revised in a correction loop, with user feedback after each round.** Four phases do not require four generations, and Phase 4 is a review, not a separate model call. An existing strong image can start at Phase 2 or 3; an error uncovered during surface polish returns to Phase 1. The goal is to identify the **specific missing design relationships**, not to assume more generations or more effects automatically create higher quality.
 
 ## Example prompts
 
@@ -67,4 +80,4 @@ The installer preserves managed file safety, local edits and working MCP configu
 python -m unittest discover -s tests -v
 ~~~
 
-Tests verify packaging, installation safety, helper tools and instruction contracts. They **do not prove** visual quality, image-model compliance or savings. Real image outcomes and observable user effort are the measure; attributing improvement requires a matched **with/without-kit** task comparison. Historical implementation-first research is background, not an active default.
+Tests verify packaging, installation safety, helper tools and instruction contracts, including phased corrections. They **do not prove** visual quality, image-model compliance or savings. Real image outcomes and observable user effort are the measure; attributing improvement requires a matched **with/without-kit** task comparison. Historical implementation-first research is background, not an active default.

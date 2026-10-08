@@ -15,9 +15,11 @@ Use the target's existing record or .design/project.md. This shared template sta
 - Target unit/family and visual job:
 - Reference images, foundation and exact content:
 - Candidate image IDs/paths and prompt/revision:
+- Current refinement phase: **1 foundation / 2 craft / 3 optional depth / 4 user/context review** ([PHASED_REFINEMENT.md](PHASED_REFINEMENT.md)):
+- Phase-specific diagnosis, observed evidence and visual improvement hypothesis:
 - **Keep / rework / expected visible difference:**
 - Strongest version and status (proposed / agent-selected / user-accepted / reopened):
-- **Feedback after this image round:** revise / accept / change direction / group / next unit / stop:
+- **Feedback after this image round (inside this phase):** revise / accept phase / revisit earlier phase / change direction / group / next unit / stop:
 - Remaining visual mismatch and next authorized action:
 
 ## Visual component library (if requested)

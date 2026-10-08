@@ -12,6 +12,12 @@ After **every image generation/editing round or returned batch**, show the image
 
 For a typography-only request, do not suggest expanding into a page without reason. A requested batch counts as a **single reviewable iteration**; ask immediately after presenting it. Do not silently run another round, produce an unrequested family or move to sections. Continue for as many rounds as the user requests within actual tool and cost limits, not a universal two-pass ceiling.
 
+## The refinement phases live inside the chosen image unit
+
+[PHASED_REFINEMENT.md](PHASED_REFINEMENT.md) provides **foundation/visual implementation -> craft/details -> optional advanced depth -> final user/context review** for a text treatment, button, component family, section or page. This is **not a new mandatory progression across components and sections**; it governs improvement of the current image. Start at the phase the current candidate actually needs. A well-established direction can skip foundations and a deliberately flat direction can skip advanced effects.
+
+Each phase has its own **keep/change/expected-difference** correction loop. Show the image and **ask after every round**, even while staying in one phase. The final user review does not substitute for ongoing feedback; a user may return to a previous phase or stop whenever they want. Don't silently advance through all phases.
+
 ## Build continuity, not compulsory stages
 
 Keep actual accepted component images and concise stable style relationships. Related components should inherit that exemplar; after the style becomes clear, group compatible component images to accelerate generation. The **user or Design Kit** may refine individual components and the whole library. Ask after each correction round.
