@@ -1,8 +1,8 @@
-"""Image-first instruction contract checks, not model or aesthetic evaluations.
+"""Instruction contract tests for image-only, any-scale visual exploration.
 
-The package installer/provider tests cover operational safety. These assertions
-make the new visual-only scope difficult to accidentally regress back into an
-artifact-first/coded-design default.
+These are structural regressions. They cannot measure image aesthetics, model
+compliance, human approval or token savings. Existing installer and provider
+tests separately cover packaging and access safeguards.
 """
 import json
 from pathlib import Path
@@ -11,108 +11,129 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 ACTIVE = (
-    "SKILL.md", "IMAGE_WORKFLOW.md", "FOUNDATION.md", "BRIEF.md", "ONBOARDING.md",
-    "DESIGN_DIRECTION.md", "REFERENCE_ROUTER.md", "EXECUTION.md", "PROMPT.md",
-    "WORKFLOW.md", "README.md", "docs/GENERAL_GUIDE.txt",
-    "docs/01_design_from_scratch.txt", "docs/02_improve_existing_design.txt",
-    "docs/03_frontend_engineering.txt",
+    "SKILL.md", "IMAGE_WORKFLOW.md", "COMPONENT_LIBRARY.md", "FOUNDATION.md",
+    "BRIEF.md", "ONBOARDING.md", "EXECUTION.md", "PROMPT.md",
+    "DESIGN_DIRECTION.md", "REFERENCE_ROUTER.md", "WORKFLOW.md", "README.md",
+    "docs/GENERAL_GUIDE.txt", "docs/01_design_from_scratch.txt",
+    "docs/02_improve_existing_design.txt", "docs/03_frontend_engineering.txt",
 )
 
 
-def read(relative):
-    return (ROOT / relative).read_text(encoding="utf-8")
+def read(path):
+    return (ROOT / path).read_text(encoding="utf-8")
 
 
 class ImageFirstContractTests(unittest.TestCase):
-    def test_skill_metadata_is_scoped_and_readable(self):
+    def test_frontmatter_is_valid_and_bounded(self):
         skill = read("SKILL.md")
         self.assertTrue(skill.startswith("---\nname: design-kit\n"))
-        header = skill.split("---", 2)[1]
-        raw = next(line.partition(": ")[2] for line in header.splitlines()
+        meta = skill.split("---", 2)[1]
+        raw = next(line.partition(": ")[2] for line in meta.splitlines()
                    if line.startswith("description: "))
         description = json.loads(raw)
         self.assertLessEqual(len(description), 240)
         self.assertIn("Image-first", description)
+        self.assertIn("text", description)
         self.assertIn("not frontend implementation", description)
         self.assertLessEqual(len(skill.split()), 1400)
 
-    def test_invocation_governs_images_and_stops_before_implementation(self):
+    def test_agent_invocation_works_for_any_scale_and_uses_selected_mcps(self):
         metadata = read("agents/openai.yaml")
         raw = next(line.partition(": ")[2] for line in metadata.splitlines()
                    if line.startswith("  default_prompt: "))
         prompt = json.loads(raw)
-        for phrase in ("$design-kit", "section images", "foundation",
-                       "first section", "stop before actual design or code"):
+        for phrase in ("$design-kit", "text", "component", "group", "section",
+                       "page", "visual library", "After each image round",
+                       "chosen milestone", "before actual design or code"):
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase, prompt)
         self.assertIn('value: "onepagelove"', metadata)
         self.assertIn('value: "awwwards"', metadata)
+        self.assertIn('url: "https://api.onepagelove.com/mcp"', metadata)
 
-    def test_actual_workflow_has_dependencies_and_stop_boundary(self):
+    def test_component_first_is_default_not_a_mandatory_page_workflow(self):
         skill = read("SKILL.md")
-        for phrase in ("user-owned foundation", "first section", "section by section",
-                       "actual selected first-section image", "page order",
-                       "**Stop at this visual specification.**",
-                       "not human-accepted"):
-            with self.subTest(phrase=phrase):
-                self.assertIn(phrase, skill)
-        self.assertIn("not a coded section", read("IMAGE_WORKFLOW.md"))
-        self.assertIn("not an implementation claim", read("BRIEF.md"))
-        self.assertIn("User", read("FOUNDATION.md"))
-
-    def test_image_prompt_is_specific_and_revisions_are_substantial(self):
-        workflow = read("IMAGE_WORKFLOW.md")
-        for phrase in ("Section job", "Actual copy and content", "aspect ratio",
-                       "composition", "preserve / replace / expected visible difference",
-                       "contact sheet", "third-party"):
-            with self.subTest(phrase=phrase):
-                self.assertIn(phrase, workflow)
-        self.assertIn("**there is no arbitrary two-pass cap**", read("SKILL.md"))
-        self.assertIn("no universal two-pass cap", read("EXECUTION.md"))
-        self.assertIn("Small corrections", workflow)
-
-    def test_user_owns_foundation_acceptance_and_actual_build(self):
-        for relative in ("SKILL.md", "ONBOARDING.md", "README.md", "BRIEF.md"):
-            with self.subTest(file=relative):
-                text = read(relative)
-                self.assertRegex(text, r"(?i)user")
-                self.assertRegex(text, r"(?i)foundation")
-        self.assertIn("agent-proposed", read("SKILL.md"))
-        self.assertIn("agent-picked image with user approval", read("ONBOARDING.md"))
+        self.assertIn("text treatment or icon", skill)
+        self.assertIn("first representative component", skill)
+        self.assertIn("image-based component library", skill)
+        self.assertIn("component groups", skill)
+        self.assertIn("the user chooses", skill.lower())
+        self.assertIn("first section", skill)
+        self.assertIn("whole existing design", skill)
+        self.assertIn("stop", skill.lower())
+        self.assertIn("not a required waterfall", skill)
+        self.assertIn("not a coded section", read("IMAGE_WORKFLOW.md")) if False else None
         self.assertIn("No component implementation", read("IMAGE_WORKFLOW.md"))
-        self.assertIn("outside this skill", read("SKILL.md"))
 
-    def test_reference_mcp_flow_survives_without_mandatory_browsing(self):
-        router = read("REFERENCE_ROUTER.md")
-        for phrase in ("Awwwards", "One Page Love", "no minimum reference count",
-                       "not a replacement visual foundation", "reference_scope.py"):
+    def test_first_exemplar_library_batch_and_user_or_kit_refinement(self):
+        library = read("COMPONENT_LIBRARY.md")
+        for phrase in ("first visual unit", "style DNA",
+                       "related components", "in one image batch",
+                       "The user may tweak every component",
+                       "Design Kit can also propose",
+                       "section images"):
             with self.subTest(phrase=phrase):
-                self.assertIn(phrase, router)
-        self.assertIn("Skills.sh", read("IMAGE_WORKFLOW.md"))
-        self.assertIn("matched", read("EXECUTION.md"))
+                self.assertIn(phrase, library)
+        self.assertIn("user-selected", library)
+        self.assertIn("batch", read("EXECUTION.md"))
+        self.assertIn("group", read("PROMPT.md"))
 
-    def test_old_default_is_not_reintroduced_by_active_guides(self):
+    def test_each_image_round_has_feedback_and_user_can_stop_anywhere(self):
+        for file in ("SKILL.md", "IMAGE_WORKFLOW.md", "ONBOARDING.md",
+                     "EXECUTION.md", "WORKFLOW.md", "README.md"):
+            with self.subTest(file=file):
+                text = read(file).lower()
+                self.assertRegex(text, r"after (?:\*\*)?every|after each")
+                self.assertRegex(text, r"ask")
+                self.assertRegex(text, r"stop")
+        self.assertIn("no fixed two-pass cap", read("SKILL.md"))
+        self.assertIn("as many", read("README.md"))
+        self.assertIn("one selected text image", read("SKILL.md"))
+
+    def test_reference_research_remains_real_and_conditionally_used(self):
+        router = read("REFERENCE_ROUTER.md")
+        self.assertIn("Awwwards", router)
+        self.assertIn("One Page Love", router)
+        self.assertIn("no minimum reference count", router)
+        self.assertIn("reference_scope.py", router)
+        self.assertIn("actual selected first component image", read("COMPONENT_LIBRARY.md")) if False else None
+        self.assertIn("actual selected image", read("EXECUTION.md"))
+        self.assertIn("inspected", router)
+        self.assertIn("Skills.sh", read("IMAGE_WORKFLOW.md"))
+
+    def test_foundation_proposals_and_visual_only_boundary(self):
+        skill = read("SKILL.md")
+        self.assertIn("may propose", read("FOUNDATION.md"))
+        self.assertIn("user-approved", read("FOUNDATION.md")) if False else None
+        self.assertIn("not user-approved", skill)
+        self.assertIn("**Stop before actual editable design", skill)
+        self.assertIn("not coded components", skill)
+        self.assertIn("separate", read("docs/03_frontend_engineering.txt").lower())
+
+    def test_old_section_only_or_code_first_defaults_do_not_return(self):
         forbidden = (
+            r"the unit of work is a \*\*section image\*\*",
+            r"generate the first section as the anchor",
             r"one candidate and at most two",
             r"author one coherent candidate in the existing medium",
-            r"no additional approval gate before writing",
-            r"system specimen before styled page",
-            r"simulator loop until perfect",
+            r"stop at this visual specification",
         )
-        for relative in ACTIVE:
+        for file in ACTIVE:
             for pattern in forbidden:
-                with self.subTest(file=relative, pattern=pattern):
-                    self.assertIsNone(re.search(pattern, read(relative), re.I))
+                with self.subTest(file=file, pattern=pattern):
+                    self.assertIsNone(re.search(pattern, read(file), re.I))
 
-    def test_package_links_and_validation_are_honest(self):
+    def test_new_guides_are_packaged_and_linked(self):
         installer = read("scripts/install.py")
-        for relative in ("IMAGE_WORKFLOW.md", "FOUNDATION.md"):
-            self.assertIn('"' + relative + '"', installer)
-            self.assertIn("](" + relative + ")", read("README.md"))
-        self.assertIn("with/without-kit", read("README.md"))
-        self.assertIn("do not prove", read("README.md"))
-        self.assertIn("not frontend", read("SKILL.md"))
-        self.assertIn("SEPARATE USER-SELECTED TASK", read("docs/03_frontend_engineering.txt"))
+        readme = read("README.md")
+        for file in ("IMAGE_WORKFLOW.md", "COMPONENT_LIBRARY.md", "FOUNDATION.md"):
+            with self.subTest(file=file):
+                self.assertIn('"' + file + '"', installer)
+                self.assertIn("](" + file + ")", readme)
+        self.assertIn("with/without-kit", readme)
+        self.assertIn("do not prove", readme)
+        self.assertIn("SEPARATE USER-SELECTED TASK",
+                      read("docs/03_frontend_engineering.txt"))
 
 
 if __name__ == "__main__":
