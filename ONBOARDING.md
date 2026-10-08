@@ -1,37 +1,29 @@
-# Inputs, delegation and review
+# Image exploration: user ownership and review
 
-[SKILL.md](SKILL.md) is the canonical artifact-first procedure. This file resolves scope and review boundaries, not a mandatory onboarding itinerary. Preserve explicit supervision already requested by the user; a kit update does not revoke it.
+[SKILL.md](SKILL.md) is the canonical image-first process. The user controls the starting foundation, which section directions become accepted, and whether the final visual direction is ever implemented. Do not conflate an agent-picked image with user approval.
 
-## Start from what is already known
+## Start from what exists
 
-Inspect the relevant target and reuse the supplied product goal, content, assets, references, working medium, constraints and accepted decisions. Ask only about a missing fact that materially prevents a valid result. Do not demand a wireframe, finished aesthetic, token inventory or rewritten prompt from the user.
+Inspect the target's actual brief, current foundation, previous image generations, accepted images, relevant copy/assets and working host's image capabilities. Resume from the strongest known section; do not force a fresh direction or redraw already-approved parts. Existing code may inform protected content and visual values, but code editing is **not** the Design Kit deliverable.
 
-For an existing library, separate accepted originals, derived components and unresolved additions. A design document states intent; a render shows implementation; neither proves that every current choice was approved. Preserve the treatments the user values. Do not infer a replacement identity from a broad request to improve quality.
+Ask for missing information only when it materially blocks a faithful section image or concerns a user-reserved decision. If the user is still creating the foundation, organize their partial values and offer **clearly proposed** options; do not treat invented tokens as their system. Do not require a complete Figma file or component library to begin visual exploration.
 
-When the boundary is genuinely unclear, ask one grounded question about what may change. Otherwise own the delegated visual decisions. Label assumptions instead of inventing product facts or requiring a confirmation ritual for every inference. Keep the product's language independent of the conversation language.
+## Review the right thing
 
-## The review unit
+For an open first section, show meaningful image alternatives or a strong candidate with its comparison evidence. A user may explicitly pick a direction, delegate selection, request more image rounds, or set a cost/generation cap. User ownership is not a requirement to interrupt after every image; follow their requested level of supervision.
 
-A bounded unit is a screen, section, component family with a real consumer, or an explicitly agreed batch. Choose it from the complaint and actual dependencies, not from whichever isolated component is easiest to polish. A whole-library request retains its coverage across units.
+For the next section, use the *actual chosen prior image* as visual input when supported, and identify specific stable relationships: type scale, palette, surfaces, grid/density and art direction. Ask to reopen a protected choice only when a material contradiction arises. Fix coherence via images, not by jumping to implementation.
 
-Default: carry that unit through diagnosis, candidate, visual inspection, permitted refinement and relevant QA before presentation. Do not stop separately for reference selection, expanded prompts, foundations or routine corrections. Develop affected foundations and the interface together. A specimen is useful only when it exposes a real unresolved relationship; it is not an entrance requirement.
+A selected image is not a final responsive specification. Desktop and mobile are separate image explorations where needed. A still cannot establish motion, focus, real asset provenance, API behavior or implementation feasibility. Do not fabricate a comparison, image inspection or approval.
 
-For broad new direction or visual evolution, the representative candidate is a checkpoint before new shared choices spread across the application. For consistency work, restoring an already accepted rule across authorized consumers needs no per-component approval. Preserve unaffected work and inspect the relevant downstream impact.
+## Finish at the visual handoff boundary
 
-If the user explicitly asks for guided/supervised work, agree only the useful checkpoints: for example direction, candidate, and propagation. Existing explicit checkpoints and reserved decisions remain binding. Supervision does not automatically require a gallery search or a full design-system program.
+Once the requested sections are resolved, assemble their images in page order and inspect how the whole visual story reads. If the page is not coherent, revise the relevant **section images** rather than declaring the page decided. Record selected image paths/versions, the user's actual approvals, foundation changes, unresolved decisions and the handoff.
 
-## Authority and changed feedback
+Stop before creating Figma components, final design files or application code. Those actions require a **separate user-controlled decision**, even if the image exploration succeeds. Image exploration does not itself confer permission to write outside the target's authorized visual-output location.
 
-A file path, silence, the agent's recommendation or a successfully rendered component is not human acceptance. Record agent-selected, implemented, verified and human-accepted states distinctly.
+## Keep state small and real
 
-An expressly rejected diagnosis must not drive further dependent edits. Reinspect the named discrepancy and change the hypothesis; preserve unrelated accepted work. The user should not have to repeat existing references or enumerate every sibling defect.
+Use the target's established record or .design/project.md with the [blank BRIEF.md template](BRIEF.md). Preserve actual image variants and prompts that informed decisions; avoid accumulating irrelevant transcripts or parallel specification files. Never copy private assets, product facts or user-selected imagery into the shared Design Kit repository.
 
-A change to a protected choice, missing required source, conflicting requirement or side effect outside authorization needs a focused resolution. Unavailable optional inspiration does not become an access blocker for authorized original design. Review-only work does not write a project record.
-
-## Working surface and continuity
-
-Reuse the existing app/canvas and supported preview. Show real captures in the user's preferred medium. Do not add product routes or navigation solely for review material. When isolation is necessary, keep it disposable and outside production routing; preserve human work during cleanup. Generated illustrative images do not verify a running UI.
-
-Use one short target-owned record, existing or `.design/project.md`, with relevant [BRIEF.md](BRIEF.md) fields: scope, protected/open decisions, source and implementation paths, accepted revision/capture, pending feedback, verified states/containers and next action. Store only useful evidence and decisions. Global installation does not store project identity in the kit.
-
-Resume from that record and reread mutable source before editing. Budget and accepted decisions survive phases, batches and context handoffs. [EXECUTION.md](EXECUTION.md) governs stopping. [CRAFT.md](CRAFT.md) and relevant [QA.md](QA.md) sections govern verification. Missing inspection remains unverified, not a fabricated pass.
+A rejected direction should not drive later sections. A user correction updates the active foundation/visual anchor while preserving unrelated accepted work and prior image evidence.

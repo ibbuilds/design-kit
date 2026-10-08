@@ -1,27 +1,20 @@
-FRONTEND IMPLEMENTATION AND QA — DESIGN KIT
-Updated: October 6, 2026.
+IMPLEMENTATION IS A SEPARATE USER-SELECTED TASK
+Updated: October 8, 2026.
 
-SOFTWARE.md is the implementation reference; SKILL.md owns scope and review.
-For a delegated coded-design assignment, visual authoring and relevant frontend
-verification happen in the same unit. A separate design-approval ceremony is not
-required before writing the candidate. Preserve explicit reserved checkpoints.
+Design Kit no longer owns frontend creation or QA as an automatic phase.
+Its job is user-foundation-led, image-based section exploration and a selected
+whole-page visual direction. Do not treat completion of the image storyboard
+as authorization to create Figma designs, components, HTML/CSS, React or a
+published application.
 
-Reuse the accepted code, components, tokens and assets instead of reconstructing
-them from screenshots or aesthetic prose. Preserve behavior, public interfaces,
-existing API contracts and human edits. When visual design is already resolved,
-implement faithfully rather than reopening references or identity.
+When asked for a handoff, provide actual selected image paths/versions, section
+order, user-approved and proposed foundation decisions, exact content/assets
+when known, dominant composition/imagery relationships, responsive unknowns,
+provenance and unresolved constraints. Be explicit that these are still images,
+not tested UI behavior or coded responsive states.
 
-Inspect only relevant callers, states and checks. Use existing preview/test tools;
-no dependency installation or new architecture by default. Exercise meaningful
-loading, empty, error, disabled and successful states when applicable. Inspect
-actual fonts/assets, responsive containers, content stress, keyboard/focus and the
-requested task. Stills and a successful build do not certify live interactions.
+Legacy SOFTWARE.md, PRODUCT_DELIVERY.md and QA.md are retained for possible
+separately authorized frontend work outside the Design Kit workflow. They must
+not override SKILL.md's stop boundary or auto-start implementation.
 
-Group repairs by their owner. Do not weaken tests or hide defects to pass. Respect
-the global task budget; verification problems cannot become unlimited uncounted
-work. Exhaustion means report incomplete scope and stop, not declare readiness.
-
-For broad visual changes, preserve the accepted candidate during propagation and
-check a contrasting consumer. Keep implemented, verified and human-accepted states
-separate. Label mocks and untested services. Backend, database, infrastructure,
-publication and private uploads are outside scope without separate authorization.
+The user controls whether, when and where a separate implementation proceeds.

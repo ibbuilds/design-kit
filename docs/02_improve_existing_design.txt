@@ -1,49 +1,26 @@
-IMPROVE AN EXISTING BASE — DESIGN KIT
-Updated: October 6, 2026.
+IMPROVE AN EXISTING VISUAL DIRECTION — IMAGE FIRST
+Updated: October 8, 2026.
 
-Use SKILL.md's artifact-first procedure. Existing code may be technically useful
-without having an approved appearance. Preserve required behavior/content, public
-interfaces and the visual treatments the user values; do not freeze every current
-choice or replace the identity by assumption.
+Preserve accepted foundation decisions, earlier image versions, protected
+assets/content and selected sections. Existing code can identify real content
+or constraints, but Design Kit does NOT edit that code.
 
-Inspect relevant current/source views and their canonical owners. Distinguish
-accepted originals, derivatives and unresolved additions. The agent identifies
-sibling problems; the user should not enumerate every defective component.
+Locate the weak section image and the specific visual mismatch. Inspect its
+composition in context with the selected first section and neighboring images.
+Specify what to preserve, what significant structural/type/image treatment to
+replace, and how the expected visible result differs. Generate image revisions
+and keep the strongest comparison candidate. Do not substitute micro-polish
+for a weak visual premise.
 
-For consistency work, reuse the closest accepted implementation and repair shared
-causes across the authorized batch. Do not refine valued originals just because
-new additions are inconsistent. For open visual improvement, identify the highest-
-impact gap/opportunity and author a coherent treatment inside the delegated scope.
-Craft complaints begin with applied type/color, effective spacing, control families
-and assets; composition changes require an actual relevant need.
+For several affected sections, return to the same foundation and image anchor;
+do not redesign a whole page in one unconstrained generation. Review the
+ordered set and fix drift by revising individual section images. Distinguish
+agent-selected images from the user's approval. Separate desktop/mobile imagery.
 
-Keep a short working relationship: gap -> mechanism -> expected visible difference
--> protected anchors. Do not ask the user to approve a rewritten prompt, diagnose
-every pixel, curate another reference board or define a finished visual contract.
-Explicit reserved decisions and requested supervised checkpoints still apply.
+Use existing Awwwards/One Page Love MCP research for material visual gaps when
+needed, not as mandatory browsing. Third-party skills are optional and should
+be evaluated on actual images.
 
-Use existing evidence first. Additional discovery is conditional and bounded by
-REFERENCE_ROUTER.md; no reference minimum or automatic MCP research. Inspect a
-required source before claiming fidelity. Where original design is authorized,
-missing optional inspiration need not block a clearly labelled proposal.
-
-Author in the existing code/canvas. Resolve affected foundations in context, reuse
-canonical owners, preserve correct controls and inspect affected consumers. Use
-existing previews or disposable isolated material; no production review routes.
-
-Compare equivalent baseline/candidate views and the relevant quality anchor.
-Check meaningful variants, states, containers and content stress under CRAFT.md.
-A technically correct result can still lack visual coherence. Default budget: one
-candidate and at most two grouped visual refinement passes per bounded unit, not
-per phase or component. Stop repeating a hypothesis that produces no material gain.
-
-Show the actual contribution and tradeoffs. Broad evolution waits for candidate
-acceptance before new shared choices propagate; already-authorized consistency
-repairs need no per-component permission. Reuse accepted implementation afterwards
-and verify contrasting consumers. Keep whole-library coverage/pending cases in the
-existing project record. Do not claim unseen families are complete.
-
-If the user rejects the diagnosis, reinspect the named mismatch before further
-dependent edits. Preserve unrelated accepted work. Required QA and explicit budgets
-both remain binding: stop and report incomplete work rather than hiding failure.
-No paid services, new runtime, mandatory second model or infrastructure rebuild.
+Deliver selected images, prompts, foundation updates and remaining visual
+unknowns. STOP before the actual editable design or implementation. The user
+decides that separately. No fabricated render inspection or claimed UI behavior.

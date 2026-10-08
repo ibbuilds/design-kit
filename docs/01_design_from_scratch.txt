@@ -1,33 +1,23 @@
-DESIGN WITHOUT A FINISHED BASE — DESIGN KIT
-Updated: October 6, 2026.
+DESIGN DIRECTION FROM SCRATCH — IMAGE FIRST
+Updated: October 8, 2026.
 
-Use SKILL.md's artifact-first procedure in the actual target. Reuse the supplied
-product goal, content, constraints, existing assets and working preview. The user
-need not provide a wireframe or a token system. Ask only about material missing
-facts/reserved choices; otherwise own the open visual decisions.
+Begin with the user's own partial or complete visual foundation, not with a
+coded page. Foundation choices include intended impression, type/color roles,
+geometry, density and imagery. Clearly label proposed vs accepted values.
+You do not need a final token inventory or component library.
 
-Choose one product-specific treatment and author a representative composition in
-the existing medium. Resolve affected typography, surfaces, spacing and assets
-inside it. Do not build a whole component library or approve a separate system
-specimen before exploring the screen. Use real or clearly representative content.
-An unresolved dominant asset is a design gap, not permission for fake detail.
+Choose a representative first section, specify its real content, visual job,
+image dimensions and foundation, then generate multiple IMAGE compositions.
+Look for substantial differences in region balance, headline hierarchy,
+asset scale/crop and art direction; compare at normal viewing size.
+Repeat meaningful rounds until the section's visual direction is selected.
+Do not impose a universal two-pass budget; obey user budget/tool limits.
 
-Use supplied/accepted visual evidence first. Research only a concrete open question
-under REFERENCE_ROUTER.md. No mandatory gallery board, reference minimum or paid
-fallback. State any inference or missing calibration honestly.
+Use that selected image as a reference for the next section, along with the
+same foundation. Repeat section by section. Existing Awwwards / One Page Love
+MCPs are optional targeted inspiration; preserve rather than reinstall them.
 
-Inspect the actual render and relevant narrow container/contrasting state. Compare
-its hierarchy, type/image relationships, rhythm and coherence with the goal and
-relevant quality anchor. Correct the highest-impact gaps together. Default budget
-is one candidate and at most two grouped visual refinement passes for the bounded
-unit. A new stage does not reset it. User instructions override the default.
-
-For a broad new direction, show this candidate for acceptance before multiplying
-pages or propagating new shared choices. Preserve accepted code and extend it after
-acceptance. Verify contrasting consumers rather than assuming the specimen proves
-every use. Explicitly requested supervised checkpoints remain binding.
-
-Requested frontend integration/QA uses SOFTWARE.md without rebuilding the visual
-implementation from prose. Design-only does not authorize backend or publication.
-Report actual contribution, inspected scope, remaining defects and consumption only
-when observable. No self-score or guarantee that a candidate has reached excellence.
+When all requested sections have selected images, arrange them in page order,
+check overall rhythm and revise weak transitions by changing the section images.
+Deliver the visual decision and selected imagery. STOP before final design,
+components or code. Only the user may choose that separate next workflow.

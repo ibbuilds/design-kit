@@ -1,54 +1,21 @@
-# Expand the brief without inventing it
+# Precise prompts for section-image generation
 
-Use after reading the product request and resolving the intended vibe, before reference discovery or dependent construction. The current agent synthesizes this; no separate prompt service, model call or optimizer installation is needed. [ONBOARDING.md](ONBOARDING.md) remains the workflow.
+Use with [IMAGE_WORKFLOW.md](IMAGE_WORKFLOW.md) when a section prompt needs improvement. This resource refines **image instructions**, not instructions to build a site or generate code.
 
-## Preserve intent and provenance
+## Expand specificity, not fictional authority
 
-Keep the user's original product/vibe wording or a faithful short quotation beside the expanded interpretation in the target's existing record. Reuse facts from the conversation and authoritative project files, with source pointers. Later corrections override earlier interpretations; they do not erase unrelated accepted decisions.
+Preserve the user's actual product language, desired visual qualities, constraints, section scope, existing foundation, selected images and exclusions. Separate **confirmed**, **proposed** and **unknown** details. A reference URL that has not been visually inspected does not prove a style or composition.
 
-Preserve the requested unit of work: a hero, section, component or improvement is not an implicit full-site brief. Supplied reference images/links can anchor the interpretation; record the observed relationship and the human's intended use rather than inventing a description from an unread visual.
+A good image prompt answers what should be visible, at what image scale, in what hierarchy, with what assets and art direction, and what must not change. Do not invent product claims, brand typography, measurements, approved tokens, testimonials or intended user research. Let the user define or accept their foundation.
 
-For an existing project, include its agreed change boundary, protected identity anchors and open relationships under ONBOARDING.md's existing-project entry. Describe current styles as observed evidence, not as new user preferences. Do not turn a generic improvement into an unrequested rebrand or replace accepted foundations with a reference site's identity.
+## Image prompt template
 
-Separate three things:
+> Generate a visual concept image for [specific page section] of [product], viewed at [dimensions/aspect]. Its job is [one concrete section objective]. Use the user-owned foundation: [confirmed type roles, color roles, layout density, shapes/surfaces, imagery]. Preserve [exact approved content/assets/constraints]. Arrange [major regions and proportion]; prioritize [focal point and attention order]; use [image subject, framing, treatment and crop]. Match the chosen [first or previous section image] in [specific persistent relationships] while changing [section-specific rhythm]. Include [required text/control/proof elements]. Avoid [explicit unwanted styles and content]. Create **one static section image**, not a full page or functioning UI.
 
-- **Stated/confirmed:** product, purpose, scope, constraints, wanted/avoided qualities and accepted decisions actually supplied by the user or project.
-- **Proposed interpretation:** observable design relationships derived from those words, labelled as proposals until confirmed.
-- **Unknown:** material audience, content, assets, proof or behavior not supplied. Ask only what unlocks the current phase; use explicit placeholders for the rest.
+When useful, add a second variation with a **different structural proposition**, not cosmetic rephrasing. Specify meaningful revision deltas to the existing chosen image: keep / replace / expected visible difference. Record what was actually generated and inspected, rather than assuming text rendering or identity transfer is exact.
 
-Expansion adds actionable detail, not new facts. Do not invent a business model, B2B audience, features, personas, metrics, testimonials, brand claims, approved references, exact fonts/palette or fixed component layouts. A named company is a clue to a relationship; it does not authorize copying its identity or claiming its design system was inspected. Preserve negative constraints and emphasis. Resolve conflicts with a narrow question rather than silently choosing.
+## Discovery prompt is separate
 
-## Produce one useful expanded prompt
+An Awwwards/One Page Love search should be aimed at a **named visual relationship** (for example asymmetrical editorial type with cropped product imagery), not a demand that the MCP generate our design. [REFERENCE_ROUTER.md](REFERENCE_ROUTER.md) owns discovery, provenance and limits.
 
-Convert the agreed product/vibe into a copyable execution prompt and compact search brief using only useful fields. Keep the application brief separate from the discovery query: product context informs transfer, while aesthetic relationships lead visual search. Do not automatically turn every business noun into a mandatory provider tag.
-
-```text
-Task and product: [sourced request; design-only or requested frontend scope]
-User/task/content: [known facts; explicit unknowns]
-Preserve: [existing base/system and accepted decisions]
-Change boundary: [protected anchors, open relationships and affected canonical
-sources; preservation/evolution/replacement only when relevant, no automatic rebrand]
-Visual direction: [user's own wanted and avoided qualities]
-Proposed observable interpretation: [type/content, density/spacing, imagery,
-geometry/materials and motion only where supported]
-Reference question: [confirmed aesthetic relationships; cross-industry discovery;
-optional product/task filters only for an identified need]
-Requested evidence pattern: [section/component type when scoped; actual provider
-taxonomy or direct browsing; do not substitute an unrelated region]
-Review flow: inspected reference selection -> rendered scoped system ->
-components/interfaces -> requested frontend and relevant QA.
-Constraints: [real stack/assets/access/budget; no invented backend scope]
-Open questions: [only material missing choices; other details remain proposals]
-```
-
-Show a short plain-language interpretation and the expanded prompt as the current context/vibe review output. Do not force the designer to write it themselves or read every internal note. The human can correct it in native questions/annotations or chat. Corrections revise the prompt and search brief; wait for acceptance of the interpretation before searching under it. Reuse explicit acceptance/delegation already supplied; this is the existing vibe checkpoint, not another approval ceremony.
-
-For a standalone prompt-improvement request, return the expanded prompt with labelled assumptions/unknowns and stop; it does not authorize reference search, design or implementation. For a build, keep using the accepted prompt across the same skill, adding actual selected reference relationships/system paths as those phases become accepted. Never treat an enriched prompt as approval of yet-unseen artifacts.
-
-## Example of a faithful interpretation
-
-Input: "A SaaS landing. Techy and modern, but humanist; less big tech, more like Airbnb, closer to people."
-
-Preserve the SaaS landing, modern/tech quality, human emphasis and **less big-tech** constraint. A proposed interpretation might favor approachable language, people/context imagery and clear product hierarchy, with warmer surface/typographic treatment. Those are directions to confirm and investigate, not permission to prescribe a pink palette, Airbnb's font, rounded cards everywhere or a target audience the user never named. Search the confirmed relationships across eligible sources without automatically restricting the genre to SaaS; inspect real evidence before choosing exact foundations.
-
-Store the accepted expanded brief/prompt in the existing target record. No separate permanent prompt archive, project skill or additional process document is required.
+Do not add an automatic research, foundation approval, component generation or frontend implementation phase after prompt expansion. The image loop remains the deliverable. Existing third-party prompting skills are optional experiments and may be compared on the same section brief.

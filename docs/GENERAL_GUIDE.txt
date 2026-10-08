@@ -1,70 +1,38 @@
 GENERAL GUIDE — DESIGN KIT
-Updated: October 6, 2026.
+Updated: October 8, 2026.
 
-GOAL
-Improve the rendered interface at acceptable total effort. Procedural compliance,
-more references, passing tests and a positive model summary are not visual uplift.
-SKILL.md is the canonical procedure. This guide does not introduce extra phases.
+PURPOSE
+Design Kit helps decide visual UI direction with GENERATED IMAGES, one section at
+a time. It does NOT automatically create the real final design, components,
+Figma pages or frontend code. The user decides any subsequent implementation.
 
-START
-Use Design Kit in the actual project and current agent:
-"Use Design Kit to improve this UI. Preserve the treatments and behavior I have
-already accepted. Own the remaining visual decisions. Deliver one inspected
-candidate and use at most two grouped visual refinement passes. Do not install
-anything or research broadly; use our existing references/tools for concrete gaps."
+FLOW
+1. Start from the USER's actual design foundation. Agent suggestions are
+   proposed until the user accepts or delegates them.
+2. Choose the first high-leverage section and write a highly specific prompt.
+   Generate section IMAGES, comparing meaningfully different arrangements.
+3. Iterate repeatedly in material chunks: composition, hierarchy, type/image
+   relationship, asset framing and visual density. Preserve the strongest image.
+   There is NO automatic two-refinement-pass limit.
+4. Use the selected first image plus foundation as visual references for each
+   subsequent section. Resolve each one through image rounds.
+5. Arrange selected section images in page order. Inspect overall rhythm and
+   consistency; revise the offending sections until the page is visually decided.
+6. STOP. The user separately chooses whether/how to build the actual design.
 
-Supply the actual target and product goal where they are not already known.
-You do not need a Figma file, finished visual specification or defect inventory.
-The agent inspects relevant evidence and chooses the intervention. A material
-protected choice, inaccessible required source or missing permission may need a
-focused question; ordinary open visual choices do not.
+Existing Awwwards / One Page Love MCP research remains useful for concrete visual
+questions. Reuse user-supplied images first and do not force discovery on every
+round. Existing provider integrations and reference catalog are preserved.
+Third-party prompting/design skills are optional experiments, not assumed gains.
 
-WORK
-Inspect the relevant render and source -> identify high-impact visible changes
--> author one coherent candidate in the existing medium -> inspect and refine
-within the budget -> show the result and relevant QA evidence.
+STARTING REQUEST
+"Use Design Kit with image generations only. Take my current foundation,
+iterate the first section with significant composition changes and detailed
+prompts, and use the chosen image to anchor all following sections. Once the
+ordered page is visually decided, give me the selected images and stop before
+creating the actual design."
 
-For craft problems, inspect applied type/color, effective spacing, control
-families and assets. Do not assume a library complaint requires new navigation.
-For open composition, the agent owns hierarchy, proportion and enclosure choices.
-Resolve affected foundations in context; do not first commission a full system.
-
-A broad evolution starts with one representative unit before application-wide
-propagation. After acceptance, reuse actual implementation and check contrasting
-consumers. An authorized repair restoring accepted shared rules can cover its
-agreed consumers without per-component permission. Keep whole-library coverage
-and pending cases visible; one attractive example is not a complete library.
-
-RESEARCH
-There is no reference minimum. Reuse accepted examples and supplied evidence.
-Default: one targeted discovery query, then one relevant retry/fallback only if
-needed. Inspect selected results; do not crawl entire sites or both MCPs routinely.
-An explicit research brief can change this budget. Missing optional inspiration
-permits an honestly labelled original proposal; missing required fidelity evidence
-does not permit a claim of alignment. Keep the two existing MCP integrations.
-Do not add paid services or equate MCP access with good visual judgment.
-
-REVIEW AND STOP
-Default budget: one candidate plus at most two grouped visual refinement passes
-for the bounded unit, not per phase/component. Stop repeating a hypothesis when
-it gives no material gain. Keep the stronger version and disclose remaining gaps.
-Necessary verification remains required; exhaustion means incomplete, not ready.
-The agent shows the actual result, visible contribution, tradeoffs and inspected
-scope. You accept the result, not every intermediate design micro-decision.
-Explicit guided checkpoints remain available and existing user instructions win.
-
-SETUP AND CONTINUITY
-Use the installed skill and browser first. Install/update only when needed and
-authorized, using README.md and HOSTS.md. PROVIDERS.md is for actual access/setup
-problems, not a mandatory startup step. Global and project installations retain
-their existing supported paths and safeguards. No forced model or app switch.
-
-Keep accepted code, captures, source relationships, relevant commands and pending
-work in the target's existing record. Do not build another compiler, schema,
-reference index or multi-agent system to use this flow.
-
-VALUE
-Record observable total usage and human intervention on a real task. Mark missing
-measurements unknown. Before/after improvement alone does not prove the kit caused
-it; a matched with/without-kit task is needed for that claim. Package tests are not
-aesthetic tests. No guaranteed score, savings percentage or zero-iteration claim.
+Keep selected image versions, exact prompts, foundation status and user approvals
+in the target project's existing record. Mark unavailable image tools or unknown
+costs honestly. Package tests do not demonstrate improved images or tool access.
+Canonical instructions: SKILL.md and IMAGE_WORKFLOW.md.

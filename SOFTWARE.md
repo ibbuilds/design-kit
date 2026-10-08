@@ -1,3 +1,7 @@
+# Legacy frontend reference — outside Design Kit's default scope
+
+This document is retained for separately user-authorized frontend tasks and the explicit legacy installer software pointer. **Design Kit itself stops at selected section images and the complete page's visual decision. It never auto-implements these images.** Read [SKILL.md](SKILL.md) for the current purpose. The implementation advice below applies only after a separate user instruction chooses that work.
+
 # Frontend implementation and QA
 
 Use for requested frontend code and behavior. [SKILL.md](SKILL.md) governs scope and review. Work from accepted design or the currently authorized coded candidate; there is no additional approval gate before authoring that candidate. Preserve explicit user checkpoints. Scope ends at the frontend: consume existing APIs, but do not create backend endpoints, databases, migrations or infrastructure. Review-only inspects and reports without edits.
