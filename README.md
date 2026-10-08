@@ -63,7 +63,7 @@ python scripts/install.py --scope user --host codex --check
 python scripts/install.py --scope user --host codex
 ~~~
 
-Select your actual host/scope. The installer copies the complete managed bundle, checks conflicts before writing, and preserves unrelated instructions, human changes and working MCP configuration. Updating this GitHub repository **does not automatically update previously installed copies**. See [HOSTS.md](HOSTS.md) and [PROVIDERS.md](PROVIDERS.md) for host-specific access issues. A legacy explicit \`--with-software\` routing option remains for compatibility; it does **not** turn the image-first skill into an autonomous implementation workflow.
+Select your actual host/scope. The installer copies the complete managed bundle, checks conflicts before writing, and preserves unrelated instructions, human changes and working MCP configuration. Updating this GitHub repository **does not automatically update previously installed copies**. See [HOSTS.md](HOSTS.md) and [PROVIDERS.md](PROVIDERS.md) for host-specific access issues. A legacy explicit `--with-software` routing option remains for compatibility; it does **not** turn the image-first skill into an autonomous implementation workflow.
 
 ## Verification
 
